@@ -23,9 +23,29 @@ def scrap_chapter(chapter):
                 chapter_info[item] = chapter_info[item].strip('[ref]')
         except IndexError as e:
             print(item, e)
+    # Characters
+    characters = []
+    character_table = soup.findAll('table', {"class": 'CharTable'})[0]
+    char_items = character_table.findAll('li')
+    for char_item in char_items:
+        if char_item.findAll('a'):
+            pass
+            char_name = char_item.findAll('a')[0].text
+            char_url = char_item.findAll('a')[0]['href']
+            characters.append({
+                'name': char_name,
+                'url': char_url
+            })
+        else:
+            print('No URL', char_item)
+        # print(char_item)
+
+    chapter_info['characters'] = characters
     return chapter_info
 
 if __name__ == "__main__":
+    chapters = []
     last_chapter = 10
-    for chapter in range(1, last_chapter):
-        print(scrap_chapter(chapter))
+    for chapter in range(1, last_chapter + 1):
+        print(chapter)
+        scrap_chapter(chapter)
