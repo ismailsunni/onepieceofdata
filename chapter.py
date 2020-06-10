@@ -30,30 +30,32 @@ def scrap_chapter(chapter):
     character_table = soup.findAll('table', {"class": 'CharTable'})[0]
     char_items = character_table.findAll('li')
     for char_item in char_items:
+        full_text = char_item.text.rstrip("\n")
+        note = ''
+        if '(' in full_text and ')' in full_text:
+            note = full_text[full_text.find("(")+1:full_text.find(")")]
         if char_item.findAll('a'):
-            pass
             char_name = char_item.findAll('a')[0].text
             char_url = char_item.findAll('a')[0]['href']
-            full_text = char_item.text.rstrip("\n")
-            # print(full_text)
-            note = ''
-            if '(' in full_text and ')' in full_text:
-                note = full_text[full_text.find("(")+1:full_text.find(")")]
-            characters.append({
-                'name': char_name,
-                'url': char_url,
-                'note': note,
-                'full_text': full_text
-            })
         else:
             print('No URL', char_item)
+            char_name = full_text
+            char_url = ''
+        characters.append({
+            'name': char_name,
+            'url': char_url,
+            'note': note,
+            'full_text': full_text
+        })
+        if note:
+            print('Note for %s: %s' % (char_name, note))
 
     chapter_info['characters'] = characters
     return chapter_info
 
 if __name__ == "__main__":
     chapters = []
-    last_chapter = 5
+    last_chapter = 981
     for chapter in range(1, last_chapter + 1):
         print('chapter',  chapter)
         try:
@@ -62,8 +64,8 @@ if __name__ == "__main__":
         except Exception as e:
             print(e)
 
-        if chapter % 50 == 0:
-            with open('chapters_{}.json'.format(chapter), 'w') as fp:
+        if chapter % 100 == 0:
+            with open('cache/chapters_{}.json'.format(chapter), 'w') as fp:
                 json.dump(chapters, fp) 
     with open('chapters.json', 'w') as fp:
         json.dump(chapters, fp)
