@@ -1,5 +1,6 @@
 import urllib3
 from bs4 import BeautifulSoup
+from pprint import pprint
 
 base_url = 'https://onepiece.fandom.com/wiki/Chapter_'
 
@@ -32,9 +33,16 @@ def scrap_chapter(chapter):
             pass
             char_name = char_item.findAll('a')[0].text
             char_url = char_item.findAll('a')[0]['href']
+            print(char_item.text)
+            full_text = char_item.text
+            note = ''
+            if '(' in full_text and ')' in full_text:
+                note = full_text[full_text.find("(")+1:full_text.find(")")]
             characters.append({
                 'name': char_name,
-                'url': char_url
+                'url': char_url,
+                'note': note,
+                'full_text': full_text
             })
         else:
             print('No URL', char_item)
@@ -45,7 +53,8 @@ def scrap_chapter(chapter):
 
 if __name__ == "__main__":
     chapters = []
-    last_chapter = 10
+    last_chapter = 2
     for chapter in range(1, last_chapter + 1):
         print(chapter)
-        scrap_chapter(chapter)
+        result = scrap_chapter(chapter)
+        pprint(result)
