@@ -1,6 +1,7 @@
 import urllib3
 from bs4 import BeautifulSoup
 from pprint import pprint
+import json
 
 base_url = 'https://onepiece.fandom.com/wiki/Chapter_'
 
@@ -9,7 +10,7 @@ def scrap_chapter(chapter):
     chapter_info = {}
 
     chapter_url = base_url + str(chapter)
-    print(chapter_url)
+    # print(chapter_url)
 
     http_pool = urllib3.PoolManager()
     r = http_pool.urlopen('GET',chapter_url)
@@ -33,8 +34,8 @@ def scrap_chapter(chapter):
             pass
             char_name = char_item.findAll('a')[0].text
             char_url = char_item.findAll('a')[0]['href']
-            print(char_item.text)
-            full_text = char_item.text
+            full_text = char_item.text.rstrip("\n")
+            # print(full_text)
             note = ''
             if '(' in full_text and ')' in full_text:
                 note = full_text[full_text.find("(")+1:full_text.find(")")]
@@ -46,15 +47,23 @@ def scrap_chapter(chapter):
             })
         else:
             print('No URL', char_item)
-        # print(char_item)
 
     chapter_info['characters'] = characters
     return chapter_info
 
 if __name__ == "__main__":
     chapters = []
-    last_chapter = 2
+    last_chapter = 5
     for chapter in range(1, last_chapter + 1):
-        print(chapter)
-        result = scrap_chapter(chapter)
-        pprint(result)
+        print('chapter',  chapter)
+        try:
+            result = scrap_chapter(chapter)
+            chapters.append(result)
+        except Exception as e:
+            print(e)
+
+        if chapter % 50 == 0:
+            with open('chapters_{}.json'.format(chapter), 'w') as fp:
+                json.dump(chapters, fp) 
+    with open('chapters.json', 'w') as fp:
+        json.dump(chapters, fp)
