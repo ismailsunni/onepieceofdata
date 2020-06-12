@@ -67,5 +67,5 @@ if __name__ == "__main__":
         if chapter % 100 == 0:
             with open('cache/chapters_{}.json'.format(chapter), 'w') as fp:
                 json.dump(chapters, fp) 
-    with open('chapters.json', 'w') as fp:
+    with open('data/chapters.json', 'w') as fp:
         json.dump(chapters, fp)
