@@ -1,0 +1,982 @@
+chapter,volume,name,page,date
+1,1.0,Romance Dawn,53,1997-07-19
+2,1.0,"They Call Him ""Straw Hat Luffy""",23,1997-07-28
+3,1.0,Enter Zolo: Pirate Hunter,21,1997-08-04
+4,1.0,The Great Captain Morgan,19,1997-08-11
+5,1.0,The King of the Pirates and the Master Swordsman,19,1997-08-25
+6,1.0,Number One,23,1997-09-01
+7,1.0,Friends,20,1997-09-08
+8,1.0,Nami,19,1997-09-15
+9,2.0,Femme Fatale,21,1997-09-22
+10,2.0,Incident at the Tavern,23,1997-09-29
+11,2.0,Flight,19,1997-10-06
+12,2.0,Dog,21,1997-10-13
+13,2.0,Treasure,19,1997-10-20
+14,2.0,Reckless,19,1997-10-27
+15,2.0,Gong,19,1997-11-03
+16,2.0,Versus Buggy's Crew,17,1997-11-10
+17,2.0,"High Level, Low Level",20,1997-11-17
+18,3.0,The Pirate Buggy the Clown,19,1997-11-24
+19,3.0,Devil Fruit,19,1997-12-01
+20,3.0,The Way of the Thief,19,1997-12-08
+21,3.0,Townies,19,1997-12-22
+22,3.0,Strange Creatures,29,1998-01-05
+23,3.0,The Dread Captain Usopp,19,1998-01-12
+24,3.0,The Lie Rejecter,19,1998-01-19
+25,3.0,Lies,19,1998-01-26
+26,3.0,Captain Kuro's Plan,19,1998-02-02
+27,4.0,True Lies,21,1998-02-09
+28,4.0,Crescent Moon,19,1998-02-16
+29,4.0,Uphill Battle,21,1998-02-23
+30,4.0,Backfire,19,1998-03-02
+31,4.0,Truth,19,1998-03-09
+32,4.0,Cruel Fortune,19,1998-03-16
+33,4.0,The Creeping Cat,19,1998-03-23
+34,4.0,A Humble Servant,19,1998-03-30
+35,4.0,The Steep Slope,19,1998-04-06
+36,5.0,After Them!!,21,1998-04-13
+37,5.0,"""Captain Kuro, Of The Thousand Plans""",19,1998-04-20
+38,5.0,Pirate Crew,20,1998-04-27
+39,5.0,For Whom the Bell Tolls,19,1998-05-11
+40,5.0,Usopp's Pirate Crew,19,1998-05-18
+41,5.0,To the Sea,18,1998-05-25
+42,5.0,Yosaku and Johnny,19,1998-06-01
+43,5.0,Sanji,19,1998-06-08
+44,5.0,Three Tough Cooks,20,1998-06-15
+45,6.0,Before the Storm,18,1998-06-22
+46,6.0,An Uninvited Guest,19,1998-06-29
+47,6.0,The Don's Offer,19,1998-07-06
+48,6.0,Steer Clear,19,1998-07-13
+49,6.0,Storm,18,1998-07-18
+50,6.0,A Parting of Ways,19,1998-07-27
+51,6.0,Zolo Overboard,19,1998-08-03
+52,6.0,The Oath,20,1998-08-10
+53,6.0,Mackerel Head,19,1998-08-24
+54,7.0,Pearl,19,1998-08-31
+55,7.0,Jungle Blood,19,1998-09-07
+56,7.0,I Refuse,20,1998-09-14
+57,7.0,If You Have a Dream,19,1998-09-21
+58,7.0,Crap-Geezer,19,1998-09-28
+59,7.0,Sanji's Debt,19,1998-10-05
+60,7.0,Resolution,19,1998-10-12
+61,7.0,The Demon,20,1998-10-19
+62,7.0,MH5,19,1998-10-26
+63,8.0,I Won't Die,19,1998-11-02
+64,8.0,The Mighty Battle Spear,17,1998-11-09
+65,8.0,Prepared,19,1998-11-16
+66,8.0,The Chewed-up Spear,19,1998-11-21
+67,8.0,The Soup,19,1998-11-30
+68,8.0,The Fourth Person,19,1998-12-07
+69,8.0,Arlong Park,20,1998-12-19
+70,8.0,The Great Adventure of Usopp the Man,21,1999-01-04
+71,8.0,Lords of All Creation,19,1999-01-11
+72,9.0,Proper Living,19,1999-01-18
+73,9.0,Monsters of the Grand Line,19,1999-01-25
+74,9.0,Business,19,1999-02-01
+75,9.0,Of Maps and Fish-Men,19,1999-02-08
+76,9.0,Sleep,19,1999-02-15
+77,9.0,The First Step Toward a Dream,19,1999-02-22
+78,9.0,Bell-mère,19,1999-03-01
+79,9.0,To Live,19,1999-03-08
+80,9.0,A Thief is a Thief,19,1999-03-15
+81,9.0,Tears,19,1999-03-20
+82,10.0,"OK, Let's STAND UP!",19,1999-03-29
+83,10.0,Luffy in Black,19,1999-04-05
+84,10.0,Zombie,19,1999-04-12
+85,10.0,Three Swords vs. Six,19,1999-04-19
+86,10.0,Heroism vs. Fish-Man Cruelty,20,1999-04-26
+87,10.0,It's All Over!!,19,1999-05-10
+88,10.0,Die!!!,19,1999-05-17
+89,10.0,Trade-Off,19,1999-05-24
+90,10.0,What Can You Do?,19,1999-05-31
+91,11.0,DARTS,19,1999-06-07
+92,11.0,Happiness,19,1999-06-14
+93,11.0,Going Down,19,1999-06-21
+94,11.0,The Other Villain,17,1999-06-28
+95,11.0,"Spin, Pinwheel",19,1999-07-05
+96,11.0,The Meanest Man in the East,19,1999-07-12
+97,11.0,Kitetsu III,19,1999-07-19
+98,11.0,Dark Clouds,19,1999-07-26
+99,11.0,Luffy Died,19,1999-08-02
+100,12.0,The Legend Begins,24,1999-08-09
+101,12.0,Reverse Mountain,19,1999-08-23
+102,12.0,"Now, The Grand Line",19,1999-08-30
+103,12.0,The Whale,20,1999-09-06
+104,12.0,Cape Promise,19,1999-09-13
+105,12.0,Log Pose,19,1999-09-20
+106,12.0,The Town of Welcome,19,1999-09-27
+107,12.0,Moonlight and Tombstones,18,1999-10-04
+108,12.0,100 Bounty Hunters,19,1999-10-09
+109,13.0,A Question of Duty,19,1999-10-18
+110,13.0,The Night Isn't Over,19,1999-10-25
+111,13.0,The Secret Criminal Organization,18,1999-11-01
+112,13.0,Luffy vs. Zolo,19,1999-11-08
+113,13.0,It's All Right!!!,19,1999-11-15
+114,13.0,The Course,19,1999-11-22
+115,13.0,Little Garden of Adventure,19,1999-12-06
+116,13.0,Big,19,1999-12-13
+117,13.0,Dorry and Broggy,19,1999-12-20
+118,14.0,Someone's Out There,19,2000-01-03
+119,14.0,Deadly Improvisation,19,2000-01-17
+120,14.0,The Red Ogre Weeps,19,2000-01-24
+121,14.0,I Knew,19,2000-01-31
+122,14.0,A Dead Body is Useless,19,2000-02-07
+123,14.0,Luffy vs. Mr. 3,19,2000-02-14
+124,14.0,The Tea is Good,19,2000-02-21
+125,14.0,Candle Champion,19,2000-02-28
+126,14.0,Instinct,19,2000-03-06
+127,15.0,Snail-o-Phone,19,2000-03-13
+128,15.0,Pirate Pride,20,2000-03-18
+129,15.0,Straight Ahead!!!,21,2000-03-27
+130,15.0,Maximum Speed,19,2000-04-03
+131,15.0,Wapol of Tin,19,2000-04-10
+132,15.0,See?,19,2000-04-17
+133,15.0,Adventure in a Nameless Country,20,2000-04-24
+134,15.0,Dr. Kureha,19,2000-05-08
+135,15.0,Lapins,19,2000-05-15
+136,15.0,A Man Named Dalton,19,2000-05-22
+137,16.0,Avalanche,20,2000-05-29
+138,16.0,The Summit,19,2000-06-05
+139,16.0,Enter Tony Tony Chopper,19,2000-06-12
+140,16.0,The Castle of Snow,19,2000-06-19
+141,16.0,Quack Doctor,19,2000-06-26
+142,16.0,Skull and Cherry Blossoms,19,2000-07-03
+143,16.0,Clumsy,19,2000-07-10
+144,16.0,Snowy Tale,19,2000-07-17
+145,16.0,Carrying on His Will,19,2000-07-24
+146,17.0,Battle to Defend the Kingdom,19,2000-07-31
+147,17.0,Frauds,19,2000-08-07
+148,17.0,Unbreakable,19,2000-08-21
+149,17.0,RUMBLE!!,19,2000-08-28
+150,17.0,Royal Drum Crown 7-Shot Tin Tyrant Cannon,19,2000-09-04
+151,17.0,The Skies of Drum,19,2000-09-11
+152,17.0,Full Moon,19,2000-09-18
+153,17.0,Hiriluk's Cherry Blossoms,19,2000-09-25
+154,17.0,To Alabasta,19,2000-10-02
+155,17.0,"""Pirate"" Sir Crocodile",19,2000-10-07
+156,18.0,Oh Come My Way Days,19,2000-10-16
+157,18.0,Ace Arrives,19,2000-10-23
+158,18.0,Landing in Alabasta,19,2000-10-30
+159,18.0,Come On,19,2000-11-06
+160,18.0,Spiders Café at Eight O'Clock,19,2000-11-13
+161,18.0,The Green City Erumalu,19,2000-11-20
+162,18.0,Adventure in the Kingdom of Sand,19,2000-11-27
+163,18.0,"Yuba, the Town of Rebels",19,2000-12-04
+164,18.0,I Love My Country,19,2000-12-11
+165,18.0,Operation Utopia,18,2000-12-18
+166,18.0,Luffy vs. Vivi,19,2001-01-04
+167,19.0,Battle Front,19,2001-01-15
+168,19.0,"Rainbase, The Town of Dreams",19,2001-01-22
+169,19.0,The Kingdom's Strongest Warrior,19,2001-01-29
+170,19.0,Beginning,19,2001-02-05
+171,19.0,"Koza, Leader of the Rebels",19,2001-02-10
+172,19.0,Rebellion,19,2001-02-26
+173,19.0,Bananagator,19,2001-03-05
+174,19.0,Mr. Prince,19,2001-03-12
+175,19.0,Release,19,2001-03-19
+176,19.0,Rush,19,2001-03-26
+177,20.0,30 Million vs. 81 Million,19,2001-04-02
+178,20.0,Grand Line Level,19,2001-04-09
+179,20.0,Showdown at Alubarna,19,2001-04-16
+180,20.0,Alabasta Animal Land,19,2001-04-23
+181,20.0,Super Sonic Duck Quiz,19,2001-05-07
+182,20.0,Roar,19,2001-05-14
+183,20.0,Squadron Leader Karoo,19,2001-05-21
+184,20.0,Moletown Block Four,19,2001-05-28
+185,20.0,Oh... Is That So?,19,2001-06-04
+186,20.0,4,19,2001-06-11
+187,21.0,Stalemate,19,2001-06-18
+188,21.0,Oh Come My Way Karate,19,2001-06-25
+189,21.0,2,19,2001-07-02
+190,21.0,Climate Baton,19,2001-07-09
+191,21.0,She Who Controls The Weather,19,2001-07-16
+192,21.0,Tornado Warning,19,2001-07-23
+193,21.0,Utopia,19,2001-07-30
+194,21.0,Cutting Steel,18,2001-08-06
+195,21.0,Mr. Bushidō,21,2001-08-20
+196,22.0,1,19,2001-08-27
+197,22.0,The Leaders,19,2001-09-03
+198,22.0,4:15 PM,19,2001-09-10
+199,22.0,Hope!!,19,2001-09-17
+200,22.0,Water Luffy,19,2001-09-22
+201,22.0,Nico Robin,19,2001-10-01
+202,22.0,The Royal Mausoleum,19,2001-10-06
+203,22.0,Crocodile-ish,19,2001-10-15
+204,22.0,RED,19,2001-10-22
+205,22.0,The Sand-Sand Band's Secret Fort,19,2001-10-29
+206,23.0,Ignition,19,2001-11-05
+207,23.0,Nightmare,19,2001-11-12
+208,23.0,Guardian Spirit,19,2001-11-19
+209,23.0,I Will Defeat You,21,2001-11-26
+210,23.0,0,17,2001-12-03
+211,23.0,King,19,2001-12-10
+212,23.0,Some Justice,19,2001-12-17
+213,23.0,V.I.P.,23,2001-12-28
+214,23.0,Strategy to Escape the Sand Kingdom,19,2002-01-07
+215,23.0,Last Waltz,19,2002-01-21
+216,23.0,Vivi's Adventure,19,2002-01-28
+217,24.0,Stowaway,19,2002-02-04
+218,24.0,Why the Log Pose is Dome-Shaped,19,2002-02-18
+219,24.0,Masira the Salvage King,19,2002-02-25
+220,24.0,A Walk on the Seafloor,19,2002-03-04
+221,24.0,Monsters,19,2002-03-11
+222,24.0,The Giant Novice,19,2002-03-18
+223,24.0,I Promise Never to Fight in This Town,19,2002-03-25
+224,24.0,Do Not Dream,19,2002-04-01
+225,24.0,People's Dreams,19,2002-04-08
+226,24.0,"Shoujou, the Salvage King of the Seafloor",19,2002-04-15
+227,25.0,Noland the Liar,19,2002-04-22
+228,25.0,"Mont Blanc Cricket, the Last Boss of the Monkey Mountain Allied Force",19,2002-04-27
+229,25.0,Let's Eat,19,2002-05-13
+230,25.0,Pursue the South Bird!,19,2002-05-20
+231,25.0,Bellamy the Hyena,19,2002-05-27
+232,25.0,The 100 Million Berry Man,19,2002-06-03
+233,25.0,The World's Greatest Power,19,2002-06-10
+234,25.0,Please Remember,19,2002-06-17
+235,25.0,The Knock Up Stream,19,2002-06-24
+236,25.0,The Ship Sails to the Sky,19,2002-07-01
+237,26.0,High in the Sky,19,2002-07-08
+238,26.0,Heaven's Gate,17,2002-07-15
+239,26.0,Angel Beach,17,2002-07-22
+240,26.0,Dial Power,17,2002-07-29
+241,26.0,Heaven's Judgment,19,2002-08-05
+242,26.0,Class-2 Criminals,17,2002-08-12
+243,26.0,Trial,17,2002-08-26
+244,26.0,S.O.S.,19,2002-09-02
+245,26.0,Adventure on Kami's Island,17,2002-09-09
+246,26.0,"Satori, Vassal of the Forest of No Return",19,2002-09-14
+247,27.0,Ball Challenge,19,2002-09-22
+248,27.0,Former Kami vs. Vassal,19,2002-10-07
+249,27.0,The Village Hidden in the Cloud,19,2002-10-12
+250,27.0,Ball Dragon,19,2002-10-21
+251,27.0,Overture,19,2002-10-28
+252,27.0,Junction,19,2002-11-02
+253,27.0,Varse,19,2002-11-11
+254,27.0,Aubade,19,2002-11-18
+255,27.0,The Anaconda and the Search Team,19,2002-11-25
+256,28.0,Wyper the Berserker,19,2002-12-02
+257,28.0,Dial Battle,19,2002-12-09
+258,28.0,The Many Souths,19,2002-12-16
+259,28.0,Pirate Zoro vs. Warrior Braham,19,2002-12-30
+260,28.0,Pirate Luffy vs. Berserker Wyper,19,2003-01-06
+261,28.0,Warrior Genbo vs. Heavenly Warriors Commander Yama,19,2003-01-20
+262,28.0,Pirate Chopper vs. Vassal Gedatsu,19,2003-01-27
+263,28.0,Pirate Nami and the Weird Knight vs. Heavenly Warriors Subcommanders Hotori and Kotori,19,2003-02-03
+264,28.0,Warrior Kamakiri vs. Kami Eneru,19,2003-02-10
+265,29.0,Pirate Robin vs. Heavenly Forces Commander Yama,19,2003-02-17
+266,29.0,Pirate Chopper vs. Vassal Ohm,19,2003-02-24
+267,29.0,March,17,2003-03-03
+268,29.0,Suite,18,2003-03-10
+269,29.0,Concerto,19,2003-03-17
+270,29.0,Serenade,19,2003-03-31
+271,29.0,Pirate Zolo vs. Vassal Ohm,19,2003-04-07
+272,29.0,Play,19,2003-04-14
+273,29.0,Quintet,19,2003-04-21
+274,29.0,Oratorio,20,2003-04-28
+275,29.0,Divina Comedia,19,2003-05-12
+276,30.0,Shandian Rhythm,19,2003-05-19
+277,30.0,Maxim,19,2003-05-26
+278,30.0,Conis,19,2003-06-02
+279,30.0,Pirate Luffy vs. Kami Eneru,18,2003-06-09
+280,30.0,Floating,19,2003-06-16
+281,30.0,Deathpiea,19,2003-06-23
+282,30.0,Desire,19,2003-06-30
+283,30.0,On the Front Line of Rescuing Love,19,2003-07-07
+284,30.0,Sorry,19,2003-07-14
+285,30.0,Capriccio,19,2003-07-19
+286,31.0,The Shandoran Demon,17,2003-07-28
+287,31.0,Kami Killing,19,2003-08-11
+288,31.0,Curse,19,2003-08-25
+289,31.0,Full Moon,21,2003-09-01
+290,31.0,The Light of Shandora,19,2003-09-08
+291,31.0,We'll Be Here,19,2003-09-13
+292,31.0,"To Meet, like the Half-Moon Hidden by Clouds",19,2003-09-22
+293,31.0,Bolero,19,2003-09-29
+294,31.0,Kingdom Come,19,2003-10-06
+295,31.0,Giant Jack,19,2003-10-11
+296,32.0,High-Altitude Situation,19,2003-10-20
+297,32.0,Praise for the Land,19,2003-10-27
+298,32.0,Love Song,19,2003-11-01
+299,32.0,Fantasia,19,2003-11-10
+300,32.0,Symphony,19,2003-11-22
+301,32.0,I Was Here,19,2003-12-01
+302,32.0,Finale,19,2003-12-08
+303,32.0,Rich Pirates,19,2003-12-15
+304,32.0,Long Island Adventure,21,2003-12-22
+305,32.0,Foxy the Silver Fox,19,2004-01-05
+306,33.0,Donut Race!,19,2004-01-19
+307,33.0,"Ready, Set, Donut!",19,2004-01-26
+308,33.0,Obstructive Tactics,19,2004-02-02
+309,33.0,Groggy Monsters,17,2004-02-09
+310,33.0,Groggy Ring!!,19,2004-02-16
+311,33.0,Rough Game,19,2004-02-23
+312,33.0,Goal!!,19,2004-03-01
+313,33.0,Main Event,19,2004-03-08
+314,33.0,Combat!!,19,2004-03-15
+315,33.0,Secret Room,19,2004-03-22
+316,33.0,Brother Soul,19,2004-03-29
+317,34.0,K.O.,21,2004-04-12
+318,34.0,Closure,19,2004-04-19
+319,34.0,Admiral Aokiji of the Navy Headquarters,19,2004-04-26
+320,34.0,Ultimate Military Force,19,2004-05-10
+321,34.0,One-on-One,19,2004-05-17
+322,34.0,Puffing Tom,19,2004-05-24
+323,34.0,"The City of Water, Water Seven",19,2004-05-31
+324,34.0,Adventures in the City of Water,19,2004-06-07
+325,34.0,The Franky Family,19,2004-06-14
+326,34.0,Mr. Iceberg,17,2004-06-21
+327,34.0,"Shipbuilding Island, Repair Dock No. 1",21,2004-06-28
+328,35.0,The Pirate Abduction Incident,19,2004-07-12
+329,35.0,My Name Is Franky,19,2004-07-17
+330,35.0,It's Decided,17,2004-07-26
+331,35.0,The Big Argument,19,2004-08-02
+332,35.0,Luffy vs. Usopp,18,2004-08-09
+333,35.0,Captain,18,2004-08-23
+334,35.0,Big Trouble in the Secret Room,19,2004-08-30
+335,35.0,Warning,19,2004-09-06
+336,35.0,Luffy vs. Franky,19,2004-09-13
+337,36.0,Protectors of the City of Water,19,2004-09-18
+338,36.0,Coup de Vent,19,2004-09-27
+339,36.0,Rumors,19,2004-10-04
+340,36.0,The Woman Who Brings Darkness,19,2004-10-09
+341,36.0,Demon,19,2004-10-18
+342,36.0,The Messengers of Darkness,19,2004-10-25
+343,36.0,Cipher Pol No. 9,19,2004-11-01
+344,36.0,Opposing Force,19,2004-11-08
+345,36.0,Sleepers,19,2004-11-15
+346,36.0,The Ninth Justice,19,2004-11-29
+347,37.0,Six Powers,19,2004-12-06
+348,37.0,Fighting Power,20,2004-12-13
+349,37.0,Ordinary Citizens,19,2004-12-20
+350,37.0,The Warehouse Under the Bridge,19,2005-01-03
+351,37.0,Klabautermann,19,2005-01-17
+352,37.0,Tom's Workers,19,2005-01-24
+353,37.0,The Legendary Shipwright,19,2005-01-31
+354,37.0,Sea Train,19,2005-02-07
+355,37.0,Spandam,19,2005-02-14
+356,37.0,Mr. Tom,19,2005-02-28
+357,37.0,Cutty Flam,21,2005-03-07
+358,38.0,Reactivation,19,2005-03-14
+359,38.0,Bingo,19,2005-03-19
+360,38.0,Departing Soon,19,2005-03-28
+361,38.0,P.S.,19,2005-04-04
+362,38.0,Ebb Tide,19,2005-04-11
+363,38.0,Aqua Laguna,19,2005-04-18
+364,38.0,Kokoro,19,2005-04-25
+365,38.0,Rocketman!!,19,2005-05-09
+366,38.0,Sortie!,19,2005-05-16
+367,38.0,Sniper King,19,2005-05-23
+368,39.0,Sea Train Battle Game,19,2005-05-30
+369,39.0,Ramen Kung Fu,19,2005-06-06
+370,39.0,You're Not Alone,19,2005-06-13
+371,39.0,The Honorable Captain T Bone,19,2005-06-20
+372,39.0,Plastic Surgery,19,2005-06-27
+373,39.0,Necessary Evil,19,2005-07-04
+374,39.0,Scramble,19,2005-07-16
+375,39.0,The Supermen of Enies Lobby,19,2005-07-25
+376,39.0,I Got It!!,19,2005-08-01
+377,39.0,The Big Showdown on the Judiciary Island,19,2005-08-08
+378,40.0,Casualties,19,2005-08-22
+379,40.0,Power Level,19,2005-08-29
+380,40.0,Enies Lobby Main Island Express,19,2005-09-05
+381,40.0,Fired,18,2005-09-12
+382,40.0,Demon Lair,19,2005-09-17
+383,40.0,Luffy vs. Blueno,19,2005-09-26
+384,40.0,Signal the Counterattack,19,2005-10-03
+385,40.0,There Is a Way,19,2005-10-08
+386,40.0,Unprecedented,15,2005-10-17
+387,40.0,Gear,19,2005-10-31
+388,40.0,Gear Two,19,2005-11-07
+389,41.0,Response,19,2005-11-14
+390,41.0,Accepting the Challenge,19,2005-11-21
+391,41.0,The Girl They Called a Demon,19,2005-11-28
+392,41.0,Dereshi,19,2005-12-12
+393,41.0,Olvia,19,2005-12-19
+394,41.0,The Demons of Ohara,19,2005-12-26
+395,41.0,Ohara vs. the World Government,19,2006-01-07
+396,41.0,Saul,19,2006-01-23
+397,41.0,In Hopes of Reaching the Future,19,2006-01-30
+398,41.0,Declaration of War,19,2006-02-06
+399,41.0,Jump Toward the Waterfall!!,19,2006-02-13
+400,42.0,The Key to Freedom,19,2006-02-20
+401,42.0,Pirates vs. CP9,19,2006-02-27
+402,42.0,Handcuffs No. 2,19,2006-03-06
+403,42.0,Mr. Chivalry,19,2006-03-13
+404,42.0,Franky vs. Fukurou,19,2006-03-20
+405,42.0,Power,19,2006-03-27
+406,42.0,Life Return,19,2006-04-10
+407,42.0,Monster,19,2006-04-17
+408,42.0,Monster vs. Kumadori,19,2006-04-24
+409,42.0,The Terrifying Broadcast,19,2006-05-08
+410,43.0,Super-Size Nami,19,2006-05-15
+411,43.0,Nami vs. Kalifa,19,2006-05-22
+412,43.0,You Missed Your Chance,19,2006-05-29
+413,43.0,Hunter,19,2006-06-05
+414,43.0,Sanji vs. Jabra,19,2006-06-12
+415,43.0,Heat Up,19,2006-06-19
+416,43.0,Zolo vs. Kaku,19,2006-06-26
+417,43.0,Asura,19,2006-07-03
+418,43.0,Luffy vs. Rob Lucci,19,2006-07-10
+419,43.0,Legend of a Hero,19,2006-07-15
+420,44.0,Buster Call,19,2006-07-24
+421,44.0,Gear Three,19,2006-07-31
+422,44.0,Rob Lucci,19,2006-08-07
+423,44.0,Mermaid Legend,19,2006-08-21
+424,44.0,Escape Ship,19,2006-08-28
+425,44.0,Bridge of Mortal Combat,19,2006-09-04
+426,44.0,A Ship Waiting for Wind,19,2006-09-11
+427,44.0,This Isn't the Afterlife,19,2006-09-16
+428,44.0,Let's Go Back,19,2006-09-25
+429,44.0,Utter Defeat,19,2006-10-02
+430,44.0,A Light Snow of Reminiscence Falls,19,2006-10-07
+431,45.0,Fist of Love,19,2006-10-23
+432,45.0,Jack-in-the-Box,19,2006-10-30
+433,45.0,The Name of That Sea,19,2006-11-06
+434,45.0,Whitebeard and Red-Hair,19,2006-11-13
+435,45.0,You Have My Sympathies,19,2006-11-20
+436,45.0,Trunks from Franky-House,19,2006-12-04
+437,45.0,Naked Mania,19,2006-12-11
+438,45.0,Pride,19,2006-12-18
+439,45.0,Third and Seventh,19,2006-12-25
+440,45.0,Fire Fist vs. Blackbeard,19,2007-01-06
+441,46.0,Duel on Banaro Island,19,2007-01-22
+442,46.0,Adventure in the Demonic Sea,19,2007-01-29
+443,46.0,Thriller Bark,19,2007-02-05
+444,46.0,Adventure on Ghost Island,19,2007-02-10
+445,46.0,Zombies,19,2007-02-19
+446,46.0,Doctor Hogback,19,2007-02-26
+447,46.0,Zombie-in-the-Box,19,2007-03-05
+448,46.0,Moria,19,2007-03-12
+449,46.0,The Four Monsters of Thriller Bark,19,2007-03-26
+450,47.0,Night of the General Zombies,19,2007-04-02
+451,47.0,Perona's Wonder Garden,19,2007-04-09
+452,47.0,Jigoro of the Wind,19,2007-04-16
+453,47.0,"Cloudy, Partly Bony",19,2007-04-23
+454,47.0,The Humming Swordsman,19,2007-04-28
+455,47.0,Gecko Moria of the Seven Warlords of the Sea,19,2007-05-14
+456,47.0,Demon from the Land of Ice,19,2007-05-21
+457,47.0,Meat!!!,17,2007-05-28
+458,47.0,Anything but My Afro,19,2007-06-04
+459,47.0,I Can't Just Die Hoping to be Forgiven,19,2007-06-11
+460,48.0,Conquest Before Dawn!!,19,2007-06-25
+461,48.0,Ghost Buster,19,2007-07-02
+462,48.0,Adventures of Oars,19,2007-07-09
+463,48.0,Pirate Sanji vs. Mystery Man Absalom,19,2007-07-14
+464,48.0,Sanji's Dream,19,2007-07-23
+465,48.0,Pirate Usopp vs. Mystery Woman Perona,19,2007-07-30
+466,48.0,Conclusion,19,2007-08-06
+467,48.0,Pirate Zolo vs. Samurai Ryuma,19,2007-08-20
+468,48.0,Pirate Chopper vs. Mystery Man Hogback,19,2007-08-27
+469,48.0,"Come Out Here, Straw Hat Pirates!",19,2007-09-03
+470,48.0,Oars vs. Straw Hat Pirates,19,2007-09-10
+471,49.0,My Friend,17,2007-09-22
+472,49.0,Down,19,2007-10-01
+473,49.0,Warlord Bartholomew Kuma Appears,19,2007-10-06
+474,49.0,We Have To Do It!,19,2007-10-15
+475,49.0,Pirates Of The Forest,19,2007-10-22
+476,49.0,Nightmare Luffy,19,2007-10-29
+477,49.0,3/8,19,2007-11-05
+478,49.0,Luffy vs Luffy,19,2007-11-12
+479,49.0,Warrior Of Hope,19,2007-11-19
+480,49.0,Interception,19,2007-12-03
+481,49.0,Shadows Asgard,19,2007-12-10
+482,50.0,Morning Is Coming,19,2007-12-17
+483,50.0,The End Of The Dream,19,2007-12-25
+484,50.0,Squish,19,2008-01-04
+485,50.0,Straw Hat Pirates - Pirate Hunter Zolo,19,2008-01-21
+486,50.0,Piano,19,2008-01-28
+487,50.0,That Song,19,2008-02-04
+488,50.0,Song of Love,19,2008-02-09
+489,50.0,Eighth Person,19,2008-02-25
+490,50.0,Arriving Again,19,2008-03-03
+491,50.0,Flying Fish Riders,19,2008-03-10
+492,51.0,Iron Mask Duval,19,2008-03-17
+493,51.0,You Know Me,19,2008-03-24
+494,51.0,Duval's Tragedy,19,2008-03-31
+495,51.0,Gaon Cannon,19,2008-04-07
+496,51.0,Yarukiman Mangrove,19,2008-04-14
+497,51.0,Adventure on the Archipelago of Dancing Soap Bubbles,19,2008-04-21
+498,51.0,The Eleven Supernovas,19,2008-04-28
+499,51.0,Sabaody Park,19,2008-05-19
+500,51.0,The Embers of History,19,2008-05-26
+501,51.0,The World Begins to Swell,19,2008-06-02
+502,51.0,The Incident of the Celestial Dragons,19,2008-06-09
+503,52.0,Aggravated Island,19,2008-06-16
+504,52.0,Pirate Front Line on the Move!!,19,2008-06-23
+505,52.0,Kuma,19,2008-06-30
+506,52.0,Roger and Rayleigh,19,2008-07-07
+507,52.0,Kizaru Arrives,19,2008-07-19
+508,52.0,Island of Carnage,19,2008-07-28
+509,52.0,Kizaru vs. Four Captains,19,2008-08-04
+510,52.0,Straw Hat Pirates vs. War Machine,19,2008-08-11
+511,52.0,Axe-Carrying Sentomaru,19,2008-08-25
+512,52.0,"Zolo, Gone",19,2008-09-01
+513,53.0,Beyond Rescue!!!,19,2008-09-08
+514,53.0,Body Parasite Mushrooms,19,2008-09-13
+515,53.0,Adventure on the Island of Women,19,2008-09-22
+516,53.0,Pirate Empress Boa Hancock,17,2008-09-29
+517,53.0,Bath Time,19,2008-10-06
+518,53.0,Coliseum,19,2008-10-11
+519,53.0,Natural Born King,19,2008-10-27
+520,53.0,Eye of the Gorgon,19,2008-11-01
+521,53.0,Hoof of the Celestial Dragon,19,2008-11-10
+522,53.0,Fatal Illness,19,2008-11-17
+523,54.0,Hell,19,2008-11-22
+524,54.0,Unstoppable,19,2008-12-01
+525,54.0,The Underwater Prison Impel Down,19,2008-12-08
+526,54.0,Adventure in the Great Prison,19,2008-12-22
+527,54.0,Level 1: Crimson Hell,19,2009-01-05
+528,54.0,"Jimbei, First Son of the Sea",19,2009-01-19
+529,54.0,Level 2: Beast Hell,19,2009-01-26
+530,54.0,From One Hell to Another,19,2009-02-02
+531,54.0,Level 3: Starvation Hell,19,2009-02-09
+532,54.0,Jailer Beast Minotaur,19,2009-02-16
+533,55.0,Level 4: Inferno Hell,19,2009-02-23
+534,55.0,Warden Magellan vs. Pirate Luffy,19,2009-03-09
+535,55.0,Friend,19,2009-03-16
+536,55.0,Level 5: Frozen Hell,19,2009-03-23
+537,55.0,A Ray of Hope,19,2009-03-30
+538,55.0,Level 5.5 New Kama Land,19,2009-04-06
+539,55.0,Emporio Energy Synthesis,19,2009-04-13
+540,55.0,Level 6: Infinite Hell,19,2009-04-27
+541,55.0,The Greatest Ever,19,2009-05-11
+542,56.0,Yet Another Epic Incident,19,2009-05-18
+543,56.0,Straw Hat and Blackbeard,19,2009-05-25
+544,56.0,The Lid to the Cauldron of Hell Opens,19,2009-06-01
+545,56.0,To Sunshine and Freedom,19,2009-06-08
+546,56.0,"Fish-Man Pirate Captain Jimbei, Warlord of the Sea",17,2009-06-15
+547,56.0,Island Ripper,19,2009-06-22
+548,56.0,Thank You,19,2009-06-29
+549,56.0,Battleship,19,2009-07-06
+550,56.0,Navy Headquarters,19,2009-07-18
+551,56.0,Whitebeard of The Four Emperors,19,2009-07-27
+552,57.0,Ace and Whitebeard,19,2009-08-03
+553,57.0,Summit Battle,17,2009-08-10
+554,57.0,Admiral Akainu,15,2009-08-24
+555,57.0,Oars and the Hat,19,2009-08-31
+556,57.0,Justice Will Prevail!,17,2009-09-07
+557,57.0,Luffy and Whitebeard,17,2009-09-19
+558,57.0,Little Brother,17,2009-09-28
+559,57.0,Destiny,17,2009-10-05
+560,57.0,Prisoners of Impel Down,17,2009-10-10
+561,57.0,Luffy vs. Mihawk,17,2009-10-26
+562,57.0,Whirl Spider Squard,17,2009-11-02
+563,58.0,"One Man, One Heart",17,2009-11-09
+564,58.0,The Man Who Shook The World,17,2009-11-21
+565,58.0,Oars' Path,17,2009-11-30
+566,58.0,Raid,19,2009-12-07
+567,58.0,Marineford Navy Headquarters - Oris Plaza,19,2009-12-14
+568,58.0,Have It Your Way!,15,2009-12-21
+569,58.0,White Monster,15,2010-01-04
+570,58.0,The Bridge of Life,15,2010-01-18
+571,58.0,The Execution Platform,17,2010-01-25
+572,58.0,The Times They Are A'Changin,17,2010-02-01
+573,58.0,"The Name of This Era is ""Whitebeard""",17,2010-02-08
+574,59.0,The Death of Portgaz D. Ace,17,2010-02-15
+575,59.0,Voiceless Rage,15,2010-02-22
+576,59.0,The Great Pirate Edward Newgate,17,2010-03-08
+577,59.0,Outrageous Events One After Another,17,2010-03-15
+578,59.0,A Gift for the New Era,19,2010-03-20
+579,59.0,A Few Seconds of Courage,17,2010-03-29
+580,59.0,The War's Conclusion,15,2010-04-05
+581,59.0,Creeping Future,17,2010-04-19
+582,59.0,Luffy and Ace,19,2010-04-26
+583,59.0,Gray Ternimal,17,2010-05-10
+584,59.0,Incident With Porchemy,17,2010-05-17
+585,60.0,Brotherly Pact,19,2010-05-24
+586,60.0,City of Stench,19,2010-05-31
+587,60.0,I Will Never Run Away,19,2010-06-07
+588,60.0,Sabo's Ocean,19,2010-06-14
+589,60.0,Will Of The Winds,19,2010-06-28
+590,60.0,My Little Brother,19,2010-07-05
+591,60.0,Are You Sure About That?,19,2010-07-12
+592,60.0,Cheer,19,2010-07-17
+593,60.0,News,19,2010-07-26
+594,60.0,Message,19,2010-08-02
+595,61.0,The Pledge,19,2010-08-09
+596,61.0,Spectrum,19,2010-08-23
+597,61.0,3D2Y,19,2010-08-30
+598,61.0,Two Years Later,24,2010-10-04
+599,61.0,Nine Pirates,19,2010-10-09
+600,61.0,Island of New Beginnings,19,2010-10-18
+601,61.0,Romance Dawn For The New World,19,2010-10-25
+602,61.0,Downward Ho!,17,2010-11-01
+603,61.0,Keep That In Mind,17,2010-11-08
+604,62.0,To The Deep Sea,19,2010-11-15
+605,62.0,The Kraken and the Pirates,19,2010-11-29
+606,62.0,Deep Sea Adventure,17,2010-12-06
+607,62.0,"30,000 Feet Under the Sea",17,2010-12-13
+608,62.0,Underwater Paradise,17,2010-12-20
+609,62.0,Adventure On Fish-Man Island,19,2011-01-04
+610,62.0,"Madam Sharley, Fortune-Teller",15,2011-01-17
+611,62.0,Hody Jones,17,2011-01-24
+612,62.0,Taken by the Shark They Saved,19,2011-01-31
+613,62.0,Mermaid Princess of Shell Tower,17,2011-02-07
+614,62.0,Too Late Now,17,2011-02-14
+615,63.0,Mark-Mark Curse,17,2011-02-21
+616,63.0,Anniversary for Revenge,17,2011-02-28
+617,63.0,Incident at Coral Hill,17,2011-03-14
+618,63.0,Proposal,19,2011-03-19
+619,63.0,At the Forest of the Sea,17,2011-04-04
+620,63.0,The Wonderful Amusement Park,17,2011-04-11
+621,63.0,Otohime and Tiger,17,2011-04-18
+622,63.0,The Sun Pirates,19,2011-04-25
+623,63.0,Fisher Tiger the Pirate,19,2011-05-09
+624,63.0,Queen Otohime,17,2011-05-16
+625,63.0,Uninherited Will,19,2011-05-23
+626,63.0,Neptune Brothers,19,2011-05-30
+627,64.0,Thank You,19,2011-06-06
+628,64.0,Spring Cleaning,19,2011-06-20
+629,64.0,Former Warlord in the Way,19,2011-06-27
+630,64.0,Getting Violent,19,2011-07-04
+631,64.0,Conchcorde Plaza,19,2011-07-11
+632,64.0,I Knew,19,2011-07-16
+633,64.0,Friend or Foe,19,2011-08-01
+634,64.0,"100,000 vs. 10",19,2011-08-08
+635,64.0,So Scared I Ran Up to the Sky,19,2011-08-22
+636,64.0,General from Futureland,19,2011-08-29
+637,65.0,The Ancient Ark,19,2011-09-05
+638,65.0,Escape-Hoshi,19,2011-09-12
+639,65.0,Protect Everything,19,2011-09-17
+640,65.0,Above Fish-Man Island,19,2011-09-26
+641,65.0,What Are You?,19,2011-10-08
+642,65.0,Lost All Face,19,2011-10-17
+643,65.0,Phantom,19,2011-10-24
+644,65.0,To Nothing,19,2011-10-31
+645,65.0,Death Is Another Form of Revenge,19,2011-11-07
+646,65.0,Frog,19,2011-11-21
+647,66.0,"Stop, Noah",19,2011-11-28
+648,66.0,The Road Toward the Sun,19,2011-12-05
+649,66.0,The Dance of Breams and Plaices,19,2011-12-12
+650,66.0,Two Changes to Be Aware Of,17,2011-12-19
+651,66.0,A Voice From the New World,19,2012-01-04
+652,66.0,A Premonition of Stormy Seas,17,2012-01-16
+653,66.0,The Hero Hat,19,2012-01-23
+654,66.0,A Gam of Whales,19,2012-01-30
+655,66.0,Punk Hazard,19,2012-02-06
+656,66.0,Adventure on the Burning Island,19,2012-02-13
+657,67.0,Severed Head,17,2012-02-20
+658,67.0,The Biscuits Room,19,2012-03-05
+659,67.0,About My Torso,19,2012-03-12
+660,67.0,"Trafalgar Law, Warlord of the Sea",19,2012-03-19
+661,67.0,Lakeside Bandits,19,2012-03-26
+662,67.0,Warlord Law Vs. Vice Admiral Smoker,19,2012-04-02
+663,67.0,CC,19,2012-04-16
+664,67.0,Master Caesar Clown,19,2012-04-23
+665,67.0,Candy,17,2012-05-07
+666,67.0,Yeti Cool Brothers,17,2012-05-14
+667,67.0,Cool Fight,19,2012-05-21
+668,68.0,Pirate Alliance,19,2012-05-28
+669,68.0,Commence Operation,17,2012-06-04
+670,68.0,Blizzard With a Chance of Slime,17,2012-06-11
+671,68.0,Gas-Gas Fruit,17,2012-06-18
+672,68.0,My Name Is Kin'emon!!,19,2012-07-02
+673,68.0,Vergo and Joker,19,2012-07-09
+674,68.0,The Observers,17,2012-07-14
+675,68.0,I Call It Land of the Dead,19,2012-07-30
+676,68.0,The Perfect Weapon of Mass Murder,19,2012-08-06
+677,68.0,Counter Hazard!!,19,2012-08-20
+678,68.0,Lobby of Laboratory Building A,17,2012-08-27
+679,69.0,The G-5 Spirit,19,2012-09-03
+680,69.0,G-5 Commander Vergo the Bamboo Demon,19,2012-09-10
+681,69.0,Luffy vs. Master,19,2012-09-15
+682,69.0,Puppet Master,19,2012-09-24
+683,69.0,An Icy Woman,19,2012-10-06
+684,69.0,"Don't Do It, Vegapunk",19,2012-10-15
+685,69.0,My Name is Momonosuke,19,2012-10-22
+686,69.0,The Snow-Woman in the Biscuits Room,19,2012-10-29
+687,69.0,Wild Beast,19,2012-11-05
+688,69.0,Mocha,19,2012-11-12
+689,69.0,The Island That's There but Isn't There,19,2012-11-26
+690,69.0,S.A.D.,19,2012-12-03
+691,70.0,King of the Land of the Dead,21,2012-12-10
+692,70.0,Assassins from Dressrosa,19,2012-12-17
+693,70.0,Die for Me,17,2012-12-22
+694,70.0,The Most Dangerous Man,17,2013-01-04
+695,70.0,Leave It to Us!!!,19,2013-01-21
+696,70.0,Alignment of Interests,19,2013-01-28
+697,70.0,A Deal,19,2013-02-04
+698,70.0,Enter Doflamingo,19,2013-02-09
+699,70.0,Morning Edition,19,2013-02-25
+700,70.0,His Momentum,19,2013-03-04
+701,71.0,"Adventure in the Land of Love, Passion, and Toys",19,2013-03-11
+702,71.0,Corrida Coliseum,15,2013-03-25
+703,71.0,Waiting Room,19,2013-04-01
+704,71.0,Lucy and the Statue of Kyros,19,2013-04-08
+705,71.0,Maynard the Pursuer,19,2013-04-15
+706,71.0,I Ain't Gonna Laugh at Ya,15,2013-04-22
+707,71.0,Block B,17,2013-04-27
+708,71.0,Coliseum of Scoundrels,15,2013-05-13
+709,71.0,King Punch!!,19,2013-05-20
+710,71.0,To Greenbit,19,2013-06-10
+711,71.0,Adventure in the Land of the Little People,19,2013-06-17
+712,72.0,Violet,19,2013-07-01
+713,72.0,Usoland,19,2013-07-08
+714,72.0,Lucy and Moocy,19,2013-07-13
+715,72.0,The Battleground of Block C,19,2013-07-22
+716,72.0,Don Chin Jao,19,2013-08-05
+717,72.0,Dressrosa's Forgotten,19,2013-08-12
+718,72.0,Riku Royal Army at the Flower Field,19,2013-08-26
+719,72.0,"Open, Chin Jao",19,2013-09-02
+720,72.0,Prison-Gladiators,19,2013-09-09
+721,72.0,Rebecca and the Soldier,19,2013-09-14
+722,73.0,Royal Bloodlines,19,2013-09-30
+723,73.0,Change of Plans,19,2013-10-07
+724,73.0,Law's Plan,19,2013-10-12
+725,73.0,The Undefeated Woman,17,2013-10-21
+726,73.0,The Riku Family,19,2013-11-02
+727,73.0,The Hero's Ambush,19,2013-11-11
+728,73.0,The Number of Tragedies,19,2013-11-18
+729,73.0,Warlord Doflamingo vs. Warlord Law,17,2013-11-25
+730,73.0,Three Cards,19,2013-12-09
+731,73.0,Operation Dressrosa S.O.P.,19,2013-12-16
+732,74.0,An Underground World,19,2013-12-21
+733,74.0,What the Soldier Wants,19,2014-01-04
+734,74.0,The Slicing Winds of Rommel,19,2014-01-20
+735,74.0,Fujitora's Plan,19,2014-01-27
+736,74.0,Supreme Officer Diamante,19,2014-02-03
+737,74.0,Officer's Tower,19,2014-02-10
+738,74.0,"Trebol Army, Special Officer Sugar",19,2014-02-24
+739,74.0,Captain,19,2014-03-03
+740,74.0,It's in Your Hands!!!,19,2014-03-10
+741,74.0,Usoland the Liar,19,2014-03-17
+742,74.0,Ever at Your Side,19,2014-03-31
+743,75.0,Dressrosa Trembles,19,2014-04-07
+744,75.0,Revolutionary Army Chief of Staff,19,2014-04-14
+745,75.0,The Birdcage,19,2014-04-28
+746,75.0,Stars,19,2014-05-12
+747,75.0,Supreme Officer Pica,19,2014-05-19
+748,75.0,Repaying the Debt,17,2014-05-26
+749,75.0,"Onward, Gallery of Rogues!!",17,2014-06-02
+750,75.0,Flashpoints,19,2014-06-23
+751,75.0,Sabo vs. Admiral Fujitora,17,2014-06-30
+752,75.0,Palm,17,2014-07-07
+753,76.0,Battle,17,2014-07-19
+754,76.0,Making Acquaintance,17,2014-07-28
+755,76.0,A Man's World,17,2014-08-04
+756,76.0,The Fourth Step,19,2014-08-11
+757,76.0,Trump Card,17,2014-08-25
+758,76.0,Just Keep Going,17,2014-09-01
+759,76.0,Secret Plan,17,2014-09-08
+760,76.0,The Same Bet,13,2014-09-13
+761,76.0,The Op-Op Fruit,15,2014-09-22
+762,76.0,The White Town,17,2014-10-06
+763,76.0,Declaration of Humanity,17,2014-10-11
+764,77.0,White Monster,19,2014-10-20
+765,77.0,"Minion, the Isle of Fate",17,2014-10-27
+766,77.0,Smile,17,2014-11-10
+767,77.0,Cora,17,2014-11-17
+768,77.0,The Trigger That Day,15,2014-11-22
+769,77.0,Bellamy The Pirate,17,2014-12-01
+770,77.0,The Spear of Elbaph,17,2014-12-15
+771,77.0,"Sai, Don of the Happosui Army",19,2014-12-22
+772,77.0,Cabbage & Lomeo,17,2015-01-05
+773,77.0,Half 'n Half,19,2015-01-19
+774,77.0,"Leo, Captain of the Tontatta Warriors",15,2015-01-26
+775,77.0,To Russian With Love,19,2015-02-02
+776,78.0,Hero of the Colosseum,19,2015-02-16
+777,78.0,Zolo vs. Pica,19,2015-02-23
+778,78.0,Tactics No. 5,19,2015-03-02
+779,78.0,His Final Battle,19,2015-03-09
+780,78.0,The Heart Curse,15,2015-03-23
+781,78.0,Desire,19,2015-03-30
+782,78.0,Champion of Evil,19,2015-04-06
+783,78.0,In My Way,19,2015-04-13
+784,78.0,Gear Four,19,2015-04-27
+785,78.0,On Broken Legs,19,2015-05-11
+786,79.0,Gyats,17,2015-05-18
+787,79.0,Four Minutes Before,17,2015-05-25
+788,79.0,My Battle,17,2015-06-01
+789,79.0,LUCY!!,19,2015-06-08
+790,79.0,Heaven and Earth,19,2015-06-22
+791,79.0,Rubble,17,2015-06-29
+792,79.0,On Hands and Knees,15,2015-07-06
+793,79.0,Tiger and Dog,15,2015-07-13
+794,79.0,Sabo's Adventure,15,2015-07-18
+795,79.0,Suicide,17,2015-08-03
+796,80.0,Soldier's Conviction,19,2015-08-10
+797,80.0,Rebecca,17,2015-08-24
+798,80.0,Heart,17,2015-08-31
+799,80.0,Father and Sons,17,2015-09-07
+800,80.0,Sons' Cups,17,2015-09-19
+801,80.0,Opening Speech,17,2015-09-28
+802,80.0,Zou,17,2015-10-05
+803,80.0,Elephant Climbing,13,2015-10-10
+804,80.0,Adventure in the Land Atop the Elephant's Back,17,2015-10-26
+805,80.0,The Minks,17,2015-11-02
+806,80.0,At Rightflank Fortress,17,2015-11-09
+807,81.0,Ten Days Earlier,17,2015-11-21
+808,81.0,Duke Dogstorm,17,2015-11-30
+809,81.0,The Cat Viper,19,2015-12-07
+810,81.0,The Twirly Hat Crew Arrives,17,2015-12-21
+811,81.0,Roko,19,2016-01-04
+812,81.0,"Capone ""Gang"" Bege",17,2016-01-18
+813,81.0,Tea Party Invitation,17,2016-01-25
+814,81.0,Let's Go See The Cat Viper,17,2016-02-01
+815,81.0,Take Me with You!!,17,2016-02-08
+816,81.0,Dog vs. Cat,17,2016-02-15
+817,82.0,Raizo of the Mist,19,2016-02-29
+818,82.0,Inside the Whale,17,2016-03-07
+819,82.0,"Momonosuke, Heir to the Kozuki Clan",17,2016-03-14
+820,82.0,Cats and Dogs Have a History,17,2016-03-19
+821,82.0,Understood,19,2016-04-04
+822,82.0,Descending the Elephant,17,2016-04-11
+823,82.0,The World is Restless,17,2016-04-18
+824,82.0,Whim,19,2016-04-25
+825,82.0,Comic Strip,13,2016-05-09
+826,82.0,0 and 4,17,2016-05-23
+827,82.0,Totto Land,17,2016-05-30
+828,83.0,1 and 2,17,2016-06-06
+829,83.0,"Emperor of the Sea, Charlotte Linlin",18,2016-06-20
+830,83.0,A Man You Can Bet On,17,2016-06-27
+831,83.0,Adventure in the Mysterious Forest,17,2016-07-04
+832,83.0,Kingdom of Germa,19,2016-07-16
+833,83.0,Vinsmoke Judge,19,2016-07-25
+834,83.0,My Dream,17,2016-08-01
+835,83.0,Kingdom of Soul,19,2016-08-08
+836,83.0,Lola's Vivre Card,15,2016-08-22
+837,83.0,Luffy vs. Cracker the General,17,2016-08-29
+838,83.0,Chobro,17,2016-09-05
+839,84.0,I Owe You My Life!,17,2016-09-17
+840,84.0,The Iron Mask,17,2016-09-26
+841,84.0,To the East Blue,17,2016-10-03
+842,84.0,The Power of a Full Stomach,15,2016-10-08
+843,84.0,Vinsmoke Sanji,19,2016-10-24
+844,84.0,Luffy vs. Sanji,17,2016-10-31
+845,84.0,Forces of Rage,17,2016-11-07
+846,84.0,Tamago Security,17,2016-11-21
+847,84.0,Luffy and Big Mom,17,2016-11-28
+848,84.0,Goodbye,19,2016-12-05
+849,85.0,Chobro in the Land of Mirrors,17,2016-12-12
+850,85.0,A Ray of Light,17,2016-12-26
+851,85.0,Dog-End,17,2017-01-07
+852,85.0,Germa's Failure,17,2017-01-16
+853,85.0,Not Here,17,2017-01-30
+854,85.0,What Are You Doing?,17,2017-02-06
+855,85.0,Glurrgle!!!,17,2017-02-13
+856,85.0,Liar,17,2017-02-20
+857,85.0,Rook,17,2017-03-06
+858,85.0,Meeting,19,2017-03-13
+859,86.0,Emperor Assassination Plan,17,2017-03-18
+860,86.0,10:00 Start,17,2017-03-27
+861,86.0,Veteran Actor,17,2017-04-03
+862,86.0,Cerebral,17,2017-04-17
+863,86.0,The Honorable,19,2017-04-24
+864,86.0,The Vinsmoke Massacre Plot,17,2017-05-08
+865,86.0,"Hey, Mother",17,2017-05-15
+866,86.0,Natural Born Destroyer,17,2017-05-29
+867,86.0,Happy Birthday,17,2017-06-05
+868,86.0,KX Launcher,17,2017-06-12
+869,86.0,Castling,19,2017-06-19
+870,87.0,Parting,17,2017-07-03
+871,87.0,"You Can Do It, Caesar!!",17,2017-07-10
+872,87.0,Thick and Fluffy,19,2017-07-15
+873,87.0,Recipe For Disaster,17,2017-07-24
+874,87.0,Be My Servant,19,2017-08-07
+875,87.0,A Woman's Honor,17,2017-08-21
+876,87.0,Pudding Coincidentally Appears!!,17,2017-08-28
+877,87.0,Bittersweet,17,2017-09-04
+878,87.0,Commander Pedro of the Mink Guardians,19,2017-09-16
+879,87.0,"Big Mom's Sweet 3 General, Katakuri",17,2017-09-25
+880,88.0,Zero Escape,17,2017-10-02
+881,88.0,Wave Room,17,2017-10-07
+882,88.0,Beyond the Emperor's Expectations,17,2017-10-23
+883,88.0,Merienda,17,2017-10-30
+884,88.0,Who Is That?,17,2017-11-06
+885,88.0,I'm Brulee!!!,17,2017-11-13
+886,88.0,Way of Life,19,2017-11-27
+887,88.0,Someone Somewhere is Wishing for Your Happiness,17,2017-12-04
+888,88.0,Lion,17,2017-12-11
+889,88.0,Unfamiliar Mama,17,2017-12-25
+890,89.0,Big Mom on the Ship,19,2018-01-04
+891,89.0,They Believe in Me,17,2018-01-15
+892,89.0,Threat Confirmed,17,2018-01-29
+893,89.0,"Flampe, 36th Daughter of Charlotte",17,2018-02-05
+894,89.0,12:05,17,2018-02-10
+895,89.0,Luffy the Pirate vs. General Katakuri,17,2018-02-19
+896,89.0,One Last Thing,17,2018-03-05
+897,89.0,Pekoms's Cacao Island Escape Plan,17,2018-03-12
+898,89.0,I Will Return,17,2018-03-19
+899,89.0,The Final Fortress,17,2018-03-26
+900,89.0,Bad End Musical,19,2018-04-02
+901,90.0,Don't Let Even Death Stop You!!!,17,2018-04-16
+902,90.0,End Roll,19,2018-04-23
+903,90.0,Fifth Emperor,17,2018-05-02
+904,90.0,Introducing the Revolutionary Army Captains,15,2018-05-14
+905,90.0,What a Beautiful World,17,2018-05-28
+906,90.0,Sacred Marijoa,17,2018-06-04
+907,90.0,The Empty Throne,17,2018-06-11
+908,90.0,The Reverie Begins,17,2018-06-18
+909,90.0,Seppuku,17,2018-07-02
+910,90.0,Onward to Wano,17,2018-07-09
+911,91.0,Adventure in the Land of Samurai,19,2018-07-14
+912,91.0,Amigasa Village,19,2018-07-23
+913,91.0,The Crane Returns the Favor,17,2018-08-06
+914,91.0,Okobore Town,17,2018-08-20
+915,91.0,Bakura Town,17,2018-08-27
+916,91.0,Wano Sumo,19,2018-09-03
+917,91.0,Food Treasure Barge,17,2018-09-15
+918,91.0,Luffytaro Returns the Favor,17,2018-09-22
+919,91.0,The Ruins of Oden Castle,17,2018-10-01
+920,91.0,For Love of Oden,17,2018-10-06
+921,91.0,Shutenmaru,19,2018-10-22
+922,92.0,Supreme Commander Kaido of the Animal Kingdom Pirates,17,2018-10-29
+923,92.0,Emperor of the Sea Kaido vs. Luffy,17,2018-11-05
+924,92.0,Huh,15,2018-11-12
+925,92.0,Absence,17,2018-11-26
+926,92.0,Excavation Labor Camp,17,2018-12-03
+927,92.0,Otoko the Kamuro,15,2018-12-10
+928,92.0,Introducing Komurasaki the Oiran,17,2018-12-22
+929,92.0,"Shogun of Wano, Kurozumi Orochi",18,2019-01-07
+930,92.0,Ebisu Town,17,2019-01-21
+931,92.0,Soba Mask,17,2019-02-04
+932,93.0,Shogun and Oiran,17,2019-02-09
+933,93.0,A Warrior's Mercy,17,2019-02-18
+934,93.0,Hyogoro The Flower,15,2019-02-25
+935,93.0,Queen,17,2019-03-11
+936,93.0,Sumo Inferno,17,2019-03-18
+937,93.0,Gyukimaru on Bandit's Bridge,17,2019-03-25
+938,93.0,A Woman's Secret,13,2019-04-01
+939,93.0,The Old Leopard Never Forgets the Way,17,2019-04-15
+940,93.0,Sparks of Rebellion,17,2019-04-22
+941,93.0,The Star of Ebisu,17,2019-04-27
+942,93.0,"Daimyo of Hakumai, Shimotsuki Yasuie",17,2019-05-13
+943,94.0,SMILE,17,2019-05-27
+944,94.0,Partner,17,2019-06-03
+945,94.0,Olin,19,2019-06-10
+946,94.0,Queen vs. Olin,17,2019-06-24
+947,94.0,Queen's Gamble,17,2019-07-01
+948,94.0,Introducing Kawamatsu the Kappa,17,2019-07-08
+949,94.0,Mummy,19,2019-07-22
+950,94.0,A Soldier's Dream,17,2019-07-29
+951,94.0,Rampage,19,2019-08-05
+952,94.0,Hiyori and Kawamatsu,17,2019-08-19
+953,94.0,Once a Fox,17,2019-08-26
+954,95.0,Like a Dragon Given Wings,15,2019-09-02
+955,95.0,Enma,17,2019-09-14
+956,95.0,Big News,17,2019-09-21
+957,95.0,Ultimate,19,2019-09-30
+958,95.0,The Promised Port,15,2019-10-07
+959,95.0,Samurai,17,2019-10-21
+960,95.0,Introducing Kozuki Oden,17,2019-10-28
+961,95.0,The Mountain God Incident,17,2019-11-02
+962,95.0,Daimyo and Vassals,13,2019-11-18
+963,95.0,Becoming Samurai,17,2019-11-25
+964,95.0,Oden’s Adventure,17,2019-12-02
+965,96.0,The Kurozumi Clan's Plot,17,2019-12-16
+966,96.0,Roger and Whitebeard,17,2019-12-23
+967,96.0,Roger's Adventure,19,2020-01-04
+968,96.0,Oden's Return,17,2020-01-20
+969,96.0,Fool of a Lord,17,2020-01-27
+970,96.0,Oden vs. Kaido,17,2020-02-03
+971,96.0,Sentenced to Boil,17,2020-02-17
+972,96.0,"I am Oden, And I Was Born to Boil",19,2020-02-22
+973,96.0,The Kozuki Clan,17,2020-03-09
+974,96.0,Onward to Onigashima!!,17,2020-03-16
+975,,Kin'emon's Clever Trick,17,2020-03-23
+976,,Begging Your Pardon!!!,19,2020-04-06
+977,,The Party's Off!!!,17,2020-04-13
+978,,Introducing the Tobi Roppo,17,2020-04-27
+979,,Family Problem,17,2020-05-11
+980,,Fighting Music,17,2020-05-25
+981,,Joining the Fight,19,2020-06-08
