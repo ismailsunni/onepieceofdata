@@ -40,5 +40,5 @@ The Data of One Piece
 ### Scraping chapters
 
 ```bash
-python ./chapter.py
+python ./scripts/chapter.py
 ```
