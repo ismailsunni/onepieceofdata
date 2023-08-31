@@ -37,7 +37,7 @@ The Data of One Piece
 
 ## Scripts
 
-All scripts are run from scripts directory
+All scripts are run from scripts directory, a little bit confusing (for now) because I haven't set up the root directory
 
 ### Scraping chapters
 
@@ -48,5 +48,5 @@ python ./chapter.py
 ### Scraping volumes
 
 ```bash
-python ./volumes.py
+python ./volume_all.py
 ```
