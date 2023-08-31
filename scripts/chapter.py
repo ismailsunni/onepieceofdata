@@ -39,7 +39,7 @@ def scrap_chapter(chapter):
         full_text = char_item.text.rstrip("\n")
         note = ""
         if "(" in full_text and ")" in full_text:
-            note = full_text[full_text.find("(") + 1 : full_text.find(")")]
+            note = full_text[full_text.find("(") + 1: full_text.find(")")]
         if char_item.findAll("a"):
             char_name = char_item.findAll("a")[0].text
             char_url = char_item.findAll("a")[0]["href"]
@@ -48,7 +48,12 @@ def scrap_chapter(chapter):
             char_name = full_text
             char_url = ""
         characters.append(
-            {"name": char_name, "url": char_url, "note": note, "full_text": full_text}
+            {
+                "name": char_name,
+                "url": char_url,
+                "note": note,
+                "full_text": full_text
+            }
         )
         if note:
             print("Note for %s: %s" % (char_name, note))
@@ -69,7 +74,7 @@ if __name__ == "__main__":
             print(e)
 
         if chapter % 100 == 0:
-            with open("cache/chapters_{}.json".format(chapter), "w") as fp:
+            with open("../cache/chapters_{}.json".format(chapter), "w") as fp:
                 json.dump(chapters, fp)
-    with open("data/chapters.json", "w") as fp:
+    with open("../data/chapters.json", "w") as fp:
         json.dump(chapters, fp)
