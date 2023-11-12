@@ -119,11 +119,11 @@ def scrap_character(character_url: str):
 
     for character_section in character_sections:
         div_elements = character_section.find_all("div", {"data-source": True})
-        print(f"Number of div in section: {len(div_elements)}")
+        # print(f"Number of div in section: {len(div_elements)}")
         i = 0
         for div_element in div_elements:
             data_source = div_element.get("data-source")
-            title = div_element.find_all("h3")[0].text
+            # title = div_element.find_all("h3")[0].text
             div_content = div_element.find_all(
                 "div", {"class": "pi-data-value pi-font"}
             )[0]
@@ -146,9 +146,7 @@ def scrap_character(character_url: str):
             #     value = parse_generic(div_content)
             else:
                 value = parse_content(div_content)
-            if len(div_content.find_all("div")) > 1:
-                print(">>>>>>>>>>>>>>>>>>>>>>>>>>")
-            print(i, data_source, title, value)
+            # print(i, data_source, title, value)
             character_info[data_source] = value
             i += 1
     return character_info
@@ -164,11 +162,11 @@ def parse_all_characters():
 
     for index, row in df_head.iterrows():
         full_url = base_url + row["url"]
-        print(f"Index: {index}, id: {row['id']}, Name: {row['name']}, Url: {full_url}")
+        print(f"{index}. {row['name']} - {row['id']}")
         try:
             characters[row["id"]] = scrap_character(full_url)
         except Exception as e:
-            print(f'Failed to scrap character: {row["name"]} because {e}')
+            print(f'>>>>>> Failed on {row["name"]} {full_url} because {e} ')
 
         if index % 100 == 0:
             with open("./cache/characters_{}.json".format(index), "w") as fp:
