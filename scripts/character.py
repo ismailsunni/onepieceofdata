@@ -158,7 +158,7 @@ def parse_all_characters():
     file_path = "./data/characters.csv"
     df = pd.read_csv(file_path)
 
-    df_head = df.head(5)
+    df_head = df.head(len(df))
 
     characters = {}
 
@@ -169,6 +169,10 @@ def parse_all_characters():
             characters[row["id"]] = scrap_character(full_url)
         except Exception as e:
             print(f'Failed to scrap character: {row["name"]} because {e}')
+
+        if index % 100 == 0:
+            with open("./cache/characters_{}.json".format(index), "w") as fp:
+                json.dump(characters, fp)
 
     with open("./data/characters_detail.json", "w") as fp:
         json.dump(characters, fp, indent=2)
