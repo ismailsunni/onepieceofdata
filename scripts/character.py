@@ -18,12 +18,13 @@ def parse_affiliation(div_element):
 
 
 def parse_generic(div_element):
-    # if not div_element.find("br"):
     text = remove_footnote(div_element.text)
-    return [x.strip() for x in text.split(";")]
-    # else:
-    # text_content = div_element.get_text(separator=" ", strip=True)
-    # return remove_footnote(text_content).replace("( ", "(").replace(" )", ")")
+    if ";" in text:
+        return [x.strip() for x in text.split(";")]
+    else:
+        new_div = BeautifulSoup(str(div_element).replace("<br/>", ";"))
+        text = remove_footnote(new_div.text)
+        return [x.strip() for x in text.split(";")]
 
 
 def parse_list(div_element):
@@ -58,7 +59,7 @@ def parse_birthday(full_birthday):
 
 def parse_bounty(bounties):
     values = [b.replace(",", "") for b in bounties]
-    return max(values)
+    return values
 
 
 def parse_alias(aliases):
@@ -99,13 +100,13 @@ def scrap_character(character_url: str):
                 "div", {"class": "pi-data-value pi-font"}
             )[0]
 
-            if data_source == "age":
-                value = parse_content(div_content)
-                value = parse_age(value)
-            elif data_source == "height":
-                value = parse_content(div_content)
-                value = parse_height(value)
-            elif data_source == "bounty":
+            # if data_source == "age":
+            #     value = parse_content(div_content)
+            #     value = parse_age(value)
+            # elif data_source == "height":
+            #     value = parse_content(div_content)
+            #     value = parse_height(value)
+            if data_source == "bounty":
                 value = parse_content(div_content)
                 value = parse_bounty(value)
             elif data_source == "alias" or data_source == "epithet":
@@ -115,7 +116,7 @@ def scrap_character(character_url: str):
             #     value = parse_generic(div_content)
             else:
                 value = parse_content(div_content)
-            # print(i, data_source, title, value)
+            # print(i, data_source, value)
             character_info[data_source] = value
             i += 1
     return character_info
