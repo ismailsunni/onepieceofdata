@@ -176,11 +176,17 @@ def parse_all_characters():
         json.dump(characters, fp, indent=2)
 
 
+def pretty_print(value: dict):
+    for k, v in value.items():
+        print(k, v)
+
+
 if __name__ == "__main__":
-    url = "https://onepiece.fandom.com/wiki/Monkey_D._Luffy"
+    url = "https://onepiece.fandom.com/wiki/Sanji"
 
-    # result = scrap_character(url)
+    result = scrap_character(url)
+    pretty_print(result)
 
-    parse_all_characters()
+    # parse_all_characters()
 
     print("fin")
