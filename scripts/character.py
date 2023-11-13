@@ -7,11 +7,6 @@ import re
 base_url = "https://onepiece.fandom.com"
 
 
-def parse_debut(div_element):
-    a_elements = div_element.find_all("a")
-    return a_elements[0].text.split(" ")[1]
-
-
 def parse_affiliation(div_element):
     a_elements = div_element.find_all("a")
     affiliations = []
@@ -49,24 +44,12 @@ def parse_content(div_element):
 
 def parse_age(ages):
     values = [remove_note(a) for a in ages]
-    age_ints = convert_integers(values)
-    return max(age_ints)
+    return values
 
 
 def parse_height(heights):
     values = [remove_note(h) for h in heights]
-    in_cm = True
-    if "cm" not in "".join(heights):
-        in_cm = False
-    # remove cm
-    values = [h.split(" ")[0] for h in values]
-    height_ints = convert_integers(values)
-    height_int = max(height_ints)
-    if not in_cm:
-        # Assume in meters, TODO: must be validated
-        return height_int * 100
-    else:
-        return height_int
+    return values
 
 
 def parse_birthday(full_birthday):
@@ -75,24 +58,12 @@ def parse_birthday(full_birthday):
 
 def parse_bounty(bounties):
     values = [b.replace(",", "") for b in bounties]
-    values = convert_integers(values)
     return max(values)
 
 
 def parse_alias(aliases):
     # Removing japanesse notes
     return [remove_note(a) for a in aliases]
-
-
-def convert_integers(strings):
-    ints = []
-    for s in strings:
-        try:
-            ints.append(int(s))
-        except ValueError:
-            print(f"Can not convert to int: {strings}")
-            ints.append(None)
-    return ints
 
 
 def remove_footnote(text):
@@ -128,9 +99,7 @@ def scrap_character(character_url: str):
                 "div", {"class": "pi-data-value pi-font"}
             )[0]
 
-            if data_source == "first":
-                value = parse_debut(div_content)
-            elif data_source == "age":
+            if data_source == "age":
                 value = parse_content(div_content)
                 value = parse_age(value)
             elif data_source == "height":
