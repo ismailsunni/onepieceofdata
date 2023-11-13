@@ -22,7 +22,7 @@ def parse_generic(div_element):
     if ";" in text:
         return [x.strip() for x in text.split(";")]
     else:
-        new_div = BeautifulSoup(str(div_element).replace("<br/>", ";"))
+        new_div = BeautifulSoup(str(div_element).replace("<br/>", ";"), "html.parser")
         text = remove_footnote(new_div.text)
         return [x.strip() for x in text.split(";")]
 
@@ -131,6 +131,7 @@ def parse_all_characters():
     characters = {}
 
     for index, row in df_head.iterrows():
+        # Check isnan here
         full_url = base_url + row["url"]
         print(f"{index}. {row['name']} - {row['id']}")
         try:
@@ -154,9 +155,9 @@ def pretty_print(value: dict):
 if __name__ == "__main__":
     url = "https://onepiece.fandom.com/wiki/Sanji"
 
-    result = scrap_character(url)
-    pretty_print(result)
+    # result = scrap_character(url)
+    # pretty_print(result)
 
-    # parse_all_characters()
+    parse_all_characters()
 
     print("fin")
