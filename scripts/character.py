@@ -126,14 +126,21 @@ def parse_all_characters():
     file_path = "./data/characters.csv"
     df = pd.read_csv(file_path)
 
-    df_head = df.head(len(df))
+    selected_rows = df.head(len(df))
+    # selected_rows = df.iloc[700 : len(df)]
 
     characters = {}
 
-    for index, row in df_head.iterrows():
-        # Check isnan here
-        full_url = base_url + row["url"]
+    for index, row in selected_rows.iterrows():
         print(f"{index}. {row['name']} - {row['id']}")
+
+        # Check isnan here
+        if pd.isna(row["url"]):
+            print(f"     {row['name']} has no URL")
+            characters[row["id"]] = {}
+            continue
+
+        full_url = base_url + row["url"]
         try:
             characters[row["id"]] = scrap_character(full_url)
         except Exception as e:
