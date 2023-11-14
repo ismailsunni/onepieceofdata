@@ -6,38 +6,38 @@ The Data of One Piece
 
 1. Install `virtualenv`
 
-    ```bash
-    pip install virtualenv
+   ```bash
+   pip install virtualenv
 
-    ```
+   ```
 
 2. Create virtual environment
 
-    ```bash
-    virtualenv .venv
-    ```
+   ```bash
+   virtualenv .venv
+   ```
 
 3. Activate virtual environment
 
-    ```bash
-    source .venv/bin/activate
-    ```
+   ```bash
+   source .venv/bin/activate
+   ```
 
 4. Install requirements
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 5. Deactivate virtual environment
 
-    ```bash
-    deactivate
-    ```
+   ```bash
+   deactivate
+   ```
 
 ## Scripts
 
-All scripts are run from scripts directory, a little bit confusing (for now) because I haven't set up the root directory
+All scripts are run from root directory, a little bit confusing (for now) because I haven't set up the root directory
 
 ### Scraping chapters
 
