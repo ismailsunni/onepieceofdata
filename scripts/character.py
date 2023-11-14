@@ -133,6 +133,13 @@ def scrap_character_solo(character):
 
     result = {}
     if not url or pd.isna(url):
+        print(f">>>>>> URL is null for {name}")
+        result[char_id] = {}
+        return result
+    if "http" in url or "Video_Games" in url:
+        print(
+            f">>>>>> URL is outside onepiece wikia or a video game specific for {name}"
+        )
         result[char_id] = {}
         return result
 
@@ -190,7 +197,7 @@ def parse_all_characters_parallel():
 
     # Number of processes to use
 
-    num_processes = 7
+    num_processes = 6
 
     # Process rows in parallel using multiprocessing.Pool
     with Pool(num_processes) as pool:
