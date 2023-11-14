@@ -5944,7 +5944,7 @@
         "F"
       ],
       "bounty": [
-        "Unknown"
+        "6000000000"
       ],
       "jva": [
         "Hidekatsu Shibata"
@@ -10179,6 +10179,9 @@
         "Alive"
       ]
     }
+  },
+  {
+    "id": {}
   },
   {
     "id": {}
@@ -18084,9 +18087,6 @@
     }
   },
   {
-    "id": {}
-  },
-  {
     "id": {
       "jname": [
         "\u30c1\u30a7\u30b9\u30ad\u30c3\u30d1"
@@ -21454,6 +21454,40 @@
   {
     "id": {
       "jname": [
+        "\u30ae\u30e7\u30ae\u30e7"
+      ],
+      "rname": [
+        "Gyogyo"
+      ],
+      "ename": [
+        "Gyogyo"
+      ],
+      "first": [
+        "Chapter 498",
+        "Episode 392"
+      ],
+      "affiliation": [
+        "Bonney Pirates"
+      ],
+      "occupation": [
+        "Fishmonger (former)",
+        "Pirate",
+        ""
+      ],
+      "origin": [
+        "South Blue"
+      ],
+      "residence": [
+        "Sorbet Kingdom (former)"
+      ],
+      "status": [
+        "Alive"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
         "X\u30fb\u30c9\u30ec\u30fc\u30af"
       ],
       "rname": [
@@ -21637,6 +21671,70 @@
       ],
       "Funi eva": [
         "Jason Kane"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30df\u30ce\u30eb\u30d0"
+      ],
+      "rname": [
+        "Minoruba"
+      ],
+      "ename": [
+        "Minoruba"
+      ],
+      "first": [
+        "Chapter 498",
+        "Episode 392"
+      ],
+      "affiliation": [
+        "Sabaody Archipelago"
+      ],
+      "occupation": [
+        "Bounty Hunter"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "birth": [
+        "February 18th"
+      ],
+      "jva": [
+        "Takahiro Fujimoto"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30ab\u30a4\u30ea\u30b1\u30f3"
+      ],
+      "rname": [
+        "Kairiken"
+      ],
+      "ename": [
+        "Kairiken"
+      ],
+      "first": [
+        "Chapter 498",
+        "Episode 392"
+      ],
+      "affiliation": [
+        "Sabaody Archipelago"
+      ],
+      "occupation": [
+        "Bounty Hunter"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "birth": [
+        "January 24th"
+      ],
+      "jva": [
+        "Keiji Hirai"
       ]
     }
   },
@@ -38467,6 +38565,41 @@
   {
     "id": {
       "jname": [
+        "\u30e9\u30fc\u30e1\u30f3"
+      ],
+      "rname": [
+        "R\u0101men"
+      ],
+      "ename": [
+        "N/A"
+      ],
+      "first": [
+        "Chapter 823",
+        "Episode 777"
+      ],
+      "affiliation": [
+        "Happo Navy"
+      ],
+      "occupation": [
+        "King"
+      ],
+      "residence": [
+        "Kano Country"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "jva": [
+        "Unknown"
+      ],
+      "Funi eva": [
+        "Alex Mai"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
         "\u30cf\u30f3\u30fb\u30d0\u30fc\u30ac\u30fc"
       ],
       "rname": [
@@ -38502,6 +38635,38 @@
   {
     "id": {
       "jname": [
+        "\u30bb\u30fc\u30b6"
+      ],
+      "rname": [
+        "S\u0113za"
+      ],
+      "ename": [
+        "N/A"
+      ],
+      "first": [
+        "Chapter 823",
+        "Episode 777"
+      ],
+      "affiliation": [
+        "Levely"
+      ],
+      "occupation": [
+        "King"
+      ],
+      "residence": [
+        "Ilisia Kingdom"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "jva": [
+        "Unknown"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
         "\u30d3\u30fc\u30eb6\u4e16"
       ],
       "rname": [
@@ -38528,6 +38693,143 @@
       ],
       "Funi eva": [
         "Nazeeh Tarsha"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30c6\u30a3\u30fc4\u4e16"
+      ],
+      "rname": [
+        "T\u012b Yonsei"
+      ],
+      "ename": [
+        "N/A"
+      ],
+      "first": [
+        "Chapter 823",
+        "Episode 777"
+      ],
+      "affiliation": [
+        "Levely"
+      ],
+      "occupation": [
+        "King"
+      ],
+      "residence": [
+        "Eigis Kingdom"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "jva": [
+        "Unknown"
+      ],
+      "Funi eva": [
+        "Chris Long"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30c1\u30e3\u30c3\u30d7"
+      ],
+      "rname": [
+        "Chappu"
+      ],
+      "ename": [
+        "N/A"
+      ],
+      "first": [
+        "Chapter 823",
+        "Episode 777"
+      ],
+      "affiliation": [
+        "Levely"
+      ],
+      "occupation": [
+        "King"
+      ],
+      "residence": [
+        "Deul Kingdom"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "jva": [
+        "Unknown"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30a4\u30ef\u30c8\u30d3"
+      ],
+      "rname": [
+        "Iwatobi"
+      ],
+      "ename": [
+        "N/A"
+      ],
+      "first": [
+        "Chapter 823",
+        "Episode 777"
+      ],
+      "affiliation": [
+        "Levely"
+      ],
+      "occupation": [
+        "King"
+      ],
+      "residence": [
+        "Whiteland Kingdom"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "jva": [
+        "Unknown"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30d0\u30f3\u30fb\u30c9\u30c7\u30b7\u30cd"
+      ],
+      "rname": [
+        "Ban Dodeshine"
+      ],
+      "ename": [
+        "N/A"
+      ],
+      "first": [
+        "Chapter 823",
+        "Episode 777"
+      ],
+      "affiliation": [
+        "Levely"
+      ],
+      "occupation": [
+        "Queen"
+      ],
+      "origin": [
+        "East Blue"
+      ],
+      "residence": [
+        "Frauce Kingdom"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "jva": [
+        "Yui Kano"
+      ],
+      "Funi eva": [
+        "SuzAnne DeCarma"
       ]
     }
   },
@@ -44800,17 +45102,17 @@
   {
     "id": {
       "jname": [
-        "\u30c6\u30a3\u30fc4\u4e16"
+        "\u30dd\u30c8\u30d5"
       ],
       "rname": [
-        "T\u012b Yonsei"
+        "Potofu"
       ],
       "ename": [
         "N/A"
       ],
       "first": [
-        "Chapter 823",
-        "Episode 777"
+        "Chapter 908",
+        "Episode 889"
       ],
       "affiliation": [
         "Levely"
@@ -44818,72 +45120,31 @@
       "occupation": [
         "King"
       ],
-      "residence": [
-        "Eigis Kingdom"
-      ],
       "status": [
         "Alive"
       ],
       "jva": [
-        "Unknown"
+        "Koji Haramaki"
       ],
       "Funi eva": [
-        "Chris Long"
+        "David Wilson-Brown"
       ]
     }
   },
   {
     "id": {
       "jname": [
-        "\u30d0\u30f3\u30fb\u30c9\u30c7\u30b7\u30cd"
+        "\u30b5\u30e2\u30b5"
       ],
       "rname": [
-        "Ban Dodeshine"
+        "Samosa"
       ],
       "ename": [
         "N/A"
       ],
       "first": [
-        "Chapter 823",
-        "Episode 777"
-      ],
-      "affiliation": [
-        "Levely"
-      ],
-      "occupation": [
-        "Queen"
-      ],
-      "origin": [
-        "East Blue"
-      ],
-      "residence": [
-        "Frauce Kingdom"
-      ],
-      "status": [
-        "Alive"
-      ],
-      "jva": [
-        "Yui Kano"
-      ],
-      "Funi eva": [
-        "SuzAnne DeCarma"
-      ]
-    }
-  },
-  {
-    "id": {
-      "jname": [
-        "\u30c1\u30e3\u30c3\u30d7"
-      ],
-      "rname": [
-        "Chappu"
-      ],
-      "ename": [
-        "N/A"
-      ],
-      "first": [
-        "Chapter 823",
-        "Episode 777"
+        "Chapter 908",
+        "Episode 889"
       ],
       "affiliation": [
         "Levely"
@@ -44891,14 +45152,14 @@
       "occupation": [
         "King"
       ],
-      "residence": [
-        "Deul Kingdom"
-      ],
       "status": [
         "Alive"
       ],
       "jva": [
-        "Unknown"
+        "Hiromu Miyazaki"
+      ],
+      "Funi eva": [
+        "Phil Parsons"
       ]
     }
   },
@@ -49882,41 +50143,6 @@
   {
     "id": {
       "jname": [
-        "\u30e9\u30fc\u30e1\u30f3"
-      ],
-      "rname": [
-        "R\u0101men"
-      ],
-      "ename": [
-        "N/A"
-      ],
-      "first": [
-        "Chapter 823",
-        "Episode 777"
-      ],
-      "affiliation": [
-        "Happo Navy"
-      ],
-      "occupation": [
-        "King"
-      ],
-      "residence": [
-        "Kano Country"
-      ],
-      "status": [
-        "Alive"
-      ],
-      "jva": [
-        "Unknown"
-      ],
-      "Funi eva": [
-        "Alex Mai"
-      ]
-    }
-  },
-  {
-    "id": {
-      "jname": [
         "\u30ed\u30c3\u30af\u30b9\u30fbD\u30fb\u30b8\u30fc\u30d9\u30c3\u30af"
       ],
       "rname": [
@@ -52990,7 +53216,7 @@
     }
   },
   {
-    "id": {}
+    "Wandering_Kung_Fu_Dugong": {}
   },
   {
     "id": {}
@@ -52999,19 +53225,19 @@
     "id": {}
   },
   {
-    "id": {}
+    "Baroque_Panda": {}
   },
   {
-    "id": {}
+    "Smiley_Risu": {}
   },
   {
-    "id": {}
+    "Hid%C3%A9lie_Penguin": {}
   },
   {
-    "id": {}
+    "Kaio_Dragon": {}
   },
   {
-    "id": {}
+    "Silver_Bat": {}
   },
   {
     "id": {
@@ -53628,6 +53854,34 @@
   {
     "id": {
       "jname": [
+        "\u30a4\u30e4\u30f3\u30a8\u30fc\u30ce\u30a6\u30fb\u30c1\u30ce\u30c7"
+      ],
+      "rname": [
+        "Iyan'\u0113n\u014d Chinode"
+      ],
+      "ename": [
+        "N/A"
+      ],
+      "first": [
+        "Chapter 1074"
+      ],
+      "affiliation": [
+        "World Economy News Paper"
+      ],
+      "occupation": [
+        "Newspaper Columnist"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "age": [
+        "24"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
         "\u30b2\u30ed\u30c6\u30a3\u30cb\u30fc"
       ],
       "rname": [
@@ -53895,6 +54149,43 @@
   {
     "id": {
       "jname": [
+        "\u30d6\u30eb\u30fc\u30b0\u30e9\u30b9"
+      ],
+      "rname": [
+        "Bur\u016bgurasu"
+      ],
+      "ename": [
+        "Bluegrass"
+      ],
+      "first": [
+        "Chapter 1089"
+      ],
+      "affiliation": [
+        "Marines"
+      ],
+      "occupation": [
+        "Vice Admiral"
+      ],
+      "status": [
+        "Alive"
+      ],
+      "dfname": [
+        "Nori Nori no Mi"
+      ],
+      "dfename": [
+        "Ride-Ride Fruit"
+      ],
+      "dfmeaning": [
+        "Ride"
+      ],
+      "dftype": [
+        "Paramecia"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
         "\u30a8\u30f3\u30dd\u30ea\u30aa\u30fb\u30a4\u30ef\u30f3\u30b3\u30d5"
       ],
       "rname": [
@@ -54023,6 +54314,89 @@
       ],
       "Funi eva": [
         "Martin Cervantes"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30af\u30e9\u30c3\u30d7"
+      ],
+      "rname": [
+        "Kurappu"
+      ],
+      "ename": [
+        "Clapp"
+      ],
+      "first": [
+        "Chapter 1095"
+      ],
+      "occupation": [
+        "Slave",
+        "Church manager (former)"
+      ],
+      "origin": [
+        "Sorbet Kingdom"
+      ],
+      "status": [
+        "Deceased"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30b8\u30cb\u30fc"
+      ],
+      "rname": [
+        "Jin\u012b"
+      ],
+      "ename": [
+        "Ginny"
+      ],
+      "first": [
+        "Chapter 1095"
+      ],
+      "affiliation": [
+        "Revolutionary Army (East Army)",
+        "Freedom Fighters (former)"
+      ],
+      "occupation": [
+        "East Army Captain of the Revolutionary Army, Slave (former)"
+      ],
+      "residence": [
+        "South Blue (Sorbet Kingdom)"
+      ],
+      "status": [
+        "Deceased"
+      ],
+      "age2": [
+        "39"
+      ]
+    }
+  },
+  {
+    "id": {
+      "jname": [
+        "\u30d9\u30b3\u30ea"
+      ],
+      "rname": [
+        "Bekori"
+      ],
+      "ename": [
+        "Bekori"
+      ],
+      "first": [
+        "Chapter 1097"
+      ],
+      "occupation": [
+        "King (former)"
+      ],
+      "residence": [
+        "Sorbet Kingdom"
+      ],
+      "status": [
+        "Alive"
       ]
     }
   }
