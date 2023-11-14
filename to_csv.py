@@ -16,6 +16,7 @@ chapter_volume = []
 chapter_name = []
 chapter_page = []
 chapter_date = []
+chapter_jump = []
 
 character_ids = []
 character_names = []
@@ -36,6 +37,7 @@ for chapter in chapter_list:
     chapter_name.append(chapter["ename"])
     chapter_page.append(int(chapter["page"].replace("\xa0*", " ")))
     chapter_date.append(datetime.strptime(chapter["date2"], "%B %d, %Y"))
+    chapter_jump.append(chapter["jump"])
 
     # Characters
     for character in chapter["characters"]:
@@ -63,10 +65,11 @@ chapters = {
     "name": chapter_name,
     "page": chapter_page,
     "date": chapter_date,
+    "jump": chapter_jump,
 }
 
 chapters_df = pd.DataFrame(
-    chapters, columns=["chapter", "volume", "name", "page", "date"]
+    chapters, columns=["chapter", "volume", "name", "page", "date", "jump"]
 )
 print(chapters_df)
 
