@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import json
 import pandas as pd
 import re
+from multiprocessing import Pool
+from datetime import datetime
 
 base_url = "https://onepiece.fandom.com"
 
@@ -122,6 +124,28 @@ def scrap_character(character_url: str):
     return character_info
 
 
+def scrap_character_solo(character):
+    char_id = character["id"]
+    name = character["name"]
+    url = character["url"]
+
+    print(f"{name} - {char_id}")
+
+    result = {}
+    if not url or pd.isna(url):
+        result[char_id] = {}
+        return result
+
+    try:
+        full_url = base_url + url
+        result["id"] = scrap_character(full_url)
+    except Exception as e:
+        result[char_id] = {}
+        print(f">>>>>> Failed on {name} because {e} ")
+
+    return result
+
+
 def parse_all_characters():
     file_path = "./data/characters.csv"
     df = pd.read_csv(file_path)
@@ -154,17 +178,45 @@ def parse_all_characters():
         json.dump(characters, fp, indent=2)
 
 
+def parse_all_characters_parallel():
+    file_path = "./data/characters.csv"
+    df = pd.read_csv(file_path)
+
+    selected_rows = df.head(len(df))
+    # selected_rows = df.iloc[700 : len(df)]
+
+    # Convert DataFrame to a list of dictionaries
+    list_of_dicts = selected_rows.to_dict(orient="records")
+
+    # Number of processes to use
+
+    num_processes = 7
+
+    # Process rows in parallel using multiprocessing.Pool
+    with Pool(num_processes) as pool:
+        characters = pool.map(scrap_character_solo, list_of_dicts)
+
+    print(f"Success to scrap {len(characters)} of {len(df)}")
+
+    with open("./data/characters_detail_parallel.json", "w") as fp:
+        json.dump(characters, fp, indent=2)
+
+
 def pretty_print(value: dict):
     for k, v in value.items():
         print(k, v)
 
 
 if __name__ == "__main__":
+    start = datetime.now()
     url = "https://onepiece.fandom.com/wiki/Sanji"
 
     # result = scrap_character(url)
     # pretty_print(result)
 
-    parse_all_characters()
+    # parse_all_characters()
+    parse_all_characters_parallel()
+    end = datetime.now()
 
+    print(end - start)
     print("fin")
