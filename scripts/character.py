@@ -145,7 +145,7 @@ def scrap_character_solo(character):
 
     try:
         full_url = base_url + url
-        result["id"] = scrap_character(full_url)
+        result[char_id] = scrap_character(full_url)
     except Exception as e:
         result[char_id] = {}
         print(f">>>>>> Failed on {name} because {e} ")
