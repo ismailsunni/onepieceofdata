@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 import json
 import pandas as pd
 import re
-from multiprocessing import Pool
+
+# from multiprocessing import Pool
 from datetime import datetime
 
 base_url = "https://onepiece.fandom.com"
@@ -93,32 +94,21 @@ def scrap_character(character_url: str):
 
     for character_section in character_sections:
         div_elements = character_section.find_all("div", {"data-source": True})
-        # print(f"Number of div in section: {len(div_elements)}")
         i = 0
         for div_element in div_elements:
             data_source = div_element.get("data-source")
-            # title = div_element.find_all("h3")[0].text
             div_content = div_element.find_all(
                 "div", {"class": "pi-data-value pi-font"}
             )[0]
 
-            # if data_source == "age":
-            #     value = parse_content(div_content)
-            #     value = parse_age(value)
-            # elif data_source == "height":
-            #     value = parse_content(div_content)
-            #     value = parse_height(value)
             if data_source == "bounty":
                 value = parse_content(div_content)
                 value = parse_bounty(value)
             elif data_source == "alias" or data_source == "epithet":
                 value = parse_content(div_content)
                 value = parse_alias(value)
-            # elif data_source == "occupation":
-            #     value = parse_generic(div_content)
             else:
                 value = parse_content(div_content)
-            # print(i, data_source, value)
             character_info[data_source] = value
             i += 1
     return character_info
@@ -195,8 +185,9 @@ def parse_all_characters_parallel():
     # Convert DataFrame to a list of dictionaries
     list_of_dicts = selected_rows.to_dict(orient="records")
 
-    # Number of processes to use
+    from multiprocessing import Pool
 
+    # Number of processes to use
     num_processes = 6
 
     # Process rows in parallel using multiprocessing.Pool
