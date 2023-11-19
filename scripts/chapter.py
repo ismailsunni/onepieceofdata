@@ -10,7 +10,6 @@ def scrap_chapter(chapter):
     chapter_info = {}
 
     chapter_url = base_url + str(chapter)
-    # print(chapter_url)
 
     http_pool = urllib3.PoolManager()
     r = http_pool.urlopen("GET", chapter_url)
