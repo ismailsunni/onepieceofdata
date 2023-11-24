@@ -4,7 +4,7 @@ import json
 import pandas as pd
 import re
 
-# from multiprocessing import Pool
+import multiprocessing
 from datetime import datetime
 
 base_url = "https://onepiece.fandom.com"
@@ -121,23 +121,20 @@ def scrap_character_solo(character):
 
     print(f"{name} - {char_id}")
 
-    result = {}
+    result = {"id": char_id}
     if not url or pd.isna(url):
         print(f">>>>>> URL is null for {name}")
-        result[char_id] = {}
         return result
     if "http" in url or "Video_Games" in url:
         print(
             f">>>>>> URL is outside onepiece wikia or a video game specific for {name}"
         )
-        result[char_id] = {}
         return result
 
     try:
         full_url = base_url + url
-        result[char_id] = scrap_character(full_url)
+        result.update(scrap_character(full_url))
     except Exception as e:
-        result[char_id] = {}
         print(f">>>>>> Failed on {name} because {e} ")
 
     return result
@@ -181,17 +178,16 @@ def parse_all_characters_parallel():
 
     selected_rows = df.head(len(df))
     # selected_rows = df.iloc[700 : len(df)]
+    # selected_rows = df.iloc[0:10]
 
     # Convert DataFrame to a list of dictionaries
     list_of_dicts = selected_rows.to_dict(orient="records")
 
-    from multiprocessing import Pool
-
     # Number of processes to use
-    num_processes = 6
+    num_processes = multiprocessing.cpu_count() - 1
 
     # Process rows in parallel using multiprocessing.Pool
-    with Pool(num_processes) as pool:
+    with multiprocessing.Pool(num_processes) as pool:
         characters = pool.map(scrap_character_solo, list_of_dicts)
 
     print(f"Success to scrap {len(characters)} of {len(df)}")
