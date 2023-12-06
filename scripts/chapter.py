@@ -58,7 +58,7 @@ def scrap_chapter(chapter):
 
 if __name__ == "__main__":
     chapters = []
-    last_chapter = 1098
+    last_chapter = 1100
     for chapter in range(1, last_chapter + 1):
         print("chapter", chapter)
         try:
