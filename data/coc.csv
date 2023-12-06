@@ -7574,6 +7574,7 @@ chapter,character,note
 499,Capone_Bege,
 499,Scratchmen_Apoo,
 499,Jewelry_Bonney,
+499,Gyogyo,
 499,Basil_Hawkins,
 499,Kaku,cover
 499,Fukurou,cover
@@ -7812,8 +7813,9 @@ chapter,character,note
 507,Nico_Robin,
 507,Franky,
 507,Brook,
-507,Scratchmen_Apoo,
 507,Jewelry_Bonney,
+507,Gyogyo,
+507,Scratchmen_Apoo,
 507,Capone_Bege,
 507,Basil_Hawkins,
 507,Silvers_Rayleigh,
@@ -8016,20 +8018,20 @@ chapter,character,note
 517,Salome,
 517,Bacura,
 517,Yuda,
-517,Nyon,
+517,Gloriosa,
 517,Enishida,
 517,Marguerite,
 517,Sweet_Pea,
 517,Aphelandra,
 517,Kikyo,
-517,Rob_Lucci,"cover, silhouette"
-517,Kaku,"cover, silhouette"
-517,Jabra,"cover, silhouette"
-517,Blueno,"cover, silhouette"
-517,Kumadori,"cover, silhouette"
-517,Fukurou,"cover, silhouette"
-517,Kalifa,"cover, silhouette"
-517,Hattori,"cover, silhouette"
+517,Rob_Lucci,cover
+517,Kaku,cover
+517,Jabra,cover
+517,Blueno,cover
+517,Kumadori,cover
+517,Fukurou,cover
+517,Kalifa,cover
+517,Hattori,cover
 518,Monkey_D._Luffy,
 518,Boa_Hancock,
 518,Boa_Marigold,
@@ -8230,7 +8232,6 @@ chapter,character,note
 525,Hattori,cover
 525,Minotaurus,silhouette
 525,Hannyabal,silhouette
-525,Domino,
 525,Pankuta_Dakeyan,
 525,Monkey_D._Garp,
 525,Momonga,
@@ -9079,13 +9080,16 @@ chapter,character,note
 565,Brook,cover
 565,Eustass_Kid,
 565,Killer,
+565,Heat,
+565,Trafalgar_D._Water_Law,
+565,Bepo,voice
+565,Jewelry_Bonney,
+565,Gyogyo,
 565,Scratchmen_Apoo,
 565,X_Drake,
 565,Capone_Bege,
 565,Urouge,
 565,Basil_Hawkins,
-565,Jewelry_Bonney,
-565,Trafalgar_D._Water_Law,
 565,Edward_Newgate,
 565,Portgas_D._Ace,
 565,Marco,
@@ -20680,7 +20684,7 @@ chapter,character,note
 999,Prometheus,
 999,Kozuki_Momonosuke,
 999,Shinobu,
-999,Tama,
+999,Kurozumi_Tama,
 999,Komachiyo,
 1000,Monkey_D._Luffy,
 1000,Roronoa_Zoro,
@@ -23575,11 +23579,69 @@ chapter,character,note
 1097,Clapp,flashback
 1097,Monkey_D._Dragon,
 1097,Emporio_Ivankov,
+1097,Belo_Betty,
 1098,Brook,cover
-1098,Bartholomew_Kuma,
-1098,Emporio_Ivankov,
 1098,Monkey_D._Dragon,
+1098,Emporio_Ivankov,
+1098,Bartholomew_Kuma,
 1098,Ginny,
 1098,Sabo,
 1098,Jewelry_Bonney,
 1098,Gyogyo,
+1099,Bekori,
+1099,Bartholomew_Kuma,
+1099,Jewelry_Bonney,
+1099,Gyogyo,
+1099,Conney,
+1099,Bulldog,
+1099,Vegapunk,
+1099,Sentomaru,
+1099,Shanba,
+1099,Haredas,
+1099,Heracles,
+1099,Kozuki_Oden,cover
+1099,Monkey_D._Dragon,
+1099,Belo_Betty,
+1099,Morley,
+1099,Gambo,
+1099,Jaygarcia_Saturn,
+1099,Abdullah,
+1099,Jeet,
+1100,Usopp,cover
+1100,Sanji,cover
+1100,Edward_Newgate,
+1100,Marco,
+1100,Portgas_D._Ace,
+1100,Marshall_D._Teach,
+1100,Alvida,
+1100,Heppoko,
+1100,Poppoko,
+1100,Koby,
+1100,Donquixote_Doflamingo,
+1100,Sugar,
+1100,Crocodile,
+1100,Nico_Robin,
+1100,Boa_Hancock,
+1100,Gecko_Moria,
+1100,Perona,
+1100,Bartholomew_Kuma,
+1100,Dracule_Mihawk,
+1100,Jinbe,
+1100,Jaygarcia_Saturn,
+1100,Borsalino,
+1100,X_Drake,
+1100,Vegapunk,
+1100,Sentomaru,
+1100,Alpha,
+1100,Monkey_D._Dragon,
+1100,Sabo,
+1100,Hack,
+1100,Koala,
+1100,Jewelry_Bonney,
+1100,Gyogyo,
+1100,Conney,
+1100,Gloriosa,
+1100,Monkey_D._Luffy,
+1100,Ninjin,cover; fantasy
+1100,Piiman,cover; fantasy
+1100,Tamanegi,cover; fantasy
