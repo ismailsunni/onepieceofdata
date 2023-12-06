@@ -35,7 +35,7 @@ for chapter in chapter_list:
     except ValueError:
         chapter_volume.append(None)
     chapter_name.append(chapter["ename"])
-    chapter_page.append(int(chapter["page"].replace("\xa0*", " ")))
+    chapter_page.append(int(chapter["page"][:2]))
     chapter_date.append(datetime.strptime(chapter["date2"], "%B %d, %Y"))
     chapter_jump.append(chapter["jump"])
 
