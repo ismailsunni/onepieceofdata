@@ -1172,7 +1172,7 @@
       "September 2nd"
     ],
     "jva": [
-      "Tetsu Inada (\u7a32\u7530 \u5fb9)"
+      "Tetsu Inada"
     ],
     "Funi eva": [
       "Phil Parsons"
@@ -2391,7 +2391,8 @@
     ],
     "Funi eva": [
       "Bruce Carey",
-      "Bradford Hutson (young)"
+      "Bradford Hutson (young",
+      "Episode 8)"
     ]
   },
   {
@@ -4401,9 +4402,6 @@
       "Takoyaki seller",
       "Pirate (former)",
       "Pirate Officer (former)"
-    ],
-    "origin": [
-      "Grand Line (Ryugu Kingdom, Fish-Man Island)"
     ],
     "residence": [
       "Fish-Man District (former)",
@@ -8100,8 +8098,8 @@
       "Negikuma Maria"
     ],
     "ename": [
-      "Maria Onion Bear (Viz)",
-      "Mrs. Negi (FUNimation)Big Mama (4Kids)"
+      "Maria Onion Bear (VIZ)",
+      "Mrs. Negi (Funimation)Big Mama (4Kids)"
     ],
     "first": [
       "Chapter 133",
@@ -11512,8 +11510,9 @@
     "residence": [
       "Sorbet Kingdom (former)",
       "Baltigo (former)",
+      "Egghead (former, temporary)",
       "Mary Geoise (former)",
-      "Sabaody Archipelago (former)"
+      "Sabaody Archipelago (former, temporary)"
     ],
     "alias": [
       "PX-0"
@@ -17250,9 +17249,6 @@
       "Chapter 391",
       "Episode 275"
     ],
-    "affiliation": [
-      "N/A"
-    ],
     "occupation": [
       "Housewife"
     ],
@@ -19920,7 +19916,8 @@
     ],
     "residence": [
       "Egghead",
-      "Punk Hazard (former)"
+      "Punk Hazard (former)",
+      "Karakuri Island (former)"
     ],
     "alias": [
       "\"Stella\""
@@ -20333,6 +20330,9 @@
     ],
     "origin": [
       "Grand Line"
+    ],
+    "residence": [
+      "Egghead"
     ],
     "status": [
       "Alive"
@@ -20993,8 +20993,12 @@
       "Pirate Captain",
       "Princess (former)"
     ],
+    "origin": [
+      "Red Line (Mary Geoise)"
+    ],
     "residence": [
-      "South Blue (Sorbet Kingdom) (former)"
+      "South Blue (Sorbet Kingdom) (former)",
+      "Egghead (former, temporary)"
     ],
     "alias": [
       "Conney"
@@ -23151,6 +23155,43 @@
     ]
   },
   {
+    "id": "Mashikaku",
+    "jname": [
+      "\u30de\u30b7\u30ab\u30af"
+    ],
+    "rname": [
+      "Mashikaku"
+    ],
+    "ename": [
+      "Mashikaku"
+    ],
+    "first": [
+      "Chapter 98",
+      "Episode 48"
+    ],
+    "affiliation": [
+      "Marines"
+    ],
+    "occupation": [
+      "Marine Chief Petty Officer"
+    ],
+    "origin": [
+      "East Blue"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "birth": [
+      "December 26th"
+    ],
+    "jva": [
+      "Masaya Takatsuka"
+    ],
+    "Funi eva": [
+      "J. Michael Tatum"
+    ]
+  },
+  {
     "id": "Heracles",
     "jname": [
       "\u30d8\u30e9\u30af\u30ec\u30b9"
@@ -23227,42 +23268,6 @@
     ],
     "Funi eva": [
       "Ben Holmes"
-    ]
-  },
-  {
-    "id": "Sancrin",
-    "jname": [
-      "\u30b5\u30f3\u30af\u30ea\u30f3"
-    ],
-    "rname": [
-      "Sankurin"
-    ],
-    "ename": [
-      "Thanklin"
-    ],
-    "first": [
-      "Chapter 557 (cover)",
-      "Episode 456"
-    ],
-    "affiliation": [
-      "Current Unknown",
-      "Brook (former)",
-      "Longarm Tribe's warriors (former)"
-    ],
-    "occupation": [
-      "Thief, Manager (former)"
-    ],
-    "residence": [
-      "Kenzan Island"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "jva": [
-      "Mahito \u014cba"
-    ],
-    "Funi eva": [
-      "Graham Calaway"
     ]
   },
   {
@@ -23779,6 +23784,41 @@
     ]
   },
   {
+    "id": "Minorhinoceros",
+    "jname": [
+      "\u30df\u30ce\u30ea\u30ce\u30b1\u30ed\u30b9"
+    ],
+    "rname": [
+      "Minorinokerosu"
+    ],
+    "ename": [
+      "Minorhinoceros"
+    ],
+    "first": [
+      "Chapter 532",
+      "Episode 433"
+    ],
+    "affiliation": [
+      "Impel Down",
+      "World Government"
+    ],
+    "occupation": [
+      "Jailer Beast"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "birth": [
+      "March 1st"
+    ],
+    "jva": [
+      "Hiromu Miyazaki"
+    ],
+    "dftype": [
+      "Rhinoceros Zoan"
+    ]
+  },
+  {
     "id": "Emporio_Ivankov",
     "jname": [
       "\u30a8\u30f3\u30dd\u30ea\u30aa\u30fb\u30a4\u30ef\u30f3\u30b3\u30d5"
@@ -23889,41 +23929,6 @@
     ],
     "dftype": [
       "Zebra Zoan"
-    ]
-  },
-  {
-    "id": "Minorhinoceros",
-    "jname": [
-      "\u30df\u30ce\u30ea\u30ce\u30b1\u30ed\u30b9"
-    ],
-    "rname": [
-      "Minorinokerosu"
-    ],
-    "ename": [
-      "Minorhinoceros"
-    ],
-    "first": [
-      "Chapter 532",
-      "Episode 433"
-    ],
-    "affiliation": [
-      "Impel Down",
-      "World Government"
-    ],
-    "occupation": [
-      "Jailer Beast"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "birth": [
-      "March 1st"
-    ],
-    "jva": [
-      "Hiromu Miyazaki"
-    ],
-    "dftype": [
-      "Rhinoceros Zoan"
     ]
   },
   {
@@ -26260,6 +26265,42 @@
     ]
   },
   {
+    "id": "Sancrin",
+    "jname": [
+      "\u30b5\u30f3\u30af\u30ea\u30f3"
+    ],
+    "rname": [
+      "Sankurin"
+    ],
+    "ename": [
+      "Thanklin"
+    ],
+    "first": [
+      "Chapter 557 (cover)",
+      "Episode 456"
+    ],
+    "affiliation": [
+      "Current Unknown",
+      "Brook (former)",
+      "Longarm Tribe's warriors (former)"
+    ],
+    "occupation": [
+      "Thief, Manager (former)"
+    ],
+    "residence": [
+      "Kenzan Island"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "jva": [
+      "Mahito \u014cba"
+    ],
+    "Funi eva": [
+      "Graham Calaway"
+    ]
+  },
+  {
     "id": "Blondie",
     "jname": [
       "\u30d6\u30ed\u30f3\u30c7\u30a3"
@@ -26739,32 +26780,6 @@
     ]
   },
   {
-    "id": "Agsilly",
-    "jname": [
-      "\u30a2\u30b0\u30b7\u30ea\u30fc"
-    ],
-    "rname": [
-      "Agushir\u012b"
-    ],
-    "ename": [
-      "Agushily"
-    ],
-    "first": [
-      "Chapter 578",
-      "Episode 487"
-    ],
-    "affiliation": [
-      "Ally of the Whitebeard Pirates"
-    ],
-    "occupation": [
-      "Pirate",
-      "Captain"
-    ],
-    "status": [
-      "Alive"
-    ]
-  },
-  {
     "id": "Sanjuan_Wolf",
     "jname": [
       "\u30b5\u30f3\u30d5\u30a1\u30f3\u30fb\u30a6\u30eb\u30d5"
@@ -26792,8 +26807,7 @@
       "West Blue"
     ],
     "epithet": [
-      "\"Colossal Battleship\"",
-      "\"Great Battleship\""
+      "\"Colossal Battleship\""
     ],
     "status": [
       "Alive"
@@ -27021,8 +27035,8 @@
       "Unknown"
     ],
     "jva": [
-      "Kazunari Tanaka",
-      "Masaya Takatsuka (Episode 917-)"
+      "Kazunari Tanaka (Episode 484-513)",
+      "Masaya Takatsuka (Episode 917+)"
     ],
     "Funi eva": [
       "Greg Silva"
@@ -27038,6 +27052,32 @@
     ],
     "dftype": [
       "Paramecia"
+    ]
+  },
+  {
+    "id": "Agsilly",
+    "jname": [
+      "\u30a2\u30b0\u30b7\u30ea\u30fc"
+    ],
+    "rname": [
+      "Agushir\u012b"
+    ],
+    "ename": [
+      "Agushily"
+    ],
+    "first": [
+      "Chapter 578",
+      "Episode 487"
+    ],
+    "affiliation": [
+      "Ally of the Whitebeard Pirates"
+    ],
+    "occupation": [
+      "Pirate",
+      "Captain"
+    ],
+    "status": [
+      "Alive"
     ]
   },
   {
@@ -27291,56 +27331,6 @@
     ]
   },
   {
-    "id": "Bluejam",
-    "jname": [
-      "\u30d6\u30eb\u30fc\u30b8\u30e3\u30e0"
-    ],
-    "rname": [
-      "Bur\u016bjamu"
-    ],
-    "ename": [
-      "Bluejam"
-    ],
-    "first": [
-      "Chapter 584",
-      "Episode 494"
-    ],
-    "affiliation": [
-      "Bluejam Pirates"
-    ],
-    "occupation": [
-      "Pirate",
-      "Captain"
-    ],
-    "origin": [
-      "East Blue (Goa Kingdom)"
-    ],
-    "status": [
-      "Unknown"
-    ],
-    "age": [
-      "42 (debut)"
-    ],
-    "birth": [
-      "February 16th"
-    ],
-    "height": [
-      "261 cm (8'7\")"
-    ],
-    "blood type": [
-      "X"
-    ],
-    "bounty": [
-      "14300000"
-    ],
-    "jva": [
-      "Akihiko Ishizumi"
-    ],
-    "Funi eva": [
-      "Jim Johnson"
-    ]
-  },
-  {
     "id": "Porchemy",
     "jname": [
       "\u30dd\u30eb\u30b7\u30a7\u30fc\u30df"
@@ -27435,14 +27425,14 @@
       "Alive"
     ],
     "age": [
-      "10 (Flashback, debut)",
-      "22 (After timeskip)"
+      "10 (flashback, debut)",
+      "22 (after timeskip)"
     ],
     "birth": [
       "March 20th"
     ],
     "height": [
-      "100 cm (3'3\") (Flashback, debut)",
+      "100 cm (3'3\") (flashback, debut)",
       "187 cm (6'2\") (After timeskip)"
     ],
     "blood type": [
@@ -27472,6 +27462,56 @@
     ],
     "dftype": [
       "Logia"
+    ]
+  },
+  {
+    "id": "Bluejam",
+    "jname": [
+      "\u30d6\u30eb\u30fc\u30b8\u30e3\u30e0"
+    ],
+    "rname": [
+      "Bur\u016bjamu"
+    ],
+    "ename": [
+      "Bluejam"
+    ],
+    "first": [
+      "Chapter 584",
+      "Episode 494"
+    ],
+    "affiliation": [
+      "Bluejam Pirates"
+    ],
+    "occupation": [
+      "Pirate",
+      "Captain"
+    ],
+    "origin": [
+      "East Blue (Goa Kingdom)"
+    ],
+    "status": [
+      "Unknown"
+    ],
+    "age": [
+      "42 (debut)"
+    ],
+    "birth": [
+      "February 16th"
+    ],
+    "height": [
+      "261 cm (8'7\")"
+    ],
+    "blood type": [
+      "X"
+    ],
+    "bounty": [
+      "14300000"
+    ],
+    "jva": [
+      "Akihiko Ishizumi"
+    ],
+    "Funi eva": [
+      "Jim Johnson"
     ]
   },
   {
@@ -27674,6 +27714,68 @@
   },
   {
     "id": "Goa_King"
+  },
+  {
+    "id": "Ahho_Desunen_IX",
+    "jname": [
+      "\u30a2\u30c3\u30db\u30fb\u30c7\u30b9\u30cd\u30f39\u4e16"
+    ],
+    "rname": [
+      "Ahho Desunen Ky\u016bsei"
+    ],
+    "ename": [
+      "Dumas Regal IX"
+    ],
+    "first": [
+      "Chapter 587",
+      "Episode 501"
+    ],
+    "affiliation": [
+      "Goa Kingdom (High Town)"
+    ],
+    "occupation": [
+      "Noble"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "jva": [
+      "Kazunari Tanaka"
+    ]
+  },
+  {
+    "id": "Ahho_Zurako",
+    "jname": [
+      "\u30a2\u30c3\u30db\u30fb\u30c5\u30e9\u30b3"
+    ],
+    "rname": [
+      "Ahho Zurako"
+    ],
+    "ename": [
+      "Dumas Fayes"
+    ],
+    "first": [
+      "Chapter 587",
+      "Episode 501"
+    ],
+    "affiliation": [
+      "Goa Kingdom (High Town)"
+    ],
+    "occupation": [
+      "Noble"
+    ],
+    "residence": [
+      "Goa Kingdom, Dawn Island"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "jva": [
+      "Kumiko Nishihara"
+    ],
+    "Funi eva": [
+      "Brittney Karbowski"
+    ]
   },
   {
     "id": "Jalmack",
@@ -27907,6 +28009,34 @@
     ],
     "Funi eva": [
       "Jim Foronda"
+    ]
+  },
+  {
+    "id": "Kasa",
+    "jname": [
+      "\u30ab\u30b5"
+    ],
+    "rname": [
+      "Kasa"
+    ],
+    "ename": [
+      "Kasa"
+    ],
+    "first": [
+      "Chapter 594",
+      "Episode 511"
+    ],
+    "affiliation": [
+      "Raijin Island"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "jva": [
+      "Ikuko Tatsu"
+    ],
+    "Funi eva": [
+      "Cheryl Lowber"
     ]
   },
   {
@@ -28789,8 +28919,7 @@
       "Pirate"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom",
-      "Fish-Man Island)"
+      "Grand Line (Ryugu Kingdom)"
     ],
     "epithet": [
       "\"Large Monk\""
@@ -32687,7 +32816,7 @@
       "G-5 (former)"
     ],
     "occupation": [
-      "Neo Marines Commander-in-Chief",
+      "Neo Marines Supreme Commander",
       "Marine Instructor (former)",
       "Marine Admiral (former)"
     ],
@@ -33034,9 +33163,6 @@
       "Spy",
       "Samurai",
       "Retainer of the Kozuki Family (undercover)"
-    ],
-    "origin": [
-      "Grand Line (Wano Country)"
     ],
     "residence": [
       "Wano Country (Kuri)",
@@ -37640,6 +37766,9 @@
     ],
     "jva": [
       "Karin Takahashi"
+    ],
+    "Funi eva": [
+      "Carli Mosier"
     ]
   },
   {
@@ -46213,9 +46342,6 @@
       "Sumo Wrestler",
       "Highway Robber (former)"
     ],
-    "origin": [
-      "Grand Line (Wano Country)"
-    ],
     "residence": [
       "Wano Country"
     ],
@@ -46572,6 +46698,116 @@
     ],
     "status": [
       "Alive"
+    ]
+  },
+  {
+    "id": "Kurozumi_Tama",
+    "jname": [
+      "\u9ed2\u70ad\u7389"
+    ],
+    "rname": [
+      "Kurozumi Tama"
+    ],
+    "ename": [
+      "Otama"
+    ],
+    "first": [
+      "Chapter 911",
+      "Episode 893"
+    ],
+    "affiliation": [
+      "Kurozumi Family"
+    ],
+    "occupation": [
+      "Kunoichi in training",
+      "Kasa weaver"
+    ],
+    "residence": [
+      "Amigasa Village, Kuri, Wano Country"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "age": [
+      "8"
+    ],
+    "birth": [
+      "March 3rd"
+    ],
+    "height": [
+      "108 cm (3'6\u00bd\")"
+    ],
+    "blood type": [
+      "F"
+    ],
+    "jva": [
+      "Megumi Han"
+    ],
+    "Funi eva": [
+      "Sarah Wiedenheft"
+    ],
+    "dfname": [
+      "Kibi Kibi no Mi"
+    ],
+    "dfename": [
+      "Millet-Millet Fruit"
+    ],
+    "dfmeaning": [
+      "Millet"
+    ],
+    "dftype": [
+      "Paramecia"
+    ]
+  },
+  {
+    "id": "Kozuki_Sukiyaki",
+    "jname": [
+      "\u5149\u6708\u30b9\u30ad\u30e4\u30ad"
+    ],
+    "rname": [
+      "K\u014dzuki Sukiyaki"
+    ],
+    "ename": [
+      "Kozuki Sukiyaki"
+    ],
+    "first": [
+      "Chapter 911",
+      "Episode 894"
+    ],
+    "affiliation": [
+      "Kozuki Family"
+    ],
+    "occupation": [
+      "Swordsmith",
+      "Shogun (former)"
+    ],
+    "residence": [
+      "Wano Country (Amigasa Village, formerly Flower Capital)"
+    ],
+    "alias": [
+      "\"Tenguyama Hitetsu\""
+    ],
+    "status": [
+      "Alive"
+    ],
+    "age": [
+      "81"
+    ],
+    "birth": [
+      "May 19th"
+    ],
+    "height": [
+      "214 cm (7'0\")"
+    ],
+    "blood type": [
+      "F"
+    ],
+    "jva": [
+      "Ry\u016bzabur\u014d \u014ctomo",
+      "Reimi (baby)"
+    ],
+    "Funi eva": [
+      "John Burgmeier"
     ]
   },
   {
@@ -49361,57 +49597,6 @@
     ]
   },
   {
-    "id": "Kozuki_Sukiyaki",
-    "jname": [
-      "\u5149\u6708\u30b9\u30ad\u30e4\u30ad"
-    ],
-    "rname": [
-      "K\u014dzuki Sukiyaki"
-    ],
-    "ename": [
-      "Kozuki Sukiyaki"
-    ],
-    "first": [
-      "Chapter 911",
-      "Episode 894"
-    ],
-    "affiliation": [
-      "Kozuki Family"
-    ],
-    "occupation": [
-      "Swordsmith",
-      "Shogun (former)"
-    ],
-    "residence": [
-      "Wano Country (Amigasa Village, formerly Flower Capital)"
-    ],
-    "alias": [
-      "\"Tenguyama Hitetsu\""
-    ],
-    "status": [
-      "Alive"
-    ],
-    "age": [
-      "81"
-    ],
-    "birth": [
-      "May 19th"
-    ],
-    "height": [
-      "214 cm (7'0\")"
-    ],
-    "blood type": [
-      "F"
-    ],
-    "jva": [
-      "Ry\u016bzabur\u014d \u014ctomo",
-      "Reimi (baby)"
-    ],
-    "Funi eva": [
-      "John Burgmeier"
-    ]
-  },
-  {
     "id": "Banzaburo",
     "jname": [
       "\u756a\u4e09\u90ce"
@@ -51041,65 +51226,6 @@
     ]
   },
   {
-    "id": "Kurozumi_Tama",
-    "jname": [
-      "\u9ed2\u70ad\u7389"
-    ],
-    "rname": [
-      "Kurozumi Tama"
-    ],
-    "ename": [
-      "Otama"
-    ],
-    "first": [
-      "Chapter 911",
-      "Episode 893"
-    ],
-    "affiliation": [
-      "Kurozumi Family"
-    ],
-    "occupation": [
-      "Kunoichi in training",
-      "Kasa weaver"
-    ],
-    "residence": [
-      "Amigasa Village, Kuri, Wano Country"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "age": [
-      "8"
-    ],
-    "birth": [
-      "March 3rd"
-    ],
-    "height": [
-      "108 cm (3'6\u00bd\")"
-    ],
-    "blood type": [
-      "F"
-    ],
-    "jva": [
-      "Megumi Han"
-    ],
-    "Funi eva": [
-      "Sarah Wiedenheft"
-    ],
-    "dfname": [
-      "Kibi Kibi no Mi"
-    ],
-    "dfename": [
-      "Millet-Millet Fruit"
-    ],
-    "dfmeaning": [
-      "Millet"
-    ],
-    "dftype": [
-      "Paramecia"
-    ]
-  },
-  {
     "id": "Black_Brothers"
   },
   {
@@ -52257,7 +52383,7 @@
     "id": "Smiley_Risu"
   },
   {
-    "id": "Hid%C3%A9lie_Penguin"
+    "id": "Hid\u00e9lie_Penguin"
   },
   {
     "id": "Kaio_Dragon"
@@ -52343,7 +52469,8 @@
       "Ado (singing voice)"
     ],
     "Funi eva": [
-      "Amanda Lee"
+      "Amanda Lee",
+      "Ado (singing voice)"
     ],
     "dfname": [
       "Uta Uta no Mi"
@@ -52527,7 +52654,8 @@
       "Mecha-Shark"
     ],
     "first": [
-      "Chapter 1061"
+      "Chapter 1061",
+      "Episode 1089"
     ],
     "affiliation": [
       "Vegapunk"
@@ -53491,5 +53619,11 @@
     "status": [
       "Unknown"
     ]
+  },
+  {
+    "id": "Totts"
+  },
+  {
+    "id": "Potato"
   }
 ]

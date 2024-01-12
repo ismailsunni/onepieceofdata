@@ -7,6 +7,8 @@ import re
 import multiprocessing
 from datetime import datetime
 
+from utils import timing_decorator
+
 base_url = "https://onepiece.fandom.com"
 
 
@@ -172,6 +174,7 @@ def parse_all_characters():
         json.dump(characters, fp, indent=2)
 
 
+@timing_decorator
 def parse_all_characters_parallel():
     file_path = "./data/characters.csv"
     df = pd.read_csv(file_path)
@@ -202,7 +205,6 @@ def pretty_print(value: dict):
 
 
 if __name__ == "__main__":
-    start = datetime.now()
     url = "https://onepiece.fandom.com/wiki/Sanji"
 
     # result = scrap_character(url)
@@ -210,7 +212,5 @@ if __name__ == "__main__":
 
     # parse_all_characters()
     parse_all_characters_parallel()
-    end = datetime.now()
 
-    print(end - start)
     print("fin")
