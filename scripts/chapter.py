@@ -1,12 +1,16 @@
 import urllib3
 from bs4 import BeautifulSoup
 import json
+import multiprocessing
+
+from utils import timing_decorator
 
 base_url = "https://onepiece.fandom.com/wiki/Chapter_"
 
 
 def scrap_chapter(chapter):
     """Scrap chapter."""
+    print(f"Scrap chapter {chapter}")
     chapter_info = {}
 
     chapter_url = base_url + str(chapter)
@@ -56,11 +60,11 @@ def scrap_chapter(chapter):
     return chapter_info
 
 
-if __name__ == "__main__":
+@timing_decorator
+def scrap_all_chapter(last_chapter):
     chapters = []
-    last_chapter = 1100
     for chapter in range(1, last_chapter + 1):
-        print("chapter", chapter)
+        # print("chapter", chapter)
         try:
             result = scrap_chapter(chapter)
             chapters.append(result)
@@ -71,4 +75,28 @@ if __name__ == "__main__":
             with open("./cache/chapters_{}.json".format(chapter), "w") as fp:
                 json.dump(chapters, fp)
     with open("./data/chapters.json", "w") as fp:
-        json.dump(chapters, fp)
+        json.dump(chapters, fp, indent=2)
+
+
+@timing_decorator
+def scrap_chapter_parallel(last_chapter):
+    list_of_chapter = range(1, last_chapter + 1)
+
+    # Number of processes to use
+    num_processes = multiprocessing.cpu_count() - 1
+
+    # Process rows in parallel using multiprocessing.Pool
+    with multiprocessing.Pool(num_processes) as pool:
+        chapters = pool.map(scrap_chapter, list_of_chapter)
+
+    print(f"Success to scrap {len(chapters)} chapters")
+
+    with open("./data/chapter_parallel.json", "w") as fp:
+        json.dump(chapters, fp, indent=2)
+
+
+if __name__ == "__main__":
+    last_chapter = 1103
+    # scrap_all_chapter(last_chapter)
+    # print("-------------------")
+    scrap_chapter_parallel(last_chapter)
