@@ -4708,7 +4708,7 @@ chapter,character,note
 346,Roronoa_Zoro,
 346,Nami,
 346,Tony_Tony_Chopper,
-346,Nico_Robin,former
+346,Nico_Robin,
 346,Blueno,
 346,Rob_Lucci,
 346,Hattori,
@@ -8204,6 +8204,7 @@ chapter,character,note
 524,Hina,
 524,Tashigi,
 524,Stalker,
+524,Mashikaku,
 524,Jango,
 524,Fullbody,
 524,Rob_Lucci,"cover, former"
@@ -8211,7 +8212,6 @@ chapter,character,note
 524,Spandam,cover
 524,Heracles,
 524,Pekkori,
-524,Sancrin,
 525,Monkey_D._Luffy,
 525,Alvida,
 525,Mohji,
@@ -8316,6 +8316,8 @@ chapter,character,note
 532,Hannyabal,
 532,Sadi,
 532,Minotaurus,
+532,Minokoala,shadowed
+532,Minorhinoceros,shadowed
 532,Blue_Gorillas,
 532,Jinbe,
 532,Marshall_D._Teach,cover
@@ -8583,7 +8585,7 @@ chapter,character,note
 547,Crocodile,
 547,Daz_Bonez,
 547,Bentham,
-547,Galdino,Color Page
+547,Galdino,
 547,Emporio_Ivankov,
 547,Inazuma,K.O.
 548,Monkey_D._Luffy,
@@ -8607,8 +8609,8 @@ chapter,character,note
 549,Van_Augur,
 549,Laffitte,
 549,Stronger,
-549,Arlong,Flashback
 549,Shiryu,
+549,Arlong,Flashback
 549,Jinbe,
 549,Crocodile,
 549,Emporio_Ivankov,
@@ -8784,6 +8786,7 @@ chapter,character,note
 553,Dalmatian,
 553,Stainless,
 553,Cancer,
+553,Mozambia,
 553,Koby,
 553,Helmeppo,
 553,Jango,
@@ -8888,6 +8891,7 @@ chapter,character,note
 557,Jinbe,
 557,Galdino,
 557,Emporio_Ivankov,
+557,Sancrin,cover
 558,Monkey_D._Luffy,
 558,Brook,cover story
 558,Edward_Newgate,
@@ -9262,7 +9266,6 @@ chapter,character,note
 570,Delacuaji,
 570,Hangan,
 570,Kinga,
-570,Agsilly,
 570,Salome,
 570,Sengoku,
 570,Borsalino,
@@ -9690,7 +9693,6 @@ chapter,character,note
 582,Magra,flashback
 582,Portgas_D._Ace,flashback
 582,Emporio_Ivankov,flashback
-583,Bluejam,
 583,Porchemy,
 583,Shanks,flashback
 583,Absalom,cover
@@ -9754,6 +9756,8 @@ chapter,character,note
 587,Outlook_III,
 587,Sterry,
 587,Goa_King,
+587,Ahho_Desunen_IX,
+587,Ahho_Zurako,
 588,Roronoa_Zoro,
 588,Nami,
 588,Usopp,
@@ -9814,7 +9818,7 @@ chapter,character,note
 590,Magura,
 590,Monkey_D._Garp,
 590,Dracule_Mihawk,cover
-590,Jinbe,cover
+590,Jinbe,
 590,Makino,
 590,Woop_Slap,
 590,Chicken,
@@ -9859,6 +9863,7 @@ chapter,character,note
 592,Haredas,
 592,Kitton,flashback
 592,Taroimo,flashback
+592,Pekkori,
 592,Sancrin,
 593,Sanji,
 593,Nico_Robin,
@@ -9936,13 +9941,21 @@ chapter,character,note
 594,Haredas,
 594,Heracles,
 594,Kitton,
+594,Kasa,
 595,Monkey_D._Luffy,flashback
+595,Roronoa_Zoro,cover
+595,Nami,cover
 595,Usopp,flashback
 595,Sanji,
 595,Tony_Tony_Chopper,
+595,Nico_Robin,cover
+595,Franky,cover
+595,Brook,cover
 595,Trafalgar_D._Water_Law,
 595,Bepo,sleeping
 595,Jean_Bart,
+595,Penguin,
+595,Shachi,
 595,X_Drake,
 595,Scratchmen_Apoo,
 595,Jewelry_Bonney,
@@ -18307,8 +18320,8 @@ chapter,character,note
 925,Kozuki_Momonosuke,
 925,Kin%27emon,
 925,Kikunojo,
-925,Tama,
-925,Tenguyama_Hitetsu,
+925,Kurozumi_Tama,
+925,Kozuki_Sukiyaki,
 925,Ashura_Doji,
 925,Komachiyo,
 925,Kozuki_Hiyori,
@@ -20805,6 +20818,7 @@ chapter,character,note
 1004,Gazelleman,
 1004,Sarahebi,
 1004,Caimanlady,
+1004,Kozuki_Hiyori,
 1004,Kin%27emon,
 1004,Denjiro,
 1004,Raizo,
@@ -22267,7 +22281,7 @@ chapter,character,note
 1053,Black_Brothers,cover
 1053,Baroque_Panda,cover
 1053,Smiley_Risu,cover
-1053,Hid%C3%A9lie_Penguin,cover
+1053,Hidélie_Penguin,cover
 1053,Kaio_Dragon,cover
 1053,Silver_Bat,cover
 1053,Topman_Warcury,
@@ -23645,3 +23659,74 @@ chapter,character,note
 1100,Ninjin,cover; fantasy
 1100,Piiman,cover; fantasy
 1100,Tamanegi,cover; fantasy
+1101,Monkey_D._Luffy,
+1101,Vegapunk,
+1101,Stussy,
+1101,Shaka,cover
+1101,Lilith,cover
+1101,Edison,cover
+1101,Pythagoras,cover
+1101,Atlas,cover
+1101,York,cover
+1101,Conney,
+1101,Jewelry_Bonney,
+1101,Gyogyo,
+1101,Bartholomew_Kuma,
+1101,Alpha,
+1101,Monkey_D._Dragon,
+1101,Sabo,
+1102,Monkey_D._Luffy,
+1102,Roronoa_Zoro,
+1102,Nami,
+1102,Usopp,
+1102,Sanji,
+1102,Tony_Tony_Chopper,
+1102,Nico_Robin,
+1102,Franky,
+1102,Brook,
+1102,Jewelry_Bonney,
+1102,Gyogyo,
+1102,Totts,
+1102,Potato,
+1102,Portgas_D._Ace,
+1102,Vegapunk,
+1102,Sentomaru,
+1102,Clapp,flashback
+1102,Camie,
+1102,Hatchan,
+1102,Silvers_Rayleigh,
+1102,Jaygarcia_Saturn,
+1102,Charlos,
+1102,Rosward,
+1102,Borsalino,
+1102,Smoker,
+1102,Bartholomew_Kuma,
+1102,Jinbe,
+1102,Pacifista,
+1102,Monkey_D._Dragon,
+1102,Sabo,
+1102,Emporio_Ivankov,flashback
+1102,Ginny,flashback
+1102,Terry_Gilteo,
+1103,Monkey_D._Luffy,
+1103,Roronoa_Zoro,cover
+1103,Nami,cover
+1103,Usopp,cover
+1103,Sanji,
+1103,Tony_Tony_Chopper,cover
+1103,Nico_Robin,cover
+1103,Franky,
+1103,Brook,cover
+1103,Jinbe,cover
+1103,Jewelry_Bonney,
+1103,Vegapunk,
+1103,Atlas,
+1103,Sentomaru,
+1103,Kozuki_Momonosuke,cover
+1103,Yamato,cover
+1103,Jaygarcia_Saturn,
+1103,Borsalino,
+1103,Monkey_D._Dragon,
+1103,Emporio_Ivankov,
+1103,Morley,
+1103,Bartholomew_Kuma,

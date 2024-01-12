@@ -560,9 +560,9 @@ Kitton,Kitton,/wiki/Kitton
 Taroimo,Taroimo,/wiki/Taroimo
 Haredas,Haredas,/wiki/Haredas
 Stalker,Stalker,/wiki/Stalker
+Mashikaku,Mashikaku,/wiki/Mashikaku
 Heracles,Heracles,/wiki/Heracles
 Pekkori,Pekkori,/wiki/Pekkori
-Sancrin,Sancrin,/wiki/Sancrin
 Minotaurus,Minotaurus,/wiki/Minotaurus
 Hannyabal,Hannyabal,/wiki/Hannyabal
 Pankuta_Dakeyan,Pankuta Dakeyan,/wiki/Pankuta_Dakeyan
@@ -580,9 +580,9 @@ Saldeath,Saldeath,/wiki/Saldeath
 Sadi,Sadi,/wiki/Sadi
 Minokoala,Minokoala,/wiki/Minokoala
 Daigin,Daigin,/wiki/Daigin
+Minorhinoceros,Minorhinoceros,/wiki/Minorhinoceros
 Emporio_Ivankov,Iva,/wiki/Emporio_Ivankov
 Minozebra,Minozebra,/wiki/Minozebra
-Minorhinoceros,Minorhinoceros,/wiki/Minorhinoceros
 Zotto,Zotto,/wiki/Zotto
 Kairo_Kureyo,Kairo Kureyo,/wiki/Kairo_Kureyo
 Muchana,Muchana,/wiki/Muchana
@@ -653,6 +653,7 @@ Whitey_Bay,Whitey Bay,/wiki/Whitey_Bay
 Hangan,Hangan,/wiki/Hangan
 Arthur,Arthur,/wiki/Arthur
 Reforte,Reforte,/wiki/Reforte
+Sancrin,Sancrin,/wiki/Sancrin
 Blondie,Blondie,/wiki/Blondie
 Andre,Andre,/wiki/Andre
 Ninth,Ninth,/wiki/Ninth
@@ -668,11 +669,11 @@ Zucca,Zucca,/wiki/Zucca
 Curly_Dadan,Curly Dadan,/wiki/Curly_Dadan
 Cands,Cands,/wiki/Cands
 Kinga,Kinga,/wiki/Kinga
-Agsilly,Agsilly,/wiki/Agsilly
 Sanjuan_Wolf,Sanjuan Wolf,/wiki/Sanjuan_Wolf
 Catarina_Devon,Catarina Devon,/wiki/Catarina_Devon
 Vasco_Shot,Vasco Shot,/wiki/Vasco_Shot
 Avalo_Pizarro,Avalo Pizarro,/wiki/Avalo_Pizarro
+Agsilly,Agsilly,/wiki/Agsilly
 Julius,Julius,/wiki/Julius
 Happygun,Happygun,/wiki/Happygun
 Gab,Gab,/wiki/Gab
@@ -680,15 +681,17 @@ Brownbeard,Brownbeard,/wiki/Brownbeard
 Dobby_Ibadonbo,Dobby Ibadonbo,/wiki/Dobby_Ibadonbo
 Dogra,Dogra,/wiki/Dogra
 Magra,Magra,/wiki/Magra
-Bluejam,Bluejam,/wiki/Bluejam
 Porchemy,Porchemy,/wiki/Porchemy
 Sabo,Sabo,/wiki/Sabo
+Bluejam,Bluejam,/wiki/Bluejam
 Dogura,Dogura,/wiki/Dogura
 Magura,Magura,/wiki/Magura
 Outlook_III,Outlook III,/wiki/Outlook_III
 Didit,Didit,/wiki/Didit
 Sterry,Sterry,/wiki/Sterry
 Goa_King,Goa King,/wiki/Goa_King
+Ahho_Desunen_IX,Ahho Desunen IX,/wiki/Ahho_Desunen_IX
+Ahho_Zurako,Ahho Zurako,/wiki/Ahho_Zurako
 Jalmack,Jalmack,/wiki/Jalmack
 Mori_Dako,Mori Dako,/wiki/Mori_Dako
 Karasu,Karasu,/wiki/Karasu
@@ -696,6 +699,7 @@ Haritsu_Kendiyo,Haritsu Kendiyo,/wiki/Haritsu_Kendiyo
 Kibin,Kibin,/wiki/Kibin
 Fishbonen,Dr. Fishbonen,/wiki/Fishbonen
 Kong,Kong,/wiki/Kong
+Kasa,Kasa,/wiki/Kasa
 Scotch,Scotch,/wiki/Scotch
 Gorilla,Gorilla,/wiki/Gorilla
 Humandrill,Humandrills,/wiki/Humandrill
@@ -1163,6 +1167,8 @@ Gorobe,Gorobe,/wiki/Gorobe
 Kikipatsu,Kikipatsu,/wiki/Kikipatsu
 Maki,Maki,/wiki/Maki
 Tori,Tori,/wiki/Tori
+Kurozumi_Tama,Tama,/wiki/Kurozumi_Tama
+Kozuki_Sukiyaki,Tenguyama Hitetsu,/wiki/Kozuki_Sukiyaki
 Dobon,Dobon,/wiki/Dobon
 Ibiributsu,Ibiributsu,/wiki/Ibiributsu
 Donannoyo,Donannoyo,/wiki/Donannoyo
@@ -1240,7 +1246,6 @@ Rocks_D._Xebec,Rocks D. Xebec,/wiki/Rocks_D._Xebec
 Nozdon,Nozdon,/wiki/Nozdon
 Sunbell,Sunbell,/wiki/Sunbell
 Doringo,Doringo,/wiki/Doringo
-Kozuki_Sukiyaki,Kozuki Sukiyaki,/wiki/Kozuki_Sukiyaki
 Banzaburo,Banzaburo,/wiki/Banzaburo
 Katsuzo,Katsuzo,/wiki/Katsuzo
 Shiki,Shiki,/wiki/Shiki
@@ -1289,7 +1294,6 @@ Fourtricks,Fourtricks,/wiki/Fourtricks
 Hamlet,Hamlet,/wiki/Hamlet
 Poker,Poker,/wiki/Poker
 Nure-Onna,Nure-Onna,/wiki/Nure-Onna
-Kurozumi_Tama,Tama,/wiki/Kurozumi_Tama
 Black_Brothers,Third Sasori,/wiki/Animal_Species/Strong_World#Black_Brothers
 Caimanlady,Caimanlady,/wiki/Caimanlady
 Wanyudo,Wanyudo,/wiki/Wanyudo
@@ -1333,7 +1337,7 @@ Sazae_Kanchou,Sazae Kanchou,/wiki/Animal_Species/Strong_World#Sazae_Kanchou
 Shogun_Jishi,Shogun Jishi,/wiki/Animal_Species/Strong_World#Shogun_Jishi
 Baroque_Panda,Baroque Panda,/wiki/Animal_Species/Video_Games#Baroque_Panda
 Smiley_Risu,Smiley Risu,/wiki/Animal_Species/Video_Games#Smiley_Risu
-Hid%C3%A9lie_Penguin,Hidélie Penguin,/wiki/Animal_Species/Video_Games#Hid%C3%A9lie_Penguin
+Hidélie_Penguin,Hidélie Penguin,/wiki/Animal_Species/Video_Games#Hidélie_Penguin
 Kaio_Dragon,Kaio Dragon,/wiki/Animal_Species/Video_Games#Kaio_Dragon
 Silver_Bat,Silver Bat,/wiki/Animal_Species/Video_Games#Silver_Bat
 Tensei,Tensei,/wiki/Tensei
@@ -1375,3 +1379,5 @@ Bekori,Bekori,/wiki/Bekori
 Conney,Conney,/wiki/Conney
 Bulldog,Bulldog,/wiki/Bulldog
 Alpha,Alpha,/wiki/Alpha
+Totts,Totts,
+Potato,Potato,
