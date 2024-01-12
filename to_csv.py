@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 # Chapters
-chapters_json_file = "data/chapters.json"
+chapters_json_file = "data/chapter_parallel.json"
 with open(chapters_json_file) as json_file:
     chapter_list = json.load(json_file)
 

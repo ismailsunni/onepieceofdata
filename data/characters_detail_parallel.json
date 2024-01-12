@@ -3765,9 +3765,6 @@
     "birth": [
       "November 17th"
     ],
-    "height": [
-      "178 cm (5'10\")[citation needed]"
-    ],
     "jva": [
       "Hiromi Nishikawa",
       "Akiko Utsumi (Live-Action Series)"
@@ -4140,6 +4137,9 @@
     "height": [
       "198 cm (6'6\") (debut, after timeskip)"
     ],
+    "weight": [
+      "100 kg (220 lbs) (debut, after timeskip)"
+    ],
     "blood type": [
       "S"
     ],
@@ -4174,7 +4174,7 @@
     ],
     "ename": [
       "Belle-M\u00e8re (VIZ Media)",
-      "Bellemere (Funimation)"
+      "Bellemere (Funimation)Bell-m\u00e8re (OPCG)"
     ],
     "first": [
       "Chapter 77",
@@ -4687,7 +4687,7 @@
       "Episode 31"
     ],
     "occupation": [
-      "Orange Farmer"
+      "Mikan Farmer"
     ],
     "origin": [
       "East Blue"
@@ -4813,6 +4813,9 @@
     "origin": [
       "Grand Line (Ryugu Kingdom, Fish-Man Island)"
     ],
+    "residence": [
+      "Fish-Man District (former),  Arlong Park (former)"
+    ],
     "status": [
       "Alive"
     ],
@@ -4845,6 +4848,9 @@
     ],
     "origin": [
       "Grand Line (Ryugu Kingdom, Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former),  Arlong Park (former)"
     ],
     "status": [
       "Alive"
@@ -4939,6 +4945,9 @@
     "origin": [
       "Grand Line (Ryugu Kingdom, Fish-Man Island)"
     ],
+    "residence": [
+      "Fish-Man District (former), Arlong Park (former)"
+    ],
     "status": [
       "Alive"
     ],
@@ -4970,6 +4979,9 @@
     ],
     "origin": [
       "Grand Line (Ryugu Kingdom, Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former), Arlong Park (former)"
     ],
     "status": [
       "Alive"
@@ -6072,7 +6084,8 @@
       "Arabasta Kingdom (Alubarna)"
     ],
     "alias": [
-      "\"Miss Wednesday\""
+      "\"Miss Wednesday\"",
+      "\"Ms. Wednesday\""
     ],
     "status": [
       "Alive"
@@ -6880,6 +6893,9 @@
     ],
     "first": [
       "Chapter 115"
+    ],
+    "origin": [
+      "Grand Line (Little Garden)"
     ],
     "residence": [
       "Little Garden"
@@ -7696,7 +7712,7 @@
     ],
     "Funi eva": [
       "Cole Brown (Episode 146-570)",
-      "Chris Rager (One Piece: Stampede, Episode 629-present)",
+      "Chris Rager (One Piece: Stampede, Episode 629+)",
       "Tyson Rinehart (young)"
     ],
     "dfname": [
@@ -10113,6 +10129,9 @@
     "origin": [
       "Grand Line (Ryugu Kingdom, Fish-Man Island)"
     ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
+    ],
     "status": [
       "Alive"
     ],
@@ -10214,6 +10233,13 @@
       "Captain",
       "Slave trader"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
+    ],
     "status": [
       "Alive"
     ],
@@ -10250,6 +10276,13 @@
       "Pirate",
       "Slave trader"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom (former)"
+    ],
     "status": [
       "Alive"
     ],
@@ -10283,6 +10316,13 @@
       "Pirate",
       "Slave trader"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom (former)"
+    ],
     "status": [
       "Alive"
     ],
@@ -10308,6 +10348,13 @@
     "first": [
       "Chapter 203 (cover)",
       "Episode 531\u200e"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Gyoverly Hills"
     ],
     "status": [
       "Alive"
@@ -11380,6 +11427,7 @@
     ],
     "residence": [
       "Mary Geoise (former)",
+      "Downs (former)",
       "Spider Miles (former)",
       "Dressrosa (former)"
     ],
@@ -11447,7 +11495,8 @@
     ],
     "affiliation": [
       "Revolutionary Army",
-      "Freedom Fighters (former)Seven Warlords of the Sea (former)",
+      "Freedom Fighters (former)",
+      "Seven Warlords of the Sea (former)",
       "Sorbet Kingdom (former)"
     ],
     "occupation": [
@@ -11462,7 +11511,9 @@
     ],
     "residence": [
       "Sorbet Kingdom (former)",
-      "Baltigo (former)"
+      "Baltigo (former)",
+      "Mary Geoise (former)",
+      "Sabaody Archipelago (former)"
     ],
     "alias": [
       "PX-0"
@@ -11487,7 +11538,7 @@
       "X"
     ],
     "bounty": [
-      "At least 296000000"
+      "296000000"
     ],
     "jva": [
       "Hideyuki Hori"
@@ -11551,7 +11602,8 @@
     ],
     "occupation": [
       "Co-Head of the World Government (Public)",
-      "Warrior God of Science and Defense (\u79d1\u5b66\u9632\u885b\u6b66\u795e, Kagaku B\u014dei Bushin?, VIZ: \"Godhead of Science & Defense\")"
+      "Warrior God of Science and Defense (\u79d1\u5b66\u9632\u885b\u6b66\u795e, Kagaku B\u014dei Bushin?, VIZ: \"Godhead of Science & Defense\")",
+      "Scientist"
     ],
     "residence": [
       "Mary Geoise"
@@ -12031,12 +12083,12 @@
       "X"
     ],
     "jva": [
-      "Minori Matsushima (Ep. 151-755)"
+      "Minori Matsushima (Episode 151-755)"
     ],
     "Funi eva": [
-      "Juli Erickson (Ep. 459-3D2Y)",
+      "Juli Erickson (Episode 459-3D2Y)",
       "Pam Dougherty (Adventure of Nebulandia)",
-      "Wendy Powell (705+)"
+      "Wendy Powell (Episode 705+)"
     ],
     "dfname": [
       "Woshu Woshu no Mi"
@@ -14927,7 +14979,8 @@
       "\"Lovely\" secretary of Tom (former)"
     ],
     "origin": [
-      "Grand Line (Fish-Man Island)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
     ],
     "residence": [
       "Water 7",
@@ -16293,7 +16346,8 @@
       "Shipwright"
     ],
     "origin": [
-      "Grand Line (Fish-Man Island)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
     ],
     "residence": [
       "Water 7",
@@ -16655,7 +16709,8 @@
       "Unknown"
     ],
     "age": [
-      "22 (debut)"
+      "20 (debut)",
+      "22 (after timeskip)"
     ],
     "birth": [
       "January 26th"
@@ -17139,8 +17194,8 @@
       "\"Three-Headed Baskerville\""
     ],
     "birthname": [
-      "Bas (\u30d0\u30b9, Basu?)\u00a0(Note:\u00a0left)*",
-      "And (\u30a2\u30f3\u30c9, Ando?)\u00a0(Note:\u00a0middle)*Kerville (\u30ab\u30d3\u30eb, Kabiru?)\u00a0(Note:\u00a0right)*"
+      "Bas (\u30d0\u30b9, Basu?)\u00a0(left)*",
+      "And (\u30a2\u30f3\u30c9, Ando?)\u00a0(middle)*Kerville (\u30ab\u30d3\u30eb, Kabiru?)\u00a0(right)*"
     ],
     "status": [
       "Unknown"
@@ -17693,7 +17748,7 @@
     ],
     "Funi eva": [
       "Cole Brown (anime),",
-      "Mark Stoddard (Movie 8)"
+      "Mark Stoddard (Movie 8, Episode 1042-)"
     ]
   },
   {
@@ -19121,8 +19176,8 @@
       "XF"
     ],
     "jva": [
-      "Yoshimasa Hosoya",
-      "Ch\u014d (Zombie)"
+      "Yoshimasa Hosoya\u00a0(Monsters voice comic)*",
+      "Ch\u014d\u00a0(Zombie)*"
     ],
     "Funi eva": [
       "Ian Sinclair"
@@ -19884,7 +19939,8 @@
       "August 9th"
     ],
     "jva": [
-      "Yoshito Yasuhara"
+      "Y\u014dhei Tadano",
+      "Yoshito Yasuhara (Episode 610)"
     ],
     "dfname": [
       "Nomi Nomi no Mi"
@@ -20430,8 +20486,7 @@
       "Beasts Pirates"
     ],
     "occupation": [
-      "Pirate",
-      "Captain",
+      "Pirate Captain",
       "Musician",
       "Informant"
     ],
@@ -20935,10 +20990,11 @@
       "Bonney Pirates"
     ],
     "occupation": [
-      "Pirate Captain"
+      "Pirate Captain",
+      "Princess (former)"
     ],
-    "origin": [
-      "South Blue"
+    "residence": [
+      "South Blue (Sorbet Kingdom) (former)"
     ],
     "alias": [
       "Conney"
@@ -20952,7 +21008,7 @@
     "age": [
       "10 (debut)",
       "12 (after timeskip)",
-      "22-24 (estimated common age by appearance)"
+      "22-24 (estimated default age by appearance)"
     ],
     "birth": [
       "September 1st"
@@ -20976,6 +21032,9 @@
     ],
     "dfname": [
       "Toshi Toshi no Mi"
+    ],
+    "dfename": [
+      "Age-Age Fruit"
     ],
     "dfmeaning": [
       "Age",
@@ -21119,9 +21178,6 @@
       "Pirate",
       "Captain (former)",
       "Empress of Amazon Lily (former)"
-    ],
-    "origin": [
-      "Calm Belt (Amazon Lily)"
     ],
     "residence": [
       "Sabaody Archipelago"
@@ -21609,7 +21665,7 @@
       "Slave"
     ],
     "origin": [
-      "Grand Line"
+      "Grand Line (Sabaody Archipelago)"
     ],
     "residence": [
       "Sabaody Archipelago"
@@ -22221,7 +22277,8 @@
       "Calm Belt (Amazon Lily)"
     ],
     "residence": [
-      "Amazon Lily"
+      "Amazon Lily",
+      "Mary Geoise (former)"
     ],
     "epithet": [
       "\"Snake Princess\"",
@@ -22293,7 +22350,8 @@
       "Calm Belt (Amazon Lily)"
     ],
     "residence": [
-      "Amazon Lily"
+      "Amazon Lily",
+      "Mary Geoise (former)"
     ],
     "status": [
       "Alive"
@@ -22362,7 +22420,8 @@
       "Calm Belt (Amazon Lily)"
     ],
     "residence": [
-      "Amazon Lily"
+      "Amazon Lily",
+      "Mary Geoise (former)"
     ],
     "status": [
       "Alive"
@@ -22632,9 +22691,6 @@
       "Snake Weapon",
       "Pet"
     ],
-    "origin": [
-      "Calm Belt (Amazon Lily)"
-    ],
     "residence": [
       "Amazon Lily"
     ],
@@ -22687,6 +22743,51 @@
   },
   {
     "id": "Yuda"
+  },
+  {
+    "id": "Gloriosa",
+    "jname": [
+      "\u30b0\u30ed\u30ea\u30aa\u30fc\u30b5"
+    ],
+    "rname": [
+      "Gurori\u014dsa"
+    ],
+    "ename": [
+      "Gloriosa"
+    ],
+    "first": [
+      "Chapter 514",
+      "Episode 408"
+    ],
+    "affiliation": [
+      "Kuja",
+      "Rocks Pirates (former)"
+    ],
+    "occupation": [
+      "Empress of Amazon Lily (former)",
+      "Pirate (former)"
+    ],
+    "origin": [
+      "Calm Belt (Amazon Lily)"
+    ],
+    "residence": [
+      "Amazon Lily"
+    ],
+    "alias": [
+      "Elder Nyon"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "birth": [
+      "February 4th"
+    ],
+    "jva": [
+      "Ako Mayama"
+    ],
+    "Funi eva": [
+      "Nancy Sherrard"
+    ]
   },
   {
     "id": "Enishida",
@@ -22755,10 +22856,12 @@
       "Slave (former)"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
     ],
     "residence": [
-      "Fish-Man District (former)"
+      "Fish-Man District (former)",
+      "Mary Geoise (former)"
     ],
     "epithet": [
       "\"The Adventurer\""
@@ -22797,7 +22900,8 @@
       "Jinb\u0113"
     ],
     "ename": [
-      "Jimbei"
+      "Jimbei",
+      "Jinbe (OPCG)"
     ],
     "first": [
       "Chapter 528",
@@ -23249,6 +23353,34 @@
     ]
   },
   {
+    "id": "Pankuta_Dakeyan",
+    "jname": [
+      "\u30d1\u30f3\u30af\u30fc\u30bf\u30fb\u30c0\u30b1\u30e4\u30f3"
+    ],
+    "rname": [
+      "Pank\u016bta Dakeyan"
+    ],
+    "ename": [
+      "Justy Tinbread"
+    ],
+    "first": [
+      "Chapter 525",
+      "Episode 422"
+    ],
+    "occupation": [
+      "Prisoner"
+    ],
+    "origin": [
+      "Grand Line"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "birth": [
+      "June 29th"
+    ]
+  },
+  {
     "id": "Domino",
     "jname": [
       "\u30c9\u30df\u30ce"
@@ -23284,34 +23416,6 @@
     ],
     "Funi eva": [
       "Haley Esposito"
-    ]
-  },
-  {
-    "id": "Pankuta_Dakeyan",
-    "jname": [
-      "\u30d1\u30f3\u30af\u30fc\u30bf\u30fb\u30c0\u30b1\u30e4\u30f3"
-    ],
-    "rname": [
-      "Pank\u016bta Dakeyan"
-    ],
-    "ename": [
-      "Justy Tinbread"
-    ],
-    "first": [
-      "Chapter 525",
-      "Episode 422"
-    ],
-    "occupation": [
-      "Prisoner"
-    ],
-    "origin": [
-      "Grand Line"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "birth": [
-      "June 29th"
     ]
   },
   {
@@ -23705,7 +23809,8 @@
       "Grand Line (Kamabakka Kingdom)"
     ],
     "residence": [
-      "Momoiro Island"
+      "Momoiro Island",
+      "Mary Geoise (former)"
     ],
     "epithet": [
       "\"Okama King\"",
@@ -23834,7 +23939,7 @@
     ],
     "first": [
       "Chapter 533",
-      "Episode 432"
+      "Episode 434"
     ],
     "affiliation": [
       "Marines G-1 Branch"
@@ -25917,7 +26022,8 @@
       "Darumeshian"
     ],
     "ename": [
-      "Dalmation"
+      "Dalmation (WT100)",
+      "Dalmatian (OPCG)"
     ],
     "first": [
       "Chapter 553",
@@ -25972,7 +26078,8 @@
       "Unknown"
     ],
     "age": [
-      "72 (debut)"
+      "70 (debut)",
+      "72 (after timeskip)"
     ],
     "birth": [
       "February 12th"
@@ -26735,7 +26842,8 @@
       "Katar\u012bna Debon"
     ],
     "ename": [
-      "Catarina Devon, Catalina Devon"
+      "Catarina Devon",
+      "Catalina Devon\u00a0(Chapter 538)*"
     ],
     "first": [
       "Chapter 575",
@@ -28615,7 +28723,11 @@
       "Captain"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Flying Dutchman (former)"
     ],
     "status": [
       "Alive"
@@ -28677,7 +28789,8 @@
       "Pirate"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
     ],
     "epithet": [
       "\"Large Monk\""
@@ -28754,6 +28867,13 @@
       "Pirate",
       "Combatant"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
+    ],
     "status": [
       "Alive"
     ],
@@ -28793,7 +28913,11 @@
       "Swordsman"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom (former)"
     ],
     "status": [
       "Alive"
@@ -28839,6 +28963,13 @@
     "occupation": [
       "Pirate"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
+    ],
     "status": [
       "Alive"
     ],
@@ -28879,7 +29010,11 @@
       "Soldier (former)"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
     ],
     "status": [
       "Alive"
@@ -28921,6 +29056,13 @@
     ],
     "affiliation": [
       "Neutral"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
     ],
     "status": [
       "Alive"
@@ -28969,6 +29111,13 @@
     "occupation": [
       "Dancer"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
+    ],
     "status": [
       "Alive"
     ],
@@ -29003,6 +29152,13 @@
     "occupation": [
       "Dancer"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
+    ],
     "status": [
       "Alive"
     ],
@@ -29032,6 +29188,13 @@
     "occupation": [
       "Dancer"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
+    ],
     "status": [
       "Alive"
     ],
@@ -29059,6 +29222,13 @@
     ],
     "occupation": [
       "Dancer"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
     ],
     "status": [
       "Alive"
@@ -29088,6 +29258,13 @@
     ],
     "occupation": [
       "Dancer"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
     ],
     "status": [
       "Alive"
@@ -29120,6 +29297,13 @@
     "occupation": [
       "Dancer"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
+    ],
     "status": [
       "Alive"
     ],
@@ -29148,8 +29332,12 @@
     "occupation": [
       "Dancer"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
     "residence": [
-      "Fish-Man Island"
+      "Mermaid Cove (Coral Hill)"
     ],
     "status": [
       "Alive"
@@ -29179,6 +29367,13 @@
     "occupation": [
       "Dancer"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
+    ],
     "status": [
       "Alive"
     ],
@@ -29206,6 +29401,13 @@
     ],
     "occupation": [
       "Dancer"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)"
     ],
     "status": [
       "Alive"
@@ -29242,7 +29444,7 @@
       "Grand Line (Ryugu Kingdom)"
     ],
     "residence": [
-      "Fish-Man Island"
+      "Ryugu Palace"
     ],
     "status": [
       "Alive"
@@ -29291,7 +29493,7 @@
       "Grand Line (Ryugu Kingdom)"
     ],
     "residence": [
-      "Fish-Man Island"
+      "Ryugu Palace"
     ],
     "status": [
       "Alive"
@@ -29340,7 +29542,7 @@
       "Grand Line (Ryugu Kingdom)"
     ],
     "residence": [
-      "Fish-Man Island"
+      "Ryugu Palace"
     ],
     "status": [
       "Alive"
@@ -29427,7 +29629,12 @@
       "Fortune teller (former)"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Mermaid Cove (Coral Hill)",
+      "Fish-Man District (former)"
     ],
     "epithet": [
       "Madam Shyarly"
@@ -29518,7 +29725,11 @@
       "Pirate Officer"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
     ],
     "status": [
       "Alive"
@@ -29565,7 +29776,11 @@
       "Pirate Officer"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
     ],
     "epithet": [
       "\"Noble of the Fish-Man District\""
@@ -29615,7 +29830,11 @@
       "Pirate Officer"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
     ],
     "status": [
       "Alive"
@@ -29662,7 +29881,11 @@
       "Pirate Officer"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
     ],
     "status": [
       "Alive"
@@ -29706,6 +29929,13 @@
     ],
     "occupation": [
       "Cashier"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Gyoverly Hills"
     ],
     "status": [
       "Alive"
@@ -29785,10 +30015,14 @@
       "Episode 530"
     ],
     "affiliation": [
-      "King Neptune"
+      "King Neptune",
+      "Fish-Man Island (Ryugu Kingdom)"
     ],
     "occupation": [
       "Neptune's transportation and pet"
+    ],
+    "residence": [
+      "Ryugu Palace"
     ],
     "status": [
       "Alive"
@@ -29829,7 +30063,11 @@
       "Princess of the Ryugu Kingdom"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Palace"
     ],
     "alias": [
       "\"Poseidon\""
@@ -29975,7 +30213,11 @@
       "Coating Mechanic"
     ],
     "origin": [
-      "Grand Line (Ryugu Kingdom)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Sea Forest"
     ],
     "status": [
       "Alive"
@@ -30020,6 +30262,13 @@
     "occupation": [
       "Pirate",
       "Sea Urchin Armor Spine Squad Commander"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District (former)"
     ],
     "status": [
       "Alive"
@@ -30178,6 +30427,13 @@
     "occupation": [
       "Robber (formerly)"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom"
+    ],
     "status": [
       "Alive"
     ],
@@ -30258,7 +30514,7 @@
     ],
     "age": [
       "11 (Flashback, debut)",
-      "23 (current)"
+      "23 (present)"
     ],
     "birth": [
       "October 25th"
@@ -30388,6 +30644,13 @@
       "Chapter 630",
       "Episode 550"
     ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Fish-Man District"
+    ],
     "status": [
       "Deceased"
     ]
@@ -30446,6 +30709,13 @@
     ],
     "occupation": [
       "Singer"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom"
     ],
     "status": [
       "Alive"
@@ -31618,6 +31888,7 @@
       "North Blue"
     ],
     "residence": [
+      "Downs (former)",
       "G-5 (former)"
     ],
     "alias": [
@@ -32174,7 +32445,8 @@
       "Hiro Shimono (adult)"
     ],
     "Funi eva": [
-      "Corinne Sudberg"
+      "Corinne Sudberg (young)",
+      "Justin Briner (adult)"
     ],
     "dfname": [
       "Uo Uo no Mi, Model: Seiryu (Artificial)"
@@ -32522,6 +32794,7 @@
       "Episode 621"
     ],
     "affiliation": [
+      "Blackbeard Pirates",
       "Kuzan"
     ],
     "occupation": [
@@ -32558,6 +32831,7 @@
       "North Blue"
     ],
     "residence": [
+      "Downs (former)",
       "Spider Miles (former)",
       "Dressrosa (former)"
     ],
@@ -32626,6 +32900,7 @@
       "North Blue"
     ],
     "residence": [
+      "Downs (former)",
       "Spider Miles (former)",
       "Dressrosa (former)"
     ],
@@ -32691,6 +32966,7 @@
       "North Blue"
     ],
     "residence": [
+      "Downs (former)",
       "Spider Miles (former)",
       "Dressrosa (former)"
     ],
@@ -33153,7 +33429,7 @@
       "Unknown rebel group"
     ],
     "occupation": [
-      "Revolutionist Commander"
+      "Revolutionist commander"
     ],
     "epithet": [
       "\"Revolution's Child\""
@@ -34692,11 +34968,18 @@
       "Revolutionary Army"
     ],
     "occupation": [
+      "Revolutionary Army member",
       "Fish-Man Karate Instructor",
       "Fish-Man Jujutsu Martial Artist"
     ],
     "origin": [
-      "Grand Line (Fish-Man Island)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom (former)",
+      "Baltigo (former)",
+      "Momoiro Island"
     ],
     "epithet": [
       "\"Hundredth Dan Hack\""
@@ -35789,11 +36072,18 @@
       "Revolutionary Army"
     ],
     "occupation": [
+      "Revolutionary Army member",
       "Fish-Man Karate Instructor",
       "Fish-Man Jujutsu Martial Artist"
     ],
     "origin": [
-      "Grand Line (Fish-Man Island)"
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom (former)",
+      "Baltigo (former)",
+      "Momoiro Island"
     ],
     "epithet": [
       "\"Hundredth Dan Hack\""
@@ -35920,7 +36210,7 @@
     ],
     "ename": [
       "Diez Barrels",
-      "X. Barrels (WT100)"
+      "X. Barrels (WT100, OPCG)"
     ],
     "first": [
       "Chapter 765 Episode 704"
@@ -36459,7 +36749,7 @@
     ],
     "occupation": [
       "Pirate (former)",
-      "Scientist (former, self proclaimed)"
+      "Scientist (former, self-proclaimed)"
     ],
     "origin": [
       "Grand Line"
@@ -37409,6 +37699,9 @@
     ],
     "jva": [
       "S\u014dta Arai"
+    ],
+    "Funi eva": [
+      "Christian Thorsen"
     ]
   },
   {
@@ -37591,6 +37884,10 @@
       "Proprietor (former)",
       "Pirate (former)",
       "Slave (former)"
+    ],
+    "residence": [
+      "Gran Tesoro (former)",
+      "Mary Geoise (former)"
     ],
     "epithet": [
       "\"Golden Emperor\"",
@@ -39308,51 +39605,6 @@
     ]
   },
   {
-    "id": "Gloriosa",
-    "jname": [
-      "\u30b0\u30ed\u30ea\u30aa\u30fc\u30b5"
-    ],
-    "rname": [
-      "Gurori\u014dsa"
-    ],
-    "ename": [
-      "Gloriosa"
-    ],
-    "first": [
-      "Chapter 514",
-      "Episode 408"
-    ],
-    "affiliation": [
-      "Kuja",
-      "Rocks Pirates (former)"
-    ],
-    "occupation": [
-      "Empress of Amazon Lily (former)",
-      "Pirate (former)"
-    ],
-    "origin": [
-      "Calm Belt (Amazon Lily)"
-    ],
-    "residence": [
-      "Amazon Lily"
-    ],
-    "alias": [
-      "Elder Nyon"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "birth": [
-      "February 4th"
-    ],
-    "jva": [
-      "Ako Mayama"
-    ],
-    "Funi eva": [
-      "Nancy Sherrard"
-    ]
-  },
-  {
     "id": "Charlotte_Cracker",
     "jname": [
       "\u30b7\u30e3\u30fc\u30ed\u30c3\u30c8\u30fb\u30af\u30e9\u30c3\u30ab\u30fc"
@@ -39926,7 +40178,7 @@
     "jva": [
       "Ry\u014dhei Arai (Newichi)",
       "Hiroshi Okamoto (Newji)",
-      "Yuta Kasuya (Newshi\u00a0(Note:\u00a0Newsan in the anime)*)",
+      "Yuta Kasuya (Newshi\u00a0(Newsan in the anime)*)",
       "Toshiya Chiba (Newgo)",
       "Chihiro Ikki (Nutmeg)",
       "Momoko Soyama (Akimeg)",
@@ -40854,6 +41106,12 @@
     "occupation": [
       "Pirate Officer"
     ],
+    "origin": [
+      "Grand Line (On a boat)"
+    ],
+    "residence": [
+      "Totto Land"
+    ],
     "status": [
       "Alive"
     ],
@@ -40885,6 +41143,9 @@
     ],
     "occupation": [
       "Pirate Officer"
+    ],
+    "origin": [
+      "Grand Line (Totto Land)"
     ],
     "status": [
       "Alive"
@@ -40956,7 +41217,7 @@
       "Episode 828"
     ],
     "affiliation": [
-      "Du Feld Conglomerate",
+      "Lu Feld Conglomerate",
       "Underworld",
       "MADS (former)"
     ],
@@ -41480,6 +41741,9 @@
       "Pirate Officer",
       "Minister of Eggs"
     ],
+    "origin": [
+      "Grand Line (Totto Land)"
+    ],
     "residence": [
       "Kimi Island"
     ],
@@ -41885,6 +42149,12 @@
     ],
     "occupation": [
       "Pirate Officer"
+    ],
+    "origin": [
+      "Grand Line (On a boat)"
+    ],
+    "residence": [
+      "Totto Land"
     ],
     "status": [
       "Alive"
@@ -44179,7 +44449,7 @@
     ],
     "jva": [
       "Nana Mizuki",
-      "Hitomi \u014cwada (child)"
+      "Hitomi \u014cwada (young)"
     ],
     "Funi eva": [
       "Molly Searcy"
@@ -50921,6 +51191,9 @@
     ],
     "jva": [
       "Yumi Kakazu"
+    ],
+    "Funi eva": [
+      "Juliet Simmons"
     ]
   },
   {
@@ -51001,8 +51274,8 @@
       "XF"
     ],
     "jva": [
-      "Yoshimasa Hosoya",
-      "Ch\u014d (Zombie)"
+      "Yoshimasa Hosoya\u00a0(Monsters voice comic)*",
+      "Ch\u014d\u00a0(Zombie)*"
     ],
     "Funi eva": [
       "Ian Sinclair"
@@ -51082,6 +51355,9 @@
     ],
     "jva": [
       "Takahiro Shimada"
+    ],
+    "Funi eva": [
+      "Daniel Penz"
     ]
   },
   {
@@ -51108,6 +51384,9 @@
     ],
     "jva": [
       "Jiro Saito"
+    ],
+    "Funi eva": [
+      "Jim Johnson"
     ]
   },
   {
@@ -52091,7 +52370,8 @@
       "S-Snake"
     ],
     "first": [
-      "Chapter 1059"
+      "Chapter 1059",
+      "Episode 1087"
     ],
     "affiliation": [
       "Seraphim (Pacifista)"
@@ -52130,7 +52410,8 @@
       "S-Hawk"
     ],
     "first": [
-      "Chapter 1059"
+      "Chapter 1059",
+      "Episode 1087"
     ],
     "affiliation": [
       "Seraphim (Pacifista)"
@@ -52204,6 +52485,9 @@
     ],
     "status": [
       "Alive"
+    ],
+    "jva": [
+      "Aya Hirano"
     ]
   },
   {
@@ -52277,6 +52561,9 @@
     ],
     "status": [
       "Deceased"
+    ],
+    "jva": [
+      "Sh\u016bhei Sakaguchi"
     ]
   },
   {
@@ -52301,6 +52588,9 @@
     ],
     "status": [
       "Alive"
+    ],
+    "jva": [
+      "Kaede Hondo"
     ]
   },
   {
@@ -52364,6 +52654,9 @@
     ],
     "status": [
       "Alive"
+    ],
+    "jva": [
+      "Ryoko Shiraishi"
     ]
   },
   {
@@ -52388,6 +52681,9 @@
     ],
     "status": [
       "Deceased"
+    ],
+    "jva": [
+      "Tokuyoshi Kawashima"
     ]
   },
   {
@@ -52405,13 +52701,17 @@
       "Chapter 1065"
     ],
     "affiliation": [
-      "Marines (SSG)"
+      "Marines (SSG)",
+      "World Government"
     ],
     "residence": [
       "Egghead"
     ],
     "status": [
       "Alive"
+    ],
+    "jva": [
+      "Mutsumi Tamura"
     ]
   },
   {
@@ -52525,7 +52825,7 @@
     ],
     "occupation": [
       "Pirate (former)",
-      "Scientist (former, self proclaimed)"
+      "Scientist (former, self-proclaimed)"
     ],
     "origin": [
       "Grand Line"
@@ -52931,7 +53231,8 @@
       "Grand Line (Kamabakka Kingdom)"
     ],
     "residence": [
-      "Momoiro Island"
+      "Momoiro Island",
+      "Mary Geoise (former)"
     ],
     "epithet": [
       "\"Okama King\"",
@@ -53051,7 +53352,11 @@
       "Church manager (former)"
     ],
     "origin": [
-      "Sorbet Kingdom"
+      "South Blue (Sorbet Kingdom)"
+    ],
+    "residence": [
+      "Sorbet Kingdom",
+      "Mary Geoise (former)"
     ],
     "status": [
       "Deceased"
@@ -53079,7 +53384,8 @@
       "East Army Captain of the Revolutionary Army, Slave (former)"
     ],
     "residence": [
-      "South Blue (Sorbet Kingdom)"
+      "South Blue (Sorbet Kingdom)",
+      "Mary Geoise (former)"
     ],
     "status": [
       "Deceased"
@@ -53107,6 +53413,80 @@
     ],
     "residence": [
       "Sorbet Kingdom"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
+    "id": "Conney",
+    "jname": [
+      "\u30b3\u30cb\u30fc"
+    ],
+    "rname": [
+      "Kon\u012b"
+    ],
+    "ename": [
+      "Conney",
+      "Connie\u00a0(Former:\u00a0Chapter 1099)\u2021"
+    ],
+    "first": [
+      "Chapter 1099"
+    ],
+    "occupation": [
+      "Queen dowager"
+    ],
+    "residence": [
+      "Sorbet Kingdom"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Bulldog",
+    "jname": [
+      "\u30d6\u30eb\u30c9\u30c3\u30b0"
+    ],
+    "rname": [
+      "Burudoggu"
+    ],
+    "ename": [
+      "Bulldog"
+    ],
+    "first": [
+      "Chapter 1099"
+    ],
+    "occupation": [
+      "King"
+    ],
+    "residence": [
+      "Sorbet Kingdom"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Alpha",
+    "jname": [
+      "\u30a2\u30eb\u30d5\u30a1"
+    ],
+    "rname": [
+      "Arufa"
+    ],
+    "ename": [
+      "Alpha"
+    ],
+    "first": [
+      "Chapter 1100"
+    ],
+    "affiliation": [
+      "CP8"
+    ],
+    "occupation": [
+      "Cipher Pol Agent",
+      "Nurse (undercover)"
     ],
     "status": [
       "Unknown"
