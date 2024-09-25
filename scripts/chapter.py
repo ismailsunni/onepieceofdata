@@ -96,7 +96,7 @@ def scrap_chapter_parallel(last_chapter):
 
 
 if __name__ == "__main__":
-    last_chapter = 1103
+    last_chapter = 1126
     # scrap_all_chapter(last_chapter)
     # print("-------------------")
     scrap_chapter_parallel(last_chapter)

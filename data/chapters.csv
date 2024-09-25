@@ -1,7 +1,7 @@
 chapter,volume,name,page,date,jump
 1,1.0,Romance Dawn,53,1997-07-19,1997 Issue 34
 2,1.0,"They Call Him ""Straw Hat Luffy""",23,1997-07-28,1997 Issue 35
-3,1.0,Enter Zolo: Pirate Hunter,21,1997-08-04,1997 Issue 36
+3,1.0,Enter Zolo–Pirate Hunter,21,1997-08-04,1997 Issue 36
 4,1.0,The Great Captain Morgan,19,1997-08-11,1997 Issue 37-38
 5,1.0,The King of the Pirates and the Master Swordsman,19,1997-08-25,1997 Issue 39
 6,1.0,Number One,23,1997-09-01,1997 Issue 40
@@ -76,7 +76,7 @@ chapter,volume,name,page,date,jump
 75,9.0,Of Maps and Fish-Men,19,1999-02-08,1999 Issue 11
 76,9.0,Sleep,19,1999-02-15,1999 Issue 12
 77,9.0,The First Step Toward a Dream,19,1999-02-22,1999 Issue 13
-78,9.0,Belle-Mère,19,1999-03-01,1999 Issue 14
+78,9.0,"""Belle-Mère""",19,1999-03-01,1999 Issue 14
 79,9.0,To Live,19,1999-03-08,1999 Issue 15
 80,9.0,A Thief Is a Thief,19,1999-03-15,1999 Issue 16
 81,9.0,Tears,19,1999-03-20,1999 Issue 17
@@ -207,7 +207,7 @@ chapter,volume,name,page,date,jump
 206,23.0,Ignition,19,2001-11-05,2001 Issue 49
 207,23.0,Nightmare,19,2001-11-12,2001 Issue 50
 208,23.0,Guardian Spirit,19,2001-11-19,2001 Issue 51
-209,23.0,I Will Defeat You,21,2001-11-26,2001 Issue 52
+209,23.0,I Will Defeat You,19,2001-11-26,2001 Issue 52
 210,23.0,Zero,17,2001-12-03,2002 Issue 1
 211,23.0,King,19,2001-12-10,2002 Issue 2
 212,23.0,Some Justice,19,2001-12-17,2002 Issue 3
@@ -239,7 +239,7 @@ chapter,volume,name,page,date,jump
 238,26.0,Heaven's Gate,17,2002-07-15,2002 Issue 33
 239,26.0,Angel Beach,17,2002-07-22,2002 Issue 34
 240,26.0,Dial Power,17,2002-07-29,2002 Issue 35
-241,26.0,Heaven's Judgment,19,2002-08-05,2002 Issue 36
+241,26.0,Heaven's Judgment,17,2002-08-05,2002 Issue 36
 242,26.0,Class-2 Criminals,17,2002-08-12,2002 Issue 37-38
 243,26.0,Trial,17,2002-08-26,2002 Issue 39
 244,26.0,S.O.S.,19,2002-09-02,2002 Issue 40
@@ -258,7 +258,7 @@ chapter,volume,name,page,date,jump
 257,28.0,Dial Battle,19,2002-12-09,2003 Issue 2
 258,28.0,The Many Souths,19,2002-12-16,2003 Issue 3-4
 259,28.0,Pirate Zolo vs. Warrior Braham,19,2002-12-30,2003 Issue 5
-260,28.0,Pirate Luffy vs. Berserker Wyper,19,2003-01-06,2003 Issue 6-7
+260,28.0,Pirate Luffy vs. Berserker Wyper,17,2003-01-06,2003 Issue 6-7
 261,28.0,Warrior Genbo vs. Heavenly Warriors Commander Yama,19,2003-01-20,2003 Issue 8
 262,28.0,Pirate Chopper vs. Vassal Gedatsu,19,2003-01-27,2003 Issue 9
 263,28.0,Pirate Nami and the Weird Knight vs. Heavenly Warriors Subcommanders Hotori and Kotori,19,2003-02-03,2003 Issue 10
@@ -267,7 +267,7 @@ chapter,volume,name,page,date,jump
 266,29.0,Pirate Chopper vs. Vassal Ohm,19,2003-02-24,2003 Issue 13
 267,29.0,March,19,2003-03-03,2003 Issue 14
 268,29.0,Suite,19,2003-03-10,2003 Issue 15
-269,29.0,Concerto,19,2003-03-17,2003 Issue 16
+269,29.0,Concerto,21,2003-03-17,2003 Issue 16
 270,29.0,Serenade,19,2003-03-31,2003 Issue 18
 271,29.0,Pirate Zolo vs. Vassal Ohm,19,2003-04-07,2003 Issue 19
 272,29.0,Play,19,2003-04-14,2003 Issue 20
@@ -275,9 +275,9 @@ chapter,volume,name,page,date,jump
 274,29.0,Oratorio,21,2003-04-28,2003 Issue 22-23
 275,29.0,Divina Commedia,19,2003-05-12,2003 Issue 24
 276,30.0,Shandian Rhythm,19,2003-05-19,2003 Issue 25
-277,30.0,Maxim,17,2003-05-26,2003 Issue 26
+277,30.0,Maxim,19,2003-05-26,2003 Issue 26
 278,30.0,Conis,19,2003-06-02,2003 Issue 27
-279,30.0,Pirate Luffy vs. Kami Eneru,18,2003-06-09,2003 Issue 28
+279,30.0,Pirate Luffy vs. Kami Eneru,19,2003-06-09,2003 Issue 28
 280,30.0,Floating,19,2003-06-16,2003 Issue 29
 281,30.0,Deathpiea,19,2003-06-23,2003 Issue 30
 282,30.0,Desire,19,2003-06-30,2003 Issue 31
@@ -307,7 +307,7 @@ chapter,volume,name,page,date,jump
 306,33.0,Donut Race!,19,2004-01-19,2004 Issue 8
 307,33.0,"Ready, Set, Donut!",19,2004-01-26,2004 Issue 9
 308,33.0,Obstructive Tactics,19,2004-02-02,2004 Issue 10
-309,33.0,Groggy Monsters,17,2004-02-09,2004 Issue 11
+309,33.0,Groggy Monsters,19,2004-02-09,2004 Issue 11
 310,33.0,Groggy Ring!!,19,2004-02-16,2004 Issue 12
 311,33.0,Rough Game,19,2004-02-23,2004 Issue 13
 312,33.0,Goal!!,19,2004-03-01,2004 Issue 14
@@ -328,10 +328,10 @@ chapter,volume,name,page,date,jump
 327,34.0,"Shipbuilding Island, Repair Dock No. 1",21,2004-06-28,2004 Issue 31
 328,35.0,The Pirate Abduction Incident,19,2004-07-12,2004 Issue 33
 329,35.0,My Name Is Franky,19,2004-07-17,2004 Issue 34
-330,35.0,It's Decided,17,2004-07-26,2004 Issue 35
+330,35.0,It's Decided,19,2004-07-26,2004 Issue 35
 331,35.0,The Big Argument,19,2004-08-02,2004 Issue 36
-332,35.0,Luffy vs. Usopp,18,2004-08-09,2004 Issue 37-38
-333,35.0,Captain,18,2004-08-23,2004 Issue 39
+332,35.0,Luffy vs. Usopp,19,2004-08-09,2004 Issue 37-38
+333,35.0,Captain,19,2004-08-23,2004 Issue 39
 334,35.0,Big Trouble in the Secret Room,19,2004-08-30,2004 Issue 40
 335,35.0,Warning,19,2004-09-06,2004 Issue 41
 336,35.0,Luffy vs. Franky,19,2004-09-13,2004 Issue 42
@@ -346,7 +346,7 @@ chapter,volume,name,page,date,jump
 345,36.0,Sleepers,19,2004-11-15,2004 Issue 51
 346,36.0,The Ninth Justice,19,2004-11-29,2004 Issue 53
 347,37.0,Six Powers,19,2004-12-06,2005 Issue 1
-348,37.0,Fighting Power,20,2004-12-13,2005 Issue 2
+348,37.0,Fighting Power,19,2004-12-13,2005 Issue 2
 349,37.0,Ordinary Citizens,19,2004-12-20,2005 Issue 3-4
 350,37.0,The Warehouse Under the Bridge,19,2005-01-03,2005 Issue 5-6
 351,37.0,Klabautermann,19,2005-01-17,2005 Issue 7
@@ -379,7 +379,7 @@ chapter,volume,name,page,date,jump
 378,40.0,Casualties,19,2005-08-22,2005 Issue 38
 379,40.0,Power Level,19,2005-08-29,2005 Issue 39
 380,40.0,Enies Lobby Main Island Express,19,2005-09-05,2005 Issue 40
-381,40.0,Fired,18,2005-09-12,2005 Issue 41
+381,40.0,Fired,19,2005-09-12,2005 Issue 41
 382,40.0,Demon Lair,19,2005-09-17,2005 Issue 42
 383,40.0,Luffy vs. Blueno,19,2005-09-26,2005 Issue 43
 384,40.0,Signal the Counterattack,19,2005-10-03,2005 Issue 44
@@ -455,7 +455,7 @@ chapter,volume,name,page,date,jump
 454,47.0,The Humming Swordsman,19,2007-04-28,2007 Issue 22-23
 455,47.0,Gecko Moria of the Seven Warlords of the Sea,19,2007-05-14,2007 Issue 24
 456,47.0,Demon from the Land of Ice,19,2007-05-21,2007 Issue 25
-457,47.0,Meat!!!,17,2007-05-28,2007 Issue 26
+457,47.0,Meat!!!,19,2007-05-28,2007 Issue 26
 458,47.0,Anything but My Afro,19,2007-06-04,2007 Issue 27
 459,47.0,I Can't Just Die Hoping to be Forgiven,19,2007-06-11,2007 Issue 28
 460,48.0,Conquest Before Dawn!,19,2007-06-25,2007 Issue 30
@@ -523,8 +523,8 @@ chapter,volume,name,page,date,jump
 522,53.0,Fatal Illness,19,2008-11-17,2008 Issue 51
 523,54.0,Hell,19,2008-11-22,2008 Issue 52
 524,54.0,Unstoppable,19,2008-12-01,2009 Issue 1
-525,54.0,The Underwater Prison Impel Down,19,2008-12-08,2009 Issue 2
-526,54.0,Adventure in the Great Prison,19,2008-12-22,2009 Issue 4-5
+525,54.0,The Underwater Prison Impel Down,17,2008-12-08,2009 Issue 2
+526,54.0,Adventure in the Great Prison,21,2008-12-22,2009 Issue 4-5
 527,54.0,Level 1: Crimson Hell,19,2009-01-05,2009 Issue 6-7
 528,54.0,"Jimbei, First Son of the Sea",19,2009-01-19,2009 Issue 8
 529,54.0,Level 2: Beast Hell,19,2009-01-26,2009 Issue 9
@@ -1087,18 +1087,41 @@ chapter,volume,name,page,date,jump
 1086,107.0,The Five Elders,15,2023-06-12,2023 Issue 28
 1087,107.0,Battleship Bags,15,2023-07-17,2023 Issue 33
 1088,107.0,Final Lesson,19,2023-07-24,2023 Issue 34
-1089,,Hostage Situation,17,2023-08-07,2023 Issue 36-37
-1090,,Kizaru,17,2023-08-21,2023 Issue 38
-1091,,Sentomaru,19,2023-09-04,2023 Issue 40
-1092,,Kuma the Tyrant's Holy Land Rampage,17,2023-09-18,2023 Issue 42
-1093,,Luffy vs. Kizaru,15,2023-09-25,2023 Issue 43
-1094,,"Five Elders, Godhead of Science & Defense, St. Jaygarcia Saturn",19,2023-10-09,2023 Issue 45
-1095,,Better Off Dead in This World,15,2023-10-16,2023 Issue 46
-1096,,Kumachi,17,2023-10-30,2023 Issue 48
-1097,,Ginny,13,2023-11-06,2023 Issue 49
-1098,,Bonney's Birth,15,2023-11-13,2023 Issue 50
-1099,,Pacifist,17,2023-11-27,2023 Issue 52
-1100,,"Thank You, Bonney",17,2023-12-04,2024 Issue 1
-1101,,To Bonney,17,2023-12-11,2024 Issue 2
-1102,,Kuma's Life,17,2023-12-25,2024 Issue 4-5
-1103,,"I'm Sorry, Daddy",17,2024-01-06,2024 Issue 6-7
+1089,108.0,Hostage Situation,17,2023-08-07,2023 Issue 36-37
+1090,108.0,Kizaru,17,2023-08-21,2023 Issue 38
+1091,108.0,Sentomaru,19,2023-09-04,2023 Issue 40
+1092,108.0,Kuma the Tyrant's Holy Land Rampage,17,2023-09-18,2023 Issue 42
+1093,108.0,Luffy vs. Kizaru,15,2023-09-25,2023 Issue 43
+1094,108.0,"Five Elders, Godhead of Science & Defense, St. Jaygarcia Saturn",19,2023-10-09,2023 Issue 45
+1095,108.0,Better Off Dead in This World,15,2023-10-16,2023 Issue 46
+1096,108.0,Kumachi,17,2023-10-30,2023 Issue 48
+1097,108.0,Ginny,13,2023-11-06,2023 Issue 49
+1098,108.0,Bonney's Birth,15,2023-11-13,2023 Issue 50
+1099,108.0,Pacifist,17,2023-11-27,2023 Issue 52
+1100,108.0,"Thank You, Bonney",17,2023-12-04,2024 Issue 1
+1101,109.0,To Bonney,17,2023-12-11,2024 Issue 2
+1102,109.0,Kuma's Life,17,2023-12-25,2024 Issue 4-5
+1103,109.0,"I'm Sorry, Daddy",17,2024-01-06,2024 Issue 6-7
+1104,109.0,"Thank You, Daddy",15,2024-01-22,2024 Issue 8
+1105,109.0,The Height Of Folly,13,2024-01-29,2024 Issue 9
+1106,109.0,On Your Side,17,2024-02-05,2024 Issue 10
+1107,109.0,I've Been Looking For You!!,17,2024-02-19,2024 Issue 12
+1108,109.0,"Come In, World",15,2024-02-26,2024 Issue 13
+1109,109.0,Interception,15,2024-03-04,2024 Issue 14
+1110,109.0,Starfall,17,2024-03-18,2024 Issue 16
+1111,,Sun-Shield,19,2024-03-25,2024 Issue 17
+1112,,Hard Aspects,17,2024-04-22,2024 Issue 21
+1113,,Stalemate,19,2024-04-29,2024 Issue 22-23
+1114,,The Wings of Icarus,15,2024-05-13,2024 Issue 24
+1115,,Pieces of a Continent,17,2024-05-27,2024 Issue 26
+1116,,Inner Conflict,13,2024-06-03,2024 Issue 27
+1117,,A,17,2024-06-17,2024 Issue 29
+1118,,The Most Free,13,2024-06-24,2024 Issue 30
+1119,,EMET,13,2024-07-01,2024 Issue 31
+1120,,Atlas,19,2024-07-15,2024 Issue 33
+1121,,The Upheaval of the Era,17,2024-07-22,2024 Issue 34
+1122,,Time is Right,17,2024-08-05,2024 Issue 36-37
+1123,,The Void Fortnight,17,2024-08-19,2024 Issue 38
+1124,,Close Friend,13,2024-08-26,2024 Issue 39
+1125,,What Death Means,17,2024-09-09,2024 Issue 41
+1126,,Settling the Score,17,2024-09-16,2024 Issue 42
