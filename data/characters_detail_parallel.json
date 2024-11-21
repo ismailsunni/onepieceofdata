@@ -208,9 +208,6 @@
     "rname": [
       "Yasoppu"
     ],
-    "ename": [
-      "Yasopp"
-    ],
     "first": [
       "Chapter 1",
       "Episode 4"
@@ -411,9 +408,6 @@
     "rname": [
       "G\u014dru D\u012b Roj\u0101"
     ],
-    "ename": [
-      "Gol D. Roger"
-    ],
     "first": [
       "Chapter 1",
       "Episode 1"
@@ -487,13 +481,13 @@
       "Episode 1"
     ],
     "affiliation": [
-      "Straw Hat Pirates;",
-      "Straw Hat Grand Fleet;",
-      "Four Emperors;",
-      "Clan of D.;",
-      "Dadan Family (former);",
-      "Baratie (temporary, former);",
-      "Impel Down (former);",
+      "Straw Hat Pirates",
+      "Straw Hat Grand Fleet",
+      "Four Emperors",
+      "Clan of D.",
+      "Dadan Family (former)",
+      "Baratie (temporary, former)",
+      "Impel Down (former)",
       "Ninja-Pirate-Mink-Samurai Alliance (disbanded)"
     ],
     "occupation": [
@@ -505,7 +499,7 @@
       "Bandit (former)"
     ],
     "origin": [
-      "East Blue (Goa Kingdom)"
+      "East Blue (Foosha Village)"
     ],
     "residence": [
       "Foosha Village (former)",
@@ -525,8 +519,8 @@
       "Alive"
     ],
     "age": [
-      "7 (debut);",
-      "17 (pre-timeskip);",
+      "7 (debut)",
+      "17 (pre-timeskip)",
       "19 (after timeskip)"
     ],
     "birth": [
@@ -618,7 +612,7 @@
       "East Blue (Conomi Islands)"
     ],
     "residence": [
-      "Cocoyasi Village (former)",
+      "Oykot Kingdom (former)Cocoyasi Village (former)",
       "Weatheria (former, temporary)"
     ],
     "alias": [
@@ -678,9 +672,6 @@
       "\u30de\u30ad\u30ce"
     ],
     "rname": [
-      "Makino"
-    ],
-    "ename": [
       "Makino"
     ],
     "first": [
@@ -898,9 +889,6 @@
       "\u30d2\u30b0\u30de"
     ],
     "rname": [
-      "Higuma"
-    ],
-    "ename": [
       "Higuma"
     ],
     "first": [
@@ -1208,10 +1196,10 @@
       "Pirate Ship Caretaker (former)"
     ],
     "origin": [
-      "East Blue"
+      "East Blue (Satsuruzo Kingdom)"
     ],
     "residence": [
-      "Shells Town (former)",
+      "Shells Town (153rd Branch) (former)",
       "Goat Island (former)"
     ],
     "epithet": [
@@ -1351,9 +1339,6 @@
     "rname": [
       "M\u014dgan"
     ],
-    "ename": [
-      "Morgan"
-    ],
     "first": [
       "Chapter 4",
       "Episode 2"
@@ -1367,7 +1352,7 @@
       "Chief Petty Officer (former)"
     ],
     "residence": [
-      "Shells Town (former)"
+      "Shells Town (153rd Branch) (former)"
     ],
     "epithet": [
       "Axe-Hand Morgan"
@@ -1412,9 +1397,6 @@
     "rname": [
       "Herumeppo"
     ],
-    "ename": [
-      "Helmeppo"
-    ],
     "first": [
       "Chapter 3",
       "Episode 2"
@@ -1429,7 +1411,7 @@
       "Chore Boy (promoted)"
     ],
     "residence": [
-      "Shells Town (former)"
+      "Shells Town (153rd Branch) (former)"
     ],
     "status": [
       "Alive"
@@ -1446,6 +1428,9 @@
     ],
     "blood type": [
       "S"
+    ],
+    "bounty": [
+      "\u2605 (100000000)"
     ],
     "jva": [
       "K\u014dichi Nagano"
@@ -1472,9 +1457,6 @@
     "rname": [
       "Rika"
     ],
-    "ename": [
-      "Rika"
-    ],
     "first": [
       "Chapter 3",
       "Episode 2"
@@ -1489,7 +1471,7 @@
       "East Blue"
     ],
     "residence": [
-      "Shells Town"
+      "Shells Town (153rd Branch)"
     ],
     "status": [
       "Alive"
@@ -1572,7 +1554,7 @@
       "East Blue"
     ],
     "residence": [
-      "Shells Town"
+      "Shells Town (153rd Branch)"
     ],
     "status": [
       "Alive"
@@ -1613,7 +1595,7 @@
       "East Blue"
     ],
     "residence": [
-      "Shells Town"
+      "Shells Town (153rd Branch)"
     ],
     "status": [
       "Alive"
@@ -1631,9 +1613,6 @@
       "\u30ea\u30ea\u30ab"
     ],
     "rname": [
-      "Ririka"
-    ],
-    "ename": [
       "Ririka"
     ],
     "first": [
@@ -1909,7 +1888,7 @@
       "East Blue"
     ],
     "residence": [
-      "Shells Town"
+      "Shells Town (153rd Branch)"
     ],
     "status": [
       "Alive"
@@ -2035,7 +2014,8 @@
       "Ritch\u012b"
     ],
     "ename": [
-      "Richie"
+      "Richie",
+      "Richy (Odex)"
     ],
     "first": [
       "Chapter 9",
@@ -2344,9 +2324,6 @@
     "rname": [
       "Shirub\u0101zu Reir\u012b"
     ],
-    "ename": [
-      "Silvers Rayleigh"
-    ],
     "first": [
       "Chapter 19",
       "Episode 8"
@@ -2472,7 +2449,8 @@
       "X"
     ],
     "jva": [
-      "Toru OhiraChafurin (One Piece Bounty Rush)"
+      "T\u014dru \u014chira",
+      "Chafurin (Bounty Rush)"
     ],
     "Odex eva": [
       "Joseph Murray"
@@ -2529,9 +2507,6 @@
     "rname": [
       "Usagihebi"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 22",
       "Episode 18"
@@ -2550,9 +2525,6 @@
     ],
     "rname": [
       "Raionbuta"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 22",
@@ -2573,9 +2545,6 @@
     "rname": [
       "Kirinkodanuki"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 22",
       "Episode 18"
@@ -2593,9 +2562,6 @@
       "\u30ab\u30e4"
     ],
     "rname": [
-      "Kaya"
-    ],
-    "ename": [
       "Kaya"
     ],
     "first": [
@@ -2649,9 +2615,6 @@
       "\u30af\u30ed"
     ],
     "rname": [
-      "Kuro"
-    ],
-    "ename": [
       "Kuro"
     ],
     "first": [
@@ -3010,9 +2973,6 @@
     "rname": [
       "Mer\u012b"
     ],
-    "ename": [
-      "Merry"
-    ],
     "first": [
       "Chapter 24",
       "Episode 11"
@@ -3101,6 +3061,7 @@
       "S"
     ],
     "bounty": [
+      "(At least 1000000)",
       "9000000"
     ],
     "jva": [
@@ -3356,9 +3317,6 @@
     "rname": [
       "Yosaku"
     ],
-    "ename": [
-      "Yosaku"
-    ],
     "first": [
       "Chapter 42",
       "Episode 20"
@@ -3410,9 +3368,6 @@
     ],
     "rname": [
       "Jon\u012b"
-    ],
-    "ename": [
-      "Johnny"
     ],
     "first": [
       "Chapter 42",
@@ -3574,6 +3529,9 @@
     "blood type": [
       "F"
     ],
+    "bounty": [
+      "(At least 1000000)"
+    ],
     "jva": [
       "Hideo Ishikawa"
     ],
@@ -3594,9 +3552,6 @@
     ],
     "rname": [
       "Zefu"
-    ],
-    "ename": [
-      "Zeff"
     ],
     "first": [
       "Chapter 43",
@@ -3845,9 +3800,6 @@
     "rname": [
       "Kur\u012bku"
     ],
-    "ename": [
-      "Krieg"
-    ],
     "first": [
       "Chapter 45",
       "Episode 21"
@@ -3973,9 +3925,6 @@
     "rname": [
       "Pati"
     ],
-    "ename": [
-      "Patty"
-    ],
     "first": [
       "Chapter 44",
       "Episode 21"
@@ -4029,9 +3978,6 @@
     "rname": [
       "Karune"
     ],
-    "ename": [
-      "Carne"
-    ],
     "first": [
       "Chapter 45",
       "Episode 21"
@@ -4082,9 +4028,6 @@
     ],
     "rname": [
       "Rokus\u0101nu"
-    ],
-    "ename": [
-      "Roxanne"
     ],
     "first": [
       "Chapter 46"
@@ -4238,9 +4181,6 @@
     "rname": [
       "P\u0101ru"
     ],
-    "ename": [
-      "Pearl"
-    ],
     "first": [
       "Chapter 54",
       "Episode 25"
@@ -4391,9 +4331,6 @@
     "rname": [
       "Hatchan"
     ],
-    "ename": [
-      "Hatchan"
-    ],
     "first": [
       "Chapter 69",
       "Episode 31"
@@ -4518,9 +4455,6 @@
     "rname": [
       "Kuro'obi"
     ],
-    "ename": [
-      "Kuroobi"
-    ],
     "first": [
       "Chapter 69",
       "Episode 31"
@@ -4580,9 +4514,6 @@
     "rname": [
       "Nezumi"
     ],
-    "ename": [
-      "Nezumi"
-    ],
     "first": [
       "Chapter 69",
       "Episode 31"
@@ -4596,6 +4527,9 @@
     ],
     "origin": [
       "East Blue"
+    ],
+    "residence": [
+      "16th Branch"
     ],
     "status": [
       "Alive"
@@ -4612,6 +4546,10 @@
     ],
     "blood type": [
       "XF"
+    ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
     ],
     "jva": [
       "Tamotsu Nishiwaki"
@@ -4636,9 +4574,6 @@
       "\u30c1\u30e3\u30dc"
     ],
     "rname": [
-      "Chabo"
-    ],
-    "ename": [
       "Chabo"
     ],
     "first": [
@@ -4680,9 +4615,6 @@
       "\u30ce\u30b8\u30b3"
     ],
     "rname": [
-      "Nojiko"
-    ],
-    "ename": [
       "Nojiko"
     ],
     "first": [
@@ -4741,9 +4673,6 @@
     ],
     "rname": [
       "Genz\u014d"
-    ],
-    "ename": [
-      "Genzo"
     ],
     "first": [
       "Chapter 71",
@@ -5019,6 +4948,9 @@
     "origin": [
       "East Blue"
     ],
+    "residence": [
+      "77th Branch"
+    ],
     "status": [
       "Deceased"
     ],
@@ -5039,9 +4971,6 @@
     ],
     "rname": [
       "Nak\u014d"
-    ],
-    "ename": [
-      "Nako"
     ],
     "first": [
       "Chapter 77",
@@ -5114,9 +5043,6 @@
     "rname": [
       "Dad\u012bd\u012b"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 79",
       "Episode 35"
@@ -5144,9 +5070,6 @@
     ],
     "rname": [
       "Monk\u012b D\u012b G\u0101pu"
-    ],
-    "ename": [
-      "Monkey D. Garp"
     ],
     "first": [
       "Chapter 92 (cover)",
@@ -5241,9 +5164,6 @@
     "rname": [
       "Samu-san"
     ],
-    "ename": [
-      "Sam"
-    ],
     "first": [
       "Chapter 94",
       "Episode 43"
@@ -5308,9 +5228,6 @@
     "rname": [
       "Jon Jaianto"
     ],
-    "ename": [
-      "John Giant"
-    ],
     "first": [
       "Chapter 96",
       "Episode 45"
@@ -5322,16 +5239,20 @@
       "Vice Admiral"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf (former)"
+      "Elbaph (former)"
     ],
     "status": [
       "Alive"
     ],
     "birth": [
       "May 19th"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Masaharu Sat\u014d",
@@ -5370,6 +5291,10 @@
     "status": [
       "Alive"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "Yuji Ueda (Episode 151)",
       "Eiji Takemoto"
@@ -5401,6 +5326,10 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "Funi eva": [
       "Ivan Jasso"
@@ -5449,6 +5378,10 @@
     "blood type": [
       "X"
     ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
+    ],
     "jva": [
       "Shinichi Yamada"
     ],
@@ -5462,9 +5395,6 @@
       "\u305f\u3057\u304e"
     ],
     "rname": [
-      "Tashigi"
-    ],
-    "ename": [
       "Tashigi"
     ],
     "first": [
@@ -5485,6 +5415,7 @@
       "East Blue"
     ],
     "residence": [
+      "G-5",
       "Loguetown (former)"
     ],
     "status": [
@@ -5502,6 +5433,10 @@
     ],
     "blood type": [
       "S"
+    ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
     ],
     "jva": [
       "Junko Noda"
@@ -5543,6 +5478,9 @@
     ],
     "occupation": [
       "Vice Admiral",
+      "",
+      "Base Commander of G-5",
+      "Commander of G-5 Unit 01",
       "Commodore (former)",
       "Captain (former)"
     ],
@@ -5550,6 +5488,7 @@
       "Grand Line"
     ],
     "residence": [
+      "G-5",
       "Loguetown (former)"
     ],
     "epithet": [
@@ -5572,6 +5511,10 @@
     ],
     "blood type": [
       "XF"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Ginz\u014d Matsuo (Episode 48-79)",
@@ -5744,13 +5687,17 @@
       "Episode 48"
     ],
     "affiliation": [
-      "Marines"
+      "Marines",
+      "Loguetown Marine Base"
     ],
     "occupation": [
       "Marine Chief Petty Officer"
     ],
     "origin": [
       "East Blue"
+    ],
+    "residence": [
+      "Loguetown"
     ],
     "status": [
       "Alive"
@@ -5763,6 +5710,9 @@
     ],
     "Funi eva": [
       "J. Michael Tatum"
+    ],
+    "liveaction": [
+      "Fadzai Simango"
     ]
   },
   {
@@ -5840,9 +5790,6 @@
     ],
     "rname": [
       "Monk\u012b D\u012b Doragon"
-    ],
-    "ename": [
-      "Monkey D. Dragon"
     ],
     "first": [
       "Chapter 100",
@@ -6217,7 +6164,8 @@
       "Misu Furaid\u0113"
     ],
     "ename": [
-      "Miss Friday"
+      "Ms. Friday (VIZ, 4Kids)",
+      "Miss Friday (Odex, Funimation)"
     ],
     "first": [
       "Chapter 105",
@@ -6246,9 +6194,6 @@
     ],
     "rname": [
       "Igaramu"
-    ],
-    "ename": [
-      "Igaram"
     ],
     "first": [
       "Chapter 106",
@@ -6377,7 +6322,8 @@
       "Misu Mand\u0113"
     ],
     "ename": [
-      "Ms. Monday"
+      "Ms. Monday",
+      "Miss Monday (WT100)"
     ],
     "first": [
       "Chapter 107",
@@ -6900,8 +6846,8 @@
       "Burog\u012b"
     ],
     "ename": [
-      "Broggy",
-      "Brogy (Odex)"
+      "Brogy (VIZ, Odex)",
+      "Broggy (Funimation, formerly VIZ)"
     ],
     "first": [
       "Chapter 115",
@@ -6914,10 +6860,10 @@
       "Pirate Captain"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf",
+      "Elbaph",
       "Little Garden (former)"
     ],
     "epithet": [
@@ -6940,6 +6886,7 @@
       "F"
     ],
     "bounty": [
+      "1800000000",
       "100000000"
     ],
     "jva": [
@@ -7004,10 +6951,10 @@
       "Pirate Captain"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf",
+      "Elbaph",
       "Little Garden (former)"
     ],
     "epithet": [
@@ -7030,6 +6977,7 @@
       "F"
     ],
     "bounty": [
+      "1800000000",
       "100000000"
     ],
     "jva": [
@@ -7207,7 +7155,8 @@
       "North Blue"
     ],
     "alias": [
-      "\"Miss Goldenweek\""
+      "\"Miss Goldenweek\"",
+      "4Kids: \"Ms. April Fools Day\")"
     ],
     "epithet": [
       "\"Flag-Bearer of Freedom\""
@@ -7285,6 +7234,41 @@
     ],
     "liveaction": [
       "Alan Foulis"
+    ]
+  },
+  {
+    "id": "Raideen",
+    "jname": [
+      "\u30e9\u30a4\u30c7\u30a3\u30fc\u30f3"
+    ],
+    "rname": [
+      "Raid\u012bn"
+    ],
+    "ename": [
+      "Rydin (Former VIZ, simulcast)",
+      "Raideen (VIZ)"
+    ],
+    "first": [
+      "Chapter 129, Episode 78"
+    ],
+    "affiliation": [
+      "Giant Warrior Pirates (former)"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Unknown"
+    ],
+    "birth": [
+      "November 14th"
+    ],
+    "jva": [
+      "Tsuyoshi Koyama",
+      "Hirofumi Tanaka (Episode 78)"
+    ],
+    "Funi eva": [
+      "Cory J. Phillips"
     ]
   },
   {
@@ -7437,9 +7421,6 @@
     ],
     "rname": [
       "Waporu"
-    ],
-    "ename": [
-      "Wapol"
     ],
     "first": [
       "Chapter 131",
@@ -7705,9 +7686,6 @@
     "rname": [
       "Kureha"
     ],
-    "ename": [
-      "Kureha"
-    ],
     "first": [
       "Chapter 134",
       "Episode 80"
@@ -7796,7 +7774,7 @@
       "Warlord of the Sea (former)"
     ],
     "origin": [
-      "Grand Line"
+      "Grand Line (Shade Port)"
     ],
     "residence": [
       "Hachinosu"
@@ -8011,9 +7989,6 @@
     ],
     "rname": [
       "Doku Ky\u016b"
-    ],
-    "ename": [
-      "Doc Q"
     ],
     "first": [
       "Chapter 223",
@@ -8319,9 +8294,6 @@
     ],
     "rname": [
       "Robuson"
-    ],
-    "ename": [
-      "Robson"
     ],
     "first": [
       "Chapter 135",
@@ -8689,9 +8661,6 @@
     "rname": [
       "Chaka"
     ],
-    "ename": [
-      "Chaka"
-    ],
     "first": [
       "Chapter 155",
       "Episode 91"
@@ -8755,9 +8724,6 @@
     ],
     "rname": [
       "Peru"
-    ],
-    "ename": [
-      "Pell"
     ],
     "first": [
       "Chapter 155",
@@ -8922,7 +8888,7 @@
     ],
     "alias": [
       "Miss Doublefinger",
-      "Paula"
+      "Funimation: \"Miss Double Finger\")Paula"
     ],
     "epithet": [
       "\"Poison Spider Zala\""
@@ -9058,7 +9024,8 @@
       "Grand Line"
     ],
     "alias": [
-      "\"Miss Merry Christmas\""
+      "\"Miss Merry Christmas\"",
+      "WT100: \"Miss Merrychristmas\")"
     ],
     "epithet": [
       "\"Town-Collapser\" Drophy"
@@ -9145,11 +9112,10 @@
       "Misu Maz\u0101zu D\u0113"
     ],
     "ename": [
-      "Miss Mother's Day"
+      "Ms. Mother's Day"
     ],
     "first": [
-      "Chapter 155",
-      "Episode 91 (mentioned)"
+      "Chapter 155 (mentioned)"
     ],
     "affiliation": [
       "Baroque Works"
@@ -9211,7 +9177,8 @@
       "Misu F\u0101z\u0101zu D\u0113"
     ],
     "ename": [
-      "Ms. Father's Day"
+      "Ms. Father's Day (VIZ, 4Kids)",
+      "Miss Father's Day (Funimation)"
     ],
     "first": [
       "Chapter 205",
@@ -9255,8 +9222,7 @@
       "Mr. 10"
     ],
     "first": [
-      "Chapter 155",
-      "Episode 91 (Mentioned)"
+      "Chapter 155 (mentioned)"
     ],
     "affiliation": [
       "Baroque Works"
@@ -9280,11 +9246,10 @@
       "Misu Ty\u016bzud\u0113"
     ],
     "ename": [
-      "Miss Tuesday"
+      "Ms. Tuesday"
     ],
     "first": [
-      "Chapter 155",
-      "Episode 91 (mentioned)"
+      "Chapter 155 (mentioned)"
     ],
     "affiliation": [
       "Baroque Works"
@@ -9308,11 +9273,10 @@
       "Misu S\u0101sud\u0113"
     ],
     "ename": [
-      "Miss Thursday"
+      "Ms. Thursday"
     ],
     "first": [
-      "Chapter 155",
-      "Episode 91 (mentioned)"
+      "Chapter 155 (mentioned)"
     ],
     "affiliation": [
       "Baroque Works"
@@ -9339,8 +9303,7 @@
       "Mr. 12"
     ],
     "first": [
-      "Chapter 155",
-      "Episode 91 (mentioned)"
+      "Chapter 155 (mentioned)"
     ],
     "affiliation": [
       "Baroque Works"
@@ -9364,11 +9327,10 @@
       "Misu Satad\u0113"
     ],
     "ename": [
-      "Miss Saturday"
+      "Ms. Saturday"
     ],
     "first": [
-      "Chapter 155",
-      "Episode 91 (mentioned)"
+      "Chapter 155 (mentioned)"
     ],
     "affiliation": [
       "Baroque Works"
@@ -9769,9 +9731,6 @@
     "rname": [
       "Okame"
     ],
-    "ename": [
-      "Okame"
-    ],
     "first": [
       "Chapter 163",
       "Episode 100"
@@ -9796,9 +9755,6 @@
       "\u30b1\u30d3"
     ],
     "rname": [
-      "Kebi"
-    ],
-    "ename": [
       "Kebi"
     ],
     "first": [
@@ -9951,9 +9907,6 @@
     "rname": [
       "Kappa"
     ],
-    "ename": [
-      "Kappa"
-    ],
     "first": [
       "Chapter 167",
       "Episode 105"
@@ -10035,9 +9988,6 @@
     "rname": [
       "Hina"
     ],
-    "ename": [
-      "Hina"
-    ],
     "first": [
       "Chapter 171 (cover)",
       "Episode 127"
@@ -10070,6 +10020,10 @@
     ],
     "blood type": [
       "F"
+    ],
+    "bounty": [
+      "At least \u2605\u2605",
+      "(At least 200000000)"
     ],
     "jva": [
       "Tomoko Naka"
@@ -10143,9 +10097,6 @@
     ],
     "rname": [
       "Rass\u016b"
-    ],
-    "ename": [
-      "Lassoo"
     ],
     "first": [
       "Chapter 160",
@@ -10350,9 +10301,6 @@
     "rname": [
       "Makuro"
     ],
-    "ename": [
-      "Macro"
-    ],
     "first": [
       "Chapter 197 (cover)",
       "Episode 386"
@@ -10394,9 +10342,6 @@
     "rname": [
       "Gyaro"
     ],
-    "ename": [
-      "Gyaro"
-    ],
     "first": [
       "Chapter 197 (cover)",
       "Episode 386"
@@ -10432,9 +10377,6 @@
       "\u30bf\u30f3\u30b9\u30a4"
     ],
     "rname": [
-      "Tansui"
-    ],
-    "ename": [
       "Tansui"
     ],
     "first": [
@@ -10474,9 +10416,6 @@
     ],
     "rname": [
       "Okutopako"
-    ],
-    "ename": [
-      "Octopako"
     ],
     "first": [
       "Chapter 203 (cover)",
@@ -10535,7 +10474,7 @@
       "Chapter 206, Episode 125"
     ],
     "affiliation": [
-      "Baroque Works (Billions)[citation needed]",
+      "Baroque Works (Billions)",
       "Rebel Army (ruse)"
     ],
     "status": [
@@ -10549,9 +10488,6 @@
     ],
     "rname": [
       "Terakotta"
-    ],
-    "ename": [
-      "Terracotta"
     ],
     "first": [
       "Chapter 213",
@@ -10761,9 +10697,6 @@
     "rname": [
       "Mashira"
     ],
-    "ename": [
-      "Masira"
-    ],
     "first": [
       "Chapter 219",
       "Episode 144"
@@ -10816,9 +10749,6 @@
       "\u30ed\u30b7\u30aa"
     ],
     "rname": [
-      "Roshio"
-    ],
-    "ename": [
       "Roshio"
     ],
     "first": [
@@ -10933,9 +10863,6 @@
     "rname": [
       "S\u0101k\u012bsu"
     ],
-    "ename": [
-      "Sarquiss"
-    ],
     "first": [
       "Chapter 222",
       "Episode 146"
@@ -10985,9 +10912,6 @@
     ],
     "rname": [
       "Rir\u012b"
-    ],
-    "ename": [
-      "Lily"
     ],
     "first": [
       "Chapter 223",
@@ -11046,9 +10970,6 @@
     ],
     "rname": [
       "Edi"
-    ],
-    "ename": [
-      "Eddy"
     ],
     "first": [
       "Chapter 223",
@@ -11910,9 +11831,6 @@
     "rname": [
       "Maruko"
     ],
-    "ename": [
-      "Marco"
-    ],
     "first": [
       "Chapter 234",
       "Episode 151"
@@ -11984,9 +11902,6 @@
     "rname": [
       "Jozu"
     ],
-    "ename": [
-      "Jozu"
-    ],
     "first": [
       "Chapter 234",
       "Episode 151"
@@ -12050,9 +11965,6 @@
     "rname": [
       "T\u0113to"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 234",
       "Episode 151"
@@ -12077,9 +11989,6 @@
     ],
     "rname": [
       "Rokkusut\u0101"
-    ],
-    "ename": [
-      "Rockstar"
     ],
     "first": [
       "Chapter 234",
@@ -12117,9 +12026,6 @@
     "rname": [
       "Sengoku"
     ],
-    "ename": [
-      "Sengoku"
-    ],
     "first": [
       "Chapter 234",
       "Episode 151"
@@ -12134,6 +12040,9 @@
     ],
     "origin": [
       "South Blue"
+    ],
+    "residence": [
+      "Marine Headquarters (Marineford) (former)"
     ],
     "epithet": [
       "\"Sengoku the Buddha\"",
@@ -12186,9 +12095,6 @@
     "rname": [
       "Tsuru"
     ],
-    "ename": [
-      "Tsuru"
-    ],
     "first": [
       "Chapter 234",
       "Episode 151"
@@ -12220,6 +12126,10 @@
     ],
     "blood type": [
       "X"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Minori Matsushima (Episode 459-770)",
@@ -12266,6 +12176,10 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Hiroshi Kamiya"
@@ -12394,9 +12308,6 @@
     "rname": [
       "Pi\u0113ru"
     ],
-    "ename": [
-      "Pierre"
-    ],
     "first": [
       "Chapter 237",
       "Episode 153"
@@ -12497,9 +12408,6 @@
     "rname": [
       "Konisu"
     ],
-    "ename": [
-      "Conis"
-    ],
     "first": [
       "Chapter 239",
       "Episode 154"
@@ -12543,9 +12451,6 @@
       "\u30d1\u30ac\u30e4"
     ],
     "rname": [
-      "Pagaya"
-    ],
-    "ename": [
       "Pagaya"
     ],
     "first": [
@@ -12625,9 +12530,6 @@
     "rname": [
       "Makkinr\u012b"
     ],
-    "ename": [
-      "McKinley"
-    ],
     "first": [
       "Chapter 241",
       "Episode 155"
@@ -12658,7 +12560,7 @@
     ],
     "ename": [
       "Eneru",
-      "Enel (WT100)"
+      "Enel (BStation, WT100)"
     ],
     "first": [
       "Chapter 254",
@@ -12727,9 +12629,6 @@
     "rname": [
       "\u014cmu"
     ],
-    "ename": [
-      "Ohm"
-    ],
     "first": [
       "Chapter 241",
       "Episode 155"
@@ -12779,9 +12678,6 @@
       "\u30b7\u30e5\u30e9"
     ],
     "rname": [
-      "Shura"
-    ],
-    "ename": [
       "Shura"
     ],
     "first": [
@@ -12892,9 +12788,6 @@
     "rname": [
       "Satori"
     ],
-    "ename": [
-      "Satori"
-    ],
     "first": [
       "Chapter 241",
       "Episode 155"
@@ -12979,9 +12872,6 @@
       "\u30d5\u30b6"
     ],
     "rname": [
-      "Fuza"
-    ],
-    "ename": [
       "Fuza"
     ],
     "first": [
@@ -13074,9 +12964,6 @@
       "\u30ab\u30de\u30ad\u30ea"
     ],
     "rname": [
-      "Kamakiri"
-    ],
-    "ename": [
       "Kamakiri"
     ],
     "first": [
@@ -13328,9 +13215,6 @@
     "rname": [
       "Yama"
     ],
-    "ename": [
-      "Yama"
-    ],
     "first": [
       "Chapter 254",
       "Episode 167"
@@ -13401,9 +13285,6 @@
     ],
     "rname": [
       "Nora"
-    ],
-    "ename": [
-      "Nola"
     ],
     "first": [
       "Chapter 255",
@@ -13616,9 +13497,6 @@
     "rname": [
       "Shandia Sh\u016bch\u014d"
     ],
-    "ename": [
-      "Shandia Chief"
-    ],
     "first": [
       "Chapter 275",
       "Episode 168"
@@ -13730,10 +13608,14 @@
       "Chapter 285 (cover), Episode 381 (newspaper)"
     ],
     "affiliation": [
-      "Marines"
+      "Marines",
+      "G-2"
     ],
     "occupation": [
       "Chef"
+    ],
+    "residence": [
+      "G-2"
     ],
     "status": [
       "Alive"
@@ -13749,7 +13631,8 @@
     ],
     "ename": [
       "Kalgara",
-      "Calgara (Funimation subs)"
+      "Calgara (Funimation subs)",
+      "Kalgala (BStation)"
     ],
     "first": [
       "Chapter 286",
@@ -13762,10 +13645,11 @@
       "Warrior"
     ],
     "origin": [
-      "Grand Line"
+      "Grand Line (Jaya)"
     ],
     "epithet": [
-      "\"Shandora's Demon\""
+      "\"The Demon of Shandora\"",
+      "\"The Great Warrior of Shandora\""
     ],
     "status": [
       "Deceased"
@@ -13795,9 +13679,6 @@
       "\u30bb\u30c8"
     ],
     "rname": [
-      "Seto"
-    ],
-    "ename": [
       "Seto"
     ],
     "first": [
@@ -13832,7 +13713,7 @@
     ],
     "ename": [
       "Musse (Viz)",
-      "Mousse (FUNimation)"
+      "Mousse (Funimation)"
     ],
     "first": [
       "Chapter 287",
@@ -13851,7 +13732,7 @@
       "June 3rd"
     ],
     "jva": [
-      "Y\u00fbko Minaguchi"
+      "Y\u016bko Minaguchi"
     ],
     "Funi eva": [
       "Brittney Karbowski"
@@ -13886,9 +13767,6 @@
     "rname": [
       "Chiya"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 287",
       "Episode 187"
@@ -13915,9 +13793,6 @@
       "\u30ab\u30b7\u795e"
     ],
     "rname": [
-      "Kashigami"
-    ],
-    "ename": [
       "Kashigami"
     ],
     "first": [
@@ -13952,9 +13827,6 @@
     "rname": [
       "Hon'n\u0101"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 287, Episode 187"
     ],
@@ -13982,9 +13854,6 @@
     "rname": [
       "Kob\u0101n"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 288",
       "Episode 187"
@@ -14011,9 +13880,6 @@
       "\u30ab\u30b7\u795e"
     ],
     "rname": [
-      "Kashigami"
-    ],
-    "ename": [
       "Kashigami"
     ],
     "first": [
@@ -14061,13 +13927,21 @@
       "G-2"
     ],
     "occupation": [
-      "Vice Admiral"
+      "Vice Admiral",
+      "Base Commander of G-2"
+    ],
+    "residence": [
+      "G-2"
     ],
     "status": [
       "Alive"
     ],
     "birth": [
       "October 1st"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Eiji Takemoto"
@@ -14083,9 +13957,6 @@
     ],
     "rname": [
       "Ubau"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 292",
@@ -14115,9 +13986,6 @@
     ],
     "rname": [
       "Aruy\u016btayan Gosei"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 292",
@@ -14220,10 +14088,14 @@
       "Chapter 302 (cover), Episode 381 (newspaper)"
     ],
     "affiliation": [
-      "Marines"
+      "Marines",
+      "G-2"
     ],
     "occupation": [
       "Chef"
+    ],
+    "residence": [
+      "G-2"
     ],
     "status": [
       "Alive"
@@ -14235,9 +14107,6 @@
       "\u30af\u30b6\u30f3"
     ],
     "rname": [
-      "Kuzan"
-    ],
-    "ename": [
       "Kuzan"
     ],
     "first": [
@@ -14255,7 +14124,7 @@
       "Vice Admiral (former)"
     ],
     "origin": [
-      "South Blue"
+      "South Blue (Vespa Kingdom territory)"
     ],
     "residence": [
       "Hachinosu"
@@ -14390,9 +14259,6 @@
     "rname": [
       "Fokush\u012b"
     ],
-    "ename": [
-      "Foxy"
-    ],
     "first": [
       "Chapter 305",
       "Episode 207"
@@ -14456,9 +14322,6 @@
     "rname": [
       "Poruche"
     ],
-    "ename": [
-      "Porche"
-    ],
     "first": [
       "Chapter 305",
       "Episode 207"
@@ -14490,9 +14353,6 @@
     ],
     "rname": [
       "Hanb\u0101gu"
-    ],
-    "ename": [
-      "Hamburg"
     ],
     "first": [
       "Chapter 305",
@@ -14639,7 +14499,7 @@
       "Episode 209"
     ],
     "affiliation": [
-      "Foxy Pirates"
+      "Foxy Pirates (former)"
     ],
     "occupation": [
       "Pirate",
@@ -14708,7 +14568,7 @@
       "Episode 209"
     ],
     "affiliation": [
-      "Foxy Pirates"
+      "Foxy Pirates (former)"
     ],
     "occupation": [
       "Pirate",
@@ -14815,9 +14675,6 @@
     "rname": [
       "Gor\u014d"
     ],
-    "ename": [
-      "Goro"
-    ],
     "first": [
       "Chapter 316 (cover)",
       "One Piece: Stampede"
@@ -14872,9 +14729,6 @@
     "rname": [
       "Donoban"
     ],
-    "ename": [
-      "Donovan"
-    ],
     "first": [
       "Chapter 318"
     ],
@@ -14899,9 +14753,6 @@
     ],
     "rname": [
       "J\u012bna"
-    ],
-    "ename": [
-      "Gina"
     ],
     "first": [
       "Chapter 318",
@@ -14996,9 +14847,6 @@
     "rname": [
       "Sakazuki"
     ],
-    "ename": [
-      "Sakazuki"
-    ],
     "first": [
       "Chapter 397",
       "Episode 278"
@@ -15013,6 +14861,9 @@
     ],
     "origin": [
       "North Blue"
+    ],
+    "residence": [
+      "Marine Headquarters (New Marineford)"
     ],
     "alias": [
       "Akainu"
@@ -15032,6 +14883,10 @@
     ],
     "blood type": [
       "F"
+    ],
+    "bounty": [
+      "",
+      "(5000000000)"
     ],
     "jva": [
       "Fumihiko Tachiki",
@@ -15062,9 +14917,6 @@
     "rname": [
       "Umi no Nushi"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 319",
       "Episode 227"
@@ -15082,9 +14934,6 @@
       "\u30b3\u30b3\u30ed"
     ],
     "rname": [
-      "Kokoro"
-    ],
-    "ename": [
       "Kokoro"
     ],
     "first": [
@@ -15127,7 +14976,7 @@
     ],
     "Funi eva": [
       "Juli Erickson",
-      "CJ Critt (Episode 967-)"
+      "CJ Critt (Episode 967+)"
     ]
   },
   {
@@ -15137,9 +14986,6 @@
     ],
     "rname": [
       "Chimun\u012b"
-    ],
-    "ename": [
-      "Chimney"
     ],
     "first": [
       "Chapter 322",
@@ -15220,9 +15066,6 @@
       "\u30e8\u30b3\u30c5\u30ca"
     ],
     "rname": [
-      "Yokozuna"
-    ],
-    "ename": [
       "Yokozuna"
     ],
     "first": [
@@ -15467,7 +15310,7 @@
       "Shipwright (undercover)"
     ],
     "origin": [
-      "Grand Line"
+      "Grand Line (Guanhao)"
     ],
     "residence": [
       "Guanhao (former)"
@@ -15522,9 +15365,6 @@
     "rname": [
       "Hattori"
     ],
-    "ename": [
-      "Hattori"
-    ],
     "first": [
       "Chapter 323",
       "Episode 230"
@@ -15541,10 +15381,14 @@
       "Alive"
     ],
     "age": [
-      "At least 24"
+      "18 (debut)",
+      "20 (after timeskip)"
     ],
     "birth": [
       "August 10th"
+    ],
+    "height": [
+      "25cm (10\")"
     ],
     "jva": [
       "Tomokazu Seki"
@@ -15559,9 +15403,6 @@
       "\u30ab\u30af"
     ],
     "rname": [
-      "Kaku"
-    ],
-    "ename": [
       "Kaku"
     ],
     "first": [
@@ -15793,9 +15634,6 @@
     "rname": [
       "Zanbai"
     ],
-    "ename": [
-      "Zambai"
-    ],
     "first": [
       "Chapter 324",
       "Episode 230"
@@ -15846,9 +15684,6 @@
     "rname": [
       "Mishoin Kyashiburu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 324",
       "Episode 229"
@@ -15863,7 +15698,8 @@
       "Alive"
     ],
     "jva": [
-      "Takahiro Fujimoto"
+      "Takahiro Fujimoto",
+      "Masaya Takatsuka (One Piece Fan Letter)"
     ],
     "Funi eva": [
       "Andrew Haskett"
@@ -16081,7 +15917,7 @@
       "\u571f\u756a\u9577"
     ],
     "rname": [
-      "Tsuchi Banchy\u014d"
+      "Tsuchi Banch\u014d"
     ],
     "ename": [
       "Earth Boss"
@@ -16282,9 +16118,6 @@
     "rname": [
       "Mozu & Kiui"
     ],
-    "ename": [
-      "Mozu and Kiwi"
-    ],
     "first": [
       "Chapter 329",
       "Episode 233"
@@ -16334,15 +16167,12 @@
     ]
   },
   {
-    "id": "Kairiki_Destroyers",
+    "id": "Dago",
     "jname": [
-      "\u602a\u529b\u30c7\u30b9\u30c8\u30ed\u30a4\u30e4\u30fc\u30ba"
+      "\u30c0\u30b4"
     ],
     "rname": [
-      "Kairiki Desutoroiy\u0101zu"
-    ],
-    "ename": [
-      "Mighty Destroyers (VIZ), Herculean Destroyers"
+      "Dago"
     ],
     "first": [
       "Chapter 329",
@@ -16352,8 +16182,60 @@
       "Franky Family"
     ],
     "occupation": [
-      "Dismantlers",
-      "Bounty Hunters"
+      "Dismantler",
+      "Bounty Hunter"
+    ],
+    "residence": [
+      "Water 7"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Ottoland",
+    "jname": [
+      "\u30aa\u30c3\u30c8\u30e9\u30f3\u30c9"
+    ],
+    "rname": [
+      "Ottorando"
+    ],
+    "first": [
+      "Chapter 329",
+      "Episode 233"
+    ],
+    "affiliation": [
+      "Franky Family"
+    ],
+    "occupation": [
+      "Dismantler",
+      "Bounty Hunter"
+    ],
+    "residence": [
+      "Water 7"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Footbianco",
+    "jname": [
+      "\u30d5\u30c3\u30c8\u30d3\u30e4\u30f3\u30b3"
+    ],
+    "rname": [
+      "Futtobiyanko"
+    ],
+    "first": [
+      "Chapter 329",
+      "Episode 233"
+    ],
+    "affiliation": [
+      "Franky Family"
+    ],
+    "occupation": [
+      "Dismantler",
+      "Bounty Hunter"
     ],
     "residence": [
       "Water 7"
@@ -16451,9 +16333,6 @@
     "rname": [
       "Happa Yamao"
     ],
-    "ename": [
-      "Happa Yamao"
-    ],
     "first": [
       "Chapter 341",
       "Episode 241"
@@ -16486,9 +16365,6 @@
     ],
     "rname": [
       "Tomu"
-    ],
-    "ename": [
-      "Tom"
     ],
     "first": [
       "Chapter 352",
@@ -16569,9 +16445,6 @@
     ],
     "rname": [
       "Supandamu"
-    ],
-    "ename": [
-      "Spandam"
     ],
     "first": [
       "Chapter 355",
@@ -16724,7 +16597,8 @@
       "X"
     ],
     "bounty": [
-      "Unknown"
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Tomomichi Nishimura"
@@ -16740,9 +16614,6 @@
     ],
     "rname": [
       "Jer\u012b"
-    ],
-    "ename": [
-      "Jerry"
     ],
     "first": [
       "Chapter 362",
@@ -16837,9 +16708,6 @@
       "\u30cd\u30ed"
     ],
     "rname": [
-      "Nero"
-    ],
-    "ename": [
       "Nero"
     ],
     "first": [
@@ -17012,9 +16880,6 @@
       "\u30af\u30de\u30c9\u30ea"
     ],
     "rname": [
-      "Kumadori"
-    ],
-    "ename": [
       "Kumadori"
     ],
     "first": [
@@ -17195,9 +17060,6 @@
     "rname": [
       "Oimo"
     ],
-    "ename": [
-      "Oimo"
-    ],
     "first": [
       "Chapter 377",
       "Episode 265"
@@ -17211,10 +17073,10 @@
       "Gate Guardian (former)"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf",
+      "Elbaph",
       "Enies Lobby (former)",
       "Water 7 (former)"
     ],
@@ -17263,10 +17125,10 @@
       "Pirate, Gate Guardian (former)"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf",
+      "Elbaph",
       "Enies Lobby (former)",
       "Water 7 (former)"
     ],
@@ -17734,9 +17596,6 @@
     "rname": [
       "Supandain"
     ],
-    "ename": [
-      "Spandine"
-    ],
     "first": [
       "Chapter 392",
       "Episode 275"
@@ -17796,9 +17655,28 @@
     ],
     "status": [
       "Unknown"
+    ]
+  },
+  {
+    "id": "Tsumonsieur_Kamaya",
+    "jname": [
+      "\u30c4\u30e0\u30c3\u30b7\u30e5\u30fb\u30ab\u30de\u30e4"
     ],
-    "jva": [
-      "N/A"
+    "rname": [
+      "Tsumusshu Kamaya"
+    ],
+    "first": [
+      "Chapter 392",
+      "Episode 275"
+    ],
+    "affiliation": [
+      "CP9 (former)"
+    ],
+    "occupation": [
+      "Cipher Pol Agent"
+    ],
+    "status": [
+      "Alive"
     ]
   },
   {
@@ -17808,9 +17686,6 @@
     ],
     "rname": [
       "Niko Orubia"
-    ],
-    "ename": [
-      "Nico Olvia"
     ],
     "first": [
       "Chapter 392",
@@ -17858,9 +17733,6 @@
     "rname": [
       "Haguw\u0101ru D\u012b Sauro"
     ],
-    "ename": [
-      "Jaguar D. Saul"
-    ],
     "first": [
       "Chapter 392",
       "Episode 275"
@@ -17876,7 +17748,7 @@
       "South Blue"
     ],
     "residence": [
-      "Elbaf"
+      "Elbaph"
     ],
     "status": [
       "Alive"
@@ -17979,6 +17851,25 @@
     ]
   },
   {
+    "id": "Suzume",
+    "jname": [
+      "\u30b9\u30ba\u30e1"
+    ],
+    "rname": [
+      "Suzume"
+    ],
+    "first": [
+      "Chapter 401",
+      "Episode 286"
+    ],
+    "residence": [
+      "Enies Lobby"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
     "id": "Strawberry",
     "jname": [
       "\u30b9\u30c8\u30ed\u30d9\u30ea\u30fc"
@@ -18005,6 +17896,10 @@
     ],
     "birth": [
       "January 5th"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Eiji Takemoto"
@@ -18040,6 +17935,10 @@
     "birth": [
       "April 5th"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "Yasunori Masutani (Episode 462)",
       "Mahito Ohba (Episode 475)"
@@ -18055,9 +17954,6 @@
     ],
     "rname": [
       "D\u014dberuman"
-    ],
-    "ename": [
-      "Doberman"
     ],
     "first": [
       "Chapter 420",
@@ -18075,6 +17971,10 @@
     "birth": [
       "October 8th"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "Eiji Takemoto"
     ],
@@ -18088,9 +17988,6 @@
       "\u30aa\u30cb\u30b0\u30e2"
     ],
     "rname": [
-      "Onigumo"
-    ],
-    "ename": [
       "Onigumo"
     ],
     "first": [
@@ -18109,6 +18006,10 @@
     "birth": [
       "February 8th"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "Keiichi Sonobe (Episode 305)",
       "Takahiro Fujimoto (Episode 308+)"
@@ -18125,9 +18026,6 @@
     "rname": [
       "Momonga"
     ],
-    "ename": [
-      "Momonga"
-    ],
     "first": [
       "Chapter 420",
       "Episode 302"
@@ -18141,6 +18039,9 @@
     ],
     "origin": [
       "Grand Line"
+    ],
+    "residence": [
+      "G-1"
     ],
     "status": [
       "Alive"
@@ -18157,6 +18058,10 @@
     ],
     "blood type": [
       "F"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Shinichiro Ohta"
@@ -18188,6 +18093,10 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
     ],
     "jva": [
       "Ryohei Nakao"
@@ -18235,6 +18144,10 @@
     "birth": [
       "September 10th"
     ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
+    ],
     "jva": [
       "Keiichiro Yamamoto"
     ],
@@ -18280,6 +18193,10 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
     ],
     "jva": [
       "Unknown"
@@ -18328,7 +18245,7 @@
     ],
     "residence": [
       "Whole Cake Island",
-      "Elbaf (former)"
+      "Elbaph (former)"
     ],
     "alias": [
       "\"O-Lin\""
@@ -18461,20 +18378,23 @@
   {
     "id": "Michael_and_Hoichael",
     "jname": [
-      "\u30de\u30a4\u30b1\u30eb&\u30db\u30a4\u30b1\u30eb"
+      "\u30de\u30a4\u30b1\u30eb",
+      "\u30db\u30a4\u30b1\u30eb"
     ],
     "rname": [
-      "Maikeru ando Hoikeru"
+      "Maikeru",
+      "Hoikeru"
     ],
     "ename": [
-      "Michael and Hoichael"
+      "Michael",
+      "Hoichael"
     ],
     "first": [
       "Chapter 432",
       "Episode 313"
     ],
     "affiliation": [
-      "Auntie"
+      "Aunt\u00a0(Non-Canon)\u2260"
     ],
     "occupation": [
       "Elementary school students (pre-timeskip)"
@@ -18493,7 +18413,8 @@
       "July 18th"
     ],
     "jva": [
-      "Tomoko Naka (Michael), Mami Matsui (Hoichael)"
+      "Tomoko Naka (Michael)",
+      "Mami Matsui (Hoichael)"
     ],
     "Funi eva": [
       "Ryan Reynolds (Michael)",
@@ -18507,9 +18428,6 @@
     ],
     "rname": [
       "Sup\u0113sh\u012b Ch\u016bi"
-    ],
-    "ename": [
-      "Spacey"
     ],
     "first": [
       "Chapter 433 (cover)("
@@ -18536,7 +18454,8 @@
       "Atatchi"
     ],
     "ename": [
-      "Attach"
+      "Atatchi",
+      "Attach (WT100)"
     ],
     "first": [
       "SBS Volume 24",
@@ -18715,9 +18634,6 @@
     ],
     "rname": [
       "Satchi"
-    ],
-    "ename": [
-      "Thatch"
     ],
     "first": [
       "Chapter 440",
@@ -18970,9 +18886,6 @@
     "rname": [
       "Hirudon"
     ],
-    "ename": [
-      "Hildon"
-    ],
     "first": [
       "Chapter 444",
       "Episode 339"
@@ -19003,9 +18916,6 @@
     ],
     "rname": [
       "Hogubakku"
-    ],
-    "ename": [
-      "Hogback"
     ],
     "first": [
       "Chapter 446",
@@ -19126,9 +19036,6 @@
     "rname": [
       "Bikutoria Shindor\u012b"
     ],
-    "ename": [
-      "Victoria Cindry"
-    ],
     "first": [
       "Chapter 446",
       "Episode 340"
@@ -19177,9 +19084,6 @@
     ],
     "rname": [
       "Per\u014dna"
-    ],
-    "ename": [
-      "Perona"
     ],
     "first": [
       "Chapter 443",
@@ -19364,9 +19268,6 @@
     "rname": [
       "Tsukimi hakase"
     ],
-    "ename": [
-      "Tsukimi"
-    ],
     "first": [
       "Chapter 448 (cover)"
     ],
@@ -19390,9 +19291,6 @@
     ],
     "rname": [
       "Gekk\u014d Moria"
-    ],
-    "ename": [
-      "Gecko Moria"
     ],
     "first": [
       "Chapter 449",
@@ -19529,9 +19427,6 @@
     "rname": [
       "Jon"
     ],
-    "ename": [
-      "John"
-    ],
     "first": [
       "Chapter 450",
       "Episode 344"
@@ -19663,9 +19558,6 @@
     ],
     "rname": [
       "Jigor\u014d"
-    ],
-    "ename": [
-      "Jigoro"
     ],
     "first": [
       "Chapter 452",
@@ -19843,9 +19735,6 @@
     ],
     "rname": [
       "Risuk\u012b Ky\u014ddai"
-    ],
-    "ename": [
-      "Risky Brothers"
     ],
     "first": [
       "Chapter 475",
@@ -20080,6 +19969,12 @@
     "birth": [
       "August 9th"
     ],
+    "height": [
+      "314cm (10'4\")"
+    ],
+    "blood type": [
+      "S"
+    ],
     "jva": [
       "Y\u014dhei Tadano",
       "Yoshito Yasuhara (Episode 610)"
@@ -20176,6 +20071,9 @@
     "age": [
       "8 (debut)",
       "10  (after timeskip)"
+    ],
+    "jva": [
+      "Ry\u014d Hirohashi"
     ]
   },
   {
@@ -20191,9 +20089,6 @@
     ],
     "rname": [
       "Dyubaru"
-    ],
-    "ename": [
-      "Duval"
     ],
     "first": [
       "Chapter 491",
@@ -20492,9 +20387,6 @@
     "rname": [
       "Sent\u014dmaru"
     ],
-    "ename": [
-      "Sentomaru"
-    ],
     "first": [
       "Chapter 497",
       "Episode 401"
@@ -20508,7 +20400,7 @@
       "Dr. Vegapunk's bodyguard"
     ],
     "origin": [
-      "Grand Line"
+      "Grand Line (Mt. Kintoki)"
     ],
     "residence": [
       "Egghead"
@@ -20529,6 +20421,9 @@
     "blood type": [
       "F"
     ],
+    "bounty": [
+      "\u2605\u2605\u2605\u2605\u2605 (500000000)"
+    ],
     "jva": [
       "Kazue Ikura"
     ],
@@ -20543,9 +20438,6 @@
     ],
     "rname": [
       "Janb\u0101ru"
-    ],
-    "ename": [
-      "Jean Bart"
     ],
     "first": [
       "Chapter 497",
@@ -20653,9 +20545,6 @@
     "rname": [
       "Sukuratchimen Ap\u016b"
     ],
-    "ename": [
-      "Scratchmen Apoo"
-    ],
     "first": [
       "Chapter 498",
       "Episode 392"
@@ -20723,9 +20612,6 @@
     "rname": [
       "Y\u016bsutasu Kiddo"
     ],
-    "ename": [
-      "Eustass Kid"
-    ],
     "first": [
       "Chapter 498",
       "Episode 392"
@@ -20790,9 +20676,6 @@
     "rname": [
       "Kir\u0101"
     ],
-    "ename": [
-      "Killer"
-    ],
     "first": [
       "Chapter 498",
       "Episode 392"
@@ -20849,9 +20732,6 @@
     ],
     "rname": [
       "Ur\u016bji"
-    ],
-    "ename": [
-      "Urouge"
     ],
     "first": [
       "Chapter 498",
@@ -21113,9 +20993,6 @@
     "rname": [
       "Shachi"
     ],
-    "ename": [
-      "Shachi"
-    ],
     "first": [
       "Chapter 498",
       "Episode 392"
@@ -21159,9 +21036,6 @@
     ],
     "rname": [
       "Juer\u012b Bon\u012b"
-    ],
-    "ename": [
-      "Jewelry Bonney"
     ],
     "first": [
       "Chapter 498",
@@ -21235,9 +21109,6 @@
       "\u30ae\u30e7\u30ae\u30e7"
     ],
     "rname": [
-      "Gyogyo"
-    ],
-    "ename": [
       "Gyogyo"
     ],
     "first": [
@@ -21334,9 +21205,6 @@
     ],
     "rname": [
       "P\u0101to"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 498",
@@ -21598,7 +21466,7 @@
       "XF"
     ],
     "jva": [
-      "[[[Wikipedia:Chafurin|Chafurin]]"
+      "Chafurin"
     ],
     "Funi eva": [
       "Jason Kane"
@@ -21848,9 +21716,6 @@
     "rname": [
       "Sutansen"
     ],
-    "ename": [
-      "Stansen"
-    ],
     "first": [
       "Chapter 500",
       "Episode 394"
@@ -21870,7 +21735,7 @@
       "Grand Line"
     ],
     "residence": [
-      "Elbaf"
+      "Elbaph"
     ],
     "status": [
       "Alive"
@@ -21892,9 +21757,6 @@
     ],
     "rname": [
       "Disuko"
-    ],
-    "ename": [
-      "Disco"
     ],
     "first": [
       "Chapter 500",
@@ -21935,9 +21797,6 @@
       "\u30de\u30ea\u30f3"
     ],
     "rname": [
-      "Marin"
-    ],
-    "ename": [
       "Marin"
     ],
     "first": [
@@ -22119,6 +21978,10 @@
     ],
     "birth": [
       "June 5th"
+    ],
+    "bounty": [
+      "At least \u2605\u2605",
+      "(At least 200000000)"
     ]
   },
   {
@@ -22131,9 +21994,6 @@
     ],
     "rname": [
       "Fausuto"
-    ],
-    "ename": [
-      "Faust"
     ],
     "first": [
       "Chapter 508",
@@ -22166,9 +22026,6 @@
     ],
     "rname": [
       "Kyand\u012b"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 510 (cover)"
@@ -22372,9 +22229,6 @@
     "rname": [
       "Kiky\u014d"
     ],
-    "ename": [
-      "Kikyo"
-    ],
     "first": [
       "Chapter 514",
       "Episode 408"
@@ -22527,10 +22381,10 @@
       "May 17th"
     ],
     "jva": [
-      "Hiromi Nishikawa"
+      "Hiromi Nishikawa[note 1]"
     ],
     "Funi eva": [
-      "Dawn M. Bennett"
+      "Michelle Lee[note 1]"
     ]
   },
   {
@@ -22756,9 +22610,6 @@
     "rname": [
       "Ran"
     ],
-    "ename": [
-      "Ran"
-    ],
     "first": [
       "Chapter 516",
       "Episode 410"
@@ -22837,9 +22688,6 @@
     ],
     "rname": [
       "D\u0113j\u012b"
-    ],
-    "ename": [
-      "Daisy"
     ],
     "first": [
       "Chapter 516",
@@ -22961,9 +22809,6 @@
     ],
     "rname": [
       "Sarome"
-    ],
-    "ename": [
-      "Salome"
     ],
     "first": [
       "Chapter 516",
@@ -23123,9 +22968,6 @@
     ],
     "rname": [
       "Fissh\u0101 Taig\u0101"
-    ],
-    "ename": [
-      "Fisher Tiger"
     ],
     "first": [
       "Chapter 521",
@@ -23289,10 +23131,10 @@
       "July 20th"
     ],
     "jva": [
-      "Chigusa Ikeda"
+      "Chigusa Ikeda[note 1]"
     ],
     "Funi eva": [
-      "Michelle Lee"
+      "Dawn M. Bennett[note 1]"
     ]
   },
   {
@@ -23426,6 +23268,9 @@
     "origin": [
       "Grand Line"
     ],
+    "residence": [
+      "G-1"
+    ],
     "status": [
       "Alive"
     ],
@@ -23455,13 +23300,17 @@
       "Episode 48"
     ],
     "affiliation": [
-      "Marines"
+      "Marines",
+      "Loguetown Marine Base"
     ],
     "occupation": [
       "Marine Chief Petty Officer"
     ],
     "origin": [
       "East Blue"
+    ],
+    "residence": [
+      "Loguetown"
     ],
     "status": [
       "Alive"
@@ -23474,6 +23323,9 @@
     ],
     "Funi eva": [
       "J. Michael Tatum"
+    ],
+    "liveaction": [
+      "Fadzai Simango"
     ]
   },
   {
@@ -23483,9 +23335,6 @@
     ],
     "rname": [
       "Herakuresu"
-    ],
-    "ename": [
-      "Heracles"
     ],
     "first": [
       "Chapter 524",
@@ -23599,9 +23448,6 @@
     "rname": [
       "Hannyabaru"
     ],
-    "ename": [
-      "Hannyabal"
-    ],
     "first": [
       "Chapter 525",
       "Episode 422"
@@ -23653,9 +23499,6 @@
     "first": [
       "Chapter 525",
       "Episode 422"
-    ],
-    "occupation": [
-      "Prisoner"
     ],
     "origin": [
       "Grand Line"
@@ -23715,9 +23558,6 @@
     ],
     "rname": [
       "Mazeran"
-    ],
-    "ename": [
-      "Magellan"
     ],
     "first": [
       "Chapter 528",
@@ -23825,9 +23665,6 @@
     ],
     "status": [
       "Alive"
-    ],
-    "jva": [
-      "N/A"
     ]
   },
   {
@@ -23847,9 +23684,6 @@
     "first": [
       "Chapter 528",
       "Episode 425"
-    ],
-    "occupation": [
-      "Prisoner"
     ],
     "origin": [
       "Grand Line"
@@ -23871,9 +23705,6 @@
     ],
     "rname": [
       "Sufinkusu"
-    ],
-    "ename": [
-      "Sphinx"
     ],
     "first": [
       "Chapter 529",
@@ -23908,9 +23739,6 @@
     ],
     "rname": [
       "Sarudesu"
-    ],
-    "ename": [
-      "Saldeath"
     ],
     "first": [
       "Chapter 530",
@@ -24003,9 +23831,6 @@
     "rname": [
       "Minokoara"
     ],
-    "ename": [
-      "Minokoala"
-    ],
     "first": [
       "Chapter 531",
       "Episode 432"
@@ -24057,6 +23882,10 @@
     "birth": [
       "August 24th"
     ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
+    ],
     "jva": [
       "Eiji Takemoto"
     ],
@@ -24103,9 +23932,6 @@
     ],
     "rname": [
       "Enporio Iwankofu"
-    ],
-    "ename": [
-      "Emporio Ivankov"
     ],
     "first": [
       "Chapter 537",
@@ -24182,9 +24008,6 @@
     "rname": [
       "Minozebura"
     ],
-    "ename": [
-      "Minozebra"
-    ],
     "first": [
       "Chapter 533",
       "Episode 434"
@@ -24227,6 +24050,9 @@
     "occupation": [
       "Marine Lieutenant"
     ],
+    "residence": [
+      "G-1"
+    ],
     "status": [
       "Alive"
     ]
@@ -24245,9 +24071,6 @@
     "first": [
       "Chapter 535",
       "Episode 437"
-    ],
-    "occupation": [
-      "Prisoner"
     ],
     "status": [
       "Unknown"
@@ -24303,7 +24126,7 @@
       "Buggy Pirates"
     ],
     "occupation": [
-      "Prisoner (Former), Pirate"
+      "Pirate"
     ],
     "status": [
       "Alive"
@@ -24318,9 +24141,6 @@
       "\u30a4\u30ca\u30ba\u30de"
     ],
     "rname": [
-      "Inazuma"
-    ],
-    "ename": [
       "Inazuma"
     ],
     "first": [
@@ -24495,6 +24315,9 @@
     "id": "Wolf_unit"
   },
   {
+    "id": "Manticore"
+  },
+  {
     "id": "Tibany",
     "jname": [
       "\u30c6\u30a3\u30d0\u30cb\u30fc"
@@ -24562,15 +24385,38 @@
     ]
   },
   {
+    "id": "Akehende",
+    "jname": [
+      "\u30a2\u30b1\u30d8\u30f3\u30c7"
+    ],
+    "rname": [
+      "Akehende"
+    ],
+    "ename": [
+      "Uweshall Notpass"
+    ],
+    "first": [
+      "Chapter 548",
+      "Episode 451"
+    ],
+    "occupation": [
+      "Marine Rear Admiral"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605",
+      "(At least 200000000)"
+    ]
+  },
+  {
     "id": "Lacroix",
     "jname": [
       "\u30e9\u30af\u30ed\u30ef"
     ],
     "rname": [
       "Rakurowa"
-    ],
-    "ename": [
-      "Lacroix"
     ],
     "first": [
       "Chapter 550",
@@ -24588,6 +24434,10 @@
     "birth": [
       "June 8th"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "Takahiro Yoshimizu"
     ],
@@ -24602,9 +24452,6 @@
     ],
     "rname": [
       "Ronzu"
-    ],
-    "ename": [
-      "Lonz"
     ],
     "first": [
       "Chapter 550",
@@ -24621,6 +24468,10 @@
     ],
     "birth": [
       "June 2nd"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Masaya Takatsuka"
@@ -24698,9 +24549,6 @@
     "rname": [
       "D\u014dma"
     ],
-    "ename": [
-      "Doma"
-    ],
     "first": [
       "Chapter 551",
       "Episode 460"
@@ -24735,9 +24583,6 @@
     ],
     "rname": [
       "Makugai"
-    ],
-    "ename": [
-      "McGuy"
     ],
     "first": [
       "Chapter 551",
@@ -24865,9 +24710,6 @@
     ],
     "rname": [
       "Erum\u012b"
-    ],
-    "ename": [
-      "Elmy"
     ],
     "first": [
       "Chapter 551",
@@ -25008,9 +24850,6 @@
     "rname": [
       "Bisuta"
     ],
-    "ename": [
-      "Vista"
-    ],
     "first": [
       "Chapter 552",
       "Episode 0"
@@ -25096,9 +24935,6 @@
     ],
     "rname": [
       "Kurieru"
-    ],
-    "ename": [
-      "Curiel"
     ],
     "first": [
       "Chapter 552",
@@ -25718,9 +25554,6 @@
     "rname": [
       "Rakuy\u014d"
     ],
-    "ename": [
-      "Rakuyo"
-    ],
     "first": [
       "Chapter 553",
       "Episode 461"
@@ -25859,7 +25692,7 @@
       "March 19th"
     ],
     "jva": [
-      "K\u014dhei Fukuhara,",
+      "K\u014dhei Fukuhara",
       "Kenji Hamada (Episode 485+)"
     ],
     "Funi eva": [
@@ -25910,9 +25743,6 @@
       "\u30d5\u30a9\u30c3\u30b5"
     ],
     "rname": [
-      "Fossa"
-    ],
-    "ename": [
       "Fossa"
     ],
     "first": [
@@ -26332,6 +26162,10 @@
     "blood type": [
       "F"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "Tsuyoshi Koyama"
     ],
@@ -26367,6 +26201,10 @@
     "birth": [
       "November 1st"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "K\u014dji Haramaki"
     ],
@@ -26381,9 +26219,6 @@
     ],
     "rname": [
       "Ritoru \u014czu Junia"
-    ],
-    "ename": [
-      "Little Oars Jr."
     ],
     "first": [
       "Chapter 554",
@@ -26464,9 +26299,6 @@
     ],
     "rname": [
       "Howaitibei"
-    ],
-    "ename": [
-      "Whitey Bay"
     ],
     "first": [
       "Chapter 556",
@@ -26892,9 +26724,6 @@
     "rname": [
       "Kingudy\u016b"
     ],
-    "ename": [
-      "Kingdew"
-    ],
     "first": [
       "Chapter 562",
       "Episode 461"
@@ -26980,9 +26809,6 @@
     ],
     "rname": [
       "K\u0101r\u012b Dadan"
-    ],
-    "ename": [
-      "Curly Dadan"
     ],
     "first": [
       "Chapter 440",
@@ -27255,9 +27081,6 @@
     "rname": [
       "Basuko Shotto"
     ],
-    "ename": [
-      "Vasco Shot"
-    ],
     "first": [
       "Chapter 575",
       "Episode 484"
@@ -27451,9 +27274,6 @@
     "rname": [
       "Happ\u012bgan"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 578",
       "Episode 487"
@@ -27505,7 +27325,7 @@
     ]
   },
   {
-    "id": "Brownbeard",
+    "id": "Chadros_Higelyges",
     "jname": [
       "\u30c1\u30e3\u30c9\u30ed\u30b9\u30fb\u30d2\u30b2\u30ea\u30b2\u30b9"
     ],
@@ -27722,9 +27542,6 @@
       "\u30b5\u30dc"
     ],
     "rname": [
-      "Sabo"
-    ],
-    "ename": [
       "Sabo"
     ],
     "first": [
@@ -28161,9 +27978,6 @@
     "rname": [
       "Karasu"
     ],
-    "ename": [
-      "Karasu"
-    ],
     "first": [
       "Chapter 593",
       "Episode 510"
@@ -28217,6 +28031,65 @@
     ],
     "dftype": [
       "Logia"
+    ]
+  },
+  {
+    "id": "Brownbeard",
+    "jname": [
+      "\u30c1\u30e3\u30c9\u30ed\u30b9\u30fb\u30d2\u30b2\u30ea\u30b2\u30b9"
+    ],
+    "rname": [
+      "Chadorosu Higerigesu"
+    ],
+    "ename": [
+      "Browndros Beardriguez"
+    ],
+    "first": [
+      "Chapter 581",
+      "Episode 490"
+    ],
+    "affiliation": [
+      "Caesar Clown (defected), Centaur Patrol Unit (defected)",
+      "Brownbeard Pirates (disbanded)"
+    ],
+    "occupation": [
+      "Leader of the Centaur Patrol Unit (former)",
+      "Pirate",
+      "Captain  (former)"
+    ],
+    "origin": [
+      "Grand Line"
+    ],
+    "epithet": [
+      "\"Brownbeard\"",
+      "\"Boss\""
+    ],
+    "status": [
+      "Alive"
+    ],
+    "age": [
+      "43 (debut)",
+      "45 (after timeskip)"
+    ],
+    "birth": [
+      "February 3rd"
+    ],
+    "height": [
+      "691 cm (22'8\u00bd\")"
+    ],
+    "blood type": [
+      "S"
+    ],
+    "bounty": [
+      "80060000"
+    ],
+    "jva": [
+      "Yasuhiko Tokuyama (Episode 491)",
+      "Kazunari Tanaka (Episode 511)",
+      "Masashi Sugawara (Episode 583 - )"
+    ],
+    "Funi eva": [
+      "Randy E. Aguebor"
     ]
   },
   {
@@ -28316,9 +28189,6 @@
     "rname": [
       "Kongu"
     ],
-    "ename": [
-      "Kong"
-    ],
     "first": [
       "Chapter 0",
       "Episode 0"
@@ -28330,6 +28200,10 @@
     "occupation": [
       "Commander-in-Chief",
       "Fleet Admiral (former)"
+    ],
+    "residence": [
+      "Mary Geoise",
+      "Marine Headquarters (Marineford) (former)"
     ],
     "status": [
       "Alive"
@@ -28380,9 +28254,6 @@
     "rname": [
       "Sukotchi"
     ],
-    "ename": [
-      "Scotch"
-    ],
     "first": [
       "Chapter 595",
       "Episode 513"
@@ -28414,9 +28285,6 @@
     "rname": [
       "Gorira"
     ],
-    "ename": [
-      "Gorilla"
-    ],
     "first": [
       "Chapter 596, Episode 514"
     ],
@@ -28431,6 +28299,10 @@
     ],
     "birth": [
       "May 18th"
+    ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
     ],
     "jva": [
       "Tetsu Inada"
@@ -28824,9 +28696,6 @@
     "rname": [
       "Karib\u016b"
     ],
-    "ename": [
-      "Caribou"
-    ],
     "first": [
       "Chapter 600",
       "Episode 519"
@@ -28889,9 +28758,6 @@
     ],
     "rname": [
       "Korib\u016b"
-    ],
-    "ename": [
-      "Coribou"
     ],
     "first": [
       "Chapter 600",
@@ -28970,10 +28836,7 @@
       "\u30d3\u30fc\u30af\u30fb\u30ea\u30de\u30fc\u30af"
     ],
     "rname": [
-      "B\u012aku Rim\u0101ku"
-    ],
-    "ename": [
-      "N/A"
+      "B\u012bku Rim\u0101ku"
     ],
     "first": [
       "Chapter 599",
@@ -29096,16 +28959,20 @@
       "Episode 522"
     ],
     "affiliation": [
-      "Marines"
+      "Marines (GR 66)\u00a0(Non-Canon)\u2260"
     ],
     "occupation": [
       "Rear Admiral"
     ],
     "residence": [
-      "Sabaody Archipelago"
+      "Sabaody Archipelago\u00a0(Non-Canon)\u2260"
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605",
+      "(At least 200000000)"
     ],
     "jva": [
       "Koji Haramaki"
@@ -29164,9 +29031,6 @@
     "rname": [
       "Megaro"
     ],
-    "ename": [
-      "Megalo"
-    ],
     "first": [
       "Chapter 605",
       "Episode 525"
@@ -29200,9 +29064,6 @@
     ],
     "rname": [
       "Band\u0101 Dekken Ky\u016bsei"
-    ],
-    "ename": [
-      "Vander Decken IX"
     ],
     "first": [
       "Chapter 606",
@@ -29266,9 +29127,6 @@
       "\u30ef\u30c0\u30c4\u30df"
     ],
     "rname": [
-      "Wadatsumi"
-    ],
-    "ename": [
       "Wadatsumi"
     ],
     "first": [
@@ -29346,9 +29204,6 @@
     "rname": [
       "Hamondo"
     ],
-    "ename": [
-      "Hammond"
-    ],
     "first": [
       "Chapter 607",
       "Episode 526"
@@ -29387,9 +29242,6 @@
     ],
     "rname": [
       "Hy\u014dz\u014d"
-    ],
-    "ename": [
-      "Hyouzou"
     ],
     "first": [
       "Chapter 607",
@@ -29485,7 +29337,7 @@
       "H\u014ddi J\u014dnzu"
     ],
     "ename": [
-      "Hody Jones (Viz),",
+      "Hody Jones (Viz)",
       "Hordy Jones (Funimation)"
     ],
     "first": [
@@ -30151,7 +30003,8 @@
       "Romi Park"
     ],
     "Funi eva": [
-      "Morgan Berry"
+      "Morgan Berry",
+      "Natalie Hoover (young)"
     ]
   },
   {
@@ -30203,9 +30056,6 @@
     "rname": [
       "Dosun"
     ],
-    "ename": [
-      "Dosun"
-    ],
     "first": [
       "Chapter 611",
       "Episode 530"
@@ -30252,9 +30102,6 @@
       "\u30bc\u30aa"
     ],
     "rname": [
-      "Zeo"
-    ],
-    "ename": [
       "Zeo"
     ],
     "first": [
@@ -30306,9 +30153,6 @@
       "\u30c0\u30eb\u30de"
     ],
     "rname": [
-      "Daruma"
-    ],
-    "ename": [
       "Daruma"
     ],
     "first": [
@@ -30500,9 +30344,6 @@
     "rname": [
       "Hoe"
     ],
-    "ename": [
-      "Hoe"
-    ],
     "first": [
       "Chapter 611",
       "Episode 530"
@@ -30539,9 +30380,6 @@
       "\u3057\u3089\u307b\u3057"
     ],
     "rname": [
-      "Shirahoshi"
-    ],
-    "ename": [
       "Shirahoshi"
     ],
     "first": [
@@ -30644,9 +30482,6 @@
     "rname": [
       "Sadaijin"
     ],
-    "ename": [
-      "Minister of the Left"
-    ],
     "first": [
       "Chapter 612",
       "Episode 531"
@@ -30692,9 +30527,6 @@
     ],
     "rname": [
       "Makino no Ko"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 614",
@@ -30760,15 +30592,12 @@
     ]
   },
   {
-    "id": "Harisenbon",
+    "id": "Jean_Noueilles",
     "jname": [
-      "\u30cf\u30ea\u30bb\u30f3\u30dc\u30f3"
+      "\u30b8\u30e3\u30f3\u30fb\u30cc\u30a8\u30a4\u30e6"
     ],
     "rname": [
-      "Harisenbon"
-    ],
-    "ename": [
-      "Harisenbon"
+      "Jan Nueiyu"
     ],
     "first": [
       "Chapter 617",
@@ -30787,6 +30616,9 @@
     ],
     "residence": [
       "Fish-Man District (former)"
+    ],
+    "alias": [
+      "\"Captain Porcupinefish\""
     ],
     "status": [
       "Alive"
@@ -30885,9 +30717,6 @@
     "rname": [
       "Otohime"
     ],
-    "ename": [
-      "Otohime"
-    ],
     "first": [
       "Chapter 621",
       "Episode 539 (image), Episode 540"
@@ -30963,15 +30792,35 @@
     ]
   },
   {
+    "id": "Zururin",
+    "jname": [
+      "\u30ba\u30eb\u30fc\u30ea\u30f3"
+    ],
+    "rname": [
+      "Zur\u016brin"
+    ],
+    "first": [
+      "Chapter 621",
+      "Episode 540"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
     "id": "Kadar",
     "jname": [
       "\u30ab\u30c0\u30eb"
     ],
     "rname": [
       "Kadaru"
-    ],
-    "ename": [
-      "Kadar"
     ],
     "first": [
       "Chapter 622",
@@ -30982,6 +30831,9 @@
     ],
     "occupation": [
       "Marine Rear Admiral"
+    ],
+    "residence": [
+      "G-2"
     ],
     "status": [
       "Unknown"
@@ -31003,9 +30855,6 @@
     ],
     "rname": [
       "Koara"
-    ],
-    "ename": [
-      "Koala"
     ],
     "first": [
       "Chapter 622",
@@ -31051,6 +30900,28 @@
     ],
     "Funi eva": [
       "Jeannie Tirado"
+    ]
+  },
+  {
+    "id": "Muti",
+    "jname": [
+      "\u30e0\u30c6\u30a3"
+    ],
+    "rname": [
+      "Muti"
+    ],
+    "first": [
+      "Chapter 623",
+      "Episode 543"
+    ],
+    "residence": [
+      "Foolshout Island"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "Funi eva": [
+      "Brittany Lauda"
     ]
   },
   {
@@ -31101,6 +30972,37 @@
     ],
     "Funi eva": [
       "Dallas Reid"
+    ]
+  },
+  {
+    "id": "Donquixote_Shivercalero",
+    "jname": [
+      "\u30c9\u30f3\u30ad\u30db\u30fc\u30c6\u30fb\u30b7\u30f4\u30a1\u30fc\u30ab\u30ec\u30ed\u8056"
+    ],
+    "rname": [
+      "Donkih\u014dte Shiv\u0101karero Sei"
+    ],
+    "first": [
+      "Chapter 625",
+      "Episode 545"
+    ],
+    "affiliation": [
+      "World Government (Donquixote Family)"
+    ],
+    "occupation": [
+      "World Noble"
+    ],
+    "residence": [
+      "Mary Geoise"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "jva": [
+      "Kazuhiko Kishino (Episode 545)"
+    ],
+    "Funi eva": [
+      "Diego Marrero"
     ]
   },
   {
@@ -31185,6 +31087,25 @@
     ]
   },
   {
+    "id": "Nanday",
+    "jname": [
+      "\u30ca\u30f3\u30c7\u30fc"
+    ],
+    "rname": [
+      "Nand\u0113"
+    ],
+    "first": [
+      "Chapter 632 (cover)",
+      "One Piece: Stampede"
+    ],
+    "origin": [
+      "Cactus Island"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
     "id": "Maria_Napole",
     "jname": [
       "\u30de\u30ea\u30a2\u30fb\u30ca\u30dd\u30ec"
@@ -31217,6 +31138,112 @@
     ],
     "jva": [
       "Kumiko Mori"
+    ]
+  },
+  {
+    "id": "Blakey",
+    "jname": [
+      "\u30d6\u30ec\u30a4\u30ad\u30fc"
+    ],
+    "rname": [
+      "Bureik\u012b"
+    ],
+    "first": [
+      "Chapter 649",
+      "Episode 569"
+    ],
+    "affiliation": [
+      "Fish-Man Island"
+    ],
+    "occupation": [
+      "Drummer"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Miles",
+    "jname": [
+      "\u30de\u30a4\u30eb\u30b9"
+    ],
+    "rname": [
+      "Mairusu"
+    ],
+    "first": [
+      "Chapter 649",
+      "Episode 569"
+    ],
+    "affiliation": [
+      "Fish-Man Island"
+    ],
+    "occupation": [
+      "Trumpeter"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Tonsfer",
+    "jname": [
+      "\u30c8\u30f3\u30b9\u30d5\u30a1\u30fc"
+    ],
+    "rname": [
+      "Tonsuf\u0101"
+    ],
+    "first": [
+      "Chapter 650 (cover)"
+    ],
+    "affiliation": [
+      "Nomads"
+    ],
+    "occupation": [
+      "Nomad"
+    ],
+    "origin": [
+      "Grand Line (Long Ring Long Land)"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Tonjil",
+    "jname": [
+      "\u30c8\u30f3\u30b8\u30eb"
+    ],
+    "rname": [
+      "Tonjiru"
+    ],
+    "first": [
+      "Chapter 650 (cover)"
+    ],
+    "affiliation": [
+      "Nomads"
+    ],
+    "occupation": [
+      "Nomad"
+    ],
+    "origin": [
+      "Grand Line (Long Ring Long Land)"
+    ],
+    "status": [
+      "Alive"
     ]
   },
   {
@@ -31358,9 +31385,6 @@
     "rname": [
       "Tamago"
     ],
-    "ename": [
-      "Tamago"
-    ],
     "first": [
       "Chapter 651",
       "Episode 570"
@@ -31466,9 +31490,6 @@
     "rname": [
       "Naporeon"
     ],
-    "ename": [
-      "Napoleon"
-    ],
     "first": [
       "Chapter 651",
       "Episode 571"
@@ -31513,9 +31534,6 @@
     "rname": [
       "Nitoro"
     ],
-    "ename": [
-      "Nitro"
-    ],
     "first": [
       "Chapter 651",
       "Episode 571"
@@ -31553,6 +31571,12 @@
       "Marines",
       "G-5"
     ],
+    "occupation": [
+      "Marine Officer"
+    ],
+    "residence": [
+      "G-5"
+    ],
     "status": [
       "Alive"
     ],
@@ -31571,9 +31595,6 @@
     "rname": [
       "Bonba"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 652",
       "Episode 589"
@@ -31583,7 +31604,10 @@
       "G-5"
     ],
     "occupation": [
-      "Marine"
+      "Marine Officer"
+    ],
+    "residence": [
+      "G-5"
     ],
     "status": [
       "Alive"
@@ -31962,9 +31986,6 @@
     "rname": [
       "Kirintaurosu"
     ],
-    "ename": [
-      "Kirintauros"
-    ],
     "first": [
       "Chapter 658",
       "Episode 582"
@@ -32116,9 +32137,6 @@
     "rname": [
       "Ieti K\u016bru Buraz\u0101zu"
     ],
-    "ename": [
-      "Yeti Cool Brothers"
-    ],
     "first": [
       "Chapter 665",
       "Episode 591"
@@ -32266,9 +32284,6 @@
     "rname": [
       "Sumair\u012b"
     ],
-    "ename": [
-      "Smiley"
-    ],
     "first": [
       "Chapter 668",
       "Episode 594"
@@ -32315,9 +32330,6 @@
     "rname": [
       "Sumair\u012b"
     ],
-    "ename": [
-      "Smiley"
-    ],
     "first": [
       "Chapter 668",
       "Episode 594"
@@ -32363,9 +32375,6 @@
     ],
     "rname": [
       "Verugo"
-    ],
-    "ename": [
-      "Vergo"
     ],
     "first": [
       "Chapter 671",
@@ -32425,9 +32434,6 @@
     "rname": [
       "Yarisugi"
     ],
-    "ename": [
-      "Yarisugi"
-    ],
     "first": [
       "Chapter 673",
       "Episode 599"
@@ -32439,17 +32445,47 @@
     "occupation": [
       "Commodore"
     ],
+    "residence": [
+      "G-5"
+    ],
     "status": [
       "Alive"
     ],
     "height": [
       "220 cm (7'3\")"
     ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
+    ],
     "jva": [
       "K\u014dtar\u014d Nakamura"
     ],
     "Funi eva": [
       "Ben Phillips"
+    ]
+  },
+  {
+    "id": "Dragon_Number_Twenty-One",
+    "jname": [
+      "\u30c9\u30e9\u30b4\u30f3\u4e8c\u5341\u4e00\u865f"
+    ],
+    "rname": [
+      "Doragon Nij\u016bichi-g\u014d"
+    ],
+    "first": [
+      "Chapter 675",
+      "Episode 601"
+    ],
+    "affiliation": [
+      "Caesar Clown",
+      "Vegapunk (former)"
+    ],
+    "residence": [
+      "Punk Hazard"
+    ],
+    "status": [
+      "Unknown"
     ]
   },
   {
@@ -32565,9 +32601,6 @@
     ],
     "rname": [
       "Guradiusu"
-    ],
-    "ename": [
-      "Gladius"
     ],
     "first": [
       "Chapter 682",
@@ -32750,9 +32783,6 @@
     "rname": [
       "J\u014dra"
     ],
-    "ename": [
-      "Giolla"
-    ],
     "first": [
       "Chapter 682",
       "Episode 608"
@@ -32811,9 +32841,6 @@
     ],
     "rname": [
       "Shug\u0101"
-    ],
-    "ename": [
-      "Sugar"
     ],
     "first": [
       "Chapter 682",
@@ -32959,6 +32986,25 @@
     ],
     "dftype": [
       "Artificial Mythical Zoan"
+    ]
+  },
+  {
+    "id": "Baburu",
+    "jname": [
+      "\u30d0\u30d6\u30eb"
+    ],
+    "rname": [
+      "Baburu"
+    ],
+    "first": [
+      "Chapter 690 (cover)",
+      "Episode 921"
+    ],
+    "origin": [
+      "Grand Line"
+    ],
+    "status": [
+      "Alive"
     ]
   },
   {
@@ -33191,6 +33237,9 @@
       "Marine Instructor (former)",
       "Marine Admiral (former)"
     ],
+    "residence": [
+      "G-5 (former)"
+    ],
     "epithet": [
       "Black Arm Zephyr"
     ],
@@ -33312,9 +33361,6 @@
     "rname": [
       "Diamante"
     ],
-    "ename": [
-      "Diamante"
-    ],
     "first": [
       "Chapter 700",
       "Episode 629"
@@ -33381,9 +33427,6 @@
     "rname": [
       "Tor\u0113boru"
     ],
-    "ename": [
-      "Trebol"
-    ],
     "first": [
       "Chapter 700",
       "Episode 629"
@@ -33449,9 +33492,6 @@
     "rname": [
       "P\u012bka"
     ],
-    "ename": [
-      "Pica"
-    ],
     "first": [
       "Chapter 700",
       "Episode 629"
@@ -33514,9 +33554,6 @@
     ],
     "rname": [
       "Kurozumi Kanj\u016br\u014d"
-    ],
-    "ename": [
-      "Kurozumi Kanjuro"
     ],
     "first": [
       "Chapter 700",
@@ -33585,9 +33622,6 @@
     "rname": [
       "Issh\u014d"
     ],
-    "ename": [
-      "Issho"
-    ],
     "first": [
       "Chapter 701",
       "Episode 630"
@@ -33596,10 +33630,16 @@
       "Marines"
     ],
     "occupation": [
-      "Admiral"
+      "Admiral",
+      "Military Chief (former)",
+      "Bodyguard (former)"
     ],
     "origin": [
-      "Grand Line"
+      "Grand Line (Aoi Kingdom)"
+    ],
+    "residence": [
+      "Aoi Kingdom (former)",
+      "Soja Island (former)"
     ],
     "alias": [
       "\"Fujitora\""
@@ -33735,9 +33775,6 @@
     "rname": [
       "Derinj\u0101"
     ],
-    "ename": [
-      "Dellinger"
-    ],
     "first": [
       "Chapter 702",
       "Episode 632"
@@ -33821,9 +33858,6 @@
     ],
     "rname": [
       "Kyurosu"
-    ],
-    "ename": [
-      "Kyros"
     ],
     "first": [
       "Chapter 702",
@@ -33914,19 +33948,23 @@
       "Gaburu"
     ],
     "ename": [
-      "Gobble",
-      "Gaburu (Current)",
-      "Gabull"
+      "Gaburu",
+      "Gobble (VIZ, former)",
+      "Gabull (VIZ, former)"
     ],
     "first": [
-      "Chapter 702 (cover)",
+      "Chapter 702 (cover",
+      "image)",
       "Episode 921 (image)"
+    ],
+    "affiliation": [
+      "Reformation Army (\u7dad\u65b0\u8ecd, Ishin-gun?)"
     ],
     "occupation": [
       "Revolutionist commander"
     ],
     "epithet": [
-      "\"Revolution's Child\""
+      "\"Child of the Revolution\""
     ],
     "status": [
       "Deceased"
@@ -34007,9 +34045,6 @@
     "rname": [
       "Suparutan"
     ],
-    "ename": [
-      "Spartan"
-    ],
     "first": [
       "Chapter 703",
       "Episode 633"
@@ -34065,9 +34100,6 @@
     ],
     "rname": [
       "Ker\u012b Fanku"
-    ],
-    "ename": [
-      "Kelly Funk"
     ],
     "first": [
       "Chapter 704",
@@ -34175,9 +34207,6 @@
     ],
     "rname": [
       "Sureiman"
-    ],
-    "ename": [
-      "Suleiman"
     ],
     "first": [
       "Chapter 704",
@@ -34360,9 +34389,6 @@
     "rname": [
       "Rebekka"
     ],
-    "ename": [
-      "Rebecca"
-    ],
     "first": [
       "Chapter 704",
       "Episode 633"
@@ -34412,9 +34438,6 @@
       "\u30c0\u30ac\u30de"
     ],
     "rname": [
-      "Dagama"
-    ],
-    "ename": [
       "Dagama"
     ],
     "first": [
@@ -34500,9 +34523,6 @@
     ],
     "rname": [
       "Kyabendisshu"
-    ],
-    "ename": [
-      "Cavendish"
     ],
     "first": [
       "Chapter 704",
@@ -34624,9 +34644,6 @@
       "\u30b5\u30a4"
     ],
     "rname": [
-      "Sai"
-    ],
-    "ename": [
       "Sai"
     ],
     "first": [
@@ -34804,9 +34821,6 @@
     "rname": [
       "Ganbia"
     ],
-    "ename": [
-      "Gambia"
-    ],
     "first": [
       "Chapter 705",
       "Episode 634"
@@ -34845,9 +34859,6 @@
     "rname": [
       "Mein\u0101do"
     ],
-    "ename": [
-      "Maynard"
-    ],
     "first": [
       "Chapter 705",
       "Episode 634"
@@ -34872,6 +34883,10 @@
     ],
     "gladiator number": [
       "0429"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Hikaru Hanada"
@@ -34997,15 +35012,13 @@
     "rname": [
       "Hairudin"
     ],
-    "ename": [
-      "Hajrudin"
-    ],
     "first": [
       "Chapter 706",
       "Episode 639"
     ],
     "affiliation": [
-      "New Giant Warrior Pirates, Buggy's Delivery (resigned)",
+      "New Giant Warrior Pirates",
+      "Buggy's Delivery (resigned)",
       "Straw Hat Grand Fleet"
     ],
     "occupation": [
@@ -35014,10 +35027,10 @@
       "Mercenary (former)"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf"
+      "Elbaph"
     ],
     "status": [
       "Alive"
@@ -35039,7 +35052,8 @@
       "Aiko Hibi (child)"
     ],
     "Funi eva": [
-      "Randy E. Aguebor (Episode of Sabo, Episode 639-658) Chris Guerrero (Episode 676+)"
+      "Randy E. Aguebor (Episode of Sabo, Episode 639-658)",
+      "Chris Guerrero (Episode 676+)"
     ]
   },
   {
@@ -35083,9 +35097,6 @@
     ],
     "rname": [
       "Riku Dorudo Sansei"
-    ],
-    "ename": [
-      "Riku Doldo III"
     ],
     "first": [
       "Chapter 706",
@@ -35140,9 +35151,6 @@
     ],
     "rname": [
       "R\u014dringu R\u014dgan"
-    ],
-    "ename": [
-      "Rolling Logan"
     ],
     "first": [
       "Chapter 706",
@@ -35211,9 +35219,6 @@
     ],
     "rname": [
       "Med\u014dzu"
-    ],
-    "ename": [
-      "Meadows"
     ],
     "first": [
       "Chapter 706",
@@ -35326,9 +35331,6 @@
     "rname": [
       "Jan Ango"
     ],
-    "ename": [
-      "Jean Ango"
-    ],
     "first": [
       "Chapter 706",
       "Episode 639"
@@ -35359,9 +35361,6 @@
       "\u30a4\u30c7\u30aa"
     ],
     "rname": [
-      "Ideo"
-    ],
-    "ename": [
       "Ideo"
     ],
     "first": [
@@ -35413,9 +35412,6 @@
     "rname": [
       "Mam\u012b"
     ],
-    "ename": [
-      "Mummy"
-    ],
     "first": [
       "Chapter 706",
       "Episode 652"
@@ -35441,9 +35437,6 @@
     "rname": [
       "Damasuku"
     ],
-    "ename": [
-      "Damask"
-    ],
     "first": [
       "Chapter 706",
       "Episode 652"
@@ -35459,7 +35452,7 @@
     ]
   },
   {
-    "id": "Hack_(Fish-Man)",
+    "id": "Hack",
     "jname": [
       "\u30cf\u30c3\u30af"
     ],
@@ -35564,15 +35557,73 @@
     ]
   },
   {
+    "id": "Hack_(Fish-Man)",
+    "jname": [
+      "\u30cf\u30c3\u30af"
+    ],
+    "rname": [
+      "Hakku"
+    ],
+    "ename": [
+      "Hack"
+    ],
+    "first": [
+      "Chapter 706",
+      "Episode 633"
+    ],
+    "affiliation": [
+      "Revolutionary Army"
+    ],
+    "occupation": [
+      "Revolutionary Army member",
+      "Fish-Man Karate Instructor",
+      "Fish-Man Jujutsu Martial Artist"
+    ],
+    "origin": [
+      "Grand Line (Ryugu Kingdom",
+      "Fish-Man Island)"
+    ],
+    "residence": [
+      "Ryugu Kingdom (former)",
+      "Baltigo (former)",
+      "Momoiro Island"
+    ],
+    "epithet": [
+      "\"Hundredth Dan Hack\""
+    ],
+    "status": [
+      "Alive"
+    ],
+    "age": [
+      "38"
+    ],
+    "birth": [
+      "August 9th"
+    ],
+    "height": [
+      "280 cm (9'2\")"
+    ],
+    "blood type": [
+      "F"
+    ],
+    "gladiator number": [
+      "0103"
+    ],
+    "jva": [
+      "K\u014dsei Hirota"
+    ],
+    "Funi eva": [
+      "Garrett Schenck,",
+      "Kent Williams (in some episodes)"
+    ]
+  },
+  {
     "id": "Leo",
     "jname": [
       "\u30ec\u30aa"
     ],
     "rname": [
       "Reo"
-    ],
-    "ename": [
-      "Leo"
     ],
     "first": [
       "Chapter 710",
@@ -35790,9 +35841,6 @@
     "rname": [
       "Furapp\u0101"
     ],
-    "ename": [
-      "Flapper"
-    ],
     "first": [
       "Chapter 711",
       "Episode 641"
@@ -35889,9 +35937,6 @@
     ],
     "rname": [
       "Eikon"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 711",
@@ -36440,16 +36485,13 @@
     "rname": [
       "Chao"
     ],
-    "ename": [
-      "Chao"
-    ],
     "first": [
       "Chapter 738",
       "Episode 671"
     ],
     "affiliation": [
       "Tontatta Kingdom",
-      "SMILE Factory (former)Straw Hat Grand Fleet"
+      "SMILE Factory (former)Tontatta Pirates"
     ],
     "occupation": [
       "Factory worker (former)",
@@ -36473,16 +36515,13 @@
     "rname": [
       "Chikori"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 738",
       "Episode 672"
     ],
     "affiliation": [
-      "Tontatta Tribe",
-      "Tonta CorpsStraw Hat Grand Fleet"
+      "Tontatta Kingdom",
+      "Tontatta PiratesStraw Hat Grand Fleet"
     ],
     "residence": [
       "Green Bit"
@@ -36546,7 +36585,7 @@
     ],
     "affiliation": [
       "Tontatta Kingdom",
-      "Tonta Corps",
+      "Tontatta Pirates",
       "Straw Hat Grand Fleet"
     ],
     "occupation": [
@@ -36561,67 +36600,6 @@
     ],
     "Funi eva": [
       "Christopher Corey Smith"
-    ]
-  },
-  {
-    "id": "Hack",
-    "jname": [
-      "\u30cf\u30c3\u30af"
-    ],
-    "rname": [
-      "Hakku"
-    ],
-    "ename": [
-      "Hack"
-    ],
-    "first": [
-      "Chapter 706",
-      "Episode 633"
-    ],
-    "affiliation": [
-      "Revolutionary Army"
-    ],
-    "occupation": [
-      "Revolutionary Army member",
-      "Fish-Man Karate Instructor",
-      "Fish-Man Jujutsu Martial Artist"
-    ],
-    "origin": [
-      "Grand Line (Ryugu Kingdom",
-      "Fish-Man Island)"
-    ],
-    "residence": [
-      "Ryugu Kingdom (former)",
-      "Baltigo (former)",
-      "Momoiro Island"
-    ],
-    "epithet": [
-      "\"Hundredth Dan Hack\""
-    ],
-    "status": [
-      "Alive"
-    ],
-    "age": [
-      "38"
-    ],
-    "birth": [
-      "August 9th"
-    ],
-    "height": [
-      "280 cm (9'2\")"
-    ],
-    "blood type": [
-      "F"
-    ],
-    "gladiator number": [
-      "0103"
-    ],
-    "jva": [
-      "K\u014dsei Hirota"
-    ],
-    "Funi eva": [
-      "Garrett Schenck,",
-      "Kent Williams (in some episodes)"
     ]
   },
   {
@@ -36756,9 +36734,6 @@
     "rname": [
       "Hototogisu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 766",
       "Episode 705"
@@ -36771,6 +36746,13 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
+    "jva": [
+      "Arisa Tsuruno"
     ]
   },
   {
@@ -36903,9 +36885,6 @@
     "rname": [
       "Sh\u012bpusuheddo"
     ],
-    "ename": [
-      "Sheepshead"
-    ],
     "first": [
       "Chapter 795",
       "Episode 739"
@@ -36995,9 +36974,6 @@
     "rname": [
       "Torisutan"
     ],
-    "ename": [
-      "Tristan"
-    ],
     "first": [
       "Chapter 795",
       "Episode 739"
@@ -37029,9 +37005,6 @@
     ],
     "rname": [
       "Jakku"
-    ],
-    "ename": [
-      "Jack"
     ],
     "first": [
       "Chapter 801",
@@ -37162,10 +37135,14 @@
       "Marines"
     ],
     "occupation": [
-      "Admiral"
+      "Admiral",
+      "Police Officer (former)"
     ],
     "origin": [
-      "South Blue"
+      "South Blue (Taya Kingdom)"
+    ],
+    "residence": [
+      "Taya Kingdom (former)"
     ],
     "alias": [
       "Ryokugyu"
@@ -37338,9 +37315,6 @@
     "rname": [
       "Zun\u012bsha"
     ],
-    "ename": [
-      "Zunesha"
-    ],
     "first": [
       "Chapter 802",
       "Episode 751"
@@ -37361,7 +37335,7 @@
       "December 18th"
     ],
     "height": [
-      "Over 5 km (3.1 miles)",
+      "Over 10 km (6.2 miles)",
       "Length: Over 2 km (1.2 miles)"
     ],
     "jva": [
@@ -37414,9 +37388,6 @@
     ],
     "rname": [
       "Ry\u016bnosuke"
-    ],
-    "ename": [
-      "Ryunosuke"
     ],
     "first": [
       "Chapter 803",
@@ -37490,9 +37461,6 @@
       "\u30ef\u30f3\u30c0"
     ],
     "rname": [
-      "Wanda"
-    ],
-    "ename": [
       "Wanda"
     ],
     "first": [
@@ -37645,9 +37613,6 @@
     ],
     "rname": [
       "Pedoro"
-    ],
-    "ename": [
-      "Pedro"
     ],
     "first": [
       "Chapter 805",
@@ -37853,9 +37818,6 @@
     "rname": [
       "Miruk\u012b"
     ],
-    "ename": [
-      "Milky"
-    ],
     "first": [
       "Chapter 807",
       "Episode 757 (image)Chapter 814",
@@ -37889,9 +37851,6 @@
     ],
     "rname": [
       "Shishirian"
-    ],
-    "ename": [
-      "Shishilian"
     ],
     "first": [
       "Chapter 808",
@@ -38144,9 +38103,6 @@
     "rname": [
       "K\u012bsu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 809",
       "Episode 759"
@@ -38170,9 +38126,6 @@
       "\u30a4\u30c3\u30ab\u30af"
     ],
     "rname": [
-      "Ikkaku"
-    ],
-    "ename": [
       "Ikkaku"
     ],
     "first": [
@@ -38206,9 +38159,6 @@
     "rname": [
       "Uni"
     ],
-    "ename": [
-      "Uni"
-    ],
     "first": [
       "Chapter 810",
       "Episode 757"
@@ -38236,9 +38186,6 @@
     ],
     "rname": [
       "Kurione"
-    ],
-    "ename": [
-      "Clione"
     ],
     "first": [
       "Chapter 810",
@@ -38269,9 +38216,6 @@
       "\u30cf\u30af\u30ac\u30f3"
     ],
     "rname": [
-      "Hakugan"
-    ],
-    "ename": [
       "Hakugan"
     ],
     "first": [
@@ -38529,9 +38473,6 @@
     "rname": [
       "R\u0101men"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 823",
       "Episode 777"
@@ -38596,9 +38537,6 @@
     ],
     "rname": [
       "S\u0113za"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 823",
@@ -38693,9 +38631,6 @@
     "rname": [
       "Chappu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 823",
       "Episode 777"
@@ -38724,9 +38659,6 @@
     "rname": [
       "Iwatobi"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 823",
       "Episode 777"
@@ -38754,9 +38686,6 @@
     ],
     "rname": [
       "Ban Dodeshine"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 823",
@@ -38841,9 +38770,6 @@
       "\u30b4\u30c3\u30c6\u30a3"
     ],
     "rname": [
-      "Gotti"
-    ],
-    "ename": [
       "Gotti"
     ],
     "first": [
@@ -39046,9 +38972,6 @@
     "rname": [
       "Randorufu"
     ],
-    "ename": [
-      "Randolph"
-    ],
     "first": [
       "Chapter 827",
       "Episode 786"
@@ -39114,9 +39037,6 @@
     "rname": [
       "Purometeusu"
     ],
-    "ename": [
-      "Prometheus"
-    ],
     "first": [
       "Chapter 827",
       "Episode 786"
@@ -39157,9 +39077,6 @@
     ],
     "rname": [
       "Zeusu"
-    ],
-    "ename": [
-      "Zeus"
     ],
     "first": [
       "Chapter 827",
@@ -39381,9 +39298,6 @@
     "rname": [
       "Sh\u0101rotto Opera"
     ],
-    "ename": [
-      "Charlotte Opera"
-    ],
     "first": [
       "Chapter 829",
       "Episode 789"
@@ -39434,9 +39348,6 @@
     ],
     "rname": [
       "Sh\u0101rotto Mosuk\u0101to"
-    ],
-    "ename": [
-      "Charlotte Moscato"
     ],
     "first": [
       "Chapter 829",
@@ -39546,9 +39457,6 @@
     "rname": [
       "Sh\u0101rotto Garetto"
     ],
-    "ename": [
-      "Charlotte Galette"
-    ],
     "first": [
       "Chapter 829",
       "Episode 789"
@@ -39626,7 +39534,8 @@
       "Raki Raki no Mi"
     ],
     "dfename": [
-      "Luck-Luck Fruit"
+      "Luck-Luck Fruit (Funimation)",
+      "Lucky-Lucky Fruit (BStation)"
     ],
     "dfmeaning": [
       "Lucky"
@@ -39702,7 +39611,7 @@
     ],
     "dfename": [
       "Through-Through Fruit (Funimation)",
-      "Phase-Phase Fruit (Treasure Cruise)"
+      "Phase-Phase Fruit (Treasure Cruise, BStation)"
     ],
     "dfmeaning": [
       "Escape"
@@ -39941,9 +39850,6 @@
     "rname": [
       "Paundo"
     ],
-    "ename": [
-      "Pound"
-    ],
     "first": [
       "Chapter 831",
       "Episode 792"
@@ -39983,9 +39889,6 @@
     ],
     "rname": [
       "Vinsum\u014dku Jajji"
-    ],
-    "ename": [
-      "Vinsmoke Judge"
     ],
     "first": [
       "Chapter 832",
@@ -40567,9 +40470,6 @@
     "rname": [
       "Sh\u0101rotto Kabaretta"
     ],
-    "ename": [
-      "Charlotte Cabaletta"
-    ],
     "first": [
       "Chapter 845",
       "Episode 809"
@@ -41032,9 +40932,6 @@
     "rname": [
       "Sh\u0101rotto Sum\u016bj\u012b"
     ],
-    "ename": [
-      "Charlotte Smoothie"
-    ],
     "first": [
       "Chapter 846",
       "Episode 812"
@@ -41165,9 +41062,6 @@
       "\u30bc\u30dd"
     ],
     "rname": [
-      "Zepo"
-    ],
-    "ename": [
       "Zepo"
     ],
     "first": [
@@ -41457,20 +41351,27 @@
       "Loki"
     ],
     "first": [
-      "Chapter 858",
-      "Episode 827 (silhouette)"
+      "Chapter 1130"
     ],
     "occupation": [
       "Prince"
     ],
-    "residence": [
-      "Elbaf"
+    "origin": [
+      "Grand Line (Elbaph)"
+    ],
+    "epithet": [
+      "\"Accursed Prince\"",
+      "\"Shame of Elbaph\"",
+      "\"Sun God\""
     ],
     "status": [
       "Alive"
     ],
     "age": [
       "63"
+    ],
+    "bounty": [
+      "2600000000"
     ]
   },
   {
@@ -41480,9 +41381,6 @@
     ],
     "rname": [
       "Sh\u0101rotto Katakuri"
-    ],
-    "ename": [
-      "Charlotte Katakuri"
     ],
     "first": [
       "Chapter 860",
@@ -41666,9 +41564,6 @@
     ],
     "rname": [
       "Sh\u0101rotto Shinamon"
-    ],
-    "ename": [
-      "Charlotte Cinnamon"
     ],
     "first": [
       "Chapter 860",
@@ -42005,8 +41900,8 @@
       "Episode 830 (actual)"
     ],
     "affiliation": [
-      "CP0 (undercover)",
-      "Underworld (undercover)",
+      "CP0 (undercover",
+      "former) Underworld (undercover)",
       "MADS"
     ],
     "occupation": [
@@ -42014,7 +41909,7 @@
       "Empress of the Underworld"
     ],
     "origin": [
-      "Grand Line"
+      "MADS Research Ship"
     ],
     "epithet": [
       "Queen of the Pleasure District"
@@ -42023,7 +41918,7 @@
       "Unknown"
     ],
     "age": [
-      "Secret"
+      "36"
     ],
     "birth": [
       "April 24th"
@@ -42039,6 +41934,15 @@
     ],
     "Funi eva": [
       "Anastasia Mu\u00f1oz"
+    ],
+    "dfname": [
+      "Batto Batto no Mi"
+    ],
+    "dfmeaning": [
+      "Bat"
+    ],
+    "dftype": [
+      "Zoan"
     ]
   },
   {
@@ -42265,9 +42169,6 @@
     "rname": [
       "Sh\u0101rotto Shitoron"
     ],
-    "ename": [
-      "Charlotte Citron"
-    ],
     "first": [
       "Chapter 861",
       "Episode 833"
@@ -42329,7 +42230,7 @@
       "West Blue"
     ],
     "residence": [
-      "Elbaf (former)",
+      "Elbaph (former)",
       "Whole Cake Island"
     ],
     "alias": [
@@ -42491,9 +42392,6 @@
     ],
     "rname": [
       "Sh\u0101rotto Taburetto"
-    ],
-    "ename": [
-      "Charlotte Tablet"
     ],
     "first": [
       "Chapter 862",
@@ -42993,16 +42891,16 @@
     ],
     "affiliation": [
       "Giant Warrior Pirates",
-      "Elbaf"
+      "Elbaph"
     ],
     "occupation": [
       "Pirate Captain (former)"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf"
+      "Elbaph"
     ],
     "epithet": [
       "\"Waterfall Beard\" Jorul"
@@ -43046,26 +42944,27 @@
     ],
     "affiliation": [
       "Giant Warrior Pirates",
-      "Elbaf"
+      "Elbaph"
     ],
     "occupation": [
       "Pirate (former)",
       "Captain (former)"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf"
+      "Elbaph"
     ],
     "epithet": [
       "\"Mountain Beard\" Jarul"
     ],
     "status": [
-      "Unknown"
+      "Alive"
     ],
     "age": [
-      "345 (Debut)"
+      "345 (debut)",
+      "408 (current)"
     ],
     "birth": [
       "December 8th"
@@ -43081,40 +42980,6 @@
     ],
     "Funi eva": [
       "Jason Douglas"
-    ]
-  },
-  {
-    "id": "Raideen",
-    "jname": [
-      "\u30e9\u30a4\u30c7\u30a3\u30fc\u30f3"
-    ],
-    "rname": [
-      "Raid\u012bn"
-    ],
-    "ename": [
-      "Rydin (Former VIZ, simulcast)",
-      "Raideen (VIZ)"
-    ],
-    "first": [
-      "Chapter 866, Episode 836"
-    ],
-    "affiliation": [
-      "Giant Warrior Pirates (former)"
-    ],
-    "residence": [
-      "Elbaf"
-    ],
-    "status": [
-      "Unknown"
-    ],
-    "birth": [
-      "November 14th"
-    ],
-    "jva": [
-      "Tsuyoshi Koyama"
-    ],
-    "Funi eva": [
-      "Cory J. Phillips"
     ]
   },
   {
@@ -43143,10 +43008,10 @@
       "Mercenary (former)"
     ],
     "origin": [
-      "Grand Line (Elbaf)"
+      "Grand Line (Elbaph)"
     ],
     "residence": [
-      "Elbaf"
+      "Elbaph"
     ],
     "status": [
       "Alive"
@@ -43176,9 +43041,6 @@
       "\u30d1\u30f3\u30c9\u30e9"
     ],
     "rname": [
-      "Pandora"
-    ],
-    "ename": [
       "Pandora"
     ],
     "first": [
@@ -43235,9 +43097,6 @@
     ],
     "rname": [
       "Redi Tsur\u012b"
-    ],
-    "ename": [
-      "Lady Tree"
     ],
     "first": [
       "Chapter 873",
@@ -43345,9 +43204,6 @@
     "rname": [
       "Sh\u0101rotto Babaroa"
     ],
-    "ename": [
-      "Charlotte Bavarois"
-    ],
     "first": [
       "Chapter 888",
       "Episode 861"
@@ -43382,9 +43238,6 @@
     ],
     "rname": [
       "Sh\u0101rotto Furanpe"
-    ],
-    "ename": [
-      "Charlotte Flampe"
     ],
     "first": [
       "Chapter 891",
@@ -43824,14 +43677,20 @@
       "Chapter 898 (cover), Episode 836"
     ],
     "affiliation": [
-      "Straw Hat Grand Fleet (New Giant Warrior Pirates), Buggy's Delivery (former)"
+      "Straw Hat Grand Fleet (New Giant Warrior Pirates), Land of Gods, Buggy's Delivery (former)"
     ],
     "occupation": [
       "Navigator",
       "Mercenary (former)"
     ],
+    "origin": [
+      "Grand Line (Elbaph)"
+    ],
     "residence": [
-      "Elbaf"
+      "Elbaph"
+    ],
+    "alias": [
+      "\"Sun God\""
     ],
     "status": [
       "Alive"
@@ -43866,8 +43725,11 @@
       "Pirate",
       "Mercenary (former)"
     ],
+    "origin": [
+      "Grand Line (Elbaph)"
+    ],
     "residence": [
-      "Elbaf"
+      "Elbaph"
     ],
     "status": [
       "Alive"
@@ -44132,10 +43994,14 @@
       "Marines"
     ],
     "occupation": [
-      "Admiral"
+      "Admiral",
+      "Police Officer (former)"
     ],
     "origin": [
-      "South Blue"
+      "South Blue (Taya Kingdom)"
+    ],
+    "residence": [
+      "Taya Kingdom (former)"
     ],
     "alias": [
       "Ryokugyu"
@@ -44373,9 +44239,6 @@
     "rname": [
       "Koronbusu"
     ],
-    "ename": [
-      "Columbus"
-    ],
     "first": [
       "Chapter 906 (cover)"
     ],
@@ -44400,9 +44263,6 @@
     ],
     "rname": [
       "Mukekka"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 906",
@@ -44435,9 +44295,6 @@
     "rname": [
       "Nashi"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 906",
       "Episode 884"
@@ -44463,9 +44320,6 @@
     "rname": [
       "Mari"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 906",
       "Episode 884"
@@ -44490,9 +44344,6 @@
     ],
     "rname": [
       "S\u014dsu"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 906",
@@ -44522,9 +44373,6 @@
     "rname": [
       "Neg\u012b"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 906",
       "Episode 884"
@@ -44552,9 +44400,6 @@
     ],
     "rname": [
       "K\u016bran"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 906",
@@ -44614,9 +44459,6 @@
     ],
     "rname": [
       "J\u012bpu"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 906",
@@ -44683,9 +44525,6 @@
     "rname": [
       "Fur\u0101ri"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 906",
       "Episode 884"
@@ -44717,9 +44556,6 @@
     "rname": [
       "Toritob\u016b"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 906",
       "Episode 884"
@@ -44735,9 +44571,6 @@
     ],
     "status": [
       "Alive"
-    ],
-    "jva": [
-      "Unknown"
     ],
     "Funi eva": [
       "Jonathan Rigg"
@@ -44762,7 +44595,7 @@
       "World Government"
     ],
     "occupation": [
-      "Supreme Ruler of the World (clandestine)"
+      "Supreme Ruler of the World Government (clandestine)"
     ],
     "residence": [
       "Mary Geoise (Pangaea Castle)"
@@ -44803,6 +44636,10 @@
     "status": [
       "Alive"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "Yuka Komatsu"
     ],
@@ -44839,6 +44676,10 @@
     "status": [
       "Alive"
     ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
     "jva": [
       "Nobuyuki Hiyama"
     ],
@@ -44852,9 +44693,6 @@
       "\u30bb\u30ad"
     ],
     "rname": [
-      "Seki"
-    ],
-    "ename": [
       "Seki"
     ],
     "first": [
@@ -44888,9 +44726,6 @@
     "rname": [
       "Sutoroganofu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 908",
       "Episode 886"
@@ -44915,9 +44750,6 @@
     ],
     "rname": [
       "Potofu"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 908",
@@ -44946,9 +44778,6 @@
     ],
     "rname": [
       "Samosa"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 908",
@@ -45033,9 +44862,6 @@
     "rname": [
       "T\u014dyama Tsujigir\u014d"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 909",
       "Episode 892"
@@ -45064,9 +44890,6 @@
     "rname": [
       "Giro Chintar\u014d"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 909",
       "Episode 892"
@@ -45094,9 +44917,6 @@
     ],
     "rname": [
       "Tsugaru Umi"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 909",
@@ -45181,9 +45001,6 @@
     "rname": [
       "Oid\u0113"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 909",
       "Episode 890"
@@ -45237,9 +45054,6 @@
     "rname": [
       "Komachiyo"
     ],
-    "ename": [
-      "Komachiyo"
-    ],
     "first": [
       "Chapter 910",
       "Episode 892"
@@ -45266,9 +45080,6 @@
       "\u3072\u3072\u4e38"
     ],
     "rname": [
-      "Hihimaru"
-    ],
-    "ename": [
       "Hihimaru"
     ],
     "first": [
@@ -45301,9 +45112,6 @@
     ],
     "rname": [
       "Massui"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 911",
@@ -45579,9 +45387,6 @@
     "rname": [
       "Kikunoj\u014d"
     ],
-    "ename": [
-      "Kikunojo"
-    ],
     "first": [
       "Chapter 913",
       "Episode 899"
@@ -45637,9 +45442,6 @@
       "\u6d66\u5cf6"
     ],
     "rname": [
-      "Urashima"
-    ],
-    "ename": [
       "Urashima"
     ],
     "first": [
@@ -45921,9 +45723,6 @@
     "rname": [
       "Hiroshi"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 915",
       "Episode 901"
@@ -45949,9 +45748,6 @@
     "rname": [
       "Wakasa"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 915",
       "Episode 901"
@@ -45974,9 +45770,6 @@
     "rname": [
       "Saikoro"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 915",
       "Episode 901"
@@ -45995,9 +45788,6 @@
     ],
     "rname": [
       "Ikkaku"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 915",
@@ -46027,9 +45817,6 @@
     "rname": [
       "Y\u014dkan"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 915",
       "Episode 902"
@@ -46058,9 +45845,6 @@
     "rname": [
       "Atagoyama"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 915",
       "Episode 902"
@@ -46085,9 +45869,6 @@
     ],
     "rname": [
       "Serizawa"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 915 (cover)"
@@ -46145,9 +45926,6 @@
     "rname": [
       "Rabittoman"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 916, Episode 904"
     ],
@@ -46183,9 +45961,6 @@
     ],
     "rname": [
       "Sup\u012bdo"
-    ],
-    "ename": [
-      "Speed"
     ],
     "first": [
       "Chapter 917",
@@ -46281,9 +46056,6 @@
     "rname": [
       "Inoichibannosuke"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 917",
       "Episode 904"
@@ -46305,9 +46077,6 @@
     ],
     "rname": [
       "O-Yame"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 917",
@@ -46333,9 +46102,6 @@
     ],
     "rname": [
       "Kinb\u014d"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 917",
@@ -46463,9 +46229,6 @@
     "rname": [
       "Ginnosuke"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 919",
       "Episode 909"
@@ -46491,9 +46254,6 @@
     "rname": [
       "Chihaya"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 919",
       "Episode 909"
@@ -46518,9 +46278,6 @@
     ],
     "rname": [
       "Denjir\u014d"
-    ],
-    "ename": [
-      "Denjiro"
     ],
     "first": [
       "Chapter 919",
@@ -46583,9 +46340,6 @@
     "rname": [
       "Hara"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 919",
       "Episode 909"
@@ -46610,9 +46364,6 @@
     ],
     "rname": [
       "Kingu"
-    ],
-    "ename": [
-      "King"
     ],
     "first": [
       "Chapter 920",
@@ -46682,9 +46433,6 @@
     ],
     "rname": [
       "Ku\u012bn"
-    ],
-    "ename": [
-      "Queen"
     ],
     "first": [
       "Chapter 920",
@@ -46880,9 +46628,6 @@
     "rname": [
       "Kawamatsu"
     ],
-    "ename": [
-      "Kawamatsu"
-    ],
     "first": [
       "Chapter 920",
       "Episode 910"
@@ -46977,9 +46722,6 @@
     "rname": [
       "Kurosawa"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 920",
       "Episode 911"
@@ -47005,9 +46747,6 @@
     ],
     "rname": [
       "Kager\u014d"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 920",
@@ -47042,9 +46781,6 @@
     "rname": [
       "Tabuhachir\u014d"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 920",
       "Episode 911"
@@ -47069,9 +46805,6 @@
       "\u3057\u306e\u3076"
     ],
     "rname": [
-      "Shinobu"
-    ],
-    "ename": [
       "Shinobu"
     ],
     "first": [
@@ -47138,9 +46871,6 @@
     "rname": [
       "O-Ch\u014dch\u014d"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 921",
       "Episode 912"
@@ -47197,9 +46927,6 @@
     "rname": [
       "Kikipatsu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 925",
       "Episode 917"
@@ -47219,9 +46946,6 @@
     "rname": [
       "Maki"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 925",
       "Episode 917"
@@ -47240,9 +46964,6 @@
     ],
     "rname": [
       "Tori"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 925",
@@ -47264,9 +46985,6 @@
       "\u30c9\u30dc\u30f3"
     ],
     "rname": [
-      "Dobon"
-    ],
-    "ename": [
       "Dobon"
     ],
     "first": [
@@ -47304,9 +47022,6 @@
     "rname": [
       "Ibiributsu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 926",
       "Episode 919"
@@ -47333,9 +47048,6 @@
     "rname": [
       "D\u014dnannoyo"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 926",
       "Episode 919"
@@ -47361,9 +47073,6 @@
     ],
     "rname": [
       "Kamekichi"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 926",
@@ -47392,9 +47101,6 @@
     ],
     "rname": [
       "Ukon"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 926",
@@ -47425,9 +47131,6 @@
     "rname": [
       "Hiday\u016b"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 926",
       "Episode 918"
@@ -47457,9 +47160,6 @@
     "rname": [
       "Monjir\u014d"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 926",
       "Episode 918"
@@ -47485,9 +47185,6 @@
     ],
     "rname": [
       "J\u016bjir\u014d"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 926",
@@ -47518,9 +47215,6 @@
     "rname": [
       "Kakunoshin"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 926",
       "Episode 918"
@@ -47549,9 +47243,6 @@
     ],
     "rname": [
       "Koj\u016br\u014d"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 926",
@@ -47585,9 +47276,6 @@
     "rname": [
       "D\u014dtaku"
     ],
-    "ename": [
-      "Dotaku"
-    ],
     "first": [
       "Chapter 926",
       "Episode 918"
@@ -47599,7 +47287,7 @@
       "Samurai"
     ],
     "residence": [
-      "Wano Country (Flower Capital)f"
+      "Wano Country (Flower Capital)"
     ],
     "status": [
       "Alive"
@@ -47674,9 +47362,6 @@
     "rname": [
       "Akudai Kanzabur\u014d"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 926",
       "Episode 918"
@@ -47701,9 +47386,6 @@
     ],
     "rname": [
       "Waruno Furishir\u014d"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 926",
@@ -47759,9 +47441,6 @@
       "\u9ed2\u70ad\u30aa\u30ed\u30c1"
     ],
     "rname": [
-      "Kurozumi Orochi"
-    ],
-    "ename": [
       "Kurozumi Orochi"
     ],
     "first": [
@@ -47926,9 +47605,6 @@
     "rname": [
       "Takao"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 927",
       "Episode 921"
@@ -47953,9 +47629,6 @@
     ],
     "rname": [
       "Sanday\u016b"
-    ],
-    "ename": [
-      "Sandayu"
     ],
     "first": [
       "Chapter 928",
@@ -48180,9 +47853,6 @@
     "rname": [
       "Hanji"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 929",
       "Episode 922"
@@ -48207,9 +47877,6 @@
     ],
     "rname": [
       "Kumagor\u014d"
-    ],
-    "ename": [
-      "Kumagoro"
     ],
     "first": [
       "Chapter 929",
@@ -48326,9 +47993,6 @@
     "rname": [
       "Rakuda"
     ],
-    "ename": [
-      "Rakuda"
-    ],
     "first": [
       "Chapter 929",
       "Episode 922"
@@ -48352,9 +48016,6 @@
       "\u971c\u6708\u5eb7\u30a4\u30a8"
     ],
     "rname": [
-      "Shimotsuki Yasuie"
-    ],
-    "ename": [
       "Shimotsuki Yasuie"
     ],
     "first": [
@@ -48405,9 +48066,6 @@
     "rname": [
       "Koito"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 930",
       "Episode 923"
@@ -48426,9 +48084,6 @@
     ],
     "rname": [
       "Asashichi"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 930",
@@ -48453,9 +48108,6 @@
       "\u798f\u30ed\u30af\u30b8\u30e5"
     ],
     "rname": [
-      "Fukurokuju"
-    ],
-    "ename": [
       "Fukurokuju"
     ],
     "first": [
@@ -48508,9 +48160,6 @@
     "rname": [
       "Daikoku"
     ],
-    "ename": [
-      "Daikoku"
-    ],
     "first": [
       "Chapter 931",
       "Episode 925"
@@ -48559,9 +48208,6 @@
     ],
     "rname": [
       "Hanz\u014d"
-    ],
-    "ename": [
-      "Hanzo"
     ],
     "first": [
       "Chapter 931",
@@ -48923,9 +48569,6 @@
     "rname": [
       "Kazekage"
     ],
-    "ename": [
-      "Kazekage"
-    ],
     "first": [
       "Chapter 931",
       "Episode 925"
@@ -49025,9 +48668,6 @@
     "rname": [
       "Inukai"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 932",
       "Episode 926"
@@ -49055,9 +48695,6 @@
       "Sugamichi",
       "Warazane"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 931",
       "Episode 925"
@@ -49079,9 +48716,6 @@
     ],
     "rname": [
       "Tsurue Monnosuke"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 933",
@@ -49144,9 +48778,6 @@
     ],
     "rname": [
       "Daifug\u014d"
-    ],
-    "ename": [
-      "Daifugo"
     ],
     "first": [
       "Chapter 934",
@@ -49223,9 +48854,6 @@
     "rname": [
       "Soritia"
     ],
-    "ename": [
-      "Solitaire"
-    ],
     "first": [
       "Chapter 935",
       "Episode 930"
@@ -49259,9 +48887,6 @@
       "\u30aa\u30cb\u4e38"
     ],
     "rname": [
-      "Onimaru"
-    ],
-    "ename": [
       "Onimaru"
     ],
     "first": [
@@ -49361,9 +48986,6 @@
     ],
     "rname": [
       "Dach\u014dman"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 940",
@@ -49498,9 +49120,6 @@
     "rname": [
       "Yatappe"
     ],
-    "ename": [
-      "Yatappe"
-    ],
     "first": [
       "Chapter 952",
       "Episode 946"
@@ -49531,9 +49150,6 @@
     "rname": [
       "Genrin"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 940",
       "Episode 937"
@@ -49555,9 +49171,6 @@
     ],
     "rname": [
       "Noriko"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 940",
@@ -49612,9 +49225,6 @@
     "rname": [
       "Hoisassa"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 942",
       "Episode 939"
@@ -49646,9 +49256,6 @@
     "rname": [
       "Jigokukamabuta Megatenpanchir\u014d"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 943",
       "Episode 940"
@@ -49670,9 +49277,6 @@
     ],
     "rname": [
       "Dagurasu Baretto"
-    ],
-    "ename": [
-      "Douglas Bullet"
     ],
     "first": [
       "One Piece: Stampede",
@@ -49728,9 +49332,6 @@
     "rname": [
       "Nodoi Wak\u0101n"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 948",
       "Episode 947"
@@ -49753,9 +49354,6 @@
     ],
     "rname": [
       "Hippan Natte"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 948",
@@ -49780,9 +49378,6 @@
     "rname": [
       "Neoki"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 948",
       "Episode 947"
@@ -49805,9 +49400,6 @@
     ],
     "rname": [
       "Hareji"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 948",
@@ -49843,9 +49435,6 @@
     "rname": [
       "Zangirimaru"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 948",
       "Episode 947"
@@ -49874,9 +49463,6 @@
     "rname": [
       "Uzuki Namida"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 949",
       "Episode 949"
@@ -49899,9 +49485,6 @@
     ],
     "rname": [
       "Hanji"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 949",
@@ -49926,9 +49509,6 @@
       "\u30db\u30c6\u30a4"
     ],
     "rname": [
-      "Hotei"
-    ],
-    "ename": [
       "Hotei"
     ],
     "first": [
@@ -49962,9 +49542,6 @@
     "rname": [
       "Himuro"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 951",
       "Episode 951"
@@ -49995,9 +49572,6 @@
     "rname": [
       "Garudan"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 951",
       "Episode 951"
@@ -50009,6 +49583,9 @@
     "occupation": [
       "Samurai",
       "Pirate"
+    ],
+    "residence": [
+      "Wano Country"
     ],
     "status": [
       "Alive"
@@ -50022,9 +49599,6 @@
     "rname": [
       "Gangaru"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 951",
       "Episode 951"
@@ -50037,6 +49611,9 @@
       "Samurai",
       "Pirate"
     ],
+    "residence": [
+      "Wano Country"
+    ],
     "status": [
       "Alive"
     ]
@@ -50048,9 +49625,6 @@
     ],
     "rname": [
       "Hatsume"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 951",
@@ -50075,9 +49649,6 @@
     ],
     "rname": [
       "Dashiteyar\u014d"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 951",
@@ -50105,9 +49676,6 @@
     "rname": [
       "Hikkomitsukumai"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 951",
       "Episode 951"
@@ -50134,9 +49702,6 @@
     "rname": [
       "Tamikebao"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 951",
       "Episode 952"
@@ -50161,9 +49726,6 @@
       "\u971c\u6708\u725b\u30de\u30eb"
     ],
     "rname": [
-      "Shimotsuki Ushimaru"
-    ],
-    "ename": [
       "Shimotsuki Ushimaru"
     ],
     "first": [
@@ -50210,9 +49772,6 @@
     "rname": [
       "Inbi"
     ],
-    "ename": [
-      "Inbi"
-    ],
     "first": [
       "Chapter 954",
       "Episode 955"
@@ -50236,9 +49795,6 @@
       "\u56db\u9b3c"
     ],
     "rname": [
-      "Jaki"
-    ],
-    "ename": [
       "Jaki"
     ],
     "first": [
@@ -50266,9 +49822,6 @@
     "rname": [
       "G\u014dki"
     ],
-    "ename": [
-      "Goki"
-    ],
     "first": [
       "Chapter 954",
       "Episode 955"
@@ -50294,9 +49847,6 @@
     "rname": [
       "Jugemu Jugemuko"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 954",
       "Episode 955"
@@ -50315,9 +49865,6 @@
     ],
     "rname": [
       "Ch\u014dky\u016bmei-no Ch\u014dsuke"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 954",
@@ -50338,9 +49885,6 @@
     "rname": [
       "Shinosuke"
     ],
-    "ename": [
-      "Shinosuke"
-    ],
     "first": [
       "Chapter 955",
       "Episode 956"
@@ -50349,10 +49893,99 @@
       "Kouzuki Family"
     ],
     "occupation": [
-      "Ninja"
+      "Ninja",
+      "Retainer"
     ],
     "residence": [
       "Wano Country"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Uraya_Mashikatta",
+    "jname": [
+      "\u30a6\u30e9\u30e4\u30fb\u30de\u30b7\u30ab\u30c3\u30bf"
+    ],
+    "rname": [
+      "Uraya Mashikatta"
+    ],
+    "first": [
+      "Chapter 956",
+      "Episode 957"
+    ],
+    "occupation": [
+      "Pirate"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Jabari",
+    "jname": [
+      "\u30b8\u30e3\u30d0\u30ea"
+    ],
+    "rname": [
+      "Jabari"
+    ],
+    "first": [
+      "Chapter 956",
+      "Episode 957"
+    ],
+    "affiliation": [
+      "CP6"
+    ],
+    "occupation": [
+      "Cipher Pol Agent"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "jva": [
+      "Hiromu Miyazaki",
+      "Takashi Matsuyama (as Attach)"
+    ]
+  },
+  {
+    "id": "Tomatito",
+    "jname": [
+      "\u30c8\u30de\u30c6\u30a3\u30fc\u30c8"
+    ],
+    "rname": [
+      "Tomatito"
+    ],
+    "first": [
+      "Chapter 956 (cover)"
+    ],
+    "occupation": [
+      "Musician"
+    ],
+    "residence": [
+      "Dressrosa"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Vincent",
+    "jname": [
+      "\u30f4\u30a1\u30f3\u30b5\u30f3"
+    ],
+    "rname": [
+      "Vansan"
+    ],
+    "first": [
+      "Chapter 956",
+      "Episode 957"
+    ],
+    "affiliation": [
+      "Sankan Kingdom"
+    ],
+    "occupation": [
+      "Prince"
     ],
     "status": [
       "Alive"
@@ -50452,9 +50085,6 @@
     "rname": [
       "Doringo"
     ],
-    "ename": [
-      "Doringo"
-    ],
     "first": [
       "Chapter 0",
       "Episode 0"
@@ -50473,15 +50103,31 @@
     ]
   },
   {
+    "id": "Deigoro",
+    "jname": [
+      "\u3067\u3044\u4e94\u90ce"
+    ],
+    "rname": [
+      "Deigor\u014d"
+    ],
+    "first": [
+      "Chapter 958",
+      "Episode 959"
+    ],
+    "residence": [
+      "Wano Country (Flower Capital)"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
     "id": "Hawkman",
     "jname": [
       "\u30db\u30fc\u30af\u30de\u30f3"
     ],
     "rname": [
       "H\u014dkuman"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 959",
@@ -50513,9 +50159,6 @@
     ],
     "rname": [
       "Ageha \u016aman"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 959",
@@ -50550,9 +50193,6 @@
     ],
     "rname": [
       "Koshi Farukon"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 959",
@@ -50610,6 +50250,112 @@
     ]
   },
   {
+    "id": "Oiwa",
+    "jname": [
+      "\u5927\u5ca9"
+    ],
+    "rname": [
+      "\u014ciwa"
+    ],
+    "first": [
+      "Chapter 960",
+      "Episode 960"
+    ],
+    "residence": [
+      "Wano Country"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
+    "id": "Koiwa",
+    "jname": [
+      "\u5c0f\u5ca9"
+    ],
+    "rname": [
+      "Koiwa"
+    ],
+    "first": [
+      "Chapter 960",
+      "Episode 960"
+    ],
+    "residence": [
+      "Wano Country"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
+    "id": "Nakaiwa",
+    "jname": [
+      "\u4e2d\u5ca9"
+    ],
+    "rname": [
+      "Nakaiwa"
+    ],
+    "first": [
+      "Chapter 960",
+      "Episode 960"
+    ],
+    "residence": [
+      "Wano Country"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
+    "id": "Gurutaro",
+    "jname": [
+      "\u3050\u308b\u592a\u90ce"
+    ],
+    "rname": [
+      "Gurutar\u014d"
+    ],
+    "first": [
+      "Chapter 960",
+      "Episode 960"
+    ],
+    "affiliation": [
+      "Mimawarigumi",
+      "Kouzuki Family"
+    ],
+    "occupation": [
+      "Samurai",
+      "Retainer"
+    ],
+    "residence": [
+      "Wano Country"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
+    "id": "Tomozo",
+    "jname": [
+      "\u53cb\u305e\u3046"
+    ],
+    "rname": [
+      "Tomoz\u014d"
+    ],
+    "first": [
+      "Chapter 960",
+      "Episode 960"
+    ],
+    "occupation": [
+      "Shopkeeper"
+    ],
+    "residence": [
+      "Wano Country (Flower Capital)"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
     "id": "Katsuzo",
     "jname": [
       "\u52dd\u305e\u3046"
@@ -50624,8 +50370,90 @@
       "Chapter 960",
       "Episode 960"
     ],
+    "occupation": [
+      "Yakuza"
+    ],
     "status": [
       "Deceased"
+    ]
+  },
+  {
+    "id": "Ettara_Chaunkai",
+    "jname": [
+      "\u30a8\u30c3\u30bf\u30e9\u30fb\u30c1\u30e3\u30a6\u30f3\u30ab\u30a4"
+    ],
+    "rname": [
+      "Ettara Chaunkai"
+    ],
+    "first": [
+      "Chapter 960 (cover)"
+    ],
+    "residence": [
+      "Dressrosa"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Furika",
+    "jname": [
+      "\u30d5\u30ea\u30ab"
+    ],
+    "rname": [
+      "Furika"
+    ],
+    "first": [
+      "Chapter 960 (cover)"
+    ],
+    "residence": [
+      "Dressrosa"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Norinosuke",
+    "jname": [
+      "\u30ce\u30ea\u306e\u52a9"
+    ],
+    "rname": [
+      "Norinosuke"
+    ],
+    "first": [
+      "Chapter 961",
+      "Episode 961"
+    ],
+    "occupation": [
+      "Shaman (self-proclaimed)"
+    ],
+    "residence": [
+      "Wano Country (Flower Capital)"
+    ],
+    "status": [
+      "Unknown"
+    ],
+    "jva": [
+      "Tsuyoshi Koyama"
+    ]
+  },
+  {
+    "id": "Mouthto_Mouthyan",
+    "jname": [
+      "\u30de\u30a6\u30b9\u30c8\u30a5\u30fc\u30fb\u30de\u30a6\u30b9\u30e4\u30f3"
+    ],
+    "rname": [
+      "Mausut\u014d Mausuyan"
+    ],
+    "first": [
+      "Chapter 961 (cover)"
+    ],
+    "residence": [
+      "Dressrosa"
+    ],
+    "status": [
+      "Alive"
     ]
   },
   {
@@ -50634,9 +50462,6 @@
       "\u30b7\u30ad"
     ],
     "rname": [
-      "Shiki"
-    ],
-    "ename": [
       "Shiki"
     ],
     "first": [
@@ -50704,6 +50529,9 @@
     "affiliation": [
       "Kouzuki Family"
     ],
+    "occupation": [
+      "Retainer"
+    ],
     "residence": [
       "Wano Country"
     ],
@@ -50749,14 +50577,175 @@
     ]
   },
   {
+    "id": "Renona_Topakka",
+    "jname": [
+      "\u30ec\u30ce\u30ca\u30fb\u30c8\u30d1\u30c3\u30ab"
+    ],
+    "rname": [
+      "Renona Topakka"
+    ],
+    "first": [
+      "Chapter 963",
+      "Episode 962"
+    ],
+    "status": [
+      "Deceased"
+    ],
+    "age2": [
+      "At least 30"
+    ]
+  },
+  {
+    "id": "Sukare_Tainen",
+    "jname": [
+      "\u30b9\u30fc\u30ab\u30ec\u30fb\u30bf\u30a4\u30cd\u30f3"
+    ],
+    "rname": [
+      "S\u016bkare Tainen"
+    ],
+    "first": [
+      "Chapter 963"
+    ],
+    "affiliation": [
+      "Germ Pirates"
+    ],
+    "occupation": [
+      "Pirate Captain"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Shikon_Kettai",
+    "jname": [
+      "\u30b7\u30b3\u30f3\u30fb\u30b1\u30c3\u30bf\u30a4"
+    ],
+    "rname": [
+      "Shikon Kettai"
+    ],
+    "first": [
+      "Chapter 963"
+    ],
+    "affiliation": [
+      "Germ Pirates"
+    ],
+    "occupation": [
+      "Pirate"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Rakushitemo_Terusubehainaika",
+    "jname": [
+      "\u30e9\u30af\u30b7\u30c6\u30e2\u30fb\u30c6\u30eb\u30b9\u30d9\u30cf\u30ca\u30a4\u30ab\u535a\u58eb"
+    ],
+    "rname": [
+      "Rakushitemo Terusubehainaika-hakase"
+    ],
+    "first": [
+      "Chapter 963"
+    ],
+    "affiliation": [
+      "Germ Pirates"
+    ],
+    "occupation": [
+      "Pirate",
+      "Scientist"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Mezasuzowan_Pisuo",
+    "jname": [
+      "\u30e1\u30b6\u30b9\u30be\u30ef\u30f3\u30fb\u30d4\u30fc\u30b9\u30aa"
+    ],
+    "rname": [
+      "Mezasuzowan P\u012bsuo"
+    ],
+    "first": [
+      "Chapter 963"
+    ],
+    "affiliation": [
+      "Germ Pirates"
+    ],
+    "occupation": [
+      "Pirate"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Sukare_Karehosui",
+    "jname": [
+      "\u30b9\u30fc\u30ab\u30ec\u30fb\u30ab\u30ec\u30db\u30b9\u30a4"
+    ],
+    "rname": [
+      "S\u016bkare Karehosui"
+    ],
+    "first": [
+      "Chapter 963"
+    ],
+    "affiliation": [
+      "Germ Pirates"
+    ],
+    "occupation": [
+      "Pirate"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Sarai",
+    "jname": [
+      "\u30b5\u30e9\u30a4"
+    ],
+    "rname": [
+      "Sarai"
+    ],
+    "first": [
+      "Chapter 964",
+      "Episode 963"
+    ],
+    "affiliation": [
+      "Takotopus Pirates"
+    ],
+    "occupation": [
+      "Pirate",
+      "Slaver"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
+    "id": "Urbain",
+    "jname": [
+      "\u30e6\u30eb\u30d0\u30f3\u3055\u3093"
+    ],
+    "rname": [
+      "Yuruban-san"
+    ],
+    "first": [
+      "Chapter 964",
+      "Episode 964"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
     "id": "Kurozumi_Higurashi",
     "jname": [
       "\u9ed2\u70ad\u3072\u3050\u3089\u3057"
     ],
     "rname": [
-      "Kurozumi Higurashi"
-    ],
-    "ename": [
       "Kurozumi Higurashi"
     ],
     "first": [
@@ -50812,9 +50801,6 @@
       "\u9ed2\u70ad\u305b\u307f\u4e38"
     ],
     "rname": [
-      "Kurozumi Semimaru"
-    ],
-    "ename": [
       "Kurozumi Semimaru"
     ],
     "first": [
@@ -50874,9 +50860,6 @@
     ],
     "rname": [
       "Tar\u014d"
-    ],
-    "ename": [
-      "Taro"
     ],
     "first": [
       "Chapter 0",
@@ -51117,9 +51100,6 @@
     "rname": [
       "Supens\u0101"
     ],
-    "ename": [
-      "Spencer"
-    ],
     "first": [
       "Chapter 966",
       "Episode 959"
@@ -51195,9 +51175,6 @@
     "rname": [
       "M\u016bn Aizakku Junia"
     ],
-    "ename": [
-      "Moon Isaac Jr."
-    ],
     "first": [
       "Chapter 966",
       "Episode 969"
@@ -51256,13 +51233,35 @@
       "Episode 1090"
     ],
     "affiliation": [
-      "Marines (SWORD)"
+      "Marines (G-14)",
+      "(SWORD)"
     ],
     "occupation": [
       "Rear Admiral"
     ],
+    "origin": [
+      "West Blue"
+    ],
+    "residence": [
+      "G-14"
+    ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "29"
+    ],
+    "birth": [
+      "October 20th"
+    ],
+    "height": [
+      "205 cm (6'9\")"
+    ],
+    "blood type": [
+      "X"
+    ],
+    "bounty": [
+      "\u2605\u2605\u2605\u2605\u2605 (500000000)"
     ],
     "jva": [
       "Satoshi Hino"
@@ -51299,13 +51298,35 @@
       "Episode 1090"
     ],
     "affiliation": [
-      "Marines (SWORD)"
+      "Marines (G-14)",
+      "(SWORD)"
     ],
     "occupation": [
       "Rear Admiral"
     ],
+    "origin": [
+      "North Blue"
+    ],
+    "residence": [
+      "G-14"
+    ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "26"
+    ],
+    "birth": [
+      "September 18th"
+    ],
+    "height": [
+      "180 cm (5'11\")"
+    ],
+    "blood type": [
+      "X"
+    ],
+    "bounty": [
+      "\u2605\u2605\u2605\u2605\u2605 (500000000)"
     ],
     "jva": [
       "Marina Inoue"
@@ -51321,6 +51342,27 @@
     ],
     "dftype": [
       "Paramecia"
+    ]
+  },
+  {
+    "id": "Demoni_Aiyo",
+    "jname": [
+      "\u30c7\u30e2\u30fc\u30cb\u30fb\u30a2\u30a4\u30e8"
+    ],
+    "rname": [
+      "Dem\u014dni Aiyo"
+    ],
+    "first": [
+      "Chapter 966 (cover)"
+    ],
+    "occupation": [
+      "Hairstylist"
+    ],
+    "residence": [
+      "Dressrosa"
+    ],
+    "status": [
+      "Alive"
     ]
   },
   {
@@ -51430,15 +51472,53 @@
     "id": "Arashi"
   },
   {
+    "id": "Taka",
+    "jname": [
+      "\u304a\u8cb4"
+    ],
+    "rname": [
+      "O-Taka"
+    ],
+    "first": [
+      "Chapter 969",
+      "Episode 971"
+    ],
+    "residence": [
+      "Flower Capital"
+    ],
+    "status": [
+      "Deceased"
+    ],
+    "jva": [
+      "Chie Sat\u014d"
+    ]
+  },
+  {
+    "id": "Anba",
+    "jname": [
+      "\u5b89\u99ac"
+    ],
+    "rname": [
+      "Anba"
+    ],
+    "first": [
+      "Chapter 969",
+      "Episode 970"
+    ],
+    "residence": [
+      "Wano Country (Flower Capital)"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
     "id": "Hana",
     "jname": [
       "\u304a\u82b1"
     ],
     "rname": [
       "O-Hana"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 971",
@@ -51455,14 +51535,39 @@
     ]
   },
   {
+    "id": "Tsurube",
+    "jname": [
+      "\u30c4\u30eb\u5175\u885b"
+    ],
+    "rname": [
+      "Tsurub\u0113"
+    ],
+    "first": [
+      "Chapter 971",
+      "Episode 972"
+    ],
+    "affiliation": [
+      "Kurozumi Family"
+    ],
+    "occupation": [
+      "Retainer"
+    ],
+    "residence": [
+      "Wano Country (Flower Capital)"
+    ],
+    "epithet": [
+      "\"Careless Tsurube\""
+    ],
+    "status": [
+      "Deceased"
+    ]
+  },
+  {
     "id": "Yamato",
     "jname": [
       "\u30e4\u30de\u30c8"
     ],
     "rname": [
-      "Yamato"
-    ],
-    "ename": [
       "Yamato"
     ],
     "first": [
@@ -51524,9 +51629,6 @@
     ],
     "rname": [
       "Uruti"
-    ],
-    "ename": [
-      "Ulti"
     ],
     "first": [
       "Chapter 977",
@@ -51793,9 +51895,6 @@
     "rname": [
       "J\u016bki"
     ],
-    "ename": [
-      "Juki"
-    ],
     "first": [
       "Chapter 977",
       "Episode 982"
@@ -51820,9 +51919,6 @@
     ],
     "rname": [
       "Mizeruka"
-    ],
-    "ename": [
-      "Mizerka"
     ],
     "first": [
       "Chapter 978",
@@ -51877,9 +51973,6 @@
     "rname": [
       "Usunoro"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 978",
       "Episode 982"
@@ -51908,15 +52001,13 @@
     "rname": [
       "Nokokuwaporisu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 978",
       "Episode 982"
     ],
     "affiliation": [
-      "Beast Pirates (Armored Division)"
+      "Beasts Pirates (Armored Division)",
+      "Kurozumi Tama"
     ],
     "occupation": [
       "Shinuchi"
@@ -52017,9 +52108,6 @@
     "rname": [
       "Janp\u0101"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 980",
       "Episode 1006"
@@ -52048,9 +52136,6 @@
     ],
     "rname": [
       "B\u012bg\u0101ru"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 980",
@@ -52081,9 +52166,6 @@
     "rname": [
       "Dauto Ky\u014ddai"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 980",
       "Episode 986"
@@ -52112,9 +52194,6 @@
     "rname": [
       "Ch\u014dchinman"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 980"
     ],
@@ -52123,9 +52202,6 @@
     ],
     "occupation": [
       "Gifter"
-    ],
-    "residence": [
-      "Onigashima"
     ],
     "status": [
       "Alive"
@@ -52145,15 +52221,12 @@
     "rname": [
       "Naitokurabu g\u0101ru"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 980",
       "Episode 986"
     ],
     "affiliation": [
-      "Beast Pirates"
+      "Beasts Pirates"
     ],
     "occupation": [
       "Gifter"
@@ -52176,21 +52249,15 @@
     "rname": [
       "Reddo Urufu"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 980",
       "Episode 986"
     ],
     "affiliation": [
-      "Beast Pirates"
+      "Beasts Pirates"
     ],
     "occupation": [
       "Gifter"
-    ],
-    "residence": [
-      "Onigashima"
     ],
     "status": [
       "Alive"
@@ -52253,15 +52320,12 @@
     "rname": [
       "B\u012btoruman"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 983",
       "Episode 991"
     ],
     "affiliation": [
-      "Beast Pirates"
+      "Beasts Pirates"
     ],
     "occupation": [
       "Gifter"
@@ -52284,15 +52348,12 @@
     "rname": [
       "Kamakirig\u0101ru"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 983",
       "Episode 991"
     ],
     "affiliation": [
-      "Beast Pirates",
+      "Beasts Pirates",
       "Kurozumi Tama"
     ],
     "occupation": [
@@ -52322,9 +52383,6 @@
     "rname": [
       "Nangi"
     ],
-    "ename": [
-      "Nangi"
-    ],
     "first": [
       "Chapter 988",
       "Episode 997"
@@ -52352,9 +52410,6 @@
     ],
     "rname": [
       "F\u016bga"
-    ],
-    "ename": [
-      "Fuga"
     ],
     "first": [
       "Chapter 991",
@@ -52402,15 +52457,18 @@
     "rname": [
       "Zanki"
     ],
-    "ename": [
-      "Zanki"
-    ],
     "first": [
       "Chapter 991",
       "Episode 1055"
     ],
     "affiliation": [
       "Beasts Pirates (Numbers)"
+    ],
+    "origin": [
+      "Punk Hazard"
+    ],
+    "residence": [
+      "Onigashima"
     ],
     "status": [
       "Alive"
@@ -52467,9 +52525,6 @@
     "rname": [
       "Battaman"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 980",
       "Episode 1006"
@@ -52498,9 +52553,6 @@
     ],
     "rname": [
       "Suk\u014dpionredi"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 993",
@@ -52531,21 +52583,16 @@
     "rname": [
       "Bizur\u012b"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 993",
       "Episode 1006"
     ],
     "affiliation": [
-      "Beasts Pirates (Armored Division)"
+      "Beasts Pirates (Armored Division)",
+      "Kurozumi Tama"
     ],
     "occupation": [
       "Shinuchi"
-    ],
-    "residence": [
-      "Onigashima"
     ],
     "status": [
       "Alive"
@@ -52564,9 +52611,6 @@
     ],
     "rname": [
       "K\u014dkasasuman"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 993",
@@ -52597,9 +52641,6 @@
     "rname": [
       "Saitanku"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 993",
       "Episode 1006"
@@ -52610,9 +52651,6 @@
     ],
     "occupation": [
       "Gifter"
-    ],
-    "residence": [
-      "Onigashima"
     ],
     "status": [
       "Alive"
@@ -52631,9 +52669,6 @@
     ],
     "rname": [
       "F\u014dtorikkusu"
-    ],
-    "ename": [
-      "Fourtricks"
     ],
     "first": [
       "Chapter 994",
@@ -52669,9 +52704,6 @@
     "rname": [
       "Hamuretto"
     ],
-    "ename": [
-      "Hamlet"
-    ],
     "first": [
       "Chapter 994",
       "Episode 982"
@@ -52705,9 +52737,6 @@
     ],
     "rname": [
       "P\u014dk\u0101"
-    ],
-    "ename": [
-      "Poker"
     ],
     "first": [
       "Chapter 997",
@@ -52780,9 +52809,6 @@
     "rname": [
       "Bishonure-Onna"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 998",
       "Episode 1013"
@@ -52792,6 +52818,9 @@
     ],
     "occupation": [
       "Gifter"
+    ],
+    "residence": [
+      "Onigashima"
     ],
     "status": [
       "Alive"
@@ -52811,9 +52840,6 @@
     "rname": [
       "Yamanba"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 998",
       "Episode 1013"
@@ -52823,9 +52849,6 @@
     ],
     "occupation": [
       "Gifter"
-    ],
-    "residence": [
-      "Onigashima"
     ],
     "status": [
       "Alive"
@@ -52917,9 +52940,6 @@
     "rname": [
       "Hera"
     ],
-    "ename": [
-      "Hera"
-    ],
     "first": [
       "Chapter 1011",
       "Episode 1028"
@@ -52957,9 +52977,6 @@
     "rname": [
       "H\u014dsuman"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "Chapter 1016",
       "Episode 1037"
@@ -52990,9 +53007,6 @@
       "\u4e5d\u5fcd"
     ],
     "rname": [
-      "Kunyun"
-    ],
-    "ename": [
       "Kunyun"
     ],
     "first": [
@@ -53320,9 +53334,6 @@
     "rname": [
       "Kazenb\u014d"
     ],
-    "ename": [
-      "Kazenbo"
-    ],
     "first": [
       "Chapter 1030",
       "Episode 1055"
@@ -53537,9 +53548,6 @@
     "rname": [
       "Ch\u016bji"
     ],
-    "ename": [
-      "Chuji"
-    ],
     "first": [
       "Chapter 1034",
       "Episode 1061"
@@ -53560,9 +53568,6 @@
       "\u516d\u9b3c"
     ],
     "rname": [
-      "Rokki"
-    ],
-    "ename": [
       "Rokki"
     ],
     "first": [
@@ -53830,9 +53835,6 @@
     "rname": [
       "Mizar\u012b"
     ],
-    "ename": [
-      "Misery"
-    ],
     "first": [
       "Chapter 1039",
       "Episode 1066"
@@ -53966,9 +53968,6 @@
     ],
     "rname": [
       "Azuki"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 940",
@@ -54246,9 +54245,6 @@
     "rname": [
       "Esu-Sun\u0113ku"
     ],
-    "ename": [
-      "S-Snake"
-    ],
     "first": [
       "Chapter 1059",
       "Episode 1087"
@@ -54265,8 +54261,14 @@
     "status": [
       "Alive"
     ],
+    "age": [
+      "2 (biologically 8)"
+    ],
+    "height": [
+      "208 cm (6'10\")"
+    ],
     "blood type": [
-      "Green Blood"
+      "S (Green Blood)"
     ],
     "jva": [
       "Kotono Mitsuishi"
@@ -54292,9 +54294,6 @@
     "rname": [
       "Esu-H\u014dku"
     ],
-    "ename": [
-      "S-Hawk"
-    ],
     "first": [
       "Chapter 1059",
       "Episode 1087"
@@ -54311,8 +54310,14 @@
     "status": [
       "Alive"
     ],
+    "age": [
+      "2 (biologically 8)"
+    ],
+    "height": [
+      "212 cm (6'11\u00bd\")"
+    ],
     "blood type": [
-      "Green Blood"
+      "S (Green Blood)"
     ],
     "jva": [
       "Ry\u014dhei Arai"
@@ -54352,8 +54357,15 @@
     "occupation": [
       "Vice Admiral"
     ],
+    "residence": [
+      "G-14"
+    ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "jva": [
       "Toa Yukinari"
@@ -54380,11 +54392,26 @@
     "affiliation": [
       "Marines (SSG) (Former)"
     ],
+    "origin": [
+      "Grand Line (Egghead)"
+    ],
     "residence": [
       "Egghead"
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "2 (biologically 24)"
+    ],
+    "birth": [
+      "March 22nd"
+    ],
+    "height": [
+      "204 cm (6'8\")"
+    ],
+    "blood type": [
+      "S"
     ],
     "jva": [
       "Aya Hirano"
@@ -54401,9 +54428,6 @@
     "rname": [
       "Hibari"
     ],
-    "ename": [
-      "Hibari"
-    ],
     "first": [
       "Chapter 1061",
       "Episode 1090"
@@ -54415,8 +54439,26 @@
     "occupation": [
       "Commander"
     ],
+    "origin": [
+      "North Blue"
+    ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "17"
+    ],
+    "birth": [
+      "January 18th"
+    ],
+    "height": [
+      "165 cm (5'5\")"
+    ],
+    "blood type": [
+      "F"
+    ],
+    "bounty": [
+      "\u2605\u2605 (200000000)"
     ],
     "jva": [
       "Shiori Mikami"
@@ -54468,11 +54510,26 @@
     "affiliation": [
       "Marines (SSG)"
     ],
+    "origin": [
+      "Grand Line (Egghead)"
+    ],
     "residence": [
       "Egghead"
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "2 (biologically 30)"
+    ],
+    "birth": [
+      "March 22nd"
+    ],
+    "height": [
+      "220cm (7'3\")"
+    ],
+    "blood type": [
+      "S"
     ],
     "jva": [
       "Sh\u016bhei Sakaguchi"
@@ -54499,11 +54556,26 @@
     "affiliation": [
       "Marines (SSG)"
     ],
+    "origin": [
+      "Grand Line (Egghead)"
+    ],
     "residence": [
       "Egghead"
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "2 (biologically 16)"
+    ],
+    "birth": [
+      "March 22nd"
+    ],
+    "height": [
+      "729cm (23'11\")"
+    ],
+    "blood type": [
+      "S"
     ],
     "jva": [
       "Kaede Hondo"
@@ -54519,9 +54591,6 @@
     ],
     "rname": [
       "Esu-Bea"
-    ],
-    "ename": [
-      "S-Bear"
     ],
     "first": [
       "Chapter 1062",
@@ -54539,8 +54608,14 @@
     "status": [
       "Alive"
     ],
+    "age": [
+      "2 (biologically 8)"
+    ],
+    "height": [
+      "660 cm (21'8\")"
+    ],
     "blood type": [
-      "Green Blood"
+      "X (Green Blood)"
     ],
     "jva": [
       "Nobuhiko Okamoto"
@@ -54576,11 +54651,26 @@
     "affiliation": [
       "Marines (SSG)"
     ],
+    "origin": [
+      "Grand Line (Egghead)"
+    ],
     "residence": [
       "Egghead"
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "2 (biologically 18)"
+    ],
+    "birth": [
+      "March 22nd"
+    ],
+    "height": [
+      "100cm (3'3\")"
+    ],
+    "blood type": [
+      "S"
     ],
     "jva": [
       "Ryoko Shiraishi"
@@ -54607,11 +54697,26 @@
     "affiliation": [
       "Marines (SSG) (former)"
     ],
+    "origin": [
+      "Grand Line (Egghead)"
+    ],
     "residence": [
       "Egghead"
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "2 (biologically 26)"
+    ],
+    "birth": [
+      "March 22nd"
+    ],
+    "height": [
+      "341cm (11'2\")"
+    ],
+    "blood type": [
+      "S"
     ],
     "jva": [
       "Tokuyoshi Kawashima"
@@ -54639,11 +54744,26 @@
       "Marines (SSG)",
       "World Government"
     ],
+    "origin": [
+      "Grand Line (Egghead)"
+    ],
     "residence": [
       "Egghead"
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "2 (biologically 16)"
+    ],
+    "birth": [
+      "March 22nd"
+    ],
+    "height": [
+      "482cm (15'10\")"
+    ],
+    "blood type": [
+      "S"
     ],
     "jva": [
       "Mutsumi Tamura"
@@ -54659,9 +54779,6 @@
     ],
     "rname": [
       "Esu-Sh\u0101ku"
-    ],
-    "ename": [
-      "S-Shark"
     ],
     "first": [
       "Chapter 1065",
@@ -54679,8 +54796,14 @@
     "status": [
       "Alive"
     ],
+    "age": [
+      "2 (biologically 8)"
+    ],
+    "height": [
+      "320 cm (10'6\")"
+    ],
     "blood type": [
-      "Green Blood"
+      "F (Green Blood)"
     ],
     "jva": [
       "Chika Sakamoto"
@@ -54745,11 +54868,17 @@
       "Chapter 1065",
       "Episode 1095"
     ],
+    "residence": [
+      "Egghead"
+    ],
     "epithet": [
       "\"Iron Giant\""
     ],
     "status": [
       "Unknown"
+    ],
+    "age": [
+      "Roughly 900"
     ]
   },
   {
@@ -54855,6 +54984,10 @@
     "status": [
       "Alive"
     ],
+    "bounty": [
+      "At least \u2605",
+      "(At least 100000000)"
+    ],
     "jva": [
       "Takeshi Ogura"
     ]
@@ -54868,7 +55001,7 @@
       "Iyan'\u0113n\u014d Chinode"
     ],
     "ename": [
-      "N/A"
+      "Yuwana Myclose"
     ],
     "first": [
       "Chapter 1074",
@@ -54913,6 +55046,20 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
+    "dfname": [
+      "Inu Inu no Mi, Model: Hound"
+    ],
+    "dfmeaning": [
+      "Dog",
+      "Hound"
+    ],
+    "dftype": [
+      "Zoan"
     ]
   },
   {
@@ -54938,6 +55085,10 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ]
   },
   {
@@ -54963,6 +55114,10 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ]
   },
   {
@@ -55040,9 +55195,6 @@
     "rname": [
       "Pururu"
     ],
-    "ename": [
-      "Pururu"
-    ],
     "first": [
       "Chapter 1079",
       "Episode 1112"
@@ -55072,9 +55224,6 @@
     ],
     "rname": [
       "Rinaria"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "Chapter 1079",
@@ -55217,7 +55366,7 @@
     ]
   },
   {
-    "id": "Nefertari_Lili",
+    "id": "Nefertari_D._Lili",
     "jname": [
       "\u30cd\u30d5\u30a7\u30eb\u30bf\u30ea\u30fbD\u30fb\u30ea\u30ea\u30a3"
     ],
@@ -55308,6 +55457,10 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ]
   },
   {
@@ -55332,6 +55485,19 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
+    ],
+    "dfname": [
+      "Rako Rako no Mi"
+    ],
+    "dfmeaning": [
+      "Sea Otter"
+    ],
+    "dftype": [
+      "Zoan"
     ]
   },
   {
@@ -55356,6 +55522,13 @@
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "Over 76"
+    ],
+    "bounty": [
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "dfname": [
       "Nori Nori no Mi"
@@ -55392,81 +55565,16 @@
     ],
     "status": [
       "Alive"
-    ]
-  },
-  {
-    "id": "Ivankov",
-    "jname": [
-      "\u30a8\u30f3\u30dd\u30ea\u30aa\u30fb\u30a4\u30ef\u30f3\u30b3\u30d5"
-    ],
-    "rname": [
-      "Enporio Iwankofu"
-    ],
-    "ename": [
-      "Emporio Ivankov"
-    ],
-    "first": [
-      "Chapter 537",
-      "Episode 438"
-    ],
-    "affiliation": [
-      "Revolutionary Army",
-      "Freedom Fighters (former)",
-      "Kamabakka Kingdom",
-      "Newkama Land (former)"
-    ],
-    "occupation": [
-      "G Army Commander of the Revolutionary Army",
-      "Queen",
-      "Slave (former)",
-      "Prisoner of the Great Prison (former)"
-    ],
-    "origin": [
-      "Grand Line (Kamabakka Kingdom)"
-    ],
-    "residence": [
-      "Momoiro Island",
-      "Mary Geoise (former)"
-    ],
-    "epithet": [
-      "\"Okama King\"",
-      "\"Miracle Person\""
-    ],
-    "status": [
-      "Alive"
-    ],
-    "age": [
-      "51 (debut)",
-      "53 (after timeskip)"
-    ],
-    "birth": [
-      "January 8th"
-    ],
-    "height": [
-      "449 cm (14'8\")"
-    ],
-    "blood type": [
-      "XF"
     ],
     "bounty": [
-      "At least 100000000"
-    ],
-    "jva": [
-      "Norio Imamura (Episodes 438-460)",
-      "Mitsuo Iwata (Episodes 461+)"
-    ],
-    "Funi eva": [
-      "Randy Pearlman"
+      "At least \u2605\u2605\u2605\u2605\u2605",
+      "(At least 500000000)"
     ],
     "dfname": [
-      "Horu Horu no Mi"
-    ],
-    "dfename": [
-      "Horm-Horm Fruit (VIZ and Funimation)",
-      "Hor-Hor Fruit (One Piece Official YouTube Channel)"
+      "Tsutsu Tsutsu no Mi"
     ],
     "dfmeaning": [
-      "Hormone"
+      "Gun Barrel"
     ],
     "dftype": [
       "Paramecia"
@@ -55476,67 +55584,12 @@
     "id": "Sea_Beast_Weapons"
   },
   {
-    "id": "Peeply_Lulu",
-    "jname": [
-      "\u30d4\u30fc\u30d7\u30ea\u30fc\uff65\u30eb\u30eb"
-    ],
-    "rname": [
-      "P\u012bpur\u012b Ruru"
-    ],
-    "ename": [
-      "Peepley Lulu (Viz)",
-      "Peeply Lulu (Funimation)"
-    ],
-    "first": [
-      "Chapter 323",
-      "Episode 230"
-    ],
-    "affiliation": [
-      "Galley-La Company"
-    ],
-    "occupation": [
-      "Dock One Foreman",
-      "Shipwright"
-    ],
-    "origin": [
-      "Grand Line (Water 7)"
-    ],
-    "residence": [
-      "Water 7"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "age": [
-      "31 (debut)",
-      "33 (after timeskip)"
-    ],
-    "birth": [
-      "January 2nd"
-    ],
-    "height": [
-      "206 cm (6'9\")"
-    ],
-    "blood type": [
-      "S"
-    ],
-    "jva": [
-      "Shinichiro Ohta"
-    ],
-    "Funi eva": [
-      "Martin Cervantes"
-    ]
-  },
-  {
     "id": "Clapp",
     "jname": [
       "\u30af\u30e9\u30c3\u30d7"
     ],
     "rname": [
       "Kurappu"
-    ],
-    "ename": [
-      "Clapp"
     ],
     "first": [
       "Chapter 1095"
@@ -55564,9 +55617,6 @@
     "rname": [
       "Jin\u012b"
     ],
-    "ename": [
-      "Ginny"
-    ],
     "first": [
       "Chapter 1095"
     ],
@@ -55576,6 +55626,9 @@
     ],
     "occupation": [
       "East Army Captain of the Revolutionary Army, Slave (former)"
+    ],
+    "origin": [
+      "Grand Line (Porco Kingdom)"
     ],
     "residence": [
       "South Blue (Sorbet Kingdom)",
@@ -55587,8 +55640,17 @@
     "age2": [
       "39"
     ],
+    "birth": [
+      "October 21st"
+    ],
+    "height": [
+      "174 cm (5'8\u00bd\")"
+    ],
+    "blood type": [
+      "F"
+    ],
     "bounty": [
-      "Unknown"
+      "190000000"
     ]
   },
   {
@@ -55633,11 +55695,26 @@
     "occupation": [
       "Queen dowager"
     ],
+    "origin": [
+      "South Blue (Sorbet Kingdom)"
+    ],
     "residence": [
       "Sorbet Kingdom"
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "76"
+    ],
+    "birth": [
+      "May 21st"
+    ],
+    "height": [
+      "73cm (2'5\")"
+    ],
+    "blood type": [
+      "XF"
     ]
   },
   {
@@ -55793,62 +55870,6 @@
     ]
   },
   {
-    "id": "Iron_Giant",
-    "jname": [
-      "\u30a8\u30e1\u30c8"
-    ],
-    "rname": [
-      "Emeto"
-    ],
-    "ename": [
-      "EMET"
-    ],
-    "first": [
-      "Chapter 1065",
-      "Episode 1095"
-    ],
-    "epithet": [
-      "\"Iron Giant\""
-    ],
-    "status": [
-      "Unknown"
-    ]
-  },
-  {
-    "id": "Nefertari_D._Lili",
-    "jname": [
-      "\u30cd\u30d5\u30a7\u30eb\u30bf\u30ea\u30fbD\u30fb\u30ea\u30ea\u30a3"
-    ],
-    "rname": [
-      "Neferutari D\u012b Rir\u012b"
-    ],
-    "ename": [
-      "Nefeltari D. Lily"
-    ],
-    "first": [
-      "Chapter 1084 (silhouette)",
-      "Episode 1118 (silhouette)"
-    ],
-    "affiliation": [
-      "Arabasta Kingdom",
-      "Nefertari Family",
-      "World Government",
-      "Clan of D."
-    ],
-    "occupation": [
-      "Queen of Arabasta"
-    ],
-    "origin": [
-      "Grand Line (Arabasta Kingdom)"
-    ],
-    "residence": [
-      "Arabasta Kingdom"
-    ],
-    "status": [
-      "Deceased"
-    ]
-  },
-  {
     "id": "Bjorn"
   },
   {
@@ -55864,9 +55885,6 @@
     ],
     "rname": [
       "Hipp\u012b"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "WSJ 2000 Issue 8",
@@ -55893,9 +55911,6 @@
     "rname": [
       "Shimit\u0101ta"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "WSJ 2000 Issue 8",
       "Chapter 1122"
@@ -55917,9 +55932,6 @@
     ],
     "rname": [
       "Hiro G\u014dmon"
-    ],
-    "ename": [
-      "N/A"
     ],
     "first": [
       "WSJ 2000 Issue 8",
@@ -55943,9 +55955,6 @@
     "rname": [
       "Hiro G\u014dmon"
     ],
-    "ename": [
-      "N/A"
-    ],
     "first": [
       "WSJ 2000 Issue 8",
       "Chapter 1122"
@@ -55955,6 +55964,135 @@
     ],
     "occupation": [
       "Pirate"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Iscat",
+    "jname": [
+      "\u30a4\u30b9\u30ab\u30c3\u30c8"
+    ],
+    "rname": [
+      "Isukatto"
+    ],
+    "ename": [
+      "Iscat"
+    ],
+    "first": [
+      "Chapter 1127"
+    ],
+    "residence": [
+      "Land of Gods"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Needle_God",
+    "jname": [
+      "\u91dd\u795e"
+    ],
+    "rname": [
+      "Harigami"
+    ],
+    "ename": [
+      "Needle God"
+    ],
+    "first": [
+      "Chapter 1127"
+    ],
+    "residence": [
+      "Land of Gods"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Hilmungardr",
+    "jname": [
+      "\u30d2\u30eb\u30e0\u30f3\u30ac\u30eb\u30c9"
+    ],
+    "rname": [
+      "Hirumungarudo"
+    ],
+    "ename": [
+      "Hilmungardr"
+    ],
+    "first": [
+      "Chapter 1128"
+    ],
+    "residence": [
+      "Land of Gods"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Muginn",
+    "jname": [
+      "\u30e0\u30ae\u30f3"
+    ],
+    "rname": [
+      "Mugin"
+    ],
+    "ename": [
+      "Muginn"
+    ],
+    "first": [
+      "Chapter 1128"
+    ],
+    "residence": [
+      "Land of Gods"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Glutbunny",
+    "jname": [
+      "\u30b0\u30eb\u30c8\u30d0\u30cb\u30fc"
+    ],
+    "rname": [
+      "Gurutoban\u012b"
+    ],
+    "ename": [
+      "Glutbunny"
+    ],
+    "first": [
+      "Chapter 1129"
+    ],
+    "residence": [
+      "Land of Gods"
+    ],
+    "alias": [
+      "\"Ear God\""
+    ],
+    "status": [
+      "Deceased"
+    ]
+  },
+  {
+    "id": "Piper",
+    "jname": [
+      "\u30d1\u30a4\u30d1\u30fc"
+    ],
+    "rname": [
+      "Paip\u0101"
+    ],
+    "ename": [
+      "Piper"
+    ],
+    "first": [
+      "Chapter 1130"
+    ],
+    "residence": [
+      "Elbaph"
     ],
     "status": [
       "Alive"
