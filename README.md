@@ -44,7 +44,8 @@ All scripts are run from root directory, a little bit confusing (for now) becaus
 ### Scraping chapters
 
 ```bash
-python ./chapter.py
+python ./scripts/chapter.py
+python ./to_csv.py
 ```
 
 ### Scraping volumes
