@@ -1489,6 +1489,7 @@ chapter,character,note
 129,Usopp,
 129,Sanji,
 129,Jango,cover
+129,Raideen,flashback
 129,Tamanegi,cover
 129,Dorry,
 129,Brogy,
@@ -4421,7 +4422,9 @@ chapter,character,note
 329,Schollzo,
 329,Tamagon,
 329,Kop,
-329,Kairiki_Destroyers,
+329,Dago,
+329,Ottoland,
+329,Footbianco,
 329,Kaku,flashback
 329,Gedatsu,cover
 329,Goro,cover
@@ -4437,7 +4440,8 @@ chapter,character,note
 330,Schollzo,
 330,Tamagon,
 330,Kop,
-330,Kairiki_Destroyers,
+330,Dago,
+330,Footbianco,
 330,Gedatsu,cover
 330,Goro,cover
 330,Dirt_Boss,cover
@@ -5029,7 +5033,7 @@ chapter,character,note
 366,Sanji,
 366,Tony_Tony_Chopper,
 366,T_Bone,
-366,Jerry,K.O
+366,Jerry,K.O.
 366,Rob_Lucci,flashback
 366,Hattori,flashback
 366,Franky,
@@ -5039,7 +5043,9 @@ chapter,character,note
 366,Schollzo,
 366,Tamagon,
 366,Kop,
-366,Kairiki_Destroyers,
+366,Dago,
+366,Ottoland,
+366,Footbianco,
 366,Sodom,
 366,Gomorrah,
 366,Paulie,
@@ -5063,7 +5069,9 @@ chapter,character,note
 367,Mozu_and_Kiwi,
 367,Zambai,
 367,Kiev,
-367,Kairiki_Destroyers,
+367,Dago,
+367,Ottoland,
+367,Footbianco,
 367,Sodom,
 367,Gomorrah,
 367,Marianne,cover
@@ -5141,7 +5149,9 @@ chapter,character,note
 371,Kiev,
 371,Schollzo,
 371,Tamagon,
-371,Kairiki_Destroyers,
+371,Dago,
+371,Ottoland,
+371,Footbianco,
 371,Sodom,
 371,Gomorrah,
 371,Galdino,"photograph, cover"
@@ -5151,7 +5161,6 @@ chapter,character,note
 371,Kokoro,
 371,Chimney,
 371,Gonbe,
-371,Sea_King,bifurcated
 372,Sanji,
 372,Rob_Lucci,
 372,Kaku,
@@ -5197,7 +5206,9 @@ chapter,character,note
 374,Mozu_and_Kiwi,
 374,Zambai,
 374,Tamagon,
-374,Kairiki_Destroyers,
+374,Dago,
+374,Ottoland,
+374,Footbianco,
 374,Sodom,
 374,Gomorrah,
 374,Marianne,cover
@@ -5233,7 +5244,9 @@ chapter,character,note
 375,Zambai,
 375,Kiev,
 375,Schollzo,
-375,Kairiki_Destroyers,
+375,Dago,
+375,Ottoland,
+375,Footbianco,
 375,Sodom,
 375,Gomorrah,
 375,Marianne,cover
@@ -5268,7 +5281,9 @@ chapter,character,note
 376,Mozu_and_Kiwi,
 376,Zambai,
 376,Tamagon,
-376,Kairiki_Destroyers,
+376,Dago,
+376,Ottoland,
+376,Footbianco,
 376,Sodom,
 376,Gomorrah,
 376,Marianne,cover
@@ -5306,7 +5321,9 @@ chapter,character,note
 377,Kiev,
 377,Schollzo,
 377,Tamagon,
-377,Kairiki_Destroyers,
+377,Dago,
+377,Ottoland,
+377,Footbianco,
 377,Paulie,
 377,Peepley_Lulu,
 377,Tilestone,
@@ -5331,7 +5348,9 @@ chapter,character,note
 378,Schollzo,
 378,Tamagon,
 378,Kop,
-378,Kairiki_Destroyers,
+378,Dago,
+378,Ottoland,
+378,Footbianco,
 378,Sodom,
 378,Gomorrah,
 378,Marianne,cover
@@ -5667,9 +5686,10 @@ chapter,character,note
 391,Rint,flashback
 391,Zadie,flashback
 391,Roche,flashback
-392,Hina,cover
 392,Spandine,flashback
 392,Laskey,flashback
+392,Tsumonsieur_Kamaya,flashback
+392,Hina,cover
 392,Bentham,cover
 392,Nico_Robin,flashback
 392,Roji,flashback
@@ -5684,10 +5704,11 @@ chapter,character,note
 392,Roche,flashback
 392,Nico_Olvia,"photograph, flashback"
 392,Jaguar_D._Saul,flashback
-393,Hina,cover
 393,Kuzan,flashback
+393,Hina,cover
 393,Spandine,flashback
 393,Laskey,flashback
+393,Tsumonsieur_Kamaya,flashback
 393,Bentham,cover
 393,Marianne,cover
 393,Gem,cover
@@ -5711,6 +5732,7 @@ chapter,character,note
 394,Tony_Tony_Chopper,cover
 394,Spandine,flashback
 394,Laskey,flashback
+394,Tsumonsieur_Kamaya,flashback
 394,Nico_Robin,flashback
 394,Roji,flashback
 394,Oran,flashback
@@ -5729,6 +5751,7 @@ chapter,character,note
 395,Shepherd_Ju_Peter,flashback
 395,Spandine,flashback
 395,Laskey,flashback
+395,Tsumonsieur_Kamaya,flashback
 395,Marianne,cover
 395,Gem,cover
 395,Mikita,cover
@@ -5748,6 +5771,7 @@ chapter,character,note
 396,Kuzan,flashback
 396,Spandine,flashback
 396,Laskey,flashback
+396,Tsumonsieur_Kamaya,flashback
 396,Nico_Robin,flashback
 396,Clou_D._Clover,flashback
 396,Gram,flashback
@@ -5757,6 +5781,7 @@ chapter,character,note
 397,Sakazuki,
 397,Jaguar_D._Saul,
 397,Spandine,
+397,Tsumonsieur_Kamaya,
 397,Marianne,cover
 397,Gem,cover
 397,Mikita,cover
@@ -5870,6 +5895,7 @@ chapter,character,note
 401,Hattori,image
 401,Kaku,
 401,Jabra,
+401,Suzume,
 402,Monkey_D._Luffy,
 402,Roronoa_Zoro,
 402,Nami,
@@ -6234,7 +6260,9 @@ chapter,character,note
 424,Kiev,
 424,Sodom,
 424,Gomorrah,
-424,Kairiki_Destroyers,
+424,Dago,
+424,Ottoland,
+424,Footbianco,
 424,Paulie,
 424,Peepley_Lulu,
 424,Tilestone,
@@ -6344,7 +6372,9 @@ chapter,character,note
 429,Spandam,
 429,Franky,
 429,Mozu_and_Kiwi,
-429,Kairiki_Destroyers,
+429,Dago,
+429,Ottoland,
+429,Footbianco,
 429,Sodom,
 429,Gomorrah,
 429,Kokoro,
@@ -6453,7 +6483,9 @@ chapter,character,note
 433,Schollzo,
 433,Tamagon,
 433,Kop,
-433,Kairiki_Destroyers,
+433,Dago,
+433,Ottoland,
+433,Footbianco,
 433,Sodom,
 433,Gomorrah,
 433,Iceburg,
@@ -6502,7 +6534,9 @@ chapter,character,note
 435,Schollzo,
 435,Tamagon,
 435,Kop,
-435,Kairiki_Destroyers,
+435,Dago,
+435,Ottoland,
+435,Footbianco,
 435,Sodom,
 435,Gomorrah,
 435,Iceburg,
@@ -6529,7 +6563,9 @@ chapter,character,note
 436,Kiev,
 436,Schollzo,
 436,Tamagon,
-436,Kairiki_Destroyers,
+436,Dago,
+436,Ottoland,
+436,Footbianco,
 436,Sodom,
 436,Gomorrah,
 436,Iceburg,
@@ -6557,7 +6593,9 @@ chapter,character,note
 437,Kiev,
 437,Schollzo,
 437,Tamagon,
-437,Kairiki_Destroyers,
+437,Dago,
+437,Ottoland,
+437,Footbianco,
 437,Sodom,
 437,Gomorrah,
 437,Tom,flashback
@@ -6616,7 +6654,9 @@ chapter,character,note
 439,Zambai,
 439,Kiev,
 439,Schollzo,
-439,Kairiki_Destroyers,
+439,Dago,
+439,Ottoland,
+439,Footbianco,
 439,Sodom,
 439,Gomorrah,
 439,Iceburg,
@@ -8507,7 +8547,7 @@ chapter,character,note
 542,Minokoala,
 542,Minorhinoceros,
 542,Minozebra,
-542,Manticores,
+542,Manticore,
 542,Jinbe,
 542,Crocodile,
 542,Sengoku,
@@ -8609,6 +8649,7 @@ chapter,character,note
 548,Franky,Cover Page
 548,Buggy,
 548,Magellan,
+548,Akehende,
 548,Jinbe,
 548,Crocodile,
 548,Emporio_Ivankov,
@@ -9675,7 +9716,7 @@ chapter,character,note
 581,Doc_Q,flashback
 581,Stronger,flashback
 581,Shiryu,flashback
-581,Brownbeard,
+581,Chadros_Higelyges,
 581,Eustass_Kid,
 581,Killer,
 581,Heat,
@@ -10500,7 +10541,7 @@ chapter,character,note
 617,Tony_Tony_Chopper,
 617,Brook,
 617,Hody_Jones,
-617,Harisenbon,
+617,Jean_Noueilles,
 617,Arlong,image
 617,Neptune,
 617,Shirahoshi,
@@ -10607,6 +10648,7 @@ chapter,character,note
 621,Minister_of_the_Right,
 621,Minister_of_the_Left,
 621,Papaneel,
+621,Zururin,
 621,Ninjin,cover
 621,Tamanegi,cover
 621,Piiman,cover
@@ -10656,6 +10698,7 @@ chapter,character,note
 623,Borsalino,
 623,Strawberry,
 623,Koala,
+623,Muti,
 623,Kaya,cover
 623,Merry,cover
 623,Neptune,flashback
@@ -10688,6 +10731,7 @@ chapter,character,note
 625,Aladine,
 625,Vander_Decken_IX,
 625,Donquixote_Mjosgard,
+625,Donquixote_Shivercalero,
 625,Neptune,
 625,Otohime,
 625,Fukaboshi,
@@ -10832,6 +10876,7 @@ chapter,character,note
 632,Shyarly,
 632,Mr._9,cover
 632,Miss_Monday,cover
+632,Nanday,cover
 633,Monkey_D._Luffy,
 633,Roronoa_Zoro,
 633,Nami,
@@ -10899,7 +10944,7 @@ chapter,character,note
 635,Daruma,
 635,Ikaros_Much,
 635,Hyouzou,
-635,Harisenbon,
+635,Jean_Noueilles,
 635,Shirahoshi,
 635,Megalo,
 635,Pappag,
@@ -11246,6 +11291,8 @@ chapter,character,note
 649,Medaka_Mermaid_Quintuplets,
 649,Maria_Napole,
 649,Ishilly,
+649,Blakey,
+649,Miles,
 649,Gan_Fall,cover
 649,Shandia_Chief,cover
 649,Pierre,cover
@@ -11275,6 +11322,8 @@ chapter,character,note
 650,Camie,
 650,Pappag,
 650,Tonjit,cover
+650,Tonsfer,cover
+650,Tonjil,cover
 650,Shelly,cover
 650,Sakazuki,flashback
 650,Kuzan,flashback
@@ -11787,6 +11836,7 @@ chapter,character,note
 675,Konbu,
 675,Biyo,
 675,Ally,
+675,Dragon_Number_Twenty-One,
 676,Monkey_D._Luffy,
 676,Roronoa_Zoro,
 676,Nami,cover
@@ -11804,6 +11854,7 @@ chapter,character,note
 676,Monet,
 676,Smiley,
 676,Kin%27emon,
+676,Dragon_Number_Twenty-One,
 677,Monkey_D._Luffy,
 677,Roronoa_Zoro,
 677,Nami,
@@ -11827,6 +11878,7 @@ chapter,character,note
 677,Monet,
 677,Brownbeard,
 677,Kin%27emon,
+677,Dragon_Number_Twenty-One,
 678,Monkey_D._Luffy,
 678,Roronoa_Zoro,
 678,Nami,
@@ -11861,6 +11913,7 @@ chapter,character,note
 679,Brownbeard,
 679,Run,
 679,Kin%27emon,
+679,Dragon_Number_Twenty-One,
 680,Monkey_D._Luffy,
 680,Roronoa_Zoro,
 680,Nami,
@@ -11877,6 +11930,7 @@ chapter,character,note
 680,Monet,
 680,Brownbeard,
 680,Kin%27emon,
+680,Dragon_Number_Twenty-One,
 681,Monkey_D._Luffy,
 681,Sanji,
 681,Franky,flashback
@@ -11905,13 +11959,14 @@ chapter,character,note
 682,Caesar_Clown,
 682,Monet,
 682,Brownbeard,
+682,Kin%27emon,
 682,Baby_5,
 682,Gladius,
 682,Machvise,
 682,Lao_G,
 682,Giolla,
 682,Sugar,
-682,Kin%27emon,
+682,Dragon_Number_Twenty-One,
 683,Monkey_D._Luffy,
 683,Roronoa_Zoro,
 683,Nami,
@@ -12047,6 +12102,7 @@ chapter,character,note
 690,Brownbeard,
 690,Kin%27emon,
 690,Kouzuki_Momonosuke,
+690,Baburu,cover
 690,Sind,
 690,Doran,
 690,Uzu,
@@ -12228,6 +12284,7 @@ chapter,character,note
 694,Brownbeard,
 694,Kin%27emon,
 694,Kouzuki_Momonosuke,
+694,Baburu,cover
 694,Mocha,
 694,Sind,
 694,Doran,
@@ -12250,6 +12307,7 @@ chapter,character,note
 695,Caesar_Clown,
 695,Fen_Bock,
 695,Chappe,
+695,Baburu,cover
 695,Camel,silhouette
 695,Sind,
 695,Doran,
@@ -12306,6 +12364,7 @@ chapter,character,note
 697,Brownbeard,
 697,Kin%27emon,
 697,Kouzuki_Momonosuke,
+697,Baburu,cover
 697,Mocha,
 697,Sind,
 697,Doran,
@@ -12332,6 +12391,7 @@ chapter,character,note
 698,Brownbeard,
 698,Kin%27emon,
 698,Kouzuki_Momonosuke,
+698,Baburu,cover
 699,Monkey_D._Luffy,
 699,Roronoa_Zoro,
 699,Nami,
@@ -12508,6 +12568,7 @@ chapter,character,note
 706,Meadows,
 706,Fighting_Lion,
 706,Acilia,
+706,Baburu,cover
 706,Suleiman,
 706,Kelly_Funk,
 706,Bobby_Funk,
@@ -12519,7 +12580,7 @@ chapter,character,note
 706,Ideo,
 706,Mummy,
 706,Damask,
-706,Hack_(Fish-Man),
+706,Hack,
 707,Monkey_D._Luffy,
 707,Roronoa_Zoro,cover
 707,Nami,cover
@@ -12561,12 +12622,13 @@ chapter,character,note
 708,Chinjao,
 708,Sai,
 708,Boo,
+708,Baburu,cover
 708,Blue_Gilly,
 708,Abdullah,
 708,Jeet,
 708,Monkey_D._Garp,mentioned
 708,Monkey_D._Dragon,mentioned
-708,Hack_(Fish-Man),
+708,Hack,
 708,Gaburu,"cover, image"
 709,Monkey_D._Luffy,
 709,Franky,
@@ -12579,6 +12641,7 @@ chapter,character,note
 709,Kyros,
 709,Gatz,
 709,Riku_Doldo_III,
+709,Baburu,cover
 709,Blue_Gilly,
 709,Hack_(Fish-Man),
 709,Gaburu,"mentioned, cover"
@@ -12626,6 +12689,7 @@ chapter,character,note
 711,Pellini,
 711,Eikon,
 711,Wicca,
+711,Baburu,cover
 712,Monkey_D._Luffy,
 712,Sanji,
 712,Nico_Robin,
@@ -12641,6 +12705,7 @@ chapter,character,note
 712,Caesar_Clown,
 712,Chinjao,
 712,Sai,
+712,Baburu,cover
 712,Kelly_Funk,
 712,Hajrudin,
 712,Guernika,flashback
@@ -12723,6 +12788,7 @@ chapter,character,note
 716,Kelly_Funk,
 716,Bobby_Funk,
 716,Emporio_Ivankov,image
+716,Baburu,cover
 716,Rebecca,
 716,Jean_Ango,
 716,Ideo,
@@ -12776,6 +12842,7 @@ chapter,character,note
 718,Chinjao,
 718,Kyros,
 718,Gatz,
+718,Baburu,cover
 718,Gancho,
 718,Leo,
 718,Bomba,
@@ -12798,6 +12865,7 @@ chapter,character,note
 719,Chinjao,
 719,Sai,
 719,Boo,
+719,Baburu,cover
 719,Rebecca,
 719,Gatz,
 720,Monkey_D._Luffy,
@@ -12819,6 +12887,7 @@ chapter,character,note
 720,Chinjao,
 720,Sai,
 720,Boo,
+720,Baburu,cover
 720,Rebecca,
 720,Gatz,voice
 721,Monkey_D._Luffy,
@@ -12872,6 +12941,7 @@ chapter,character,note
 722,Baxcon,
 722,Eikon,
 722,Chinjao,image
+722,Baburu,cover
 722,Rebecca,
 722,Mummy,
 722,Rolling_Logan,
@@ -13007,6 +13077,7 @@ chapter,character,note
 727,Tank_Lepanto,flashback
 727,Kyros,
 727,Gancho,
+727,Baburu,cover
 727,Rebecca,
 727,Rolling_Logan,
 728,Monkey_D._Luffy,
@@ -13046,6 +13117,7 @@ chapter,character,note
 728,Inhel,
 728,Chinjao,
 728,Boo,
+728,Baburu,cover
 728,Abdullah,
 728,Jeet,
 729,Monkey_D._Luffy,
@@ -13082,6 +13154,7 @@ chapter,character,note
 729,Inhel,
 729,Cotton,
 729,Baxcon,
+729,Baburu,cover
 730,Monkey_D._Luffy,
 730,Roronoa_Zoro,
 730,Nami,
@@ -13106,6 +13179,7 @@ chapter,character,note
 730,Kyros,
 730,Rebecca,
 730,Viola,
+730,Baburu,cover
 731,Monkey_D._Luffy,
 731,Roronoa_Zoro,
 731,Usopp,
@@ -13132,6 +13206,7 @@ chapter,character,note
 731,Bian,
 731,Inhel,
 731,Cotton,
+731,Baburu,cover
 731,Sabo,
 731,Koala,
 732,Monkey_D._Luffy,cover
@@ -19213,10 +19288,12 @@ chapter,character,note
 956,Capone_Bege,cover
 956,Charlotte_Chiffon,cover
 956,Charlotte_Lola,"cover, image"
+956,Uraya_Mashikatta,
 956,Monkey_D._Garp,
 956,Stainless,
 956,X_Drake,
 956,Koby,
+956,Jabari,
 956,Neptune,
 956,Fukaboshi,
 956,Ryuboshi,
@@ -19232,9 +19309,11 @@ chapter,character,note
 956,Curly_Dadan,
 956,Dogra,
 956,Magra,
+956,Tomatito,cover
 956,Ham_Burger,
 956,Beer_VI,
 956,Nashi,
+956,Vincent,
 956,Iwatobi,flashback
 956,Moqueca,flashback
 956,Sauce,flashback
@@ -19304,7 +19383,9 @@ chapter,character,note
 958,Himuro,
 958,Gangaru,
 958,Hatsume,
+958,Deigoro,
 958,Inuarashi,
+958,Tomatito,cover
 959,Monkey_D._Luffy,flashback
 959,Roronoa_Zoro,flashback
 959,Nami,flashback
@@ -19367,10 +19448,17 @@ chapter,character,note
 960,Hyougoro,
 960,Kin%27emon,
 960,Denjiro,
-960,Tsuru_(Wano),
+960,Tsurujo,
 960,Banzaburo,
+960,Oiwa,
+960,Koiwa,
+960,Nakaiwa,
+960,Gurutaro,
+960,Tomozo,
 960,Katsuzo,corpse
 960,Kyros,statue; cover
+960,Ettara_Chaunkai,cover
+960,Furika,cover
 961,Kouzuki_Oden,
 961,Shimotsuki_Yasuie,
 961,Hyougoro,
@@ -19379,6 +19467,11 @@ chapter,character,note
 961,Tsurujo,
 961,Banzaburo,
 961,Kurozumi_Orochi,
+961,Norinosuke,
+961,Oiwa,
+961,Koiwa,flashback
+961,Nakaiwa,flashback
+961,Mouthto_Mouthyan,cover
 961,Vito,cover
 961,Gotti,cover
 962,Kouzuki_Sukiyaki,
@@ -19417,10 +19510,12 @@ chapter,character,note
 963,Inuarashi,
 963,Nekomamushi,
 963,Shimotsuki_Yasuie,
+963,Jigokukamabuta_Megatenpanchiro,
 963,Kurozumi_Orochi,
 963,Mountain_God,
 963,Hitsugisukan,flashback
 963,Zunesha,flashback
+963,Renona_Topakka,flashback
 963,Edward_Newgate,
 963,Marco,
 963,Jozu,
@@ -19432,6 +19527,11 @@ chapter,character,note
 963,Whitey_Bay,
 963,Epoida,
 963,Andre,
+963,Sukare_Tainen,cover
+963,Shikon_Kettai,cover
+963,Rakushitemo_Terusubehainaika,cover
+963,Mezasuzowan_Pisuo,cover
+963,Sukare_Karehosui,cover
 964,Edward_Newgate,
 964,Marco,
 964,Jozu,
@@ -19452,12 +19552,17 @@ chapter,character,note
 964,Shanks,
 964,Buggy,
 964,Karma,
+964,Sarai,
+964,Sukare_Tainen,cover
+964,Shikon_Kettai,cover
+964,Mezasuzowan_Pisuo,cover
 964,Kin%27emon,
 964,Denjiro,
 964,Kikunojo,
 964,Kurozumi_Kanjuro,
 964,Raizo,
 964,Ashura_Doji,
+964,Urbain,
 965,Edward_Newgate,
 965,Marco,
 965,Jozu,
@@ -19485,6 +19590,9 @@ chapter,character,note
 965,Doringo,
 965,Capone_Bege,cover
 965,Vito,cover
+965,Sukare_Tainen,cover
+965,Mezasuzowan_Pisuo,cover
+965,Sukare_Karehosui,cover
 965,Kouzuki_Sukiyaki,flashback
 965,Kurozumi_Orochi,
 965,Kurozumi_Higurashi,
@@ -19540,6 +19648,7 @@ chapter,character,note
 966,Kujaku,cover
 966,Kouzuki_Momonosuke,
 966,Kouzuki_Hiyori,
+966,Demoni_Aiyo,cover
 967,Monkey_D._Luffy,cover
 967,Roronoa_Zoro,cover
 967,Nami,cover
@@ -19653,7 +19762,9 @@ chapter,character,note
 969,Hanzo,
 969,Shimotsuki_Yasuie,
 969,Hyougoro,
+969,Taka,
 969,Shinobu,
+969,Anba,
 969,Kouzuki_Sukiyaki,disguise
 969,Kaidou,
 969,King,silhouette
@@ -19706,6 +19817,7 @@ chapter,character,note
 971,Daikoku,
 971,Hanzo,
 971,Hana,
+971,Tsurube,
 971,Gatz,cover
 971,Kaidou,
 971,Yamato,
@@ -20788,6 +20900,7 @@ chapter,character,note
 999,Babanuki,flashback
 999,Poker,flashback
 999,Briscola,flashback
+999,Nokokuwa_Police,flashback
 999,Charlotte_Linlin,
 999,Napoleon,
 999,Zeus,
@@ -21339,6 +21452,11 @@ chapter,character,note
 1019,Kaidou,
 1019,Queen,
 1019,Sasaki,
+1019,Nokokuwa_Police,
+1019,Bisley,
+1019,Scorpionlady,
+1019,Caucasusman,
+1019,Saitank,
 1019,Yamato,
 1019,Miyagi,
 1019,Tristan,
@@ -22035,6 +22153,11 @@ chapter,character,note
 1046,Inbi,
 1046,Briscola,
 1046,Hamlet,
+1046,Nokokuwa_Police,
+1046,Bisley,
+1046,Scorpionlady,
+1046,Caucasusman,
+1046,Kamakirigirl,
 1046,Van_Augur,"cover, silhouette"
 1046,Kuzan,"cover, silhouette"
 1046,Yamato,
@@ -23360,7 +23483,7 @@ chapter,character,note
 1084,Koala,cover
 1084,Nefertari_Cobra,
 1084,Nefertari_Vivi,cover
-1084,Nefertari_Lili,flashback
+1084,Nefertari_D._Lili,flashback
 1084,Shirahoshi,
 1084,Fukaboshi,
 1084,Ryuboshi,
@@ -23520,7 +23643,7 @@ chapter,character,note
 1089,S-Hawk,image
 1089,S-Shark,image
 1089,S-Bear,image
-1089,Ivankov,
+1089,Emporio_Ivankov,
 1089,Ahiru,
 1089,Vegapunk,
 1089,Shaka,image
@@ -23539,7 +23662,7 @@ chapter,character,note
 1089,Magra,
 1089,Laboon,
 1089,Iceburg,
-1089,Peeply_Lulu,
+1089,Peepley_Lulu,
 1089,Tilestone,
 1089,Chichilisia,
 1089,Uholisia,
@@ -24191,6 +24314,8 @@ chapter,character,note
 1114,Megalo,
 1114,Hoe,
 1114,Tonjit,
+1114,Tonsfer,
+1114,Tonjil,
 1114,Shelly,
 1114,Jaguar_D._Saul,
 1114,Boodle,
@@ -24268,7 +24393,7 @@ chapter,character,note
 1115,Kouzuki_Hiyori,cover
 1115,Toko,cover
 1115,Stussy,
-1115,Iron_Giant,
+1115,Emet,
 1115,Morgans,
 1116,Crocodile,
 1116,Imu,
@@ -24320,7 +24445,7 @@ chapter,character,note
 1116,Ahiru,
 1116,Ushiano,
 1116,Moda,
-1116,Iron_Giant,
+1116,Emet,
 1116,Stussy,
 1117,Monkey_D._Luffy,
 1117,Roronoa_Zoro,
@@ -24371,7 +24496,7 @@ chapter,character,note
 1117,Hyougoro,cover
 1117,Monkey_D._Dragon,
 1117,Sabo,
-1117,Iron_Giant,
+1117,Emet,
 1117,Morgans,
 1118,Monkey_D._Luffy,
 1118,Nami,
@@ -24404,9 +24529,10 @@ chapter,character,note
 1118,Mr._9,
 1118,Miss_Monday,
 1118,Miss_Catherina,
+1118,Nanday,
 1118,Yamato,cover
 1118,Bartholomew_Kuma,
-1118,Iron_Giant,
+1118,Emet,
 1119,Monkey_D._Luffy,
 1119,Sanji,
 1119,Franky,
@@ -24701,3 +24827,96 @@ chapter,character,note
 1126,Lilith,
 1126,Yamato,cover
 1126,Bartholomew_Kuma,
+1127,Monkey_D._Luffy,
+1127,Roronoa_Zoro,
+1127,Nami,
+1127,Usopp,
+1127,Sanji,
+1127,Zeus,
+1127,Yamato,cover
+1127,Inuarashi,cover
+1127,Iscat,
+1127,Needle_God,
+1128,Monkey_D._Luffy,
+1128,Roronoa_Zoro,
+1128,Nami,
+1128,Usopp,
+1128,Sanji,
+1128,Tony_Tony_Chopper,
+1128,Nico_Robin,cover
+1128,Franky,cover
+1128,Brook,cover
+1128,Jinbe,cover
+1128,Road,
+1128,Hilmungardr,
+1128,Muginn,
+1128,Iscat,
+1129,Monkey_D._Luffy,
+1129,Roronoa_Zoro,
+1129,Nami,
+1129,Usopp,
+1129,Sanji,
+1129,Tony_Tony_Chopper,
+1129,Zeus,
+1129,Hajrudin,flashback
+1129,Road,
+1129,Iscat,
+1129,Hilmungardr,
+1129,Muginn,
+1129,Glutbunny,fantasy
+1129,Yamato,cover
+1129,Shinobu,cover
+1129,Kurozumi_Tama,cover
+1129,Komachiyo,cover
+1130,Monkey_D._Luffy,
+1130,Roronoa_Zoro,
+1130,Nami,
+1130,Usopp,
+1130,Sanji,
+1130,Tony_Tony_Chopper,
+1130,Nico_Robin,
+1130,Franky,
+1130,Brook,
+1130,Jinbe,
+1130,Dorry,
+1130,Brogy,
+1130,Oimo,
+1130,Kashii,
+1130,Goldberg,
+1130,Gerd,
+1130,Piper,
+1130,Iscat,
+1130,Vegapunk,newspaper
+1130,Lilith,
+1130,Loki,
+1130,Yamato,cover
+1130,Kurozumi_Tama,cover
+1131,Monkey_D._Luffy,
+1131,Roronoa_Zoro,
+1131,Nami,
+1131,Usopp,
+1131,Sanji,
+1131,Tony_Tony_Chopper,
+1131,Nico_Robin,
+1131,Franky,
+1131,Brook,
+1131,Jinbe,
+1131,Jewelry_Bonney,
+1131,Dorry,
+1131,Brogy,
+1131,Oimo,
+1131,Kashii,
+1131,Hajrudin,
+1131,Stansen,
+1131,Road,
+1131,Goldberg,
+1131,Gerd,
+1131,Piper,
+1131,Donquixote_Doflamingo,image
+1131,Leo,image
+1131,Loki,
+1131,Lilith,
+1131,Yamato,cover
+1131,Kurozumi_Tama,cover
+1131,Speed,cover
+1131,Komachiyo,cover
