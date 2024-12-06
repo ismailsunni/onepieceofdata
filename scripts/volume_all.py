@@ -3,10 +3,10 @@ from bs4 import BeautifulSoup
 import json
 
 base_url = "https://onepiece.fandom.com/wiki/Chapters_and_Volumes/Volumes"
-last_volume = 107
+# last_volume = 107
 
 
-def scrap_all_volume():
+def scrap_all_volume(last_volume, volumes_json_path):
     """Scrap all volume in one go"""
     http_pool = urllib3.PoolManager()
     r = http_pool.urlopen("GET", base_url)
@@ -22,7 +22,7 @@ def scrap_all_volume():
         volume_data = parse_volume_table(soup, volume)
         all_volume.append(volume_data)
 
-    with open("./data/volumes.json", "w") as f:
+    with open(volumes_json_path, "w") as f:
         json.dump(all_volume, f)
 
 
@@ -47,8 +47,13 @@ def parse_volume_table(soup, volume_number: int):
             chars_href = characters_cells.findAll("li")
             for c in chars_href:
                 a_tags = c.findAll("a")
-                href = a_tags[0]["href"]
-                character_slug = href.split("/")[-1]
+                if len(a_tags) == 0:
+                    # continue
+                    character_slug = c.get_text().strip()
+                    print("No a tag for", c)
+                else:
+                    href = a_tags[0]["href"]
+                    character_slug = href.split("/")[-1]
                 cover_characters.append(
                     {"name": c.get_text().strip(), "slug": character_slug}
                 )
@@ -61,5 +66,7 @@ def parse_volume_table(soup, volume_number: int):
 
 
 if __name__ == "__main__":
-    scrap_all_volume()
+    last_volume = 110
+    volumes_json_path = "./data/volumes.json"
+    scrap_all_volume(last_volume, volumes_json_path)
     print("fin")

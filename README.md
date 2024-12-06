@@ -52,7 +52,7 @@ python ./scripts/character.py
 ### Scraping volumes
 
 ```bash
-python ./volume_all.py
+python ./scripts/volume_all.py
 ```
 
 ### Plan

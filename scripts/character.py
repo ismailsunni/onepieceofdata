@@ -80,7 +80,7 @@ def remove_note(text):
     return text.split("(")[0].strip()
 
 
-def scrap_character(character_url: str):
+def scrap_character_from_url(character_url: str):
     """Scrap character."""
     character_info = {}
 
@@ -116,7 +116,7 @@ def scrap_character(character_url: str):
     return character_info
 
 
-def scrap_character_solo(character):
+def scrap_single_character(character):
     char_id = character["id"]
     name = character["name"]
     url = character["url"]
@@ -135,49 +135,16 @@ def scrap_character_solo(character):
 
     try:
         full_url = base_url + url
-        result.update(scrap_character(full_url))
+        result.update(scrap_character_from_url(full_url))
     except Exception as e:
         print(f">>>>>> Failed on {name} because {e} ")
 
     return result
 
 
-def parse_all_characters():
-    file_path = "./data/characters.csv"
-    df = pd.read_csv(file_path)
-
-    selected_rows = df.head(len(df))
-    # selected_rows = df.iloc[700 : len(df)]
-
-    characters = {}
-
-    for index, row in selected_rows.iterrows():
-        print(f"{index}. {row['name']} - {row['id']}")
-
-        # Check isnan here
-        if pd.isna(row["url"]):
-            print(f"     {row['name']} has no URL")
-            characters[row["id"]] = {}
-            continue
-
-        full_url = base_url + row["url"]
-        try:
-            characters[row["id"]] = scrap_character(full_url)
-        except Exception as e:
-            print(f'>>>>>> Failed on {row["name"]} {full_url} because {e} ')
-
-        if index % 100 == 0:
-            with open("./cache/characters_{}.json".format(index), "w") as fp:
-                json.dump(characters, fp)
-
-    with open("./data/characters_detail.json", "w") as fp:
-        json.dump(characters, fp, indent=2)
-
-
 @timing_decorator
-def parse_all_characters_parallel():
-    file_path = "./data/characters.csv"
-    df = pd.read_csv(file_path)
+def parse_all_characters_parallel(character_csv_path: str, output_json_path: str):
+    df = pd.read_csv(character_csv_path)
 
     selected_rows = df.head(len(df))
     # selected_rows = df.iloc[700 : len(df)]
@@ -191,11 +158,11 @@ def parse_all_characters_parallel():
 
     # Process rows in parallel using multiprocessing.Pool
     with multiprocessing.Pool(num_processes) as pool:
-        characters = pool.map(scrap_character_solo, list_of_dicts)
+        characters = pool.map(scrap_single_character, list_of_dicts)
 
     print(f"Success to scrap {len(characters)} of {len(df)}")
 
-    with open("./data/characters_detail_parallel.json", "w") as fp:
+    with open(output_json_path, "w") as fp:
         json.dump(characters, fp, indent=2)
 
 
@@ -205,12 +172,9 @@ def pretty_print(value: dict):
 
 
 if __name__ == "__main__":
-    url = "https://onepiece.fandom.com/wiki/Sanji"
+    character_csv_path = "./data/characters.csv"
+    output_json_path = "./data/characters_detail.json"
 
-    # result = scrap_character(url)
-    # pretty_print(result)
-
-    # parse_all_characters()
-    parse_all_characters_parallel()
+    parse_all_characters_parallel(character_csv_path, output_json_path)
 
     print("fin")
