@@ -46,7 +46,7 @@ All scripts are run from root directory, a little bit confusing (for now) becaus
 ```bash
 python ./scripts/chapter.py
 python ./to_csv.py
- python ./scripts/character.py
+python ./scripts/character.py
 ```
 
 ### Scraping volumes
@@ -54,6 +54,13 @@ python ./to_csv.py
 ```bash
 python ./volume_all.py
 ```
+
+### Plan
+
+There will be 3 parts of the project:
+- Scraping data
+- Clean the data
+- Store the data to duckdb
 
 ## Credits
 
