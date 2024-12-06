@@ -70716,10 +70716,10 @@
         "full_text": "Jinbe"
       },
       {
-        "name": "Aladdin",
-        "url": "/wiki/Aladdin",
+        "name": "Aladine",
+        "url": "/wiki/Aladine",
         "note": "",
-        "full_text": "Aladdin"
+        "full_text": "Aladine"
       },
       {
         "name": "Vander Decken IX",
@@ -150160,6 +150160,12 @@
         "url": "/wiki/S-Bear",
         "note": "",
         "full_text": "S-Bear"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
       }
     ]
   },
@@ -157744,18 +157750,6 @@
         "full_text": "Urashima (cover)"
       },
       {
-        "name": "Some",
-        "url": "/wiki/Some",
-        "note": "cover",
-        "full_text": "Some (cover)"
-      },
-      {
-        "name": "Chuji",
-        "url": "/wiki/Chuji",
-        "note": "cover",
-        "full_text": "Chuji (cover)"
-      },
-      {
         "name": "Neptune",
         "url": "/wiki/Neptune",
         "note": "",
@@ -160220,6 +160214,12 @@
         "full_text": "Yamato (cover)"
       },
       {
+        "name": "Some",
+        "url": "/wiki/Some",
+        "note": "cover",
+        "full_text": "Some (cover)"
+      },
+      {
         "name": "Bartholomew Kuma",
         "url": "/wiki/Bartholomew_Kuma",
         "note": "",
@@ -160802,6 +160802,178 @@
         "url": "/wiki/Loki",
         "note": "",
         "full_text": "Loki"
+      },
+      {
+        "name": "Lilith",
+        "url": "/wiki/Vegapunk/Lilith",
+        "note": "",
+        "full_text": "Lilith"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Kurozumi Tama",
+        "url": "/wiki/Kurozumi_Tama",
+        "note": "cover",
+        "full_text": "Kurozumi Tama (cover)"
+      },
+      {
+        "name": "Speed",
+        "url": "/wiki/Speed",
+        "note": "cover",
+        "full_text": "Speed (cover)"
+      },
+      {
+        "name": "Komachiyo",
+        "url": "/wiki/Komachiyo",
+        "note": "cover",
+        "full_text": "Komachiyo (cover)"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1132",
+    "ename": "Adventure in Elbaph",
+    "page": "17",
+    "date2": "December 2, 2024",
+    "jump": "2025 Issue 1",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "url": "/wiki/Jewelry_Bonney",
+        "note": "",
+        "full_text": "Jewelry Bonney"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Piper",
+        "url": "/wiki/Piper",
+        "note": "",
+        "full_text": "Piper"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "flashback",
+        "full_text": "Shanks (flashback)"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "flashback",
+        "full_text": "Loki (flashback)"
       },
       {
         "name": "Lilith",
