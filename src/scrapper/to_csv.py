@@ -7,6 +7,7 @@ from datetime import datetime
 def convert_chapters_to_csv(
     chapters_json_file: str, characters_csv: str, chapters_csv: str, coc_csv: str
 ):
+    print("### Converting Chapters JSON to CSV (chapters, characters, coc) ###")
     # Chapters
     with open(chapters_json_file) as json_file:
         chapter_list = json.load(json_file)
@@ -69,28 +70,25 @@ def convert_chapters_to_csv(
         "jump": chapter_jump,
     }
 
+    # Create DataFrames
     chapters_df = pd.DataFrame(
         chapters, columns=["chapter", "volume", "name", "page", "date", "jump"]
     )
-    print(chapters_df)
-
     characters = {"id": character_ids, "name": character_names, "url": character_urls}
-
-    character_df = pd.DataFrame(characters, columns=["id", "name", "url"])
-    print(character_df)
+    characters_df = pd.DataFrame(characters, columns=["id", "name", "url"])
 
     coc = {"chapter": coc_chapters, "character": coc_characters, "note": coc_notes}
-    print(len(coc["chapter"]))
-    print(len(coc["character"]))
-    print(len(coc["note"]))
-
     coc_df = pd.DataFrame(coc, columns=["chapter", "character", "note"])
-    print(coc_df)
 
     # Write to CSV
     chapters_df.to_csv(chapters_csv, index=False)
-    character_df.to_csv(characters_csv, index=False)
+    characters_df.to_csv(characters_csv, index=False)
     coc_df.to_csv(coc_csv, index=False)
+
+    print("Summary:")
+    print("Number of chapters", len(chapters_df))
+    print("Number of characters", len(characters_df))
+    print("Number of Character on Chapter", len(coc_df))
 
 
 if __name__ == "__main__":
