@@ -62,7 +62,9 @@ def scrap_chapter(chapter: int):
 
 
 @timing_decorator
-def scrap_chapter_parallel(last_chapter: int, filename: str):
+def scrap_chapters(last_chapter: int, filename: str):
+    print(f"### Scrap chapters from 1 to {last_chapter} ###")
+
     list_of_chapter = range(1, last_chapter + 1)
 
     # Number of processes to use
@@ -81,4 +83,4 @@ def scrap_chapter_parallel(last_chapter: int, filename: str):
 if __name__ == "__main__":
     last_chapter = 1132
     filename = "./data/chapters.json"
-    scrap_chapter_parallel(last_chapter, filename)
+    scrap_chapters(last_chapter, filename)
