@@ -8,7 +8,7 @@ from utils import timing_decorator
 base_url = "https://onepiece.fandom.com/wiki/Chapter_"
 
 
-def scrap_chapter(chapter):
+def scrap_chapter(chapter: int):
     """Scrap chapter."""
     print(f"Scrap chapter {chapter}")
     chapter_info = {}
@@ -34,6 +34,7 @@ def scrap_chapter(chapter):
                 chapter_info[item] = chapter_info[item].strip("[ref]")
         except IndexError as e:
             print(item, e)
+
     # Characters
     characters = []
     character_table = soup.findAll("table", {"class": "CharTable"})[0]
@@ -61,25 +62,7 @@ def scrap_chapter(chapter):
 
 
 @timing_decorator
-def scrap_all_chapter(last_chapter):
-    chapters = []
-    for chapter in range(1, last_chapter + 1):
-        # print("chapter", chapter)
-        try:
-            result = scrap_chapter(chapter)
-            chapters.append(result)
-        except Exception as e:
-            print(e)
-
-        if chapter % 100 == 0:
-            with open("./cache/chapters_{}.json".format(chapter), "w") as fp:
-                json.dump(chapters, fp)
-    with open("./data/chapters.json", "w") as fp:
-        json.dump(chapters, fp, indent=2)
-
-
-@timing_decorator
-def scrap_chapter_parallel(last_chapter):
+def scrap_chapter_parallel(last_chapter: int, filename: str):
     list_of_chapter = range(1, last_chapter + 1)
 
     # Number of processes to use
@@ -91,12 +74,11 @@ def scrap_chapter_parallel(last_chapter):
 
     print(f"Success to scrap {len(chapters)} chapters")
 
-    with open("./data/chapter_parallel.json", "w") as fp:
+    with open(filename, "w") as fp:
         json.dump(chapters, fp, indent=2)
 
 
 if __name__ == "__main__":
     last_chapter = 1132
-    # scrap_all_chapter(last_chapter)
-    # print("-------------------")
-    scrap_chapter_parallel(last_chapter)
+    filename = "./data/chapters.json"
+    scrap_chapter_parallel(last_chapter, filename)
