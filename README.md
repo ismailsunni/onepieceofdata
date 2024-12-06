@@ -45,7 +45,7 @@ All scripts are run from root directory, a little bit confusing (for now) becaus
 
 ```bash
 python ./scripts/chapter.py
-python ./to_csv.py
+python ./scripts/to_csv.py
 python ./scripts/character.py
 ```
 
