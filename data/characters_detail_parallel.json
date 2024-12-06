@@ -191,7 +191,7 @@
       "Jamie Meldrum"
     ],
     "4kids eva": [
-      "David Brimmer"
+      "Michael Sinterniklaas"
     ],
     "Funi eva": [
       "John Burgmeier"
@@ -1562,6 +1562,9 @@
     "birth": [
       "June 19th"
     ],
+    "bounty": [
+      "At least 1000000"
+    ],
     "jva": [
       "Akira Murakami"
     ],
@@ -1602,6 +1605,9 @@
     ],
     "birth": [
       "February 17th"
+    ],
+    "bounty": [
+      "At least 100000"
     ],
     "liveaction": [
       "Richard Wright-Firth"
@@ -1895,6 +1901,9 @@
     ],
     "birth": [
       "June 13th"
+    ],
+    "bounty": [
+      "At least 1000000"
     ],
     "jva": [
       "Yoshiyuki K\u014dno",
@@ -5704,6 +5713,9 @@
     ],
     "birth": [
       "December 26th"
+    ],
+    "bounty": [
+      "At least 100000"
     ],
     "jva": [
       "Masaya Takatsuka"
@@ -10572,6 +10584,9 @@
     "status": [
       "Alive"
     ],
+    "bounty": [
+      "At least 100000"
+    ],
     "jva": [
       "Hirofumi Tanaka"
     ],
@@ -10665,6 +10680,9 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least 1000000"
     ]
   },
   {
@@ -15940,9 +15958,6 @@
     ],
     "birth": [
       "August 4th"
-    ],
-    "jva": [
-      "N/A"
     ]
   },
   {
@@ -19865,6 +19880,9 @@
     "status": [
       "Alive"
     ],
+    "bounty": [
+      "At least 100000"
+    ],
     "jva": [
       "Keiji Hirai"
     ]
@@ -20422,7 +20440,8 @@
       "F"
     ],
     "bounty": [
-      "\u2605\u2605\u2605\u2605\u2605 (500000000)"
+      "\u2605\u2605\u2605\u2605\u2605",
+      "(500000000)"
     ],
     "jva": [
       "Kazue Ikura"
@@ -20905,7 +20924,8 @@
       "3000000000",
       "500000000",
       "440000000",
-      "200000000"
+      "200000000",
+      "80000000\u00a0(Non-Canon)\u2260"
     ],
     "jva": [
       "Hiroshi Kamiya"
@@ -23277,6 +23297,9 @@
     "birth": [
       "September 28th"
     ],
+    "bounty": [
+      "At least 1000000"
+    ],
     "jva": [
       "Masaya Takatsuka"
     ],
@@ -23317,6 +23340,9 @@
     ],
     "birth": [
       "December 26th"
+    ],
+    "bounty": [
+      "At least 100000"
     ],
     "jva": [
       "Masaya Takatsuka"
@@ -24055,6 +24081,9 @@
     ],
     "status": [
       "Alive"
+    ],
+    "bounty": [
+      "At least 1000000"
     ]
   },
   {
@@ -31060,60 +31089,6 @@
     ]
   },
   {
-    "id": "Aladdin",
-    "jname": [
-      "\u30a2\u30e9\u30c7\u30a3\u30f3"
-    ],
-    "rname": [
-      "Aradin"
-    ],
-    "ename": [
-      "Aladdin"
-    ],
-    "first": [
-      "Chapter 620",
-      "Episode 540"
-    ],
-    "affiliation": [
-      "Sun Pirates",
-      "Ryugu Kingdom (former)"
-    ],
-    "occupation": [
-      "Pirate",
-      "Doctor",
-      "First Mate",
-      "Soldier (former)",
-      "Slave (former)"
-    ],
-    "origin": [
-      "Grand Line (Ryugu Kingdom)"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "age": [
-      "46"
-    ],
-    "birth": [
-      "January 31st"
-    ],
-    "height": [
-      "627 cm (20'7\")"
-    ],
-    "blood type": [
-      "XF"
-    ],
-    "bounty": [
-      "Unknown"
-    ],
-    "jva": [
-      "Takashi Nagasako"
-    ],
-    "Funi eva": [
-      "Brad Smeaton"
-    ]
-  },
-  {
     "id": "Daidalos",
     "jname": [
       "\u30c0\u30a4\u30c0\u30ed\u30b9"
@@ -33685,7 +33660,7 @@
     ],
     "occupation": [
       "Admiral",
-      "Military Chief (former)",
+      "Guard Captain (former)",
       "Bodyguard (former)"
     ],
     "origin": [
@@ -38281,6 +38256,9 @@
     ],
     "occupation": [
       "Helmsman"
+    ],
+    "origin": [
+      "North Blue (Welbems Island)"
     ],
     "status": [
       "Unknown"
@@ -55075,6 +55053,31 @@
     ],
     "jva": [
       "Kanon Amane"
+    ]
+  },
+  {
+    "id": "Colon",
+    "jname": [
+      "\u30b3\u30ed\u30f3"
+    ],
+    "rname": [
+      "Koron"
+    ],
+    "ename": [
+      "Collun"
+    ],
+    "first": [
+      "Chapter 1076",
+      "Episode 1109"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "jva": [
+      "Arisa Sekine"
     ]
   },
   {
