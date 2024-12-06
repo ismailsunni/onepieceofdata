@@ -41,18 +41,10 @@ The Data of One Piece
 
 All scripts are run from root directory, a little bit confusing (for now) because I haven't set up the root directory
 
-### Scraping chapters and characters
+### Scraping chapters, characters, and volumes
 
 ```bash
-python ./scripts/chapter.py
-python ./scripts/to_csv.py
-python ./scripts/character.py
-```
-
-### Scraping volumes
-
-```bash
-python ./scripts/volume_all.py
+python src/main_scrapper.py
 ```
 
 ### Plan
