@@ -46,7 +46,7 @@ def parse_volume_table(soup: BeautifulSoup, volume_number: int):
 
 
 @timing_decorator
-def scrap_all_volume(last_volume: int, volumes_json_path: str):
+def scrap_volumes(last_volume: int, volumes_json_path: str):
     """Scrap all volume in one go"""
     http_pool = urllib3.PoolManager()
     r = http_pool.urlopen("GET", base_url)
@@ -66,5 +66,5 @@ def scrap_all_volume(last_volume: int, volumes_json_path: str):
 if __name__ == "__main__":
     last_volume = 110
     volumes_json_path = "./data/volumes.json"
-    scrap_all_volume(last_volume, volumes_json_path)
+    scrap_volumes(last_volume, volumes_json_path)
     print("fin")
