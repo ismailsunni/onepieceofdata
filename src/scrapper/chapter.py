@@ -62,7 +62,7 @@ def scrap_chapter(chapter: int):
 
 
 @timing_decorator
-def scrap_chapters(last_chapter: int, filename: str):
+def scrap_chapters(last_chapter: int, output_path: str):
     print(f"### Scrap chapters from 1 to {last_chapter} ###")
 
     list_of_chapter = range(1, last_chapter + 1)
@@ -76,7 +76,7 @@ def scrap_chapters(last_chapter: int, filename: str):
 
     print(f"Success to scrap {len(chapters)} chapters")
 
-    with open(filename, "w") as fp:
+    with open(output_path, "w") as fp:
         json.dump(chapters, fp, indent=2)
 
 
