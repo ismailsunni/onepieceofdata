@@ -1,32 +1,12 @@
 import urllib3
 from bs4 import BeautifulSoup
 import json
+from utils import timing_decorator
 
 base_url = "https://onepiece.fandom.com/wiki/Chapters_and_Volumes/Volumes"
-# last_volume = 107
 
 
-def scrap_all_volume(last_volume, volumes_json_path):
-    """Scrap all volume in one go"""
-    http_pool = urllib3.PoolManager()
-    r = http_pool.urlopen("GET", base_url)
-    html_page = r.data
-    soup = BeautifulSoup(html_page, "html.parser")
-
-    # Get table volume 1
-    # volume_data = parse_volume_table(soup, 1)
-    # print(volume_data)
-
-    all_volume = []
-    for volume in range(1, last_volume + 1):
-        volume_data = parse_volume_table(soup, volume)
-        all_volume.append(volume_data)
-
-    with open(volumes_json_path, "w") as f:
-        json.dump(all_volume, f)
-
-
-def parse_volume_table(soup, volume_number: int):
+def parse_volume_table(soup: BeautifulSoup, volume_number: int):
     print(f"Parsing volume {volume_number}")
     volume_table = soup.find("table", id=f"Volume_{volume_number}")
 
@@ -63,6 +43,24 @@ def parse_volume_table(soup, volume_number: int):
         "english_title": english_title,
         "cover_characters": cover_characters,
     }
+
+
+@timing_decorator
+def scrap_all_volume(last_volume: int, volumes_json_path: str):
+    """Scrap all volume in one go"""
+    http_pool = urllib3.PoolManager()
+    r = http_pool.urlopen("GET", base_url)
+    html_page = r.data
+    soup = BeautifulSoup(html_page, "html.parser")
+
+    # Make it parallel
+    all_volume = []
+    for volume in range(1, last_volume + 1):
+        volume_data = parse_volume_table(soup, volume)
+        all_volume.append(volume_data)
+
+    with open(volumes_json_path, "w") as f:
+        json.dump(all_volume, f)
 
 
 if __name__ == "__main__":
