@@ -39,11 +39,11 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
     conn.execute(
         """
         CREATE TABLE characters (
-            id INTEGER PRIMARY KEY,
-            ename TEXT,
+            id TEXT PRIMARY KEY,
+            name TEXT,
             origin TEXT,
             status TEXT,
-            birth DATE,
+            birth TEXT,
             blood_type TEXT
         )
         """
@@ -53,7 +53,7 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
         """
         CREATE TABLE coc (
             chapter INTEGER,
-            character INTEGER,
+            character TEXT,
             note TEXT,
         FOREIGN KEY(chapter) REFERENCES chapters(chapter),
         FOREIGN KEY(character) REFERENCES characters(id)
@@ -96,4 +96,57 @@ def load_chapters(conn: duckdb.DuckDBPyConnection, chapters_csv_path: str):
         except Exception as e:
             print(e)
             print(sql, (chapter_number, volume, title, pages, date, jump))
+            continue
+
+
+# Return the first item from a list or the item itself if it's not a list
+def get_string(attributes, key):
+    # TODO: simplify this
+    if key not in attributes.keys():
+        return None
+    else:
+        try:
+            return (
+                attributes[key][0]
+                if isinstance(attributes.get(key, None), list)
+                else attributes.get(key, None)
+            )
+        except Exception as e:
+            print("get_string error", e, attributes["id"])
+            return None
+
+
+def get_name(attributes):
+    name = ""
+    if "name" in attributes.keys():
+        name = get_string(attributes, "name")
+    if not name and "ename" in attributes.keys():
+        name = get_string(attributes, "ename")
+    if not name:
+        name = get_string(attributes, "id")
+    return name
+
+
+def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
+    with open(characters_json_path, "r") as f:
+        characters = json.load(f)
+    for character in characters:
+        try:
+            id = character["id"]
+            name = get_name(character)
+            origin = get_string(character, "origin")
+            status = get_string(character, "status")
+            birth = get_string(character, "birth")
+            blood_type = get_string(character, "blood type")
+            sql = """
+                INSERT INTO characters (id, name, origin, status, birth, blood_type)
+                VALUES (?, ?, ?, ?, ?, ?)
+                """
+        except Exception as e:
+            print("parsing error", e)
+            print(id, name, origin, status, birth, blood_type)
+        try:
+            conn.execute(sql, (id, name, origin, status, birth, blood_type))
+        except Exception as e:
+            print("sql error", e, sql)
             continue
