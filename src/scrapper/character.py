@@ -143,7 +143,7 @@ def scrap_single_character(character):
 
 
 @timing_decorator
-def parse_all_characters_parallel(character_csv_path: str, output_json_path: str):
+def scrap_characters(character_csv_path: str, character_json_path: str):
     df = pd.read_csv(character_csv_path)
 
     selected_rows = df.head(len(df))
@@ -162,7 +162,7 @@ def parse_all_characters_parallel(character_csv_path: str, output_json_path: str
 
     print(f"Success to scrap {len(characters)} of {len(df)}")
 
-    with open(output_json_path, "w") as fp:
+    with open(character_json_path, "w") as fp:
         json.dump(characters, fp, indent=2)
 
 
@@ -173,8 +173,8 @@ def pretty_print(value: dict):
 
 if __name__ == "__main__":
     character_csv_path = "./data/characters.csv"
-    output_json_path = "./data/characters_detail.json"
+    character_json_path = "./data/characters_detail.json"
 
-    parse_all_characters_parallel(character_csv_path, output_json_path)
+    scrap_characters(character_csv_path, character_json_path)
 
     print("fin")
