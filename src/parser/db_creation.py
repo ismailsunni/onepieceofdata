@@ -155,7 +155,7 @@ def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
                 """
         except Exception as e:
             print("parsing error", e)
-            print(id, name, origin, status, birth, blood_type)
+            print(character)
         try:
             conn.execute(sql, (id, name, origin, status, birth, blood_type))
         except Exception as e:
