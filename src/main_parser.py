@@ -1,3 +1,4 @@
+import configs
 from parser.db_creation import (
     create_db,
     create_tables,
@@ -9,17 +10,16 @@ from parser.db_creation import (
 
 
 if __name__ == "__main__":
-    db_path = "./data/op.duckdb"
-    volumes_json_path = "./data/volumes.json"
+    print("###### Start loading data ######")
 
-    conn = create_db(db_path)
+    conn = create_db(configs.db_path)
     create_tables(conn)
 
-    load_volume(conn, volumes_json_path)
-    load_chapters(conn, "./data/chapters.csv")
-    load_characters(conn, "./data/characters.json")
-    load_coc(conn, "./data/coc.csv")
+    load_volume(conn, configs.volumes_json_path)
+    load_chapters(conn, configs.chapters_csv)
+    load_characters(conn, configs.characters_json_path)
+    load_coc(conn, configs.coc_csv)
 
     conn.close()
 
-    print(f"Database created at {db_path}")
+    print("Finish loading data")
