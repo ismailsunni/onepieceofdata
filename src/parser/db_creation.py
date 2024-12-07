@@ -2,6 +2,8 @@ import duckdb
 import json
 import pandas as pd
 
+from utils import timing_decorator
+
 
 def create_db(duckdb_path: str) -> duckdb.DuckDBPyConnection:
     return duckdb.connect(duckdb_path)
@@ -54,7 +56,7 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
         CREATE TABLE coc (
             chapter INTEGER,
             character TEXT,
-            note TEXT,
+            note TEXT NULL,
         FOREIGN KEY(chapter) REFERENCES chapters(chapter),
         FOREIGN KEY(character) REFERENCES characters(id)
         )
@@ -62,9 +64,12 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
     )
 
 
+@timing_decorator
 def load_volume(conn: duckdb.DuckDBPyConnection, volume_json_path: str):
     with open(volume_json_path, "r") as f:
         volumes = json.load(f)
+    num_rows = len(volumes)
+    print("[Volume Table] Loading", num_rows, "rows...")
     for volume in volumes:
         volume_number = volume["volume_number"]
         title = volume["english_title"]
@@ -76,8 +81,11 @@ def load_volume(conn: duckdb.DuckDBPyConnection, volume_json_path: str):
         conn.execute(sql, (volume_number, title))
 
 
+@timing_decorator
 def load_chapters(conn: duckdb.DuckDBPyConnection, chapters_csv_path: str):
     chapters = pd.read_csv(chapters_csv_path)
+    num_rows = chapters.shape[0]
+    print("[Chapter Table] Loading", num_rows, "rows...")
     for _, chapter in chapters.iterrows():
         chapter_number = int(chapter["chapter"])
         volume = chapter["volume"]
@@ -127,9 +135,12 @@ def get_name(attributes):
     return name
 
 
+@timing_decorator
 def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
     with open(characters_json_path, "r") as f:
         characters = json.load(f)
+    num_rows = len(characters)
+    print("[Character Table] Loading", num_rows, "rows...")
     for character in characters:
         try:
             id = character["id"]
@@ -150,3 +161,29 @@ def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
         except Exception as e:
             print("sql error", e, sql)
             continue
+
+
+@timing_decorator
+def load_coc(conn: duckdb.DuckDBPyConnection, coc_csv_path: str):
+    coc = pd.read_csv(coc_csv_path)
+    num_rows = coc.shape[0]
+    print("[CoC Table] Loading", num_rows, "rows...")
+
+    # Replace NaN values with an empty string for the 'note' column
+    coc["note"] = coc["note"].fillna("")
+
+    # Prepare the SQL statement
+    sql = """
+        INSERT INTO coc (chapter, character, note)
+        VALUES (?, ?, ?)
+        """
+
+    # Convert the DataFrame to a list of tuples
+    data = coc.values.tolist()
+
+    # Execute the batch insert
+    try:
+        conn.executemany(sql, data)
+        conn.commit()
+    except Exception as e:
+        print(e)
