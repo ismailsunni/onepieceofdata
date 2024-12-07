@@ -89,6 +89,14 @@ def scrap_character_from_url(character_url: str):
     html_page = r.data
     soup = BeautifulSoup(html_page, "html.parser")
 
+    name_h2 = soup.find("h2", {"data-source": "name"})
+
+    character_name = None
+    if name_h2:
+        character_name = name_h2.text
+
+    character_info["name"] = character_name
+
     character_sections = soup.findAll(
         "section",
         {"class": "pi-item pi-group pi-border-color pi-collapse pi-collapse-open"},
