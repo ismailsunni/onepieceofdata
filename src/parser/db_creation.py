@@ -11,36 +11,36 @@ def create_db(duckdb_path: str) -> duckdb.DuckDBPyConnection:
 
 def create_tables(conn: duckdb.DuckDBPyConnection):
     conn.execute("DROP TABLE IF EXISTS coc CASCADE")
-    conn.execute("DROP TABLE IF EXISTS chapters CASCADE")
+    conn.execute("DROP TABLE IF EXISTS chapter CASCADE")
     conn.execute("DROP TABLE IF EXISTS volume CASCADE")
-    conn.execute("DROP TABLE IF EXISTS characters CASCADE")
+    conn.execute("DROP TABLE IF EXISTS character CASCADE")
 
     conn.execute(
         """
         CREATE TABLE volume (
-            volume_number INTEGER PRIMARY KEY,
-            english_title TEXT,
+            number INTEGER PRIMARY KEY,
+            title TEXT,
         )
         """
     )
 
     conn.execute(
         """
-        CREATE TABLE chapters (
-            chapter INTEGER PRIMARY KEY,
+        CREATE TABLE chapter (
+            number INTEGER PRIMARY KEY,
             volume INTEGER,
             title TEXT,
-            pages INTEGER,
+            num_page INTEGER,
             date DATE,
             jump TEXT,
-            FOREIGN KEY(volume) REFERENCES volume(volume_number)
+            FOREIGN KEY(volume) REFERENCES volume(number)
         )
         """
     )
 
     conn.execute(
         """
-        CREATE TABLE characters (
+        CREATE TABLE character (
             id TEXT PRIMARY KEY,
             name TEXT,
             origin TEXT,
@@ -57,8 +57,8 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
             chapter INTEGER,
             character TEXT,
             note TEXT NULL,
-        FOREIGN KEY(chapter) REFERENCES chapters(chapter),
-        FOREIGN KEY(character) REFERENCES characters(id)
+        FOREIGN KEY(chapter) REFERENCES chapter(number),
+        FOREIGN KEY(character) REFERENCES character(id)
         )
         """
     )
@@ -71,14 +71,13 @@ def load_volume(conn: duckdb.DuckDBPyConnection, volume_json_path: str):
     num_rows = len(volumes)
     print("[Volume Table] Loading", num_rows, "rows...")
     for volume in volumes:
-        volume_number = volume["volume_number"]
+        number = volume["volume_number"]
         title = volume["english_title"]
         sql = """
-            INSERT INTO volume (volume_number, english_title)
+            INSERT INTO volume (number, title)
             VALUES (?, ?)
             """
-        # print(sql, (volume_number, title))
-        conn.execute(sql, (volume_number, title))
+        conn.execute(sql, (number, title))
 
 
 @timing_decorator
@@ -87,23 +86,23 @@ def load_chapters(conn: duckdb.DuckDBPyConnection, chapters_csv_path: str):
     num_rows = chapters.shape[0]
     print("[Chapter Table] Loading", num_rows, "rows...")
     for _, chapter in chapters.iterrows():
-        chapter_number = int(chapter["chapter"])
+        number = int(chapter["chapter"])
         volume = chapter["volume"]
         if pd.isna(volume):
             volume = None
         title = chapter["name"]
-        pages = int(chapter["page"])
+        num_page = int(chapter["page"])
         date = chapter["date"]
         jump = chapter["jump"]
         sql = """
-            INSERT INTO chapters (chapter, volume, title, pages, date, jump)
+            INSERT INTO chapter (number, volume, title, num_page, date, jump)
             VALUES (?, ?, ?, ?, ?, ?)
             """
         try:
-            conn.execute(sql, (chapter_number, volume, title, pages, date, jump))
+            conn.execute(sql, (number, volume, title, num_page, date, jump))
         except Exception as e:
             print(e)
-            print(sql, (chapter_number, volume, title, pages, date, jump))
+            print(sql, (number, volume, title, num_page, date, jump))
             continue
 
 
@@ -150,7 +149,7 @@ def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
             birth = get_string(character, "birth")
             blood_type = get_string(character, "blood type")
             sql = """
-                INSERT INTO characters (id, name, origin, status, birth, blood_type)
+                INSERT INTO character (id, name, origin, status, birth, blood_type)
                 VALUES (?, ?, ?, ?, ?, ?)
                 """
         except Exception as e:
