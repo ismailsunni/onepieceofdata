@@ -46,7 +46,8 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
             origin TEXT,
             status TEXT,
             birth TEXT,
-            blood_type TEXT
+            blood_type TEXT,
+            blood_type_group TEXT
         )
         """
     )
@@ -80,6 +81,13 @@ def load_volume(conn: duckdb.DuckDBPyConnection, volume_json_path: str):
         conn.execute(sql, (number, title))
 
 
+def parse_volume(volume):
+    if not volume or pd.isna(volume) or volume == "":
+        return None
+    else:
+        return int(volume)
+
+
 @timing_decorator
 def load_chapters(conn: duckdb.DuckDBPyConnection, chapters_csv_path: str):
     chapters = pd.read_csv(chapters_csv_path)
@@ -87,7 +95,7 @@ def load_chapters(conn: duckdb.DuckDBPyConnection, chapters_csv_path: str):
     print("[Chapter Table] Loading", num_rows, "rows...")
     for _, chapter in chapters.iterrows():
         number = int(chapter["chapter"])
-        volume = chapter["volume"]
+        volume = parse_volume(chapter["volume"])
         if pd.isna(volume):
             volume = None
         title = chapter["name"]
@@ -134,6 +142,24 @@ def get_name(attributes):
     return name
 
 
+def get_blood_type_group(blood_type):
+    return blood_type.split(" ")[0]
+
+
+def parse_blood_type(attributes):
+    blood_type = None
+    blood_type_group = None
+    if "blood type" not in attributes.keys():
+        return blood_type, blood_type_group
+    if len(attributes["blood type"]) > 1:
+        blood_type = ", ".join(attributes["blood type"])
+        blood_type_group = "mixed"
+    else:
+        blood_type = attributes["blood type"][0]
+        blood_type_group = get_blood_type_group(blood_type)
+    return blood_type, blood_type_group
+
+
 @timing_decorator
 def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
     with open(characters_json_path, "r") as f:
@@ -147,16 +173,18 @@ def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
             origin = get_string(character, "origin")
             status = get_string(character, "status")
             birth = get_string(character, "birth")
-            blood_type = get_string(character, "blood type")
+            blood_type, blood_type_group = parse_blood_type(character)
             sql = """
-                INSERT INTO character (id, name, origin, status, birth, blood_type)
-                VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO character (id, name, origin, status, birth, blood_type, blood_type_group)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
                 """
         except Exception as e:
             print("parsing error", e)
             print(character)
         try:
-            conn.execute(sql, (id, name, origin, status, birth, blood_type))
+            conn.execute(
+                sql, (id, name, origin, status, birth, blood_type, blood_type_group)
+            )
         except Exception as e:
             print("sql error", e, sql)
             continue
