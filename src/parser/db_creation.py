@@ -47,7 +47,9 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
             status TEXT,
             birth TEXT,
             blood_type TEXT,
-            blood_type_group TEXT
+            blood_type_group TEXT,
+            bounties TEXT,
+            bounty BIGINT
         )
         """
     )
@@ -160,6 +162,39 @@ def parse_blood_type(attributes):
     return blood_type, blood_type_group
 
 
+def parse_bounty(attributes):
+    bounty = None
+    bounties = None
+    if "bounty" not in attributes.keys():
+        return bounty, bounties
+        # if len(attributes["bounty"]) > 1:
+    bounties = ";".join(attributes["bounty"])
+    first_entry = attributes["bounty"][0].replace("¥", "")
+    if "★" in first_entry:
+        if len(attributes["bounty"]) > 1:
+            first_entry = attributes["bounty"][1]
+        else:
+            first_entry = first_entry.replace("★", "")
+    if first_entry in ["Unknown", ""] or "Unknown" in first_entry:
+        bounty = None
+    else:
+        try:
+            bounty = int(
+                first_entry.split(" ")[-1]
+                .replace(";", "")
+                .replace("(", "")
+                .replace(")", "")
+            )
+        except ValueError:
+            bounty = int(
+                first_entry.split(" ")[0]
+                .replace(";", "")
+                .replace("(", "")
+                .replace(")", "")
+            )
+    return bounties, bounty
+
+
 @timing_decorator
 def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
     with open(characters_json_path, "r") as f:
@@ -174,16 +209,28 @@ def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
             status = get_string(character, "status")
             birth = get_string(character, "birth")
             blood_type, blood_type_group = parse_blood_type(character)
+            bounties, bounty = parse_bounty(character)
             sql = """
-                INSERT INTO character (id, name, origin, status, birth, blood_type, blood_type_group)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO character (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """
         except Exception as e:
             print("parsing error", e)
             print(character)
         try:
             conn.execute(
-                sql, (id, name, origin, status, birth, blood_type, blood_type_group)
+                sql,
+                (
+                    id,
+                    name,
+                    origin,
+                    status,
+                    birth,
+                    blood_type,
+                    blood_type_group,
+                    bounties,
+                    bounty,
+                ),
             )
         except Exception as e:
             print("sql error", e, sql)
