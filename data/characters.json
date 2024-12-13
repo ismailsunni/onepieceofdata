@@ -4733,7 +4733,7 @@
       "Mikan Farmer"
     ],
     "origin": [
-      "East Blue"
+      "East Blue (Oykot Kingdom)"
     ],
     "residence": [
       "Cocoyasi Village",
@@ -11856,10 +11856,13 @@
       "Sabaody Archipelago (former, temporary)"
     ],
     "alias": [
-      "PX-0"
+      "PX-0",
+      "\"Kumachi\""
     ],
     "epithet": [
-      "\"Tyrant\""
+      "\"Tyrant\"",
+      "\"Pacifist\"",
+      "\"Hero\""
     ],
     "status": [
       "Alive"
@@ -16501,7 +16504,7 @@
       "44000000"
     ],
     "jva": [
-      "Kazuki Yao",
+      "Kazuki Yao (Episode 233-1111)",
       "Junko Noda (young)"
     ],
     "Funi eva": [
@@ -18189,6 +18192,7 @@
       "Clan of D."
     ],
     "occupation": [
+      "Teacher",
       "Vice Admiral (former)"
     ],
     "origin": [
@@ -47144,9 +47148,6 @@
     "Funi eva": [
       "Gary Furlong"
     ],
-    "dfname": [
-      "SMILE"
-    ],
     "dfename": [
       "Rabbit SMILE"
     ],
@@ -54362,6 +54363,10 @@
     "affiliation": [
       "Big Mom Pirates"
     ],
+    "occupation": [
+      "Living Weapon",
+      "Servant"
+    ],
     "origin": [
       "Grand Line (Onigashima)"
     ],
@@ -55282,6 +55287,10 @@
     ],
     "affiliation": [
       "Big Mom Pirates"
+    ],
+    "occupation": [
+      "Living Weapon",
+      "Servant"
     ],
     "status": [
       "Unknown"
