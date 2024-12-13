@@ -167,10 +167,9 @@ def parse_bounty(attributes):
     bounties = None
     if "bounty" not in attributes.keys():
         return bounty, bounties
-        # if len(attributes["bounty"]) > 1:
     bounties = ";".join(attributes["bounty"])
     first_entry = attributes["bounty"][0].replace("¥", "")
-    if "★" in first_entry:
+    if "★" in first_entry or first_entry == "Unknown" or first_entry == "":
         if len(attributes["bounty"]) > 1:
             first_entry = attributes["bounty"][1]
         else:
@@ -192,6 +191,8 @@ def parse_bounty(attributes):
                 .replace("(", "")
                 .replace(")", "")
             )
+    if attributes["id"] == "Buggy":
+        bounty = 3189000000  # 15000000
     return bounties, bounty
 
 
