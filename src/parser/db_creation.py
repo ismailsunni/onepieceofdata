@@ -49,7 +49,8 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
             blood_type TEXT,
             blood_type_group TEXT,
             bounties TEXT,
-            bounty BIGINT
+            bounty BIGINT,
+            age INT
         )
         """
     )
@@ -196,6 +197,32 @@ def parse_bounty(attributes):
     return bounties, bounty
 
 
+def parse_age(attributes):
+    dash = "–"
+    other_dash = "-"
+    age = None
+    if "age" not in attributes.keys():
+        return age
+    ages = attributes["age"]
+
+    def parse_raw_age(raw_age):
+        age_string = raw_age.split(" ")
+        if age_string[0] in ["Over", "Under", "Roughly", "Bas:", "And:", "Kerville:"]:
+            return int(age_string[1])
+        elif age_string[0] == "At" and age_string[1] == "least":
+            return int(age_string[2])
+        elif dash in age_string[0]:  # Makino's Child, get the max age
+            return int(age_string[0].split(dash)[1])
+        elif other_dash in age_string[0]:  # Bonney's age, get the max age
+            return int(age_string[0].split(other_dash)[1])
+        elif "biologically" in age_string[0]:  # Momonosuke
+            return int(age_string[1].split(")")[0])
+        else:
+            return int(age_string[0])
+
+    return max([parse_raw_age(age) for age in ages])
+
+
 @timing_decorator
 def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
     with open(characters_json_path, "r") as f:
@@ -211,9 +238,10 @@ def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
             birth = get_string(character, "birth")
             blood_type, blood_type_group = parse_blood_type(character)
             bounties, bounty = parse_bounty(character)
+            age = parse_age(character)
             sql = """
-                INSERT INTO character (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO character (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """
         except Exception as e:
             print("parsing error", e)
@@ -231,6 +259,7 @@ def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
                     blood_type_group,
                     bounties,
                     bounty,
+                    age,
                 ),
             )
         except Exception as e:
