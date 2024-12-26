@@ -15925,7 +15925,7 @@
       "P\u012bpur\u012b Ruru"
     ],
     "ename": [
-      "Peepley Lulu (Viz)",
+      "Peepley Lulu (VIZ)",
       "Peeply Lulu (Funimation)"
     ],
     "first": [
@@ -15936,7 +15936,7 @@
       "Galley-La Company"
     ],
     "occupation": [
-      "Dock One Foreman",
+      "Dock 1 Foreman",
       "Shipwright"
     ],
     "origin": [
@@ -16504,7 +16504,8 @@
       "44000000"
     ],
     "jva": [
-      "Kazuki Yao (Episode 233-1111)",
+      "Kazuki Yao (2005 - 2024)",
+      "Subaru Kimura (2025\u2013)",
       "Junko Noda (young)"
     ],
     "Funi eva": [
@@ -18424,7 +18425,7 @@
       "Vice Admiral"
     ],
     "status": [
-      "Alive"
+      "Unknown"
     ],
     "birth": [
       "October 8th"
@@ -30174,7 +30175,7 @@
       "H\u014ddi J\u014dnzu"
     ],
     "ename": [
-      "Hody Jones (Viz)",
+      "Hody Jones (Viz, Funimation (Special Edited Version))",
       "Hordy Jones (Funimation)"
     ],
     "first": [
@@ -30796,7 +30797,8 @@
       "S (RH-)"
     ],
     "jva": [
-      "K\u014dji Haramaki (Splash), Shinichi Yamada (Splatter)"
+      "K\u014dji Haramaki (Splash)",
+      "Shinichi Yamada (Splatter)"
     ],
     "Funi eva": [
       "Unknown"
@@ -51321,7 +51323,7 @@
     ],
     "ename": [
       "Rocks D. Xebec (VIZ)",
-      "Rox (Funimation, formerly VIZ )"
+      "Rox (Funimation, formerly VIZ)"
     ],
     "first": [
       "Chapter 957",
@@ -57585,6 +57587,58 @@
     ],
     "residence": [
       "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Ange",
+    "name": "Ange",
+    "jname": [
+      "\u30a2\u30f3\u30b8\u30a7"
+    ],
+    "rname": [
+      "Anje"
+    ],
+    "ename": [
+      "Ange"
+    ],
+    "first": [
+      "Chapter 1131"
+    ],
+    "occupation": [
+      "Librarian",
+      "Assistant Teacher"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Ripley",
+    "name": "Ripley",
+    "jname": [
+      "\u30ea\u30d7\u30ea\u30fc"
+    ],
+    "rname": [
+      "Ripur\u012b"
+    ],
+    "ename": [
+      "Ripley"
+    ],
+    "first": [
+      "Chapter 1134"
+    ],
+    "occupation": [
+      "Warrior",
+      "Biology Teacher"
+    ],
+    "residence": [
+      "Elbaph (Sun World)"
     ],
     "status": [
       "Alive"

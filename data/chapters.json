@@ -122122,6 +122122,12 @@
         "full_text": "Fukurokuju"
       },
       {
+        "name": "Kakunoshin",
+        "url": "/wiki/Kakunoshin",
+        "note": "",
+        "full_text": "Kakunoshin"
+      },
+      {
         "name": "Jujiro",
         "url": "/wiki/Jujiro",
         "note": "",
@@ -130348,6 +130354,12 @@
         "full_text": "Ukon"
       },
       {
+        "name": "Kakunoshin",
+        "url": "/wiki/Kakunoshin",
+        "note": "",
+        "full_text": "Kakunoshin"
+      },
+      {
         "name": "Carrot",
         "url": "/wiki/Carrot",
         "note": "",
@@ -131872,6 +131884,12 @@
         "full_text": "Hyougoro"
       },
       {
+        "name": "Kakunoshin",
+        "url": "/wiki/Kakunoshin",
+        "note": "",
+        "full_text": "Kakunoshin"
+      },
+      {
         "name": "Inuarashi",
         "url": "/wiki/Inuarashi",
         "note": "",
@@ -132566,6 +132584,18 @@
         "url": "/wiki/Kagero",
         "note": "",
         "full_text": "Kagero"
+      },
+      {
+        "name": "Jujiro",
+        "url": "/wiki/Jujiro",
+        "note": "",
+        "full_text": "Jujiro"
+      },
+      {
+        "name": "Kakunoshin",
+        "url": "/wiki/Kakunoshin",
+        "note": "",
+        "full_text": "Kakunoshin"
       },
       {
         "name": "Inuarashi",
@@ -133268,6 +133298,18 @@
         "url": "/wiki/Jujiro",
         "note": "",
         "full_text": "Jujiro"
+      },
+      {
+        "name": "Kojuro",
+        "url": "/wiki/Kojuro",
+        "note": "",
+        "full_text": "Kojuro"
+      },
+      {
+        "name": "Kakunoshin",
+        "url": "/wiki/Kakunoshin",
+        "note": "",
+        "full_text": "Kakunoshin"
       },
       {
         "name": "Fukurokuju",
@@ -138318,6 +138360,12 @@
         "url": "/wiki/Ukon",
         "note": "",
         "full_text": "Ukon"
+      },
+      {
+        "name": "Kakunoshin",
+        "url": "/wiki/Kakunoshin",
+        "note": "",
+        "full_text": "Kakunoshin"
       },
       {
         "name": "Roddy",
@@ -160804,6 +160852,12 @@
         "full_text": "Loki"
       },
       {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
         "name": "Lilith",
         "url": "/wiki/Vegapunk/Lilith",
         "note": "",
@@ -161148,6 +161202,12 @@
         "full_text": "Jaguar D. Saul"
       },
       {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
         "name": "Vegapunk",
         "url": "/wiki/Vegapunk",
         "note": "flashback",
@@ -161236,6 +161296,142 @@
         "url": "/wiki/Speed",
         "note": "cover",
         "full_text": "Speed (cover)"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1134",
+    "ename": "The Owl Library",
+    "page": "19",
+    "date2": "December 23, 2024",
+    "jump": "2025 Issue 4-5",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "url": "/wiki/Jewelry_Bonney",
+        "note": "",
+        "full_text": "Jewelry Bonney"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Vegapunk",
+        "url": "/wiki/Vegapunk",
+        "note": "image",
+        "full_text": "Vegapunk (image)"
+      },
+      {
+        "name": "Lilith",
+        "url": "/wiki/Vegapunk/Lilith",
+        "note": "",
+        "full_text": "Lilith"
+      },
+      {
+        "name": "Clou D. Clover",
+        "url": "/wiki/Clou_D._Clover",
+        "note": "flashback",
+        "full_text": "Clou D. Clover (flashback)"
       }
     ]
   }
