@@ -31,8 +31,8 @@ Soro,Soro,/wiki/Soro
 Rokkaku,Rokkaku,/wiki/Rokkaku
 Ukkari_(Character),Ukkari,/wiki/Ukkari_(Character)
 Ririka,Ririka,/wiki/Ririka
-Kuina,Kuina,/wiki/Kuina
-Koushirou,Koushirou,/wiki/Koushirou
+Shimotsuki_Kuina,Kuina,/wiki/Shimotsuki_Kuina
+Shimotsuki_Koushirou,Koushirou,/wiki/Shimotsuki_Koushirou
 Buggy,Buggy,/wiki/Buggy
 Ripper,Ripper,/wiki/Ripper
 Tightrope_Walking_Funan_Bros,Tightrope Walking Funan Bros,/wiki/Buggy_Pirates#Tightrope_Walking_Funan_Bros
@@ -120,7 +120,7 @@ Smoker,Smoker,/wiki/Smoker
 Hanger,Hanger,/wiki/Hanger
 Ipponmatsu,Ipponmatsu,/wiki/Ipponmatsu
 Ipponume,Ipponume,/wiki/Ipponume
-Mashikaku_(Marine),Mashikaku,/wiki/Mashikaku_(Marine)
+Mashikaku,Mashikaku,/wiki/Mashikaku
 Sapi,Sapi,/wiki/Sapi
 Yu,Yu,/wiki/Yu
 Monkey_D._Dragon,Dragon,/wiki/Monkey_D._Dragon
@@ -146,7 +146,6 @@ Banchi,Banchi,/wiki/Banchi
 Brogy,Brogy,/wiki/Brogy
 Brontosaurus,Brontosaurus,/wiki/Brontosaurus
 Dorry,Dorry,/wiki/Dorry
-Bronte_Zaurus,Bronte Zaurus,/wiki/Bronte_Zaurus
 Samurai_Batts,Samurai Batts,/wiki/Samurai_Batts
 Galdino,Mr. 3,/wiki/Galdino
 Marianne,Miss Goldenweek,/wiki/Marianne
@@ -314,6 +313,9 @@ Nola,Nola,/wiki/Nola
 Isa,Isa,/wiki/Isa
 Kinderella,Miss Universe,/wiki/Kinderella
 Hotori_and_Kotori,Hotori and Kotori,/wiki/Hotori_and_Kotori
+Mayushika,Mayushika,/wiki/Mayushika
+Yotsubane,Yotsubane,/wiki/Yotsubane
+Warashi,Warashi,/wiki/Warashi
 Moyle,Moyle,/wiki/Moyle
 Mochi,Mochi,/wiki/Mochi
 Shandia_Chief,Shandia Chief,/wiki/Shandia_Chief
@@ -347,7 +349,6 @@ Itomimizu,Itomimizu,/wiki/Itomimizu
 Chuchun,Chuchun,/wiki/Chuchun
 Capote,Capote,/wiki/Capote
 Monda,Monda,/wiki/Monda
-Kapoty,Capote,/wiki/Kapoty
 Pickles,Pickles,/wiki/Pickles
 Big_Pan,Big Pan,/wiki/Big_Pan
 Goro,Goro,/wiki/Goro
@@ -486,7 +487,7 @@ Gallant_Hippo,Gallant Hippo,/wiki/Gallant_Hippo
 Oars,Oars,/wiki/Oars
 Automata,Automata,/wiki/Automata
 Risky_Brothers,Risky Brothers,/wiki/Risky_Brothers
-Lola,Lola,/wiki/Lola
+Charlotte_Lola,Lola,/wiki/Charlotte_Lola
 Goo,Goo,/wiki/Goo
 Asahija,Asahija,/wiki/Asahija
 Margarita,Margarita,/wiki/Margarita
@@ -515,6 +516,7 @@ Basil_Hawkins,Basil Hawkins,/wiki/Basil_Hawkins
 Trafalgar_D._Water_Law,Trafalgar Law,/wiki/Trafalgar_D._Water_Law
 Bepo,Bepo,/wiki/Bepo
 Shachi,Shachi,/wiki/Shachi
+Penguin,Penguin,/wiki/Penguin
 Jewelry_Bonney,Jewelry Bonney,/wiki/Jewelry_Bonney
 Gyogyo,Gyogyo,/wiki/Gyogyo
 Potato,Potato,/wiki/Potato
@@ -530,7 +532,6 @@ Judy,Judy,/wiki/Judy
 Peterman,Peterman,/wiki/Peterman
 Heat,Heat,/wiki/Heat
 Wire,Wire,/wiki/Wire
-Penguin,Penguin,/wiki/Penguin
 Stansen,Stansen,/wiki/Stansen
 Disco,Disco,/wiki/Disco
 Marin,Marin,/wiki/Marin
@@ -571,7 +572,6 @@ Kitton,Kitton,/wiki/Kitton
 Taroimo,Taroimo,/wiki/Taroimo
 Haredas,Haredas,/wiki/Haredas
 Stalker,Stalker,/wiki/Stalker
-Mashikaku,Mashikaku,/wiki/Mashikaku
 Heracles,Heracles,/wiki/Heracles
 Pekkori,Pekkori,/wiki/Pekkori
 Minotaurus,Minotaurus,/wiki/Minotaurus
@@ -590,6 +590,7 @@ Puzzle_Scorpions,Puzzle Scorpions,/wiki/Puzzle_Scorpions
 Saldeath,Saldeath,/wiki/Saldeath
 Sadi,Sadi,/wiki/Sadi
 Minokoala,Minokoala,/wiki/Minokoala
+Dobby_Ibadonbo,Dobby Ibadonbo,/wiki/Dobby_Ibadonbo
 Daigin,Daigin,/wiki/Daigin
 Minorhinoceros,Minorhinoceros,/wiki/Minorhinoceros
 Emporio_Ivankov,Iva,/wiki/Emporio_Ivankov
@@ -600,6 +601,7 @@ Muchana,Muchana,/wiki/Muchana
 Wolf_Unit,Wolf Unit,/wiki/Wolf_Unit
 Kinoko,Kinoko,/wiki/Kinoko
 Inazuma,Inazuma,/wiki/Inazuma
+Usakkov,Usakkov,/wiki/Usakkov
 Bellett,Bellett,/wiki/Bellett
 Shiryu,Shiryu,/wiki/Shiryu
 Wolf_unit,Wolf unit,/wiki/Wolf_unit
@@ -694,7 +696,6 @@ Julius,Julius,/wiki/Julius
 Happygun,Happygun,/wiki/Happygun
 Gab,Gab,/wiki/Gab
 Chadros_Higelyges,Brownbeard,/wiki/Chadros_Higelyges
-Dobby_Ibadonbo,Dobby Ibadonbo,/wiki/Dobby_Ibadonbo
 Dogra,Dogra,/wiki/Dogra
 Magra,Magra,/wiki/Magra
 Porchemy,Porchemy,/wiki/Porchemy
@@ -731,7 +732,6 @@ Turco,Fake Franky,/wiki/Turco
 Caribou,Caribou,/wiki/Caribou
 Coribou,Coribou,/wiki/Coribou
 Humphrey,Humphrey,/wiki/Humphrey
-Demaro_Black,Fake Luffy,/wiki/Demaro_Black
 Beak_Remark,Beak Remark,/wiki/Beak_Remark
 Albion,Albion,/wiki/Albion
 Lip_Doughty,Lip Doughty,/wiki/Lip_Doughty
@@ -809,6 +809,7 @@ Napoleon,Napoleon,/wiki/Napoleon
 Nitro,Nitro,/wiki/Nitro
 Pike,Pike,/wiki/Pike
 Bomba_(Marine),Bomba,/wiki/Bomba_(Marine)
+Lola,Lola,/wiki/Lola
 Dragon_Number_Thirteen,Dragon Number Thirteen,/wiki/Dragon_Number_Thirteen
 Kin%27emon,Samurai,/wiki/Kin%27emon
 Monet,Harpy,/wiki/Monet
@@ -1013,7 +1014,6 @@ Vinsmoke_Judge,Vinsmoke Judge,/wiki/Vinsmoke_Judge
 Charlotte_Perospero,Charlotte Perospero,/wiki/Charlotte_Perospero
 Capone_Pez,Capone Pez,/wiki/Capone_Pez
 Charlotte_Cracker,Charlotte Cracker,/wiki/Charlotte_Cracker
-Charlotte_Lola,Lola,/wiki/Charlotte_Lola
 Kingbaum,Kingbaum,/wiki/Kingbaum
 Howling_Gab,Howling Gab,/wiki/Howling_Gab
 Cosette,Cosette,/wiki/Cosette
@@ -1133,6 +1133,7 @@ Tritobu,Tritobu,/wiki/Tritobu
 Imu,Imu,/wiki/Imu
 Gion,Gion,/wiki/Gion
 Tokikake,Tokikake,/wiki/Tokikake
+Figarland_Shamrock,Figarland Shamrock,/wiki/Figarland_Shamrock
 Seki,Seki,/wiki/Seki
 Stroganoff,Stroganoff,/wiki/Stroganoff
 Potaufeu,Potaufeu,/wiki/Potaufeu
@@ -1281,6 +1282,7 @@ Shimotsuki_Ushimaru,Shimotsuki Ushimaru,/wiki/Shimotsuki_Ushimaru
 Inbi,Inbi,/wiki/Inbi
 Jaki,Jaki,/wiki/Jaki
 Goki,Goki,/wiki/Goki
+Gattenshochinosukeo,Gattenshochinosukeo,/wiki/Gattenshochinosukeo
 Jugemu_Jugemuko,Jugemu Jugemuko,/wiki/Jugemu_Jugemuko
 Chokyumei-no_Chosuke,Chokyumei-no Chosuke,/wiki/Chokyumei-no_Chosuke
 Shinosuke,Shinosuke,/wiki/Shinosuke
@@ -1399,8 +1401,6 @@ Bubblegum,Bubblegum,/wiki/Bubblegum
 Kazenbo,Kazenbo,/wiki/Kazenbo
 Some,Some,/wiki/Some
 Shimotsuki_Kouzaburou,Shimotsuki Kouzaburou,/wiki/Shimotsuki_Kouzaburou
-Shimotsuki_Koushirou,Koushirou,/wiki/Shimotsuki_Koushirou
-Shimotsuki_Kuina,Kuina,/wiki/Shimotsuki_Kuina
 Chuji,Chuji,/wiki/Chuji
 Rokki,Rokki,/wiki/Rokki
 Reck,Reck,/wiki/Reck
@@ -1420,10 +1420,10 @@ Azuki,Azuki,/wiki/Azuki
 Sennorikyuru,Sennorikyuru,/wiki/Sennorikyuru
 Adio_Suerte,Adio Suerte,/wiki/Adio_Suerte
 Lim,Lim,/wiki/Lim
-Wandering_Kung_Fu_Dugong,Kung-Fu Dugong,/wiki/Animal_Species/Video_Games#Wandering_Kung_Fu_Dugong
-Sazae_Kanchou,Sazae Kanchou,/wiki/Animal_Species/Strong_World#Sazae_Kanchou
+Wandering_Kung_Fu_Dugong,Wandering Kung-Fu Dugong,/wiki/Animal_Species/Video_Games#Wandering_Kung_Fu_Dugong
+Ogre_Sazae_Kancho,Ogre Sazae Kancho,/wiki/Animal_Species/Video_Games#Ogre_Sazae_Kancho
 Shogun_Jishi,Shogun Jishi,/wiki/Animal_Species/Strong_World#Shogun_Jishi
-Baroque_Panda,Baroque Panda,/wiki/Animal_Species/Video_Games#Baroque_Panda
+Rock_Panda,Rock Panda,/wiki/Animal_Species/Strong_World#Rock_Panda
 Smiley_Risu,Smiley Risu,/wiki/Animal_Species/Video_Games#Smiley_Risu
 Hidélie_Penguin,Hidélie Penguin,/wiki/Animal_Species/Video_Games#Hidélie_Penguin
 Kaio_Dragon,Kaio Dragon,/wiki/Animal_Species/Video_Games#Kaio_Dragon
@@ -1450,6 +1450,7 @@ Buckingham_Stussy,Buckingham Stussy,/wiki/Buckingham_Stussy
 Ratel,Ratel,/wiki/Ratel
 Iyan%27eno_Chinode,Iyan'eno Chinode,/wiki/Iyan%27eno_Chinode
 Colon,Colon,/wiki/Colon
+Mato,Mato,/wiki/Mato
 Hound,Hound,/wiki/Hound
 Guillotine,Guillotine,/wiki/Guillotine
 Red_King,Red King,/wiki/Red_King
@@ -1460,7 +1461,6 @@ Linaria,Linaria,/wiki/Linaria
 Oli,Oli,/wiki/Oli
 Jiron,Jiron,/wiki/Jiron
 Pluming,Pluming,/wiki/Pluming
-Usakkov,Usakkov,/wiki/Usakkov
 Nefertari_D._Lili,Nefertari Lili,/wiki/Nefertari_D._Lili
 Figarland_Garling,Figarland Garling,/wiki/Figarland_Garling
 Tosa,Tosa,/wiki/Tosa
@@ -1491,3 +1491,7 @@ Glutbunny,Glutbunny,/wiki/Glutbunny
 Piper,Piper,/wiki/Piper
 Ange,Ange,/wiki/Ange
 Ripley,Ripley,/wiki/Ripley
+Biblo,Biblo,/wiki/Biblo
+Gunko,Gunko,/wiki/Gunko
+Harald,Harald,/wiki/Harald
+Cerberus_(Sword),Cerberus,/wiki/Cerberus_(Sword)
