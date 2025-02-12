@@ -118,8 +118,8 @@
       {
         "name": "Mikio Itoo",
         "url": "/wiki/Mikio_Itoo",
-        "note": "on wanted poster",
-        "full_text": "Mikio Itoo (on wanted poster)"
+        "note": "wanted poster",
+        "full_text": "Mikio Itoo (wanted poster)"
       }
     ]
   },
@@ -331,13 +331,13 @@
       },
       {
         "name": "Kuina",
-        "url": "/wiki/Kuina",
+        "url": "/wiki/Shimotsuki_Kuina",
         "note": "flashback",
         "full_text": "Kuina (flashback)"
       },
       {
         "name": "Koushirou",
-        "url": "/wiki/Koushirou",
+        "url": "/wiki/Shimotsuki_Koushirou",
         "note": "flashback",
         "full_text": "Koushirou (flashback)"
       },
@@ -1964,8 +1964,8 @@
       {
         "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
-        "note": "K.O",
-        "full_text": "Monkey D. Luffy (K.O)"
+        "note": "K.O.",
+        "full_text": "Monkey D. Luffy (K.O.)"
       },
       {
         "name": "Roronoa Zoro",
@@ -2022,8 +2022,8 @@
       {
         "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
-        "note": "K.O",
-        "full_text": "Monkey D. Luffy (K.O)"
+        "note": "K.O.",
+        "full_text": "Monkey D. Luffy ..(K.O.)"
       },
       {
         "name": "Roronoa Zoro",
@@ -3599,7 +3599,7 @@
       },
       {
         "name": "Kuina",
-        "url": "/wiki/Kuina",
+        "url": "/wiki/Shimotsuki_Kuina",
         "note": "flashback",
         "full_text": "Kuina (flashback)"
       },
@@ -7681,7 +7681,7 @@
       },
       {
         "name": "Mashikaku",
-        "url": "/wiki/Mashikaku_(Marine)",
+        "url": "/wiki/Mashikaku",
         "note": "",
         "full_text": "Mashikaku"
       },
@@ -7899,7 +7899,7 @@
       },
       {
         "name": "Kuina",
-        "url": "/wiki/Kuina",
+        "url": "/wiki/Shimotsuki_Kuina",
         "note": "mentioned",
         "full_text": "Kuina (mentioned)"
       }
@@ -9180,10 +9180,10 @@
         "full_text": "Brogy"
       },
       {
-        "name": "Bronte Zaurus",
-        "url": "/wiki/Bronte_Zaurus",
+        "name": "Brontosaurus",
+        "url": "/wiki/Brontosaurus",
         "note": "",
-        "full_text": "Bronte Zaurus"
+        "full_text": "Brontosaurus"
       },
       {
         "name": "Nefertari Vivi",
@@ -16255,7 +16255,7 @@
       },
       {
         "name": "Koushirou",
-        "url": "/wiki/Koushirou",
+        "url": "/wiki/Shimotsuki_Koushirou",
         "note": "flashback",
         "full_text": "Koushirou (flashback)"
       },
@@ -16301,7 +16301,7 @@
       },
       {
         "name": "Koushirou",
-        "url": "/wiki/Koushirou",
+        "url": "/wiki/Shimotsuki_Koushirou",
         "note": "flashback",
         "full_text": "Koushirou (flashback)"
       },
@@ -16991,7 +16991,7 @@
       },
       {
         "name": "Mashikaku",
-        "url": "/wiki/Mashikaku_(Marine)",
+        "url": "/wiki/Mashikaku",
         "note": "",
         "full_text": "Mashikaku"
       },
@@ -18259,7 +18259,7 @@
       },
       {
         "name": "Mashikaku",
-        "url": "/wiki/Mashikaku_(Marine)",
+        "url": "/wiki/Mashikaku",
         "note": "",
         "full_text": "Mashikaku"
       },
@@ -20076,8 +20076,8 @@
       {
         "name": "Mont Blanc Noland",
         "url": "/wiki/Mont_Blanc_Noland",
-        "note": "",
-        "full_text": "Mont Blanc Noland"
+        "note": "Flashback",
+        "full_text": "Mont Blanc Noland (Flashback)"
       }
     ]
   },
@@ -23588,28 +23588,28 @@
     "jump": "2003 Issue 12",
     "characters": [
       {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
       },
       {
-        "name": "Robin",
+        "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Zoro"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Enel",
@@ -23658,34 +23658,34 @@
     "jump": "2003 Issue 13",
     "characters": [
       {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
         "name": "Sanji",
         "url": "/wiki/Sanji",
         "note": "cover",
         "full_text": "Sanji (cover)"
       },
       {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Chopper",
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "",
-        "full_text": "Chopper"
+        "full_text": "Tony Tony Chopper"
       },
       {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Zoro"
-      },
-      {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Ohm",
@@ -23702,8 +23702,8 @@
       {
         "name": "Kamakiri",
         "url": "/wiki/Kamakiri",
-        "note": "",
-        "full_text": "Kamakiri"
+        "note": "KO",
+        "full_text": "Kamakiri (KO)"
       },
       {
         "name": "Raki",
@@ -23722,10 +23722,16 @@
     "jump": "2003 Issue 14",
     "characters": [
       {
-        "name": "Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Chopper"
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
@@ -23734,16 +23740,16 @@
         "full_text": "Nami"
       },
       {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Zoro"
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "cover",
+        "full_text": "Tony Tony Chopper (cover)"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
+        "name": "Enel",
+        "url": "/wiki/Enel",
+        "note": "Flashback",
+        "full_text": "Enel (Flashback)"
       },
       {
         "name": "Ohm",
@@ -23758,10 +23764,10 @@
         "full_text": "Holy"
       },
       {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
+        "name": "Gode",
+        "url": "/wiki/Gode",
+        "note": "Flashback",
+        "full_text": "Gode (Flashback)"
       },
       {
         "name": "Wyper",
@@ -23770,16 +23776,10 @@
         "full_text": "Wyper"
       },
       {
-        "name": "Conis",
-        "url": "/wiki/Conis",
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
         "note": "",
-        "full_text": "Conis"
-      },
-      {
-        "name": "Pagaya",
-        "url": "/wiki/Pagaya",
-        "note": "",
-        "full_text": "Pagaya"
+        "full_text": "Aisa"
       },
       {
         "name": "Gan Fall",
@@ -23792,6 +23792,18 @@
         "url": "/wiki/Pierre",
         "note": "",
         "full_text": "Pierre"
+      },
+      {
+        "name": "Conis",
+        "url": "/wiki/Conis",
+        "note": "",
+        "full_text": "Conis"
+      },
+      {
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
+        "note": "",
+        "full_text": "Pagaya"
       },
       {
         "name": "King of the Sky",
@@ -23816,22 +23828,22 @@
         "full_text": "Roronoa Zoro"
       },
       {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "",
-        "full_text": "Tony Tony Chopper"
+        "note": "KO",
+        "full_text": "Tony Tony Chopper (KO)"
       },
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
         "full_text": "Nico Robin"
-      },
-      {
-        "name": "Nami",
-        "url": "/wiki/Nami",
-        "note": "",
-        "full_text": "Nami"
       },
       {
         "name": "Ohm",
@@ -23886,28 +23898,16 @@
     "jump": "2003 Issue 16",
     "characters": [
       {
-        "name": "Roronoa Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Roronoa Zoro"
-      },
-      {
         "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
         "full_text": "Monkey D. Luffy"
       },
       {
-        "name": "Sanji",
-        "url": "/wiki/Sanji",
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
         "note": "",
-        "full_text": "Sanji"
-      },
-      {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Usopp"
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
@@ -23916,16 +23916,16 @@
         "full_text": "Nami"
       },
       {
-        "name": "Shura",
-        "url": "/wiki/Shura",
-        "note": "",
-        "full_text": "Shura"
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "K.O.",
+        "full_text": "Usopp (K.O.)"
       },
       {
-        "name": "Satori",
-        "url": "/wiki/Satori",
-        "note": "",
-        "full_text": "Satori"
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Ohm",
@@ -23934,22 +23934,46 @@
         "full_text": "Ohm"
       },
       {
+        "name": "Shura",
+        "url": "/wiki/Shura",
+        "note": "K.O.",
+        "full_text": "Shura (K.O.)"
+      },
+      {
         "name": "Holy",
         "url": "/wiki/Holy",
         "note": "",
         "full_text": "Holy"
       },
       {
-        "name": "Braham",
-        "url": "/wiki/Braham",
+        "name": "Yama",
+        "url": "/wiki/Yama",
+        "note": "K.O.",
+        "full_text": "Yama (K.O.)"
+      },
+      {
+        "name": "Hotori and Kotori",
+        "url": "/wiki/Hotori_and_Kotori",
+        "note": "K.O.",
+        "full_text": "Hotori and Kotori (K.O.)"
+      },
+      {
+        "name": "Wyper",
+        "url": "/wiki/Wyper",
         "note": "",
-        "full_text": "Braham"
+        "full_text": "Wyper"
       },
       {
         "name": "Kamakiri",
         "url": "/wiki/Kamakiri",
-        "note": "",
-        "full_text": "Kamakiri"
+        "note": "K.O.",
+        "full_text": "Kamakiri (K.O.)"
+      },
+      {
+        "name": "Braham",
+        "url": "/wiki/Braham",
+        "note": "K.O.",
+        "full_text": "Braham (K.O.)"
       },
       {
         "name": "Genbo",
@@ -23964,28 +23988,28 @@
         "full_text": "Raki"
       },
       {
-        "name": "Wyper",
-        "url": "/wiki/Wyper",
-        "note": "",
-        "full_text": "Wyper"
-      },
-      {
         "name": "Aisa",
         "url": "/wiki/Aisa",
         "note": "",
         "full_text": "Aisa"
       },
       {
-        "name": "Pagaya",
-        "url": "/wiki/Pagaya",
+        "name": "Mayushika",
+        "url": "/wiki/Mayushika",
         "note": "",
-        "full_text": "Pagaya"
+        "full_text": "Mayushika"
       },
       {
-        "name": "Conis",
-        "url": "/wiki/Conis",
+        "name": "Yotsubane",
+        "url": "/wiki/Yotsubane",
         "note": "",
-        "full_text": "Conis"
+        "full_text": "Yotsubane"
+      },
+      {
+        "name": "Warashi",
+        "url": "/wiki/Warashi",
+        "note": "",
+        "full_text": "Warashi"
       },
       {
         "name": "Gan Fall",
@@ -23994,16 +24018,28 @@
         "full_text": "Gan Fall"
       },
       {
-        "name": "Su",
-        "url": "/wiki/Su",
-        "note": "",
-        "full_text": "Su"
-      },
-      {
         "name": "Pierre",
         "url": "/wiki/Pierre",
         "note": "",
         "full_text": "Pierre"
+      },
+      {
+        "name": "Conis",
+        "url": "/wiki/Conis",
+        "note": "",
+        "full_text": "Conis"
+      },
+      {
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
+        "note": "",
+        "full_text": "Pagaya"
+      },
+      {
+        "name": "Su",
+        "url": "/wiki/Su",
+        "note": "",
+        "full_text": "Su"
       },
       {
         "name": "King of the Sky",
@@ -24022,10 +24058,16 @@
     "jump": "2003 Issue 18",
     "characters": [
       {
-        "name": "Zoro",
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "",
-        "full_text": "Zoro"
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
@@ -24034,10 +24076,10 @@
         "full_text": "Nami"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
+        "name": "Enel",
+        "url": "/wiki/Enel",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Enel"
       },
       {
         "name": "Ohm",
@@ -24050,12 +24092,6 @@
         "url": "/wiki/Holy",
         "note": "",
         "full_text": "Holy"
-      },
-      {
-        "name": "Enel",
-        "url": "/wiki/Enel",
-        "note": "",
-        "full_text": "Enel"
       },
       {
         "name": "Wyper",
@@ -24088,16 +24124,16 @@
         "full_text": "Gan Fall"
       },
       {
-        "name": "King of the Sky",
-        "url": "/wiki/Nola",
-        "note": "",
-        "full_text": "King of the Sky"
-      },
-      {
         "name": "Pierre",
         "url": "/wiki/Pierre",
         "note": "",
         "full_text": "Pierre"
+      },
+      {
+        "name": "King of the Sky",
+        "url": "/wiki/Nola",
+        "note": "",
+        "full_text": "King of the Sky"
       }
     ]
   },
@@ -24110,22 +24146,22 @@
     "jump": "2003 Issue 19",
     "characters": [
       {
-        "name": "Luffy",
+        "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Zoro"
       },
       {
         "name": "Ohm",
@@ -24140,16 +24176,16 @@
         "full_text": "Holy"
       },
       {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
-      },
-      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
         "note": "",
         "full_text": "Wyper"
+      },
+      {
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
+        "note": "",
+        "full_text": "Aisa"
       },
       {
         "name": "Gan Fall",
@@ -24184,8 +24220,8 @@
       {
         "name": "Matsuge",
         "url": "/wiki/Matsuge",
-        "note": "",
-        "full_text": "Matsuge"
+        "note": "cover",
+        "full_text": "Matsuge (cover)"
       }
     ]
   },
@@ -24198,34 +24234,34 @@
     "jump": "2003 Issue 20",
     "characters": [
       {
-        "name": "Nico Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Nico Robin"
-      },
-      {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "",
         "full_text": "Roronoa Zoro"
       },
       {
-        "name": "Tony Tony Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
-        "note": "",
-        "full_text": "Tony Tony Chopper"
-      },
-      {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Usopp"
+        "note": "KO",
+        "full_text": "Usopp (KO)"
       },
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
+        "note": "KO",
+        "full_text": "Sanji (KO)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "KO",
+        "full_text": "Tony Tony Chopper (KO)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Sanji"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Portgas D. Ace",
@@ -24242,8 +24278,8 @@
       {
         "name": "Ohm",
         "url": "/wiki/Ohm",
-        "note": "",
-        "full_text": "Ohm"
+        "note": "KO",
+        "full_text": "Ohm (KO)"
       },
       {
         "name": "Holy",
@@ -24258,22 +24294,22 @@
         "full_text": "Wyper"
       },
       {
-        "name": "Pagaya",
-        "url": "/wiki/Pagaya",
-        "note": "",
-        "full_text": "Pagaya"
-      },
-      {
         "name": "Conis",
         "url": "/wiki/Conis",
         "note": "",
         "full_text": "Conis"
       },
       {
-        "name": "King of the Sky",
-        "url": "/wiki/Nola",
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
         "note": "",
-        "full_text": "King of the Sky"
+        "full_text": "Pagaya"
+      },
+      {
+        "name": "Moyle",
+        "url": "/wiki/Moyle",
+        "note": "",
+        "full_text": "Moyle"
       },
       {
         "name": "Su",
@@ -24282,10 +24318,10 @@
         "full_text": "Su"
       },
       {
-        "name": "Moyle",
-        "url": "/wiki/Moyle",
+        "name": "King  of the Sky",
+        "url": "/wiki/Nola",
         "note": "",
-        "full_text": "Moyle"
+        "full_text": "King  of the Sky"
       }
     ]
   },
@@ -24298,16 +24334,16 @@
     "jump": "2003 Issue 21",
     "characters": [
       {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Zoro"
+        "full_text": "Monkey D. Luffy"
       },
       {
-        "name": "Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
         "note": "",
-        "full_text": "Chopper"
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
@@ -24316,16 +24352,16 @@
         "full_text": "Nami"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "KO",
+        "full_text": "Tony Tony Chopper (KO)"
       },
       {
-        "name": "Robin",
+        "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Robin"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Ace",
@@ -24380,22 +24416,28 @@
     "jump": "2003 Issue 22-23",
     "characters": [
       {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Zoro",
+        "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "",
-        "full_text": "Zoro"
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "KO",
+        "full_text": "Tony Tony Chopper (KO)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Enel",
@@ -24406,32 +24448,32 @@
       {
         "name": "Ohm",
         "url": "/wiki/Ohm",
-        "note": "flashback",
-        "full_text": "Ohm (flashback)"
+        "note": "Flashback",
+        "full_text": "Ohm (Flashback)"
       },
       {
         "name": "Shura",
         "url": "/wiki/Shura",
-        "note": "flashback",
-        "full_text": "Shura (flashback)"
+        "note": "Flashback",
+        "full_text": "Shura (Flashback)"
       },
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "flashback",
-        "full_text": "Gedatsu (flashback)"
+        "note": "Flashback",
+        "full_text": "Gedatsu (Flashback)"
       },
       {
         "name": "Satori",
         "url": "/wiki/Satori",
-        "note": "flashback",
-        "full_text": "Satori (flashback)"
+        "note": "Flashback",
+        "full_text": "Satori (Flashback)"
       },
       {
         "name": "Moyle",
         "url": "/wiki/Moyle",
-        "note": "",
-        "full_text": "Moyle"
+        "note": "Flashback",
+        "full_text": "Moyle (Flashback)"
       },
       {
         "name": "Wyper",
@@ -24444,6 +24486,12 @@
         "url": "/wiki/Gan_Fall",
         "note": "",
         "full_text": "Gan Fall"
+      },
+      {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "Flashback",
+        "full_text": "Pierre (Flashback)"
       },
       {
         "name": "Conis",
@@ -24482,14 +24530,14 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "",
-        "full_text": "Tony Tony Chopper"
+        "note": "KO",
+        "full_text": "Tony Tony Chopper (KO)"
       },
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Nico Robin"
+        "note": "KO",
+        "full_text": "Nico Robin (KO)"
       },
       {
         "name": "Portgas D. Ace",
@@ -24506,8 +24554,8 @@
       {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "",
-        "full_text": "Gan Fall"
+        "note": "KO",
+        "full_text": "Gan Fall (KO)"
       },
       {
         "name": "Wyper",
@@ -24638,34 +24686,34 @@
     "jump": "2003 Issue 26",
     "characters": [
       {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "KO",
+        "full_text": "Roronoa Zoro (KO)"
+      },
+      {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "KO",
-        "full_text": "Zoro (KO)"
-      },
-      {
-        "name": "Chopper",
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "KO",
-        "full_text": "Chopper (KO)"
+        "full_text": "Tony Tony Chopper (KO)"
       },
       {
-        "name": "Robin",
+        "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Robin"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Portgas D. Ace",
@@ -24704,6 +24752,12 @@
         "full_text": "Gan Fall (KO)"
       },
       {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "",
+        "full_text": "Pierre"
+      },
+      {
         "name": "Conis",
         "url": "/wiki/Conis",
         "note": "",
@@ -24720,12 +24774,6 @@
         "url": "/wiki/Nola",
         "note": "KO",
         "full_text": "King of the Sky (KO)"
-      },
-      {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "",
-        "full_text": "Pierre"
       }
     ]
   },
@@ -24738,34 +24786,34 @@
     "jump": "2003 Issue 27",
     "characters": [
       {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "KO",
+        "full_text": "Roronoa Zoro (KO)"
+      },
+      {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
-      },
-      {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "KO",
-        "full_text": "Zoro (KO)"
-      },
-      {
-        "name": "Chopper",
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "KO",
-        "full_text": "Chopper (KO)"
+        "full_text": "Tony Tony Chopper (KO)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Ace",
@@ -24780,34 +24828,22 @@
         "full_text": "Enel"
       },
       {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
-      },
-      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
         "note": "KO",
         "full_text": "Wyper (KO)"
       },
       {
-        "name": "Conis",
-        "url": "/wiki/Conis",
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
         "note": "",
-        "full_text": "Conis"
+        "full_text": "Aisa"
       },
       {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
-      },
-      {
-        "name": "Pagaya",
-        "url": "/wiki/Pagaya",
-        "note": "flashback",
-        "full_text": "Pagaya (flashback)"
+        "name": "Gan Fall",
+        "url": "/wiki/Gan_Fall",
+        "note": "KO",
+        "full_text": "Gan Fall (KO)"
       },
       {
         "name": "Pierre",
@@ -24816,10 +24852,28 @@
         "full_text": "Pierre"
       },
       {
-        "name": "Gan Fall",
-        "url": "/wiki/Gan_Fall",
-        "note": "KO",
-        "full_text": "Gan Fall (KO)"
+        "name": "Conis",
+        "url": "/wiki/Conis",
+        "note": "",
+        "full_text": "Conis"
+      },
+      {
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
+        "note": "Flashback",
+        "full_text": "Pagaya (Flashback)"
+      },
+      {
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
+        "note": "",
+        "full_text": "McKinley"
+      },
+      {
+        "name": "Mochi",
+        "url": "/wiki/Mochi",
+        "note": "",
+        "full_text": "Mochi"
       },
       {
         "name": "Moda",
@@ -24838,16 +24892,16 @@
     "jump": "2003 Issue 28",
     "characters": [
       {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
-      },
-      {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
       },
       {
         "name": "Ace",
@@ -24868,6 +24922,12 @@
         "full_text": "Aisa"
       },
       {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "",
+        "full_text": "Pierre"
+      },
+      {
         "name": "Conis",
         "url": "/wiki/Conis",
         "note": "",
@@ -24880,10 +24940,10 @@
         "full_text": "McKinley"
       },
       {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "",
-        "full_text": "Pierre"
+        "name": "Moyle",
+        "url": "/wiki/Moyle",
+        "note": "Flashback",
+        "full_text": "Moyle (Flashback)"
       },
       {
         "name": "Moda",
@@ -24902,10 +24962,10 @@
     "jump": "2003 Issue 29",
     "characters": [
       {
-        "name": "Luffy",
+        "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Monkey D. Luffy"
       },
       {
         "name": "Nami",
@@ -24954,10 +25014,10 @@
     "jump": "2003 Issue 30",
     "characters": [
       {
-        "name": "Luffy",
+        "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Monkey D. Luffy"
       },
       {
         "name": "Nami",
@@ -24996,16 +25056,16 @@
         "full_text": "Pierre"
       },
       {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
-      },
-      {
         "name": "Conis",
         "url": "/wiki/Conis",
         "note": "",
         "full_text": "Conis"
+      },
+      {
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
+        "note": "",
+        "full_text": "McKinley"
       },
       {
         "name": "Moda",
@@ -25024,34 +25084,22 @@
     "jump": "2003 Issue 31",
     "characters": [
       {
-        "name": "Luffy",
+        "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "K.O.",
+        "full_text": "Roronoa Zoro (K.O.)"
       },
       {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
-      },
-      {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O.",
-        "full_text": "Chopper (K.O.)"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "K.O.",
-        "full_text": "Zoro (K.O.)"
       },
       {
         "name": "Usopp",
@@ -25064,6 +25112,18 @@
         "url": "/wiki/Sanji",
         "note": "",
         "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Ace",
@@ -25096,6 +25156,12 @@
         "full_text": "Conis"
       },
       {
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
+        "note": "Flashback",
+        "full_text": "Pagaya (Flashback)"
+      },
+      {
         "name": "Su",
         "url": "/wiki/Su",
         "note": "",
@@ -25112,16 +25178,16 @@
     "jump": "2003 Issue 32",
     "characters": [
       {
-        "name": "Sanji",
-        "url": "/wiki/Sanji",
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Sanji"
+        "full_text": "Monkey D. Luffy"
       },
       {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Usopp"
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "KO",
+        "full_text": "Roronoa Zoro (KO)"
       },
       {
         "name": "Nami",
@@ -25130,28 +25196,28 @@
         "full_text": "Nami"
       },
       {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "KO",
-        "full_text": "Zoro (KO)"
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
       },
       {
-        "name": "Chopper",
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "KO",
-        "full_text": "Chopper (KO)"
+        "full_text": "Tony Tony Chopper (KO)"
       },
       {
-        "name": "Robin",
+        "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Ace",
@@ -25166,10 +25232,10 @@
         "full_text": "Enel"
       },
       {
-        "name": "Shandia Chief",
-        "url": "/wiki/Shandia_Chief",
-        "note": "",
-        "full_text": "Shandia Chief"
+        "name": "Wyper",
+        "url": "/wiki/Wyper",
+        "note": "KO",
+        "full_text": "Wyper (KO)"
       },
       {
         "name": "Aisa",
@@ -25178,10 +25244,22 @@
         "full_text": "Aisa"
       },
       {
-        "name": "Su",
-        "url": "/wiki/Su",
+        "name": "Shandia Chief",
+        "url": "/wiki/Shandia_Chief",
         "note": "",
-        "full_text": "Su"
+        "full_text": "Shandia Chief"
+      },
+      {
+        "name": "Gan Fall",
+        "url": "/wiki/Gan_Fall",
+        "note": "KO",
+        "full_text": "Gan Fall (KO)"
+      },
+      {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "KO",
+        "full_text": "Pierre (KO)"
       },
       {
         "name": "Conis",
@@ -25190,10 +25268,10 @@
         "full_text": "Conis"
       },
       {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "name": "Su",
+        "url": "/wiki/Su",
+        "note": "",
+        "full_text": "Su"
       }
     ]
   },
@@ -25264,10 +25342,16 @@
     "jump": "2003 Issue 34",
     "characters": [
       {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Usopp"
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "KO",
+        "full_text": "Roronoa Zoro (KO)"
       },
       {
         "name": "Nami",
@@ -25276,34 +25360,28 @@
         "full_text": "Nami"
       },
       {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
         "name": "Sanji",
         "url": "/wiki/Sanji",
         "note": "KO",
         "full_text": "Sanji (KO)"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
-      },
-      {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "KO",
-        "full_text": "Zoro (KO)"
-      },
-      {
-        "name": "Chopper",
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "KO",
-        "full_text": "Chopper (KO)"
+        "full_text": "Tony Tony Chopper (KO)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Ace",
@@ -25318,16 +25396,16 @@
         "full_text": "Enel"
       },
       {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
-      },
-      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
         "note": "KO",
         "full_text": "Wyper (KO)"
+      },
+      {
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
+        "note": "",
+        "full_text": "Aisa"
       },
       {
         "name": "Shandia Chief",
@@ -25336,22 +25414,16 @@
         "full_text": "Shandia Chief"
       },
       {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
-      },
-      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
         "note": "KO",
         "full_text": "Gan Fall (KO)"
       },
       {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "KO",
+        "full_text": "Pierre (KO)"
       },
       {
         "name": "Conis",
@@ -25364,6 +25436,12 @@
         "url": "/wiki/Su",
         "note": "",
         "full_text": "Su"
+      },
+      {
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
+        "note": "",
+        "full_text": "McKinley"
       },
       {
         "name": "Koda",
@@ -25382,22 +25460,22 @@
     "jump": "2003 Issue 35",
     "characters": [
       {
-        "name": "Luffy",
+        "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
-      },
-      {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
       },
       {
         "name": "Usopp",
@@ -25412,16 +25490,16 @@
         "full_text": "Sanji (KO)"
       },
       {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Zoro"
-      },
-      {
-        "name": "Chopper",
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "KO",
-        "full_text": "Chopper (KO)"
+        "full_text": "Tony Tony Chopper (KO)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Portgas D. Ace",
@@ -25436,10 +25514,10 @@
         "full_text": "Enel"
       },
       {
-        "name": "Shandia Chief",
-        "url": "/wiki/Shandia_Chief",
+        "name": "Wyper",
+        "url": "/wiki/Wyper",
         "note": "",
-        "full_text": "Shandia Chief"
+        "full_text": "Wyper"
       },
       {
         "name": "Aisa",
@@ -25448,10 +25526,10 @@
         "full_text": "Aisa"
       },
       {
-        "name": "Wyper",
-        "url": "/wiki/Wyper",
+        "name": "Shandia Chief",
+        "url": "/wiki/Shandia_Chief",
         "note": "",
-        "full_text": "Wyper"
+        "full_text": "Shandia Chief"
       },
       {
         "name": "Kalgara",
@@ -25460,16 +25538,22 @@
         "full_text": "Kalgara (flashback)"
       },
       {
+        "name": "Gan Fall",
+        "url": "/wiki/Gan_Fall",
+        "note": "",
+        "full_text": "Gan Fall"
+      },
+      {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "KO",
+        "full_text": "Pierre (KO)"
+      },
+      {
         "name": "Amazon",
         "url": "/wiki/Amazon",
         "note": "",
         "full_text": "Amazon"
-      },
-      {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
       },
       {
         "name": "Conis",
@@ -25484,22 +25568,16 @@
         "full_text": "Su"
       },
       {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
-      },
-      {
-        "name": "Gan Fall",
-        "url": "/wiki/Gan_Fall",
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
         "note": "",
-        "full_text": "Gan Fall"
+        "full_text": "McKinley"
       },
       {
         "name": "Mont Blanc Noland",
         "url": "/wiki/Mont_Blanc_Noland",
-        "note": "",
-        "full_text": "Mont Blanc Noland"
+        "note": "Flashback",
+        "full_text": "Mont Blanc Noland (Flashback)"
       }
     ]
   },
@@ -25511,6 +25589,48 @@
     "date2": "August 11, 2003",
     "jump": "2003 Issue 37-38",
     "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "cover",
+        "full_text": "Monkey D. Luffy (cover)"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro (cover"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "cover",
+        "full_text": "Nami (cover)"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "cover",
+        "full_text": "Usopp (cover)"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "cover",
+        "full_text": "Sanji (cover)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "cover",
+        "full_text": "Tony Tony Chopper (cover)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "cover",
+        "full_text": "Nico Robin (cover)"
+      },
       {
         "name": "Kalgara",
         "url": "/wiki/Kalgara",
@@ -25860,34 +25980,16 @@
     "jump": "2003 Issue 44",
     "characters": [
       {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Usopp"
+        "full_text": "Monkey D. Luffy"
       },
       {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Zoro",
+        "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "",
-        "full_text": "Zoro"
-      },
-      {
-        "name": "Sanji",
-        "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
-      },
-      {
-        "name": "Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Chopper (KO)"
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
@@ -25896,16 +25998,40 @@
         "full_text": "Nami"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "KO",
+        "full_text": "Sanji (KO)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "KO",
+        "full_text": "Tony Tony Chopper (KO)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Enel",
         "url": "/wiki/Enel",
         "note": "",
         "full_text": "Enel"
+      },
+      {
+        "name": "Moyle",
+        "url": "/wiki/Moyle",
+        "note": "Flashback",
+        "full_text": "Moyle (Flashback)"
       },
       {
         "name": "Wyper",
@@ -25938,10 +26064,10 @@
         "full_text": "Gan Fall"
       },
       {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "KO",
+        "full_text": "Pierre (KO)"
       },
       {
         "name": "Conis",
@@ -25950,16 +26076,22 @@
         "full_text": "Conis"
       },
       {
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
+        "note": "Flashback",
+        "full_text": "Pagaya (Flashback)"
+      },
+      {
         "name": "Su",
         "url": "/wiki/Su",
         "note": "",
         "full_text": "Su"
       },
       {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
+        "note": "",
+        "full_text": "McKinley"
       },
       {
         "name": "Nola",
@@ -25978,10 +26110,22 @@
     "jump": "2003 Issue 45",
     "characters": [
       {
-        "name": "Luffy",
+        "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
       },
       {
         "name": "Usopp",
@@ -25990,34 +26134,22 @@
         "full_text": "Usopp"
       },
       {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Zoro"
-      },
-      {
         "name": "Sanji",
         "url": "/wiki/Sanji",
         "note": "KO",
         "full_text": "Sanji (KO)"
       },
       {
-        "name": "Chopper",
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "KO",
-        "full_text": "Chopper (KO)"
+        "full_text": "Tony Tony Chopper (KO)"
       },
       {
-        "name": "Nami",
-        "url": "/wiki/Nami",
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Nami"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Enel",
@@ -26096,28 +26228,22 @@
         "full_text": "Monkey D. Luffy"
       },
       {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
       },
       {
-        "name": "Nico Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Nico Robin"
-      },
-      {
         "name": "Usopp",
         "url": "/wiki/Usopp",
         "note": "",
         "full_text": "Usopp"
-      },
-      {
-        "name": "Roronoa Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Sanji",
@@ -26130,6 +26256,12 @@
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "K.O.",
         "full_text": "Tony Tony Chopper (K.O.)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Portgas D. Ace",
@@ -26168,6 +26300,12 @@
         "full_text": "Pierre (K.O.)"
       },
       {
+        "name": "Nola",
+        "url": "/wiki/Nola",
+        "note": "Flashback",
+        "full_text": "Nola (Flashback)"
+      },
+      {
         "name": "Mont Blanc Cricket",
         "url": "/wiki/Mont_Blanc_Cricket",
         "note": "flashback",
@@ -26190,22 +26328,16 @@
     "jump": "2003 Issue 47",
     "characters": [
       {
-        "name": "Zoro",
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "",
-        "full_text": "Zoro"
-      },
-      {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Usopp"
-      },
-      {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
@@ -26214,10 +26346,10 @@
         "full_text": "Nami"
       },
       {
-        "name": "Tony Tony Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O",
-        "full_text": "Tony Tony Chopper (K.O)"
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
       },
       {
         "name": "Sanji",
@@ -26226,10 +26358,16 @@
         "full_text": "Sanji (K.O)"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "K.O",
+        "full_text": "Tony Tony Chopper (K.O)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Portgas D. Ace",
@@ -26254,6 +26392,12 @@
         "url": "/wiki/Gan_Fall",
         "note": "",
         "full_text": "Gan Fall"
+      },
+      {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "KO",
+        "full_text": "Pierre (KO)"
       },
       {
         "name": "Conis",
@@ -26320,10 +26464,10 @@
     "jump": "2003 Issue 48",
     "characters": [
       {
-        "name": "Luffy",
+        "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Monkey D. Luffy"
       },
       {
         "name": "Nami",
@@ -26338,22 +26482,22 @@
         "full_text": "Usopp"
       },
       {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O.",
-        "full_text": "Chopper (K.O.)"
-      },
-      {
         "name": "Sanji",
         "url": "/wiki/Sanji",
         "note": "K.O.",
         "full_text": "Sanji (K.O.)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Portgas D. Ace",
@@ -26374,16 +26518,16 @@
         "full_text": "Enel"
       },
       {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
-      },
-      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
         "note": "",
         "full_text": "Wyper"
+      },
+      {
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
+        "note": "",
+        "full_text": "Aisa"
       },
       {
         "name": "Shandia Chief",
@@ -26404,10 +26548,10 @@
         "full_text": "Gan Fall"
       },
       {
-        "name": "Su",
-        "url": "/wiki/Su",
-        "note": "",
-        "full_text": "Su"
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "K.O.",
+        "full_text": "Pierre (K.O.)"
       },
       {
         "name": "Conis",
@@ -26416,16 +26560,16 @@
         "full_text": "Conis"
       },
       {
+        "name": "Su",
+        "url": "/wiki/Su",
+        "note": "",
+        "full_text": "Su"
+      },
+      {
         "name": "McKinley",
         "url": "/wiki/McKinley",
         "note": "",
         "full_text": "McKinley"
-      },
-      {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "K.O.",
-        "full_text": "Pierre (K.O.)"
       }
     ]
   },
@@ -26437,6 +26581,18 @@
     "date2": "November 1, 2003",
     "jump": "2003 Issue 49",
     "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
       {
         "name": "Nami",
         "url": "/wiki/Nami",
@@ -26450,34 +26606,22 @@
         "full_text": "Usopp"
       },
       {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
-      },
-      {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
         "name": "Sanji",
         "url": "/wiki/Sanji",
         "note": "",
         "full_text": "Sanji"
       },
       {
-        "name": "Chopper",
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "",
-        "full_text": "Chopper"
+        "full_text": "Tony Tony Chopper"
       },
       {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Zoro"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Portgas D. Ace",
@@ -26498,12 +26642,6 @@
         "full_text": "Enel"
       },
       {
-        "name": "Shandia Chief",
-        "url": "/wiki/Shandia_Chief",
-        "note": "",
-        "full_text": "Shandia Chief"
-      },
-      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
         "note": "",
@@ -26514,6 +26652,12 @@
         "url": "/wiki/Aisa",
         "note": "",
         "full_text": "Aisa"
+      },
+      {
+        "name": "Shandia Chief",
+        "url": "/wiki/Shandia_Chief",
+        "note": "",
+        "full_text": "Shandia Chief"
       },
       {
         "name": "Nola",
@@ -26528,18 +26672,6 @@
         "full_text": "Kalgara (flashback)"
       },
       {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
-      },
-      {
-        "name": "Conis",
-        "url": "/wiki/Conis",
-        "note": "",
-        "full_text": "Conis"
-      },
-      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
         "note": "",
@@ -26550,6 +26682,18 @@
         "url": "/wiki/Pierre",
         "note": "",
         "full_text": "Pierre"
+      },
+      {
+        "name": "Conis",
+        "url": "/wiki/Conis",
+        "note": "",
+        "full_text": "Conis"
+      },
+      {
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
+        "note": "",
+        "full_text": "McKinley"
       },
       {
         "name": "Mont Blanc Noland",
@@ -26658,6 +26802,12 @@
         "full_text": "Enel (K.O.)"
       },
       {
+        "name": "Wyper",
+        "url": "/wiki/Wyper",
+        "note": "",
+        "full_text": "Wyper"
+      },
+      {
         "name": "Aisa",
         "url": "/wiki/Aisa",
         "note": "",
@@ -26668,12 +26818,6 @@
         "url": "/wiki/Shandia_Chief",
         "note": "",
         "full_text": "Shandia Chief"
-      },
-      {
-        "name": "Wyper",
-        "url": "/wiki/Wyper",
-        "note": "",
-        "full_text": "Wyper"
       },
       {
         "name": "Nola",
@@ -26706,16 +26850,16 @@
         "full_text": "Conis"
       },
       {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
-      },
-      {
         "name": "Su",
         "url": "/wiki/Su",
         "note": "",
         "full_text": "Su"
+      },
+      {
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
+        "note": "",
+        "full_text": "McKinley"
       },
       {
         "name": "South Birds",
@@ -26740,288 +26884,22 @@
     "jump": "2003 Issue 52",
     "characters": [
       {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Usopp"
-      },
-      {
-        "name": "Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
-        "note": "",
-        "full_text": "Chopper"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Zoro"
-      },
-      {
-        "name": "Sanji",
-        "url": "/wiki/Sanji",
-        "note": "",
-        "full_text": "Sanji"
-      },
-      {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
-      },
-      {
-        "name": "Nami",
-        "url": "/wiki/Nami",
-        "note": "",
-        "full_text": "Nami"
-      },
-      {
-        "name": "Portgas D. Ace",
-        "url": "/wiki/Portgas_D._Ace",
-        "note": "cover",
-        "full_text": "Portgas D. Ace (cover)"
-      },
-      {
-        "name": "Satori",
-        "url": "/wiki/Satori",
-        "note": "K.O.",
-        "full_text": "Satori (K.O.)"
-      },
-      {
-        "name": "Shura",
-        "url": "/wiki/Shura",
-        "note": "K.O.",
-        "full_text": "Shura (K.O.)"
-      },
-      {
-        "name": "Gedatsu",
-        "url": "/wiki/Gedatsu",
-        "note": "K.O.",
-        "full_text": "Gedatsu (K.O.)"
-      },
-      {
-        "name": "Ohm",
-        "url": "/wiki/Ohm",
-        "note": "K.O.",
-        "full_text": "Ohm (K.O.)"
-      },
-      {
-        "name": "Enel",
-        "url": "/wiki/Enel",
-        "note": "",
-        "full_text": "Enel"
-      },
-      {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
-      },
-      {
-        "name": "Raki",
-        "url": "/wiki/Raki",
-        "note": "",
-        "full_text": "Raki"
-      },
-      {
-        "name": "Kamakiri",
-        "url": "/wiki/Kamakiri",
-        "note": "",
-        "full_text": "Kamakiri"
-      },
-      {
-        "name": "Braham",
-        "url": "/wiki/Braham",
-        "note": "",
-        "full_text": "Braham"
-      },
-      {
-        "name": "Genbo",
-        "url": "/wiki/Genbo",
-        "note": "",
-        "full_text": "Genbo"
-      },
-      {
-        "name": "Wyper",
-        "url": "/wiki/Wyper",
-        "note": "",
-        "full_text": "Wyper"
-      },
-      {
-        "name": "Shandia Chief",
-        "url": "/wiki/Shandia_Chief",
-        "note": "",
-        "full_text": "Shandia Chief"
-      },
-      {
-        "name": "Nola",
-        "url": "/wiki/Nola",
-        "note": "",
-        "full_text": "Nola"
-      },
-      {
-        "name": "Gan Fall",
-        "url": "/wiki/Gan_Fall",
-        "note": "",
-        "full_text": "Gan Fall"
-      },
-      {
-        "name": "Conis",
-        "url": "/wiki/Conis",
-        "note": "",
-        "full_text": "Conis"
-      },
-      {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "",
-        "full_text": "Pierre"
-      },
-      {
-        "name": "Pagaya",
-        "url": "/wiki/Pagaya",
-        "note": "",
-        "full_text": "Pagaya"
-      },
-      {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
-      },
-      {
-        "name": "Amazon",
-        "url": "/wiki/Amazon",
-        "note": "",
-        "full_text": "Amazon"
-      },
-      {
-        "name": "Marilyn",
-        "url": "/wiki/Marilyn",
-        "note": "",
-        "full_text": "Marilyn"
-      },
-      {
-        "name": "Su",
-        "url": "/wiki/Su",
-        "note": "",
-        "full_text": "Su"
-      },
-      {
-        "name": "Cloud Wolves",
-        "url": "/wiki/Cloud_Wolf",
-        "note": "",
-        "full_text": "Cloud Wolves"
-      }
-    ]
-  },
-  {
-    "vol": "32",
-    "chapter": "301",
-    "ename": "I Hereby Guide...",
-    "page": "19",
-    "date2": "December 1, 2003",
-    "jump": "2004 Issue 1",
-    "characters": [
-      {
-        "name": "Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Luffy"
-      },
-      {
-        "name": "Nami",
-        "url": "/wiki/Nami",
-        "note": "",
-        "full_text": "Nami"
-      },
-      {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Usopp"
-      },
-      {
-        "name": "Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
-        "note": "",
-        "full_text": "Chopper"
-      },
-      {
-        "name": "Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Robin"
-      },
-      {
-        "name": "Sanji",
-        "url": "/wiki/Sanji",
-        "note": "",
-        "full_text": "Sanji"
-      },
-      {
-        "name": "Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Zoro"
-      },
-      {
-        "name": "Gan Fall",
-        "url": "/wiki/Gan_Fall",
-        "note": "",
-        "full_text": "Gan Fall"
-      },
-      {
-        "name": "Kamakiri",
-        "url": "/wiki/Kamakiri",
-        "note": "",
-        "full_text": "Kamakiri"
-      },
-      {
-        "name": "Braham",
-        "url": "/wiki/Braham",
-        "note": "",
-        "full_text": "Braham"
-      },
-      {
-        "name": "Genbo",
-        "url": "/wiki/Genbo",
-        "note": "",
-        "full_text": "Genbo"
-      },
-      {
-        "name": "Nola",
-        "url": "/wiki/Nola",
-        "note": "",
-        "full_text": "Nola"
-      },
-      {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "",
-        "full_text": "Pierre"
-      }
-    ]
-  },
-  {
-    "vol": "32",
-    "chapter": "302",
-    "ename": "Finale",
-    "page": "19",
-    "date2": "December 8, 2003",
-    "jump": "2004 Issue 2",
-    "characters": [
-      {
         "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
         "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
       },
       {
         "name": "Usopp",
@@ -27042,6 +26920,166 @@
         "full_text": "Tony Tony Chopper"
       },
       {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "url": "/wiki/Portgas_D._Ace",
+        "note": "cover",
+        "full_text": "Portgas D. Ace (cover)"
+      },
+      {
+        "name": "Enel",
+        "url": "/wiki/Enel",
+        "note": "",
+        "full_text": "Enel"
+      },
+      {
+        "name": "Ohm",
+        "url": "/wiki/Ohm",
+        "note": "K.O.",
+        "full_text": "Ohm (K.O.)"
+      },
+      {
+        "name": "Shura",
+        "url": "/wiki/Shura",
+        "note": "K.O.",
+        "full_text": "Shura (K.O.)"
+      },
+      {
+        "name": "Gedatsu",
+        "url": "/wiki/Gedatsu",
+        "note": "K.O.",
+        "full_text": "Gedatsu (K.O.)"
+      },
+      {
+        "name": "Satori",
+        "url": "/wiki/Satori",
+        "note": "K.O.",
+        "full_text": "Satori (K.O.)"
+      },
+      {
+        "name": "Wyper",
+        "url": "/wiki/Wyper",
+        "note": "",
+        "full_text": "Wyper"
+      },
+      {
+        "name": "Kamakiri",
+        "url": "/wiki/Kamakiri",
+        "note": "",
+        "full_text": "Kamakiri"
+      },
+      {
+        "name": "Braham",
+        "url": "/wiki/Braham",
+        "note": "",
+        "full_text": "Braham"
+      },
+      {
+        "name": "Genbo",
+        "url": "/wiki/Genbo",
+        "note": "",
+        "full_text": "Genbo"
+      },
+      {
+        "name": "Raki",
+        "url": "/wiki/Raki",
+        "note": "",
+        "full_text": "Raki"
+      },
+      {
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
+        "note": "",
+        "full_text": "Aisa"
+      },
+      {
+        "name": "Shandia Chief",
+        "url": "/wiki/Shandia_Chief",
+        "note": "",
+        "full_text": "Shandia Chief"
+      },
+      {
+        "name": "Nola",
+        "url": "/wiki/Nola",
+        "note": "",
+        "full_text": "Nola"
+      },
+      {
+        "name": "Gan Fall",
+        "url": "/wiki/Gan_Fall",
+        "note": "",
+        "full_text": "Gan Fall"
+      },
+      {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "",
+        "full_text": "Pierre"
+      },
+      {
+        "name": "Amazon",
+        "url": "/wiki/Amazon",
+        "note": "",
+        "full_text": "Amazon"
+      },
+      {
+        "name": "Conis",
+        "url": "/wiki/Conis",
+        "note": "",
+        "full_text": "Conis"
+      },
+      {
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
+        "note": "",
+        "full_text": "Pagaya"
+      },
+      {
+        "name": "Su",
+        "url": "/wiki/Su",
+        "note": "",
+        "full_text": "Su"
+      },
+      {
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
+        "note": "",
+        "full_text": "McKinley"
+      },
+      {
+        "name": "Marilyn",
+        "url": "/wiki/Marilyn",
+        "note": "",
+        "full_text": "Marilyn"
+      },
+      {
+        "name": "Cloud Wolves",
+        "url": "/wiki/Cloud_Wolf",
+        "note": "",
+        "full_text": "Cloud Wolves"
+      }
+    ]
+  },
+  {
+    "vol": "32",
+    "chapter": "301",
+    "ename": "I Hereby Guide...",
+    "page": "19",
+    "date2": "December 1, 2003",
+    "jump": "2004 Issue 1",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "",
@@ -27052,6 +27090,118 @@
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Robin"
+      },
+      {
+        "name": "Gan Fall",
+        "url": "/wiki/Gan_Fall",
+        "note": "",
+        "full_text": "Gan Fall"
+      },
+      {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "",
+        "full_text": "Pierre"
+      },
+      {
+        "name": "Kamakiri",
+        "url": "/wiki/Kamakiri",
+        "note": "",
+        "full_text": "Kamakiri"
+      },
+      {
+        "name": "Braham",
+        "url": "/wiki/Braham",
+        "note": "",
+        "full_text": "Braham"
+      },
+      {
+        "name": "Genbo",
+        "url": "/wiki/Genbo",
+        "note": "",
+        "full_text": "Genbo"
+      },
+      {
+        "name": "Shandia Chief",
+        "url": "/wiki/Shandia_Chief",
+        "note": "",
+        "full_text": "Shandia Chief"
+      },
+      {
+        "name": "Nola",
+        "url": "/wiki/Nola",
+        "note": "Asleep",
+        "full_text": "Nola (Asleep)"
+      }
+    ]
+  },
+  {
+    "vol": "32",
+    "chapter": "302",
+    "ename": "Finale",
+    "page": "19",
+    "date2": "December 8, 2003",
+    "jump": "2004 Issue 2",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
       },
       {
         "name": "Nico Robin",
@@ -27078,10 +27228,10 @@
         "full_text": "Gan Fall"
       },
       {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
         "note": "",
-        "full_text": "McKinley"
+        "full_text": "Pierre"
       },
       {
         "name": "Conis",
@@ -27096,22 +27246,16 @@
         "full_text": "Pagaya"
       },
       {
-        "name": "Shandia Chief",
-        "url": "/wiki/Shandia_Chief",
+        "name": "Su",
+        "url": "/wiki/Su",
         "note": "",
-        "full_text": "Shandia Chief"
+        "full_text": "Su"
       },
       {
-        "name": "Raki",
-        "url": "/wiki/Raki",
+        "name": "McKinley",
+        "url": "/wiki/McKinley",
         "note": "",
-        "full_text": "Raki"
-      },
-      {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
+        "full_text": "McKinley"
       },
       {
         "name": "Wyper",
@@ -27138,28 +27282,28 @@
         "full_text": "Genbo"
       },
       {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
+        "name": "Raki",
+        "url": "/wiki/Raki",
         "note": "",
-        "full_text": "Pierre"
+        "full_text": "Raki"
       },
       {
-        "name": "Su",
-        "url": "/wiki/Su",
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
         "note": "",
-        "full_text": "Su"
-      },
-      {
-        "name": "South Bird",
-        "url": "/wiki/South_Bird",
-        "note": "",
-        "full_text": "South Bird"
+        "full_text": "Aisa"
       },
       {
         "name": "Nola",
         "url": "/wiki/Nola",
         "note": "",
         "full_text": "Nola"
+      },
+      {
+        "name": "Shandia Chief",
+        "url": "/wiki/Shandia_Chief",
+        "note": "",
+        "full_text": "Shandia Chief"
       },
       {
         "name": "Moda",
@@ -27478,16 +27622,16 @@
     "jump": "2004 Issue 8",
     "characters": [
       {
-        "name": "Luffy",
+        "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Luffy"
+        "full_text": "Monkey D. Luffy"
       },
       {
-        "name": "Zoro",
+        "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "",
-        "full_text": "Zoro"
+        "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
@@ -27508,16 +27652,16 @@
         "full_text": "Sanji"
       },
       {
-        "name": "Chopper",
+        "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "",
-        "full_text": "Chopper"
+        "full_text": "Tony Tony Chopper"
       },
       {
-        "name": "Robin",
+        "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Robin"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Foxy the Silver Fox",
@@ -27645,7 +27789,7 @@
       },
       {
         "name": "Capote",
-        "url": "/wiki/Kapoty",
+        "url": "/wiki/Capote",
         "note": "",
         "full_text": "Capote"
       },
@@ -27739,7 +27883,7 @@
       },
       {
         "name": "Capote",
-        "url": "/wiki/Kapoty",
+        "url": "/wiki/Capote",
         "note": "",
         "full_text": "Capote"
       },
@@ -27833,7 +27977,7 @@
       },
       {
         "name": "Capote",
-        "url": "/wiki/Kapoty",
+        "url": "/wiki/Capote",
         "note": "",
         "full_text": "Capote"
       },
@@ -28121,7 +28265,7 @@
       },
       {
         "name": "Capote",
-        "url": "/wiki/Kapoty",
+        "url": "/wiki/Capote",
         "note": "",
         "full_text": "Capote"
       },
@@ -31110,16 +31254,10 @@
     "jump": "2004 Issue 47",
     "characters": [
       {
-        "name": "Nico Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "former, flashback",
-        "full_text": "Nico Robin (former, flashback)"
-      },
-      {
-        "name": "Tony Tony Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
         "note": "",
-        "full_text": "Tony Tony Chopper"
+        "full_text": "Monkey D. Luffy"
       },
       {
         "name": "Roronoa Zoro",
@@ -31134,16 +31272,22 @@
         "full_text": "Nami"
       },
       {
-        "name": "Monkey D. Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Monkey D. Luffy"
-      },
-      {
         "name": "Usopp",
         "url": "/wiki/Usopp",
         "note": "",
         "full_text": "Usopp"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "former, flashback",
+        "full_text": "Nico Robin (former, flashback)"
       },
       {
         "name": "Dirt Boss",
@@ -32380,8 +32524,8 @@
       {
         "name": "Tom",
         "url": "/wiki/Tom",
-        "note": "photograph, mentioned",
-        "full_text": "Tom (photograph, mentioned)"
+        "note": "flashback, photograph, mentioned",
+        "full_text": "Tom (flashback, photograph, mentioned)"
       },
       {
         "name": "Iceburg",
@@ -44587,7 +44731,7 @@
       },
       {
         "name": "Koushirou",
-        "url": "/wiki/Koushirou",
+        "url": "/wiki/Shimotsuki_Koushirou",
         "note": "",
         "full_text": "Koushirou"
       },
@@ -48163,7 +48307,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -48385,7 +48529,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -48485,7 +48629,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -48579,7 +48723,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -48733,7 +48877,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -48839,7 +48983,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -48957,7 +49101,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -49045,7 +49189,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -49169,7 +49313,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -49345,7 +49489,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -49451,7 +49595,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -49563,7 +49707,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "",
         "full_text": "Lola"
       },
@@ -50600,6 +50744,12 @@
         "url": "/wiki/Shachi",
         "note": "",
         "full_text": "Shachi"
+      },
+      {
+        "name": "Penguin",
+        "url": "/wiki/Penguin",
+        "note": "",
+        "full_text": "Penguin"
       },
       {
         "name": "Jewelry Bonney",
@@ -55474,6 +55624,12 @@
         "full_text": "Sphinx"
       },
       {
+        "name": "Dobby Ibadonbo",
+        "url": "/wiki/Dobby_Ibadonbo",
+        "note": "",
+        "full_text": "Dobby Ibadonbo"
+      },
+      {
         "name": "Boa Hancock",
         "url": "/wiki/Boa_Hancock",
         "note": "",
@@ -56132,6 +56288,12 @@
         "url": "/wiki/Inazuma",
         "note": "",
         "full_text": "Inazuma"
+      },
+      {
+        "name": "Usakkov",
+        "url": "/wiki/Usakkov",
+        "note": "",
+        "full_text": "Usakkov"
       },
       {
         "name": "Bellett",
@@ -57924,6 +58086,12 @@
         "full_text": "Smoker"
       },
       {
+        "name": "Hina",
+        "url": "/wiki/Hina",
+        "note": "",
+        "full_text": "Hina"
+      },
+      {
         "name": "Tashigi",
         "url": "/wiki/Tashigi",
         "note": "",
@@ -57940,12 +58108,6 @@
         "url": "/wiki/Helmeppo",
         "note": "",
         "full_text": "Helmeppo"
-      },
-      {
-        "name": "Hina",
-        "url": "/wiki/Hina",
-        "note": "",
-        "full_text": "Hina"
       },
       {
         "name": "Jango",
@@ -65007,7 +65169,7 @@
       },
       {
         "name": "Kuina",
-        "url": "/wiki/Kuina",
+        "url": "/wiki/Shimotsuki_Kuina",
         "note": "silhouette",
         "full_text": "Kuina (silhouette)"
       },
@@ -66769,7 +66931,7 @@
       },
       {
         "name": "Fake Luffy",
-        "url": "/wiki/Demaro_Black",
+        "url": "/wiki/Demalo_Black",
         "note": "",
         "full_text": "Fake Luffy"
       },
@@ -66971,7 +67133,7 @@
       },
       {
         "name": "Fake Luffy",
-        "url": "/wiki/Demaro_Black",
+        "url": "/wiki/Demalo_Black",
         "note": "",
         "full_text": "Fake Luffy"
       },
@@ -67106,10 +67268,10 @@
         "full_text": "Brook"
       },
       {
-        "name": "Demaro Black",
-        "url": "/wiki/Demaro_Black",
+        "name": "Demalo Black",
+        "url": "/wiki/Demalo_Black",
         "note": "",
-        "full_text": "Demaro Black"
+        "full_text": "Demalo Black"
       },
       {
         "name": "Fake Zoro",
@@ -67408,10 +67570,10 @@
         "full_text": "Silvers Rayleigh"
       },
       {
-        "name": "Demaro Black",
-        "url": "/wiki/Demaro_Black",
+        "name": "Demalo Black",
+        "url": "/wiki/Demalo_Black",
         "note": "K.O.",
-        "full_text": "Demaro Black (K.O.)"
+        "full_text": "Demalo Black (K.O.)"
       },
       {
         "name": "Fake Zoro",
@@ -69481,7 +69643,7 @@
       },
       {
         "name": "Koushirou",
-        "url": "/wiki/Koushirou",
+        "url": "/wiki/Shimotsuki_Koushirou",
         "note": "cover",
         "full_text": "Koushirou (cover)"
       }
@@ -71454,6 +71616,12 @@
         "url": "/wiki/Laboon",
         "note": "cover",
         "full_text": "Laboon (cover)"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "cover",
+        "full_text": "Scopper Gaban (cover)"
       }
     ]
   },
@@ -77025,7 +77193,7 @@
       },
       {
         "name": "Slime",
-        "url": "/wiki/Slime",
+        "url": "/wiki/Smiley",
         "note": "",
         "full_text": "Slime"
       },
@@ -77131,7 +77299,7 @@
       },
       {
         "name": "Slime",
-        "url": "/wiki/Slime",
+        "url": "/wiki/Smiley",
         "note": "",
         "full_text": "Slime"
       },
@@ -77225,7 +77393,7 @@
       },
       {
         "name": "Slime",
-        "url": "/wiki/Slime",
+        "url": "/wiki/Smiley",
         "note": "",
         "full_text": "Slime"
       },
@@ -80019,7 +80187,7 @@
       },
       {
         "name": "Mashikaku",
-        "url": "/wiki/Mashikaku_(Marine)",
+        "url": "/wiki/Mashikaku",
         "note": "",
         "full_text": "Mashikaku"
       },
@@ -99617,7 +99785,7 @@
       },
       {
         "name": "Koushirou",
-        "url": "/wiki/Koushirou",
+        "url": "/wiki/Shimotsuki_Koushirou",
         "note": "cover",
         "full_text": "Koushirou\u00a0(cover)"
       }
@@ -105339,7 +105507,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "flashback",
         "full_text": "Lola (flashback)"
       },
@@ -105607,7 +105775,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "flashback",
         "full_text": "Lola (flashback)"
       },
@@ -112543,7 +112711,7 @@
       },
       {
         "name": "Lola",
-        "url": "/wiki/Lola",
+        "url": "/wiki/Charlotte_Lola",
         "note": "flashback",
         "full_text": "Lola (flashback)"
       }
@@ -115822,16 +115990,16 @@
         "full_text": "Doc Q (silhouette)"
       },
       {
-        "name": "Laffitte",
-        "url": "/wiki/Laffitte",
-        "note": "silhouette",
-        "full_text": "Laffitte (silhouette)"
-      },
-      {
         "name": "Avalo Pizarro",
         "url": "/wiki/Avalo_Pizarro",
         "note": "silhouette",
         "full_text": "Avalo Pizarro (silhouette)"
+      },
+      {
+        "name": "Kuzan",
+        "url": "/wiki/Kuzan",
+        "note": "silhouette",
+        "full_text": "Kuzan (silhouette)"
       },
       {
         "name": "Capone Bege",
@@ -116976,6 +117144,12 @@
         "url": "/wiki/Gismonda",
         "note": "",
         "full_text": "Gismonda"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
       }
     ]
   },
@@ -124916,6 +125090,12 @@
         "url": "/wiki/Jujiro",
         "note": "",
         "full_text": "Jujiro"
+      },
+      {
+        "name": "Gattenshochinosukeo",
+        "url": "/wiki/Gattenshochinosukeo",
+        "note": "",
+        "full_text": "Gattenshochinosukeo"
       },
       {
         "name": "Jugemu Jugemuko",
@@ -145636,10 +145816,10 @@
         "full_text": "Lim (cover)"
       },
       {
-        "name": "Kung-Fu Dugong",
+        "name": "Wandering Kung-Fu Dugong",
         "url": "/wiki/Animal_Species/Video_Games#Wandering_Kung_Fu_Dugong",
         "note": "cover",
-        "full_text": "Kung-Fu Dugong (cover)"
+        "full_text": "Wandering Kung-Fu Dugong (cover)"
       },
       {
         "name": "Blue Gorilla Rookie",
@@ -145648,10 +145828,10 @@
         "full_text": "Blue Gorilla Rookie (cover)"
       },
       {
-        "name": "Sazae Kanchou",
-        "url": "/wiki/Animal_Species/Strong_World#Sazae_Kanchou",
+        "name": "Ogre Sazae Kancho",
+        "url": "/wiki/Animal_Species/Video_Games#Ogre_Sazae_Kancho",
         "note": "cover",
-        "full_text": "Sazae Kanchou (cover)"
+        "full_text": "Ogre Sazae Kancho (cover)"
       },
       {
         "name": "Shogun Jishi",
@@ -145666,10 +145846,10 @@
         "full_text": "Big Sasori (cover)"
       },
       {
-        "name": "Baroque Panda",
-        "url": "/wiki/Animal_Species/Video_Games#Baroque_Panda",
+        "name": "Rock Panda",
+        "url": "/wiki/Animal_Species/Strong_World#Rock_Panda",
         "note": "cover",
-        "full_text": "Baroque Panda (cover)"
+        "full_text": "Rock Panda (cover)"
       },
       {
         "name": "Smiley Risu",
@@ -150214,6 +150394,12 @@
         "url": "/wiki/Colon",
         "note": "",
         "full_text": "Colon"
+      },
+      {
+        "name": "Mato",
+        "url": "/wiki/Mato",
+        "note": "",
+        "full_text": "Mato"
       }
     ]
   },
@@ -151502,6 +151688,12 @@
         "url": "/wiki/Pluming",
         "note": "flashback",
         "full_text": "Pluming (flashback)"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "silhouette",
+        "full_text": "Figarland Shamrock (silhouette)"
       },
       {
         "name": "Issho",
@@ -159732,6 +159924,12 @@
         "full_text": "Wapol"
       },
       {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "silhouette",
+        "full_text": "Scopper Gaban (silhouette)"
+      },
+      {
         "name": "Yamato",
         "url": "/wiki/Yamato",
         "note": "cover",
@@ -161024,10 +161222,22 @@
         "full_text": "Colon"
       },
       {
+        "name": "Mato",
+        "url": "/wiki/Mato",
+        "note": "",
+        "full_text": "Mato"
+      },
+      {
         "name": "Loki",
         "url": "/wiki/Loki",
         "note": "flashback",
         "full_text": "Loki (flashback)"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "silhouette",
+        "full_text": "Scopper Gaban (silhouette)"
       },
       {
         "name": "Lilith",
@@ -161386,12 +161596,6 @@
         "full_text": "Gerd"
       },
       {
-        "name": "Shanks",
-        "url": "/wiki/Shanks",
-        "note": "",
-        "full_text": "Shanks"
-      },
-      {
         "name": "Jaguar D. Saul",
         "url": "/wiki/Jaguar_D._Saul",
         "note": "",
@@ -161408,6 +161612,12 @@
         "url": "/wiki/Ange",
         "note": "",
         "full_text": "Ange"
+      },
+      {
+        "name": "Biblo",
+        "url": "/wiki/Biblo",
+        "note": "",
+        "full_text": "Biblo"
       },
       {
         "name": "Loki",
@@ -161432,6 +161642,746 @@
         "url": "/wiki/Clou_D._Clover",
         "note": "flashback",
         "full_text": "Clou D. Clover (flashback)"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1135",
+    "ename": "Friends' Cups",
+    "page": "17",
+    "date2": "January 4, 2025",
+    "jump": "2025 Issue 6-7",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "url": "/wiki/Jewelry_Bonney",
+        "note": "",
+        "full_text": "Jewelry Bonney"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Oimo",
+        "url": "/wiki/Oimo",
+        "note": "",
+        "full_text": "Oimo"
+      },
+      {
+        "name": "Kashii",
+        "url": "/wiki/Kashii",
+        "note": "",
+        "full_text": "Kashii"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Holed'em",
+        "url": "/wiki/Holed%27em",
+        "note": "cover",
+        "full_text": "Holed'em (cover)"
+      },
+      {
+        "name": "Kamijiro",
+        "url": "/wiki/Kamijiro",
+        "note": "cover",
+        "full_text": "Kamijiro (cover)"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Biblo",
+        "url": "/wiki/Biblo",
+        "note": "",
+        "full_text": "Biblo"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Lilith",
+        "url": "/wiki/Vegapunk/Lilith",
+        "note": "",
+        "full_text": "Lilith"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "image",
+        "full_text": "Silvers Rayleigh (image)"
+      },
+      {
+        "name": "Kurozumi Tama",
+        "url": "/wiki/Kurozumi_Tama",
+        "note": "cover",
+        "full_text": "Kurozumi Tama (cover)"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Charlos",
+        "url": "/wiki/Charlos",
+        "note": "image",
+        "full_text": "Charlos (image)"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1136",
+    "ename": "The Land That Awaits the Sun",
+    "page": "17",
+    "date2": "January 20, 2025",
+    "jump": "2025 Issue 8",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Zeus",
+        "url": "/wiki/Zeus",
+        "note": "",
+        "full_text": "Zeus"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Holed'em",
+        "url": "/wiki/Holed%27em",
+        "note": "cover",
+        "full_text": "Holed'em (cover)"
+      },
+      {
+        "name": "Kamijiro",
+        "url": "/wiki/Kamijiro",
+        "note": "cover",
+        "full_text": "Kamijiro (cover)"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "silhouette",
+        "full_text": "Harald (silhouette)"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Kurozumi Tama",
+        "url": "/wiki/Kurozumi_Tama",
+        "note": "cover",
+        "full_text": "Kurozumi Tama (cover)"
+      },
+      {
+        "name": "Speed",
+        "url": "/wiki/Speed",
+        "note": "cover",
+        "full_text": "Speed (cover)"
+      },
+      {
+        "name": "Komachiyo",
+        "url": "/wiki/Komachiyo",
+        "note": "cover",
+        "full_text": "Komachiyo (cover)"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Nika",
+        "url": "/wiki/Nika",
+        "note": "silhouette",
+        "full_text": "Nika (silhouette)"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1137",
+    "ename": "Introducing Shamrock",
+    "page": "17",
+    "date2": "January 27, 2025",
+    "jump": "2025 Issue 9",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "picture",
+        "full_text": "Harald (picture)"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Kurozumi Tama",
+        "url": "/wiki/Kurozumi_Tama",
+        "note": "cover",
+        "full_text": "Kurozumi Tama (cover)"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Cerberus",
+        "url": "/wiki/Cerberus_(Sword)",
+        "note": "",
+        "full_text": "Cerberus"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1138",
+    "ename": "The Harley",
+    "page": "17",
+    "date2": "February 3, 2025",
+    "jump": "2025 Issue 10",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Who's-Who",
+        "url": "/wiki/Who%27s-Who",
+        "note": "cover",
+        "full_text": "Who's-Who (cover)"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Biblo",
+        "url": "/wiki/Biblo",
+        "note": "",
+        "full_text": "Biblo"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Cerberus",
+        "url": "/wiki/Cerberus_(Sword)",
+        "note": "",
+        "full_text": "Cerberus"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1139",
+    "ename": "Mountain-Eater",
+    "page": "13",
+    "date2": "February 10, 2025",
+    "jump": "2025 Issue 11",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Oimo",
+        "url": "/wiki/Oimo",
+        "note": "",
+        "full_text": "Oimo"
+      },
+      {
+        "name": "Kashii",
+        "url": "/wiki/Kashii",
+        "note": "",
+        "full_text": "Kashii"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "flashback",
+        "full_text": "Gol D. Roger (flashback)"
+      },
+      {
+        "name": "Who's-Who",
+        "url": "/wiki/Who%27s-Who",
+        "note": "cover",
+        "full_text": "Who's-Who (cover)"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "image",
+        "full_text": "Ripley (image)"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "image",
+        "full_text": "Colon (image)"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
       }
     ]
   }
