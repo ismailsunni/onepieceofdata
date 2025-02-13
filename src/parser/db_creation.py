@@ -218,9 +218,17 @@ def parse_age(attributes):
         elif "biologically" in age_string[0]:  # Momonosuke
             return int(age_string[1].split(")")[0])
         else:
-            return int(age_string[0])
+            try:
+                return int(age_string[0])
+            except ValueError:
+                print("parse_raw_age error", age_string, attributes["id"])
+                return None
 
-    return max([parse_raw_age(age) for age in ages])
+    try:
+        return max([parse_raw_age(age) for age in ages])
+    except Exception as e:
+        print("parse_age error", e, ages, attributes["id"])
+        return None
 
 
 @timing_decorator
@@ -230,6 +238,19 @@ def load_characters(conn: duckdb.DuckDBPyConnection, characters_json_path: str):
     num_rows = len(characters)
     print("[Character Table] Loading", num_rows, "rows...")
     for character in characters:
+        # Setting multiple variables to None
+        (
+            id,
+            name,
+            origin,
+            status,
+            birth,
+            blood_type,
+            blood_type_group,
+            bounties,
+            bounty,
+            age,
+        ) = (None,) * 10
         try:
             id = character["id"]
             name = get_name(character)
