@@ -740,6 +740,12 @@
         "full_text": "Monkey D. Luffy"
       },
       {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "cover",
+        "full_text": "Roronoa Zoro (cover)"
+      },
+      {
         "name": "Buggy",
         "url": "/wiki/Buggy",
         "note": "",
@@ -1038,8 +1044,8 @@
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "K.O",
-        "full_text": "Roronoa Zoro (K.O)"
+        "note": "K.O.",
+        "full_text": "Roronoa Zoro (K.O.)"
       },
       {
         "name": "Nami",
@@ -1062,26 +1068,26 @@
       {
         "name": "Mohji",
         "url": "/wiki/Mohji",
-        "note": "K.O",
-        "full_text": "Mohji (K.O)"
+        "note": "K.O.",
+        "full_text": "Mohji (K.O.)"
       },
       {
         "name": "Cabaji",
         "url": "/wiki/Cabaji",
-        "note": "K.O",
-        "full_text": "Cabaji (K.O)"
+        "note": "K.O.",
+        "full_text": "Cabaji (K.O.)"
       },
       {
         "name": "Acrobatic Fuwas",
-        "url": "/wiki/Buggy_Pirates#Acrobatic_Fuwas",
+        "url": "/wiki/Acrobatic_Fuwas",
         "note": "",
         "full_text": "Acrobatic Fuwas"
       },
       {
         "name": "Boodle",
         "url": "/wiki/Boodle",
-        "note": "K.O",
-        "full_text": "Boodle (K.O)"
+        "note": "K.O.",
+        "full_text": "Boodle (K.O.)"
       }
     ]
   },
@@ -1660,6 +1666,12 @@
         "full_text": "Nami"
       },
       {
+        "name": "Kuro",
+        "url": "/wiki/Kuro",
+        "note": "image",
+        "full_text": "Kuro (image)"
+      },
+      {
         "name": "Kaya",
         "url": "/wiki/Kaya",
         "note": "",
@@ -1828,12 +1840,6 @@
         "full_text": "Nami"
       },
       {
-        "name": "Buchi",
-        "url": "/wiki/Buchi",
-        "note": "Off-screen",
-        "full_text": "Buchi (Off-screen)"
-      },
-      {
         "name": "Kuro",
         "url": "/wiki/Kuro",
         "note": "",
@@ -1846,10 +1852,22 @@
         "full_text": "Jango"
       },
       {
+        "name": "Sham",
+        "url": "/wiki/Sham",
+        "note": "voice",
+        "full_text": "Sham (voice)"
+      },
+      {
+        "name": "Buchi",
+        "url": "/wiki/Buchi",
+        "note": "voice",
+        "full_text": "Buchi (voice)"
+      },
+      {
         "name": "Merry",
         "url": "/wiki/Merry",
-        "note": "K.O",
-        "full_text": "Merry (K.O)"
+        "note": "K.O.",
+        "full_text": "Merry (K.O.)"
       },
       {
         "name": "Usopp",
@@ -2948,8 +2966,8 @@
       {
         "name": "Krieg",
         "url": "/wiki/Krieg",
-        "note": "mentioned only",
-        "full_text": "Krieg (mentioned only)"
+        "note": "mentioned",
+        "full_text": "Krieg (mentioned)"
       },
       {
         "name": "Gin",
@@ -2962,6 +2980,12 @@
         "url": "/wiki/Fullbody",
         "note": "",
         "full_text": "Fullbody"
+      },
+      {
+        "name": "Lines",
+        "url": "/wiki/Lines",
+        "note": "",
+        "full_text": "Lines"
       },
       {
         "name": "Zeff",
@@ -5422,6 +5446,12 @@
         "full_text": "Kuroobi"
       },
       {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
         "name": "Take",
         "url": "/wiki/Take",
         "note": "",
@@ -5778,6 +5808,12 @@
         "url": "/wiki/Kuroobi",
         "note": "",
         "full_text": "Kuroobi"
+      },
+      {
+        "name": "Pisaro",
+        "url": "/wiki/Pisaro",
+        "note": "",
+        "full_text": "Pisaro"
       },
       {
         "name": "Nami",
@@ -7962,10 +7998,28 @@
         "full_text": "Koby (cover)"
       },
       {
-        "name": "Sea Kings",
-        "url": "/wiki/Sea_King",
+        "name": "Mottled",
+        "url": "/wiki/Mottled",
         "note": "",
-        "full_text": "Sea Kings"
+        "full_text": "Mottled"
+      },
+      {
+        "name": "Birdy",
+        "url": "/wiki/Birdy",
+        "note": "",
+        "full_text": "Birdy"
+      },
+      {
+        "name": "Googly-Eyed",
+        "url": "/wiki/Googly-Eyed",
+        "note": "",
+        "full_text": "Googly-Eyed"
+      },
+      {
+        "name": "Topknot",
+        "url": "/wiki/Topknot",
+        "note": "",
+        "full_text": "Topknot"
       }
     ]
   },
@@ -42134,32 +42188,32 @@
       {
         "name": "Wyper",
         "url": "/wiki/Wyper",
-        "note": "",
-        "full_text": "Wyper"
+        "note": "cover",
+        "full_text": "Wyper (cover)"
       },
       {
         "name": "Braham",
         "url": "/wiki/Braham",
-        "note": "",
-        "full_text": "Braham"
+        "note": "cover",
+        "full_text": "Braham (cover)"
       },
       {
         "name": "Kamakiri",
         "url": "/wiki/Kamakiri",
-        "note": "",
-        "full_text": "Kamakiri"
+        "note": "cover",
+        "full_text": "Kamakiri (cover)"
       },
       {
         "name": "Genbo",
         "url": "/wiki/Genbo",
-        "note": "",
-        "full_text": "Genbo"
+        "note": "cover",
+        "full_text": "Genbo (cover)"
       },
       {
         "name": "South Birds",
         "url": "/wiki/South_Bird",
-        "note": "",
-        "full_text": "South Birds"
+        "note": "cover",
+        "full_text": "South Birds (cover)"
       }
     ]
   },
@@ -55496,8 +55550,8 @@
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "Cover Page",
-        "full_text": "Usopp (Cover Page)"
+        "note": "cover",
+        "full_text": "Usopp (cover)"
       },
       {
         "name": "Buggy",
@@ -70860,6 +70914,12 @@
         "url": "/wiki/Zeff",
         "note": "cover",
         "full_text": "Zeff (cover)"
+      },
+      {
+        "name": "Underbite",
+        "url": "/wiki/Underbite",
+        "note": "",
+        "full_text": "Underbite"
       }
     ]
   },
@@ -70954,6 +71014,12 @@
         "url": "/wiki/Patty",
         "note": "cover",
         "full_text": "Patty (cover)"
+      },
+      {
+        "name": "Underbite",
+        "url": "/wiki/Underbite",
+        "note": "flashback",
+        "full_text": "Underbite (flashback)"
       }
     ]
   },
@@ -73932,10 +73998,40 @@
         "full_text": "McKinley (cover)"
       },
       {
-        "name": "Sea Kings",
-        "url": "/wiki/Sea_King",
+        "name": "Mottled",
+        "url": "/wiki/Mottled",
         "note": "",
-        "full_text": "Sea Kings"
+        "full_text": "Mottled"
+      },
+      {
+        "name": "Birdy",
+        "url": "/wiki/Birdy",
+        "note": "",
+        "full_text": "Birdy"
+      },
+      {
+        "name": "Googly-Eyed",
+        "url": "/wiki/Googly-Eyed",
+        "note": "",
+        "full_text": "Googly-Eyed"
+      },
+      {
+        "name": "Topknot",
+        "url": "/wiki/Topknot",
+        "note": "",
+        "full_text": "Topknot"
+      },
+      {
+        "name": "Underbite",
+        "url": "/wiki/Underbite",
+        "note": "",
+        "full_text": "Underbite"
+      },
+      {
+        "name": "Scales",
+        "url": "/wiki/Scales",
+        "note": "",
+        "full_text": "Scales"
       }
     ]
   },
@@ -74122,10 +74218,40 @@
         "full_text": "Megalo"
       },
       {
-        "name": "Sea Kings",
-        "url": "/wiki/Sea_King",
+        "name": "Mottled",
+        "url": "/wiki/Mottled",
         "note": "",
-        "full_text": "Sea Kings"
+        "full_text": "Mottled"
+      },
+      {
+        "name": "Birdy",
+        "url": "/wiki/Birdy",
+        "note": "",
+        "full_text": "Birdy"
+      },
+      {
+        "name": "Googly-Eyed",
+        "url": "/wiki/Googly-Eyed",
+        "note": "",
+        "full_text": "Googly-Eyed"
+      },
+      {
+        "name": "Topknot",
+        "url": "/wiki/Topknot",
+        "note": "",
+        "full_text": "Topknot"
+      },
+      {
+        "name": "Underbite",
+        "url": "/wiki/Underbite",
+        "note": "",
+        "full_text": "Underbite"
+      },
+      {
+        "name": "Scales",
+        "url": "/wiki/Scales",
+        "note": "",
+        "full_text": "Scales"
       },
       {
         "name": "Surume",
@@ -82015,7 +82141,7 @@
         "name": "Diamante",
         "url": "/wiki/Diamante",
         "note": "",
-        "full_text": "Diamante4"
+        "full_text": "Diamante"
       },
       {
         "name": "Senor Pink",
@@ -82033,13 +82159,13 @@
         "name": "Lao G",
         "url": "/wiki/Lao_G",
         "note": "",
-        "full_text": "Lao G4"
+        "full_text": "Lao G"
       },
       {
         "name": "Machvise",
         "url": "/wiki/Machvise",
         "note": "",
-        "full_text": "Machvise4"
+        "full_text": "Machvise"
       },
       {
         "name": "Caribou",
@@ -83830,10 +83956,10 @@
         "full_text": "Hajrudin"
       },
       {
-        "name": "Fighting Bull",
-        "url": "/wiki/Fighting_Bull",
+        "name": "Ucy",
+        "url": "/wiki/Ucy",
         "note": "",
-        "full_text": "Fighting Bull"
+        "full_text": "Ucy"
       },
       {
         "name": "Kelly Funk",
@@ -99595,7 +99721,7 @@
       },
       {
         "name": "Nekozaemon",
-        "url": "/wiki/Fude_Fude_no_Mi#Named_Creations",
+        "url": "/wiki/Nekozaemon",
         "note": "",
         "full_text": "Nekozaemon"
       }
@@ -100999,7 +101125,7 @@
       },
       {
         "name": "Torasaburo",
-        "url": "/wiki/Fude_Fude_no_Mi#Named_Creations",
+        "url": "/wiki/Torasaburo",
         "note": "",
         "full_text": "Torasaburo"
       }
@@ -101243,7 +101369,7 @@
       },
       {
         "name": "Torasaburo",
-        "url": "/wiki/Fude_Fude_no_Mi#Named_Creations",
+        "url": "/wiki/Torasaburo",
         "note": "image",
         "full_text": "Torasaburo (image)"
       }
@@ -115050,6 +115176,12 @@
         "full_text": "Goldberg (cover)"
       },
       {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "cover",
+        "full_text": "Nash (cover)"
+      },
+      {
         "name": "Carrot",
         "url": "/wiki/Carrot",
         "note": "",
@@ -115996,10 +116128,10 @@
         "full_text": "Avalo Pizarro (silhouette)"
       },
       {
-        "name": "Kuzan",
-        "url": "/wiki/Kuzan",
+        "name": "Catarina Devon",
+        "url": "/wiki/Catarina_Devon",
         "note": "silhouette",
-        "full_text": "Kuzan (silhouette)"
+        "full_text": "Catarina Devon (silhouette)"
       },
       {
         "name": "Capone Bege",
@@ -116880,12 +117012,6 @@
         "url": "/wiki/Kaidou",
         "note": "",
         "full_text": "Kaidou"
-      },
-      {
-        "name": "Shanks",
-        "url": "/wiki/Shanks",
-        "note": "",
-        "full_text": "Shanks"
       },
       {
         "name": "Leo",
@@ -128090,6 +128216,18 @@
         "full_text": "Zunesha"
       },
       {
+        "name": "Topknot",
+        "url": "/wiki/Topknot",
+        "note": "",
+        "full_text": "Topknot"
+      },
+      {
+        "name": "Scales",
+        "url": "/wiki/Scales",
+        "note": "",
+        "full_text": "Scales"
+      },
+      {
         "name": "Arashi",
         "url": "https://en.wikipedia.org/wiki/Arashi",
         "note": "cover",
@@ -128320,6 +128458,18 @@
         "url": "/wiki/Shyarly",
         "note": "flashback",
         "full_text": "Shyarly (flashback)"
+      },
+      {
+        "name": "Scales",
+        "url": "/wiki/Scales",
+        "note": "",
+        "full_text": "Scales"
+      },
+      {
+        "name": "Topknot",
+        "url": "/wiki/Topknot",
+        "note": "",
+        "full_text": "Topknot"
       }
     ]
   },
@@ -159404,7 +159554,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1122",
     "ename": "Time is Right",
     "page": "17",
@@ -159630,7 +159780,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1123",
     "ename": "The Void Fortnight",
     "page": "17",
@@ -159784,7 +159934,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1124",
     "ename": "Close Friend",
     "page": "13",
@@ -159962,7 +160112,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1125",
     "ename": "What Death Means",
     "page": "17",
@@ -160206,7 +160356,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1126",
     "ename": "Settling the Score",
     "page": "17",
@@ -160474,7 +160624,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1127",
     "ename": "Adventure in the Land of Mystery",
     "page": "15",
@@ -160544,7 +160694,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1128",
     "ename": "RPG",
     "page": "19",
@@ -160638,7 +160788,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1129",
     "ename": "Livedolls",
     "page": "17",
@@ -160750,7 +160900,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1130",
     "ename": "The Accursed Prince",
     "page": "15",
@@ -160860,6 +161010,12 @@
         "full_text": "Piper"
       },
       {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
         "name": "Iscat",
         "url": "/wiki/Iscat",
         "note": "",
@@ -160898,7 +161054,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1131",
     "ename": "Loki in the Underworld",
     "page": "17",
@@ -161032,6 +161188,12 @@
         "full_text": "Piper"
       },
       {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
         "name": "Donquixote Doflamingo",
         "url": "/wiki/Donquixote_Doflamingo",
         "note": "image",
@@ -161088,7 +161250,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1132",
     "ename": "Adventure in Elbaph",
     "page": "17",
@@ -161210,6 +161372,12 @@
         "full_text": "Piper"
       },
       {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
         "name": "Shanks",
         "url": "/wiki/Shanks",
         "note": "flashback",
@@ -161272,7 +161440,7 @@
     ]
   },
   {
-    "vol": "TBA",
+    "vol": "111",
     "chapter": "1133",
     "ename": "Nice Things",
     "page": "17",
@@ -161388,6 +161556,12 @@
         "full_text": "Gerd"
       },
       {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
         "name": "Holed'em",
         "url": "/wiki/Holed%27em",
         "note": "cover",
@@ -161467,7 +161641,7 @@
       },
       {
         "name": "Hack",
-        "url": "/wiki/Hack",
+        "url": "/wiki/Hack_(Archaeologist)",
         "note": "fantasy",
         "full_text": "Hack (fantasy)"
       },
@@ -161624,6 +161798,30 @@
         "url": "/wiki/Loki",
         "note": "",
         "full_text": "Loki"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Aegir",
+        "url": "/wiki/Aegir",
+        "note": "",
+        "full_text": "Aegir"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn_(Student)",
+        "note": "",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
       },
       {
         "name": "Vegapunk",
@@ -161820,6 +162018,24 @@
         "url": "/wiki/Jarul",
         "note": "",
         "full_text": "Jarul"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Aegir",
+        "url": "/wiki/Aegir",
+        "note": "",
+        "full_text": "Aegir"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
       },
       {
         "name": "Lilith",
@@ -162082,6 +162298,12 @@
         "full_text": "Gerd"
       },
       {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
         "name": "Harald",
         "url": "/wiki/Harald",
         "note": "picture",
@@ -162152,6 +162374,12 @@
         "full_text": "Nami"
       },
       {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "",
@@ -162168,6 +162396,12 @@
         "url": "/wiki/Franky",
         "note": "",
         "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
       },
       {
         "name": "Hajrudin",
@@ -162246,6 +162480,18 @@
         "url": "/wiki/Jarul",
         "note": "",
         "full_text": "Jarul"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
       },
       {
         "name": "Scopper Gaban",
@@ -162354,10 +162600,28 @@
         "full_text": "Gol D. Roger (flashback)"
       },
       {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "flashback",
+        "full_text": "Silvers Rayleigh (flashback)"
+      },
+      {
         "name": "Who's-Who",
         "url": "/wiki/Who%27s-Who",
         "note": "cover",
         "full_text": "Who's-Who (cover)"
+      },
+      {
+        "name": "Page One",
+        "url": "/wiki/Page_One",
+        "note": "cover; silhouette",
+        "full_text": "Page One (cover; silhouette)"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover; silhouette",
+        "full_text": "Ulti (cover; silhouette)"
       },
       {
         "name": "Scopper Gaban",
@@ -162382,6 +162646,1252 @@
         "url": "/wiki/Jarul",
         "note": "",
         "full_text": "Jarul"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1140",
+    "ename": "Scopper Gaban",
+    "page": "17",
+    "date2": "February 24, 2025",
+    "jump": "2025 Issue 13",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "flashback",
+        "full_text": "Shanks (flashback)"
+      },
+      {
+        "name": "Who's-Who",
+        "url": "/wiki/Who%27s-Who",
+        "note": "cover",
+        "full_text": "Who's-Who (cover)"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover",
+        "full_text": "Ulti (cover)"
+      },
+      {
+        "name": "Page One",
+        "url": "/wiki/Page_One",
+        "note": "cover",
+        "full_text": "Page One (cover)"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "flashback",
+        "full_text": "Colon (flashback)"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "",
+        "full_text": "Rimoshifu Killingham"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1141",
+    "ename": "An Older Woman",
+    "page": "17",
+    "date2": "March 3, 2025",
+    "jump": "2025 Issue 14",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
+        "name": "Who's-Who",
+        "url": "/wiki/Who%27s-Who",
+        "note": "cover",
+        "full_text": "Who's-Who (cover)"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover",
+        "full_text": "Ulti (cover)"
+      },
+      {
+        "name": "Page One",
+        "url": "/wiki/Page_One",
+        "note": "cover",
+        "full_text": "Page One (cover)"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1142",
+    "ename": "What I'm Afraid Of",
+    "page": "17",
+    "date2": "March 10, 2025",
+    "jump": "2025 Issue 15",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Who's-Who",
+        "url": "/wiki/Who%27s-Who",
+        "note": "cover",
+        "full_text": "Who's-Who (cover)"
+      },
+      {
+        "name": "Kiba",
+        "url": "/wiki/Kiba",
+        "note": "",
+        "full_text": "Kiba"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Blade",
+        "url": "/wiki/Blade",
+        "note": "",
+        "full_text": "Blade"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Wolf",
+        "url": "/wiki/Wolf_(Elbaph)",
+        "note": "",
+        "full_text": "Wolf"
+      },
+      {
+        "name": "Aegir",
+        "url": "/wiki/Aegir",
+        "note": "",
+        "full_text": "Aegir"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn_(Student)",
+        "note": "",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "",
+        "full_text": "Rimoshifu Killingham"
+      },
+      {
+        "name": "J\u00f6rmungandr",
+        "url": "/wiki/J%C3%B6rmungandr",
+        "note": "",
+        "full_text": "J\u00f6rmungandr"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1143",
+    "ename": "Holy Knights",
+    "page": "19",
+    "date2": "March 24, 2025",
+    "jump": "2025 Issue 17",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "cover",
+        "full_text": "Franky (cover)"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Kashii",
+        "url": "/wiki/Kashii",
+        "note": "",
+        "full_text": "Kashii"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "flashback",
+        "full_text": "Harald (flashback)"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn_(Student)",
+        "note": "",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "",
+        "full_text": "Rimoshifu Killingham"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1144",
+    "ename": "A Time for Warriors",
+    "page": "15",
+    "date2": "March 31, 2025",
+    "jump": "2025 Issue 18",
+    "characters": [
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Oimo",
+        "url": "/wiki/Oimo",
+        "note": "",
+        "full_text": "Oimo"
+      },
+      {
+        "name": "Kashii",
+        "url": "/wiki/Kashii",
+        "note": "",
+        "full_text": "Kashii"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "url": "/wiki/Jewelry_Bonney",
+        "note": "",
+        "full_text": "Jewelry Bonney"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Kiba",
+        "url": "/wiki/Kiba",
+        "note": "",
+        "full_text": "Kiba"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn_(Student)",
+        "note": "",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Lilith",
+        "url": "/wiki/Vegapunk/Lilith",
+        "note": "",
+        "full_text": "Lilith"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Minatomo",
+        "url": "/wiki/Minatomo_(Wano)",
+        "note": "cover",
+        "full_text": "Minatomo (cover)"
+      },
+      {
+        "name": "Kurozumi Tama",
+        "url": "/wiki/Kurozumi_Tama",
+        "note": "cover",
+        "full_text": "Kurozumi Tama (cover)"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "",
+        "full_text": "Rimoshifu Killingham"
+      },
+      {
+        "name": "Draugr",
+        "url": "/wiki/Draugr",
+        "note": "",
+        "full_text": "Draugr"
+      },
+      {
+        "name": "Fenrir",
+        "url": "/wiki/Fenrir",
+        "note": "",
+        "full_text": "Fenrir"
+      },
+      {
+        "name": "Nidh\u00f6ggr",
+        "url": "/wiki/Nidh%C3%B6ggr",
+        "note": "",
+        "full_text": "Nidh\u00f6ggr"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1145",
+    "ename": "Wildfire in Forest Sector 2, Branch Route 8",
+    "page": "17\u00a0(Excluding two-page color spread)*",
+    "date2": "April 7, 2025",
+    "jump": "2025 Issue 19",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Zeus",
+        "url": "/wiki/Zeus",
+        "note": "image",
+        "full_text": "Zeus (image)"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Oimo",
+        "url": "/wiki/Oimo",
+        "note": "",
+        "full_text": "Oimo"
+      },
+      {
+        "name": "Kashii",
+        "url": "/wiki/Kashii",
+        "note": "",
+        "full_text": "Kashii"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "flashback",
+        "full_text": "Rocks D. Xebec (flashback)"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "flashback",
+        "full_text": "Edward Newgate (flashback)"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover",
+        "full_text": "Ulti (cover)"
+      },
+      {
+        "name": "Page One",
+        "url": "/wiki/Page_One",
+        "note": "cover",
+        "full_text": "Page One (cover)"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn_(Student)",
+        "note": "",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Draugr",
+        "url": "/wiki/Draugr",
+        "note": "",
+        "full_text": "Draugr"
+      },
+      {
+        "name": "Fenrir",
+        "url": "/wiki/Fenrir",
+        "note": "",
+        "full_text": "Fenrir"
+      }
+    ]
+  },
+  {
+    "vol": "TBA",
+    "chapter": "1146",
+    "ename": "Motion in Stillness",
+    "page": "17",
+    "date2": "April 21, 2025",
+    "jump": "2025 Issue 21",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Zeus",
+        "url": "/wiki/Zeus",
+        "note": "",
+        "full_text": "Zeus"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "url": "/wiki/Jewelry_Bonney",
+        "note": "",
+        "full_text": "Jewelry Bonney"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover",
+        "full_text": "Ulti (cover)"
+      },
+      {
+        "name": "Page One",
+        "url": "/wiki/Page_One",
+        "note": "cover",
+        "full_text": "Page One (cover)"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "picture",
+        "full_text": "Harald (picture)"
+      },
+      {
+        "name": "Kiba",
+        "url": "/wiki/Kiba",
+        "note": "",
+        "full_text": "Kiba"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn_(Student)",
+        "note": "",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Vegapunk",
+        "url": "/wiki/Vegapunk",
+        "note": "flashback",
+        "full_text": "Vegapunk (flashback)"
+      },
+      {
+        "name": "Lilith",
+        "url": "/wiki/Vegapunk/Lilith",
+        "note": "",
+        "full_text": "Lilith"
+      },
+      {
+        "name": "Clou D. Clover",
+        "url": "/wiki/Clou_D._Clover",
+        "note": "flashback",
+        "full_text": "Clou D. Clover (flashback)"
+      },
+      {
+        "name": "Nico Olvia",
+        "url": "/wiki/Nico_Olvia",
+        "note": "flashback",
+        "full_text": "Nico Olvia (flashback)"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Minatomo",
+        "url": "/wiki/Minatomo_(Wano)",
+        "note": "cover",
+        "full_text": "Minatomo (cover)"
+      },
+      {
+        "name": "Kurozumi Tama",
+        "url": "/wiki/Kurozumi_Tama",
+        "note": "cover",
+        "full_text": "Kurozumi Tama (cover)"
+      },
+      {
+        "name": "Gunko",
+        "url": "/wiki/Gunko",
+        "note": "",
+        "full_text": "Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "",
+        "full_text": "Rimoshifu Killingham"
       }
     ]
   }
