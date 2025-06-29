@@ -68,7 +68,7 @@ chapter,volume,name,page,date,jump
 67,8.0,The Soup,19,1998-11-30,1999 Issue 1
 68,8.0,The Fourth Person,19,1998-12-07,1999 Issue 2-3
 69,8.0,Arlong Park,20,1998-12-19,1999 Issue 4-5
-70,8.0,The Great Adventure of Usopp the Man,20,1999-01-04,1999 Issue 6
+70,8.0,The Great Adventure of Usopp the Man,21,1999-01-04,1999 Issue 6
 71,8.0,Lords of All Creation,19,1999-01-11,1999 Issue 7
 72,9.0,Proper Living,19,1999-01-18,1999 Issue 8
 73,9.0,Monsters of the Grand Line,19,1999-01-25,1999 Issue 9
@@ -1132,16 +1132,23 @@ chapter,volume,name,page,date,jump
 1131,111.0,Loki in the Underworld,17,2024-11-11,2024 Issue 50
 1132,111.0,Adventure in Elbaph,17,2024-12-02,2025 Issue 1
 1133,111.0,Nice Things,17,2024-12-09,2025 Issue 2
-1134,,The Owl Library,19,2024-12-23,2025 Issue 4-5
-1135,,Friends' Cups,17,2025-01-04,2025 Issue 6-7
-1136,,The Land That Awaits the Sun,17,2025-01-20,2025 Issue 8
-1137,,Introducing Shamrock,17,2025-01-27,2025 Issue 9
-1138,,The Harley,17,2025-02-03,2025 Issue 10
-1139,,Mountain-Eater,13,2025-02-10,2025 Issue 11
-1140,,Scopper Gaban,17,2025-02-24,2025 Issue 13
-1141,,An Older Woman,17,2025-03-03,2025 Issue 14
-1142,,What I'm Afraid Of,17,2025-03-10,2025 Issue 15
-1143,,Holy Knights,19,2025-03-24,2025 Issue 17
-1144,,A Time for Warriors,15,2025-03-31,2025 Issue 18
+1134,112.0,The Owl Library,19,2024-12-23,2025 Issue 4-5
+1135,112.0,Friends' Cups,17,2025-01-04,2025 Issue 6-7
+1136,112.0,The Land That Awaits the Sun,17,2025-01-20,2025 Issue 8
+1137,112.0,Introducing Shamrock,17,2025-01-27,2025 Issue 9
+1138,112.0,The Harley,17,2025-02-03,2025 Issue 10
+1139,112.0,Mountain-Eater,13,2025-02-10,2025 Issue 11
+1140,112.0,Scopper Gaban,17,2025-02-24,2025 Issue 13
+1141,112.0,An Older Woman,17,2025-03-03,2025 Issue 14
+1142,112.0,What I'm Afraid Of,17,2025-03-10,2025 Issue 15
+1143,112.0,Holy Knights,19,2025-03-24,2025 Issue 17
+1144,112.0,A Time for Warriors,15,2025-03-31,2025 Issue 18
 1145,,"Wildfire in Forest Sector 2, Branch Route 8",17,2025-04-07,2025 Issue 19
 1146,,Motion in Stillness,17,2025-04-21,2025 Issue 21
+1147,,What We're Afraid Of,17,2025-04-28,2025 Issue 22-23
+1148,,Ronja,15,2025-05-12,2025 Issue 24
+1149,,One Second,19,2025-05-26,2025 Issue 26
+1150,,Domi Reversi,15,2025-06-02,2025 Issue 27
+1151,,I Get the Idea!!!,15,2025-06-09,2025 Issue 28
+1152,,A Horrible Day,17,2025-06-23,2025 Issue 30
+1153,,The Birth of Loki,17,2025-06-30,2025 Issue 31

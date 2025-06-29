@@ -1,6 +1,6 @@
 # Last chapter and volume
-last_chapter = 1146
-last_volume = 110
+last_chapter = 1153
+last_volume = 112
 
 # JSON files
 chapters_json_path = "./data/chapters.json"
