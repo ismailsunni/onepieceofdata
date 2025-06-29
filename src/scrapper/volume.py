@@ -64,7 +64,7 @@ def scrap_volumes(last_volume: int, volumes_json_path: str):
 
 
 if __name__ == "__main__":
-    last_volume = 110
+    last_volume = 111
     volumes_json_path = "./data/volumes.json"
     scrap_volumes(last_volume, volumes_json_path)
     print("fin")
