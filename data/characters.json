@@ -723,7 +723,7 @@
     "ename": [
       "\"Local Sea Monster\"",
       "Master of the Near Sea (video games)",
-      "Lord of the Coast (live-action series)"
+      "Lord of the Coast (live-action series, OPCG)"
     ],
     "first": [
       "Chapter 1",
@@ -1181,7 +1181,7 @@
       "SWORD) (formerly 153rd Branch)"
     ],
     "occupation": [
-      "Lieutenant Commander,",
+      "Lieutenant Commander",
       "Chief Petty Officer (promoted)",
       "Chore Boy (promoted)"
     ],
@@ -1493,26 +1493,21 @@
     ],
     "affiliation": [
       "Cross Guild",
-      "Buggy's Delivery",
-      "(Unknown status)?Buggy Pirates",
+      "Buggy's Delivery\u00a0(Unknown status)?",
+      "Buggy Pirates",
       "Buggy and Alvida Alliance",
       "Four Emperors",
-      "Seven Warlords of the Sea",
-      "(former)",
-      "Roger Pirates",
-      "(former)",
+      "Seven Warlords of the Sea (former)",
+      "Roger Pirates (former)",
       "Impel Down (former)"
     ],
     "occupation": [
       "Pirate Captain",
       "Emperor",
       "Figurehead President of Cross Guild",
-      "Chairman of Buggy's Delivery",
-      "(former)",
-      "Warlord of the Sea",
-      "(former)",
-      "Apprentice",
-      "(former)",
+      "Chairman of Buggy's Delivery (former)",
+      "Warlord of the Sea (former)",
+      "Apprentice (former)",
       "Prisoner of the Great Prison (former)"
     ],
     "origin": [
@@ -1597,6 +1592,32 @@
     ],
     "bounty": [
       "At least 1000000"
+    ]
+  },
+  {
+    "id": "Pirate_Bear",
+    "name": "Pirate Bear",
+    "jname": [
+      "\u304b\u3044\u305e\u304f\u30af\u30de"
+    ],
+    "rname": [
+      "Kaizoku Kuma"
+    ],
+    "first": [
+      "Grand Line Dream Adventure Log",
+      "Chapter 7 (cover)"
+    ],
+    "affiliation": [
+      "Straw Hat Pirates"
+    ],
+    "occupation": [
+      "Pirate"
+    ],
+    "alias": [
+      "Paw-san"
+    ],
+    "status": [
+      "Alive"
     ]
   },
   {
@@ -2037,7 +2058,7 @@
       "Pirate (former)"
     ],
     "residence": [
-      "Elbaph"
+      "Elbaph (Sun World)"
     ],
     "alias": [
       "\"Ya-san\""
@@ -2683,7 +2704,8 @@
       "Black Cat Pirates"
     ],
     "occupation": [
-      "Pirate Officer, Ship Guard"
+      "Pirate Officer",
+      "Ship Guard"
     ],
     "origin": [
       "East Blue"
@@ -4297,7 +4319,7 @@
       "Mam\u012bm\u012b"
     ],
     "ename": [
-      "Mameemee"
+      "Mameemee (WT100)"
     ],
     "first": [
       "Chapter 79",
@@ -4383,8 +4405,7 @@
     ],
     "epithet": [
       "\"Garp the Fist\"",
-      "Hero of the Marines",
-      ""
+      "Hero of the Marines"
     ],
     "status": [
       "Alive"
@@ -4428,6 +4449,9 @@
     ],
     "status": [
       "Alive"
+    ],
+    "age": [
+      "Over 38"
     ]
   },
   {
@@ -5059,7 +5083,8 @@
       "Madara"
     ],
     "ename": [
-      "Spots (Funimation)"
+      "Spots (Funimation)",
+      "Spotted Neptunian (OPCG)"
     ],
     "first": [
       "Chapter 101",
@@ -5086,7 +5111,8 @@
       "Tori"
     ],
     "ename": [
-      "Birdy (Funimation)"
+      "Birdy (Funimation)",
+      "Bird Neptunian (OPCG)"
     ],
     "first": [
       "Chapter 101",
@@ -5113,7 +5139,8 @@
       "Gyoro-me"
     ],
     "ename": [
-      "Googly (Funimation)"
+      "Googly (Funimation)",
+      "Bulge-Eyed Neptunian (OPCG)"
     ],
     "first": [
       "Chapter 101",
@@ -5140,7 +5167,8 @@
       "Chonmage"
     ],
     "ename": [
-      "Topknot (Funimation)"
+      "Topknot (Funimation)",
+      "Topknot Neptunian (OPCG)"
     ],
     "first": [
       "Chapter 101",
@@ -5332,9 +5360,9 @@
       "Neferutari Bibi"
     ],
     "ename": [
-      "Nefeltari Vivi (VIZ, 4Kids, Funimation subs, Odex, Movie 8 dub)",
-      "Vivi Nefertari (Funimation dub)",
-      "Nefertari Vivi (Unlimited Adventure)"
+      "Nefeltari Vivi",
+      "[N 1]Vivi Nefertari",
+      "[N 2]Nefertari Vivi[N 3]"
     ],
     "first": [
       "Chapter 103",
@@ -6334,6 +6362,38 @@
     ]
   },
   {
+    "id": "Island_Eater",
+    "name": "Island Eater",
+    "jname": [
+      "\u5cf6\u98df\u3044"
+    ],
+    "rname": [
+      "Shima Kui"
+    ],
+    "ename": [
+      "Island Eater"
+    ],
+    "first": [
+      "Chapter 128",
+      "Episode 77"
+    ],
+    "origin": [
+      "Grand Line"
+    ],
+    "status": [
+      "Deceased"
+    ],
+    "birth": [
+      "April 21st"
+    ],
+    "height": [
+      "715 m (2345'9\")"
+    ],
+    "weight": [
+      "120 t"
+    ]
+  },
+  {
     "id": "Raideen",
     "name": "Raideen",
     "jname": [
@@ -6699,60 +6759,6 @@
     ]
   },
   {
-    "id": "Kureha",
-    "name": "Kureha",
-    "jname": [
-      "\u304f\u308c\u306f"
-    ],
-    "rname": [
-      "Kureha"
-    ],
-    "ename": [
-      "Kureha"
-    ],
-    "first": [
-      "Chapter 134",
-      "Episode 80"
-    ],
-    "affiliation": [
-      "Sakura Kingdom",
-      "Isshi-100"
-    ],
-    "occupation": [
-      "Head-Doctor of the Sakura Kingdom",
-      "Leader of the Isshi-100"
-    ],
-    "origin": [
-      "Grand Line (Drum Kingdom)"
-    ],
-    "residence": [
-      "Drum Island"
-    ],
-    "alias": [
-      "\"Doctorine\""
-    ],
-    "epithet": [
-      "\"Witch\"",
-      "\"Master of Doctors\""
-    ],
-    "status": [
-      "Alive"
-    ],
-    "age": [
-      "139 (debut)",
-      "141 (after timeskip)"
-    ],
-    "birth": [
-      "September 8th"
-    ],
-    "height": [
-      "188 cm (6'2\")"
-    ],
-    "blood type": [
-      "S"
-    ]
-  },
-  {
     "id": "Marshall_D._Teach",
     "name": "Marshall D. Teach",
     "jname": [
@@ -7093,6 +7099,60 @@
     ],
     "bounty": [
       "At least 42200000"
+    ]
+  },
+  {
+    "id": "Kureha",
+    "name": "Kureha",
+    "jname": [
+      "\u304f\u308c\u306f"
+    ],
+    "rname": [
+      "Kureha"
+    ],
+    "ename": [
+      "Kureha"
+    ],
+    "first": [
+      "Chapter 134",
+      "Episode 80"
+    ],
+    "affiliation": [
+      "Sakura Kingdom",
+      "Isshi-100"
+    ],
+    "occupation": [
+      "Head-Doctor of the Sakura Kingdom",
+      "Leader of the Isshi-100"
+    ],
+    "origin": [
+      "Grand Line (Drum Kingdom)"
+    ],
+    "residence": [
+      "Drum Island"
+    ],
+    "alias": [
+      "\"Doctorine\""
+    ],
+    "epithet": [
+      "\"Witch\"",
+      "\"Master of Doctors\""
+    ],
+    "status": [
+      "Alive"
+    ],
+    "age": [
+      "139 (debut)",
+      "141 (after timeskip)"
+    ],
+    "birth": [
+      "September 8th"
+    ],
+    "height": [
+      "188 cm (6'2\")"
+    ],
+    "blood type": [
+      "S"
     ]
   },
   {
@@ -8247,7 +8307,7 @@
       "Emperor (former)"
     ],
     "origin": [
-      "Grand Line"
+      "Grand Line (Sphinx)"
     ],
     "residence": [
       "Sphinx (former)"
@@ -9014,7 +9074,7 @@
       "November 3rd"
     ],
     "height": [
-      "197 cm (6\u20195\u00bd\u201d)"
+      "197 cm (6\u20196\u201d)"
     ],
     "blood type": [
       "X"
@@ -9031,7 +9091,7 @@
     ],
     "ename": [
       "Pappagu",
-      "Pappag (WT100)"
+      "Pappag (WT100, OPCG)"
     ],
     "first": [
       "Chapter 195 (cover)",
@@ -10045,7 +10105,8 @@
       "North Blue"
     ],
     "residence": [
-      "Lvneel (former) Jaya (former)"
+      "Lvneel (former)",
+      "Jaya (former)"
     ],
     "status": [
       "Alive"
@@ -11170,7 +11231,7 @@
     ],
     "ename": [
       "Eneru",
-      "Enel (BStation, WT100)"
+      "Enel (BStation, WT100, OPCG)"
     ],
     "first": [
       "Chapter 254",
@@ -16927,6 +16988,9 @@
       "Namakura Island (former, temporary)"
     ],
     "alias": [
+      "\"Demon King Satan-sama\"",
+      "Funimation subs: \"King of the Devils - Satan-sama\"",
+      "Funimation dub: \"Lord Satan\")",
       "\"Hone-kichi\"",
       "\"The Starving Skeleton\""
     ],
@@ -17620,6 +17684,36 @@
     ]
   },
   {
+    "id": "Hippo_Gentleman",
+    "name": "Hippo Gentleman",
+    "jname": [
+      "\u30ab\u30d0\u7d33\u58eb"
+    ],
+    "rname": [
+      "Kaba Shinshi"
+    ],
+    "ename": [
+      "Hippo Gallant (Viz)",
+      "Gentleman Hippopotamus (Funimation Sub)",
+      "Hippo Gentleman (Funimation Dub)"
+    ],
+    "first": [
+      "Chapter 451, Episode 345"
+    ],
+    "affiliation": [
+      "Thriller Bark Pirates"
+    ],
+    "occupation": [
+      "Wild Zombie Vice Commander"
+    ],
+    "status": [
+      "Deceased"
+    ],
+    "zombie number": [
+      "28"
+    ]
+  },
+  {
     "id": "Risky_Brothers_(Zombies)",
     "name": "Risky Brothers",
     "jname": [
@@ -18111,31 +18205,6 @@
     ]
   },
   {
-    "id": "Mizuta_Mawaritosuki",
-    "name": "Mizuta Mawaritosuki",
-    "jname": [
-      "\u30df\u30ba\u30fc\u30bf\u30fb\u30de\u30ef\u30ea\u30c8\u30b9\u30ad\u30fc"
-    ],
-    "rname": [
-      "Miz\u016bta Mawaritosuk\u012b"
-    ],
-    "ename": [
-      "Mizuuta Mawaritosky"
-    ],
-    "first": [
-      "Chapter 488, Episode 379"
-    ],
-    "affiliation": [
-      "Rumbar Pirates"
-    ],
-    "occupation": [
-      "Pirate"
-    ],
-    "status": [
-      "Deceased"
-    ]
-  },
-  {
     "id": "Alice",
     "name": "Alice",
     "jname": [
@@ -18164,6 +18233,31 @@
     "age": [
       "8 (debut)",
       "10  (after timeskip)"
+    ]
+  },
+  {
+    "id": "Mizuta_Mawaritosuki",
+    "name": "Mizuta Mawaritosuki",
+    "jname": [
+      "\u30df\u30ba\u30fc\u30bf\u30fb\u30de\u30ef\u30ea\u30c8\u30b9\u30ad\u30fc"
+    ],
+    "rname": [
+      "Miz\u016bta Mawaritosuk\u012b"
+    ],
+    "ename": [
+      "Mizuuta Mawaritosky"
+    ],
+    "first": [
+      "Chapter 488, Episode 379"
+    ],
+    "affiliation": [
+      "Rumbar Pirates"
+    ],
+    "occupation": [
+      "Pirate"
+    ],
+    "status": [
+      "Deceased"
     ]
   },
   {
@@ -18682,7 +18776,7 @@
       "Pirate Captain"
     ],
     "origin": [
-      "(Kutsukku Island) South Blue"
+      "South Blue (Kutsukku Island)"
     ],
     "epithet": [
       "\"Captain\""
@@ -18748,7 +18842,7 @@
       "Assassin (former)"
     ],
     "origin": [
-      "(Kutsukku Island) South Blue"
+      "South Blue (Kutsukku Island)"
     ],
     "alias": [
       "\"Kamazo the Manslayer\""
@@ -19286,6 +19380,9 @@
     "rname": [
       "P\u0101to"
     ],
+    "ename": [
+      "Pert"
+    ],
     "first": [
       "Chapter 498",
       "Episode 392"
@@ -19655,7 +19752,7 @@
       "Pirate"
     ],
     "origin": [
-      "(Kutsukku Island) South Blue"
+      "South Blue (Kutsukku Island)"
     ],
     "status": [
       "Unknown"
@@ -19688,7 +19785,7 @@
       "Pirate"
     ],
     "origin": [
-      "(Kutsukku Island) South Blue"
+      "South Blue (Kutsukku Island)"
     ],
     "status": [
       "Unknown"
@@ -20749,8 +20846,8 @@
       "Bakyura"
     ],
     "ename": [
-      "Bacura (Viz, FUNimation),",
-      "Bakula (FUNimation subtitles)"
+      "Bacura (VIZ, Funimation),",
+      "Bakula (Funimation subtitles)"
     ],
     "first": [
       "Chapter 516",
@@ -21355,6 +21452,38 @@
     "name": null
   },
   {
+    "id": "Jean_Goen",
+    "name": "Jean Goen",
+    "jname": [
+      "\u30b8\u30e3\u30f3\u30fb\u30b4\u30a8\u30f3"
+    ],
+    "rname": [
+      "Jan Goen"
+    ],
+    "ename": [
+      "Dez Tinny"
+    ],
+    "first": [
+      "Chapter 526",
+      "Episode 423"
+    ],
+    "occupation": [
+      "Prisoner"
+    ],
+    "origin": [
+      "Grand Line"
+    ],
+    "status": [
+      "Alive"
+    ],
+    "birth": [
+      "September 24th"
+    ],
+    "bounty": [
+      "Less than 15000000"
+    ]
+  },
+  {
     "id": "Magellan",
     "name": "Magellan",
     "jname": [
@@ -21407,38 +21536,6 @@
     ],
     "dftype": [
       "Paramecia"
-    ]
-  },
-  {
-    "id": "Jean_Goen",
-    "name": "Jean Goen",
-    "jname": [
-      "\u30b8\u30e3\u30f3\u30fb\u30b4\u30a8\u30f3"
-    ],
-    "rname": [
-      "Jan Goen"
-    ],
-    "ename": [
-      "Dez Tinny"
-    ],
-    "first": [
-      "Chapter 526",
-      "Episode 423"
-    ],
-    "occupation": [
-      "Prisoner"
-    ],
-    "origin": [
-      "Grand Line"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "birth": [
-      "September 24th"
-    ],
-    "bounty": [
-      "Less than 15000000"
     ]
   },
   {
@@ -21924,6 +22021,29 @@
     ]
   },
   {
+    "id": "Sukoshiba_Kanishitoru",
+    "name": "Sukoshiba Kanishitoru",
+    "jname": [
+      "\u30b9\u30b3\u30b7\u30d0\u30fb\u30ab\u30cb\u30b7\u30c8\u30fc\u30eb"
+    ],
+    "rname": [
+      "Sukoshiba Kanishit\u014dru"
+    ],
+    "ename": [
+      "Loki Clownin"
+    ],
+    "first": [
+      "Chapter 536",
+      "Episode 437"
+    ],
+    "occupation": [
+      "Impel Down Guard"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
     "id": "Wolf_Unit",
     "name": null
   },
@@ -22146,10 +22266,6 @@
   },
   {
     "id": "Wolf_unit",
-    "name": null
-  },
-  {
-    "id": "Manticore",
     "name": null
   },
   {
@@ -22787,7 +22903,7 @@
       "Spade Pirates, Whitebeard Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate Officer"
     ],
     "status": [
       "Alive"
@@ -22814,7 +22930,7 @@
     ],
     "occupation": [
       "Teacher (former)",
-      "Pirate",
+      "Pirate Officer",
       "Sniper"
     ],
     "epithet": [
@@ -24893,15 +25009,13 @@
       "Julius"
     ],
     "first": [
-      "Chapter 578",
-      "Episode 489"
+      "Chapter 578"
     ],
     "affiliation": [
-      "Ally of the Whitebeard Pirates"
+      "Whitebeard Pirates"
     ],
     "occupation": [
-      "Pirate",
-      "Captain"
+      "Pirate Captain"
     ],
     "status": [
       "Alive"
@@ -25478,7 +25592,8 @@
       "Jarumakku Sei"
     ],
     "ename": [
-      "Saint Jalmack"
+      "Saint Jalmac (VIZ)",
+      "Saint Jalmack (Funimation)"
     ],
     "first": [
       "Chapter 588",
@@ -27335,7 +27450,7 @@
     ],
     "ename": [
       "Sharley",
-      "Shirley (WT100)"
+      "Shirley (WT100, OPCG)"
     ],
     "first": [
       "Chapter 610",
@@ -27652,8 +27767,8 @@
       "Ryugu Kingdom"
     ],
     "occupation": [
-      "Captain of the Royal Guard (former)",
-      "King of the Ryugu Kingdom"
+      "King of the Ryugu Kingdom",
+      "Prince (former)"
     ],
     "origin": [
       "Grand Line (Ryugu Kingdom)"
@@ -28311,7 +28426,8 @@
       "Shakure"
     ],
     "ename": [
-      "Chin (Funimation)"
+      "Chin (Funimation)",
+      "Long Jaw Neptunian (OPCG)"
     ],
     "first": [
       "Chapter 625",
@@ -28383,7 +28499,8 @@
       "Uroko"
     ],
     "ename": [
-      "Scales (Funimation)"
+      "Scales (Funimation)",
+      "Scaled Neptunian (OPCG)"
     ],
     "first": [
       "Chapter 647",
@@ -31413,7 +31530,8 @@
       "Straw Hat Grand Fleet"
     ],
     "occupation": [
-      "Pirate, Criminal",
+      "Pirate",
+      "Criminal",
       "Bounty Hunter (former)"
     ],
     "status": [
@@ -31442,7 +31560,8 @@
       "Straw Hat Grand Fleet"
     ],
     "occupation": [
-      "Pirate, Criminal",
+      "Pirate",
+      "Criminal",
       "Bounty Hunter (former)"
     ],
     "status": [
@@ -35118,6 +35237,7 @@
       "Ninja-Pirate-Mink-Samurai Alliance"
     ],
     "occupation": [
+      "Daimyo",
       "Ninja",
       "Retainer of the Kouzuki Family",
       "Samurai",
@@ -39933,6 +40053,7 @@
     ],
     "occupation": [
       "Navigator",
+      "Pirate",
       "Mercenary (former)"
     ],
     "origin": [
@@ -40880,13 +41001,13 @@
     "id": "Figarland_Shamrock",
     "name": "Figarland Shamrock",
     "jname": [
-      "\u30d5\u30a3\u30ac\u30fc\u30e9\u30f3\u30c9\u30fb\u30b7\u30e3\u30e0\u30ed\u30c3\u30af"
+      "\u30d5\u30a3\u30ac\u30fc\u30e9\u30f3\u30c9\u30fb\u30b7\u30e3\u30e0\u30ed\u30c3\u30af\u8056"
     ],
     "rname": [
-      "Fig\u0101rando Shamurokku"
+      "Fig\u0101rando Shamurokku Sei"
     ],
     "ename": [
-      "Figarland Shamrock"
+      "Saint Figarland Shamrock"
     ],
     "first": [
       "Chapter 907",
@@ -40898,6 +41019,9 @@
     ],
     "occupation": [
       "Commander of God's Knights"
+    ],
+    "residence": [
+      "Mary Geoise"
     ],
     "status": [
       "Alive"
@@ -41560,6 +41684,7 @@
       "Ninja-Pirate-Mink-Samurai Alliance (disbanded)"
     ],
     "occupation": [
+      "Daimyo of Ringo",
       "Samurai",
       "Retainer of the Kouzuki Family",
       "Tea House Poster Girl"
@@ -42696,6 +42821,7 @@
       "Ninja-Pirate-Mink-Samurai Alliance (disbanded)"
     ],
     "occupation": [
+      "Daimyo",
       "Retainer of the Kouzuki Family",
       "Samurai",
       "Sumo Wrestler",
@@ -43727,7 +43853,7 @@
       "Episode 923"
     ],
     "affiliation": [
-      "Beasts Pirates (Tobiroppo)"
+      "Beasts Pirates (Tobiroppo) (former)"
     ],
     "occupation": [
       "Shinuchi"
@@ -44061,7 +44187,7 @@
       "Flower Capital, Wano Country"
     ],
     "status": [
-      "Unknown"
+      "Alive"
     ],
     "age": [
       "61"
@@ -44894,7 +45020,7 @@
       "Samurai"
     ],
     "epithet": [
-      "\"Blood Letter Omasa\""
+      "\"Blood-Writing Omasa\""
     ],
     "status": [
       "Alive"
@@ -47127,7 +47253,8 @@
       "Kujaku"
     ],
     "ename": [
-      "Kujaku"
+      "Kujaku",
+      "Kujyaku (OPCG)"
     ],
     "first": [
       "Chapter 966 (cover)",
@@ -47473,7 +47600,7 @@
       "Episode 982"
     ],
     "affiliation": [
-      "Beasts Pirates (Tobiroppo)"
+      "Beasts Pirates (Tobiroppo) (former)"
     ],
     "occupation": [
       "Shinuchi"
@@ -51149,7 +51276,8 @@
       "Clapp"
     ],
     "first": [
-      "Chapter 1095"
+      "Chapter 1095",
+      "Episode 1129"
     ],
     "occupation": [
       "Slave",
@@ -51179,7 +51307,8 @@
       "Ginny"
     ],
     "first": [
-      "Chapter 1095"
+      "Chapter 1095",
+      "Episode 1129"
     ],
     "affiliation": [
       "Revolutionary Army (East Army)",
@@ -51227,7 +51356,8 @@
       "Bekori"
     ],
     "first": [
-      "Chapter 1097"
+      "Chapter 1097",
+      "Episode 1131"
     ],
     "occupation": [
       "King (former)"
@@ -51252,7 +51382,8 @@
       "Conney"
     ],
     "first": [
-      "Chapter 1099"
+      "Chapter 1099",
+      "Episode 1133"
     ],
     "occupation": [
       "Queen dowager"
@@ -51292,7 +51423,8 @@
       "Bulldog"
     ],
     "first": [
-      "Chapter 1099"
+      "Chapter 1099",
+      "Episode 1133"
     ],
     "occupation": [
       "King"
@@ -51317,7 +51449,8 @@
       "Alpha"
     ],
     "first": [
-      "Chapter 1100"
+      "Chapter 1100",
+      "Episode 1134"
     ],
     "affiliation": [
       "CP8"
@@ -51379,6 +51512,34 @@
     ],
     "dftype": [
       "Mythical Zoan"
+    ]
+  },
+  {
+    "id": "Thormann",
+    "name": "Thormann",
+    "jname": [
+      "\u30c8\u30fc\u30eb\u30de\u30f3"
+    ],
+    "rname": [
+      "T\u014druman"
+    ],
+    "ename": [
+      "Thormann"
+    ],
+    "first": [
+      "Chapter 1117"
+    ],
+    "affiliation": [
+      "Giant Warrior Pirates"
+    ],
+    "occupation": [
+      "Pirate"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
     ]
   },
   {
@@ -51706,8 +51867,8 @@
     "occupation": [
       "Chief Librarian"
     ],
-    "origin": [
-      "Elbaph"
+    "residence": [
+      "Elbaph (Owl Library)"
     ],
     "status": [
       "Alive"
@@ -51813,7 +51974,7 @@
     "id": "Skaldi",
     "name": "Skaldi",
     "jname": [
-      "\u30b9\u30ab\u30eb\u30c7\u30a4"
+      "\u30b9\u30ab\u30eb\u30c7\u30a3"
     ],
     "rname": [
       "Sukarudi"
@@ -51838,13 +51999,153 @@
     ]
   },
   {
-    "id": "Gunko",
-    "name": "Gunko",
+    "id": "Ronja",
+    "name": "Ronja",
     "jname": [
-      "\u8ecd\u5b50"
+      "\u30ed\u30fc\u30cb\u30e3"
     ],
     "rname": [
-      "Gunko"
+      "R\u014dnya"
+    ],
+    "ename": [
+      "Ronja"
+    ],
+    "first": [
+      "Chapter 1134"
+    ],
+    "affiliation": [
+      "Walrus School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Mag",
+    "name": "Mag",
+    "jname": [
+      "\u30de\u30b0"
+    ],
+    "rname": [
+      "Magu"
+    ],
+    "ename": [
+      "Mag"
+    ],
+    "first": [
+      "Chapter 1134"
+    ],
+    "affiliation": [
+      "Walrus School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Olav",
+    "name": "Olav",
+    "jname": [
+      "\u30aa\u30e9\u30d6"
+    ],
+    "rname": [
+      "Orabu"
+    ],
+    "ename": [
+      "Olav"
+    ],
+    "first": [
+      "Chapter 1134"
+    ],
+    "affiliation": [
+      "Walrus School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Karin",
+    "name": "Karin",
+    "jname": [
+      "\u30ab\u30ea\u30f3"
+    ],
+    "rname": [
+      "Karin"
+    ],
+    "ename": [
+      "Karin"
+    ],
+    "first": [
+      "Chapter 1134"
+    ],
+    "affiliation": [
+      "Walrus School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Bent",
+    "name": "Bent",
+    "jname": [
+      "\u30d9\u30f3\u30c8"
+    ],
+    "rname": [
+      "Bento"
+    ],
+    "ename": [
+      "Bent"
+    ],
+    "first": [
+      "Chapter 1134"
+    ],
+    "affiliation": [
+      "Walrus School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Gunko",
+    "name": "Manmayer Gunko",
+    "jname": [
+      "\u8ecd\u5b50\u5bae"
+    ],
+    "rname": [
+      "Gunko G\u016b"
     ],
     "ename": [
       "Gunko"
@@ -51853,7 +52154,8 @@
       "Chapter 1134"
     ],
     "affiliation": [
-      "God's Knights"
+      "God's Knights",
+      "Manmayer Family"
     ],
     "residence": [
       "Mary Geoise"
@@ -51875,6 +52177,34 @@
     ]
   },
   {
+    "id": "Johanna",
+    "name": "Johanna",
+    "jname": [
+      "\u30e8\u30cf\u30f3\u30ca"
+    ],
+    "rname": [
+      "Yohan'na"
+    ],
+    "ename": [
+      "Johanna"
+    ],
+    "first": [
+      "Chapter 1135"
+    ],
+    "affiliation": [
+      "Walrus School"
+    ],
+    "occupation": [
+      "Student"
+    ],
+    "residence": [
+      "Elbaph"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
     "id": "Harald",
     "name": "Harald",
     "jname": [
@@ -51887,16 +52217,22 @@
       "Harald"
     ],
     "first": [
-      "Chapter 1130 (mentioned)"
+      "Chapter 1136"
     ],
     "occupation": [
       "King"
+    ],
+    "origin": [
+      "Grand Line (Elbaph)"
     ],
     "residence": [
       "Elbaph"
     ],
     "status": [
       "Deceased"
+    ],
+    "age2": [
+      "At least 140"
     ]
   },
   {
@@ -51943,6 +52279,9 @@
       "God's Knights",
       "World Nobles (Shepherd Family)"
     ],
+    "residence": [
+      "Mary Geoise"
+    ],
     "status": [
       "Alive"
     ],
@@ -51977,6 +52316,9 @@
     "affiliation": [
       "God's Knights",
       "World Nobles (Rimoshifu Family)"
+    ],
+    "residence": [
+      "Mary Geoise"
     ],
     "status": [
       "Alive"
@@ -52110,5 +52452,137 @@
   {
     "id": "Nidh%C3%B6ggr",
     "name": "Religion"
+  },
+  {
+    "id": "Sukune",
+    "name": "Sukune",
+    "jname": [
+      "\u3059\u304f\u306d"
+    ],
+    "rname": [
+      "Sukune"
+    ],
+    "ename": [
+      "Sukune"
+    ],
+    "first": [
+      "Chapter 1151 (cover)"
+    ],
+    "occupation": [
+      "Sumo Wrestler"
+    ],
+    "residence": [
+      "Wano Country"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Mosa",
+    "name": "Mosa",
+    "jname": [
+      "\u30e2\u30b5\u516c"
+    ],
+    "rname": [
+      "Mosa-k\u014d"
+    ],
+    "ename": [
+      "Shaggy"
+    ],
+    "first": [
+      "Chapter 1134 (voice)"
+    ],
+    "status": [
+      "Alive"
+    ]
+  },
+  {
+    "id": "Ida",
+    "name": "Ida",
+    "jname": [
+      "\u30a4\u30fc\u30c0"
+    ],
+    "rname": [
+      "\u012ada"
+    ],
+    "ename": [
+      "Ida"
+    ],
+    "first": [
+      "Chapter 1153",
+      ""
+    ],
+    "occupation": [
+      "Circus Performer (former)"
+    ],
+    "origin": [
+      "South Blue (Samuwanai Island)"
+    ],
+    "residence": [
+      "Elbaph (Fisherman Village)",
+      "Samuwanai Island (former)",
+      "Bunt Kingdom (former)"
+    ],
+    "status": [
+      "Unknown"
+    ]
+  },
+  {
+    "id": "Estrid",
+    "name": "Estrid",
+    "jname": [
+      "\u30a8\u30b9\u30c8\u30ea\u30c3\u30c0"
+    ],
+    "rname": [
+      "Esutoridda"
+    ],
+    "ename": [
+      "Estrid"
+    ],
+    "first": [
+      "Chapter 1153"
+    ],
+    "occupation": [
+      "Queen (Former)"
+    ],
+    "origin": [
+      "Grand Line (Elbaph)"
+    ],
+    "residence": [
+      "Elbaph (Aurust Castle)",
+      "Brewers Village (former)"
+    ],
+    "status": [
+      "Deceased"
+    ]
+  },
+  {
+    "id": "Asla",
+    "name": "Asla",
+    "jname": [
+      "\u30a2\u30b9\u30e9"
+    ],
+    "rname": [
+      "Asura"
+    ],
+    "ename": [
+      "Asla"
+    ],
+    "first": [
+      "Chapter 1153"
+    ],
+    "affiliation": [
+      "Elbaph royal family"
+    ],
+    "residence": [
+      "Aurust Castle (Sun World)"
+    ],
+    "epithet": [
+      "\"Horse of Fortune\""
+    ],
+    "status": [
+      "Deceased"
+    ]
   }
 ]
