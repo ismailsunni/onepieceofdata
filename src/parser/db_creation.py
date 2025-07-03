@@ -15,57 +15,56 @@ def create_tables(conn: duckdb.DuckDBPyConnection):
     conn.execute("DROP TABLE IF EXISTS volume CASCADE")
     conn.execute("DROP TABLE IF EXISTS character CASCADE")
 
-    conn.execute(
-        """
-        CREATE TABLE volume (
-            number INTEGER PRIMARY KEY,
-            title TEXT,
-        )
-        """
+    # Define SQL queries as variables
+    volume_table_creation_query = """
+    CREATE TABLE volume (
+        number INTEGER PRIMARY KEY,
+        title TEXT
     )
+    """
 
-    conn.execute(
-        """
-        CREATE TABLE chapter (
-            number INTEGER PRIMARY KEY,
-            volume INTEGER,
-            title TEXT,
-            num_page INTEGER,
-            date DATE,
-            jump TEXT,
-            FOREIGN KEY(volume) REFERENCES volume(number)
-        )
-        """
+    chapter_table_creation_query = """
+    CREATE TABLE chapter (
+        number INTEGER PRIMARY KEY,
+        volume INTEGER,
+        title TEXT,
+        num_page INTEGER,
+        date DATE,
+        jump TEXT,
+        FOREIGN KEY(volume) REFERENCES volume(number)
     )
+    """
 
-    conn.execute(
-        """
-        CREATE TABLE character (
-            id TEXT PRIMARY KEY,
-            name TEXT,
-            origin TEXT,
-            status TEXT,
-            birth TEXT,
-            blood_type TEXT,
-            blood_type_group TEXT,
-            bounties TEXT,
-            bounty BIGINT,
-            age INT
-        )
-        """
+    character_table_creation_query = """
+    CREATE TABLE character (
+        id TEXT PRIMARY KEY,
+        name TEXT,
+        origin TEXT,
+        status TEXT,
+        birth TEXT,
+        blood_type TEXT,
+        blood_type_group TEXT,
+        bounties TEXT,
+        bounty BIGINT,
+        age INT
     )
+    """
 
-    conn.execute(
-        """
-        CREATE TABLE coc (
-            chapter INTEGER,
-            character TEXT,
-            note TEXT NULL,
+    coc_table_creation_query = """
+    CREATE TABLE coc (
+        chapter INTEGER,
+        character TEXT,
+        note TEXT NULL,
         FOREIGN KEY(chapter) REFERENCES chapter(number),
         FOREIGN KEY(character) REFERENCES character(id)
-        )
-        """
     )
+    """
+
+    # Execute the queries
+    conn.execute(volume_table_creation_query)
+    conn.execute(chapter_table_creation_query)
+    conn.execute(character_table_creation_query)
+    conn.execute(coc_table_creation_query)
 
 
 @timing_decorator
