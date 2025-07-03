@@ -2055,7 +2055,8 @@
       "Roger Pirates (former)"
     ],
     "occupation": [
-      "Pirate (former)"
+      "Pirate (former)",
+      "Navigator (former)"
     ],
     "residence": [
       "Elbaph (Sun World)"
@@ -17658,6 +17659,43 @@
     ]
   },
   {
+    "id": "Gill_Bastar",
+    "name": "Gill Bastar",
+    "jname": [
+      "\u30ae\u30eb\u30fb\u30d0\u30b9\u30bf\u30fc"
+    ],
+    "rname": [
+      "Giru Basut\u0101"
+    ],
+    "ename": [
+      "Gill Bastar"
+    ],
+    "first": [
+      "Wanted!",
+      "Movie 1 (credits)",
+      "Chapter 450",
+      "Episode 344"
+    ],
+    "affiliation": [
+      "Rocks Pirates (former)",
+      "Thriller Bark Pirates"
+    ],
+    "occupation": [
+      "Outlaw",
+      "Pirate",
+      "General Zombie"
+    ],
+    "residence": [
+      "Thriller Bark"
+    ],
+    "status": [
+      "Deceased"
+    ],
+    "bounty": [
+      "970000000"
+    ]
+  },
+  {
     "id": "Lola_(Zombie)",
     "name": "Lola",
     "jname": [
@@ -17677,7 +17715,7 @@
       "Thriller Bark Pirates"
     ],
     "occupation": [
-      "General Zombie"
+      "Wild Zombie"
     ],
     "status": [
       "Deceased"
@@ -19830,8 +19868,15 @@
     "status": [
       "Alive"
     ],
+    "age": [
+      "79 (debut)",
+      "81 (after timeskip)"
+    ],
     "birth": [
       "May 27th"
+    ],
+    "height": [
+      "1950 cm (63'11\u00bd\")"
     ]
   },
   {
@@ -40073,6 +40118,9 @@
     ],
     "birth": [
       "February 19th"
+    ],
+    "height": [
+      "2600 cm (85'3\u00bd\")"
     ]
   },
   {
@@ -40113,6 +40161,9 @@
     ],
     "birth": [
       "May 11th"
+    ],
+    "height": [
+      "2100 cm (68'10\u00bd\")"
     ]
   },
   {
@@ -46866,7 +46917,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Sniper"
     ],
     "status": [
       "Unknown"
@@ -46918,7 +46970,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Interrogator"
     ],
     "status": [
       "Unknown"
@@ -46970,7 +47023,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Helmsman"
     ],
     "status": [
       "Unknown"
@@ -47073,7 +47127,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Intelligence officer"
     ],
     "status": [
       "Unknown"
@@ -47151,7 +47206,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Tactical officer"
     ],
     "status": [
       "Unknown"
@@ -47346,7 +47402,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Shipwright"
     ],
     "status": [
       "Unknown"
@@ -47372,7 +47429,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Broker"
     ],
     "status": [
       "Unknown"
@@ -47398,7 +47456,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Archaeologist"
     ],
     "status": [
       "Unknown"
@@ -47424,7 +47483,8 @@
       "Roger Pirates"
     ],
     "occupation": [
-      "Pirate"
+      "Pirate",
+      "Musician"
     ],
     "status": [
       "Unknown"
@@ -52155,7 +52215,7 @@
     ],
     "affiliation": [
       "God's Knights",
-      "Manmayer Family"
+      "World Nobles (Manmayer Family)"
     ],
     "residence": [
       "Mary Geoise"
@@ -52510,8 +52570,7 @@
       "Ida"
     ],
     "first": [
-      "Chapter 1153",
-      ""
+      "Chapter 1153"
     ],
     "occupation": [
       "Circus Performer (former)"
@@ -52525,7 +52584,7 @@
       "Bunt Kingdom (former)"
     ],
     "status": [
-      "Unknown"
+      "Alive"
     ]
   },
   {
