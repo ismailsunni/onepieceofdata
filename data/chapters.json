@@ -16006,14 +16006,14 @@
       {
         "name": "Nami",
         "url": "/wiki/Nami",
-        "note": "as a face of Mr. 2",
-        "full_text": "Nami (as a face of Mr. 2)"
+        "note": "impersonated by Mr. 2",
+        "full_text": "Nami (impersonated by Mr. 2)"
       },
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "as a face of Mr. 2",
-        "full_text": "Usopp (as a face of Mr. 2)"
+        "note": "impersonated by Mr. 2",
+        "full_text": "Usopp (impersonated by Mr. 2)"
       },
       {
         "name": "Sanji",
@@ -16070,8 +16070,8 @@
       {
         "name": "Nami",
         "url": "/wiki/Nami",
-        "note": "as a face of Mr. 2",
-        "full_text": "Nami (as a face of Mr. 2)"
+        "note": "impersonated by Mr. 2",
+        "full_text": "Nami (impersonated by Mr. 2)"
       },
       {
         "name": "Sanji",
@@ -16084,6 +16084,12 @@
         "url": "/wiki/Hatchan",
         "note": "cover",
         "full_text": "Hatchan (cover)"
+      },
+      {
+        "name": "Nefertari Cobra",
+        "url": "/wiki/Nefertari_Cobra",
+        "note": "flashback",
+        "full_text": "Nefertari Cobra (flashback)"
       },
       {
         "name": "Nefertari Vivi",
@@ -16236,6 +16242,12 @@
         "url": "/wiki/Hatchan",
         "note": "cover",
         "full_text": "Hatchan (cover)"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "url": "/wiki/Nefertari_Vivi",
+        "note": "flashback",
+        "full_text": "Nefertari Vivi (flashback)"
       },
       {
         "name": "Mr. 1",
