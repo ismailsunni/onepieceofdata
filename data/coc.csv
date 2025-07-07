@@ -2355,8 +2355,8 @@ chapter,character,note
 186,Babe,
 186,Drophy,
 186,Lassoo,
-187,Nami,as a face of Mr. 2
-187,Usopp,as a face of Mr. 2
+187,Nami,impersonated by Mr. 2
+187,Usopp,impersonated by Mr. 2
 187,Sanji,
 187,Hatchan,cover
 187,Nefertari_Vivi,
@@ -2364,9 +2364,10 @@ chapter,character,note
 187,Koza,
 187,Kebi,
 187,Bentham,
-188,Nami,as a face of Mr. 2
+188,Nami,impersonated by Mr. 2
 188,Sanji,
 188,Hatchan,cover
+188,Nefertari_Cobra,flashback
 188,Nefertari_Vivi,
 188,Chaka,
 188,Bentham,
@@ -2389,6 +2390,7 @@ chapter,character,note
 190,Usopp,flashback
 190,Tony_Tony_Chopper,flashback
 190,Hatchan,cover
+190,Nefertari_Vivi,flashback
 190,Daz_Bonez,
 190,Zala,
 190,Goldfish_Princess,cover
