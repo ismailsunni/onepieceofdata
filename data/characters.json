@@ -2056,7 +2056,7 @@
     ],
     "occupation": [
       "Pirate (former)",
-      "Navigator (former)"
+      "Navigator"
     ],
     "residence": [
       "Elbaph (Sun World)"
@@ -11919,8 +11919,8 @@
     "birth": [
       "March 10th"
     ],
-    "size": [
-      "Over 200 m long (estimated)"
+    "length": [
+      "Over 200 m (estimated)"
     ],
     "weight": [
       "Over 40,000 tons (estimated)"
@@ -17651,6 +17651,9 @@
       "General Zombie",
       "Pirate Captain (former)"
     ],
+    "residence": [
+      "Thriller Bark (post mortem)"
+    ],
     "epithet": [
       "Captain John"
     ],
@@ -21610,6 +21613,9 @@
     ],
     "status": [
       "Alive"
+    ],
+    "length": [
+      "Around 20 m (65'7\")"
     ]
   },
   {
@@ -21669,6 +21675,9 @@
     ],
     "status": [
       "Alive"
+    ],
+    "length": [
+      "Around 30 m (98'5\")"
     ]
   },
   {
@@ -24084,8 +24093,7 @@
       "Subordinate of the Whitebeard Pirates"
     ],
     "occupation": [
-      "Pirate",
-      "Captain"
+      "Pirate Captain"
     ],
     "origin": [
       "Grand Line"
@@ -26970,20 +26978,17 @@
     "id": "Medaka_Mermaid_Quintuplets",
     "name": "Medaka Mermaid Quintuplets",
     "jname": [
-      "\u30a4\u30c1\u30ab, \u30cb\u30ab, \u30b5\u30f3\u30ab, \u30e8\u30f3\u30ab, \u30e8\u30f3\u30ab\u30c4\u30fc"
+      "\u30e1\u30c0\u30ab\u306e\u4eba\u9b5a\u306e\u4e94\u3064\u5b50 , , , ,"
     ],
     "rname": [
-      "Ichika, Nika, Sanka, Yonka, Yonka Ts\u016b"
+      "Medaka no Ningyo no Itsutsugo"
     ],
     "ename": [
-      "Ichika, Nika, Sanka, Yonka, Yonka Two"
+      "Guppy Mermaid Quintuplets"
     ],
     "first": [
       "Chapter 608",
       "Episode 527"
-    ],
-    "affiliation": [
-      "Neutral"
     ],
     "origin": [
       "Grand Line (Ryugu Kingdom",
@@ -31241,7 +31246,8 @@
       "Episode 635"
     ],
     "affiliation": [
-      "Tontatta Tribe Scouting UnitStraw Hat Grand Fleet"
+      "Tontatta Tribe Scouting Unit",
+      "Straw Hat Grand Fleet"
     ],
     "occupation": [
       "Scout",
@@ -34356,8 +34362,10 @@
       "December 18th"
     ],
     "height": [
-      "Over 5 km (3.1 miles)",
-      "Length: Over 2 km (1.2 miles)"
+      "Over 5 km (3.1 miles)"
+    ],
+    "length": [
+      "Over 2 km (1.2 miles)"
     ]
   },
   {
@@ -41058,7 +41066,7 @@
       "Fig\u0101rando Shamurokku Sei"
     ],
     "ename": [
-      "Saint Figarland Shamrock"
+      "Figarland Shamrock"
     ],
     "first": [
       "Chapter 907",
@@ -46918,7 +46926,7 @@
     ],
     "occupation": [
       "Pirate",
-      "Sniper"
+      "Gunner"
     ],
     "status": [
       "Unknown"
@@ -46971,7 +46979,7 @@
     ],
     "occupation": [
       "Pirate",
-      "Interrogator"
+      "Torturer"
     ],
     "status": [
       "Unknown"
@@ -47207,7 +47215,7 @@
     ],
     "occupation": [
       "Pirate",
-      "Tactical officer"
+      "Tactical staff officer"
     ],
     "status": [
       "Unknown"
@@ -47430,7 +47438,7 @@
     ],
     "occupation": [
       "Pirate",
-      "Broker"
+      "Information broker"
     ],
     "status": [
       "Unknown"
@@ -47457,7 +47465,7 @@
     ],
     "occupation": [
       "Pirate",
-      "Archaeologist"
+      "Scholar"
     ],
     "status": [
       "Unknown"
@@ -51107,7 +51115,8 @@
       "Neferutari D\u012b Rir\u012b"
     ],
     "ename": [
-      "Nefeltari D. Lily"
+      "Nefeltari D. Lily (Viz)",
+      "Nefertari D. Lily (Funimation)"
     ],
     "first": [
       "Chapter 1084 (silhouette)",
