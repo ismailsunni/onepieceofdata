@@ -153,8 +153,120 @@ def scrape_volumes(start_volume: int, end_volume: Optional[int], output: Optiona
 )
 def scrape_characters(input_file: Optional[str], output: Optional[str]) -> None:
     """Scrape character details from One Piece Fandom Wiki."""
-    click.echo("🚧 Character scraping not yet implemented in v2.0")
-    click.echo("📝 This feature will be available in a future update")
+    from .scrapers.character import CharacterScraper
+    
+    click.echo("🏴‍☠️ Starting character scraping...")
+    
+    scraper = CharacterScraper()
+    
+    # Set default paths
+    if input_file is None:
+        input_file = settings.data_dir / "characters.csv"
+    if output is None:
+        output = settings.data_dir / "characters_detail.json"
+    
+    # Check if input file exists
+    if not Path(input_file).exists():
+        click.echo(f"❌ Input file not found: {input_file}")
+        click.echo("💡 Try running 'uv run onepieceofdata scrape-chapters' first to generate character data")
+        return
+    
+    try:
+        # Load characters from CSV
+        characters_data = scraper.load_characters_from_csv(str(input_file))
+        if not characters_data:
+            click.echo("❌ No characters found in input file")
+            return
+        
+        # Show progress bar
+        with click.progressbar(
+            length=len(characters_data),
+            label=f"Scraping {len(characters_data)} characters"
+        ) as bar:
+            results = []
+            for i, character_data in enumerate(characters_data):
+                result = scraper.scrape_character(character_data)
+                results.append(result)
+                bar.update(1)
+                
+                # Brief pause to be respectful to the server
+                import time
+                time.sleep(0.5)
+        
+        # Export results
+        success = scraper.export_to_json(results, str(output))
+        
+        # Show summary
+        successful_count = sum(1 for r in results if r.success)
+        click.echo(f"\n✅ Character scraping completed!")
+        click.echo(f"📊 Results: {successful_count}/{len(results)} characters scraped successfully")
+        
+        if success:
+            click.echo(f"� Data saved to: {output}")
+        else:
+            click.echo("❌ Failed to save results")
+            
+    except Exception as e:
+        click.echo(f"❌ Character scraping failed: {str(e)}")
+
+
+@main.command()
+@click.option(
+    "--start-volume",
+    type=int,
+    default=1,
+    help="First volume to scrape"
+)
+@click.option(
+    "--end-volume",
+    type=int,
+    help="Last volume to scrape (default: from config)"
+)
+@click.option(
+    "--output",
+    type=click.Path(),
+    help="Output file path (default: from config)"
+)
+def scrape_volumes(start_volume: int, end_volume: Optional[int], output: Optional[str]) -> None:
+    """Scrape volume information from One Piece Fandom Wiki."""
+    from .scrapers.volume import VolumeScraper
+    
+    click.echo("📚 Starting volume scraping...")
+    
+    scraper = VolumeScraper()
+    
+    # Set defaults
+    if end_volume is None:
+        end_volume = settings.last_volume
+    if output is None:
+        output = settings.data_dir / "volumes.json"
+    
+    click.echo(f"🎯 Scraping volumes {start_volume} to {end_volume}")
+    
+    try:
+        # Show progress bar
+        with click.progressbar(
+            length=end_volume - start_volume + 1,
+            label=f"Scraping volumes {start_volume}-{end_volume}"
+        ) as bar:
+            results = scraper.scrape_volumes(start_volume, end_volume)
+            bar.update(len(results))
+        
+        # Export results
+        success = scraper.export_to_json(results, str(output))
+        
+        # Show summary
+        successful_count = sum(1 for r in results if r.success)
+        click.echo(f"\n✅ Volume scraping completed!")
+        click.echo(f"📊 Results: {successful_count}/{len(results)} volumes scraped successfully")
+        
+        if success:
+            click.echo(f"💾 Data saved to: {output}")
+        else:
+            click.echo("❌ Failed to save results")
+            
+    except Exception as e:
+        click.echo(f"❌ Volume scraping failed: {str(e)}")
 
 
 @main.command()
@@ -178,15 +290,96 @@ def scrape_characters(input_file: Optional[str], output: Optional[str]) -> None:
     type=click.Path(exists=True),
     help="Characters JSON file path (default: from config)"
 )
+@click.option(
+    "--create-tables",
+    is_flag=True,
+    help="Create database tables (will drop existing tables)"
+)
 def parse(
     database_path: Optional[str],
     chapters_file: Optional[str],
     volumes_file: Optional[str],
-    characters_file: Optional[str]
+    characters_file: Optional[str],
+    create_tables: bool
 ) -> None:
-    """Parse scraped data and load into database."""
-    click.echo("🚧 Data parsing not yet implemented in v2.0")
-    click.echo("📝 This feature will be available in a future update")
+    """Parse scraped data and load into DuckDB database."""
+    from .database.operations import DatabaseManager
+    
+    click.echo("�️  Starting data parsing and database loading...")
+    
+    # Set defaults
+    if database_path is None:
+        database_path = settings.database_path
+    if chapters_file is None:
+        chapters_file = settings.data_dir / "chapters.json"
+    if volumes_file is None:
+        volumes_file = settings.data_dir / "volumes.json"
+    if characters_file is None:
+        characters_file = settings.data_dir / "characters_detail.json"
+    
+    try:
+        with DatabaseManager(str(database_path)) as db:
+            # Create tables if requested
+            if create_tables:
+                click.echo("🏗️  Creating database tables...")
+                db.create_tables()
+                click.echo("✅ Database tables created")
+            
+            # Load data files
+            success_count = 0
+            total_files = 0
+            
+            # Load volumes first (required by foreign key constraints)
+            if Path(volumes_file).exists():
+                total_files += 1
+                click.echo(f"� Loading volumes from {volumes_file}")
+                if db.load_volumes_from_json(str(volumes_file)):
+                    success_count += 1
+                    click.echo("✅ Volumes loaded successfully")
+                else:
+                    click.echo("❌ Failed to load volumes")
+            else:
+                click.echo(f"⚠️  Volumes file not found: {volumes_file}")
+            
+            # Load chapters (references volumes)
+            if Path(chapters_file).exists():
+                total_files += 1
+                click.echo(f"� Loading chapters from {chapters_file}")
+                if db.load_chapters_from_json(str(chapters_file)):
+                    success_count += 1
+                    click.echo("✅ Chapters loaded successfully")
+                else:
+                    click.echo("❌ Failed to load chapters")
+            else:
+                click.echo(f"⚠️  Chapters file not found: {chapters_file}")
+            
+            # Load characters
+            if Path(characters_file).exists():
+                total_files += 1
+                click.echo(f"� Loading characters from {characters_file}")
+                if db.load_characters_from_json(str(characters_file)):
+                    success_count += 1
+                    click.echo("✅ Characters loaded successfully")
+                else:
+                    click.echo("❌ Failed to load characters")
+            else:
+                click.echo(f"⚠️  Characters file not found: {characters_file}")
+            
+            # Show database stats
+            stats = db.get_database_stats()
+            if stats:
+                click.echo(f"\n📊 Database Statistics:")
+                click.echo(f"   📖 Chapters: {stats.get('chapter', 0)}")
+                click.echo(f"   📚 Volumes: {stats.get('volume', 0)}")
+                click.echo(f"   👥 Characters: {stats.get('character', 0)}")
+                click.echo(f"   🔗 Character-Chapter links: {stats.get('coc', 0)}")
+            
+            click.echo(f"\n✅ Data parsing completed!")
+            click.echo(f"📊 Results: {success_count}/{total_files} files loaded successfully")
+            click.echo(f"💾 Database saved to: {database_path}")
+            
+    except Exception as e:
+        click.echo(f"❌ Data parsing failed: {str(e)}")
 
 
 @main.command()
@@ -194,7 +387,7 @@ def parse(
     "--format",
     "export_format",
     default="csv",
-    type=click.Choice(["csv", "json", "parquet"], case_sensitive=False),
+    type=click.Choice(["csv", "json"], case_sensitive=False),
     help="Export format"
 )
 @click.option(
@@ -203,15 +396,41 @@ def parse(
     help="Output directory for exported files"
 )
 @click.option(
-    "--tables",
-    multiple=True,
-    type=click.Choice(["chapters", "volumes", "characters", "coc"], case_sensitive=False),
-    help="Tables to export (can specify multiple)"
+    "--database-path",
+    type=click.Path(),
+    help="Database file path (default: from config)"
 )
-def export(export_format: str, output_dir: Optional[str], tables: tuple) -> None:
+def export(export_format: str, output_dir: Optional[str], database_path: Optional[str]) -> None:
     """Export data from database to various formats."""
-    click.echo("🚧 Data export not yet implemented in v2.0")
-    click.echo("📝 This feature will be available in a future update")
+    from .database.operations import DatabaseManager
+    
+    click.echo(f"� Exporting data in {export_format.upper()} format...")
+    
+    # Set defaults
+    if database_path is None:
+        database_path = settings.database_path
+    if output_dir is None:
+        output_dir = settings.data_dir / "exports"
+    
+    # Check if database exists
+    if not Path(database_path).exists():
+        click.echo(f"❌ Database not found: {database_path}")
+        click.echo("� Try running 'uv run onepieceofdata parse --create-tables' first")
+        return
+    
+    try:
+        with DatabaseManager(str(database_path)) as db:
+            if export_format == "csv":
+                success = db.export_to_csv(str(output_dir))
+                if success:
+                    click.echo(f"✅ Data exported to CSV files in: {output_dir}")
+                else:
+                    click.echo("❌ Failed to export to CSV")
+            else:
+                click.echo(f"🚧 {export_format.upper()} export not yet implemented")
+            
+    except Exception as e:
+        click.echo(f"❌ Export failed: {str(e)}")
 
 
 @main.command()
