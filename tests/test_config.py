@@ -45,13 +45,19 @@ def test_settings_properties(test_settings):
 
 def test_ensure_directories(test_settings):
     """Test directory creation."""
-    # Directories should not exist initially
-    assert not test_settings.data_dir.exists()
-    assert not test_settings.log_file.parent.exists()
-    
-    # Call ensure_directories
-    test_settings.ensure_directories()
-    
-    # Directories should now exist
-    assert test_settings.data_dir.exists()
-    assert test_settings.log_file.parent.exists()
+    # Use a unique directory for this test
+    import tempfile
+    with tempfile.TemporaryDirectory() as temp_dir:
+        test_settings.data_dir = Path(temp_dir) / "test_data"
+        test_settings.log_file = Path(temp_dir) / "logs" / "test.log"
+        
+        # Directories should not exist initially
+        assert not test_settings.data_dir.exists()
+        assert not test_settings.log_file.parent.exists()
+        
+        # Call ensure_directories
+        test_settings.ensure_directories()
+        
+        # Directories should now exist
+        assert test_settings.data_dir.exists()
+        assert test_settings.log_file.parent.exists()
