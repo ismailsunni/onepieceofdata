@@ -16706,6 +16706,12 @@
         "full_text": "Barrel"
       },
       {
+        "name": "Koza",
+        "url": "/wiki/Koza",
+        "note": "shadowed",
+        "full_text": "Koza (shadowed)"
+      },
+      {
         "name": "Crocodile",
         "url": "/wiki/Crocodile",
         "note": "",
@@ -16720,8 +16726,8 @@
       {
         "name": "Mr. 1",
         "url": "/wiki/Daz_Bonez",
-        "note": "defeated",
-        "full_text": "Mr. 1 (defeated)"
+        "note": "",
+        "full_text": "Mr. 1"
       },
       {
         "name": "Miss Doublefinger",
@@ -99202,10 +99208,10 @@
         "full_text": "Issho"
       },
       {
-        "name": "Ryokugyu",
-        "url": "/wiki/Ryokugyu",
+        "name": "Aramaki",
+        "url": "/wiki/Aramaki",
         "note": "silhouette",
-        "full_text": "Ryokugyu (silhouette)"
+        "full_text": "Aramaki (silhouette)"
       },
       {
         "name": "Tsuru",
