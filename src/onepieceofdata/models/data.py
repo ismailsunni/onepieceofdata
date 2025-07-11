@@ -2,7 +2,7 @@
 
 from datetime import datetime
 from typing import List, Optional, Dict, Any
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 
 
 class ChapterModel(BaseModel):
@@ -17,14 +17,16 @@ class ChapterModel(BaseModel):
     release_date: Optional[str] = Field(None, description="Release date")
     characters: List[str] = Field(default_factory=list, description="Characters appearing in chapter")
     
-    @validator("chapter_number")
+    @field_validator("chapter_number")
+    @classmethod
     def validate_chapter_number(cls, v):
         """Validate chapter number is positive."""
         if v <= 0:
             raise ValueError("Chapter number must be positive")
         return v
     
-    @validator("pages")
+    @field_validator("pages")
+    @classmethod
     def validate_pages(cls, v):
         """Validate pages is positive if provided."""
         if v is not None and v <= 0:
@@ -41,7 +43,8 @@ class VolumeModel(BaseModel):
     release_date: Optional[str] = Field(None, description="Release date")
     chapters: List[int] = Field(default_factory=list, description="Chapters in volume")
     
-    @validator("volume_number")
+    @field_validator("volume_number")
+    @classmethod
     def validate_volume_number(cls, v):
         """Validate volume number is positive."""
         if v <= 0:
@@ -60,7 +63,8 @@ class CharacterModel(BaseModel):
     occupation: Optional[str] = Field(None, description="Character occupation")
     first_appearance: Optional[str] = Field(None, description="First appearance")
     
-    @validator("name")
+    @field_validator("name")
+    @classmethod
     def validate_name(cls, v):
         """Validate name is not empty."""
         if not v.strip():
@@ -74,14 +78,16 @@ class CharacterOfChapterModel(BaseModel):
     chapter_number: int = Field(..., description="Chapter number")
     character_name: str = Field(..., description="Character name")
     
-    @validator("chapter_number")
+    @field_validator("chapter_number")
+    @classmethod
     def validate_chapter_number(cls, v):
         """Validate chapter number is positive."""
         if v <= 0:
             raise ValueError("Chapter number must be positive")
         return v
     
-    @validator("character_name")
+    @field_validator("character_name")
+    @classmethod
     def validate_character_name(cls, v):
         """Validate character name is not empty."""
         if not v.strip():
