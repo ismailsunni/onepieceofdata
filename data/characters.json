@@ -9838,7 +9838,7 @@
       "Bellamy Pirates"
     ],
     "occupation": [
-      "Sniper"
+      "Gunner"
     ],
     "status": [
       "Unknown"
@@ -10308,8 +10308,9 @@
       "Episode 151"
     ],
     "affiliation": [
-      "Revolutionary Army",
       "Freedom Fighters (former)",
+      "Pacifista",
+      "Revolutionary Army",
       "Seven Warlords of the Sea (former)",
       "Sorbet Kingdom (former)"
     ],
@@ -17734,12 +17735,13 @@
       "Kaba Shinshi"
     ],
     "ename": [
-      "Hippo Gallant (Viz)",
+      "Hippo Gallant (VIZ)",
       "Gentleman Hippopotamus (Funimation Sub)",
       "Hippo Gentleman (Funimation Dub)"
     ],
     "first": [
-      "Chapter 451, Episode 345"
+      "Chapter 451",
+      "Episode 345"
     ],
     "affiliation": [
       "Thriller Bark Pirates"
@@ -17899,12 +17901,13 @@
       "Kaba Shinshi"
     ],
     "ename": [
-      "Hippo Gallant (Viz)",
+      "Hippo Gallant (VIZ)",
       "Gentleman Hippopotamus (Funimation Sub)",
       "Hippo Gentleman (Funimation Dub)"
     ],
     "first": [
-      "Chapter 451, Episode 345"
+      "Chapter 451",
+      "Episode 345"
     ],
     "affiliation": [
       "Thriller Bark Pirates"
@@ -21356,7 +21359,7 @@
       "Harahettania"
     ],
     "occupation": [
-      "Priest"
+      "Village Mayor"
     ],
     "status": [
       "Alive"
@@ -34156,7 +34159,7 @@
     ]
   },
   {
-    "id": "Ryokugyu",
+    "id": "Aramaki",
     "name": "Aramaki",
     "jname": [
       "\u30a2\u30e9\u30de\u30ad"
@@ -40402,70 +40405,6 @@
     ]
   },
   {
-    "id": "Aramaki",
-    "name": "Aramaki",
-    "jname": [
-      "\u30a2\u30e9\u30de\u30ad"
-    ],
-    "rname": [
-      "Aramaki"
-    ],
-    "ename": [
-      "Aramaki"
-    ],
-    "first": [
-      "Chapter 905",
-      "Episode 882"
-    ],
-    "affiliation": [
-      "Marines"
-    ],
-    "occupation": [
-      "Admiral",
-      "Police Officer (former)"
-    ],
-    "origin": [
-      "South Blue (Taya Kingdom)"
-    ],
-    "residence": [
-      "Taya Kingdom (former)"
-    ],
-    "alias": [
-      "Ryokugyu"
-    ],
-    "status": [
-      "Alive"
-    ],
-    "age": [
-      "41"
-    ],
-    "birth": [
-      "February 29th"
-    ],
-    "height": [
-      "308 cm (10'1\")"
-    ],
-    "blood type": [
-      "X"
-    ],
-    "bounty": [
-      "",
-      "(3000000000)"
-    ],
-    "dfname": [
-      "Mori Mori no Mi"
-    ],
-    "dfename": [
-      "Woods-Woods Fruit"
-    ],
-    "dfmeaning": [
-      "Forest"
-    ],
-    "dftype": [
-      "Logia"
-    ]
-  },
-  {
     "id": "Matryo_Princesses",
     "name": "Matryo Princesses",
     "jname": [
@@ -41060,10 +40999,10 @@
     "id": "Figarland_Shamrock",
     "name": "Figarland Shamrock",
     "jname": [
-      "\u30d5\u30a3\u30ac\u30fc\u30e9\u30f3\u30c9\u30fb\u30b7\u30e3\u30e0\u30ed\u30c3\u30af\u8056"
+      "\u30b7\u30e3\u30e0\u30ed\u30c3\u30af\u8056"
     ],
     "rname": [
-      "Fig\u0101rando Shamurokku Sei"
+      "Shamurokku Sei"
     ],
     "ename": [
       "Figarland Shamrock"
