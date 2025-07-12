@@ -155,11 +155,28 @@ def scrape_chapters(start_chapter: int, end_chapter: Optional[int], parallel: bo
     type=click.Path(),
     help="Output file path (default: from config)"
 )
-def scrape_characters(input_file: Optional[str], output: Optional[str]) -> None:
+@click.option(
+    "--parallel",
+    is_flag=True,
+    help="Enable parallel processing for faster character scraping"
+)
+@click.option(
+    "--workers",
+    default=None,
+    type=int,
+    help="Number of parallel workers (default: from config)"
+)
+def scrape_characters(input_file: Optional[str], output: Optional[str], 
+                     parallel: bool, workers: Optional[int]) -> None:
     """Scrape character details from One Piece Fandom Wiki."""
     from .scrapers.character import CharacterScraper
     
-    click.echo("🏴‍☠️ Starting character scraping...")
+    processing_mode = "parallel" if parallel else "sequential"
+    click.echo(f"🏴‍☠️ Starting character scraping in {processing_mode} mode...")
+    
+    if parallel:
+        actual_workers = workers or settings.max_workers
+        click.echo(f"Using parallel processing with {actual_workers} workers")
     
     scraper = CharacterScraper()
     
@@ -182,20 +199,24 @@ def scrape_characters(input_file: Optional[str], output: Optional[str]) -> None:
             click.echo("❌ No characters found in input file")
             return
         
-        # Show progress bar
-        with click.progressbar(
-            length=len(characters_data),
-            label=f"Scraping {len(characters_data)} characters"
-        ) as bar:
-            results = []
-            for i, character_data in enumerate(characters_data):
-                result = scraper.scrape_character(character_data)
-                results.append(result)
-                bar.update(1)
-                
-                # Brief pause to be respectful to the server
-                import time
-                time.sleep(0.5)
+        if parallel:
+            # Use parallel processing
+            results = scraper.scrape_characters_parallel(characters_data, workers)
+        else:
+            # Use sequential processing with progress bar
+            with click.progressbar(
+                length=len(characters_data),
+                label=f"Scraping {len(characters_data)} characters"
+            ) as bar:
+                results = []
+                for i, character_data in enumerate(characters_data):
+                    result = scraper.scrape_character(character_data)
+                    results.append(result)
+                    bar.update(1)
+                    
+                    # Brief pause to be respectful to the server
+                    import time
+                    time.sleep(0.5)
         
         # Export results
         success = scraper.export_to_json(results, str(output))
