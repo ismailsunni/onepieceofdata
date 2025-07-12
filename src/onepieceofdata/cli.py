@@ -57,14 +57,31 @@ def main(log_level: Optional[str], log_file: Optional[str]) -> None:
     help="Ending chapter number to scrape (default: from config)"
 )
 @click.option(
+    "--parallel",
+    is_flag=True,
+    help="Enable parallel processing for faster scraping"
+)
+@click.option(
+    "--workers",
+    default=None,
+    type=int,
+    help="Number of parallel workers (default: from config)"
+)
+@click.option(
     "--output",
     type=click.Path(),
     help="Output file path (default: from config)"
 )
-def scrape_chapters(start_chapter: int, end_chapter: Optional[int], output: Optional[str]) -> None:
+def scrape_chapters(start_chapter: int, end_chapter: Optional[int], parallel: bool, 
+                   workers: Optional[int], output: Optional[str]) -> None:
     """Scrape chapter data from One Piece Fandom Wiki."""
     try:
-        cli_logger.info("Starting chapter scraping...")
+        processing_mode = "parallel" if parallel else "sequential"
+        cli_logger.info(f"Starting chapter scraping in {processing_mode} mode...")
+        
+        if parallel:
+            actual_workers = workers or settings.max_workers
+            cli_logger.info(f"Using parallel processing with {actual_workers} workers")
         
         # Validate inputs
         if start_chapter < 1:
@@ -82,22 +99,33 @@ def scrape_chapters(start_chapter: int, end_chapter: Optional[int], output: Opti
         # Initialize scraper and run
         scraper = ChapterScraper()
         
-        with click.progressbar(
-            length=end_chapter - start_chapter + 1,
-            label=f"Scraping chapters {start_chapter}-{end_chapter}"
-        ) as bar:
-            chapters = []
-            failed_chapters = []
-            
-            for chapter_num in range(start_chapter, end_chapter + 1):
-                result = scraper.scrape_chapter(chapter_num)
-                if result.success:
-                    chapters.append(result.data)
-                else:
-                    failed_chapters.append(chapter_num)
-                    cli_logger.error(f"Failed to scrape chapter {chapter_num}")
+        if parallel:
+            # Use the new parallel method
+            chapters = scraper.scrape_chapters(
+                start_chapter=start_chapter,
+                end_chapter=end_chapter,
+                use_parallel=True,
+                max_workers=workers
+            )
+            failed_chapters = []  # Failed chapters are handled internally in parallel mode
+        else:
+            # Use sequential mode with progress bar
+            with click.progressbar(
+                length=end_chapter - start_chapter + 1,
+                label=f"Scraping chapters {start_chapter}-{end_chapter}"
+            ) as bar:
+                chapters = []
+                failed_chapters = []
                 
-                bar.update(1)
+                for chapter_num in range(start_chapter, end_chapter + 1):
+                    result = scraper.scrape_chapter(chapter_num)
+                    if result.success:
+                        chapters.append(result.data)
+                    else:
+                        failed_chapters.append(chapter_num)
+                        cli_logger.error(f"Failed to scrape chapter {chapter_num}")
+                    
+                    bar.update(1)
         
         # Save results
         scraper.save_chapters(chapters, output_path)
@@ -114,30 +142,6 @@ def scrape_chapters(start_chapter: int, end_chapter: Optional[int], output: Opti
         cli_logger.error(f"Chapter scraping failed: {e}")
         click.echo(f"❌ Error: {e}", err=True)
         sys.exit(1)
-
-
-@main.command()
-@click.option(
-    "--start-volume",
-    default=1,
-    type=int,
-    help="Starting volume number to scrape"
-)
-@click.option(
-    "--end-volume",
-    default=None,
-    type=int,
-    help="Ending volume number to scrape (default: from config)"
-)
-@click.option(
-    "--output",
-    type=click.Path(),
-    help="Output file path (default: from config)"
-)
-def scrape_volumes(start_volume: int, end_volume: Optional[int], output: Optional[str]) -> None:
-    """Scrape volume data from One Piece Fandom Wiki."""
-    click.echo("🚧 Volume scraping not yet implemented in v2.0")
-    click.echo("📝 This feature will be available in a future update")
 
 
 @main.command()
@@ -223,15 +227,31 @@ def scrape_characters(input_file: Optional[str], output: Optional[str]) -> None:
     help="Last volume to scrape (default: from config)"
 )
 @click.option(
+    "--parallel",
+    is_flag=True,
+    help="Enable parallel processing (note: volumes are scraped from single page, so this has limited benefit)"
+)
+@click.option(
+    "--workers",
+    default=None,
+    type=int,
+    help="Number of parallel workers (default: from config)"
+)
+@click.option(
     "--output",
     type=click.Path(),
     help="Output file path (default: from config)"
 )
-def scrape_volumes(start_volume: int, end_volume: Optional[int], output: Optional[str]) -> None:
+def scrape_volumes(start_volume: int, end_volume: Optional[int], parallel: bool,
+                  workers: Optional[int], output: Optional[str]) -> None:
     """Scrape volume information from One Piece Fandom Wiki."""
     from .scrapers.volume import VolumeScraper
     
-    click.echo("📚 Starting volume scraping...")
+    processing_mode = "parallel" if parallel else "sequential"
+    click.echo(f"📚 Starting volume scraping in {processing_mode} mode...")
+    
+    if parallel:
+        click.echo("ℹ️  Note: Volume scraping uses a single page source, so parallel processing has limited benefit")
     
     scraper = VolumeScraper()
     
