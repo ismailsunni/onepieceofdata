@@ -73,66 +73,56 @@ class DatabaseManager:
         conn.execute("DROP TABLE IF EXISTS volume CASCADE")
         conn.execute("DROP TABLE IF EXISTS character CASCADE")
         
-        # Create volume table
+        # Create volume table (simplified, matching original)
         volume_table_query = """
         CREATE TABLE volume (
             number INTEGER PRIMARY KEY,
-            title TEXT,
-            japanese_title TEXT,
-            release_date DATE,
-            cover_characters TEXT  -- JSON string of characters
+            title TEXT
         )
         """
         conn.execute(volume_table_query)
         logger.debug("Created volume table")
         
-        # Create chapter table
+        # Create chapter table (matching original structure)
         chapter_table_query = """
         CREATE TABLE chapter (
             number INTEGER PRIMARY KEY,
             volume INTEGER,
             title TEXT,
-            japanese_title TEXT,
-            romanized_title TEXT,
             num_page INTEGER,
-            release_date DATE,
-            characters TEXT  -- JSON string of characters
+            date DATE,
+            jump TEXT,
+            FOREIGN KEY(volume) REFERENCES volume(number)
         )
         """
         conn.execute(chapter_table_query)
         logger.debug("Created chapter table")
         
-        # Create character table
+        # Create character table (matching original structure)
         character_table_query = """
         CREATE TABLE character (
             id TEXT PRIMARY KEY,
             name TEXT,
-            japanese_name TEXT,
-            romanized_name TEXT,
-            epithet TEXT,
-            affiliation TEXT,
-            occupation TEXT,
-            first_appearance TEXT,
-            age TEXT,
-            height TEXT,
-            bounty TEXT,
-            status TEXT,
             origin TEXT,
+            status TEXT,
+            birth TEXT,
             blood_type TEXT,
-            additional_data TEXT  -- JSON string for extra fields
+            blood_type_group TEXT,
+            bounties TEXT,
+            bounty BIGINT,
+            age INT
         )
         """
         conn.execute(character_table_query)
         logger.debug("Created character table")
         
-        # Create character-of-chapter (CoC) table
+        # Create character-of-chapter (CoC) table (matching original structure but without FK to character)
         coc_table_query = """
         CREATE TABLE coc (
-            chapter_number INTEGER,
-            character_name TEXT,
-            character_id TEXT,
-            PRIMARY KEY (chapter_number, character_name),
-            FOREIGN KEY(chapter_number) REFERENCES chapter(number)
+            chapter INTEGER,
+            character TEXT,
+            note TEXT NULL,
+            FOREIGN KEY(chapter) REFERENCES chapter(number)
         )
         """
         conn.execute(coc_table_query)
@@ -157,16 +147,20 @@ class DatabaseManager:
             
             conn = self.connect()
             
+            # Clear existing data first (like original parser)
+            conn.execute("DELETE FROM coc")
+            conn.execute("DELETE FROM chapter")
+            logger.info("Cleared existing chapter and CoC data")
+            
             for chapter_data in chapters_data:
                 try:
                     # Extract and clean data
                     chapter_number = chapter_data.get('chapter_number')
                     volume = chapter_data.get('volume')
                     title = chapter_data.get('title', '')  # Chapter title
-                    japanese_title = None  # Not in current data structure
-                    romanized_title = None  # Not in current data structure
                     num_page = chapter_data.get('pages')
                     release_date = self._parse_date(chapter_data.get('release_date'))
+                    jump_info = chapter_data.get('jump_info', '')
                     
                     # Convert chapter number to int, skip if invalid
                     if chapter_number and chapter_number != 'unknown':
@@ -193,30 +187,27 @@ class DatabaseManager:
                         except ValueError:
                             num_page = None
                     
-                    # Extract character names from the characters list
-                    character_names = []
+                    # Insert chapter (simple INSERT since table is cleared)
+                    conn.execute("""
+                        INSERT INTO chapter 
+                        (number, volume, title, num_page, date, jump)
+                        VALUES (?, ?, ?, ?, ?, ?)
+                    """, [chapter_number, volume, title, num_page, release_date, jump_info])
+                    
+                    # Insert character-of-chapter relationships (using original structure)
                     for char in chapter_data.get('characters', []):
                         if isinstance(char, dict):
-                            character_names.append(char.get('name', ''))
+                            character_name = char.get('name', '').replace(' ', '_')  # Match original format
+                            note = char.get('note', '')
                         else:
-                            character_names.append(str(char))
-                    
-                    characters = json.dumps(character_names)
-                    
-                    # Insert chapter
-                    conn.execute("""
-                        INSERT OR REPLACE INTO chapter 
-                        (number, volume, title, japanese_title, romanized_title, num_page, release_date, characters)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-                    """, [chapter_number, volume, title, japanese_title, romanized_title, num_page, release_date, characters])
-                    
-                    # Insert character-of-chapter relationships
-                    for character_name in character_names:
+                            character_name = str(char).replace(' ', '_')
+                            note = ''
+                        
                         if character_name:  # Only insert non-empty names
                             conn.execute("""
-                                INSERT OR IGNORE INTO coc (chapter_number, character_name, character_id)
+                                INSERT INTO coc (chapter, character, note)
                                 VALUES (?, ?, ?)
-                            """, [chapter_number, character_name, None])  # character_id can be filled later
+                            """, [chapter_number, character_name, note])
                         
                 except Exception as e:
                     logger.error(f"Failed to insert chapter {chapter_data.get('chapter_number', 'unknown')}: {str(e)}")
@@ -247,18 +238,20 @@ class DatabaseManager:
             
             conn = self.connect()
             
+            # Clear existing volume data first (like original parser)
+            conn.execute("DELETE FROM volume")
+            logger.info("Cleared existing volume data")
+            
             for volume_data in volumes_data:
                 try:
                     volume_number = volume_data.get('volume_number')
                     title = volume_data.get('english_title', '')
-                    japanese_title = volume_data.get('japanese_title')
-                    cover_characters = json.dumps(volume_data.get('cover_characters', []))
                     
                     conn.execute("""
-                        INSERT OR REPLACE INTO volume 
-                        (number, title, japanese_title, cover_characters)
-                        VALUES (?, ?, ?, ?)
-                    """, [volume_number, title, japanese_title, cover_characters])
+                        INSERT INTO volume 
+                        (number, title)
+                        VALUES (?, ?)
+                    """, [volume_number, title])
                     
                 except Exception as e:
                     logger.error(f"Failed to insert volume {volume_data.get('volume_number', 'unknown')}: {str(e)}")
@@ -289,44 +282,28 @@ class DatabaseManager:
             
             conn = self.connect()
             
+            # Clear existing character data first (like original parser)
+            conn.execute("DELETE FROM character")
+            logger.info("Cleared existing character data")
+            
             for character_data in characters_data:
                 try:
+                    # Initialize all variables to None (matching original parser)
                     char_id = character_data.get('id')
-                    name = character_data.get('name', '')
-                    japanese_name = character_data.get('japanese_name')
-                    romanized_name = character_data.get('romanized_name')
-                    epithet = self._list_to_string(character_data.get('epithet'))
-                    affiliation = self._list_to_string(character_data.get('affiliation'))
-                    occupation = self._list_to_string(character_data.get('occupation'))
-                    first_appearance = self._list_to_string(character_data.get('debut'))
-                    age = self._list_to_string(character_data.get('age'))
-                    height = self._list_to_string(character_data.get('height'))
-                    bounty = self._list_to_string(character_data.get('bounty'))
-                    status = self._list_to_string(character_data.get('status'))
-                    origin = self._list_to_string(character_data.get('origin'))
-                    blood_type = self._list_to_string(character_data.get('blood_type'))
+                    name = self._get_name(character_data)
+                    origin = self._get_string(character_data, 'origin')
+                    status = self._get_string(character_data, 'status')
+                    birth = self._get_string(character_data, 'birth')
+                    blood_type, blood_type_group = self._parse_blood_type(character_data)
+                    bounties, bounty = self._parse_bounty(character_data)
+                    age = self._parse_age(character_data)
                     
-                    # Store additional fields as JSON
-                    additional_data = {k: v for k, v in character_data.items() 
-                                     if k not in ['id', 'name', 'japanese_name', 'romanized_name', 
-                                                'epithet', 'affiliation', 'occupation', 'debut', 
-                                                'age', 'height', 'bounty', 'status', 'origin', 'blood_type']}
-                    additional_data_json = json.dumps(additional_data) if additional_data else None
-                    
+                    # Insert character (simple INSERT since table is cleared)
                     conn.execute("""
-                        INSERT OR REPLACE INTO character 
-                        (id, name, japanese_name, romanized_name, epithet, affiliation, occupation, 
-                         first_appearance, age, height, bounty, status, origin, blood_type, additional_data)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    """, [char_id, name, japanese_name, romanized_name, epithet, affiliation, 
-                         occupation, first_appearance, age, height, bounty, status, origin, 
-                         blood_type, additional_data_json])
-                    
-                    # Update character IDs in CoC table if possible
-                    if char_id and name:
-                        conn.execute("""
-                            UPDATE coc SET character_id = ? WHERE character_name = ?
-                        """, [char_id, name])
+                        INSERT INTO character 
+                        (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, [char_id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age])
                     
                 except Exception as e:
                     logger.error(f"Failed to insert character {character_data.get('name', 'unknown')}: {str(e)}")
@@ -354,6 +331,130 @@ class DatabaseManager:
         if isinstance(value, list):
             return "; ".join(str(v) for v in value if v)
         return str(value) if value else None
+    
+    def _get_string(self, attributes: Dict[str, Any], key: str) -> Optional[str]:
+        """Return the first item from a list or the item itself if it's not a list."""
+        if key not in attributes:
+            return None
+        try:
+            value = attributes.get(key)
+            if isinstance(value, list):
+                return value[0] if value else None
+            return value
+        except Exception as e:
+            logger.warning(f"get_string error for key '{key}': {e}")
+            return None
+    
+    def _get_name(self, attributes: Dict[str, Any]) -> str:
+        """Get character name from various possible fields."""
+        name = self._get_string(attributes, "name")
+        if not name:
+            name = self._get_string(attributes, "ename")
+        if not name:
+            name = self._get_string(attributes, "id")
+        return name or ""
+    
+    def _get_blood_type_group(self, blood_type: str) -> str:
+        """Extract blood type group from full blood type string."""
+        return blood_type.split(" ")[0] if blood_type else ""
+    
+    def _parse_blood_type(self, attributes: Dict[str, Any]) -> tuple[Optional[str], Optional[str]]:
+        """Parse blood type information."""
+        if "blood type" not in attributes:
+            return None, None
+        
+        blood_types = attributes["blood type"]
+        if not blood_types:
+            return None, None
+        
+        if len(blood_types) > 1:
+            blood_type = ", ".join(blood_types)
+            blood_type_group = "mixed"
+        else:
+            blood_type = blood_types[0]
+            blood_type_group = self._get_blood_type_group(blood_type)
+        
+        return blood_type, blood_type_group
+    
+    def _parse_bounty(self, attributes: Dict[str, Any]) -> tuple[Optional[str], Optional[int]]:
+        """Parse bounty information."""
+        if "bounty" not in attributes:
+            return None, None
+        
+        bounties_list = attributes["bounty"]
+        if not bounties_list:
+            return None, None
+        
+        bounties = ";".join(bounties_list)
+        first_entry = bounties_list[0].replace("¥", "")
+        
+        if "★" in first_entry or first_entry == "Unknown" or first_entry == "":
+            if len(bounties_list) > 1:
+                first_entry = bounties_list[1]
+            else:
+                first_entry = first_entry.replace("★", "")
+        
+        if first_entry in ["Unknown", ""] or "Unknown" in first_entry:
+            bounty = None
+        else:
+            try:
+                bounty = int(
+                    first_entry.split(" ")[-1]
+                    .replace(";", "")
+                    .replace("(", "")
+                    .replace(")", "")
+                )
+            except ValueError:
+                try:
+                    bounty = int(
+                        first_entry.split(" ")[0]
+                        .replace(";", "")
+                        .replace("(", "")
+                        .replace(")", "")
+                    )
+                except ValueError:
+                    bounty = None
+        
+        # Special case for Buggy (from original parser)
+        if attributes.get("id") == "Buggy":
+            bounty = 3189000000
+        
+        return bounties, bounty
+    
+    def _parse_age(self, attributes: Dict[str, Any]) -> Optional[int]:
+        """Parse age information."""
+        if "age" not in attributes:
+            return None
+        
+        ages = attributes["age"]
+        if not ages:
+            return None
+        
+        def parse_raw_age(raw_age: str) -> Optional[int]:
+            age_string = raw_age.split(" ")
+            if age_string[0] in ["Over", "Under", "Roughly", "Bas:", "And:", "Kerville:"]:
+                return int(age_string[1])
+            elif age_string[0] == "At" and age_string[1] == "least":
+                return int(age_string[2])
+            elif "–" in age_string[0]:  # Makino's Child, get the max age
+                return int(age_string[0].split("–")[1])
+            elif "-" in age_string[0]:  # Bonney's age, get the max age
+                return int(age_string[0].split("-")[1])
+            elif "biologically" in age_string[0]:  # Momonosuke
+                return int(age_string[1].split(")")[0])
+            else:
+                try:
+                    return int(age_string[0])
+                except ValueError:
+                    logger.warning(f"parse_raw_age error: {age_string}")
+                    return None
+        
+        try:
+            parsed_ages = [parse_raw_age(age) for age in ages if parse_raw_age(age) is not None]
+            return max(parsed_ages) if parsed_ages else None
+        except Exception as e:
+            logger.warning(f"parse_age error: {e}")
+            return None
     
     def get_database_stats(self) -> Dict[str, int]:
         """Get statistics about the database contents.
