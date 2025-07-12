@@ -40,6 +40,11 @@ class Settings(BaseSettings):
     max_retries: int = Field(default=3, alias="OP_MAX_RETRIES")
     request_timeout: int = Field(default=30, alias="OP_REQUEST_TIMEOUT")
     
+    # Parallel Processing Configuration
+    enable_parallel: bool = Field(default=False, alias="OP_ENABLE_PARALLEL")
+    max_workers: int = Field(default=4, alias="OP_MAX_WORKERS")
+    parallel_chunk_size: int = Field(default=10, alias="OP_PARALLEL_CHUNK_SIZE")
+    
     # Website URLs
     base_chapter_url: str = Field(default="https://onepiece.fandom.com/wiki/Chapter_", alias="OP_BASE_CHAPTER_URL")
     base_character_url: str = Field(default="https://onepiece.fandom.com/wiki/", alias="OP_BASE_CHARACTER_URL")

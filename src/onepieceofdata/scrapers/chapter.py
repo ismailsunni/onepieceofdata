@@ -4,6 +4,8 @@ import asyncio
 import json
 import multiprocessing
 import time
+from concurrent.futures import ProcessPoolExecutor, as_completed
+from functools import partial
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from urllib.parse import urljoin
@@ -18,6 +20,31 @@ from ..utils.logging import get_logger
 
 
 logger = get_logger(__name__)
+
+
+def scrape_chapter_worker(chapter_num: int) -> ScrapingResult:
+    """
+    Worker function for parallel chapter scraping.
+    This function creates its own scraper instance to avoid sharing state.
+    
+    Args:
+        chapter_num: Chapter number to scrape
+        
+    Returns:
+        ScrapingResult with chapter data
+    """
+    try:
+        scraper = ChapterScraper()
+        result = scraper.scrape_chapter(chapter_num)
+        return result
+    except Exception as e:
+        logger.error(f"Worker failed to scrape chapter {chapter_num}: {str(e)}")
+        return ScrapingResult(
+            success=False,
+            data=None,
+            error=f"Worker error: {str(e)}",
+            url=f"{settings.base_chapter_url}{chapter_num}"
+        )
 
 
 class ChapterScraper:
@@ -229,13 +256,16 @@ class ChapterScraper:
                 url=chapter_url
             )
     
-    def scrape_chapters(self, start_chapter: int = 1, end_chapter: Optional[int] = None) -> List[Dict[str, Any]]:
+    def scrape_chapters(self, start_chapter: int = 1, end_chapter: Optional[int] = None, 
+                       use_parallel: bool = False, max_workers: Optional[int] = None) -> List[Dict[str, Any]]:
         """
-        Scrape multiple chapters using multiprocessing.
+        Scrape multiple chapters with optional parallel processing.
         
         Args:
             start_chapter: Starting chapter number
             end_chapter: Ending chapter number (uses settings.last_chapter if None)
+            use_parallel: Whether to use parallel processing
+            max_workers: Maximum number of worker processes (defaults to config)
             
         Returns:
             List of chapter data dictionaries
@@ -243,18 +273,27 @@ class ChapterScraper:
         if end_chapter is None:
             end_chapter = settings.last_chapter
             
-        logger.info(f"Starting to scrape chapters {start_chapter} to {end_chapter}")
-        
+        if max_workers is None:
+            max_workers = settings.max_workers
+            
         chapter_range = list(range(start_chapter, end_chapter + 1))
+        total_chapters = len(chapter_range)
         
-        # Use multiprocessing for parallel scraping
-        num_processes = min(multiprocessing.cpu_count() - 1, 8)  # Cap at 8 to be respectful
-        logger.info(f"Using {num_processes} processes for scraping")
+        logger.info(f"Starting to scrape chapters {start_chapter} to {end_chapter}")
+        logger.info(f"Total chapters to scrape: {total_chapters}")
+        
+        if use_parallel and total_chapters > 1:
+            return self._scrape_chapters_parallel(chapter_range, max_workers)
+        else:
+            return self._scrape_chapters_sequential(chapter_range)
+    
+    def _scrape_chapters_sequential(self, chapter_range: List[int]) -> List[Dict[str, Any]]:
+        """Scrape chapters sequentially (original behavior)."""
+        logger.info("Using sequential processing")
         
         successful_chapters = []
         failed_chapters = []
         
-        # We can't use multiprocessing with class methods easily, so we'll use a simpler approach
         for chapter_num in chapter_range:
             result = self.scrape_chapter(chapter_num)
             if result.success:
@@ -262,9 +301,60 @@ class ChapterScraper:
             else:
                 failed_chapters.append(chapter_num)
                 
+            # Add delay between requests when sequential
+            if settings.scraping_delay > 0:
+                time.sleep(settings.scraping_delay)
+                
         logger.info(f"Successfully scraped {len(successful_chapters)} chapters")
         if failed_chapters:
             logger.warning(f"Failed to scrape {len(failed_chapters)} chapters: {failed_chapters}")
+            
+        return successful_chapters
+    
+    def _scrape_chapters_parallel(self, chapter_range: List[int], max_workers: int) -> List[Dict[str, Any]]:
+        """Scrape chapters in parallel using ProcessPoolExecutor."""
+        # Cap workers at reasonable limits
+        actual_workers = min(max_workers, multiprocessing.cpu_count() - 1, 8)
+        logger.info(f"Using parallel processing with {actual_workers} workers")
+        
+        successful_chapters = []
+        failed_chapters = []
+        
+        try:
+            with ProcessPoolExecutor(max_workers=actual_workers) as executor:
+                # Submit all tasks
+                future_to_chapter = {
+                    executor.submit(scrape_chapter_worker, chapter_num): chapter_num 
+                    for chapter_num in chapter_range
+                }
+                
+                # Process completed tasks
+                for future in as_completed(future_to_chapter):
+                    chapter_num = future_to_chapter[future]
+                    try:
+                        result = future.result()
+                        if result.success:
+                            successful_chapters.append(result.data)
+                            logger.debug(f"Successfully scraped chapter {chapter_num}")
+                        else:
+                            failed_chapters.append(chapter_num)
+                            logger.error(f"Failed to scrape chapter {chapter_num}: {result.error}")
+                    except Exception as e:
+                        failed_chapters.append(chapter_num)
+                        logger.error(f"Exception while processing chapter {chapter_num}: {str(e)}")
+                        
+        except Exception as e:
+            logger.error(f"Parallel processing failed: {str(e)}")
+            # Fallback to sequential processing
+            logger.info("Falling back to sequential processing")
+            return self._scrape_chapters_sequential(chapter_range)
+        
+        # Sort successful chapters by chapter number
+        successful_chapters.sort(key=lambda x: x.get('chapter_number', 0))
+        
+        logger.info(f"Successfully scraped {len(successful_chapters)} chapters using parallel processing")
+        if failed_chapters:
+            logger.warning(f"Failed to scrape {len(failed_chapters)} chapters: {sorted(failed_chapters)}")
             
         return successful_chapters
     
