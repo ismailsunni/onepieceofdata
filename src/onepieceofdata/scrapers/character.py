@@ -4,12 +4,40 @@ from typing import List, Optional, Dict, Any
 import urllib3
 import pandas as pd
 import re
+import multiprocessing
+import time
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from bs4 import BeautifulSoup, Tag
 from loguru import logger
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
 from ..models.data import CharacterModel, ScrapingResult
 from ..config.settings import get_settings
+
+
+def scrape_character_worker(character_data: Dict[str, Any]) -> ScrapingResult:
+    """
+    Worker function for parallel character scraping.
+    This function creates its own scraper instance to avoid sharing state.
+    
+    Args:
+        character_data: Character data dictionary from CSV
+        
+    Returns:
+        ScrapingResult with character data
+    """
+    try:
+        scraper = CharacterScraper()
+        result = scraper.scrape_character(character_data)
+        return result
+    except Exception as e:
+        logger.error(f"Worker failed to scrape character {character_data.get('name', 'unknown')}: {str(e)}")
+        return ScrapingResult(
+            success=False,
+            data=None,
+            error=f"Worker error: {str(e)}",
+            url=f"https://onepiece.fandom.com/wiki/{character_data.get('name', '')}"
+        )
 
 
 class CharacterScraper:
@@ -354,6 +382,74 @@ class CharacterScraper:
         except Exception as e:
             logger.error(f"Failed to load characters from {csv_path}: {str(e)}")
             return []
+    
+    def scrape_characters_parallel(self, characters_data: List[Dict[str, Any]], 
+                                 max_workers: Optional[int] = None) -> List[ScrapingResult]:
+        """
+        Scrape multiple characters using parallel processing.
+        
+        Args:
+            characters_data: List of character data dictionaries
+            max_workers: Maximum number of worker processes
+            
+        Returns:
+            List of ScrapingResult objects
+        """
+        if max_workers is None:
+            max_workers = self.settings.max_workers
+            
+        # Cap workers at reasonable limits
+        actual_workers = min(max_workers, multiprocessing.cpu_count() - 1, 8)
+        total_characters = len(characters_data)
+        
+        logger.info(f"Starting parallel character scraping with {actual_workers} workers")
+        logger.info(f"Total characters to scrape: {total_characters}")
+        
+        results = []
+        
+        try:
+            with ProcessPoolExecutor(max_workers=actual_workers) as executor:
+                # Submit all tasks
+                future_to_character = {
+                    executor.submit(scrape_character_worker, char_data): char_data 
+                    for char_data in characters_data
+                }
+                
+                # Process completed tasks
+                for future in as_completed(future_to_character):
+                    char_data = future_to_character[future]
+                    try:
+                        result = future.result()
+                        results.append(result)
+                        char_name = char_data.get('name', 'unknown')
+                        if result.success:
+                            logger.debug(f"Successfully scraped character: {char_name}")
+                        else:
+                            logger.error(f"Failed to scrape character: {char_name} - {result.error}")
+                    except Exception as e:
+                        char_name = char_data.get('name', 'unknown')
+                        logger.error(f"Exception while processing character {char_name}: {str(e)}")
+                        results.append(ScrapingResult(
+                            success=False,
+                            data=None,
+                            error=f"Processing error: {str(e)}",
+                            url=f"https://onepiece.fandom.com/wiki/{char_name}"
+                        ))
+                        
+        except Exception as e:
+            logger.error(f"Parallel processing failed: {str(e)}")
+            # Fallback to sequential processing
+            logger.info("Falling back to sequential processing")
+            results = []
+            for char_data in characters_data:
+                result = self.scrape_character(char_data)
+                results.append(result)
+                time.sleep(0.5)  # Add delay for respectful scraping
+        
+        successful_count = sum(1 for r in results if r.success)
+        logger.info(f"Successfully scraped {successful_count}/{len(results)} characters using parallel processing")
+        
+        return results
     
     def export_to_json(self, results: List[ScrapingResult], output_path: str) -> bool:
         """Export scraping results to JSON file.

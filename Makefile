@@ -1,7 +1,7 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-volumes run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters
+.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel
 
 # Default target
 help:
@@ -24,6 +24,8 @@ help:
 	@echo "  run-scrape-parallel - Run chapter scraping with parallel processing"
 	@echo "  run-scrape-workers WORKERS=N - Run chapter scraping with N workers"
 	@echo "  run-scrape-characters - Run character scraping (all characters from CSV)"
+	@echo "  run-scrape-characters-parallel - Run character scraping with parallel processing"
+	@echo "  run-scrape-characters-workers WORKERS=N - Run character scraping with N workers"
 	@echo "  run-scrape-volumes - Run volume scraping (uses config: all volumes)"
 	@echo "  run-parse      - Run data parsing and database loading"
 	@echo "  run-full-pipeline - Run complete pipeline (scrape + parse)"
@@ -39,6 +41,7 @@ help:
 	@echo "  test-scrape-workers WORKERS=N - Test chapter scraping with N workers"
 	@echo "  test-scrape-volumes - Test volume scraping (volumes 1-5)"
 	@echo "  test-scrape-characters - Test character scraping (all from CSV)"
+	@echo "  test-scrape-characters-parallel - Test character scraping with parallel processing"
 	@echo ""
 	@echo "Utility Commands:"
 	@echo "  clean          - Clean up generated files"
@@ -109,6 +112,25 @@ run-scrape-characters:
 	fi
 	$(UV) run onepieceofdata scrape-characters
 
+# Run character scraping with parallel processing
+run-scrape-characters-parallel:
+	@echo "🚀 Running character scraping with parallel processing..."
+	@if [ ! -f "data/characters.csv" ]; then \
+		echo "❌ characters.csv not found. Run 'make run-scrape' first."; \
+		exit 1; \
+	fi
+	$(UV) run onepieceofdata scrape-characters --parallel
+
+# Run character scraping with custom number of workers
+# Usage: make run-scrape-characters-workers WORKERS=4
+run-scrape-characters-workers:
+	@echo "🚀 Running character scraping with $(WORKERS) workers..."
+	@if [ ! -f "data/characters.csv" ]; then \
+		echo "❌ characters.csv not found. Run 'make run-scrape' first."; \
+		exit 1; \
+	fi
+	$(UV) run onepieceofdata scrape-characters --parallel --workers $(WORKERS)
+
 # Run volume scraping (uses config defaults: all volumes)
 run-scrape-volumes:
 	@echo "📚 Running volume scraping (using config defaults)..."
@@ -147,8 +169,8 @@ run-full-pipeline-parallel:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping characters..."
-	$(MAKE) run-scrape-characters
+	@echo "Step 3: Scraping characters (parallel)..."
+	$(MAKE) run-scrape-characters-parallel
 	@echo ""
 	@echo "Step 4: Loading data into database..."
 	$(MAKE) run-parse
@@ -166,8 +188,8 @@ run-full-pipeline-workers:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping characters..."
-	$(MAKE) run-scrape-characters
+	@echo "Step 3: Scraping characters ($(WORKERS) workers)..."
+	$(MAKE) run-scrape-characters-workers WORKERS=$(WORKERS)
 	@echo ""
 	@echo "Step 4: Loading data into database..."
 	$(MAKE) run-parse
@@ -217,6 +239,15 @@ test-scrape-characters:
 	@echo "ℹ️  Note: This will scrape ALL characters from characters.csv"
 	@echo "💡 For faster testing, consider creating a smaller test CSV file"
 	$(UV) run onepieceofdata scrape-characters
+
+test-scrape-characters-parallel:
+	@echo "🚀 Testing character scraping with parallel processing..."
+	@if [ ! -f "data/characters.csv" ]; then \
+		echo "❌ characters.csv not found. Run 'make test-scrape' first."; \
+		exit 1; \
+	fi
+	@echo "ℹ️  Note: This will scrape ALL characters from characters.csv with parallel processing"
+	$(UV) run onepieceofdata scrape-characters --parallel
 
 # Clean up generated files
 clean:
