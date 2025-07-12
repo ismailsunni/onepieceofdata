@@ -160,13 +160,13 @@ class DatabaseManager:
             for chapter_data in chapters_data:
                 try:
                     # Extract and clean data
-                    chapter_number = chapter_data.get('chapter')
-                    volume = chapter_data.get('vol')
-                    title = chapter_data.get('ename', '')  # English name
+                    chapter_number = chapter_data.get('chapter_number')
+                    volume = chapter_data.get('volume')
+                    title = chapter_data.get('title', '')  # Chapter title
                     japanese_title = None  # Not in current data structure
                     romanized_title = None  # Not in current data structure
-                    num_page = chapter_data.get('page')
-                    release_date = self._parse_date(chapter_data.get('date2'))
+                    num_page = chapter_data.get('pages')
+                    release_date = self._parse_date(chapter_data.get('release_date'))
                     
                     # Convert chapter number to int, skip if invalid
                     if chapter_number and chapter_number != 'unknown':
@@ -176,7 +176,7 @@ class DatabaseManager:
                             logger.warning(f"Skipping chapter with invalid number: {chapter_number}")
                             continue
                     else:
-                        logger.warning(f"Skipping chapter with missing/unknown number")
+                        logger.warning(f"Skipping chapter with missing/unknown number: {chapter_number}")
                         continue
                     
                     # Convert volume to int
@@ -219,7 +219,7 @@ class DatabaseManager:
                             """, [chapter_number, character_name, None])  # character_id can be filled later
                         
                 except Exception as e:
-                    logger.error(f"Failed to insert chapter {chapter_data.get('chapter', 'unknown')}: {str(e)}")
+                    logger.error(f"Failed to insert chapter {chapter_data.get('chapter_number', 'unknown')}: {str(e)}")
                     continue
             
             conn.commit()
