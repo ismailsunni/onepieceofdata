@@ -80,6 +80,53 @@ uv run onepieceofdata config
 uv run onepieceofdata --help
 ```
 
+## ⚡ Parallel Processing
+
+One Piece of Data supports parallel processing for faster chapter scraping:
+
+### Using CLI Commands
+
+```bash
+# Enable parallel processing with default workers (4)
+uv run onepieceofdata scrape-chapters --parallel
+
+# Specify number of workers
+uv run onepieceofdata scrape-chapters --parallel --workers 8
+
+# Test parallel processing with a small sample
+uv run onepieceofdata scrape-chapters --start-chapter 1 --end-chapter 10 --parallel
+```
+
+### Using Make Commands
+
+```bash
+# Test parallel scraping
+make test-scrape-parallel
+
+# Run full pipeline with parallel processing
+make run-full-pipeline-parallel
+
+# Regular vs parallel scraping
+make run-scrape          # Sequential (safe, slower)
+make run-scrape-parallel # Parallel (faster, uses more resources)
+```
+
+### Performance Comparison
+
+- **Sequential**: Safer, better error handling, respects rate limits
+- **Parallel**: 3-4x faster, uses multiple CPU cores, higher server load
+
+### Configuration
+
+You can configure parallel processing via environment variables:
+
+```bash
+# .env file
+OP_ENABLE_PARALLEL=true
+OP_MAX_WORKERS=4
+OP_PARALLEL_CHUNK_SIZE=10
+```
+
 ## 📁 Project Structure
 
 ```
