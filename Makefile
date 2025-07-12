@@ -1,7 +1,7 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-characters run-scrape-volumes run-parse run-full-pipeline run-full-pipeline-parallel status export test-scrape test-scrape-parallel test-scrape-volumes test-scrape-characters
+.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-volumes run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters
 
 # Default target
 help:
@@ -22,17 +22,21 @@ help:
 	@echo "Pipeline Commands:"
 	@echo "  run-scrape     - Run chapter scraping (uses config: all chapters)"
 	@echo "  run-scrape-parallel - Run chapter scraping with parallel processing"
+	@echo "  run-scrape-workers WORKERS=N - Run chapter scraping with N workers"
 	@echo "  run-scrape-characters - Run character scraping (all characters from CSV)"
 	@echo "  run-scrape-volumes - Run volume scraping (uses config: all volumes)"
 	@echo "  run-parse      - Run data parsing and database loading"
 	@echo "  run-full-pipeline - Run complete pipeline (scrape + parse)"
 	@echo "  run-full-pipeline-parallel - Run complete pipeline with parallel processing"
+	@echo "  run-full-pipeline-workers WORKERS=N - Run complete pipeline with N workers"
 	@echo "  status         - Show pipeline status"
+	@echo "  config         - Show current configuration"
 	@echo "  export         - Export database to CSV files"
 	@echo ""
 	@echo "Test/Development Commands:"
 	@echo "  test-scrape    - Test chapter scraping (chapters 1-10)"
 	@echo "  test-scrape-parallel - Test chapter scraping with parallel processing"
+	@echo "  test-scrape-workers WORKERS=N - Test chapter scraping with N workers"
 	@echo "  test-scrape-volumes - Test volume scraping (volumes 1-5)"
 	@echo "  test-scrape-characters - Test character scraping (all from CSV)"
 	@echo ""
@@ -90,6 +94,12 @@ run-scrape-parallel:
 	@echo "🚀 Running chapter scraping with parallel processing..."
 	$(UV) run onepieceofdata scrape-chapters --parallel
 
+# Run chapter scraping with custom number of workers
+# Usage: make run-scrape-workers WORKERS=8
+run-scrape-workers:
+	@echo "🚀 Running chapter scraping with $(WORKERS) workers..."
+	$(UV) run onepieceofdata scrape-chapters --parallel --workers $(WORKERS)
+
 # Run character scraping (uses all characters from characters.csv)
 run-scrape-characters:
 	@echo "👥 Running character scraping (using all characters from CSV)..."
@@ -145,6 +155,25 @@ run-full-pipeline-parallel:
 	@echo ""
 	@echo "✅ Parallel pipeline completed! Check status with 'make status'"
 
+# Run complete pipeline with custom number of workers
+# Usage: make run-full-pipeline-workers WORKERS=8
+run-full-pipeline-workers:
+	@echo "🚀 Running complete One Piece data pipeline with $(WORKERS) workers..."
+	@echo ""
+	@echo "Step 1: Scraping chapters ($(WORKERS) workers)..."
+	$(MAKE) run-scrape-workers WORKERS=$(WORKERS)
+	@echo ""
+	@echo "Step 2: Scraping volumes..."
+	$(MAKE) run-scrape-volumes
+	@echo ""
+	@echo "Step 3: Scraping characters..."
+	$(MAKE) run-scrape-characters
+	@echo ""
+	@echo "Step 4: Loading data into database..."
+	$(MAKE) run-parse
+	@echo ""
+	@echo "✅ Pipeline with $(WORKERS) workers completed! Check status with 'make status'"
+
 # Export database to CSV files
 export:
 	@echo "📤 Exporting database to CSV files..."
@@ -154,6 +183,12 @@ export:
 status:
 	$(UV) run onepieceofdata status
 
+# Show current configuration including parallel settings
+config:
+	@echo "📋 Current Configuration:"
+	@echo "========================"
+	@$(UV) run python -c "from src.onepieceofdata.config.settings import settings; print(f'Last Chapter: {settings.last_chapter}'); print(f'Last Volume: {settings.last_volume}'); print(f'Enable Parallel: {settings.enable_parallel}'); print(f'Max Workers: {settings.max_workers}'); print(f'Scraping Delay: {settings.scraping_delay}s')"
+
 # Test commands for development (limited scope)
 test-scrape:
 	@echo "📖 Testing chapter scraping (chapters 1-10)..."
@@ -162,6 +197,12 @@ test-scrape:
 test-scrape-parallel:
 	@echo "🚀 Testing chapter scraping with parallel processing (chapters 1-10)..."
 	$(UV) run onepieceofdata scrape-chapters --start-chapter 1 --end-chapter 10 --parallel
+
+# Test parallel scraping with custom workers
+# Usage: make test-scrape-workers WORKERS=2
+test-scrape-workers:
+	@echo "🚀 Testing chapter scraping with $(WORKERS) workers (chapters 1-10)..."
+	$(UV) run onepieceofdata scrape-chapters --start-chapter 1 --end-chapter 10 --parallel --workers $(WORKERS)
 
 test-scrape-volumes:
 	@echo "📚 Testing volume scraping (volumes 1-5)..."
