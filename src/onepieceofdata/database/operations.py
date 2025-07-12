@@ -7,6 +7,7 @@ from datetime import datetime
 import duckdb
 import pandas as pd
 from loguru import logger
+import re
 
 from ..models.data import ChapterModel, VolumeModel, CharacterModel, ScrapingResult
 from ..config.settings import get_settings
@@ -42,7 +43,30 @@ class DatabaseManager:
             except ValueError:
                 logger.warning(f"Could not parse date: {date_str}")
                 return None
+    
+    def _parse_page_number(self, pages_str: str) -> Optional[int]:
+        """Parse page number from complex strings like '19 (Excluding cover page)*'."""
+        if not pages_str:
+            return None
         
+        # Handle special cases
+        if "Volume" in pages_str:
+            # Chapter 999 has "1917 (Volume)" but should probably be "19"
+            if pages_str.startswith("1917"):
+                return 19
+        
+        # Extract the first number from the string
+        match = re.match(r'^(\d+)', pages_str.strip())
+        if match:
+            try:
+                return int(match.group(1))
+            except ValueError:
+                logger.warning(f"Could not parse page number: {pages_str}")
+                return None
+        
+        logger.warning(f"Could not parse page number: {pages_str}")
+        return None
+    
     def connect(self) -> duckdb.DuckDBPyConnection:
         """Connect to the database.
         
@@ -180,12 +204,8 @@ class DatabaseManager:
                         except ValueError:
                             volume = None
                     
-                    # Convert pages to int
-                    if num_page:
-                        try:
-                            num_page = int(num_page)
-                        except ValueError:
-                            num_page = None
+                    # Convert pages to int using helper function
+                    num_page = self._parse_page_number(num_page)
                     
                     # Insert chapter (simple INSERT since table is cleared)
                     conn.execute("""
