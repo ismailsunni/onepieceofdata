@@ -1,7 +1,7 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-characters run-scrape-volumes run-parse run-full-pipeline status export
+.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-characters run-scrape-volumes run-parse run-full-pipeline status export test-scrape test-scrape-volumes test-scrape-characters
 
 # Default target
 help:
@@ -20,13 +20,18 @@ help:
 	@echo "  check          - Run all checks (lint + test)"
 	@echo ""
 	@echo "Pipeline Commands:"
-	@echo "  run-scrape     - Run chapter scraping (1-10 for testing)"
-	@echo "  run-scrape-characters - Run character scraping (requires characters.csv)"
-	@echo "  run-scrape-volumes - Run volume scraping (1-5 for testing)"
+	@echo "  run-scrape     - Run chapter scraping (uses config: all chapters)"
+	@echo "  run-scrape-characters - Run character scraping (all characters from CSV)"
+	@echo "  run-scrape-volumes - Run volume scraping (uses config: all volumes)"
 	@echo "  run-parse      - Run data parsing and database loading"
 	@echo "  run-full-pipeline - Run complete pipeline (scrape + parse)"
 	@echo "  status         - Show pipeline status"
 	@echo "  export         - Export database to CSV files"
+	@echo ""
+	@echo "Test/Development Commands:"
+	@echo "  test-scrape    - Test chapter scraping (chapters 1-10)"
+	@echo "  test-scrape-volumes - Test volume scraping (volumes 1-5)"
+	@echo "  test-scrape-characters - Test character scraping (all from CSV)"
 	@echo ""
 	@echo "Utility Commands:"
 	@echo "  clean          - Clean up generated files"
@@ -40,9 +45,9 @@ setup:
 	@echo "✅ Setup complete!"
 	@echo ""
 	@echo "Next steps:"
-	@echo "  1. Run 'make run-scrape' to test scraping"
+	@echo "  1. Run 'make test-scrape' to test scraping with limited data"
 	@echo "  2. Run 'make status' to check pipeline status"
-	@echo "  3. Run 'make run-full-pipeline' for complete workflow"
+	@echo "  3. Run 'make run-full-pipeline' for complete workflow (scrapes ALL data)"
 
 # Install dependencies
 install:
@@ -72,24 +77,24 @@ format:
 check: lint test
 	@echo "✅ All checks passed!"
 
-# Run chapter scraping (test with chapters 1-10)
+# Run chapter scraping (uses config defaults: all chapters)
 run-scrape:
-	@echo "📖 Running chapter scraping (chapters 1-10 for testing)..."
-	$(UV) run onepieceofdata scrape-chapters --start-chapter 1 --end-chapter 10
+	@echo "📖 Running chapter scraping (using config defaults)..."
+	$(UV) run onepieceofdata scrape-chapters
 
-# Run character scraping (requires characters.csv from chapters)
+# Run character scraping (uses all characters from characters.csv)
 run-scrape-characters:
-	@echo "👥 Running character scraping..."
+	@echo "👥 Running character scraping (using all characters from CSV)..."
 	@if [ ! -f "data/characters.csv" ]; then \
 		echo "❌ characters.csv not found. Run 'make run-scrape' first."; \
 		exit 1; \
 	fi
-	$(UV) run onepieceofdata scrape-characters --max-characters 10
+	$(UV) run onepieceofdata scrape-characters
 
-# Run volume scraping (test with volumes 1-5)
+# Run volume scraping (uses config defaults: all volumes)
 run-scrape-volumes:
-	@echo "📚 Running volume scraping (volumes 1-5 for testing)..."
-	$(UV) run onepieceofdata scrape-volumes --start-volume 1 --end-volume 5
+	@echo "📚 Running volume scraping (using config defaults)..."
+	$(UV) run onepieceofdata scrape-volumes
 
 # Run data parsing and database loading
 run-parse:
@@ -122,6 +127,25 @@ export:
 # Show pipeline status
 status:
 	$(UV) run onepieceofdata status
+
+# Test commands for development (limited scope)
+test-scrape:
+	@echo "📖 Testing chapter scraping (chapters 1-10)..."
+	$(UV) run onepieceofdata scrape-chapters --start-chapter 1 --end-chapter 10
+
+test-scrape-volumes:
+	@echo "📚 Testing volume scraping (volumes 1-5)..."
+	$(UV) run onepieceofdata scrape-volumes --start-volume 1 --end-volume 5
+
+test-scrape-characters:
+	@echo "👥 Testing character scraping..."
+	@if [ ! -f "data/characters.csv" ]; then \
+		echo "❌ characters.csv not found. Run 'make test-scrape' first."; \
+		exit 1; \
+	fi
+	@echo "ℹ️  Note: This will scrape ALL characters from characters.csv"
+	@echo "💡 For faster testing, consider creating a smaller test CSV file"
+	$(UV) run onepieceofdata scrape-characters
 
 # Clean up generated files
 clean:
