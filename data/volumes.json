@@ -40,5 +40,86 @@
         "slug": "Cabaji"
       }
     ]
+  },
+  {
+    "volume_number": 3,
+    "english_title": "Don't Get Fooled Again",
+    "japanese_title": "偽れぬもの",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      }
+    ]
+  },
+  {
+    "volume_number": 4,
+    "english_title": "The Black Cat Pirates",
+    "japanese_title": "三日月",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Kuro",
+        "slug": "Kuro"
+      },
+      {
+        "name": "Jango",
+        "slug": "Jango"
+      },
+      {
+        "name": "Sham",
+        "slug": "Sham"
+      },
+      {
+        "name": "Buchi",
+        "slug": "Buchi"
+      }
+    ]
+  },
+  {
+    "volume_number": 5,
+    "english_title": "For Whom the Bell Tolls",
+    "japanese_title": "誰が為に鐘は鳴る",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Ninjin",
+        "slug": "Ninjin"
+      },
+      {
+        "name": "Piiman",
+        "slug": "Piiman"
+      },
+      {
+        "name": "Tamanegi",
+        "slug": "Tamanegi"
+      },
+      {
+        "name": "Kaya",
+        "slug": "Kaya"
+      }
+    ]
   }
 ]
