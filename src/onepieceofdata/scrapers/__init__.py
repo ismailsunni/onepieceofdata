@@ -3,9 +3,13 @@
 from .chapter import ChapterScraper
 from .volume import VolumeScraper
 from .character import CharacterScraper
+from .arc import ArcScraper
+from .saga import SagaScraper
 
 __all__ = [
     "ChapterScraper",
     "VolumeScraper", 
     "CharacterScraper",
+    "ArcScraper",
+    "SagaScraper",
 ]
