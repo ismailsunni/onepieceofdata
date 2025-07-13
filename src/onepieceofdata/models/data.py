@@ -109,3 +109,60 @@ class ScrapingResult(BaseModel):
         json_encoders = {
             datetime: lambda v: v.isoformat()
         }
+
+
+class ArcModel(BaseModel):
+    """Model for One Piece arc data."""
+    
+    arc_id: str = Field(..., description="Arc identifier")
+    title: str = Field(..., description="Arc title")
+    japanese_title: Optional[str] = Field(None, description="Japanese title")
+    romanized_title: Optional[str] = Field(None, description="Romanized title")
+    start_chapter: int = Field(..., description="Starting chapter number")
+    end_chapter: int = Field(..., description="Ending chapter number")
+    saga_id: Optional[str] = Field(None, description="Saga this arc belongs to")
+    description: Optional[str] = Field(None, description="Arc description")
+    
+    @field_validator("start_chapter", "end_chapter")
+    @classmethod
+    def validate_chapter_numbers(cls, v):
+        """Validate chapter numbers are positive."""
+        if v <= 0:
+            raise ValueError("Chapter numbers must be positive")
+        return v
+    
+    @field_validator("title")
+    @classmethod
+    def validate_title(cls, v):
+        """Validate title is not empty."""
+        if not v.strip():
+            raise ValueError("Arc title cannot be empty")
+        return v.strip()
+
+
+class SagaModel(BaseModel):
+    """Model for One Piece saga data."""
+    
+    saga_id: str = Field(..., description="Saga identifier")
+    title: str = Field(..., description="Saga title")
+    japanese_title: Optional[str] = Field(None, description="Japanese title")
+    romanized_title: Optional[str] = Field(None, description="Romanized title")
+    start_chapter: int = Field(..., description="Starting chapter number")
+    end_chapter: int = Field(..., description="Ending chapter number")
+    description: Optional[str] = Field(None, description="Saga description")
+    
+    @field_validator("start_chapter", "end_chapter")
+    @classmethod
+    def validate_chapter_numbers(cls, v):
+        """Validate chapter numbers are positive."""
+        if v <= 0:
+            raise ValueError("Chapter numbers must be positive")
+        return v
+    
+    @field_validator("title")
+    @classmethod
+    def validate_title(cls, v):
+        """Validate title is not empty."""
+        if not v.strip():
+            raise ValueError("Saga title cannot be empty")
+        return v.strip()

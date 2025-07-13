@@ -9,7 +9,7 @@ import pandas as pd
 from loguru import logger
 import re
 
-from ..models.data import ChapterModel, VolumeModel, CharacterModel, ScrapingResult
+from ..models.data import ChapterModel, VolumeModel, CharacterModel, ArcModel, SagaModel, ScrapingResult
 from ..config.settings import get_settings
 
 
@@ -153,6 +153,42 @@ class DatabaseManager:
         """
         conn.execute(coc_table_query)
         logger.debug("Created coc (character-of-chapter) table")
+        
+        # Create saga table first (referenced by arc table)
+        saga_table_query = """
+        CREATE TABLE saga (
+            saga_id TEXT PRIMARY KEY,
+            title TEXT NOT NULL,
+            japanese_title TEXT,
+            romanized_title TEXT,
+            start_chapter INTEGER NOT NULL,
+            end_chapter INTEGER NOT NULL,
+            description TEXT,
+            FOREIGN KEY(start_chapter) REFERENCES chapter(number),
+            FOREIGN KEY(end_chapter) REFERENCES chapter(number)
+        )
+        """
+        conn.execute(saga_table_query)
+        logger.debug("Created saga table")
+        
+        # Create arc table
+        arc_table_query = """
+        CREATE TABLE arc (
+            arc_id TEXT PRIMARY KEY,
+            title TEXT NOT NULL,
+            japanese_title TEXT,
+            romanized_title TEXT,
+            start_chapter INTEGER NOT NULL,
+            end_chapter INTEGER NOT NULL,
+            saga_id TEXT,
+            description TEXT,
+            FOREIGN KEY(saga_id) REFERENCES saga(saga_id),
+            FOREIGN KEY(start_chapter) REFERENCES chapter(number),
+            FOREIGN KEY(end_chapter) REFERENCES chapter(number)
+        )
+        """
+        conn.execute(arc_table_query)
+        logger.debug("Created arc table")
         
         logger.success("All database tables created successfully")
     
@@ -342,6 +378,121 @@ class DatabaseManager:
             logger.error(f"Failed to load characters from {json_path}: {str(e)}")
             return False
     
+    def load_arcs_from_scraped_data(self, arcs_results: List[ScrapingResult]) -> bool:
+        """Load arc data from scraped results into database.
+        
+        Args:
+            arcs_results: List of ScrapingResult objects containing arc data
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            logger.info(f"Loading {len(arcs_results)} arc results into database")
+            
+            conn = self.connect()
+            
+            # Clear existing arc data
+            conn.execute("DELETE FROM arc")
+            logger.info("Cleared existing arc data")
+            
+            successful_count = 0
+            
+            for result in arcs_results:
+                if not result.success or not result.data:
+                    logger.warning(f"Skipping failed result: {result.error}")
+                    continue
+                    
+                try:
+                    arc_data = result.data
+                    
+                    # Insert arc data
+                    conn.execute("""
+                        INSERT INTO arc (
+                            arc_id, title, japanese_title, romanized_title,
+                            start_chapter, end_chapter, saga_id, description
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        arc_data.get('arc_id'),
+                        arc_data.get('title'),
+                        arc_data.get('japanese_title'),
+                        arc_data.get('romanized_title'),
+                        arc_data.get('start_chapter'),
+                        arc_data.get('end_chapter'),
+                        arc_data.get('saga_id'),
+                        arc_data.get('description')
+                    ))
+                    
+                    successful_count += 1
+                    
+                except Exception as e:
+                    logger.warning(f"Failed to insert arc {arc_data.get('title', 'unknown')}: {str(e)}")
+                    continue
+            
+            logger.success(f"Successfully loaded {successful_count} arcs into database")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to load arcs: {str(e)}")
+            return False
+    
+    def load_sagas_from_scraped_data(self, sagas_results: List[ScrapingResult]) -> bool:
+        """Load saga data from scraped results into database.
+        
+        Args:
+            sagas_results: List of ScrapingResult objects containing saga data
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            logger.info(f"Loading {len(sagas_results)} saga results into database")
+            
+            conn = self.connect()
+            
+            # Clear existing saga data
+            conn.execute("DELETE FROM saga")
+            logger.info("Cleared existing saga data")
+            
+            successful_count = 0
+            
+            for result in sagas_results:
+                if not result.success or not result.data:
+                    logger.warning(f"Skipping failed result: {result.error}")
+                    continue
+                    
+                try:
+                    saga_data = result.data
+                    
+                    # Insert saga data
+                    conn.execute("""
+                        INSERT INTO saga (
+                            saga_id, title, japanese_title, romanized_title,
+                            start_chapter, end_chapter, description
+                        ) VALUES (?, ?, ?, ?, ?, ?, ?)
+                    """, (
+                        saga_data.get('saga_id'),
+                        saga_data.get('title'),
+                        saga_data.get('japanese_title'),
+                        saga_data.get('romanized_title'),
+                        saga_data.get('start_chapter'),
+                        saga_data.get('end_chapter'),
+                        saga_data.get('description')
+                    ))
+                    
+                    successful_count += 1
+                    
+                except Exception as e:
+                    logger.warning(f"Failed to insert saga {saga_data.get('title', 'unknown')}: {str(e)}")
+                    continue
+            
+            logger.success(f"Successfully loaded {successful_count} sagas into database")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to load sagas: {str(e)}")
+            return False
+
     def _list_to_string(self, value: Any) -> Optional[str]:
         """Convert list values to string representation.
         
@@ -549,7 +700,7 @@ class DatabaseManager:
             output_path.mkdir(parents=True, exist_ok=True)
             
             conn = self.connect()
-            tables = ['chapter', 'volume', 'character', 'coc']
+            tables = ['chapter', 'volume', 'character', 'coc', 'arc', 'saga']
             
             for table in tables:
                 try:
