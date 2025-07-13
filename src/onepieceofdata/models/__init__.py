@@ -5,6 +5,8 @@ from .data import (
     VolumeModel,
     CharacterModel,
     CharacterOfChapterModel,
+    ArcModel,
+    SagaModel,
     ScrapingResult,
 )
 
@@ -13,5 +15,7 @@ __all__ = [
     "VolumeModel", 
     "CharacterModel",
     "CharacterOfChapterModel",
+    "ArcModel",
+    "SagaModel",
     "ScrapingResult",
 ]
