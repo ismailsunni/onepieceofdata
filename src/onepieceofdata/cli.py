@@ -10,6 +10,10 @@ from loguru import logger
 from .config import settings
 from .utils import setup_logging, get_logger
 from .scrapers.chapter import ChapterScraper
+from .scrapers.arc import ArcScraper
+from .scrapers.saga import SagaScraper
+from .parsers.arc import ArcParser
+from .parsers.saga import SagaParser
 from .models import ScrapingResult
 
 
@@ -537,6 +541,200 @@ def config() -> None:
     
     for name, value in config_items:
         click.echo(f"{name:20}: {value}")
+
+
+@main.command()
+@click.option(
+    "--output",
+    type=click.Path(),
+    help="Output JSON file path for scraped arc data"
+)
+@click.option(
+    "--save-to-db/--no-save-to-db",
+    default=True,
+    help="Save scraped data to database"
+)
+def scrape_arcs(output: Optional[str], save_to_db: bool) -> None:
+    """Scrape One Piece story arcs data."""
+    cli_logger.info("Starting arc scraping process")
+    
+    try:
+        # Initialize scraper
+        scraper = ArcScraper()
+        
+        # Scrape arc data
+        cli_logger.info("Scraping arc data from One Piece wiki")
+        arc_results = scraper.scrape_all_arcs()
+        
+        # Process results
+        successful_results = [r for r in arc_results if r.success]
+        failed_results = [r for r in arc_results if not r.success]
+        
+        cli_logger.info(f"Scraping completed: {len(successful_results)} successful, {len(failed_results)} failed")
+        
+        if successful_results:
+            # Initialize parser
+            parser = ArcParser()
+            
+            # Process the data
+            validated_arcs = parser.process_arc_data(
+                arc_results,
+                output_json=output,
+                save_to_db=save_to_db
+            )
+            
+            cli_logger.success(f"Successfully processed {len(validated_arcs)} arcs")
+            
+            if output:
+                cli_logger.info(f"Arc data saved to: {output}")
+                
+            if save_to_db:
+                cli_logger.info("Arc data saved to database")
+        else:
+            cli_logger.warning("No successful arc data found")
+            
+        # Clean up
+        scraper.cleanup()
+        
+    except Exception as e:
+        cli_logger.error(f"Arc scraping failed: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--output",
+    type=click.Path(),
+    help="Output JSON file path for scraped saga data"
+)
+@click.option(
+    "--save-to-db/--no-save-to-db",
+    default=True,
+    help="Save scraped data to database"
+)
+def scrape_sagas(output: Optional[str], save_to_db: bool) -> None:
+    """Scrape One Piece story sagas data."""
+    cli_logger.info("Starting saga scraping process")
+    
+    try:
+        # Initialize scraper
+        scraper = SagaScraper()
+        
+        # Scrape saga data
+        cli_logger.info("Scraping saga data from One Piece wiki")
+        saga_results = scraper.scrape_all_sagas()
+        
+        # Process results
+        successful_results = [r for r in saga_results if r.success]
+        failed_results = [r for r in saga_results if not r.success]
+        
+        cli_logger.info(f"Scraping completed: {len(successful_results)} successful, {len(failed_results)} failed")
+        
+        if successful_results:
+            # Initialize parser
+            parser = SagaParser()
+            
+            # Process the data
+            validated_sagas = parser.process_saga_data(
+                saga_results,
+                output_json=output,
+                save_to_db=save_to_db
+            )
+            
+            cli_logger.success(f"Successfully processed {len(validated_sagas)} sagas")
+            
+            if output:
+                cli_logger.info(f"Saga data saved to: {output}")
+                
+            if save_to_db:
+                cli_logger.info("Saga data saved to database")
+        else:
+            cli_logger.warning("No successful saga data found")
+            
+        # Clean up
+        scraper.cleanup()
+        
+    except Exception as e:
+        cli_logger.error(f"Saga scraping failed: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--arcs-output",
+    type=click.Path(),
+    help="Output JSON file path for scraped arc data"
+)
+@click.option(
+    "--sagas-output", 
+    type=click.Path(),
+    help="Output JSON file path for scraped saga data"
+)
+@click.option(
+    "--save-to-db/--no-save-to-db",
+    default=True,
+    help="Save scraped data to database"
+)
+def scrape_story_structure(arcs_output: Optional[str], sagas_output: Optional[str], save_to_db: bool) -> None:
+    """Scrape both arcs and sagas story structure data."""
+    cli_logger.info("Starting comprehensive story structure scraping")
+    
+    try:
+        # Scrape sagas first
+        cli_logger.info("Step 1: Scraping saga data")
+        saga_scraper = SagaScraper()
+        saga_results = saga_scraper.scrape_all_sagas()
+        
+        successful_saga_results = [r for r in saga_results if r.success]
+        cli_logger.info(f"Saga scraping completed: {len(successful_saga_results)} successful")
+        
+        # Scrape arcs
+        cli_logger.info("Step 2: Scraping arc data")
+        arc_scraper = ArcScraper()
+        arc_results = arc_scraper.scrape_all_arcs()
+        
+        successful_arc_results = [r for r in arc_results if r.success]
+        cli_logger.info(f"Arc scraping completed: {len(successful_arc_results)} successful")
+        
+        # Process sagas
+        if successful_saga_results:
+            saga_parser = SagaParser()
+            validated_sagas = saga_parser.process_saga_data(
+                saga_results,
+                output_json=sagas_output,
+                save_to_db=save_to_db
+            )
+            cli_logger.success(f"Processed {len(validated_sagas)} sagas")
+        else:
+            validated_sagas = []
+            cli_logger.warning("No successful saga data found")
+            
+        # Process arcs
+        if successful_arc_results:
+            arc_parser = ArcParser()
+            validated_arcs = arc_parser.process_arc_data(
+                arc_results,
+                output_json=arcs_output,
+                save_to_db=save_to_db
+            )
+            cli_logger.success(f"Processed {len(validated_arcs)} arcs")
+        else:
+            validated_arcs = []
+            cli_logger.warning("No successful arc data found")
+            
+        # Summary
+        cli_logger.success(f"Story structure scraping completed: {len(validated_sagas)} sagas, {len(validated_arcs)} arcs")
+        
+        if save_to_db:
+            cli_logger.info("All data saved to database")
+            
+        # Clean up
+        saga_scraper.cleanup()
+        arc_scraper.cleanup()
+        
+    except Exception as e:
+        cli_logger.error(f"Story structure scraping failed: {str(e)}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
