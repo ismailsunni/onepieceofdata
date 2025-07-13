@@ -122,7 +122,7 @@ class DatabaseManager:
         conn.execute(chapter_table_query)
         logger.debug("Created chapter table")
         
-        # Create character table (matching original structure)
+        # Create character table (enhanced with scraping status column)
         character_table_query = """
         CREATE TABLE character (
             id TEXT PRIMARY KEY,
@@ -134,7 +134,9 @@ class DatabaseManager:
             blood_type_group TEXT,
             bounties TEXT,
             bounty BIGINT,
-            age INT
+            age INT,
+            scraping_status TEXT,
+            scraping_note TEXT
         )
         """
         conn.execute(character_table_query)
@@ -318,12 +320,15 @@ class DatabaseManager:
                     bounties, bounty = self._parse_bounty(character_data)
                     age = self._parse_age(character_data)
                     
+                    # Determine scraping status and note
+                    scraping_status, scraping_note = self._determine_scraping_status(character_data)
+                    
                     # Insert character (simple INSERT since table is cleared)
                     conn.execute("""
                         INSERT INTO character 
-                        (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    """, [char_id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age])
+                        (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, scraping_status, scraping_note)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, [char_id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, scraping_status, scraping_note])
                     
                 except Exception as e:
                     logger.error(f"Failed to insert character {character_data.get('name', 'unknown')}: {str(e)}")
@@ -475,6 +480,35 @@ class DatabaseManager:
         except Exception as e:
             logger.warning(f"parse_age error: {e}")
             return None
+    
+    def _determine_scraping_status(self, character_data: Dict[str, Any]) -> tuple[str, str]:
+        """Determine scraping status and note for a character.
+        
+        Args:
+            character_data: Character data dictionary
+            
+        Returns:
+            Tuple of (status, note)
+        """
+        # Check if character has meaningful data beyond just ID
+        meaningful_fields = ['name', 'origin', 'status', 'birth', 'blood type', 'bounty', 'age']
+        has_data = any(character_data.get(field) for field in meaningful_fields)
+        
+        if has_data:
+            return 'success', 'Successfully scraped character details'
+        
+        # Character failed to scrape - determine why
+        char_id = character_data.get('id', 'unknown')
+        
+        # Common failure patterns from our analysis
+        if char_id in ['Ichika', 'Nika', 'Sanka', 'Yonka', 'Yonka_2', 'Yonka_Two']:
+            return 'failed_no_url', 'Character has no URL in character list'
+        elif char_id == 'Arashi':
+            return 'failed_external_url', 'Character URL points to external site (Wikipedia)'
+        elif char_id in ['Hidélie_Penguin', 'Kaio_Dragon', 'Ogre_Sazae_Kancho', 'Silver_Bat', 'Smiley_Risu', 'Wandering_Kung_Fu_Dugong']:
+            return 'failed_video_game', 'Character is from video games section'
+        else:
+            return 'failed_unknown', 'Unknown scraping failure'
     
     def get_database_stats(self) -> Dict[str, int]:
         """Get statistics about the database contents.
