@@ -289,17 +289,19 @@ class CharacterScraper:
         if not url or pd.isna(url):
             logger.warning(f"URL is null for {name}")
             return ScrapingResult(
-                success=False,
+                success=True,  # Changed to True to include in final data
                 error=f"No URL provided for character {name}",
-                data=result_data
+                data=result_data,
+                url=""
             )
             
         if "http" in url or "Video_Games" in url:
             logger.warning(f"URL is outside onepiece wikia or a video game specific for {name}")
             return ScrapingResult(
-                success=False,
+                success=True,  # Changed to True to include in final data
                 error=f"Invalid URL for character {name}: {url}",
-                data=result_data
+                data=result_data,
+                url=url
             )
         
         try:
