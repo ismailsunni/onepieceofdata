@@ -17669,6 +17669,12 @@
         "full_text": "Pell"
       },
       {
+        "name": "Kebi",
+        "url": "/wiki/Kebi",
+        "note": "flashback",
+        "full_text": "Kebi (flashback)"
+      },
+      {
         "name": "Crocodile",
         "url": "/wiki/Crocodile",
         "note": "",
@@ -17752,6 +17758,12 @@
         "full_text": "Nefertari Vivi"
       },
       {
+        "name": "Toto",
+        "url": "/wiki/Toto",
+        "note": "flashback",
+        "full_text": "Toto (flashback)"
+      },
+      {
         "name": "Crocodile",
         "url": "/wiki/Crocodile",
         "note": "",
@@ -17764,10 +17776,16 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Octopus Mash",
-        "url": "/wiki/Octopus_Mash",
+        "name": "Matsuge",
+        "url": "/wiki/Matsuge",
+        "note": "flashback",
+        "full_text": "Matsuge (flashback)"
+      },
+      {
+        "name": "Mash",
+        "url": "/wiki/Mash",
         "note": "cover",
-        "full_text": "Octopus Mash (cover)"
+        "full_text": "Mash (cover)"
       }
     ]
   },
@@ -100009,10 +100027,10 @@
         "full_text": "Issho"
       },
       {
-        "name": "Aramaki",
+        "name": "Ryokugyu",
         "url": "/wiki/Aramaki",
         "note": "silhouette",
-        "full_text": "Aramaki (silhouette)"
+        "full_text": "Ryokugyu (silhouette)"
       },
       {
         "name": "Tsuru",
@@ -166927,6 +166945,137 @@
         "url": "/wiki/Cho",
         "note": "cover",
         "full_text": "Cho (cover)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1154,
+    "volume": "TBA",
+    "chapter_display": "1154",
+    "title": "Can't Even Die",
+    "pages": "17",
+    "release_date": "July 14, 2025",
+    "jump_info": "2025 Issue 33",
+    "characters": [
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Estrid",
+        "url": "/wiki/Estrid",
+        "note": "",
+        "full_text": "Estrid"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Jorul",
+        "url": "/wiki/Jorul",
+        "note": "",
+        "full_text": "Jorul"
+      },
+      {
+        "name": "Ida",
+        "url": "/wiki/Ida",
+        "note": "",
+        "full_text": "Ida"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Kikunojo",
+        "url": "/wiki/Kikunojo",
+        "note": "cover",
+        "full_text": "Kikunojo (cover)"
+      },
+      {
+        "name": "Cho",
+        "url": "/wiki/Cho",
+        "note": "cover",
+        "full_text": "Cho (cover)"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover",
+        "full_text": "Ulti (cover)"
+      },
+      {
+        "name": "Page One",
+        "url": "/wiki/Page_One",
+        "note": "cover",
+        "full_text": "Page One (cover)"
+      },
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "",
+        "full_text": "Buckingham Stussy"
       }
     ]
   }
