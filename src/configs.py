@@ -1,5 +1,5 @@
 # Last chapter and volume
-last_chapter = 1153
+last_chapter = 1154
 last_volume = 112
 
 # JSON files
