@@ -61,20 +61,34 @@ class ArcScraper:
         Returns:
             Tuple of (start_chapter, end_chapter)
         """
-        # Look for patterns like "Chapter 1-3", "Chapters 4-7", "Chapter 8", etc.
-        patterns = [
-            r'Chapter(?:s)?\s+(\d+)(?:-(\d+))?',
-            r'Ch\.?\s*(\d+)(?:-(\d+))?',
-            r'(\d+)(?:-(\d+))?\s*(?:chapters?|ch\.?)',
-        ]
-        
-        for pattern in patterns:
-            match = re.search(pattern, text, re.IGNORECASE)
-            if match:
-                start = int(match.group(1))
-                end = int(match.group(2)) if match.group(2) else start
-                return start, end
-                
+        # Pattern for "Chapters: X (Y-Z)" or "Chapters: X (Y)" or "Chapters: X (Y-)"
+        match = re.search(r'chapters:\s*\d+\s*\((\d+)(?:-(\d*))?\)', text, re.IGNORECASE)
+        if match:
+            start = int(match.group(1))
+            end_str = match.group(2)
+            # Handle ongoing chapters (e.g., "1126-")
+            if end_str is None:
+                end = start
+            elif end_str == '':
+                # For ongoing, we can set end to a special value or same as start
+                # Setting to start for now as the model expects an integer.
+                end = start
+            else:
+                end = int(end_str)
+            return start, end
+
+        # A more general pattern for (Y-Z)
+        match = re.search(r'\((\d+)-(\d+)\)', text)
+        if match:
+            return int(match.group(1)), int(match.group(2))
+            
+        # A more general pattern for (Y)
+        match = re.search(r'\((\d+)\)', text)
+        if match:
+            start = int(match.group(1))
+            return start, start
+
+        logger.warning(f"Could not extract chapter range from text: {text}")
         return None, None
         
     def _clean_title(self, title: str) -> str:
@@ -110,34 +124,70 @@ class ArcScraper:
             logger.info(f"Scraping arcs from: {url}")
             soup = self._fetch_page(url)
             
-            # Find the main content area
             content = soup.find('div', {'class': 'mw-parser-output'})
             if not content:
                 raise Exception("Could not find main content area")
-                
-            # Look for tables containing arc information
-            tables = content.find_all('table', {'class': 'wikitable'})
+
+            # Arcs are under h4 tags
+            arc_headers = content.find_all('h4')
             
-            for table in tables:
-                rows = table.find_all('tr')[1:]  # Skip header row
+            for header in arc_headers:
+                span = header.find('span', {'class': 'mw-headline'})
+                if not span:
+                    continue
+
+                title_link = span.find('a')
+                title = title_link.get_text(strip=True) if title_link else span.get_text(strip=True)
                 
-                for row in rows:
-                    cells = row.find_all(['td', 'th'])
-                    if len(cells) < 2:
-                        continue
+                cleaned_title = self._clean_title(title)
+                if not cleaned_title:
+                    continue
+
+                # Find chapter info in the next elements
+                start_chapter, end_chapter = None, None
+                next_element = header.find_next_sibling()
+                
+                # Search within a reasonable number of next siblings
+                for _ in range(5): # Look at next 5 siblings
+                    if next_element is None:
+                        break
+                    
+                    if next_element.name == 'ul':
+                        lis = next_element.find_all('li')
+                        for li in lis:
+                            li_text = li.get_text()
+                            if 'Chapters' in li_text:
+                                start_chapter, end_chapter = self._extract_chapter_range(li_text)
+                                if start_chapter is not None:
+                                    break
+                        if start_chapter is not None:
+                            break
+                    
+                    if next_element.name in ['h2', 'h3', 'h4']:
+                        break
                         
-                    try:
-                        arc_data = self._extract_arc_from_row(cells)
-                        if arc_data:
-                            results.append(ScrapingResult(
-                                success=True,
-                                data=arc_data.model_dump(),
-                                url=url
-                            ))
-                    except Exception as e:
-                        logger.warning(f"Failed to extract arc from row: {str(e)}")
-                        continue
-                        
+                    next_element = next_element.find_next_sibling()
+
+                if start_chapter is not None and end_chapter is not None:
+                    arc_id = re.sub(r'[^a-zA-Z0-9]+', '_', cleaned_title.lower()).strip('_')
+                    arc_data = ArcModel(
+                        arc_id=arc_id,
+                        title=cleaned_title,
+                        start_chapter=start_chapter,
+                        end_chapter=end_chapter
+                    )
+                    results.append(ScrapingResult(
+                        success=True,
+                        data=arc_data.model_dump(),
+                        url=url
+                    ))
+                else:
+                    # This is expected for some h4s that are not arcs, so no warning
+                    pass
+
+            if not results:
+                logger.warning("No arcs were scraped. The page structure might have changed.")
+
             logger.success(f"Successfully scraped {len(results)} arcs")
             return results
             
@@ -149,53 +199,6 @@ class ArcScraper:
                 error=str(e),
                 url=url
             )]
-            
-    def _extract_arc_from_row(self, cells: List[Tag]) -> Optional[ArcModel]:
-        """Extract arc data from a table row.
-        
-        Args:
-            cells: Table cells from a row
-            
-        Returns:
-            ArcModel if extraction successful, None otherwise
-        """
-        try:
-            # Typically: Arc Name | Chapters | Description
-            title_cell = cells[0]
-            chapter_cell = cells[1] if len(cells) > 1 else None
-            
-            # Extract title
-            title_link = title_cell.find('a')
-            if title_link:
-                title = title_link.get_text(strip=True)
-            else:
-                title = title_cell.get_text(strip=True)
-                
-            title = self._clean_title(title)
-            if not title:
-                return None
-                
-            # Extract chapter range
-            chapter_text = chapter_cell.get_text(strip=True) if chapter_cell else ""
-            start_chapter, end_chapter = self._extract_chapter_range(chapter_text)
-            
-            if start_chapter is None or end_chapter is None:
-                logger.warning(f"Could not extract chapter range for arc: {title}")
-                return None
-                
-            # Create arc ID from title
-            arc_id = re.sub(r'[^a-zA-Z0-9]+', '_', title.lower()).strip('_')
-            
-            return ArcModel(
-                arc_id=arc_id,
-                title=title,
-                start_chapter=start_chapter,
-                end_chapter=end_chapter
-            )
-            
-        except Exception as e:
-            logger.warning(f"Failed to extract arc from row: {str(e)}")
-            return None
             
     def scrape_all_arcs(self) -> List[ScrapingResult]:
         """Scrape all arcs from various sources.
