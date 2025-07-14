@@ -61,10 +61,16 @@ class SagaScraper:
         Returns:
             Tuple of (start_chapter, end_chapter)
         """
-        match = re.search(r'chapters:\s*\d+\s*\((\d+)(?:-(\d+))?\)', text, re.IGNORECASE)
+        match = re.search(r'chapters:\s*\d+\s*\((\d+)(?:-(\d*))?\)', text, re.IGNORECASE)
         if match:
             start = int(match.group(1))
-            end = int(match.group(2)) if match.group(2) else start
+            end_str = match.group(2)
+            if end_str is None:
+                end = start
+            elif end_str == '':
+                end = self.settings.last_chapter
+            else:
+                end = int(end_str)
             return start, end
 
         match = re.search(r'\((\d+)-(\d+)\)', text)
