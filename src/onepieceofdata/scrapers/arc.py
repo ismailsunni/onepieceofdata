@@ -70,9 +70,8 @@ class ArcScraper:
             if end_str is None:
                 end = start
             elif end_str == '':
-                # For ongoing, we can set end to a special value or same as start
-                # Setting to start for now as the model expects an integer.
-                end = start
+                # For ongoing, set end chapter to the last chapter from settings
+                end = self.settings.last_chapter
             else:
                 end = int(end_str)
             return start, end
