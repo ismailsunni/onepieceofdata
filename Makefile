@@ -1,7 +1,7 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel
+.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
 
 # Default target
 help:
@@ -27,6 +27,9 @@ help:
 	@echo "  run-scrape-characters-parallel - Run character scraping with parallel processing"
 	@echo "  run-scrape-characters-workers WORKERS=N - Run character scraping with N workers"
 	@echo "  run-scrape-volumes - Run volume scraping (uses config: all volumes)"
+	@echo "  run-scrape-arcs - Run arc scraping (story arcs)"
+	@echo "  run-scrape-sagas - Run saga scraping (story sagas)"
+	@echo "  run-scrape-story-structure - Run both arc and saga scraping"
 	@echo "  run-parse      - Run data parsing and database loading"
 	@echo "  run-full-pipeline - Run complete pipeline (scrape + parse)"
 	@echo "  run-full-pipeline-parallel - Run complete pipeline with parallel processing"
@@ -42,6 +45,7 @@ help:
 	@echo "  test-scrape-volumes - Test volume scraping (volumes 1-5)"
 	@echo "  test-scrape-characters - Test character scraping (all from CSV)"
 	@echo "  test-scrape-characters-parallel - Test character scraping with parallel processing"
+	@echo "  test-scrape-story-structure - Test story structure scraping (arcs and sagas)"
 	@echo ""
 	@echo "Utility Commands:"
 	@echo "  clean          - Clean up generated files"
@@ -136,6 +140,21 @@ run-scrape-volumes:
 	@echo "📚 Running volume scraping (using config defaults)..."
 	$(UV) run onepieceofdata scrape-volumes
 
+# Run arc scraping (story arcs)
+run-scrape-arcs:
+	@echo "🏴‍☠️ Running arc scraping (story arcs)..."
+	$(UV) run onepieceofdata scrape-arcs
+
+# Run saga scraping (story sagas)
+run-scrape-sagas:
+	@echo "📖 Running saga scraping (story sagas)..."
+	$(UV) run onepieceofdata scrape-sagas
+
+# Run both arc and saga scraping (story structure)
+run-scrape-story-structure:
+	@echo "⚓ Running story structure scraping (arcs and sagas)..."
+	$(UV) run onepieceofdata scrape-story-structure
+
 # Run data parsing and database loading
 run-parse:
 	@echo "�️  Running data parsing and database loading..."
@@ -151,10 +170,13 @@ run-full-pipeline:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping characters..."
+	@echo "Step 3: Scraping story structure (arcs and sagas)..."
+	$(MAKE) run-scrape-story-structure
+	@echo ""
+	@echo "Step 4: Scraping characters..."
 	$(MAKE) run-scrape-characters
 	@echo ""
-	@echo "Step 4: Loading data into database..."
+	@echo "Step 5: Loading data into database..."
 	$(MAKE) run-parse
 	@echo ""
 	@echo "✅ Pipeline completed! Check status with 'make status'"
@@ -169,10 +191,13 @@ run-full-pipeline-parallel:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping characters (parallel)..."
+	@echo "Step 3: Scraping story structure (arcs and sagas)..."
+	$(MAKE) run-scrape-story-structure
+	@echo ""
+	@echo "Step 4: Scraping characters (parallel)..."
 	$(MAKE) run-scrape-characters-parallel
 	@echo ""
-	@echo "Step 4: Loading data into database..."
+	@echo "Step 5: Loading data into database..."
 	$(MAKE) run-parse
 	@echo ""
 	@echo "✅ Parallel pipeline completed! Check status with 'make status'"
@@ -188,10 +213,13 @@ run-full-pipeline-workers:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping characters ($(WORKERS) workers)..."
+	@echo "Step 3: Scraping story structure (arcs and sagas)..."
+	$(MAKE) run-scrape-story-structure
+	@echo ""
+	@echo "Step 4: Scraping characters ($(WORKERS) workers)..."
 	$(MAKE) run-scrape-characters-workers WORKERS=$(WORKERS)
 	@echo ""
-	@echo "Step 4: Loading data into database..."
+	@echo "Step 5: Loading data into database..."
 	$(MAKE) run-parse
 	@echo ""
 	@echo "✅ Pipeline with $(WORKERS) workers completed! Check status with 'make status'"
@@ -248,6 +276,10 @@ test-scrape-characters-parallel:
 	fi
 	@echo "ℹ️  Note: This will scrape ALL characters from characters.csv with parallel processing"
 	$(UV) run onepieceofdata scrape-characters --parallel
+
+test-scrape-story-structure:
+	@echo "⚓ Testing story structure scraping (arcs and sagas)..."
+	$(UV) run onepieceofdata scrape-story-structure
 
 # Clean up generated files
 clean:
