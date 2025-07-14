@@ -61,20 +61,22 @@ class SagaScraper:
         Returns:
             Tuple of (start_chapter, end_chapter)
         """
-        # Look for patterns like "Chapter 1-100", "Chapters 101-200", etc.
-        patterns = [
-            r'Chapter(?:s)?\s+(\d+)(?:-(\d+))?',
-            r'Ch\.?\s*(\d+)(?:-(\d+))?',
-            r'(\d+)(?:-(\d+))?\s*(?:chapters?|ch\.?)',
-        ]
-        
-        for pattern in patterns:
-            match = re.search(pattern, text, re.IGNORECASE)
-            if match:
-                start = int(match.group(1))
-                end = int(match.group(2)) if match.group(2) else start
-                return start, end
-                
+        match = re.search(r'chapters:\s*\d+\s*\((\d+)(?:-(\d+))?\)', text, re.IGNORECASE)
+        if match:
+            start = int(match.group(1))
+            end = int(match.group(2)) if match.group(2) else start
+            return start, end
+
+        match = re.search(r'\((\d+)-(\d+)\)', text)
+        if match:
+            return int(match.group(1)), int(match.group(2))
+            
+        match = re.search(r'\((\d+)\)', text)
+        if match:
+            start = int(match.group(1))
+            return start, start
+
+        logger.warning(f"Could not extract chapter range from text: {text}")
         return None, None
         
     def _clean_title(self, title: str) -> str:
@@ -88,17 +90,12 @@ class SagaScraper:
         """
         if not title:
             return ""
-            
-        # Remove extra whitespace
         title = re.sub(r'\s+', ' ', title.strip())
-        
-        # Remove common suffixes like "Arc", "Saga"
-        title = re.sub(r'\s+(Arc|Saga)\s*$', '', title, flags=re.IGNORECASE)
-        
+        title = re.sub(r'\s+(Saga)\s*$', '', title, flags=re.IGNORECASE)
         return title.strip()
         
     def scrape_sagas_from_list_page(self) -> List[ScrapingResult]:
-        """Scrape sagas from the One Piece story arcs/sagas list page.
+        """Scrape sagas from the One Piece story arcs list page.
         
         Returns:
             List of ScrapingResult objects containing saga data
@@ -110,37 +107,63 @@ class SagaScraper:
             logger.info(f"Scraping sagas from: {url}")
             soup = self._fetch_page(url)
             
-            # Find the main content area
             content = soup.find('div', {'class': 'mw-parser-output'})
             if not content:
                 raise Exception("Could not find main content area")
-                
-            # Look for section headers that indicate sagas
-            headers = content.find_all(['h2', 'h3'], string=re.compile(r'Saga|saga', re.IGNORECASE))
+
+            # Sagas are under h3 tags
+            saga_headers = content.find_all('h3')
             
-            for header in headers:
-                try:
-                    saga_data = self._extract_saga_from_section(header)
-                    if saga_data:
-                        results.append(ScrapingResult(
-                            success=True,
-                            data=saga_data.model_dump(),
-                            url=url
-                        ))
-                except Exception as e:
-                    logger.warning(f"Failed to extract saga from section: {str(e)}")
+            for header in saga_headers:
+                span = header.find('span', {'class': 'mw-headline'})
+                if not span:
                     continue
-                    
-            # Also look for saga information in navboxes or infoboxes
-            navboxes = content.find_all('table', {'class': re.compile(r'navbox|infobox')})
-            for navbox in navboxes:
-                try:
-                    saga_results = self._extract_sagas_from_navbox(navbox)
-                    results.extend(saga_results)
-                except Exception as e:
-                    logger.warning(f"Failed to extract sagas from navbox: {str(e)}")
+
+                title = span.get_text(strip=True)
+                cleaned_title = self._clean_title(title)
+                if not cleaned_title:
                     continue
-                        
+
+                min_start_chapter, max_end_chapter = float('inf'), float('-inf')
+                
+                # Find all arcs (h4) under this saga (h3)
+                next_element = header.find_next_sibling()
+                while next_element and next_element.name != 'h3':
+                    if next_element.name == 'h4':
+                        # This is an arc header, find its chapter info
+                        arc_ul = next_element.find_next_sibling('ul')
+                        if arc_ul:
+                            lis = arc_ul.find_all('li')
+                            for li in lis:
+                                li_text = li.get_text()
+                                if 'Chapters' in li_text:
+                                    start_ch, end_ch = self._extract_chapter_range(li_text)
+                                    if start_ch is not None:
+                                        min_start_chapter = min(min_start_chapter, start_ch)
+                                    if end_ch is not None:
+                                        max_end_chapter = max(max_end_chapter, end_ch)
+                                    break # Assume first chapter info is correct
+                    next_element = next_element.find_next_sibling()
+
+                if min_start_chapter != float('inf') and max_end_chapter != float('-inf'):
+                    saga_id = re.sub(r'[^a-zA-Z0-9]+', '_', cleaned_title.lower()).strip('_')
+                    saga_data = SagaModel(
+                        saga_id=saga_id,
+                        title=cleaned_title,
+                        start_chapter=int(min_start_chapter),
+                        end_chapter=int(max_end_chapter)
+                    )
+                    results.append(ScrapingResult(
+                        success=True,
+                        data=saga_data.model_dump(),
+                        url=url
+                    ))
+                else:
+                    logger.warning(f"Could not determine chapter range for saga: {cleaned_title}")
+
+            if not results:
+                logger.warning("No sagas were scraped. The page structure might have changed.")
+
             logger.success(f"Successfully scraped {len(results)} sagas")
             return results
             
@@ -153,145 +176,6 @@ class SagaScraper:
                 url=url
             )]
             
-    def _extract_saga_from_section(self, header: Tag) -> Optional[SagaModel]:
-        """Extract saga data from a section header and its content.
-        
-        Args:
-            header: Section header tag
-            
-        Returns:
-            SagaModel if extraction successful, None otherwise
-        """
-        try:
-            # Extract title from header
-            title = header.get_text(strip=True)
-            title = self._clean_title(title)
-            
-            if not title or len(title) < 3:
-                return None
-                
-            # Find the next sibling elements to get chapter information
-            current = header.next_sibling
-            chapter_text = ""
-            
-            while current and current.name not in ['h2', 'h3']:
-                if hasattr(current, 'get_text'):
-                    chapter_text += current.get_text()
-                current = current.next_sibling
-                
-            # Extract chapter range
-            start_chapter, end_chapter = self._extract_chapter_range(chapter_text)
-            
-            if start_chapter is None or end_chapter is None:
-                logger.debug(f"Could not extract chapter range for saga: {title}")
-                return None
-                
-            # Create saga ID from title
-            saga_id = re.sub(r'[^a-zA-Z0-9]+', '_', title.lower()).strip('_')
-            
-            return SagaModel(
-                saga_id=saga_id,
-                title=title,
-                start_chapter=start_chapter,
-                end_chapter=end_chapter
-            )
-            
-        except Exception as e:
-            logger.warning(f"Failed to extract saga from section: {str(e)}")
-            return None
-            
-    def _extract_sagas_from_navbox(self, navbox: Tag) -> List[ScrapingResult]:
-        """Extract saga data from a navigation box.
-        
-        Args:
-            navbox: Navigation box table
-            
-        Returns:
-            List of ScrapingResult objects
-        """
-        results = []
-        
-        try:
-            # Look for rows that contain saga information
-            rows = navbox.find_all('tr')
-            
-            for row in rows:
-                cells = row.find_all(['td', 'th'])
-                
-                for cell in cells:
-                    cell_text = cell.get_text(strip=True)
-                    
-                    # Check if this cell contains saga information
-                    if re.search(r'saga', cell_text, re.IGNORECASE):
-                        try:
-                            saga_data = self._extract_saga_from_cell(cell)
-                            if saga_data:
-                                results.append(ScrapingResult(
-                                    success=True,
-                                    data=saga_data.model_dump(),
-                                    url=self.base_url + "/wiki/Story_Arcs"
-                                ))
-                        except Exception as e:
-                            logger.debug(f"Failed to extract saga from cell: {str(e)}")
-                            continue
-                            
-        except Exception as e:
-            logger.warning(f"Failed to extract sagas from navbox: {str(e)}")
-            
-        return results
-        
-    def _extract_saga_from_cell(self, cell: Tag) -> Optional[SagaModel]:
-        """Extract saga data from a table cell.
-        
-        Args:
-            cell: Table cell tag
-            
-        Returns:
-            SagaModel if extraction successful, None otherwise
-        """
-        try:
-            # Extract title
-            links = cell.find_all('a')
-            title = None
-            
-            for link in links:
-                link_text = link.get_text(strip=True)
-                if re.search(r'saga', link_text, re.IGNORECASE):
-                    title = self._clean_title(link_text)
-                    break
-                    
-            if not title:
-                cell_text = cell.get_text(strip=True)
-                if re.search(r'saga', cell_text, re.IGNORECASE):
-                    title = self._clean_title(cell_text)
-                    
-            if not title or len(title) < 3:
-                return None
-                
-            # Try to extract chapter information from the cell or nearby cells
-            all_text = cell.get_text()
-            start_chapter, end_chapter = self._extract_chapter_range(all_text)
-            
-            # If we can't find chapters in this cell, use placeholder values
-            # These should be updated manually or through additional scraping
-            if start_chapter is None or end_chapter is None:
-                logger.debug(f"Could not extract chapter range for saga: {title}")
-                return None
-                
-            # Create saga ID from title
-            saga_id = re.sub(r'[^a-zA-Z0-9]+', '_', title.lower()).strip('_')
-            
-            return SagaModel(
-                saga_id=saga_id,
-                title=title,
-                start_chapter=start_chapter,
-                end_chapter=end_chapter
-            )
-            
-        except Exception as e:
-            logger.debug(f"Failed to extract saga from cell: {str(e)}")
-            return None
-            
     def scrape_all_sagas(self) -> List[ScrapingResult]:
         """Scrape all sagas from various sources.
         
@@ -299,15 +183,8 @@ class SagaScraper:
             List of ScrapingResult objects containing all saga data
         """
         logger.info("Starting comprehensive saga scraping")
-        
-        all_results = []
-        
-        # Scrape from main story arcs page
-        list_results = self.scrape_sagas_from_list_page()
-        all_results.extend(list_results)
-        
+        all_results = self.scrape_sagas_from_list_page()
         logger.success(f"Completed saga scraping. Total sagas: {len([r for r in all_results if r.success])}")
-        
         return all_results
         
     def cleanup(self):
