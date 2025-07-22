@@ -406,6 +406,26 @@ class DatabaseManager:
                 try:
                     arc_data = result.data
                     
+                    # Validate that start and end chapters exist in the database
+                    start_chapter = arc_data.get('start_chapter')
+                    end_chapter = arc_data.get('end_chapter')
+                    
+                    if start_chapter:
+                        chapter_exists = conn.execute(
+                            "SELECT 1 FROM chapter WHERE number = ?", (start_chapter,)
+                        ).fetchone()
+                        if not chapter_exists:
+                            logger.warning(f"Skipping arc {arc_data.get('title', 'unknown')}: start chapter {start_chapter} does not exist in database")
+                            continue
+                    
+                    if end_chapter:
+                        chapter_exists = conn.execute(
+                            "SELECT 1 FROM chapter WHERE number = ?", (end_chapter,)
+                        ).fetchone()
+                        if not chapter_exists:
+                            logger.warning(f"Skipping arc {arc_data.get('title', 'unknown')}: end chapter {end_chapter} does not exist in database")
+                            continue
+                    
                     # Insert arc data
                     conn.execute("""
                         INSERT INTO arc (
@@ -417,8 +437,8 @@ class DatabaseManager:
                         arc_data.get('title'),
                         arc_data.get('japanese_title'),
                         arc_data.get('romanized_title'),
-                        arc_data.get('start_chapter'),
-                        arc_data.get('end_chapter'),
+                        start_chapter,
+                        end_chapter,
                         arc_data.get('saga_id'),
                         arc_data.get('description')
                     ))
@@ -464,6 +484,26 @@ class DatabaseManager:
                 try:
                     saga_data = result.data
                     
+                    # Validate that start and end chapters exist in the database
+                    start_chapter = saga_data.get('start_chapter')
+                    end_chapter = saga_data.get('end_chapter')
+                    
+                    if start_chapter:
+                        chapter_exists = conn.execute(
+                            "SELECT 1 FROM chapter WHERE number = ?", (start_chapter,)
+                        ).fetchone()
+                        if not chapter_exists:
+                            logger.warning(f"Skipping saga {saga_data.get('title', 'unknown')}: start chapter {start_chapter} does not exist in database")
+                            continue
+                    
+                    if end_chapter:
+                        chapter_exists = conn.execute(
+                            "SELECT 1 FROM chapter WHERE number = ?", (end_chapter,)
+                        ).fetchone()
+                        if not chapter_exists:
+                            logger.warning(f"Skipping saga {saga_data.get('title', 'unknown')}: end chapter {end_chapter} does not exist in database")
+                            continue
+                    
                     # Insert saga data
                     conn.execute("""
                         INSERT INTO saga (
@@ -475,8 +515,8 @@ class DatabaseManager:
                         saga_data.get('title'),
                         saga_data.get('japanese_title'),
                         saga_data.get('romanized_title'),
-                        saga_data.get('start_chapter'),
-                        saga_data.get('end_chapter'),
+                        start_chapter,
+                        end_chapter,
                         saga_data.get('description')
                     ))
                     

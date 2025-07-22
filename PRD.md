@@ -5,12 +5,12 @@
 **One Piece of Data** is a Python-based data pipeline that scrapes, processes, and stores One Piece manga information from the One Piece Fandom Wiki. The project extracts data about chapters, characters, volumes, and character appearances in chapters (CoC - Characters of Chapters).
 
 ### Current Architecture
-The project follows a 3-stage pipeline:
-1. **Scraping Stage**: `main_scrapper.py` - Web scraping from One Piece Fandom Wiki
-2. **Processing Stage**: `main_parser.py` - Data cleaning and database loading  
+The project follows a modern CLI-based pipeline:
+1. **Scraping Stage**: Modern scrapers with retry mechanisms and progress tracking
+2. **Processing Stage**: Database operations with validation and error handling  
 3. **Analysis Stage**: Jupyter notebooks for data exploration
 
-### Current Workflow (Updated - v2.0)
+### Current Workflow (v2.0)
 ```bash
 # Modern workflow with uv and CLI
 
@@ -26,20 +26,12 @@ uv run onepieceofdata status
 uv run onepieceofdata scrape-chapters --start-chapter 1 --end-chapter 100
 # or: make run-scrape (for testing with chapters 1-10)
 
-# Step 3: Parse and load data (when Phase 2 is complete)
+# Step 3: Parse and load data
 uv run onepieceofdata parse
 # or: make run-parse
 
 # Step 4: Explore data in notebooks
 uv run jupyter notebook notebooks/
-```
-
-**Legacy Workflow (v1.x - still works):**
-```bash
-# Old workflow (still supported for backward compatibility)
-python src/main_scrapper.py
-python src/main_parser.py
-jupyter notebook notebooks/
 ```
 
 ---
