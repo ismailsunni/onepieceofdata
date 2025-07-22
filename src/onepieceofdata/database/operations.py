@@ -91,8 +91,10 @@ class DatabaseManager:
         logger.info("Creating database tables")
         conn = self.connect()
         
-        # Drop existing tables if they exist
+        # Drop existing tables in correct order (foreign key dependencies)
         conn.execute("DROP TABLE IF EXISTS coc CASCADE")
+        conn.execute("DROP TABLE IF EXISTS arc CASCADE") 
+        conn.execute("DROP TABLE IF EXISTS saga CASCADE")
         conn.execute("DROP TABLE IF EXISTS chapter CASCADE")
         conn.execute("DROP TABLE IF EXISTS volume CASCADE")
         conn.execute("DROP TABLE IF EXISTS character CASCADE")
