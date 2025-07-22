@@ -1,7 +1,7 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
+.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status db-status config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
 
 # Default target
 help:
@@ -35,6 +35,7 @@ help:
 	@echo "  run-full-pipeline-parallel - Run complete pipeline with parallel processing"
 	@echo "  run-full-pipeline-workers WORKERS=N - Run complete pipeline with N workers"
 	@echo "  status         - Show pipeline status"
+	@echo "  db-status      - Show database content status (quick test after parsing)"
 	@echo "  config         - Show current configuration"
 	@echo "  export         - Export database to CSV files"
 	@echo ""
@@ -232,6 +233,11 @@ export:
 # Show pipeline status
 status:
 	$(UV) run onepieceofdata status
+
+# Show database content status (quick test after parsing)
+db-status:
+	@echo "🗄️  Checking database content status..."
+	$(UV) run onepieceofdata db-status
 
 # Show current configuration including parallel settings
 config:
