@@ -170,14 +170,14 @@ run-full-pipeline:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping story structure (arcs and sagas)..."
-	$(MAKE) run-scrape-story-structure
-	@echo ""
-	@echo "Step 4: Scraping characters..."
+	@echo "Step 3: Scraping characters..."
 	$(MAKE) run-scrape-characters
 	@echo ""
-	@echo "Step 5: Loading data into database..."
+	@echo "Step 4: Loading basic data into database (volumes, chapters, characters)..."
 	$(MAKE) run-parse
+	@echo ""
+	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
+	$(MAKE) run-scrape-story-structure
 	@echo ""
 	@echo "✅ Pipeline completed! Check status with 'make status'"
 
@@ -191,14 +191,14 @@ run-full-pipeline-parallel:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping story structure (arcs and sagas)..."
-	$(MAKE) run-scrape-story-structure
-	@echo ""
-	@echo "Step 4: Scraping characters (parallel)..."
+	@echo "Step 3: Scraping characters (parallel)..."
 	$(MAKE) run-scrape-characters-parallel
 	@echo ""
-	@echo "Step 5: Loading data into database..."
+	@echo "Step 4: Loading basic data into database (volumes, chapters, characters)..."
 	$(MAKE) run-parse
+	@echo ""
+	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
+	$(MAKE) run-scrape-story-structure
 	@echo ""
 	@echo "✅ Parallel pipeline completed! Check status with 'make status'"
 
@@ -213,14 +213,14 @@ run-full-pipeline-workers:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping story structure (arcs and sagas)..."
-	$(MAKE) run-scrape-story-structure
-	@echo ""
-	@echo "Step 4: Scraping characters ($(WORKERS) workers)..."
+	@echo "Step 3: Scraping characters ($(WORKERS) workers)..."
 	$(MAKE) run-scrape-characters-workers WORKERS=$(WORKERS)
 	@echo ""
-	@echo "Step 5: Loading data into database..."
+	@echo "Step 4: Loading basic data into database (volumes, chapters, characters)..."
 	$(MAKE) run-parse
+	@echo ""
+	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
+	$(MAKE) run-scrape-story-structure
 	@echo ""
 	@echo "✅ Pipeline with $(WORKERS) workers completed! Check status with 'make status'"
 
