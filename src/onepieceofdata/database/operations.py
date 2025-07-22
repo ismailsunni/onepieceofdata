@@ -714,7 +714,7 @@ class DatabaseManager:
             stats = {}
             
             # Get row counts for each table
-            tables = ['chapter', 'volume', 'character', 'coc']
+            tables = ['chapter', 'volume', 'character', 'coc', 'arc', 'saga']
             for table in tables:
                 try:
                     result = conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()
