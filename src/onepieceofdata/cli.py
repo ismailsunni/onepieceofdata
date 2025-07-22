@@ -15,6 +15,7 @@ from .scrapers.saga import SagaScraper
 from .parsers.arc import ArcParser
 from .parsers.saga import SagaParser
 from .models import ScrapingResult
+from .database.operations import DatabaseManager
 
 
 # Setup logging for CLI
@@ -515,6 +516,135 @@ def status() -> None:
     click.echo(f"  🔁 Max Retries: {settings.max_retries}")
     click.echo(f"  ⏱️  Request Timeout: {settings.request_timeout}s")
     click.echo(f"  📝 Log Level: {settings.log_level}")
+
+
+@main.command()
+def db_status() -> None:
+    """Show database content status and latest data."""
+    click.echo("🗄️  One Piece of Data - Database Status")
+    click.echo("=" * 45)
+    
+    try:
+        with DatabaseManager() as db:
+            # Get database stats
+            stats = db.get_database_stats()
+            
+            click.echo("📊 Table Row Counts:")
+            click.echo(f"  📖 Chapters: {stats.get('chapter', 0):,}")
+            click.echo(f"  📚 Volumes: {stats.get('volume', 0):,}")
+            click.echo(f"  👥 Characters: {stats.get('character', 0):,}")
+            click.echo(f"  📝 CoC entries: {stats.get('coc', 0):,}")
+            click.echo(f"  🏴‍☠️ Arcs: {stats.get('arc', 0):,}")
+            click.echo(f"  📖 Sagas: {stats.get('saga', 0):,}")
+            
+            click.echo("\n📖 Latest Chapter:")
+            try:
+                latest_chapter = db.query("""
+                    SELECT number, title 
+                    FROM chapter 
+                    WHERE number IS NOT NULL 
+                    ORDER BY number DESC 
+                    LIMIT 1
+                """)
+                if not latest_chapter.empty:
+                    chapter_num = latest_chapter.iloc[0]['number']
+                    chapter_title = latest_chapter.iloc[0]['title']
+                    click.echo(f"  Chapter {chapter_num}: {chapter_title}")
+                else:
+                    click.echo("  No chapters found")
+            except Exception as e:
+                click.echo(f"  Error retrieving latest chapter: {str(e)}")
+            
+            click.echo("\n📚 Latest Volume:")
+            try:
+                latest_volume = db.query("""
+                    SELECT number, title 
+                    FROM volume 
+                    WHERE number IS NOT NULL 
+                    ORDER BY number DESC 
+                    LIMIT 1
+                """)
+                if not latest_volume.empty:
+                    volume_num = latest_volume.iloc[0]['number']
+                    volume_title = latest_volume.iloc[0]['title']
+                    click.echo(f"  Volume {volume_num}: {volume_title}")
+                else:
+                    click.echo("  No volumes found")
+            except Exception as e:
+                click.echo(f"  Error retrieving latest volume: {str(e)}")
+            
+            click.echo("\n📝 Latest Chapter CoC:")
+            try:
+                latest_coc = db.query("""
+                    SELECT c.number, coc.character
+                    FROM coc 
+                    JOIN chapter c ON coc.chapter = c.number
+                    WHERE c.number IS NOT NULL 
+                    ORDER BY c.number DESC, coc.character
+                    LIMIT 1
+                """)
+                if not latest_coc.empty:
+                    chapter_num = latest_coc.iloc[0]['number']
+                    click.echo(f"  Chapter {chapter_num} CoC:")
+                    
+                    # Get all characters for the latest chapter
+                    all_coc = db.query(f"""
+                        SELECT coc.character
+                        FROM coc 
+                        JOIN chapter c ON coc.chapter = c.number
+                        WHERE c.number = {chapter_num}
+                        ORDER BY coc.character
+                    """)
+                    characters = all_coc['character'].tolist()
+                    
+                    # Display characters in a compact format
+                    if len(characters) <= 10:
+                        for char in characters:
+                            click.echo(f"    - {char}")
+                    else:
+                        for char in characters[:8]:
+                            click.echo(f"    - {char}")
+                        click.echo(f"    ... and {len(characters) - 8} more")
+                else:
+                    click.echo("  No CoC entries found")
+            except Exception as e:
+                click.echo(f"  Error retrieving latest CoC: {str(e)}")
+            
+            click.echo("\n🏴‍☠️ Latest Arc:")
+            try:
+                latest_arc = db.query("""
+                    SELECT title 
+                    FROM arc 
+                    ORDER BY end_chapter DESC 
+                    LIMIT 1
+                """)
+                if not latest_arc.empty:
+                    arc_title = latest_arc.iloc[0]['title']
+                    click.echo(f"  {arc_title}")
+                else:
+                    click.echo("  No arcs found")
+            except Exception as e:
+                click.echo(f"  Error retrieving latest arc: {str(e)}")
+            
+            click.echo("\n📖 Latest Saga:")
+            try:
+                latest_saga = db.query("""
+                    SELECT title 
+                    FROM saga 
+                    ORDER BY end_chapter DESC 
+                    LIMIT 1
+                """)
+                if not latest_saga.empty:
+                    saga_title = latest_saga.iloc[0]['title']
+                    click.echo(f"  {saga_title}")
+                else:
+                    click.echo("  No sagas found")
+            except Exception as e:
+                click.echo(f"  Error retrieving latest saga: {str(e)}")
+                
+    except Exception as e:
+        click.echo(f"❌ Error connecting to database: {str(e)}")
+        click.echo("💡 Make sure the database exists. Run 'make run-parse' first.")
 
 
 @main.command()
