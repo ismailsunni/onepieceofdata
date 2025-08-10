@@ -18085,6 +18085,12 @@
         "full_text": "Tansui (cover)"
       },
       {
+        "name": "Tashigi",
+        "url": "/wiki/Tashigi",
+        "note": "",
+        "full_text": "Tashigi"
+      },
+      {
         "name": "Camie",
         "url": "/wiki/Camie",
         "note": "cover",
@@ -18101,6 +18107,12 @@
         "url": "/wiki/Nefertari_Vivi",
         "note": "",
         "full_text": "Nefertari Vivi"
+      },
+      {
+        "name": "Igaram",
+        "url": "/wiki/Igaram",
+        "note": "flashback",
+        "full_text": "Igaram (flashback)"
       },
       {
         "name": "Chaka",
@@ -18218,8 +18230,8 @@
       {
         "name": "Nefertari Cobra",
         "url": "/wiki/Nefertari_Cobra",
-        "note": "flashback",
-        "full_text": "Nefertari Cobra (flashback)"
+        "note": "",
+        "full_text": "Nefertari Cobra"
       },
       {
         "name": "Nefertari Vivi",
@@ -18321,6 +18333,12 @@
         "url": "/wiki/Tansui",
         "note": "cover",
         "full_text": "Tansui (cover)"
+      },
+      {
+        "name": "Smoker",
+        "url": "/wiki/Smoker",
+        "note": "flashback",
+        "full_text": "Smoker (flashback)"
       },
       {
         "name": "Tashigi",
@@ -18653,8 +18671,8 @@
       {
         "name": "Lassoo",
         "url": "/wiki/Lassoo",
-        "note": "K.O",
-        "full_text": "Lassoo (K.O)"
+        "note": "K.O.",
+        "full_text": "Lassoo (K.O.)"
       },
       {
         "name": "Octopus Mash",
@@ -18810,12 +18828,6 @@
         "url": "/wiki/Erik",
         "note": "",
         "full_text": "Erik"
-      },
-      {
-        "name": "Farafra",
-        "url": "/wiki/Farafra",
-        "note": "",
-        "full_text": "Farafra"
       },
       {
         "name": "Kebi",
@@ -19026,6 +19038,12 @@
         "full_text": "Igaram"
       },
       {
+        "name": "Chaka",
+        "url": "/wiki/Chaka",
+        "note": "",
+        "full_text": "Chaka"
+      },
+      {
         "name": "Mr. 2 Bon Kurei",
         "url": "/wiki/Bentham",
         "note": "",
@@ -19157,6 +19175,12 @@
         "full_text": "Pappag (cover)"
       },
       {
+        "name": "Mash",
+        "url": "/wiki/Mash",
+        "note": "cover",
+        "full_text": "Mash (cover)"
+      },
+      {
         "name": "Nefertari Cobra",
         "url": "/wiki/Nefertari_Cobra",
         "note": "",
@@ -19165,8 +19189,8 @@
       {
         "name": "Nefertari Titi",
         "url": "/wiki/Nefertari_Titi",
-        "note": "picture",
-        "full_text": "Nefertari Titi (picture)"
+        "note": "photo",
+        "full_text": "Nefertari Titi (photo)"
       },
       {
         "name": "Nefertari Vivi",
@@ -19280,6 +19304,12 @@
         "url": "/wiki/Pappag",
         "note": "cover",
         "full_text": "Pappag (cover)"
+      },
+      {
+        "name": "Mash",
+        "url": "/wiki/Mash",
+        "note": "cover",
+        "full_text": "Mash (cover)"
       },
       {
         "name": "Nefertari Cobra",
@@ -155868,10 +155898,10 @@
         "full_text": "Edward Newgate"
       },
       {
-        "name": "Buckingham Stussy",
-        "url": "/wiki/Buckingham_Stussy",
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
         "note": "",
-        "full_text": "Buckingham Stussy"
+        "full_text": "Shiki"
       },
       {
         "name": "Charlotte Linlin",
@@ -155892,22 +155922,16 @@
         "full_text": "Prometheus"
       },
       {
-        "name": "Shiki",
-        "url": "/wiki/Shiki",
-        "note": "",
-        "full_text": "Shiki"
-      },
-      {
-        "name": "Streusen",
-        "url": "/wiki/Streusen",
-        "note": "",
-        "full_text": "Streusen"
-      },
-      {
         "name": "Kaidou",
         "url": "/wiki/Kaidou",
         "note": "",
         "full_text": "Kaidou"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "",
+        "full_text": "Buckingham Stussy"
       },
       {
         "name": "John",
@@ -155932,6 +155956,18 @@
         "url": "/wiki/Gill_Bastar",
         "note": "",
         "full_text": "Gill Bastar"
+      },
+      {
+        "name": "Streusen",
+        "url": "/wiki/Streusen",
+        "note": "",
+        "full_text": "Streusen"
+      },
+      {
+        "name": "Barbel",
+        "url": "/wiki/Barbel",
+        "note": "",
+        "full_text": "Barbel"
       },
       {
         "name": "Jaygarcia Saturn",
@@ -163486,10 +163522,10 @@
         "full_text": "Figarland Shamrock"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       }
     ]
   },
@@ -163731,10 +163767,10 @@
         "full_text": "Figarland Shamrock"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Charlos",
@@ -163904,10 +163940,10 @@
         "full_text": "Figarland Shamrock"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Nika",
@@ -164011,10 +164047,10 @@
         "full_text": "Figarland Shamrock"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Cerberus",
@@ -164184,10 +164220,10 @@
         "full_text": "Figarland Shamrock"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Cerberus",
@@ -164422,10 +164458,10 @@
         "full_text": "Figarland Shamrock"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -164750,10 +164786,10 @@
         "full_text": "Yamato (cover)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -164983,10 +165019,10 @@
         "full_text": "Loki"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -165204,10 +165240,10 @@
         "full_text": "Kurozumi Tama (cover)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -165479,10 +165515,10 @@
         "full_text": "Yamato (cover)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -165748,10 +165784,10 @@
         "full_text": "Kurozumi Tama (cover)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -165969,10 +166005,10 @@
         "full_text": "Kurozumi Tama (cover)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -166172,10 +166208,10 @@
         "full_text": "Komachiyo (cover)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -166369,10 +166405,10 @@
         "full_text": "Imu (voice)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "",
-        "full_text": "Gunko"
+        "full_text": "Manmayer Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -166518,10 +166554,10 @@
         "full_text": "Imu (through Gunko)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "controlled by Imu",
-        "full_text": "Gunko (controlled by Imu)"
+        "full_text": "Manmayer Gunko (controlled by Imu)"
       },
       {
         "name": "Shepherd Sommers",
@@ -166745,10 +166781,10 @@
         "full_text": "Imu (through Gunko)"
       },
       {
-        "name": "Gunko",
-        "url": "/wiki/Gunko",
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
         "note": "controlled by Imu",
-        "full_text": "Gunko (controlled by Imu)"
+        "full_text": "Manmayer Gunko (controlled by Imu)"
       },
       {
         "name": "Shepherd Sommers",
@@ -167291,6 +167327,281 @@
         "url": "/wiki/Loki",
         "note": "",
         "full_text": "Loki"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1156,
+    "volume": "TBA",
+    "chapter_display": "1156",
+    "title": "Idols",
+    "pages": "19",
+    "release_date": "August 4, 2025",
+    "jump_info": "2025 Issue 36-37",
+    "characters": [
+      {
+        "name": "Gloriosa",
+        "url": "/wiki/Gloriosa",
+        "note": "",
+        "full_text": "Gloriosa"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Tritoma",
+        "url": "/wiki/Tritoma",
+        "note": "",
+        "full_text": "Tritoma"
+      },
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "",
+        "full_text": "Buckingham Stussy"
+      },
+      {
+        "name": "Marlon",
+        "url": "/wiki/Marlon",
+        "note": "",
+        "full_text": "Marlon"
+      },
+      {
+        "name": "Ochoku",
+        "url": "/wiki/Ochoku",
+        "note": "",
+        "full_text": "Ochoku"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "",
+        "full_text": "Ganzui"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "",
+        "full_text": "John"
+      },
+      {
+        "name": "Streusen",
+        "url": "/wiki/Streusen",
+        "note": "",
+        "full_text": "Streusen"
+      },
+      {
+        "name": "Kyo",
+        "url": "/wiki/Kyo",
+        "note": "",
+        "full_text": "Kyo"
+      },
+      {
+        "name": "Barbel",
+        "url": "/wiki/Barbel",
+        "note": "",
+        "full_text": "Barbel"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Donquino",
+        "url": "/wiki/Donquino",
+        "note": "",
+        "full_text": "Donquino"
+      },
+      {
+        "name": "Millet Pine",
+        "url": "/wiki/Millet_Pine",
+        "note": "",
+        "full_text": "Millet Pine"
+      },
+      {
+        "name": "Rowing",
+        "url": "/wiki/Rowing",
+        "note": "",
+        "full_text": "Rowing"
+      },
+      {
+        "name": "Spencer",
+        "url": "/wiki/Spencer",
+        "note": "",
+        "full_text": "Spencer"
+      },
+      {
+        "name": "Sunbell",
+        "url": "/wiki/Sunbell",
+        "note": "",
+        "full_text": "Sunbell"
+      },
+      {
+        "name": "Ganryu",
+        "url": "/wiki/Ganryu_(Roger_Pirates)",
+        "note": "",
+        "full_text": "Ganryu"
+      },
+      {
+        "name": "Rangram",
+        "url": "/wiki/Rangram",
+        "note": "",
+        "full_text": "Rangram"
+      },
+      {
+        "name": "Mugren",
+        "url": "/wiki/Mugren",
+        "note": "",
+        "full_text": "Mugren"
+      },
+      {
+        "name": "MAX Marx",
+        "url": "/wiki/MAX_Marx",
+        "note": "",
+        "full_text": "MAX Marx"
+      },
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "cover",
+        "full_text": "Monkey D. Luffy (cover)"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "cover",
+        "full_text": "Roronoa Zoro (cover)"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "cover",
+        "full_text": "Nami (cover)"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "cover",
+        "full_text": "Usopp (cover)"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "cover",
+        "full_text": "Sanji (cover)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "cover",
+        "full_text": "Tony Tony Chopper (cover)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "cover",
+        "full_text": "Nico Robin (cover)"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "cover",
+        "full_text": "Franky (cover)"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "cover",
+        "full_text": "Brook (cover)"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "cover",
+        "full_text": "Jinbe (cover)"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Ida",
+        "url": "/wiki/Ida",
+        "note": "",
+        "full_text": "Ida"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Mato",
+        "url": "/wiki/Mato",
+        "note": "",
+        "full_text": "Mato"
       }
     ]
   }
