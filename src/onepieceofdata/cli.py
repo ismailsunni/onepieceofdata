@@ -534,7 +534,8 @@ def db_status() -> None:
             click.echo(f"  📚 Volumes: {stats.get('volume', 0):,}")
             click.echo(f"  👥 Characters: {stats.get('character', 0):,}")
             click.echo(f"  📝 CoC entries: {stats.get('coc', 0):,}")
-            click.echo(f"  🏴‍☠️ Arcs: {stats.get('arc', 0):,}")
+            click.echo(f"  � CoV entries: {stats.get('cov', 0):,}")
+            click.echo(f"  �🏴‍☠️ Arcs: {stats.get('arc', 0):,}")
             click.echo(f"  📖 Sagas: {stats.get('saga', 0):,}")
             
             click.echo("\n📖 Latest Chapter:")
@@ -713,6 +714,69 @@ def migrate_birth_dates(date_format: str) -> None:
                 
     except Exception as e:
         click.echo(f"❌ Error during migration: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--volumes-json",
+    type=click.Path(exists=True),
+    help="Path to volumes JSON file (defaults to data/volumes.json)"
+)
+def load_cov(volumes_json: Optional[str]) -> None:
+    """Load character-on-volume (COV) data from volumes JSON file."""
+    click.echo("🎨 Loading Character-on-Volume (COV) data...")
+    
+    # Use default path if not provided
+    if volumes_json is None:
+        volumes_json = str(settings.volumes_json_path)
+    
+    click.echo(f"📂 Source: {volumes_json}")
+    
+    try:
+        with DatabaseManager() as db:
+            success = db.load_cov_from_json(volumes_json)
+            
+            if success:
+                # Show statistics
+                stats_query = """
+                    SELECT 
+                        COUNT(*) as total_cov_entries,
+                        COUNT(DISTINCT volume) as volumes_with_characters,
+                        COUNT(DISTINCT character) as unique_characters
+                    FROM cov
+                """
+                stats = db.query(stats_query)
+                
+                if not stats.empty:
+                    row = stats.iloc[0]
+                    click.echo(f"\n📊 COV Statistics:")
+                    click.echo(f"  Total COV entries: {row['total_cov_entries']:,}")
+                    click.echo(f"  Volumes with cover characters: {row['volumes_with_characters']:,}")
+                    click.echo(f"  Unique characters on covers: {row['unique_characters']:,}")
+                
+                # Show some sample data
+                sample_query = """
+                    SELECT v.number, v.title, cov.character
+                    FROM cov 
+                    JOIN volume v ON cov.volume = v.number
+                    ORDER BY v.number
+                    LIMIT 10
+                """
+                samples = db.query(sample_query)
+                
+                if not samples.empty:
+                    click.echo(f"\n📋 Sample COV entries:")
+                    for _, row in samples.iterrows():
+                        click.echo(f"  Volume {row['number']} ({row['title']}): {row['character']}")
+                
+                click.echo("\n✅ COV data loading completed!")
+            else:
+                click.echo("❌ COV data loading failed!")
+                sys.exit(1)
+                
+    except Exception as e:
+        click.echo(f"❌ Error loading COV data: {str(e)}")
         sys.exit(1)
 
 
