@@ -1,7 +1,7 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status db-status config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
+.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status db-status migrate-birth-dates migrate-birth-dates-full config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
 
 # Default target
 help:
@@ -36,6 +36,8 @@ help:
 	@echo "  run-full-pipeline-workers WORKERS=N - Run complete pipeline with N workers"
 	@echo "  status         - Show pipeline status"
 	@echo "  db-status      - Show database content status (quick test after parsing)"
+	@echo "  migrate-birth-dates - Parse birth strings and add birth_date column (MM-DD format)"
+	@echo "  migrate-birth-dates-full - Parse birth strings and add birth_date column (full date format)"
 	@echo "  config         - Show current configuration"
 	@echo "  export         - Export database to CSV files"
 	@echo ""
@@ -180,7 +182,10 @@ run-full-pipeline:
 	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
 	$(MAKE) run-scrape-story-structure
 	@echo ""
-	@echo "✅ Pipeline completed! Check status with 'make status'"
+	@echo "Step 6: Parsing birth dates and adding birth_date column..."
+	$(MAKE) migrate-birth-dates
+	@echo ""
+	@echo "✅ Pipeline completed! Check status with 'make db-status'"
 
 # Run complete pipeline with parallel processing
 run-full-pipeline-parallel:
@@ -201,7 +206,10 @@ run-full-pipeline-parallel:
 	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
 	$(MAKE) run-scrape-story-structure
 	@echo ""
-	@echo "✅ Parallel pipeline completed! Check status with 'make status'"
+	@echo "Step 6: Parsing birth dates and adding birth_date column..."
+	$(MAKE) migrate-birth-dates
+	@echo ""
+	@echo "✅ Parallel pipeline completed! Check status with 'make db-status'"
 
 # Run complete pipeline with custom number of workers
 # Usage: make run-full-pipeline-workers WORKERS=8
@@ -223,7 +231,10 @@ run-full-pipeline-workers:
 	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
 	$(MAKE) run-scrape-story-structure
 	@echo ""
-	@echo "✅ Pipeline with $(WORKERS) workers completed! Check status with 'make status'"
+	@echo "Step 6: Parsing birth dates and adding birth_date column..."
+	$(MAKE) migrate-birth-dates
+	@echo ""
+	@echo "✅ Pipeline with $(WORKERS) workers completed! Check status with 'make db-status'"
 
 # Export database to CSV files
 export:
@@ -238,6 +249,16 @@ status:
 db-status:
 	@echo "🗄️  Checking database content status..."
 	$(UV) run onepieceofdata db-status
+
+# Migrate birth dates (parse birth strings and add birth_date column)
+migrate-birth-dates:
+	@echo "📅 Migrating birth dates (MM-DD format)..."
+	$(UV) run onepieceofdata migrate-birth-dates
+
+# Migrate birth dates with full date format (YYYY-MM-DD)
+migrate-birth-dates-full:
+	@echo "📅 Migrating birth dates (full date format with year 2000)..."
+	$(UV) run onepieceofdata migrate-birth-dates --format full_date
 
 # Show current configuration including parallel settings
 config:
