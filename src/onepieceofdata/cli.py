@@ -648,6 +648,75 @@ def db_status() -> None:
 
 
 @main.command()
+@click.option(
+    "--format",
+    "date_format",
+    type=click.Choice(["mm_dd", "full_date"]),
+    default="mm_dd",
+    help="Format for birth_date column: mm_dd (MM-DD) or full_date (YYYY-MM-DD with year 2000)"
+)
+def migrate_birth_dates(date_format: str) -> None:
+    """Parse birth strings and add birth_date column to character table."""
+    click.echo("📅 Migrating birth dates...")
+    click.echo(f"Format: {date_format}")
+    
+    if date_format == "mm_dd":
+        click.echo("📝 Using MM-DD format (e.g., '03-09' for March 9th)")
+        click.echo("💾 Column type: VARCHAR(5)")
+    else:
+        click.echo("📝 Using full date format with year 2000 (e.g., '2000-03-09' for March 9th)")
+        click.echo("💾 Column type: DATE")
+    
+    try:
+        with DatabaseManager() as db:
+            success = db.migrate_birth_dates(date_format)
+            
+            if success:
+                # Show some sample results
+                sample_query = """
+                    SELECT name, birth, birth_date 
+                    FROM character 
+                    WHERE birth_date IS NOT NULL 
+                    ORDER BY name 
+                    LIMIT 10
+                """
+                samples = db.query(sample_query)
+                
+                if not samples.empty:
+                    click.echo("\n📋 Sample results:")
+                    for _, row in samples.iterrows():
+                        click.echo(f"  {row['name']}: '{row['birth']}' → '{row['birth_date']}'")
+                
+                # Show statistics
+                stats_query = """
+                    SELECT 
+                        COUNT(*) as total_characters,
+                        COUNT(birth) as with_birth_text,
+                        COUNT(birth_date) as with_birth_date,
+                        COUNT(birth) - COUNT(birth_date) as failed_parsing
+                    FROM character
+                """
+                stats = db.query(stats_query)
+                
+                if not stats.empty:
+                    row = stats.iloc[0]
+                    click.echo(f"\n📊 Migration Statistics:")
+                    click.echo(f"  Total characters: {row['total_characters']:,}")
+                    click.echo(f"  With birth text: {row['with_birth_text']:,}")
+                    click.echo(f"  Successfully parsed: {row['with_birth_date']:,}")
+                    click.echo(f"  Failed parsing: {row['failed_parsing']:,}")
+                
+                click.echo("\n✅ Birth date migration completed!")
+            else:
+                click.echo("❌ Birth date migration failed!")
+                sys.exit(1)
+                
+    except Exception as e:
+        click.echo(f"❌ Error during migration: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
 def config() -> None:
     """Show current configuration settings."""
     click.echo("⚙️  One Piece of Data - Configuration")
