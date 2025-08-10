@@ -11,6 +11,7 @@ import re
 
 from ..models.data import ChapterModel, VolumeModel, CharacterModel, ArcModel, SagaModel, ScrapingResult
 from ..config.settings import get_settings
+from ..utils.birth_parser import BirthDateParser
 
 
 class DatabaseManager:
@@ -776,6 +777,130 @@ class DatabaseManager:
         except Exception as e:
             logger.error(f"Query failed: {str(e)}")
             return pd.DataFrame()
+    
+    def add_birth_date_column(self, date_format: str = "mm_dd") -> bool:
+        """Add a parsed birth_date column to the character table.
+        
+        Args:
+            date_format: Format for the birth_date column:
+                - "mm_dd": VARCHAR with MM-DD format (e.g., "03-09")
+                - "full_date": DATE with year 2000 (e.g., "2000-03-09")
+        
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            conn = self.connect()
+            
+            # Check if column already exists
+            existing_columns = conn.execute("""
+                SELECT column_name FROM information_schema.columns 
+                WHERE table_name = 'character' AND column_name = 'birth_date'
+            """).fetchall()
+            
+            if existing_columns:
+                logger.info("birth_date column already exists")
+                return True
+            
+            # Add the column based on format
+            if date_format == "mm_dd":
+                alter_query = "ALTER TABLE character ADD COLUMN birth_date VARCHAR(5)"
+                logger.info("Adding birth_date column as VARCHAR(5) for MM-DD format")
+            elif date_format == "full_date":
+                alter_query = "ALTER TABLE character ADD COLUMN birth_date DATE"
+                logger.info("Adding birth_date column as DATE for full date format")
+            else:
+                logger.error(f"Invalid date_format: {date_format}. Use 'mm_dd' or 'full_date'")
+                return False
+            
+            conn.execute(alter_query)
+            logger.success(f"Added birth_date column with format: {date_format}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to add birth_date column: {str(e)}")
+            return False
+    
+    def populate_birth_date_column(self, date_format: str = "mm_dd") -> bool:
+        """Parse birth strings and populate the birth_date column.
+        
+        Args:
+            date_format: Format to use for parsing:
+                - "mm_dd": MM-DD format (e.g., "03-09")
+                - "full_date": Full date with year 2000 (e.g., "2000-03-09")
+        
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            conn = self.connect()
+            
+            # Get all characters with birth data
+            characters = conn.execute("""
+                SELECT id, name, birth 
+                FROM character 
+                WHERE birth IS NOT NULL AND birth != ''
+            """).fetchall()
+            
+            logger.info(f"Processing {len(characters)} characters with birth data")
+            
+            successful_updates = 0
+            failed_updates = 0
+            
+            for char_id, name, birth in characters:
+                if date_format == "mm_dd":
+                    parsed_date = BirthDateParser.parse_to_mm_dd(birth)
+                elif date_format == "full_date":
+                    parsed_date = BirthDateParser.parse_to_date_with_year(birth)
+                else:
+                    logger.error(f"Invalid date_format: {date_format}")
+                    return False
+                
+                if parsed_date:
+                    try:
+                        conn.execute("""
+                            UPDATE character 
+                            SET birth_date = ? 
+                            WHERE id = ?
+                        """, (parsed_date, char_id))
+                        successful_updates += 1
+                    except Exception as e:
+                        logger.warning(f"Failed to update {name} ({char_id}): {str(e)}")
+                        failed_updates += 1
+                else:
+                    logger.warning(f"Could not parse birth date for {name}: '{birth}'")
+                    failed_updates += 1
+            
+            logger.success(f"Birth date parsing completed: {successful_updates} successful, {failed_updates} failed")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to populate birth_date column: {str(e)}")
+            return False
+    
+    def migrate_birth_dates(self, date_format: str = "mm_dd") -> bool:
+        """Complete migration: add birth_date column and populate it.
+        
+        Args:
+            date_format: Format for the birth_date column:
+                - "mm_dd": VARCHAR with MM-DD format (e.g., "03-09") 
+                - "full_date": DATE with year 2000 (e.g., "2000-03-09")
+        
+        Returns:
+            True if successful, False otherwise
+        """
+        logger.info(f"Starting birth date migration with format: {date_format}")
+        
+        # Add column
+        if not self.add_birth_date_column(date_format):
+            return False
+        
+        # Populate column
+        if not self.populate_birth_date_column(date_format):
+            return False
+        
+        logger.success("Birth date migration completed successfully")
+        return True
     
     def __enter__(self):
         """Context manager entry."""
