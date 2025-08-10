@@ -94,6 +94,7 @@ class DatabaseManager:
         
         # Drop existing tables in correct order (foreign key dependencies)
         conn.execute("DROP TABLE IF EXISTS coc CASCADE")
+        conn.execute("DROP TABLE IF EXISTS cov CASCADE")
         conn.execute("DROP TABLE IF EXISTS arc CASCADE") 
         conn.execute("DROP TABLE IF EXISTS saga CASCADE")
         conn.execute("DROP TABLE IF EXISTS chapter CASCADE")
@@ -156,6 +157,17 @@ class DatabaseManager:
         """
         conn.execute(coc_table_query)
         logger.debug("Created coc (character-of-chapter) table")
+        
+        # Create character-of-volume (CoV) table for volume cover characters
+        cov_table_query = """
+        CREATE TABLE cov (
+            volume INTEGER,
+            character TEXT,
+            FOREIGN KEY(volume) REFERENCES volume(number)
+        )
+        """
+        conn.execute(cov_table_query)
+        logger.debug("Created cov (character-of-volume) table")
         
         # Create saga table first (referenced by arc table)
         saga_table_query = """
@@ -324,6 +336,69 @@ class DatabaseManager:
             
         except Exception as e:
             logger.error(f"Failed to load volumes from {json_path}: {str(e)}")
+            return False
+    
+    def load_cov_from_json(self, json_path: str) -> bool:
+        """Load character-on-volume (COV) data from JSON file into database.
+        
+        Args:
+            json_path: Path to volumes JSON file containing cover_characters data
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            logger.info(f"Loading COV data from {json_path}")
+            
+            with open(json_path, 'r', encoding='utf-8') as f:
+                volumes_data = json.load(f)
+            
+            conn = self.connect()
+            
+            # Clear existing COV data first
+            conn.execute("DELETE FROM cov")
+            logger.info("Cleared existing COV data")
+            
+            total_cov_entries = 0
+            
+            for volume_data in volumes_data:
+                try:
+                    volume_number = volume_data.get('volume_number')
+                    cover_characters = volume_data.get('cover_characters', [])
+                    
+                    if not volume_number:
+                        logger.warning(f"Volume missing volume_number: {volume_data}")
+                        continue
+                    
+                    for char_data in cover_characters:
+                        try:
+                            # Use slug as character identifier (same as character table id)
+                            character_id = char_data.get('slug', char_data.get('name', ''))
+                            
+                            if character_id:
+                                conn.execute("""
+                                    INSERT INTO cov 
+                                    (volume, character)
+                                    VALUES (?, ?)
+                                """, [volume_number, character_id])
+                                total_cov_entries += 1
+                            else:
+                                logger.warning(f"Character missing identifier in volume {volume_number}: {char_data}")
+                                
+                        except Exception as e:
+                            logger.error(f"Failed to insert COV entry for volume {volume_number}, character {char_data}: {str(e)}")
+                            continue
+                    
+                except Exception as e:
+                    logger.error(f"Failed to process volume {volume_data.get('volume_number', 'unknown')}: {str(e)}")
+                    continue
+            
+            conn.commit()
+            logger.success(f"Successfully loaded {total_cov_entries} COV entries from {len(volumes_data)} volumes")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to load COV data from {json_path}: {str(e)}")
             return False
     
     def load_characters_from_json(self, json_path: str) -> bool:
@@ -715,7 +790,7 @@ class DatabaseManager:
             stats = {}
             
             # Get row counts for each table
-            tables = ['chapter', 'volume', 'character', 'coc', 'arc', 'saga']
+            tables = ['chapter', 'volume', 'character', 'coc', 'cov', 'arc', 'saga']
             for table in tables:
                 try:
                     result = conn.execute(f"SELECT COUNT(*) FROM {table}").fetchone()
@@ -743,7 +818,7 @@ class DatabaseManager:
             output_path.mkdir(parents=True, exist_ok=True)
             
             conn = self.connect()
-            tables = ['chapter', 'volume', 'character', 'coc', 'arc', 'saga']
+            tables = ['chapter', 'volume', 'character', 'coc', 'cov', 'arc', 'saga']
             
             for table in tables:
                 try:
