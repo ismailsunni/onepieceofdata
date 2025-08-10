@@ -1,7 +1,7 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status db-status migrate-birth-dates migrate-birth-dates-full config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
+.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status db-status migrate-birth-dates migrate-birth-dates-full load-cov config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
 
 # Default target
 help:
@@ -38,6 +38,7 @@ help:
 	@echo "  db-status      - Show database content status (quick test after parsing)"
 	@echo "  migrate-birth-dates - Parse birth strings and add birth_date column (MM-DD format)"
 	@echo "  migrate-birth-dates-full - Parse birth strings and add birth_date column (full date format)"
+	@echo "  load-cov       - Load character-on-volume (COV) data from volumes.json"
 	@echo "  config         - Show current configuration"
 	@echo "  export         - Export database to CSV files"
 	@echo ""
@@ -185,6 +186,9 @@ run-full-pipeline:
 	@echo "Step 6: Parsing birth dates and adding birth_date column..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
+	@echo "Step 7: Loading character-on-volume (COV) data..."
+	$(MAKE) load-cov
+	@echo ""
 	@echo "✅ Pipeline completed! Check status with 'make db-status'"
 
 # Run complete pipeline with parallel processing
@@ -208,6 +212,9 @@ run-full-pipeline-parallel:
 	@echo ""
 	@echo "Step 6: Parsing birth dates and adding birth_date column..."
 	$(MAKE) migrate-birth-dates
+	@echo ""
+	@echo "Step 7: Loading character-on-volume (COV) data..."
+	$(MAKE) load-cov
 	@echo ""
 	@echo "✅ Parallel pipeline completed! Check status with 'make db-status'"
 
@@ -234,6 +241,9 @@ run-full-pipeline-workers:
 	@echo "Step 6: Parsing birth dates and adding birth_date column..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
+	@echo "Step 7: Loading character-on-volume (COV) data..."
+	$(MAKE) load-cov
+	@echo ""
 	@echo "✅ Pipeline with $(WORKERS) workers completed! Check status with 'make db-status'"
 
 # Export database to CSV files
@@ -259,6 +269,11 @@ migrate-birth-dates:
 migrate-birth-dates-full:
 	@echo "📅 Migrating birth dates (full date format with year 2000)..."
 	$(UV) run onepieceofdata migrate-birth-dates --format full_date
+
+# Load character-on-volume (COV) data
+load-cov:
+	@echo "🎨 Loading Character-on-Volume (COV) data..."
+	$(UV) run onepieceofdata load-cov
 
 # Show current configuration including parallel settings
 config:
