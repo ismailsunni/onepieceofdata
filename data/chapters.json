@@ -20239,16 +20239,16 @@
         "full_text": "Tony Tony Chopper"
       },
       {
-        "name": "Portgas D. Ace",
-        "url": "/wiki/Portgas_D._Ace",
-        "note": "flashback",
-        "full_text": "Portgas D. Ace (flashback)"
-      },
-      {
         "name": "Shanks",
         "url": "/wiki/Shanks",
         "note": "flashback",
         "full_text": "Shanks (flashback)"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "url": "/wiki/Portgas_D._Ace",
+        "note": "flashback",
+        "full_text": "Portgas D. Ace (flashback)"
       },
       {
         "name": "Bellamy",
@@ -20307,8 +20307,8 @@
       {
         "name": "Kuroobi",
         "url": "/wiki/Kuroobi",
-        "note": "cover",
-        "full_text": "Kuroobi (cover)"
+        "note": "cover; flashback",
+        "full_text": "Kuroobi (cover; flashback)"
       },
       {
         "name": "Camie",
@@ -20329,10 +20329,10 @@
         "full_text": "Terry"
       },
       {
-        "name": "Mysterious Man",
+        "name": "Marshall D. Teach",
         "url": "/wiki/Marshall_D._Teach",
         "note": "",
-        "full_text": "Mysterious Man"
+        "full_text": "Marshall D. Teach"
       }
     ]
   },
@@ -23179,6 +23179,12 @@
         "url": "/wiki/Wapol",
         "note": "cover",
         "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       },
       {
         "name": "Gan Fall",

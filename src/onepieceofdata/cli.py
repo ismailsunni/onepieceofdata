@@ -781,6 +781,48 @@ def load_cov(volumes_json: Optional[str]) -> None:
 
 
 @main.command()
+@click.option(
+    "--input-file",
+    type=click.Path(exists=True),
+    help="Chapters JSON file path (default: from config)"
+)
+@click.option(
+    "--output",
+    type=click.Path(),
+    help="Output CSV file path (default: from config)"
+)
+def extract_characters(input_file: Optional[str], output: Optional[str]) -> None:
+    """Extract character list from chapters JSON file."""
+    click.echo("👥 Starting character extraction from chapters...")
+    
+    # Set default paths
+    if input_file is None:
+        input_file = settings.data_dir / "chapters.json"
+    if output is None:
+        output = settings.data_dir / "characters.csv"
+    
+    # Check if input file exists
+    if not Path(input_file).exists():
+        click.echo(f"❌ Input file not found: {input_file}")
+        click.echo("💡 Try running 'uv run onepieceofdata scrape-chapters' first")
+        return
+    
+    try:
+        with DatabaseManager() as db:
+            success = db.extract_characters_from_chapters(str(input_file), str(output))
+            
+            if success:
+                click.echo(f"✅ Character extraction completed!")
+                click.echo(f"💾 Data saved to: {output}")
+            else:
+                click.echo("❌ Failed to extract characters")
+                sys.exit(1)
+                
+    except Exception as e:
+        click.echo(f"❌ Error during character extraction: {str(e)}")
+        sys.exit(1)
+
+@main.command()
 def config() -> None:
     """Show current configuration settings."""
     click.echo("⚙️  One Piece of Data - Configuration")
