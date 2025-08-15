@@ -1,5 +1,6 @@
 """Command-line interface for One Piece of Data pipeline."""
 
+import json
 import sys
 from pathlib import Path
 from typing import Optional
@@ -1080,7 +1081,7 @@ def parse_story_structure(arcs_json: Optional[str], sagas_json: Optional[str]) -
         
         # Process sagas and save to DB
         validated_sagas = saga_parser.process_saga_data(
-            [ScrapingResult(True, data) for data in saga_data],
+            [ScrapingResult(success=True, data=data) for data in saga_data],
             output_json=None,  # Don't save to JSON again
             save_to_db=True
         )
@@ -1088,7 +1089,7 @@ def parse_story_structure(arcs_json: Optional[str], sagas_json: Optional[str]) -
         
         # Process arcs and save to DB
         validated_arcs = arc_parser.process_arc_data(
-            [ScrapingResult(True, data) for data in arc_data],
+            [ScrapingResult(success=True, data=data) for data in arc_data],
             output_json=None,  # Don't save to JSON again
             save_to_db=True
         )
