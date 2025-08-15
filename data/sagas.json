@@ -1,0 +1,101 @@
+[
+  {
+    "saga_id": "east_blue",
+    "title": "East Blue",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 1,
+    "end_chapter": 100,
+    "description": null
+  },
+  {
+    "saga_id": "arabasta",
+    "title": "Arabasta",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 101,
+    "end_chapter": 217,
+    "description": null
+  },
+  {
+    "saga_id": "sky_island",
+    "title": "Sky Island",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 218,
+    "end_chapter": 302,
+    "description": null
+  },
+  {
+    "saga_id": "water_7",
+    "title": "Water 7",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 303,
+    "end_chapter": 441,
+    "description": null
+  },
+  {
+    "saga_id": "thriller_bark",
+    "title": "Thriller Bark",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 442,
+    "end_chapter": 489,
+    "description": null
+  },
+  {
+    "saga_id": "summit_war",
+    "title": "Summit War",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 490,
+    "end_chapter": 597,
+    "description": null
+  },
+  {
+    "saga_id": "fish_man_island",
+    "title": "Fish-Man Island",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 598,
+    "end_chapter": 653,
+    "description": null
+  },
+  {
+    "saga_id": "dressrosa",
+    "title": "Dressrosa",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 654,
+    "end_chapter": 801,
+    "description": null
+  },
+  {
+    "saga_id": "whole_cake_island",
+    "title": "Whole Cake Island",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 802,
+    "end_chapter": 908,
+    "description": null
+  },
+  {
+    "saga_id": "wano_country",
+    "title": "Wano Country",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 909,
+    "end_chapter": 1057,
+    "description": null
+  },
+  {
+    "saga_id": "final",
+    "title": "Final",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 1058,
+    "end_chapter": 1156,
+    "description": null
+  }
+]
