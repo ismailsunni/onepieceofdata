@@ -1032,11 +1032,11 @@ class DatabaseManager:
             # Convert to DataFrame
             df = pd.DataFrame([
                 {
-                    'id': character_name,
+                    'id': character_id,
                     'name': character_data['name'],
                     'url': character_data['url']
                 }
-                for character_name, character_url in unique_characters.items()
+                for character_id, character_data in unique_characters.items()
             ])
             
             # Sort by name for consistency
