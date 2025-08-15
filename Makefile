@@ -1,7 +1,7 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check# Run character scraping with parallel processing
+.PHONY: help install install-dev test lint format clean setup check extract-characters # Run character scraping with parallel processing
 run-scrape-characters-parallel:
 	@echo "🚀 Running character scraping with parallel processing..."
 	@if [ ! -f "data/characters.csv" ]; then \
@@ -161,6 +161,15 @@ run-scrape-volumes:
 	@echo "📚 Running volume scraping (using config defaults)..."
 	$(UV) run onepieceofdata scrape-volumes
 
+# Extract character list from chapters
+extract-characters:
+	@echo "👥 Extracting character list from chapters..."
+	@if [ ! -f "data/chapters.json" ]; then \
+		echo "❌ chapters.json not found. Run 'make run-scrape' first."; \
+		exit 1; \
+	fi
+	$(UV) run onepieceofdata extract-characters
+
 # Run arc scraping (story arcs)
 run-scrape-arcs:
 	@echo "🏴‍☠️ Running arc scraping (story arcs)..."
@@ -219,7 +228,7 @@ run-full-pipeline-parallel:
 	$(MAKE) run-scrape-volumes
 	@echo ""
 	@echo "Step 3: Extract initial character list from chapters..."
-	$(UV) run onepieceofdata extract-characters
+	$(MAKE) extract-characters
 	@echo ""
 	@echo "Step 4: Scraping characters (parallel)..."
 	$(MAKE) run-scrape-characters-parallel
