@@ -251,10 +251,8 @@ run-full-pipeline-parallel:
 	@echo "Step 8: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
-	@echo "Step 9: Exporting updated data to CSV files..."
-	$(MAKE) export
-	@echo ""
-	@echo "✅ Parallel pipeline completed! Check status with 'make db-status'"
+	@echo "✅ Parallel pipeline completed!"
+	$(MAKE) db-status
 
 # Run complete pipeline with custom number of workers
 # Usage: make run-full-pipeline-workers WORKERS=8
