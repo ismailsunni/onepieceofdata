@@ -281,6 +281,18 @@ class DatabaseManager:
                                 INSERT INTO coc (chapter, character, note)
                                 VALUES (?, ?, ?)
                             """, [chapter_number, character_name, note])
+                            
+                            # Also ensure this character exists in the character table
+                            char_exists = conn.execute("""
+                                SELECT 1 FROM character WHERE id = ?
+                            """, [character_name]).fetchone()
+                            
+                            if not char_exists:
+                                conn.execute("""
+                                    INSERT INTO character (id, name)
+                                    VALUES (?, ?)
+                                    ON CONFLICT(id) DO NOTHING
+                                """, [character_name, character_name.replace('_', ' ')])
                         
                 except Exception as e:
                     logger.error(f"Failed to insert chapter {chapter_data.get('chapter_number', 'unknown')}: {str(e)}")
@@ -981,6 +993,63 @@ class DatabaseManager:
         """Context manager entry."""
         self.connect()
         return self
+    
+    def extract_characters_from_chapters(self, json_path: str, output_path: str) -> bool:
+        """Extract character list from chapters JSON file and save to CSV.
+        
+        Args:
+            json_path: Path to chapters JSON file
+            output_path: Path to output CSV file
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            logger.info(f"Extracting character list from {json_path}")
+            
+            with open(json_path, 'r', encoding='utf-8') as f:
+                chapters_data = json.load(f)
+            
+            # Dictionary to store unique characters with their URLs
+            unique_characters = {}
+            
+            # Extract all characters from chapters
+            for chapter_data in chapters_data:
+                for char in chapter_data.get('characters', []):
+                    if isinstance(char, dict):
+                        character_name = char.get('name', '')
+                        character_id = character_name.replace(' ', '_')
+                        character_url = char.get('url', '')
+                    else:
+                        character_name = str(char)
+                        character_id = character_name.replace(' ', '_')
+                        character_url = f"/wiki/{character_id}"
+                    
+                    if character_name:
+                        # Store both name and URL
+                        unique_characters[character_id] = {'name': character_name, 'url': character_url}
+            
+            # Convert to DataFrame
+            df = pd.DataFrame([
+                {
+                    'id': character_name,
+                    'name': character_data['name'],
+                    'url': character_data['url']
+                }
+                for character_name, character_url in unique_characters.items()
+            ])
+            
+            # Sort by name for consistency
+            df = df.sort_values('name')
+            
+            # Save to CSV
+            df.to_csv(output_path, index=False)
+            logger.success(f"Saved {len(unique_characters)} characters to {output_path}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Failed to extract characters from {json_path}: {str(e)}")
+            return False
     
     def __exit__(self, exc_type, exc_val, exc_tb):
         """Context manager exit."""

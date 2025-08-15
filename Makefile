@@ -1,7 +1,22 @@
 # Makefile for One Piece of Data development
 UV := uv
 
-.PHONY: help install install-dev test lint format clean setup check-uv run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status db-status migrate-birth-dates migrate-birth-dates-full load-cov config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
+.PHONY: help install install-dev test lint format clean setup check# Run character scraping with parallel processing
+run-scrape-characters-parallel:
+	@echo "🚀 Running character scraping with parallel processing..."
+	@if [ ! -f "data/characters.csv" ]; then \
+		echo "❌ characters.csv not found. Run 'make run-scrape' first."; \
+		exit 1; \
+	fi
+	@echo "📊 Input: $$(( $$(wc -l < data/characters.csv) - 1 )) characters in characters.csv (excluding header)"
+	@echo "⚙️  Using parallel processing with 4 workers and better error handling..."
+	$(UV) run onepieceofdata scrape-characters --parallel --workers 4 --retry-count 3 --delay 2 --verbose
+	@if [ -f "data/characters_detail.json" ]; then \
+		echo "📊 Results Summary:"; \
+		echo "  - Input (characters.csv): $$(( $$(wc -l < data/characters.csv) - 1 )) characters"; \
+		echo "  - Output (characters_detail.json): $$(( $$(jq length data/characters_detail.json) )) characters"; \
+		echo "  - Success Rate: $$(( $$(jq length data/characters_detail.json) * 100 / ( $$(wc -l < data/characters.csv) - 1 ) ))%"; \
+	firape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers status db-status migrate-birth-dates migrate-birth-dates-full load-cov config export test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
 
 # Default target
 help:
@@ -127,7 +142,9 @@ run-scrape-characters-parallel:
 		echo "❌ characters.csv not found. Run 'make run-scrape' first."; \
 		exit 1; \
 	fi
-	$(UV) run onepieceofdata scrape-characters --parallel
+	@echo "📊 Total characters to scrape: $$(( $$(wc -l < data/characters.csv) - 1 )) (excluding header)"
+	@echo "⚙️  Using parallel processing with 4 workers and better error handling..."
+	$(UV) run onepieceofdata scrape-characters --parallel 
 
 # Run character scraping with custom number of workers
 # Usage: make run-scrape-characters-workers WORKERS=4
@@ -201,20 +218,26 @@ run-full-pipeline-parallel:
 	@echo "Step 2: Scraping volumes..."
 	$(MAKE) run-scrape-volumes
 	@echo ""
-	@echo "Step 3: Scraping characters (parallel)..."
+	@echo "Step 3: Extract initial character list from chapters..."
+	$(UV) run onepieceofdata extract-characters
+	@echo ""
+	@echo "Step 4: Scraping characters (parallel)..."
 	$(MAKE) run-scrape-characters-parallel
 	@echo ""
-	@echo "Step 4: Loading basic data into database (volumes, chapters, characters)..."
-	$(MAKE) run-parse
-	@echo ""
-	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
+	@echo "Step 5: Scraping story structure (arcs and sagas)..."
 	$(MAKE) run-scrape-story-structure
 	@echo ""
-	@echo "Step 6: Parsing birth dates and adding birth_date column..."
+	@echo "Step 6: Loading all data into database..."
+	$(MAKE) run-parse
+	@echo ""
+	@echo "Step 7: Parsing birth dates and adding birth_date column..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "Step 7: Loading character-on-volume (COV) data..."
+	@echo "Step 8: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
+	@echo ""
+	@echo "Step 9: Exporting updated data to CSV files..."
+	$(MAKE) export
 	@echo ""
 	@echo "✅ Parallel pipeline completed! Check status with 'make db-status'"
 
