@@ -1,0 +1,332 @@
+[
+  {
+    "arc_id": "romance_dawn",
+    "title": "Romance Dawn",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 1,
+    "end_chapter": 7,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "orange_town",
+    "title": "Orange Town",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 8,
+    "end_chapter": 21,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "syrup_village",
+    "title": "Syrup Village",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 22,
+    "end_chapter": 41,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "baratie",
+    "title": "Baratie",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 42,
+    "end_chapter": 68,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "arlong_park",
+    "title": "Arlong Park",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 69,
+    "end_chapter": 95,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "loguetown",
+    "title": "Loguetown",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 96,
+    "end_chapter": 100,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "reverse_mountain",
+    "title": "Reverse Mountain",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 101,
+    "end_chapter": 105,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "whisky_peak",
+    "title": "Whisky Peak",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 106,
+    "end_chapter": 114,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "little_garden",
+    "title": "Little Garden",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 115,
+    "end_chapter": 129,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "drum_island",
+    "title": "Drum Island",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 130,
+    "end_chapter": 154,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "arabasta",
+    "title": "Arabasta",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 155,
+    "end_chapter": 217,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "jaya",
+    "title": "Jaya",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 218,
+    "end_chapter": 236,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "skypiea",
+    "title": "Skypiea",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 237,
+    "end_chapter": 302,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "long_ring_long_land",
+    "title": "Long Ring Long Land",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 303,
+    "end_chapter": 321,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "water_7",
+    "title": "Water 7",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 322,
+    "end_chapter": 374,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "enies_lobby",
+    "title": "Enies Lobby",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 375,
+    "end_chapter": 430,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "post_enies_lobby",
+    "title": "Post-Enies Lobby",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 431,
+    "end_chapter": 441,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "thriller_bark",
+    "title": "Thriller Bark",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 442,
+    "end_chapter": 489,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "sabaody_archipelago",
+    "title": "Sabaody Archipelago",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 490,
+    "end_chapter": 513,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "amazon_lily",
+    "title": "Amazon Lily",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 514,
+    "end_chapter": 524,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "impel_down",
+    "title": "Impel Down",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 525,
+    "end_chapter": 549,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "marineford",
+    "title": "Marineford",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 550,
+    "end_chapter": 580,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "post_war",
+    "title": "Post-War",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 581,
+    "end_chapter": 597,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "return_to_sabaody",
+    "title": "Return to Sabaody",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 598,
+    "end_chapter": 602,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "fish_man_island",
+    "title": "Fish-Man Island",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 603,
+    "end_chapter": 653,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "punk_hazard",
+    "title": "Punk Hazard",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 654,
+    "end_chapter": 699,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "dressrosa",
+    "title": "Dressrosa",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 700,
+    "end_chapter": 801,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "zou",
+    "title": "Zou",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 802,
+    "end_chapter": 824,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "whole_cake_island",
+    "title": "Whole Cake Island",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 825,
+    "end_chapter": 902,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "levely",
+    "title": "Levely",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 903,
+    "end_chapter": 908,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "wano_country",
+    "title": "Wano Country",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 909,
+    "end_chapter": 1057,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "egghead",
+    "title": "Egghead",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 1058,
+    "end_chapter": 1125,
+    "saga_id": null,
+    "description": null
+  },
+  {
+    "arc_id": "elbaph",
+    "title": "Elbaph",
+    "japanese_title": null,
+    "romanized_title": null,
+    "start_chapter": 1126,
+    "end_chapter": 1156,
+    "saga_id": null,
+    "description": null
+  }
+]
