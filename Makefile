@@ -44,7 +44,8 @@ help:
 	@echo "  run-scrape-volumes - Run volume scraping (uses config: all volumes)"
 	@echo "  run-scrape-arcs - Run arc scraping (story arcs)"
 	@echo "  run-scrape-sagas - Run saga scraping (story sagas)"
-	@echo "  run-scrape-story-structure - Run both arc and saga scraping"
+	@echo "  run-scrape-story-structure - Scrape story structure (arcs and sagas) to JSON"
+	@echo "  run-parse-story-structure - Parse story structure JSON files into database"
 	@echo "  run-parse      - Run data parsing and database loading"
 	@echo "  run-full-pipeline - Run complete pipeline (scrape + parse)"
 	@echo "  run-full-pipeline-parallel - Run complete pipeline with parallel processing"
@@ -180,10 +181,15 @@ run-scrape-sagas:
 	@echo "📖 Running saga scraping (story sagas)..."
 	$(UV) run onepieceofdata scrape-sagas
 
-# Run both arc and saga scraping (story structure)
+# Run story structure scraping (arcs and sagas)
 run-scrape-story-structure:
-	@echo "⚓ Running story structure scraping (arcs and sagas)..."
+	@echo "⚓ Scraping story structure data (arcs and sagas)..."
 	$(UV) run onepieceofdata scrape-story-structure
+
+# Run story structure parsing (process JSON files and load into database)
+run-parse-story-structure:
+	@echo "📊 Parsing story structure data (arcs and sagas)..."
+	$(UV) run onepieceofdata parse-story-structure
 
 # Run data parsing and database loading
 run-parse:
