@@ -266,7 +266,7 @@ class CharacterScraper:
         except Exception as e:
             logger.error(f"Unexpected error scraping character from {character_url}: {str(e)}")
             raise
-    
+
     def scrape_character(self, character_data: Dict[str, Any]) -> ScrapingResult:
         """Scrape a single character.
         
@@ -278,9 +278,9 @@ class CharacterScraper:
         """
         char_id = character_data.get("id")
         name = character_data.get("name", "Unknown")
-        url = character_data.get("url")
-        
-        logger.info(f"Scraping character: {name} (ID: {char_id})")
+        url = f"{self.base_url}/wiki/{character_data.get('id', '')}" 
+       
+        logger.info(f"Scraping character: {name} (ID: {char_id}), url: {url}")
         
         # Basic result structure
         result_data = {"id": char_id, "name": name}
@@ -295,7 +295,7 @@ class CharacterScraper:
                 url=""
             )
             
-        if "http" in url or "Video_Games" in url:
+        if "Video_Games" in url or ("http" in url and self.base_url not in url):
             logger.warning(f"URL is outside onepiece wikia or a video game specific for {name}")
             return ScrapingResult(
                 success=True,  # Changed to True to include in final data
@@ -305,8 +305,9 @@ class CharacterScraper:
             )
         
         try:
-            full_url = self.base_url + url
+            full_url = url
             character_info = self._scrape_character_from_url(full_url)
+            logger.error(f"Character info {character_info}")
             result_data.update(character_info)
             
             # Try to create CharacterModel for validation
