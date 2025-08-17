@@ -20459,22 +20459,22 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Shoujou",
-        "url": "/wiki/Shoujou",
-        "note": "picture",
-        "full_text": "Shoujou (picture)"
-      },
-      {
-        "name": "Masira",
-        "url": "/wiki/Masira",
-        "note": "picture",
-        "full_text": "Masira (picture)"
-      },
-      {
         "name": "Mont Blanc Cricket",
         "url": "/wiki/Mont_Blanc_Cricket",
         "note": "",
         "full_text": "Mont Blanc Cricket"
+      },
+      {
+        "name": "Masira",
+        "url": "/wiki/Masira",
+        "note": "photo",
+        "full_text": "Masira (photo)"
+      },
+      {
+        "name": "Shoujou",
+        "url": "/wiki/Shoujou",
+        "note": "photo",
+        "full_text": "Shoujou (photo)"
       },
       {
         "name": "Bellamy",
@@ -20549,10 +20549,16 @@
         "full_text": "Pappag (cover)"
       },
       {
+        "name": "Aruyutayan V",
+        "url": "/wiki/Aruyutayan_V",
+        "note": "image",
+        "full_text": "Aruyutayan V (image)"
+      },
+      {
         "name": "Mont Blanc Noland",
         "url": "/wiki/Mont_Blanc_Noland",
-        "note": "picture",
-        "full_text": "Mont Blanc Noland (picture)"
+        "note": "image",
+        "full_text": "Mont Blanc Noland (image)"
       }
     ]
   },
@@ -20640,8 +20646,8 @@
       {
         "name": "Mont Blanc Noland",
         "url": "/wiki/Mont_Blanc_Noland",
-        "note": "Flashback",
-        "full_text": "Mont Blanc Noland (Flashback)"
+        "note": "image",
+        "full_text": "Mont Blanc Noland (image)"
       }
     ]
   },
@@ -54364,12 +54370,6 @@
     "release_date": "September 22, 2008",
     "jump_info": "2008 Issue 43",
     "characters": [
-      {
-        "name": "Straw Hat Pirates",
-        "url": "/wiki/Straw_Hat_Pirates",
-        "note": "",
-        "full_text": "Straw Hat Pirates"
-      },
       {
         "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
@@ -167608,6 +167608,251 @@
         "url": "/wiki/Mato",
         "note": "",
         "full_text": "Mato"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1157,
+    "volume": "TBA",
+    "chapter_display": "1157",
+    "title": "Legendary Bar",
+    "pages": "17",
+    "release_date": "August 18, 2025",
+    "jump_info": "2025 Issue 38",
+    "characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "",
+        "full_text": "Buckingham Stussy"
+      },
+      {
+        "name": "Marlon",
+        "url": "/wiki/Marlon",
+        "note": "",
+        "full_text": "Marlon"
+      },
+      {
+        "name": "Ochoku",
+        "url": "/wiki/Ochoku",
+        "note": "",
+        "full_text": "Ochoku"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "",
+        "full_text": "Ganzui"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "",
+        "full_text": "John"
+      },
+      {
+        "name": "Streusen",
+        "url": "/wiki/Streusen",
+        "note": "",
+        "full_text": "Streusen"
+      },
+      {
+        "name": "Kyo",
+        "url": "/wiki/Kyo",
+        "note": "",
+        "full_text": "Kyo"
+      },
+      {
+        "name": "Barbel",
+        "url": "/wiki/Barbel",
+        "note": "",
+        "full_text": "Barbel"
+      },
+      {
+        "name": "Gloriosa",
+        "url": "/wiki/Gloriosa",
+        "note": "",
+        "full_text": "Gloriosa"
+      },
+      {
+        "name": "Prometheus",
+        "url": "/wiki/Prometheus",
+        "note": "",
+        "full_text": "Prometheus"
+      },
+      {
+        "name": "Zeus",
+        "url": "/wiki/Zeus",
+        "note": "",
+        "full_text": "Zeus"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "url": "/wiki/Jaygarcia_Saturn",
+        "note": "silhouette",
+        "full_text": "Jaygarcia Saturn (silhouette)"
+      },
+      {
+        "name": "Marcus Mars",
+        "url": "/wiki/Marcus_Mars",
+        "note": "",
+        "full_text": "Marcus Mars"
+      },
+      {
+        "name": "Topman Warcury",
+        "url": "/wiki/Topman_Warcury",
+        "note": "silhouette",
+        "full_text": "Topman Warcury (silhouette)"
+      },
+      {
+        "name": "Ethanbaron V. Nusjuro",
+        "url": "/wiki/Ethanbaron_V._Nusjuro",
+        "note": "silhouette",
+        "full_text": "Ethanbaron V. Nusjuro (silhouette)"
+      },
+      {
+        "name": "Kong",
+        "url": "/wiki/Kong",
+        "note": "",
+        "full_text": "Kong"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Sengoku",
+        "url": "/wiki/Sengoku",
+        "note": "",
+        "full_text": "Sengoku"
+      },
+      {
+        "name": "Tsuru",
+        "url": "/wiki/Tsuru",
+        "note": "",
+        "full_text": "Tsuru"
+      },
+      {
+        "name": "John Giant",
+        "url": "/wiki/John_Giant",
+        "note": "flashback",
+        "full_text": "John Giant (flashback)"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Ida",
+        "url": "/wiki/Ida",
+        "note": "",
+        "full_text": "Ida"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Mato",
+        "url": "/wiki/Mato",
+        "note": "",
+        "full_text": "Mato"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Charlotte Katakuri",
+        "url": "/wiki/Charlotte_Katakuri",
+        "note": "",
+        "full_text": "Charlotte Katakuri"
+      },
+      {
+        "name": "Charlotte Daifuku",
+        "url": "/wiki/Charlotte_Daifuku",
+        "note": "",
+        "full_text": "Charlotte Daifuku"
+      },
+      {
+        "name": "Charlotte Oven",
+        "url": "/wiki/Charlotte_Oven",
+        "note": "",
+        "full_text": "Charlotte Oven"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Kikunojo",
+        "url": "/wiki/Kikunojo",
+        "note": "cover",
+        "full_text": "Kikunojo (cover)"
+      },
+      {
+        "name": "Cho",
+        "url": "/wiki/Cho",
+        "note": "cover",
+        "full_text": "Cho (cover)"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover",
+        "full_text": "Ulti (cover)"
+      },
+      {
+        "name": "Page One",
+        "url": "/wiki/Page_One",
+        "note": "cover",
+        "full_text": "Page One (cover)"
       }
     ]
   }
