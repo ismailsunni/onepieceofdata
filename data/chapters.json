@@ -677,7 +677,7 @@
     "volume": "2",
     "chapter_display": "12",
     "title": "Dog",
-    "pages": "19 (Excluding cover page. See Trivia and Talk page for further information.)*",
+    "pages": "19 (Excluding cover page. See Trivia and Talk page for further information.) *",
     "release_date": "October 13, 1997",
     "jump_info": "1997 Issue 46",
     "characters": [
@@ -1047,6 +1047,12 @@
         "url": "/wiki/Buggy_Pirates#Acrobatic_Fuwas",
         "note": "K.O.",
         "full_text": "Acrobatic Fuwas (K.O.)"
+      },
+      {
+        "name": "Pirate Penguin",
+        "url": "/wiki/Pirate_Penguin",
+        "note": "cover",
+        "full_text": "Pirate Penguin (cover)"
       }
     ]
   },
@@ -2903,8 +2909,8 @@
       {
         "name": "Arlong",
         "url": "/wiki/Arlong",
-        "note": "on wanted poster",
-        "full_text": "Arlong (on wanted poster)"
+        "note": "wanted poster",
+        "full_text": "Arlong (wanted poster)"
       },
       {
         "name": "Fullbody",
@@ -2977,6 +2983,12 @@
         "url": "/wiki/Lionbuta",
         "note": "cover",
         "full_text": "Lionbuta (cover)"
+      },
+      {
+        "name": "Mikio Itoo",
+        "url": "/wiki/Mikio_Itoo",
+        "note": "wanted poster",
+        "full_text": "Mikio Itoo (wanted poster)"
       }
     ]
   },
@@ -19342,6 +19354,12 @@
         "full_text": "Toto"
       },
       {
+        "name": "Yoshimoto",
+        "url": "/wiki/Yoshimoto",
+        "note": "",
+        "full_text": "Yoshimoto"
+      },
+      {
         "name": "Mr. 3",
         "url": "/wiki/Galdino",
         "note": "",
@@ -19360,7 +19378,7 @@
     "volume": "24",
     "chapter_display": "217",
     "title": "Stowaway",
-    "pages": "19",
+    "pages": "2019 (Volume)",
     "release_date": "February 4, 2002",
     "jump_info": "2002 Issue 10",
     "characters": [
@@ -20733,16 +20751,22 @@
         "full_text": "Sarquiss"
       },
       {
+        "name": "Eddy",
+        "url": "/wiki/Eddy",
+        "note": "",
+        "full_text": "Eddy"
+      },
+      {
         "name": "Ross",
         "url": "/wiki/Ross",
         "note": "",
         "full_text": "Ross"
       },
       {
-        "name": "Eddy",
-        "url": "/wiki/Eddy",
+        "name": "Muret",
+        "url": "/wiki/Muret",
         "note": "",
-        "full_text": "Eddy"
+        "full_text": "Muret"
       }
     ]
   },
@@ -20820,6 +20844,18 @@
         "url": "/wiki/Bellamy",
         "note": "",
         "full_text": "Bellamy"
+      },
+      {
+        "name": "Sarquiss",
+        "url": "/wiki/Sarquiss",
+        "note": "",
+        "full_text": "Sarquiss"
+      },
+      {
+        "name": "Rivers",
+        "url": "/wiki/Rivers",
+        "note": "",
+        "full_text": "Rivers"
       },
       {
         "name": "South Bird",
@@ -21107,10 +21143,22 @@
         "full_text": "Nami"
       },
       {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "voice",
+        "full_text": "Sanji (voice)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "voice",
+        "full_text": "Tony Tony Chopper (voice)"
+      },
+      {
         "name": "Whitebeard",
         "url": "/wiki/Edward_Newgate",
-        "note": "shadowed",
-        "full_text": "Whitebeard (shadowed)"
+        "note": "image",
+        "full_text": "Whitebeard (image)"
       },
       {
         "name": "Portgas D. Ace",
@@ -21267,6 +21315,12 @@
     "release_date": "June 17, 2002",
     "jump_info": "2002 Issue 29",
     "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "wanted poster",
+        "full_text": "Monkey D. Luffy (wanted poster)"
+      },
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
@@ -21513,10 +21567,28 @@
         "full_text": "Doc Q"
       },
       {
-        "name": "Stronger",
-        "url": "/wiki/Stronger",
-        "note": "",
-        "full_text": "Stronger"
+        "name": "Bellamy",
+        "url": "/wiki/Bellamy",
+        "note": "flashback",
+        "full_text": "Bellamy (flashback)"
+      },
+      {
+        "name": "Sarquiss",
+        "url": "/wiki/Sarquiss",
+        "note": "flashback",
+        "full_text": "Sarquiss (flashback)"
+      },
+      {
+        "name": "Lily",
+        "url": "/wiki/Lily",
+        "note": "flashback",
+        "full_text": "Lily (flashback)"
+      },
+      {
+        "name": "Ross",
+        "url": "/wiki/Ross",
+        "note": "flashback",
+        "full_text": "Ross (flashback)"
       }
     ]
   },
@@ -22053,12 +22125,6 @@
         "full_text": "Wyper"
       },
       {
-        "name": "Enel",
-        "url": "/wiki/Enel",
-        "note": "mentioned only",
-        "full_text": "Enel (mentioned only)"
-      },
-      {
         "name": "Ohm",
         "url": "/wiki/Ohm",
         "note": "",
@@ -22592,18 +22658,6 @@
         "full_text": "Tony Tony Chopper"
       },
       {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
-      },
-      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
         "note": "",
@@ -22616,34 +22670,40 @@
         "full_text": "Pagaya"
       },
       {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "",
-        "full_text": "Pierre"
-      },
-      {
         "name": "Conis",
         "url": "/wiki/Conis",
         "note": "",
         "full_text": "Conis"
       },
       {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "",
+        "full_text": "Pierre"
+      },
+      {
+        "name": "Su",
+        "url": "/wiki/Su",
+        "note": "",
+        "full_text": "Su"
+      },
+      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
-        "note": "shadowed",
-        "full_text": "Wyper (shadowed)"
+        "note": "silhouette",
+        "full_text": "Wyper (silhouette)"
       },
       {
         "name": "Kamakiri",
         "url": "/wiki/Kamakiri",
-        "note": "shadowed",
-        "full_text": "Kamakiri (shadowed)"
+        "note": "silhouette",
+        "full_text": "Kamakiri (silhouette)"
       },
       {
         "name": "Braham",
         "url": "/wiki/Braham",
-        "note": "shadowed",
-        "full_text": "Braham (shadowed)"
+        "note": "silhouette",
+        "full_text": "Braham (silhouette)"
       },
       {
         "name": "Shura",
@@ -22656,6 +22716,18 @@
         "url": "/wiki/Fuza",
         "note": "",
         "full_text": "Fuza"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       }
     ]
   },
@@ -22693,18 +22765,6 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
-      },
-      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
         "note": "",
@@ -22715,6 +22775,18 @@
         "url": "/wiki/Pierre",
         "note": "",
         "full_text": "Pierre"
+      },
+      {
+        "name": "Conis",
+        "url": "/wiki/Conis",
+        "note": "",
+        "full_text": "Conis"
+      },
+      {
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
+        "note": "",
+        "full_text": "Pagaya"
       },
       {
         "name": "Shura",
@@ -22763,6 +22835,18 @@
         "url": "/wiki/Aisa",
         "note": "",
         "full_text": "Aisa"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       }
     ]
   },
@@ -22895,28 +22979,16 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
-      },
-      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "KO",
-        "full_text": "Gan Fall (KO)"
+        "note": "K.O.",
+        "full_text": "Gan Fall (K.O.)"
       },
       {
         "name": "Pierre",
         "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "note": "K.O.",
+        "full_text": "Pierre (K.O.)"
       },
       {
         "name": "Wyper",
@@ -22975,14 +23047,26 @@
       {
         "name": "Satori",
         "url": "/wiki/Satori",
-        "note": "KO",
-        "full_text": "Satori (KO)"
+        "note": "K.O.",
+        "full_text": "Satori (K.O.)"
       },
       {
         "name": "Holy",
         "url": "/wiki/Holy",
         "note": "",
         "full_text": "Holy"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       },
       {
         "name": "South Bird",
@@ -23044,22 +23128,10 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
-      },
-      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "KO",
-        "full_text": "Gan Fall (KO)"
+        "note": "K.O.",
+        "full_text": "Gan Fall (K.O.)"
       },
       {
         "name": "Pierre",
@@ -23126,6 +23198,18 @@
         "url": "/wiki/Fuza",
         "note": "",
         "full_text": "Fuza"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       }
     ]
   },
@@ -23181,18 +23265,6 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
-      },
-      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
         "note": "",
@@ -23223,6 +23295,18 @@
         "full_text": "Raki"
       },
       {
+        "name": "Braham",
+        "url": "/wiki/Braham",
+        "note": "",
+        "full_text": "Braham"
+      },
+      {
+        "name": "Genbo",
+        "url": "/wiki/Genbo",
+        "note": "",
+        "full_text": "Genbo"
+      },
+      {
         "name": "Ohm",
         "url": "/wiki/Ohm",
         "note": "",
@@ -23239,6 +23323,18 @@
         "url": "/wiki/Holy",
         "note": "",
         "full_text": "Holy"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       },
       {
         "name": "Cloud Wolf",
@@ -23460,18 +23556,6 @@
     "jump_info": "2003 Issue 1",
     "characters": [
       {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
-      },
-      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
         "note": "",
@@ -23504,8 +23588,14 @@
       {
         "name": "Isa",
         "url": "/wiki/Isa",
-        "note": "",
-        "full_text": "Isa"
+        "note": "flashback",
+        "full_text": "Isa (flashback)"
+      },
+      {
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
+        "note": "flashback",
+        "full_text": "Aisa (flashback)"
       },
       {
         "name": "Enel",
@@ -23534,8 +23624,20 @@
       {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "",
-        "full_text": "Gan Fall"
+        "note": "flashback",
+        "full_text": "Gan Fall (flashback)"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       }
     ]
   },
@@ -23573,18 +23675,6 @@
         "full_text": "Sanji"
       },
       {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
-      },
-      {
         "name": "Enel",
         "url": "/wiki/Enel",
         "note": "",
@@ -23593,8 +23683,14 @@
       {
         "name": "Shura",
         "url": "/wiki/Shura",
-        "note": "",
-        "full_text": "Shura"
+        "note": "K.O.",
+        "full_text": "Shura (K.O.)"
+      },
+      {
+        "name": "Satori",
+        "url": "/wiki/Satori",
+        "note": "flashback",
+        "full_text": "Satori (flashback)"
       },
       {
         "name": "Yama",
@@ -23603,22 +23699,16 @@
         "full_text": "Yama"
       },
       {
+        "name": "Gode",
+        "url": "/wiki/Gode",
+        "note": "",
+        "full_text": "Gode"
+      },
+      {
         "name": "Fuza",
         "url": "/wiki/Fuza",
         "note": "",
         "full_text": "Fuza"
-      },
-      {
-        "name": "Gan Fall",
-        "url": "/wiki/Gan_Fall",
-        "note": "",
-        "full_text": "Gan Fall"
-      },
-      {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "",
-        "full_text": "Pierre"
       },
       {
         "name": "Wyper",
@@ -23649,6 +23739,24 @@
         "url": "/wiki/Raki",
         "note": "",
         "full_text": "Raki"
+      },
+      {
+        "name": "Gan Fall",
+        "url": "/wiki/Gan_Fall",
+        "note": "",
+        "full_text": "Gan Fall"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       }
     ]
   },
@@ -23686,18 +23794,6 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
-      },
-      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
         "note": "",
@@ -23708,6 +23804,18 @@
         "url": "/wiki/Braham",
         "note": "",
         "full_text": "Braham"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       }
     ]
   },
@@ -23798,6 +23906,12 @@
         "full_text": "Monkey D. Luffy"
       },
       {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "cover",
+        "full_text": "Roronoa Zoro (cover)"
+      },
+      {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "",
@@ -23812,8 +23926,20 @@
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "cover",
+        "full_text": "Tony Tony Chopper (cover)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "cover",
+        "full_text": "Nico Robin (cover)"
       },
       {
         "name": "Enel",
@@ -23822,10 +23948,22 @@
         "full_text": "Enel"
       },
       {
+        "name": "Hotori and Kotori",
+        "url": "/wiki/Hotori_and_Kotori",
+        "note": "",
+        "full_text": "Hotori and Kotori"
+      },
+      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
         "note": "",
         "full_text": "Gan Fall"
+      },
+      {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "",
+        "full_text": "Pierre"
       },
       {
         "name": "Wyper",
@@ -23859,14 +23997,14 @@
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "KO",
-        "full_text": "Usopp (KO)"
+        "note": "K.O.",
+        "full_text": "Usopp (K.O.)"
       },
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
@@ -23879,24 +24017,6 @@
         "url": "/wiki/Nico_Robin",
         "note": "",
         "full_text": "Nico Robin"
-      },
-      {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "cover",
-        "full_text": "Wapol (cover)"
-      },
-      {
-        "name": "Miss Universe",
-        "url": "/wiki/Kinderella",
-        "note": "cover",
-        "full_text": "Miss Universe (cover)"
-      },
-      {
-        "name": "Hakowan",
-        "url": "/wiki/Hakowan",
-        "note": "cover",
-        "full_text": "Hakowan (cover)"
       },
       {
         "name": "Gedatsu",
@@ -23939,6 +24059,24 @@
         "url": "/wiki/Pierre",
         "note": "",
         "full_text": "Pierre"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "cover",
+        "full_text": "Wapol (cover)"
+      },
+      {
+        "name": "Miss Universe",
+        "url": "/wiki/Kinderella",
+        "note": "cover",
+        "full_text": "Miss Universe (cover)"
+      },
+      {
+        "name": "Hakowan",
+        "url": "/wiki/Hakowan",
+        "note": "cover",
+        "full_text": "Hakowan (cover)"
       }
     ]
   },
@@ -24001,14 +24139,14 @@
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "K.O",
-        "full_text": "Usopp (K.O)"
+        "note": "K.O.",
+        "full_text": "Usopp (K.O.)"
       },
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "K.O",
-        "full_text": "Sanji (K.O)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
@@ -24031,8 +24169,8 @@
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "K.O",
-        "full_text": "Gedatsu (K.O)"
+        "note": "",
+        "full_text": "Gedatsu"
       },
       {
         "name": "Yama",
@@ -24096,14 +24234,14 @@
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "KO",
-        "full_text": "Usopp (KO)"
+        "note": "K.O.",
+        "full_text": "Usopp (K.O.)"
       },
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
@@ -24302,6 +24440,12 @@
         "full_text": "Nico Robin"
       },
       {
+        "name": "Enel",
+        "url": "/wiki/Enel",
+        "note": "flashback",
+        "full_text": "Enel (flashback)"
+      },
+      {
         "name": "Ohm",
         "url": "/wiki/Ohm",
         "note": "",
@@ -24316,8 +24460,8 @@
       {
         "name": "Kamakiri",
         "url": "/wiki/Kamakiri",
-        "note": "KO",
-        "full_text": "Kamakiri (KO)"
+        "note": "",
+        "full_text": "Kamakiri"
       },
       {
         "name": "Raki",
@@ -24363,8 +24507,8 @@
       {
         "name": "Enel",
         "url": "/wiki/Enel",
-        "note": "Flashback",
-        "full_text": "Enel (Flashback)"
+        "note": "flashback",
+        "full_text": "Enel (flashback)"
       },
       {
         "name": "Ohm",
@@ -24381,8 +24525,8 @@
       {
         "name": "Gode",
         "url": "/wiki/Gode",
-        "note": "Flashback",
-        "full_text": "Gode (Flashback)"
+        "note": "K.O.",
+        "full_text": "Gode (K.O.)"
       },
       {
         "name": "Wyper",
@@ -24421,10 +24565,10 @@
         "full_text": "Pagaya"
       },
       {
-        "name": "King of the Sky",
+        "name": "Master of the Sky",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "King of the Sky"
+        "full_text": "Master of the Sky"
       }
     ]
   },
@@ -24437,6 +24581,12 @@
     "release_date": "March 10, 2003",
     "jump_info": "2003 Issue 15",
     "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
@@ -24452,8 +24602,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -24474,16 +24624,16 @@
         "full_text": "Holy"
       },
       {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
-      },
-      {
         "name": "Wyper",
         "url": "/wiki/Wyper",
         "note": "",
         "full_text": "Wyper"
+      },
+      {
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
+        "note": "",
+        "full_text": "Aisa"
       },
       {
         "name": "Gan Fall",
@@ -24498,10 +24648,10 @@
         "full_text": "Pierre"
       },
       {
-        "name": "King of the Sky",
+        "name": "Master of the Sky",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "King of the Sky"
+        "full_text": "Master of the Sky"
       }
     ]
   },
@@ -24543,6 +24693,24 @@
         "url": "/wiki/Sanji",
         "note": "K.O.",
         "full_text": "Sanji (K.O.)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "cover",
+        "full_text": "Tony Tony Chopper (cover)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "cover",
+        "full_text": "Nico Robin (cover)"
+      },
+      {
+        "name": "Enel",
+        "url": "/wiki/Enel",
+        "note": "",
+        "full_text": "Enel"
       },
       {
         "name": "Ohm",
@@ -24659,10 +24827,10 @@
         "full_text": "Su"
       },
       {
-        "name": "King of the Sky",
+        "name": "Master of the Sky",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "King of the Sky"
+        "full_text": "Master of the Sky"
       }
     ]
   },
@@ -24736,6 +24904,24 @@
         "full_text": "Aisa"
       },
       {
+        "name": "Yotsubane",
+        "url": "/wiki/Yotsubane",
+        "note": "",
+        "full_text": "Yotsubane"
+      },
+      {
+        "name": "Mayushika",
+        "url": "/wiki/Mayushika",
+        "note": "",
+        "full_text": "Mayushika"
+      },
+      {
+        "name": "Warashi",
+        "url": "/wiki/Warashi",
+        "note": "",
+        "full_text": "Warashi"
+      },
+      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
         "note": "",
@@ -24748,10 +24934,10 @@
         "full_text": "Pierre"
       },
       {
-        "name": "King of the Sky",
+        "name": "Master of the Sky",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "King of the Sky"
+        "full_text": "Master of the Sky"
       }
     ]
   },
@@ -24807,6 +24993,18 @@
         "full_text": "Aisa"
       },
       {
+        "name": "Mayushika",
+        "url": "/wiki/Mayushika",
+        "note": "",
+        "full_text": "Mayushika"
+      },
+      {
+        "name": "Warashi",
+        "url": "/wiki/Warashi",
+        "note": "",
+        "full_text": "Warashi"
+      },
+      {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
         "note": "",
@@ -24819,10 +25017,10 @@
         "full_text": "Pierre"
       },
       {
-        "name": "King of the Sky",
+        "name": "Master of the Sky",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "King of the Sky"
+        "full_text": "Master of the Sky"
       },
       {
         "name": "Nefertari Vivi",
@@ -24862,20 +25060,20 @@
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "KO",
-        "full_text": "Usopp (KO)"
+        "note": "K.O.",
+        "full_text": "Usopp (K.O.)"
       },
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -24886,8 +25084,8 @@
       {
         "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
-        "note": "cover; silhouette",
-        "full_text": "Portgas D. Ace (cover; silhouette)"
+        "note": "cover; shadowed",
+        "full_text": "Portgas D. Ace (cover; shadowed)"
       },
       {
         "name": "Enel",
@@ -24898,8 +25096,8 @@
       {
         "name": "Ohm",
         "url": "/wiki/Ohm",
-        "note": "KO",
-        "full_text": "Ohm (KO)"
+        "note": "K.O.",
+        "full_text": "Ohm (K.O.)"
       },
       {
         "name": "Holy",
@@ -24938,10 +25136,10 @@
         "full_text": "Su"
       },
       {
-        "name": "King  of the Sky",
+        "name": "Master of the Sky",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "King  of the Sky"
+        "full_text": "Master of the Sky"
       }
     ]
   },
@@ -24975,8 +25173,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -24985,10 +25183,10 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Ace",
+        "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
         "note": "cover",
-        "full_text": "Ace (cover)"
+        "full_text": "Portgas D. Ace (cover)"
       },
       {
         "name": "Enel",
@@ -25021,10 +25219,10 @@
         "full_text": "Pierre"
       },
       {
-        "name": "King of the Sky",
+        "name": "Master of the Sky",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "King of the Sky"
+        "full_text": "Master of the Sky"
       }
     ]
   },
@@ -25038,6 +25236,12 @@
     "jump_info": "2003 Issue 22-23",
     "characters": [
       {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "cover",
+        "full_text": "Monkey D. Luffy (cover)"
+      },
+      {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "",
@@ -25050,10 +25254,22 @@
         "full_text": "Nami"
       },
       {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "cover",
+        "full_text": "Usopp (cover)"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "cover",
+        "full_text": "Sanji (cover)"
+      },
+      {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -25070,32 +25286,32 @@
       {
         "name": "Ohm",
         "url": "/wiki/Ohm",
-        "note": "Flashback",
-        "full_text": "Ohm (Flashback)"
+        "note": "flashback",
+        "full_text": "Ohm (flashback)"
       },
       {
         "name": "Shura",
         "url": "/wiki/Shura",
-        "note": "Flashback",
-        "full_text": "Shura (Flashback)"
+        "note": "flashback",
+        "full_text": "Shura (flashback)"
       },
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "Flashback",
-        "full_text": "Gedatsu (Flashback)"
+        "note": "flashback",
+        "full_text": "Gedatsu (flashback)"
       },
       {
         "name": "Satori",
         "url": "/wiki/Satori",
-        "note": "Flashback",
-        "full_text": "Satori (Flashback)"
+        "note": "flashback",
+        "full_text": "Satori (flashback)"
       },
       {
         "name": "Moyle",
         "url": "/wiki/Moyle",
-        "note": "Flashback",
-        "full_text": "Moyle (Flashback)"
+        "note": "flashback",
+        "full_text": "Moyle (flashback)"
       },
       {
         "name": "Wyper",
@@ -25112,8 +25328,8 @@
       {
         "name": "Pierre",
         "url": "/wiki/Pierre",
-        "note": "Flashback",
-        "full_text": "Pierre (Flashback)"
+        "note": "flashback",
+        "full_text": "Pierre (flashback)"
       },
       {
         "name": "Conis",
@@ -25153,14 +25369,14 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "KO",
-        "full_text": "Nico Robin (KO)"
+        "note": "K.O.",
+        "full_text": "Nico Robin (K.O.)"
       },
       {
         "name": "Portgas D. Ace",
@@ -25177,8 +25393,8 @@
       {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "KO",
-        "full_text": "Gan Fall (KO)"
+        "note": "K.O.",
+        "full_text": "Gan Fall (K.O.)"
       },
       {
         "name": "Wyper",
@@ -25189,32 +25405,32 @@
       {
         "name": "Braham",
         "url": "/wiki/Braham",
-        "note": "",
-        "full_text": "Braham"
+        "note": "K.O.",
+        "full_text": "Braham (K.O.)"
       },
       {
         "name": "Kamakiri",
         "url": "/wiki/Kamakiri",
-        "note": "",
-        "full_text": "Kamakiri"
+        "note": "K.O.",
+        "full_text": "Kamakiri (K.O.)"
       },
       {
         "name": "Genbo",
         "url": "/wiki/Genbo",
-        "note": "",
-        "full_text": "Genbo"
+        "note": "K.O.",
+        "full_text": "Genbo (K.O.)"
       },
       {
         "name": "Raki",
         "url": "/wiki/Raki",
-        "note": "",
-        "full_text": "Raki"
+        "note": "K.O.",
+        "full_text": "Raki (K.O.)"
       },
       {
         "name": "Shandia Chief",
         "url": "/wiki/Shandia_Chief",
-        "note": "",
-        "full_text": "Shandia Chief"
+        "note": "flashback",
+        "full_text": "Shandia Chief (flashback)"
       }
     ]
   },
@@ -25319,8 +25535,8 @@
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "KO",
-        "full_text": "Roronoa Zoro (KO)"
+        "note": "K.O.",
+        "full_text": "Roronoa Zoro (K.O.)"
       },
       {
         "name": "Nami",
@@ -25331,8 +25547,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -25347,12 +25563,6 @@
         "full_text": "Portgas D. Ace (cover)"
       },
       {
-        "name": "Kurotsuru",
-        "url": "/wiki/Kurotsuru",
-        "note": "cover",
-        "full_text": "Kurotsuru (cover)"
-      },
-      {
         "name": "Enel",
         "url": "/wiki/Enel",
         "note": "",
@@ -25361,8 +25571,8 @@
       {
         "name": "Wyper",
         "url": "/wiki/Wyper",
-        "note": "KO",
-        "full_text": "Wyper (KO)"
+        "note": "K.O.",
+        "full_text": "Wyper (K.O.)"
       },
       {
         "name": "Aisa",
@@ -25373,8 +25583,8 @@
       {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "KO",
-        "full_text": "Gan Fall (KO)"
+        "note": "K.O.",
+        "full_text": "Gan Fall (K.O.)"
       },
       {
         "name": "Pierre",
@@ -25389,16 +25599,16 @@
         "full_text": "Conis"
       },
       {
-        "name": "McKinley",
-        "url": "/wiki/McKinley",
-        "note": "",
-        "full_text": "McKinley"
+        "name": "Master of the Sky",
+        "url": "/wiki/Nola",
+        "note": "K.O.",
+        "full_text": "Master of the Sky (K.O.)"
       },
       {
-        "name": "King of the Sky",
-        "url": "/wiki/Nola",
-        "note": "KO",
-        "full_text": "King of the Sky (KO)"
+        "name": "Kurotsuru",
+        "url": "/wiki/Kurotsuru",
+        "note": "cover",
+        "full_text": "Kurotsuru (cover)"
       }
     ]
   },
@@ -25420,8 +25630,8 @@
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "KO",
-        "full_text": "Roronoa Zoro (KO)"
+        "note": "K.O.",
+        "full_text": "Roronoa Zoro (K.O.)"
       },
       {
         "name": "Nami",
@@ -25432,8 +25642,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -25442,10 +25652,10 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Ace",
+        "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
         "note": "cover",
-        "full_text": "Ace (cover)"
+        "full_text": "Portgas D. Ace (cover)"
       },
       {
         "name": "Enel",
@@ -25456,8 +25666,8 @@
       {
         "name": "Wyper",
         "url": "/wiki/Wyper",
-        "note": "KO",
-        "full_text": "Wyper (KO)"
+        "note": "K.O.",
+        "full_text": "Wyper (K.O.)"
       },
       {
         "name": "Aisa",
@@ -25468,8 +25678,8 @@
       {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "KO",
-        "full_text": "Gan Fall (KO)"
+        "note": "K.O.",
+        "full_text": "Gan Fall (K.O.)"
       },
       {
         "name": "Pierre",
@@ -25486,20 +25696,14 @@
       {
         "name": "Pagaya",
         "url": "/wiki/Pagaya",
-        "note": "Flashback",
-        "full_text": "Pagaya (Flashback)"
+        "note": "flashback",
+        "full_text": "Pagaya (flashback)"
       },
       {
         "name": "McKinley",
         "url": "/wiki/McKinley",
         "note": "",
         "full_text": "McKinley"
-      },
-      {
-        "name": "Mochi",
-        "url": "/wiki/Mochi",
-        "note": "",
-        "full_text": "Mochi"
       },
       {
         "name": "Moda",
@@ -25531,10 +25735,10 @@
         "full_text": "Nami"
       },
       {
-        "name": "Ace",
+        "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
         "note": "cover",
-        "full_text": "Ace (cover)"
+        "full_text": "Portgas D. Ace (cover)"
       },
       {
         "name": "Enel",
@@ -25569,8 +25773,8 @@
       {
         "name": "Moyle",
         "url": "/wiki/Moyle",
-        "note": "Flashback",
-        "full_text": "Moyle (Flashback)"
+        "note": "flashback",
+        "full_text": "Moyle (flashback)"
       },
       {
         "name": "Moda",
@@ -25602,10 +25806,10 @@
         "full_text": "Nami"
       },
       {
-        "name": "Ace",
+        "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
         "note": "cover",
-        "full_text": "Ace (cover)"
+        "full_text": "Portgas D. Ace (cover)"
       },
       {
         "name": "Enel",
@@ -25655,10 +25859,10 @@
         "full_text": "Nami"
       },
       {
-        "name": "Ace",
+        "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
         "note": "cover",
-        "full_text": "Ace (cover)"
+        "full_text": "Portgas D. Ace (cover)"
       },
       {
         "name": "Enel",
@@ -25720,6 +25924,101 @@
         "full_text": "Monkey D. Luffy"
       },
       {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "url": "/wiki/Portgas_D._Ace",
+        "note": "cover",
+        "full_text": "Portgas D. Ace (cover)"
+      },
+      {
+        "name": "Enel",
+        "url": "/wiki/Enel",
+        "note": "",
+        "full_text": "Enel"
+      },
+      {
+        "name": "Aisa",
+        "url": "/wiki/Aisa",
+        "note": "",
+        "full_text": "Aisa"
+      },
+      {
+        "name": "Gan Fall",
+        "url": "/wiki/Gan_Fall",
+        "note": "K.O.",
+        "full_text": "Gan Fall (K.O.)"
+      },
+      {
+        "name": "Pierre",
+        "url": "/wiki/Pierre",
+        "note": "",
+        "full_text": "Pierre"
+      },
+      {
+        "name": "Conis",
+        "url": "/wiki/Conis",
+        "note": "",
+        "full_text": "Conis"
+      },
+      {
+        "name": "Pagaya",
+        "url": "/wiki/Pagaya",
+        "note": "flashback",
+        "full_text": "Pagaya (flashback)"
+      },
+      {
+        "name": "Su",
+        "url": "/wiki/Su",
+        "note": "",
+        "full_text": "Su"
+      }
+    ]
+  },
+  {
+    "chapter_number": 283,
+    "volume": "30",
+    "chapter_display": "283",
+    "title": "On the Front Line of Rescuing Love",
+    "pages": "19",
+    "release_date": "July 7, 2003",
+    "jump_info": "2003 Issue 32",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
         "note": "K.O.",
@@ -25756,105 +26055,10 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Ace",
+        "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
         "note": "cover",
-        "full_text": "Ace (cover)"
-      },
-      {
-        "name": "Enel",
-        "url": "/wiki/Enel",
-        "note": "",
-        "full_text": "Enel"
-      },
-      {
-        "name": "Aisa",
-        "url": "/wiki/Aisa",
-        "note": "",
-        "full_text": "Aisa"
-      },
-      {
-        "name": "Pierre",
-        "url": "/wiki/Pierre",
-        "note": "",
-        "full_text": "Pierre"
-      },
-      {
-        "name": "Conis",
-        "url": "/wiki/Conis",
-        "note": "",
-        "full_text": "Conis"
-      },
-      {
-        "name": "Pagaya",
-        "url": "/wiki/Pagaya",
-        "note": "Flashback",
-        "full_text": "Pagaya (Flashback)"
-      },
-      {
-        "name": "Su",
-        "url": "/wiki/Su",
-        "note": "",
-        "full_text": "Su"
-      }
-    ]
-  },
-  {
-    "chapter_number": 283,
-    "volume": "30",
-    "chapter_display": "283",
-    "title": "On the Front Line of Rescuing Love",
-    "pages": "19",
-    "release_date": "July 7, 2003",
-    "jump_info": "2003 Issue 32",
-    "characters": [
-      {
-        "name": "Monkey D. Luffy",
-        "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
-        "full_text": "Monkey D. Luffy"
-      },
-      {
-        "name": "Roronoa Zoro",
-        "url": "/wiki/Roronoa_Zoro",
-        "note": "KO",
-        "full_text": "Roronoa Zoro (KO)"
-      },
-      {
-        "name": "Nami",
-        "url": "/wiki/Nami",
-        "note": "",
-        "full_text": "Nami"
-      },
-      {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Usopp"
-      },
-      {
-        "name": "Sanji",
-        "url": "/wiki/Sanji",
-        "note": "",
-        "full_text": "Sanji"
-      },
-      {
-        "name": "Tony Tony Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
-      },
-      {
-        "name": "Nico Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Nico Robin"
-      },
-      {
-        "name": "Ace",
-        "url": "/wiki/Portgas_D._Ace",
-        "note": "cover",
-        "full_text": "Ace (cover)"
+        "full_text": "Portgas D. Ace (cover)"
       },
       {
         "name": "Enel",
@@ -25865,8 +26069,8 @@
       {
         "name": "Wyper",
         "url": "/wiki/Wyper",
-        "note": "KO",
-        "full_text": "Wyper (KO)"
+        "note": "K.O.",
+        "full_text": "Wyper (K.O.)"
       },
       {
         "name": "Aisa",
@@ -25883,14 +26087,14 @@
       {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "KO",
-        "full_text": "Gan Fall (KO)"
+        "note": "K.O.",
+        "full_text": "Gan Fall (K.O.)"
       },
       {
         "name": "Pierre",
         "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "note": "K.O.",
+        "full_text": "Pierre (K.O.)"
       },
       {
         "name": "Conis",
@@ -25983,8 +26187,8 @@
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "KO",
-        "full_text": "Roronoa Zoro (KO)"
+        "note": "K.O.",
+        "full_text": "Roronoa Zoro (K.O.)"
       },
       {
         "name": "Nami",
@@ -26001,14 +26205,14 @@
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -26017,10 +26221,10 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Ace",
+        "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
         "note": "cover",
-        "full_text": "Ace (cover)"
+        "full_text": "Portgas D. Ace (cover)"
       },
       {
         "name": "Enel",
@@ -26031,14 +26235,20 @@
       {
         "name": "Wyper",
         "url": "/wiki/Wyper",
-        "note": "KO",
-        "full_text": "Wyper (KO)"
+        "note": "K.O.",
+        "full_text": "Wyper (K.O.)"
       },
       {
         "name": "Aisa",
         "url": "/wiki/Aisa",
         "note": "",
         "full_text": "Aisa"
+      },
+      {
+        "name": "Isa",
+        "url": "/wiki/Isa",
+        "note": "",
+        "full_text": "Isa"
       },
       {
         "name": "Shandia Chief",
@@ -26049,14 +26259,14 @@
       {
         "name": "Gan Fall",
         "url": "/wiki/Gan_Fall",
-        "note": "KO",
-        "full_text": "Gan Fall (KO)"
+        "note": "K.O.",
+        "full_text": "Gan Fall (K.O.)"
       },
       {
         "name": "Pierre",
         "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "note": "K.O.",
+        "full_text": "Pierre (K.O.)"
       },
       {
         "name": "Conis",
@@ -26120,14 +26330,14 @@
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -26180,8 +26390,8 @@
       {
         "name": "Pierre",
         "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "note": "K.O.",
+        "full_text": "Pierre (K.O.)"
       },
       {
         "name": "Amazon",
@@ -26208,10 +26418,16 @@
         "full_text": "McKinley"
       },
       {
+        "name": "Koda",
+        "url": "/wiki/Koda",
+        "note": "cover",
+        "full_text": "Koda (cover)"
+      },
+      {
         "name": "Mont Blanc Noland",
         "url": "/wiki/Mont_Blanc_Noland",
-        "note": "Flashback",
-        "full_text": "Mont Blanc Noland (Flashback)"
+        "note": "flashback",
+        "full_text": "Mont Blanc Noland (flashback)"
       }
     ]
   },
@@ -26233,8 +26449,8 @@
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "",
-        "full_text": "Roronoa Zoro (cover"
+        "note": "cover",
+        "full_text": "Roronoa Zoro (cover)"
       },
       {
         "name": "Nami",
@@ -26433,6 +26649,12 @@
         "full_text": "Honner"
       },
       {
+        "name": "Portgas D. Ace",
+        "url": "/wiki/Portgas_D._Ace",
+        "note": "cover",
+        "full_text": "Portgas D. Ace (cover)"
+      },
+      {
         "name": "Comil",
         "url": "/wiki/Comil",
         "note": "cover",
@@ -26474,10 +26696,10 @@
         "full_text": "Coburn"
       },
       {
-        "name": "King of the Sky",
+        "name": "Master of the Sky",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "Baby King of the Sky"
+        "full_text": "Master of the Sky"
       },
       {
         "name": "Mont Blanc Noland",
@@ -26533,16 +26755,22 @@
         "full_text": "Coburn"
       },
       {
+        "name": "Herb",
+        "url": "/wiki/Herb",
+        "note": "flashback",
+        "full_text": "Herb (flashback)"
+      },
+      {
+        "name": "Master of the Sky",
+        "url": "/wiki/Nola",
+        "note": "",
+        "full_text": "Master of the Sky"
+      },
+      {
         "name": "Mont Blanc Noland",
         "url": "/wiki/Mont_Blanc_Noland",
         "note": "",
         "full_text": "Mont Blanc Noland"
-      },
-      {
-        "name": "King of the Sky",
-        "url": "/wiki/Nola",
-        "note": "",
-        "full_text": "Baby King of the Sky"
       },
       {
         "name": "Honner",
@@ -26589,7 +26817,7 @@
         "name": "Nola",
         "url": "/wiki/Nola",
         "note": "",
-        "full_text": "Baby Nola"
+        "full_text": "Nola"
       },
       {
         "name": "Aruyutayan V",
@@ -26647,14 +26875,14 @@
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -26671,8 +26899,8 @@
       {
         "name": "Moyle",
         "url": "/wiki/Moyle",
-        "note": "Flashback",
-        "full_text": "Moyle (Flashback)"
+        "note": "flashback",
+        "full_text": "Moyle (flashback)"
       },
       {
         "name": "Wyper",
@@ -26681,22 +26909,22 @@
         "full_text": "Wyper"
       },
       {
-        "name": "Shandia Chief",
-        "url": "/wiki/Shandia_Chief",
-        "note": "flashback",
-        "full_text": "Shandia Chief (flashback)"
-      },
-      {
-        "name": "Kalgara",
-        "url": "/wiki/Kalgara",
-        "note": "",
-        "full_text": "Kalgara's silhouette"
-      },
-      {
         "name": "Aisa",
         "url": "/wiki/Aisa",
         "note": "",
         "full_text": "Aisa"
+      },
+      {
+        "name": "Shandia Chief",
+        "url": "/wiki/Shandia_Chief",
+        "note": "",
+        "full_text": "Shandia Chief"
+      },
+      {
+        "name": "Kalgara",
+        "url": "/wiki/Kalgara",
+        "note": "flashback",
+        "full_text": "Kalgara (flashback)"
       },
       {
         "name": "Gan Fall",
@@ -26707,8 +26935,8 @@
       {
         "name": "Pierre",
         "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "note": "K.O.",
+        "full_text": "Pierre (K.O.)"
       },
       {
         "name": "Conis",
@@ -26719,8 +26947,8 @@
       {
         "name": "Pagaya",
         "url": "/wiki/Pagaya",
-        "note": "Flashback",
-        "full_text": "Pagaya (Flashback)"
+        "note": "flashback",
+        "full_text": "Pagaya (flashback)"
       },
       {
         "name": "Su",
@@ -26737,8 +26965,14 @@
       {
         "name": "Nola",
         "url": "/wiki/Nola",
-        "note": "KO",
-        "full_text": "Nola (KO)"
+        "note": "K.O.",
+        "full_text": "Nola (K.O.)"
+      },
+      {
+        "name": "Mont Blanc Noland",
+        "url": "/wiki/Mont_Blanc_Noland",
+        "note": "flashback",
+        "full_text": "Mont Blanc Noland (flashback)"
       }
     ]
   },
@@ -26778,14 +27012,14 @@
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "KO",
-        "full_text": "Sanji (KO)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "KO",
-        "full_text": "Tony Tony Chopper (KO)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -26826,8 +27060,8 @@
       {
         "name": "Pierre",
         "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "note": "K.O.",
+        "full_text": "Pierre (K.O.)"
       },
       {
         "name": "Conis",
@@ -26842,16 +27076,22 @@
         "full_text": "Su"
       },
       {
-        "name": "Mont Blanc Cricket",
-        "url": "/wiki/Mont_Blanc_Cricket",
-        "note": "Flashback",
-        "full_text": "Mont Blanc Cricket (Flashback)"
-      },
-      {
         "name": "Comil",
         "url": "/wiki/Comil",
         "note": "cover",
         "full_text": "Comil (cover)"
+      },
+      {
+        "name": "Mont Blanc Cricket",
+        "url": "/wiki/Mont_Blanc_Cricket",
+        "note": "flashback",
+        "full_text": "Mont Blanc Cricket (flashback)"
+      },
+      {
+        "name": "Mont Blanc Noland",
+        "url": "/wiki/Mont_Blanc_Noland",
+        "note": "image",
+        "full_text": "Mont Blanc Noland (image)"
       }
     ]
   },
@@ -26945,8 +27185,8 @@
       {
         "name": "Nola",
         "url": "/wiki/Nola",
-        "note": "Flashback",
-        "full_text": "Nola (Flashback)"
+        "note": "flashback",
+        "full_text": "Nola (flashback)"
       },
       {
         "name": "Mont Blanc Cricket",
@@ -26998,14 +27238,14 @@
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "K.O",
-        "full_text": "Sanji (K.O)"
+        "note": "K.O.",
+        "full_text": "Sanji (K.O.)"
       },
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O",
-        "full_text": "Tony Tony Chopper (K.O)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -27040,8 +27280,8 @@
       {
         "name": "Pierre",
         "url": "/wiki/Pierre",
-        "note": "KO",
-        "full_text": "Pierre (KO)"
+        "note": "K.O.",
+        "full_text": "Pierre (K.O.)"
       },
       {
         "name": "Conis",
@@ -27276,12 +27516,6 @@
         "full_text": "Portgas D. Ace (cover)"
       },
       {
-        "name": "Comil",
-        "url": "/wiki/Comil",
-        "note": "cover",
-        "full_text": "Comil (cover)"
-      },
-      {
         "name": "Enel",
         "url": "/wiki/Enel",
         "note": "",
@@ -27342,16 +27576,22 @@
         "full_text": "McKinley"
       },
       {
-        "name": "Mont Blanc Noland",
-        "url": "/wiki/Mont_Blanc_Noland",
-        "note": "flashback",
-        "full_text": "Mont Blanc Noland (flashback)"
+        "name": "Comil",
+        "url": "/wiki/Comil",
+        "note": "cover",
+        "full_text": "Comil (cover)"
       },
       {
         "name": "Mont Blanc Cricket",
         "url": "/wiki/Mont_Blanc_Cricket",
         "note": "flashback",
         "full_text": "Mont Blanc Cricket (flashback)"
+      },
+      {
+        "name": "Mont Blanc Noland",
+        "url": "/wiki/Mont_Blanc_Noland",
+        "note": "flashback",
+        "full_text": "Mont Blanc Noland (flashback)"
       }
     ]
   },
@@ -27431,18 +27671,6 @@
         "full_text": "Utan Divers"
       },
       {
-        "name": "Comil",
-        "url": "/wiki/Comil",
-        "note": "cover",
-        "full_text": "Comil (cover)"
-      },
-      {
-        "name": "Moda",
-        "url": "/wiki/Moda",
-        "note": "cover",
-        "full_text": "Moda (cover) (photograph)"
-      },
-      {
         "name": "Enel",
         "url": "/wiki/Enel",
         "note": "K.O.",
@@ -27513,6 +27741,18 @@
         "url": "/wiki/South_Bird",
         "note": "",
         "full_text": "South Birds"
+      },
+      {
+        "name": "Comil",
+        "url": "/wiki/Comil",
+        "note": "cover",
+        "full_text": "Comil (cover)"
+      },
+      {
+        "name": "Moda",
+        "url": "/wiki/Moda",
+        "note": "cover; photo",
+        "full_text": "Moda (cover; photo)"
       },
       {
         "name": "Mont Blanc Noland",
@@ -27759,10 +27999,10 @@
         "full_text": "Tony Tony Chopper"
       },
       {
-        "name": "Robin",
+        "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
-        "full_text": "Robin"
+        "full_text": "Nico Robin"
       },
       {
         "name": "Gan Fall",
@@ -27803,8 +28043,8 @@
       {
         "name": "Nola",
         "url": "/wiki/Nola",
-        "note": "Asleep",
-        "full_text": "Nola (Asleep)"
+        "note": "asleep",
+        "full_text": "Nola (asleep)"
       }
     ]
   },
@@ -27858,18 +28098,6 @@
         "url": "/wiki/Nico_Robin",
         "note": "",
         "full_text": "Nico Robin"
-      },
-      {
-        "name": "Koda",
-        "url": "/wiki/Koda",
-        "note": "cover",
-        "full_text": "Koda (cover)"
-      },
-      {
-        "name": "Kyuji",
-        "url": "/wiki/Kyuji",
-        "note": "cover",
-        "full_text": "Kyuji (cover)"
       },
       {
         "name": "Gan Fall",
@@ -27954,6 +28182,18 @@
         "url": "/wiki/Shandia_Chief",
         "note": "",
         "full_text": "Shandia Chief"
+      },
+      {
+        "name": "Koda",
+        "url": "/wiki/Koda",
+        "note": "cover",
+        "full_text": "Koda (cover)"
+      },
+      {
+        "name": "Kyuji",
+        "url": "/wiki/Kyuji",
+        "note": "cover",
+        "full_text": "Kyuji (cover)"
       },
       {
         "name": "Moda",
@@ -28129,10 +28369,10 @@
         "full_text": "Ethanbaron V. Nusjuro"
       },
       {
-        "name": "Shepherd Ju Peter",
-        "url": "/wiki/Shepherd_Ju_Peter",
-        "note": "",
-        "full_text": "Shepherd Ju Peter"
+        "name": "Moda",
+        "url": "/wiki/Moda",
+        "note": "cover; photo",
+        "full_text": "Moda (cover; photo)"
       }
     ]
   },
@@ -28235,10 +28475,10 @@
         "full_text": "Portgas D. Ace (cover)"
       },
       {
-        "name": "Foxy the Silver Fox",
+        "name": "Foxy",
         "url": "/wiki/Foxy",
         "note": "",
-        "full_text": "Foxy the Silver Fox"
+        "full_text": "Foxy"
       },
       {
         "name": "Porche",
@@ -28253,16 +28493,16 @@
         "full_text": "Hamburg"
       },
       {
-        "name": "Shelly",
-        "url": "/wiki/Shelly",
-        "note": "",
-        "full_text": "Shelly"
-      },
-      {
         "name": "Tonjit",
         "url": "/wiki/Tonjit",
         "note": "",
         "full_text": "Tonjit"
+      },
+      {
+        "name": "Shelly",
+        "url": "/wiki/Shelly",
+        "note": "",
+        "full_text": "Shelly"
       }
     ]
   },
@@ -28318,10 +28558,10 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Foxy the Silver Fox",
+        "name": "Foxy",
         "url": "/wiki/Foxy",
         "note": "",
-        "full_text": "Foxy the Silver Fox"
+        "full_text": "Foxy"
       },
       {
         "name": "Porche",
@@ -28366,16 +28606,16 @@
         "full_text": "Monda"
       },
       {
-        "name": "Shelly",
-        "url": "/wiki/Shelly",
-        "note": "",
-        "full_text": "Shelly"
-      },
-      {
         "name": "Tonjit",
         "url": "/wiki/Tonjit",
         "note": "",
         "full_text": "Tonjit"
+      },
+      {
+        "name": "Shelly",
+        "url": "/wiki/Shelly",
+        "note": "",
+        "full_text": "Shelly"
       }
     ]
   },
@@ -29007,6 +29247,12 @@
         "full_text": "Sanji"
       },
       {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
@@ -29039,26 +29285,32 @@
       {
         "name": "Hamburg",
         "url": "/wiki/Hamburg",
-        "note": "K.O",
-        "full_text": "Hamburg (K.O)"
-      },
-      {
-        "name": "Big Pan",
-        "url": "/wiki/Big_Pan",
-        "note": "K.O",
-        "full_text": "Big Pan (K.O)"
+        "note": "K.O.",
+        "full_text": "Hamburg (K.O.)"
       },
       {
         "name": "Pickles",
         "url": "/wiki/Pickles",
-        "note": "K.O",
-        "full_text": "Pickles (K.O)"
+        "note": "K.O.",
+        "full_text": "Pickles (K.O.)"
       },
       {
-        "name": "Tony Tony Chopper",
-        "url": "/wiki/Tony_Tony_Chopper",
+        "name": "Big Pan",
+        "url": "/wiki/Big_Pan",
+        "note": "K.O.",
+        "full_text": "Big Pan (K.O.)"
+      },
+      {
+        "name": "George Mach",
+        "url": "/wiki/George_Mach",
         "note": "",
-        "full_text": "Tony Tony Chopper"
+        "full_text": "George Mach"
+      },
+      {
+        "name": "Mountain Ricky",
+        "url": "/wiki/Mountain_Ricky",
+        "note": "",
+        "full_text": "Mountain Ricky"
       }
     ]
   },
@@ -29118,6 +29370,12 @@
         "url": "/wiki/Foxy",
         "note": "",
         "full_text": "Foxy"
+      },
+      {
+        "name": "Itomimizu",
+        "url": "/wiki/Itomimizu",
+        "note": "voice",
+        "full_text": "Itomimizu (voice)"
       },
       {
         "name": "Gedatsu",
@@ -29349,6 +29607,12 @@
         "url": "/wiki/Itomimizu",
         "note": "",
         "full_text": "Itomimizu"
+      },
+      {
+        "name": "Chuchun",
+        "url": "/wiki/Chuchun",
+        "note": "",
+        "full_text": "Chuchun"
       }
     ]
   },
@@ -29410,12 +29674,6 @@
         "full_text": "Foxy"
       },
       {
-        "name": "Itomimizu",
-        "url": "/wiki/Itomimizu",
-        "note": "",
-        "full_text": "Itomimizu"
-      },
-      {
         "name": "Porche",
         "url": "/wiki/Porche",
         "note": "",
@@ -29426,6 +29684,12 @@
         "url": "/wiki/Hamburg",
         "note": "",
         "full_text": "Hamburg"
+      },
+      {
+        "name": "Itomimizu",
+        "url": "/wiki/Itomimizu",
+        "note": "",
+        "full_text": "Itomimizu"
       },
       {
         "name": "Chuchun",
@@ -29567,14 +29831,14 @@
       {
         "name": "Kizaru",
         "url": "/wiki/Borsalino",
-        "note": "shadowed",
-        "full_text": "Kizaru (shadowed)"
+        "note": "silhouette",
+        "full_text": "Kizaru (silhouette)"
       },
       {
         "name": "Akainu",
         "url": "/wiki/Sakazuki",
-        "note": "shadowed",
-        "full_text": "Akainu (shadowed)"
+        "note": "silhouette",
+        "full_text": "Akainu (silhouette)"
       },
       {
         "name": "Tonjit",
@@ -29598,7 +29862,7 @@
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
         "note": "cover",
-        "full_text": "Gedatsu(cover)"
+        "full_text": "Gedatsu (cover)"
       },
       {
         "name": "Master of the Waters",
@@ -29668,14 +29932,14 @@
       {
         "name": "Goro",
         "url": "/wiki/Goro",
-        "note": "Cover",
-        "full_text": "Goro (Cover)"
+        "note": "cover",
+        "full_text": "Goro (cover)"
       },
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "Cover",
-        "full_text": "Gedatsu (Cover)"
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
       }
     ]
   },
@@ -29739,14 +30003,14 @@
       {
         "name": "Goro",
         "url": "/wiki/Goro",
-        "note": "Cover",
-        "full_text": "Goro (Cover)"
+        "note": "cover",
+        "full_text": "Goro (cover)"
       },
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "Cover",
-        "full_text": "Gedatsu (Cover)"
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
       }
     ]
   },
@@ -29822,14 +30086,14 @@
       {
         "name": "Goro",
         "url": "/wiki/Goro",
-        "note": "Cover",
-        "full_text": "Goro (Cover)"
+        "note": "cover",
+        "full_text": "Goro (cover)"
       },
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "Cover",
-        "full_text": "Gedatsu (Cover)"
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
       },
       {
         "name": "Yokozuna",
@@ -29897,18 +30161,6 @@
         "full_text": "Mikazuki"
       },
       {
-        "name": "Goro",
-        "url": "/wiki/Goro",
-        "note": "Cover",
-        "full_text": "Goro (Cover)"
-      },
-      {
-        "name": "Gedatsu",
-        "url": "/wiki/Gedatsu",
-        "note": "Cover",
-        "full_text": "Gedatsu (Cover)"
-      },
-      {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
         "note": "",
@@ -29925,6 +30177,18 @@
         "url": "/wiki/Gonbe",
         "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Goro",
+        "url": "/wiki/Goro",
+        "note": "cover",
+        "full_text": "Goro (cover)"
+      },
+      {
+        "name": "Gedatsu",
+        "url": "/wiki/Gedatsu",
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
       },
       {
         "name": "Iceburg",
@@ -30054,14 +30318,14 @@
       {
         "name": "Goro",
         "url": "/wiki/Goro",
-        "note": "Cover",
-        "full_text": "Goro (Cover)"
+        "note": "cover",
+        "full_text": "Goro (cover)"
       },
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "Cover",
-        "full_text": "Gedatsu (Cover)"
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
       }
     ]
   },
@@ -30171,28 +30435,28 @@
         "full_text": "Kaku"
       },
       {
+        "name": "Ishigo Shitemanna",
+        "url": "/wiki/Ishigo_Shitemanna",
+        "note": "",
+        "full_text": "Ishigo Shitemanna"
+      },
+      {
         "name": "Goro",
         "url": "/wiki/Goro",
-        "note": "Cover",
-        "full_text": "Goro (Cover)"
+        "note": "cover",
+        "full_text": "Goro (cover)"
       },
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "Cover",
-        "full_text": "Gedatsu (Cover)"
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
       },
       {
         "name": "Dirt Boss",
         "url": "/wiki/Dirt_Boss",
         "note": "cover",
         "full_text": "Dirt Boss (cover)"
-      },
-      {
-        "name": "Ishigo Shitemanna",
-        "url": "/wiki/Ishigo_Shitemanna",
-        "note": "",
-        "full_text": "Ishigo Shitemanna"
       }
     ]
   },
@@ -30266,6 +30530,12 @@
         "full_text": "Tamagon"
       },
       {
+        "name": "Kop",
+        "url": "/wiki/Kop",
+        "note": "",
+        "full_text": "Kop"
+      },
+      {
         "name": "Mysterious Masked Man",
         "url": "/wiki/Blueno",
         "note": "",
@@ -30304,26 +30574,20 @@
       {
         "name": "Goro",
         "url": "/wiki/Goro",
-        "note": "Cover",
-        "full_text": "Goro (Cover)"
+        "note": "cover",
+        "full_text": "Goro (cover)"
       },
       {
         "name": "Gedatsu",
         "url": "/wiki/Gedatsu",
-        "note": "Cover",
-        "full_text": "Gedatsu (Cover)"
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
       },
       {
         "name": "Dirt Boss",
         "url": "/wiki/Dirt_Boss",
-        "note": "Cover",
-        "full_text": "Dirt Boss (Cover)"
-      },
-      {
-        "name": "Bimine",
-        "url": "/wiki/Bimine",
-        "note": "mentioned",
-        "full_text": "Bimine (mentioned)"
+        "note": "cover",
+        "full_text": "Dirt Boss (cover)"
       }
     ]
   },
@@ -30401,6 +30665,12 @@
         "url": "/wiki/Kop",
         "note": "",
         "full_text": "Kop"
+      },
+      {
+        "name": "Schollzo",
+        "url": "/wiki/Schollzo",
+        "note": "flashback",
+        "full_text": "Schollzo (flashback)"
       },
       {
         "name": "Iceburg",
@@ -31604,54 +31874,6 @@
         "full_text": "Mozu and Kiwi"
       },
       {
-        "name": "Gedatsu",
-        "url": "/wiki/Gedatsu",
-        "note": "cover",
-        "full_text": "Gedatsu (cover)"
-      },
-      {
-        "name": "Goro",
-        "url": "/wiki/Goro",
-        "note": "cover",
-        "full_text": "Goro (cover)"
-      },
-      {
-        "name": "Dirt Boss",
-        "url": "/wiki/Dirt_Boss",
-        "note": "cover",
-        "full_text": "Dirt Boss (cover)"
-      },
-      {
-        "name": "Koza",
-        "url": "/wiki/Koza",
-        "note": "cover",
-        "full_text": "Koza (cover)"
-      },
-      {
-        "name": "Toto",
-        "url": "/wiki/Toto",
-        "note": "cover",
-        "full_text": "Toto (cover)"
-      },
-      {
-        "name": "Kokoro",
-        "url": "/wiki/Kokoro",
-        "note": "",
-        "full_text": "Kokoro"
-      },
-      {
-        "name": "Chimney",
-        "url": "/wiki/Chimney",
-        "note": "",
-        "full_text": "Chimney"
-      },
-      {
-        "name": "Gonbe",
-        "url": "/wiki/Gonbe",
-        "note": "",
-        "full_text": "Gonbe"
-      },
-      {
         "name": "Rob Lucci",
         "url": "/wiki/Rob_Lucci",
         "note": "",
@@ -31686,6 +31908,54 @@
         "url": "/wiki/Tilestone",
         "note": "",
         "full_text": "Tilestone"
+      },
+      {
+        "name": "Kokoro",
+        "url": "/wiki/Kokoro",
+        "note": "",
+        "full_text": "Kokoro"
+      },
+      {
+        "name": "Chimney",
+        "url": "/wiki/Chimney",
+        "note": "",
+        "full_text": "Chimney"
+      },
+      {
+        "name": "Gonbe",
+        "url": "/wiki/Gonbe",
+        "note": "",
+        "full_text": "Gonbe"
+      },
+      {
+        "name": "Gedatsu",
+        "url": "/wiki/Gedatsu",
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
+      },
+      {
+        "name": "Goro",
+        "url": "/wiki/Goro",
+        "note": "cover",
+        "full_text": "Goro (cover)"
+      },
+      {
+        "name": "Dirt Boss",
+        "url": "/wiki/Dirt_Boss",
+        "note": "cover",
+        "full_text": "Dirt Boss (cover)"
+      },
+      {
+        "name": "Koza",
+        "url": "/wiki/Koza",
+        "note": "cover",
+        "full_text": "Koza (cover)"
+      },
+      {
+        "name": "Toto",
+        "url": "/wiki/Toto",
+        "note": "cover",
+        "full_text": "Toto (cover)"
       }
     ]
   },
@@ -31715,24 +31985,6 @@
         "url": "/wiki/Nico_Robin",
         "note": "",
         "full_text": "Nico Robin"
-      },
-      {
-        "name": "Iceburg",
-        "url": "/wiki/Iceburg",
-        "note": "",
-        "full_text": "Iceburg"
-      },
-      {
-        "name": "Kalifa",
-        "url": "/wiki/Kalifa",
-        "note": "",
-        "full_text": "Kalifa"
-      },
-      {
-        "name": "Tyrannosaurus",
-        "url": "/wiki/Tyrannosaurus",
-        "note": "",
-        "full_text": "Tyrannosaurus"
       },
       {
         "name": "Franky",
@@ -31765,40 +32017,22 @@
         "full_text": "Kaku (shadowed)"
       },
       {
-        "name": "Gedatsu",
-        "url": "/wiki/Gedatsu",
-        "note": "cover",
-        "full_text": "Gedatsu (cover)"
+        "name": "Iceburg",
+        "url": "/wiki/Iceburg",
+        "note": "",
+        "full_text": "Iceburg"
       },
       {
-        "name": "Goro",
-        "url": "/wiki/Goro",
-        "note": "cover",
-        "full_text": "Goro (cover)"
+        "name": "Kalifa",
+        "url": "/wiki/Kalifa",
+        "note": "",
+        "full_text": "Kalifa"
       },
       {
-        "name": "Dirt Boss",
-        "url": "/wiki/Dirt_Boss",
-        "note": "cover",
-        "full_text": "Dirt Boss (cover)"
-      },
-      {
-        "name": "Koza",
-        "url": "/wiki/Koza",
-        "note": "cover",
-        "full_text": "Koza (cover)"
-      },
-      {
-        "name": "Toto",
-        "url": "/wiki/Toto",
-        "note": "cover",
-        "full_text": "Toto (cover)"
-      },
-      {
-        "name": "Karoo",
-        "url": "/wiki/Karoo",
-        "note": "cover",
-        "full_text": "Karoo (cover)"
+        "name": "Tyrannosaurus",
+        "url": "/wiki/Tyrannosaurus",
+        "note": "",
+        "full_text": "Tyrannosaurus"
       },
       {
         "name": "Blueno",
@@ -31823,6 +32057,42 @@
         "url": "/wiki/Gonbe",
         "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Gedatsu",
+        "url": "/wiki/Gedatsu",
+        "note": "cover",
+        "full_text": "Gedatsu (cover)"
+      },
+      {
+        "name": "Goro",
+        "url": "/wiki/Goro",
+        "note": "cover",
+        "full_text": "Goro (cover)"
+      },
+      {
+        "name": "Dirt Boss",
+        "url": "/wiki/Dirt_Boss",
+        "note": "cover",
+        "full_text": "Dirt Boss (cover)"
+      },
+      {
+        "name": "Karoo",
+        "url": "/wiki/Karoo",
+        "note": "cover",
+        "full_text": "Karoo (cover)"
+      },
+      {
+        "name": "Koza",
+        "url": "/wiki/Koza",
+        "note": "cover",
+        "full_text": "Koza (cover)"
+      },
+      {
+        "name": "Toto",
+        "url": "/wiki/Toto",
+        "note": "cover",
+        "full_text": "Toto (cover)"
       }
     ]
   },
@@ -31908,6 +32178,12 @@
         "full_text": "Forest Boss (cover)"
       },
       {
+        "name": "Karoo",
+        "url": "/wiki/Karoo",
+        "note": "cover",
+        "full_text": "Karoo (cover)"
+      },
+      {
         "name": "Koza",
         "url": "/wiki/Koza",
         "note": "cover",
@@ -31918,12 +32194,6 @@
         "url": "/wiki/Toto",
         "note": "cover",
         "full_text": "Toto (cover)"
-      },
-      {
-        "name": "Karoo",
-        "url": "/wiki/Karoo",
-        "note": "cover",
-        "full_text": "Karoo (cover)"
       },
       {
         "name": "Kaku",
@@ -31975,44 +32245,8 @@
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "former, flashback",
-        "full_text": "Nico Robin (former, flashback)"
-      },
-      {
-        "name": "Dirt Boss",
-        "url": "/wiki/Dirt_Boss",
-        "note": "cover",
-        "full_text": "Dirt Boss (cover)"
-      },
-      {
-        "name": "Happa Yamao",
-        "url": "/wiki/Happa_Yamao",
-        "note": "",
-        "full_text": "Happa Yamao"
-      },
-      {
-        "name": "Blueno",
-        "url": "/wiki/Blueno",
-        "note": "",
-        "full_text": "Blueno"
-      },
-      {
-        "name": "Kokoro",
-        "url": "/wiki/Kokoro",
-        "note": "",
-        "full_text": "Kokoro"
-      },
-      {
-        "name": "Chimney",
-        "url": "/wiki/Chimney",
-        "note": "",
-        "full_text": "Chimney"
-      },
-      {
-        "name": "Gonbe",
-        "url": "/wiki/Gonbe",
-        "note": "",
-        "full_text": "Gonbe"
+        "note": "shadowed",
+        "full_text": "Nico Robin (shadowed)"
       },
       {
         "name": "Franky",
@@ -32079,6 +32313,42 @@
         "url": "/wiki/Hattori",
         "note": "",
         "full_text": "Hattori"
+      },
+      {
+        "name": "Happa Yamao",
+        "url": "/wiki/Happa_Yamao",
+        "note": "",
+        "full_text": "Happa Yamao"
+      },
+      {
+        "name": "Blueno",
+        "url": "/wiki/Blueno",
+        "note": "",
+        "full_text": "Blueno"
+      },
+      {
+        "name": "Kokoro",
+        "url": "/wiki/Kokoro",
+        "note": "",
+        "full_text": "Kokoro"
+      },
+      {
+        "name": "Chimney",
+        "url": "/wiki/Chimney",
+        "note": "",
+        "full_text": "Chimney"
+      },
+      {
+        "name": "Gonbe",
+        "url": "/wiki/Gonbe",
+        "note": "",
+        "full_text": "Gonbe"
+      },
+      {
+        "name": "Dirt Boss",
+        "url": "/wiki/Dirt_Boss",
+        "note": "cover",
+        "full_text": "Dirt Boss (cover)"
       }
     ]
   },
@@ -32108,6 +32378,12 @@
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "image",
+        "full_text": "Usopp (image)"
       },
       {
         "name": "Tony Tony Chopper",
@@ -32444,6 +32720,12 @@
         "full_text": "Tilestone"
       },
       {
+        "name": "Goro",
+        "url": "/wiki/Goro",
+        "note": "cover",
+        "full_text": "Goro (cover)"
+      },
+      {
         "name": "Karoo",
         "url": "/wiki/Karoo",
         "note": "cover",
@@ -32474,22 +32756,52 @@
         "full_text": "Toto (cover)"
       },
       {
+        "name": "Koza",
+        "url": "/wiki/Koza",
+        "note": "cover",
+        "full_text": "Koza (cover)"
+      },
+      {
         "name": "Matsuge",
         "url": "/wiki/Matsuge",
         "note": "cover",
         "full_text": "Matsuge (cover)"
       },
       {
-        "name": "Super Spot-Billed Duck Troops",
-        "url": "/wiki/Super_Spot-Billed_Duck_Troops",
+        "name": "Stomp",
+        "url": "/wiki/Super_Spot-Billed_Duck_Troops#Members",
         "note": "cover",
-        "full_text": "Super Spot-Billed Duck Troops (cover)"
+        "full_text": "Stomp (cover)"
       },
       {
-        "name": "Koza",
-        "url": "/wiki/Koza",
+        "name": "Ivan X",
+        "url": "/wiki/Super_Spot-Billed_Duck_Troops#Members",
         "note": "cover",
-        "full_text": "Koza (cover)"
+        "full_text": "Ivan X (cover)"
+      },
+      {
+        "name": "Cowboy",
+        "url": "/wiki/Super_Spot-Billed_Duck_Troops#Members",
+        "note": "cover",
+        "full_text": "Cowboy (cover)"
+      },
+      {
+        "name": "Bourbon Jr.",
+        "url": "/wiki/Super_Spot-Billed_Duck_Troops#Members",
+        "note": "cover",
+        "full_text": "Bourbon Jr. (cover)"
+      },
+      {
+        "name": "Kentauros",
+        "url": "/wiki/Super_Spot-Billed_Duck_Troops#Members",
+        "note": "cover",
+        "full_text": "Kentauros (cover)"
+      },
+      {
+        "name": "Hikoichi",
+        "url": "/wiki/Super_Spot-Billed_Duck_Troops#Members",
+        "note": "cover",
+        "full_text": "Hikoichi (cover)"
       }
     ]
   },
@@ -32518,31 +32830,31 @@
         "name": "Rob Lucci",
         "url": "/wiki/Rob_Lucci",
         "note": "",
-        "full_text": "Rob Lucci4"
+        "full_text": "Rob Lucci"
       },
       {
         "name": "Kaku",
         "url": "/wiki/Kaku",
         "note": "",
-        "full_text": "Kaku4"
+        "full_text": "Kaku"
       },
       {
         "name": "Kalifa",
         "url": "/wiki/Kalifa",
         "note": "",
-        "full_text": "Kalifa4"
+        "full_text": "Kalifa"
       },
       {
         "name": "Blueno",
         "url": "/wiki/Blueno",
         "note": "",
-        "full_text": "Blueno4"
+        "full_text": "Blueno"
       },
       {
         "name": "Hattori",
         "url": "/wiki/Hattori",
         "note": "",
-        "full_text": "Hattori4"
+        "full_text": "Hattori"
       },
       {
         "name": "Iceburg",
@@ -32561,12 +32873,6 @@
         "url": "/wiki/Peepley_Lulu",
         "note": "",
         "full_text": "Peepley Lulu"
-      },
-      {
-        "name": "Tilestone",
-        "url": "/wiki/Tilestone",
-        "note": "",
-        "full_text": "Tilestone"
       },
       {
         "name": "Nefertari Vivi",
@@ -33073,6 +33379,12 @@
     "jump_info": "2005 Issue 7",
     "characters": [
       {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "flashback",
+        "full_text": "Monkey D. Luffy (flashback)"
+      },
+      {
         "name": "Nami",
         "url": "/wiki/Nami",
         "note": "cover",
@@ -33224,26 +33536,26 @@
       {
         "name": "Tom",
         "url": "/wiki/Tom",
-        "note": "flashback, photograph, mentioned",
-        "full_text": "Tom (flashback, photograph, mentioned)"
+        "note": "flashback, photo",
+        "full_text": "Tom (flashback, photo)"
       },
       {
         "name": "Iceburg",
         "url": "/wiki/Iceburg",
-        "note": "flashback, photograph",
-        "full_text": "Iceburg (flashback, photograph)"
+        "note": "flashback, photo",
+        "full_text": "Iceburg (flashback, photo)"
       },
       {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
-        "note": "photograph",
-        "full_text": "Kokoro (photograph)"
+        "note": "photo",
+        "full_text": "Kokoro (photo)"
       },
       {
         "name": "Yokozuna",
         "url": "/wiki/Yokozuna",
-        "note": "photograph",
-        "full_text": "Yokozuna (photograph)"
+        "note": "photo",
+        "full_text": "Yokozuna (photo)"
       }
     ]
   },
@@ -33271,14 +33583,14 @@
       {
         "name": "Gol D. Roger",
         "url": "/wiki/Gol_D._Roger",
-        "note": "image, flashback",
-        "full_text": "Gol D. Roger (image, flashback)"
+        "note": "image",
+        "full_text": "Gol D. Roger (image)"
       },
       {
         "name": "Jorge",
         "url": "/wiki/Jorge",
-        "note": "unclearly seen",
-        "full_text": "Jorge (unclearly seen)"
+        "note": "flashback",
+        "full_text": "Jorge (flashback)"
       },
       {
         "name": "Blueno",
@@ -33325,26 +33637,26 @@
       {
         "name": "Tom",
         "url": "/wiki/Tom",
-        "note": "photograph, flashback",
-        "full_text": "Tom (photograph, flashback)"
+        "note": "flashback",
+        "full_text": "Tom (flashback)"
       },
       {
         "name": "Iceburg",
         "url": "/wiki/Iceburg",
-        "note": "photograph, flashback",
-        "full_text": "Iceburg (photograph, flashback)"
+        "note": "flashback",
+        "full_text": "Iceburg (flashback)"
       },
       {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
-        "note": "photograph, flashback",
-        "full_text": "Kokoro (photograph, flashback)"
+        "note": "flashback",
+        "full_text": "Kokoro (flashback)"
       },
       {
         "name": "Yokozuna",
         "url": "/wiki/Yokozuna",
-        "note": "photograph, flashback",
-        "full_text": "Yokozuna (photograph, flashback)"
+        "note": "flashback",
+        "full_text": "Yokozuna (flashback)"
       }
     ]
   },
@@ -33366,50 +33678,56 @@
       {
         "name": "Jorge",
         "url": "/wiki/Jorge",
-        "note": "flashback",
-        "full_text": "Jorge (flashback)"
+        "note": "",
+        "full_text": "Jorge"
       },
       {
         "name": "Tom",
         "url": "/wiki/Tom",
-        "note": "flashback",
-        "full_text": "Tom (flashback)"
+        "note": "",
+        "full_text": "Tom"
       },
       {
         "name": "Iceburg",
         "url": "/wiki/Iceburg",
-        "note": "flashback",
-        "full_text": "Iceburg (flashback)"
+        "note": "",
+        "full_text": "Iceburg"
       },
       {
         "name": "Cutty Flam",
         "url": "/wiki/Franky",
-        "note": "flashback",
-        "full_text": "Cutty Flam (flashback)"
+        "note": "",
+        "full_text": "Cutty Flam"
       },
       {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
-        "note": "flashback",
-        "full_text": "Kokoro (flashback)"
+        "note": "",
+        "full_text": "Kokoro"
       },
       {
         "name": "Yokozuna",
         "url": "/wiki/Yokozuna",
-        "note": "flashback",
-        "full_text": "Yokozuna (flashback)"
+        "note": "",
+        "full_text": "Yokozuna"
       },
       {
         "name": "Paulie",
         "url": "/wiki/Paulie",
-        "note": "flashback",
-        "full_text": "Paulie (flashback)"
+        "note": "",
+        "full_text": "Paulie"
+      },
+      {
+        "name": "Zambai",
+        "url": "/wiki/Zambai",
+        "note": "",
+        "full_text": "Zambai"
       },
       {
         "name": "Mozu and Kiwi",
         "url": "/wiki/Mozu_and_Kiwi",
-        "note": "flashback",
-        "full_text": "Mozu and Kiwi (flashback)"
+        "note": "",
+        "full_text": "Mozu and Kiwi"
       }
     ]
   },
@@ -33431,80 +33749,80 @@
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "wanted poster, flashback",
-        "full_text": "Nico Robin (wanted poster, flashback)"
+        "note": "wanted poster",
+        "full_text": "Nico Robin (wanted poster)"
       },
       {
         "name": "Jaygarcia Saturn",
         "url": "/wiki/Jaygarcia_Saturn",
-        "note": "flashback",
-        "full_text": "Jaygarcia Saturn (flashback)"
+        "note": "",
+        "full_text": "Jaygarcia Saturn"
       },
       {
         "name": "Marcus Mars",
         "url": "/wiki/Marcus_Mars",
-        "note": "flashback",
-        "full_text": "Marcus Mars (flashback)"
+        "note": "",
+        "full_text": "Marcus Mars"
       },
       {
         "name": "Topman Warcury",
         "url": "/wiki/Topman_Warcury",
-        "note": "flashback",
-        "full_text": "Topman Warcury (flashback)"
+        "note": "",
+        "full_text": "Topman Warcury"
       },
       {
         "name": "Ethanbaron V. Nusjuro",
         "url": "/wiki/Ethanbaron_V._Nusjuro",
-        "note": "flashback",
-        "full_text": "Ethanbaron V. Nusjuro (flashback)"
+        "note": "",
+        "full_text": "Ethanbaron V. Nusjuro"
       },
       {
         "name": "Shepherd Ju Peter",
         "url": "/wiki/Shepherd_Ju_Peter",
-        "note": "flashback",
-        "full_text": "Shepherd Ju Peter (flashback)"
+        "note": "",
+        "full_text": "Shepherd Ju Peter"
       },
       {
         "name": "Jorge",
         "url": "/wiki/Jorge",
-        "note": "flashback",
-        "full_text": "Jorge (flashback)"
+        "note": "",
+        "full_text": "Jorge"
       },
       {
         "name": "Spandam",
         "url": "/wiki/Spandam",
-        "note": "flashback",
-        "full_text": "Spandam (flashback)"
+        "note": "",
+        "full_text": "Spandam"
       },
       {
         "name": "Tom",
         "url": "/wiki/Tom",
-        "note": "flashback",
-        "full_text": "Tom (flashback)"
+        "note": "",
+        "full_text": "Tom"
       },
       {
         "name": "Iceburg",
         "url": "/wiki/Iceburg",
-        "note": "flashback",
-        "full_text": "Iceburg (flashback)"
+        "note": "",
+        "full_text": "Iceburg"
       },
       {
         "name": "Cutty Flam",
         "url": "/wiki/Franky",
-        "note": "flashback",
-        "full_text": "Cutty Flam (flashback)"
+        "note": "",
+        "full_text": "Cutty Flam"
       },
       {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
-        "note": "flashback",
-        "full_text": "Kokoro (flashback)"
+        "note": "",
+        "full_text": "Kokoro"
       },
       {
         "name": "Yokozuna",
         "url": "/wiki/Yokozuna",
-        "note": "flashback",
-        "full_text": "Yokozuna (flashback)"
+        "note": "",
+        "full_text": "Yokozuna"
       }
     ]
   },
@@ -33526,44 +33844,44 @@
       {
         "name": "Jorge",
         "url": "/wiki/Jorge",
-        "note": "flashback",
-        "full_text": "Jorge (flashback)"
+        "note": "",
+        "full_text": "Jorge"
       },
       {
         "name": "Spandam",
         "url": "/wiki/Spandam",
-        "note": "flashback",
-        "full_text": "Spandam (flashback)"
+        "note": "",
+        "full_text": "Spandam"
       },
       {
         "name": "Tom",
         "url": "/wiki/Tom",
-        "note": "flashback",
-        "full_text": "Tom (flashback)"
+        "note": "",
+        "full_text": "Tom"
       },
       {
         "name": "Iceburg",
         "url": "/wiki/Iceburg",
-        "note": "flashback",
-        "full_text": "Iceburg (flashback)"
+        "note": "",
+        "full_text": "Iceburg"
       },
       {
         "name": "Cutty Flam",
         "url": "/wiki/Franky",
-        "note": "flashback",
-        "full_text": "Cutty Flam (flashback)"
+        "note": "",
+        "full_text": "Cutty Flam"
       },
       {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
-        "note": "flashback",
-        "full_text": "Kokoro (flashback)"
+        "note": "",
+        "full_text": "Kokoro"
       },
       {
         "name": "Yokozuna",
         "url": "/wiki/Yokozuna",
-        "note": "flashback",
-        "full_text": "Yokozuna (flashback)"
+        "note": "",
+        "full_text": "Yokozuna"
       }
     ]
   },
@@ -33621,44 +33939,44 @@
       {
         "name": "Jorge",
         "url": "/wiki/Jorge",
-        "note": "flashback",
-        "full_text": "Jorge (flashback)"
+        "note": "",
+        "full_text": "Jorge"
       },
       {
         "name": "Spandam",
         "url": "/wiki/Spandam",
-        "note": "flashback",
-        "full_text": "Spandam (flashback)"
+        "note": "",
+        "full_text": "Spandam"
       },
       {
         "name": "Tom",
         "url": "/wiki/Tom",
-        "note": "flashback",
-        "full_text": "Tom (flashback)"
+        "note": "",
+        "full_text": "Tom"
       },
       {
         "name": "Iceburg",
         "url": "/wiki/Iceburg",
-        "note": "flashback",
-        "full_text": "Iceburg (flashback)"
+        "note": "",
+        "full_text": "Iceburg"
       },
       {
         "name": "Cutty Flam",
         "url": "/wiki/Franky",
-        "note": "flashback",
-        "full_text": "Cutty Flam (flashback)"
+        "note": "",
+        "full_text": "Cutty Flam"
       },
       {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
-        "note": "flashback",
-        "full_text": "Kokoro (flashback)"
+        "note": "",
+        "full_text": "Kokoro"
       },
       {
         "name": "Yokozuna",
         "url": "/wiki/Yokozuna",
-        "note": "flashback",
-        "full_text": "Yokozuna (flashback)"
+        "note": "",
+        "full_text": "Yokozuna"
       }
     ]
   },
@@ -33674,8 +33992,8 @@
       {
         "name": "Nami",
         "url": "/wiki/Nami",
-        "note": "",
-        "full_text": "Nami"
+        "note": "K.O.",
+        "full_text": "Nami (K.O.)"
       },
       {
         "name": "Usopp",
@@ -33754,6 +34072,18 @@
         "url": "/wiki/Paulie",
         "note": "K.O.",
         "full_text": "Paulie (K.O.)"
+      },
+      {
+        "name": "Mottled",
+        "url": "/wiki/Mottled",
+        "note": "cover",
+        "full_text": "Mottled (cover)"
+      },
+      {
+        "name": "Birdy",
+        "url": "/wiki/Birdy",
+        "note": "cover",
+        "full_text": "Birdy (cover)"
       }
     ]
   },
@@ -34025,8 +34355,8 @@
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "former",
-        "full_text": "Nico Robin (former)"
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Rob Lucci",
@@ -34067,8 +34397,8 @@
       {
         "name": "Crocodile",
         "url": "/wiki/Crocodile",
-        "note": "photograph, cover",
-        "full_text": "Crocodile (photograph, cover)"
+        "note": "cover; newspaper",
+        "full_text": "Crocodile (cover; newspaper)"
       },
       {
         "name": "Miss Goldenweek",
@@ -34091,38 +34421,38 @@
       {
         "name": "Mr. 1",
         "url": "/wiki/Daz_Bonez",
-        "note": "photograph, cover",
-        "full_text": "Mr. 1 (photograph, cover)"
+        "note": "cover; newspaper",
+        "full_text": "Mr. 1 (cover; newspaper)"
       },
       {
         "name": "Miss Doublefinger",
         "url": "/wiki/Zala",
-        "note": "photograph, cover",
-        "full_text": "Miss Doublefinger (photograph, cover)"
+        "note": "cover; newspaper",
+        "full_text": "Miss Doublefinger (cover; newspaper)"
       },
       {
         "name": "Mr. 2",
         "url": "/wiki/Bentham",
-        "note": "photograph, cover",
-        "full_text": "Mr. 2 (photograph, cover)"
+        "note": "cover; newspaper",
+        "full_text": "Mr. 2 (cover; newspaper)"
       },
       {
         "name": "Mr. 4",
         "url": "/wiki/Babe",
-        "note": "photograph, cover",
-        "full_text": "Mr. 4 (photograph, cover)"
+        "note": "cover; newspaper",
+        "full_text": "Mr. 4 (cover; newspaper)"
       },
       {
         "name": "Miss Merry Christmas",
         "url": "/wiki/Drophy",
-        "note": "photograph, cover",
-        "full_text": "Miss Merry Christmas (photograph, cover)"
+        "note": "cover; newspaper",
+        "full_text": "Miss Merry Christmas (cover; newspaper)"
       },
       {
         "name": "Lassoo",
         "url": "/wiki/Lassoo",
-        "note": "photograph, cover",
-        "full_text": "Lassoo (photograph, cover)"
+        "note": "cover; newspaper",
+        "full_text": "Lassoo (cover; newspaper)"
       },
       {
         "name": "Paulie",
@@ -34178,12 +34508,6 @@
         "full_text": "Tony Tony Chopper"
       },
       {
-        "name": "T Bone",
-        "url": "/wiki/T_Bone",
-        "note": "mentioned, offscreen",
-        "full_text": "T Bone (mentioned, offscreen)"
-      },
-      {
         "name": "Corgi",
         "url": "/wiki/Corgi",
         "note": "",
@@ -34194,12 +34518,6 @@
         "url": "/wiki/Jerry",
         "note": "",
         "full_text": "Jerry"
-      },
-      {
-        "name": "Wanze",
-        "url": "/wiki/Wanze",
-        "note": "mentioned, offscreen",
-        "full_text": "Wanze (mentioned, offscreen)"
       },
       {
         "name": "Rob Lucci",
@@ -34232,22 +34550,16 @@
         "full_text": "Hattori"
       },
       {
-        "name": "Nero",
-        "url": "/wiki/Nero",
-        "note": "mentioned, offscreen",
-        "full_text": "Nero (mentioned, offscreen)"
-      },
-      {
         "name": "Miss Goldenweek",
         "url": "/wiki/Marianne",
         "note": "cover",
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -34335,8 +34647,8 @@
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "flashback",
-        "full_text": "Nico Robin (flashback)"
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Miss Goldenweek",
@@ -34345,10 +34657,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -34559,6 +34871,12 @@
         "full_text": "Blueno"
       },
       {
+        "name": "Jerry",
+        "url": "/wiki/Jerry",
+        "note": "K.O.",
+        "full_text": "Jerry (K.O.)"
+      },
+      {
         "name": "Franky",
         "url": "/wiki/Franky",
         "note": "",
@@ -34607,10 +34925,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -34629,12 +34947,6 @@
         "url": "/wiki/Paulie",
         "note": "",
         "full_text": "Paulie"
-      },
-      {
-        "name": "Dorry",
-        "url": "/wiki/Dorry",
-        "note": "cover",
-        "full_text": "Dorry (cover)"
       },
       {
         "name": "Bushon",
@@ -34665,6 +34977,12 @@
         "url": "/wiki/Gonbe",
         "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "cover",
+        "full_text": "Dorry (cover)"
       }
     ]
   },
@@ -34828,18 +35146,6 @@
         "full_text": "Tilestone"
       },
       {
-        "name": "Dorry",
-        "url": "/wiki/Dorry",
-        "note": "cover",
-        "full_text": "Dorry (cover)"
-      },
-      {
-        "name": "Brogy",
-        "url": "/wiki/Brogy",
-        "note": "cover",
-        "full_text": "Brogy (cover)"
-      },
-      {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
         "note": "",
@@ -34856,6 +35162,18 @@
         "url": "/wiki/Gonbe",
         "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "cover",
+        "full_text": "Dorry (cover)"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "cover",
+        "full_text": "Brogy (cover)"
       }
     ]
   },
@@ -34983,10 +35301,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -35162,10 +35480,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -35257,6 +35575,12 @@
         "full_text": "Nico Robin"
       },
       {
+        "name": "Corgi",
+        "url": "/wiki/Corgi",
+        "note": "",
+        "full_text": "Corgi"
+      },
+      {
         "name": "Rob Lucci",
         "url": "/wiki/Rob_Lucci",
         "note": "",
@@ -35330,8 +35654,8 @@
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "former",
-        "full_text": "Nico Robin (former)"
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Corgi",
@@ -35364,10 +35688,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -35417,16 +35741,16 @@
         "full_text": "Tony Tony Chopper"
       },
       {
-        "name": "Hina",
-        "url": "/wiki/Hina",
-        "note": "cover",
-        "full_text": "Hina (cover)"
-      },
-      {
         "name": "T Bone",
         "url": "/wiki/T_Bone",
         "note": "",
         "full_text": "T Bone"
+      },
+      {
+        "name": "Hina",
+        "url": "/wiki/Hina",
+        "note": "cover",
+        "full_text": "Hina (cover)"
       },
       {
         "name": "Fullbody",
@@ -35451,24 +35775,6 @@
         "url": "/wiki/Zambai",
         "note": "",
         "full_text": "Zambai"
-      },
-      {
-        "name": "Kiev",
-        "url": "/wiki/Kiev",
-        "note": "",
-        "full_text": "Kiev"
-      },
-      {
-        "name": "Schollzo",
-        "url": "/wiki/Schollzo",
-        "note": "",
-        "full_text": "Schollzo"
-      },
-      {
-        "name": "Tamagon",
-        "url": "/wiki/Tamagon",
-        "note": "",
-        "full_text": "Tamagon"
       },
       {
         "name": "Dago",
@@ -35499,12 +35805,6 @@
         "url": "/wiki/Gomorrah",
         "note": "",
         "full_text": "Gomorrah"
-      },
-      {
-        "name": "Mr. 3",
-        "url": "/wiki/Galdino",
-        "note": "photograph, cover",
-        "full_text": "Mr. 3 (photograph, cover)"
       },
       {
         "name": "Paulie",
@@ -35541,6 +35841,12 @@
         "url": "/wiki/Gonbe",
         "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Mr. 3",
+        "url": "/wiki/Galdino",
+        "note": "cover",
+        "full_text": "Mr. 3 (cover)"
       }
     ]
   },
@@ -35614,10 +35920,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -35628,8 +35934,8 @@
       {
         "name": "Mr. 2",
         "url": "/wiki/Bentham",
-        "note": "photograph, cover",
-        "full_text": "Mr. 2 (photograph, cover)"
+        "note": "cover; wanted poster",
+        "full_text": "Mr. 2 (cover; wanted poster)"
       }
     ]
   },
@@ -35882,10 +36188,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -36121,10 +36427,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -36135,26 +36441,14 @@
       {
         "name": "Mr. 13",
         "url": "/wiki/Mr._13",
-        "note": "cover, imagination",
-        "full_text": "Mr. 13 (cover, imagination)"
+        "note": "cover; flashback",
+        "full_text": "Mr. 13 (cover; flashback)"
       },
       {
         "name": "Miss Friday",
         "url": "/wiki/Miss_Friday",
-        "note": "cover, imagination",
-        "full_text": "Miss Friday (cover, imagination)"
-      },
-      {
-        "name": "Yokozuna",
-        "url": "/wiki/Yokozuna",
-        "note": "",
-        "full_text": "Yokozuna"
-      },
-      {
-        "name": "Tom",
-        "url": "/wiki/Tom",
-        "note": "flashback",
-        "full_text": "Tom (flashback)"
+        "note": "cover; flashback",
+        "full_text": "Miss Friday (cover; flashback)"
       },
       {
         "name": "Kokoro",
@@ -36191,6 +36485,18 @@
         "url": "/wiki/Tilestone",
         "note": "",
         "full_text": "Tilestone"
+      },
+      {
+        "name": "Yokozuna",
+        "url": "/wiki/Yokozuna",
+        "note": "",
+        "full_text": "Yokozuna"
+      },
+      {
+        "name": "Tom",
+        "url": "/wiki/Tom",
+        "note": "flashback",
+        "full_text": "Tom (flashback)"
       },
       {
         "name": "Samurai Batts",
@@ -36885,16 +37191,16 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Gatherine",
-        "url": "/wiki/Gatherine",
-        "note": "image",
-        "full_text": "Gatherine (image)"
-      },
-      {
         "name": "Baskerville",
         "url": "/wiki/Baskerville",
         "note": "",
         "full_text": "Baskerville"
+      },
+      {
+        "name": "Gatherine",
+        "url": "/wiki/Gatherine",
+        "note": "image",
+        "full_text": "Gatherine (image)"
       },
       {
         "name": "Spandam",
@@ -37245,8 +37551,8 @@
       {
         "name": "Mr. 3",
         "url": "/wiki/Galdino",
-        "note": "photograph, cover",
-        "full_text": "Mr. 3 (photograph, cover)"
+        "note": "cover; photo",
+        "full_text": "Mr. 3 (cover; photo)"
       },
       {
         "name": "Paulie",
@@ -37553,12 +37859,6 @@
         "full_text": "Gomorrah"
       },
       {
-        "name": "Yokozuna",
-        "url": "/wiki/Yokozuna",
-        "note": "",
-        "full_text": "Yokozuna"
-      },
-      {
         "name": "Paulie",
         "url": "/wiki/Paulie",
         "note": "",
@@ -37575,6 +37875,12 @@
         "url": "/wiki/Tilestone",
         "note": "",
         "full_text": "Tilestone"
+      },
+      {
+        "name": "Yokozuna",
+        "url": "/wiki/Yokozuna",
+        "note": "",
+        "full_text": "Yokozuna"
       }
     ]
   },
@@ -37645,25 +37951,25 @@
         "name": "Kashii",
         "url": "/wiki/Kashii",
         "note": "",
-        "full_text": "Kashii2,4"
+        "full_text": "Kashii"
       },
       {
         "name": "Oimo",
         "url": "/wiki/Oimo",
         "note": "",
-        "full_text": "Oimo2,4"
-      },
-      {
-        "name": "Just Eleven Jurymen",
-        "url": "/wiki/Just_Eleven_Jurymen",
-        "note": "",
-        "full_text": "Just Eleven Jurymen"
+        "full_text": "Oimo"
       },
       {
         "name": "Baskerville",
         "url": "/wiki/Baskerville",
         "note": "",
         "full_text": "Baskerville"
+      },
+      {
+        "name": "Just Eleven Jurymen",
+        "url": "/wiki/Just_Eleven_Jurymen",
+        "note": "",
+        "full_text": "Just Eleven Jurymen"
       },
       {
         "name": "Watchdog Unit of the Law",
@@ -37740,8 +38046,8 @@
       {
         "name": "Mr. 2 Bon Kurei",
         "url": "/wiki/Bentham",
-        "note": "shadowed, cover",
-        "full_text": "Mr. 2 Bon Kurei (shadowed, cover)"
+        "note": "cover; shadowed",
+        "full_text": "Mr. 2 Bon Kurei (cover; shadowed)"
       },
       {
         "name": "Paulie",
@@ -37913,8 +38219,8 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
@@ -37923,16 +38229,16 @@
         "full_text": "Gomorrah"
       },
       {
+        "name": "Mr. 2 Bon Kurei",
+        "url": "/wiki/Bentham",
+        "note": "cover",
+        "full_text": "Mr. 2 Bon Kurei (cover)"
+      },
+      {
         "name": "Mr. 3",
         "url": "/wiki/Galdino",
         "note": "cover",
         "full_text": "Mr. 3 (cover)"
-      },
-      {
-        "name": "Mr. 2",
-        "url": "/wiki/Bentham",
-        "note": "cover",
-        "full_text": "Mr. 2 (cover)"
       },
       {
         "name": "Yokozuna",
@@ -38056,8 +38362,8 @@
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Miss Goldenweek",
@@ -38330,8 +38636,8 @@
       {
         "name": "Mr. 2",
         "url": "/wiki/Bentham",
-        "note": "disguised as Mr. 3, cover",
-        "full_text": "Mr. 2 (disguised as Mr. 3, cover)"
+        "note": "cover; disguised as Mr. 3",
+        "full_text": "Mr. 2 (cover; disguised as Mr. 3)"
       },
       {
         "name": "Miss Valentine",
@@ -38467,8 +38773,8 @@
       {
         "name": "Blueno",
         "url": "/wiki/Blueno",
-        "note": "K.O",
-        "full_text": "Blueno (K.O)"
+        "note": "K.O.",
+        "full_text": "Blueno (K.O.)"
       },
       {
         "name": "Kumadori",
@@ -38497,8 +38803,8 @@
       {
         "name": "Mr. 2",
         "url": "/wiki/Bentham",
-        "note": "disguised as Mr. 3, cover",
-        "full_text": "Mr. 2 (disguised as Mr. 3, cover)"
+        "note": "cover",
+        "full_text": "Mr. 2 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -38554,6 +38860,12 @@
         "full_text": "Tony Tony Chopper"
       },
       {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
         "name": "Oimo",
         "url": "/wiki/Oimo",
         "note": "",
@@ -38584,16 +38896,16 @@
         "full_text": "Jango (cover)"
       },
       {
-        "name": "Just Eleven Jurymen",
-        "url": "/wiki/Just_Eleven_Jurymen",
-        "note": "",
-        "full_text": "Just Eleven Jurymen"
-      },
-      {
         "name": "Baskerville",
         "url": "/wiki/Baskerville",
         "note": "",
         "full_text": "Baskerville"
+      },
+      {
+        "name": "Just Eleven Jurymen",
+        "url": "/wiki/Just_Eleven_Jurymen",
+        "note": "",
+        "full_text": "Just Eleven Jurymen"
       },
       {
         "name": "Spandam",
@@ -38702,12 +39014,6 @@
         "url": "/wiki/Tilestone",
         "note": "",
         "full_text": "Tilestone"
-      },
-      {
-        "name": "Nico Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Nico Robin"
       }
     ]
   },
@@ -38755,6 +39061,12 @@
         "url": "/wiki/Tony_Tony_Chopper",
         "note": "",
         "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Oimo",
@@ -38847,12 +39159,6 @@
         "full_text": "Tilestone"
       },
       {
-        "name": "Nico Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Nico Robin"
-      },
-      {
         "name": "Roji",
         "url": "/wiki/Roji",
         "note": "flashback",
@@ -38932,20 +39238,20 @@
       {
         "name": "Spandine",
         "url": "/wiki/Spandine",
-        "note": "flashback",
-        "full_text": "Spandine (flashback)"
+        "note": "",
+        "full_text": "Spandine"
       },
       {
         "name": "Laskey",
         "url": "/wiki/Laskey",
-        "note": "flashback",
-        "full_text": "Laskey (flashback)"
+        "note": "",
+        "full_text": "Laskey"
       },
       {
         "name": "Tsumonsieur Kamaya",
         "url": "/wiki/Tsumonsieur_Kamaya",
-        "note": "flashback",
-        "full_text": "Tsumonsieur Kamaya (flashback)"
+        "note": "",
+        "full_text": "Tsumonsieur Kamaya"
       },
       {
         "name": "Hina",
@@ -38962,80 +39268,80 @@
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "flashback",
-        "full_text": "Nico Robin (flashback)"
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Roji",
         "url": "/wiki/Roji",
-        "note": "flashback",
-        "full_text": "Roji (flashback)"
+        "note": "",
+        "full_text": "Roji"
       },
       {
         "name": "Oran",
         "url": "/wiki/Oran",
-        "note": "flashback",
-        "full_text": "Oran (flashback)"
+        "note": "",
+        "full_text": "Oran"
       },
       {
         "name": "Clover",
         "url": "/wiki/Clou_D._Clover",
-        "note": "flashback",
-        "full_text": "Clover (flashback)"
+        "note": "",
+        "full_text": "Clover"
       },
       {
         "name": "Gram",
         "url": "/wiki/Gram",
-        "note": "flashback",
-        "full_text": "Gram (flashback)"
+        "note": "",
+        "full_text": "Gram"
       },
       {
         "name": "Busshiri",
         "url": "/wiki/Busshiri",
-        "note": "flashback",
-        "full_text": "Busshiri (flashback)"
+        "note": "",
+        "full_text": "Busshiri"
       },
       {
         "name": "Hack",
         "url": "/wiki/Hack_(Archaeologist)",
-        "note": "flashback",
-        "full_text": "Hack (flashback)"
+        "note": "",
+        "full_text": "Hack"
       },
       {
         "name": "Hocha",
         "url": "/wiki/Hocha",
-        "note": "flashback",
-        "full_text": "Hocha (flashback)"
+        "note": "",
+        "full_text": "Hocha"
       },
       {
         "name": "Rint",
         "url": "/wiki/Rint",
-        "note": "flashback",
-        "full_text": "Rint (flashback)"
+        "note": "",
+        "full_text": "Rint"
       },
       {
         "name": "Zadie",
         "url": "/wiki/Zadie",
-        "note": "flashback",
-        "full_text": "Zadie (flashback)"
+        "note": "",
+        "full_text": "Zadie"
       },
       {
         "name": "Roche",
         "url": "/wiki/Roche",
-        "note": "flashback",
-        "full_text": "Roche (flashback)"
+        "note": "",
+        "full_text": "Roche"
       },
       {
         "name": "Nico Olvia",
         "url": "/wiki/Nico_Olvia",
-        "note": "photograph, flashback",
-        "full_text": "Nico Olvia (photograph, flashback)"
+        "note": "shadowed",
+        "full_text": "Nico Olvia (shadowed)"
       },
       {
         "name": "Jaguar D. Saul",
         "url": "/wiki/Jaguar_D._Saul",
-        "note": "flashback",
-        "full_text": "Jaguar D. Saul (flashback)"
+        "note": "",
+        "full_text": "Jaguar D. Saul"
       }
     ]
   },
@@ -39051,8 +39357,8 @@
       {
         "name": "Kuzan",
         "url": "/wiki/Kuzan",
-        "note": "flashback",
-        "full_text": "Kuzan (flashback)"
+        "note": "",
+        "full_text": "Kuzan"
       },
       {
         "name": "Hina",
@@ -39063,20 +39369,20 @@
       {
         "name": "Spandine",
         "url": "/wiki/Spandine",
-        "note": "flashback",
-        "full_text": "Spandine (flashback)"
+        "note": "",
+        "full_text": "Spandine"
       },
       {
         "name": "Laskey",
         "url": "/wiki/Laskey",
-        "note": "flashback",
-        "full_text": "Laskey (flashback)"
+        "note": "",
+        "full_text": "Laskey"
       },
       {
         "name": "Tsumonsieur Kamaya",
         "url": "/wiki/Tsumonsieur_Kamaya",
-        "note": "flashback",
-        "full_text": "Tsumonsieur Kamaya (flashback)"
+        "note": "",
+        "full_text": "Tsumonsieur Kamaya"
       },
       {
         "name": "Mr. 2",
@@ -39091,10 +39397,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -39105,62 +39411,62 @@
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "flashback",
-        "full_text": "Nico Robin (flashback)"
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Oran",
         "url": "/wiki/Oran",
-        "note": "flashback",
-        "full_text": "Oran (flashback)"
+        "note": "",
+        "full_text": "Oran"
       },
       {
         "name": "Clover",
         "url": "/wiki/Clou_D._Clover",
-        "note": "flashback",
-        "full_text": "Clover (flashback)"
+        "note": "",
+        "full_text": "Clover"
       },
       {
         "name": "Busshiri",
         "url": "/wiki/Busshiri",
-        "note": "flashback",
-        "full_text": "Busshiri (flashback)"
+        "note": "",
+        "full_text": "Busshiri"
       },
       {
         "name": "Hocha",
         "url": "/wiki/Hocha",
-        "note": "flashback",
-        "full_text": "Hocha (flashback)"
+        "note": "",
+        "full_text": "Hocha"
       },
       {
         "name": "Rint",
         "url": "/wiki/Rint",
-        "note": "flashback",
-        "full_text": "Rint (flashback)"
+        "note": "",
+        "full_text": "Rint"
       },
       {
         "name": "Zadie",
         "url": "/wiki/Zadie",
-        "note": "flashback",
-        "full_text": "Zadie (flashback)"
+        "note": "",
+        "full_text": "Zadie"
       },
       {
         "name": "Roche",
         "url": "/wiki/Roche",
-        "note": "flashback",
-        "full_text": "Roche (flashback)"
+        "note": "",
+        "full_text": "Roche"
       },
       {
         "name": "Nico Olvia",
         "url": "/wiki/Nico_Olvia",
-        "note": "flashback",
-        "full_text": "Nico Olvia (flashback)"
+        "note": "",
+        "full_text": "Nico Olvia"
       },
       {
         "name": "Jaguar D. Saul",
         "url": "/wiki/Jaguar_D._Saul",
-        "note": "flashback",
-        "full_text": "Jaguar D. Saul (flashback)"
+        "note": "",
+        "full_text": "Jaguar D. Saul"
       }
     ]
   },
@@ -39212,86 +39518,86 @@
       {
         "name": "Spandine",
         "url": "/wiki/Spandine",
-        "note": "flashback",
-        "full_text": "Spandine (flashback)"
+        "note": "",
+        "full_text": "Spandine"
       },
       {
         "name": "Laskey",
         "url": "/wiki/Laskey",
-        "note": "flashback",
-        "full_text": "Laskey (flashback)"
+        "note": "",
+        "full_text": "Laskey"
       },
       {
         "name": "Tsumonsieur Kamaya",
         "url": "/wiki/Tsumonsieur_Kamaya",
-        "note": "flashback",
-        "full_text": "Tsumonsieur Kamaya (flashback)"
+        "note": "",
+        "full_text": "Tsumonsieur Kamaya"
       },
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "flashback",
-        "full_text": "Nico Robin (flashback)"
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Roji",
         "url": "/wiki/Roji",
-        "note": "flashback",
-        "full_text": "Roji (flashback)"
+        "note": "",
+        "full_text": "Roji"
       },
       {
         "name": "Oran",
         "url": "/wiki/Oran",
-        "note": "flashback",
-        "full_text": "Oran (flashback)"
+        "note": "",
+        "full_text": "Oran"
       },
       {
         "name": "Clover",
         "url": "/wiki/Clou_D._Clover",
-        "note": "flashback",
-        "full_text": "Clover (flashback)"
+        "note": "",
+        "full_text": "Clover"
       },
       {
         "name": "Gram",
         "url": "/wiki/Gram",
-        "note": "flashback",
-        "full_text": "Gram (flashback)"
+        "note": "",
+        "full_text": "Gram"
       },
       {
         "name": "Busshiri",
         "url": "/wiki/Busshiri",
-        "note": "flashback",
-        "full_text": "Busshiri (flashback)"
+        "note": "",
+        "full_text": "Busshiri"
       },
       {
         "name": "Rint",
         "url": "/wiki/Rint",
-        "note": "flashback",
-        "full_text": "Rint (flashback)"
+        "note": "",
+        "full_text": "Rint"
       },
       {
         "name": "Zadie",
         "url": "/wiki/Zadie",
-        "note": "flashback",
-        "full_text": "Zadie (flashback)"
+        "note": "",
+        "full_text": "Zadie"
       },
       {
         "name": "Roche",
         "url": "/wiki/Roche",
-        "note": "flashback",
-        "full_text": "Roche (flashback)"
+        "note": "",
+        "full_text": "Roche"
       },
       {
         "name": "Nico Olvia",
         "url": "/wiki/Nico_Olvia",
-        "note": "flashback",
-        "full_text": "Nico Olvia (flashback)"
+        "note": "",
+        "full_text": "Nico Olvia"
       },
       {
         "name": "Jaguar D. Saul",
         "url": "/wiki/Jaguar_D._Saul",
-        "note": "flashback",
-        "full_text": "Jaguar D. Saul (flashback)"
+        "note": "",
+        "full_text": "Jaguar D. Saul"
       }
     ]
   },
@@ -39307,50 +39613,50 @@
       {
         "name": "Jaygarcia Saturn",
         "url": "/wiki/Jaygarcia_Saturn",
-        "note": "flashback",
-        "full_text": "Jaygarcia Saturn (flashback)"
+        "note": "",
+        "full_text": "Jaygarcia Saturn"
       },
       {
         "name": "Marcus Mars",
         "url": "/wiki/Marcus_Mars",
-        "note": "flashback",
-        "full_text": "Marcus Mars (flashback)"
+        "note": "",
+        "full_text": "Marcus Mars"
       },
       {
         "name": "Topman Warcury",
         "url": "/wiki/Topman_Warcury",
-        "note": "flashback",
-        "full_text": "Topman Warcury (flashback)"
+        "note": "",
+        "full_text": "Topman Warcury"
       },
       {
         "name": "Ethanbaron V. Nusjuro",
         "url": "/wiki/Ethanbaron_V._Nusjuro",
-        "note": "flashback",
-        "full_text": "Ethanbaron V. Nusjuro (flashback)"
+        "note": "",
+        "full_text": "Ethanbaron V. Nusjuro"
       },
       {
         "name": "Shepherd Ju Peter",
         "url": "/wiki/Shepherd_Ju_Peter",
-        "note": "flashback",
-        "full_text": "Shepherd Ju Peter (flashback)"
+        "note": "",
+        "full_text": "Shepherd Ju Peter"
       },
       {
         "name": "Spandine",
         "url": "/wiki/Spandine",
-        "note": "flashback",
-        "full_text": "Spandine (flashback)"
+        "note": "",
+        "full_text": "Spandine"
       },
       {
         "name": "Laskey",
         "url": "/wiki/Laskey",
-        "note": "flashback",
-        "full_text": "Laskey (flashback)"
+        "note": "",
+        "full_text": "Laskey"
       },
       {
         "name": "Tsumonsieur Kamaya",
         "url": "/wiki/Tsumonsieur_Kamaya",
-        "note": "flashback",
-        "full_text": "Tsumonsieur Kamaya (flashback)"
+        "note": "",
+        "full_text": "Tsumonsieur Kamaya"
       },
       {
         "name": "Miss Goldenweek",
@@ -39373,74 +39679,74 @@
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "flashback",
-        "full_text": "Nico Robin (flashback)"
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Roji",
         "url": "/wiki/Roji",
-        "note": "flashback",
-        "full_text": "Roji (flashback)"
+        "note": "",
+        "full_text": "Roji"
       },
       {
         "name": "Oran",
         "url": "/wiki/Oran",
-        "note": "flashback",
-        "full_text": "Oran (flashback)"
+        "note": "",
+        "full_text": "Oran"
       },
       {
         "name": "Clover",
         "url": "/wiki/Clou_D._Clover",
-        "note": "flashback",
-        "full_text": "Clover (flashback)"
+        "note": "",
+        "full_text": "Clover"
       },
       {
         "name": "Gram",
         "url": "/wiki/Gram",
-        "note": "flashback",
-        "full_text": "Gram (flashback)"
+        "note": "",
+        "full_text": "Gram"
       },
       {
         "name": "Busshiri",
         "url": "/wiki/Busshiri",
-        "note": "flashback",
-        "full_text": "Busshiri (flashback)"
+        "note": "",
+        "full_text": "Busshiri"
       },
       {
         "name": "Rint",
         "url": "/wiki/Rint",
-        "note": "flashback",
-        "full_text": "Rint (flashback)"
+        "note": "",
+        "full_text": "Rint"
       },
       {
         "name": "Hocha",
         "url": "/wiki/Hocha",
-        "note": "flashback",
-        "full_text": "Hocha (flashback)"
+        "note": "",
+        "full_text": "Hocha"
       },
       {
         "name": "Zadie",
         "url": "/wiki/Zadie",
-        "note": "flashback",
-        "full_text": "Zadie (flashback)"
+        "note": "",
+        "full_text": "Zadie"
       },
       {
         "name": "Roche",
         "url": "/wiki/Roche",
-        "note": "flashback",
-        "full_text": "Roche (flashback)"
+        "note": "",
+        "full_text": "Roche"
       },
       {
         "name": "Nico Olvia",
         "url": "/wiki/Nico_Olvia",
-        "note": "flashback",
-        "full_text": "Nico Olvia (flashback)"
+        "note": "",
+        "full_text": "Nico Olvia"
       },
       {
         "name": "Jaguar D. Saul",
         "url": "/wiki/Jaguar_D._Saul",
-        "note": "flashback",
-        "full_text": "Jaguar D. Saul (flashback)"
+        "note": "",
+        "full_text": "Jaguar D. Saul"
       }
     ]
   },
@@ -39460,64 +39766,64 @@
         "full_text": "Sengoku (flashback)"
       },
       {
-        "name": "Jaguar D. Saul",
-        "url": "/wiki/Jaguar_D._Saul",
-        "note": "flashback",
-        "full_text": "Jaguar D. Saul (flashback)"
-      },
-      {
         "name": "Kuzan",
         "url": "/wiki/Kuzan",
-        "note": "flashback",
-        "full_text": "Kuzan (flashback)"
+        "note": "",
+        "full_text": "Kuzan"
       },
       {
         "name": "Spandine",
         "url": "/wiki/Spandine",
-        "note": "flashback",
-        "full_text": "Spandine (flashback)"
+        "note": "",
+        "full_text": "Spandine"
       },
       {
         "name": "Laskey",
         "url": "/wiki/Laskey",
-        "note": "flashback",
-        "full_text": "Laskey (flashback)"
+        "note": "",
+        "full_text": "Laskey"
       },
       {
         "name": "Tsumonsieur Kamaya",
         "url": "/wiki/Tsumonsieur_Kamaya",
-        "note": "flashback",
-        "full_text": "Tsumonsieur Kamaya (flashback)"
+        "note": "",
+        "full_text": "Tsumonsieur Kamaya"
       },
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "flashback",
-        "full_text": "Nico Robin (flashback)"
+        "note": "",
+        "full_text": "Nico Robin"
       },
       {
         "name": "Clover",
         "url": "/wiki/Clou_D._Clover",
-        "note": "flashback",
-        "full_text": "Clover (flashback)"
+        "note": "",
+        "full_text": "Clover"
       },
       {
         "name": "Gram",
         "url": "/wiki/Gram",
-        "note": "flashback",
-        "full_text": "Gram (flashback)"
+        "note": "",
+        "full_text": "Gram"
       },
       {
         "name": "Hack",
         "url": "/wiki/Hack_(Archaeologist)",
-        "note": "flashback",
-        "full_text": "Hack (flashback)"
+        "note": "",
+        "full_text": "Hack"
       },
       {
         "name": "Nico Olvia",
         "url": "/wiki/Nico_Olvia",
-        "note": "flashback",
-        "full_text": "Nico Olvia (flashback)"
+        "note": "",
+        "full_text": "Nico Olvia"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
       }
     ]
   },
@@ -39543,12 +39849,6 @@
         "full_text": "Sakazuki"
       },
       {
-        "name": "Jaguar D. Saul",
-        "url": "/wiki/Jaguar_D._Saul",
-        "note": "",
-        "full_text": "Jaguar D. Saul"
-      },
-      {
         "name": "Spandine",
         "url": "/wiki/Spandine",
         "note": "",
@@ -39567,10 +39867,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -39625,6 +39925,12 @@
         "url": "/wiki/Nico_Olvia",
         "note": "",
         "full_text": "Nico Olvia"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
       }
     ]
   },
@@ -39859,16 +40165,16 @@
         "full_text": "Kashii"
       },
       {
-        "name": "Just Eleven Jurymen",
-        "url": "/wiki/Just_Eleven_Jurymen",
-        "note": "",
-        "full_text": "Just Eleven Jurymen"
-      },
-      {
         "name": "Baskerville",
         "url": "/wiki/Baskerville",
         "note": "",
         "full_text": "Baskerville"
+      },
+      {
+        "name": "Just Eleven Jurymen",
+        "url": "/wiki/Just_Eleven_Jurymen",
+        "note": "",
+        "full_text": "Just Eleven Jurymen"
       },
       {
         "name": "Spandam",
@@ -39961,16 +40267,16 @@
         "full_text": "Miss Doublefinger (cover)"
       },
       {
-        "name": "Miss Merry Christmas",
-        "url": "/wiki/Drophy",
-        "note": "cover",
-        "full_text": "Miss Merry Christmas (cover)"
-      },
-      {
         "name": "Miss Goldenweek",
         "url": "/wiki/Marianne",
         "note": "cover",
         "full_text": "Miss Goldenweek (cover)"
+      },
+      {
+        "name": "Miss Merry Christmas",
+        "url": "/wiki/Drophy",
+        "note": "cover",
+        "full_text": "Miss Merry Christmas (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -40140,16 +40446,16 @@
         "full_text": "Crocodile (cover)"
       },
       {
-        "name": "Miss DoubleFinger",
-        "url": "/wiki/Zala",
+        "name": "Daz Bonez",
+        "url": "/wiki/Daz_Bonez",
         "note": "cover",
-        "full_text": "Miss DoubleFinger (cover)"
+        "full_text": "Daz Bonez (cover)"
       },
       {
-        "name": "Miss Merry Christmas",
-        "url": "/wiki/Drophy",
+        "name": "Miss Doublefinger",
+        "url": "/wiki/Zala",
         "note": "cover",
-        "full_text": "Miss Merry Christmas (cover)"
+        "full_text": "Miss Doublefinger (cover)"
       },
       {
         "name": "Miss Goldenweek",
@@ -40158,10 +40464,16 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Miss Valentine",
-        "url": "/wiki/Mikita",
+        "name": "Mr. 4",
+        "url": "/wiki/Babe",
         "note": "cover",
-        "full_text": "Miss Valentine (cover)"
+        "full_text": "Mr. 4 (cover)"
+      },
+      {
+        "name": "Miss Merry Christmas",
+        "url": "/wiki/Drophy",
+        "note": "cover",
+        "full_text": "Miss Merry Christmas (cover)"
       },
       {
         "name": "Mr. 5",
@@ -40170,16 +40482,10 @@
         "full_text": "Mr. 5 (cover)"
       },
       {
-        "name": "Daz Bonez",
-        "url": "/wiki/Daz_Bonez",
+        "name": "Miss Valentine",
+        "url": "/wiki/Mikita",
         "note": "cover",
-        "full_text": "Daz Bonez (cover)"
-      },
-      {
-        "name": "Mr. 4",
-        "url": "/wiki/Babe",
-        "note": "cover",
-        "full_text": "Mr. 4 (cover)"
+        "full_text": "Miss Valentine (cover)"
       },
       {
         "name": "Tom",
@@ -40478,6 +40784,12 @@
         "full_text": "Tony Tony Chopper"
       },
       {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
         "name": "Spandam",
         "url": "/wiki/Spandam",
         "note": "",
@@ -40520,10 +40832,10 @@
         "full_text": "Miss Goldenweek (cover)"
       },
       {
-        "name": "Miss DoubleFinger",
+        "name": "Miss Doublefinger",
         "url": "/wiki/Zala",
         "note": "cover",
-        "full_text": "Miss DoubleFinger (cover)"
+        "full_text": "Miss Doublefinger (cover)"
       },
       {
         "name": "Mr. 4",
@@ -40554,12 +40866,6 @@
         "url": "/wiki/Gonbe",
         "note": "",
         "full_text": "Gonbe"
-      },
-      {
-        "name": "Nico Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Nico Robin"
       }
     ]
   },
@@ -40753,8 +41059,8 @@
       {
         "name": "Fukurou",
         "url": "/wiki/Fukurou",
-        "note": "K.O",
-        "full_text": "Fukurou (K.O)"
+        "note": "K.O.",
+        "full_text": "Fukurou (K.O.)"
       },
       {
         "name": "Kumadori",
@@ -40775,10 +41081,10 @@
         "full_text": "Mr. 4 (cover)"
       },
       {
-        "name": "Mr.5",
+        "name": "Mr. 5",
         "url": "/wiki/Gem",
         "note": "cover",
-        "full_text": "Mr.5 (cover)"
+        "full_text": "Mr. 5 (cover)"
       },
       {
         "name": "Miss Valentine",
@@ -40929,6 +41235,12 @@
         "full_text": "Tony Tony Chopper"
       },
       {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
         "name": "Oimo",
         "url": "/wiki/Oimo",
         "note": "",
@@ -40977,22 +41289,22 @@
         "full_text": "Kalifa"
       },
       {
-        "name": "Kumadori",
-        "url": "/wiki/Kumadori",
-        "note": "K.O",
-        "full_text": "Kumadori (K.O)"
-      },
-      {
         "name": "Jabra",
         "url": "/wiki/Jabra",
         "note": "",
         "full_text": "Jabra"
       },
       {
+        "name": "Kumadori",
+        "url": "/wiki/Kumadori",
+        "note": "K.O.",
+        "full_text": "Kumadori (K.O.)"
+      },
+      {
         "name": "Fukurou",
         "url": "/wiki/Fukurou",
-        "note": "K.O",
-        "full_text": "Fukurou (K.O)"
+        "note": "K.O.",
+        "full_text": "Fukurou (K.O.)"
       },
       {
         "name": "Franky",
@@ -41021,44 +41333,44 @@
       {
         "name": "Miss Goldenweek",
         "url": "/wiki/Marianne",
-        "note": "shadowed, cover",
-        "full_text": "Miss Goldenweek (shadowed, cover)"
-      },
-      {
-        "name": "Mr.5",
-        "url": "/wiki/Gem",
-        "note": "shadowed, cover",
-        "full_text": "Mr.5 (shadowed, cover)"
-      },
-      {
-        "name": "Miss Valentine",
-        "url": "/wiki/Mikita",
-        "note": "shadowed, cover",
-        "full_text": "Miss Valentine (shadowed, cover)"
+        "note": "cover; shadowed",
+        "full_text": "Miss Goldenweek (cover; shadowed)"
       },
       {
         "name": "Miss Doublefinger",
         "url": "/wiki/Zala",
-        "note": "shadowed, cover",
-        "full_text": "Miss Doublefinger (shadowed, cover)"
+        "note": "cover; shadowed",
+        "full_text": "Miss Doublefinger (cover; shadowed)"
       },
       {
         "name": "Mr. 4",
         "url": "/wiki/Babe",
-        "note": "shadowed, cover",
-        "full_text": "Mr. 4 (shadowed, cover)"
+        "note": "cover; shadowed",
+        "full_text": "Mr. 4 (cover; shadowed)"
       },
       {
         "name": "Miss Merry Christmas",
         "url": "/wiki/Drophy",
-        "note": "shadowed, cover",
-        "full_text": "Miss Merry Christmas (shadowed, cover)"
+        "note": "cover; shadowed",
+        "full_text": "Miss Merry Christmas (cover; shadowed)"
+      },
+      {
+        "name": "Mr. 5",
+        "url": "/wiki/Gem",
+        "note": "cover; shadowed",
+        "full_text": "Mr. 5 (cover; shadowed)"
+      },
+      {
+        "name": "Miss Valentine",
+        "url": "/wiki/Mikita",
+        "note": "cover; shadowed",
+        "full_text": "Miss Valentine (cover; shadowed)"
       },
       {
         "name": "Lassoo",
         "url": "/wiki/Lassoo",
-        "note": "shadowed, cover",
-        "full_text": "Lassoo (shadowed, cover)"
+        "note": "cover; shadowed",
+        "full_text": "Lassoo (cover; shadowed)"
       },
       {
         "name": "Paulie",
@@ -41083,12 +41395,6 @@
         "url": "/wiki/Kokoro",
         "note": "",
         "full_text": "Kokoro"
-      },
-      {
-        "name": "Nico Robin",
-        "url": "/wiki/Nico_Robin",
-        "note": "",
-        "full_text": "Nico Robin"
       }
     ]
   },
@@ -41245,40 +41551,40 @@
         "full_text": "Kalifa"
       },
       {
-        "name": "Miss Goldenweek",
+        "name": "Marianne",
         "url": "/wiki/Marianne",
         "note": "cover",
-        "full_text": "Miss Goldenweek (cover)"
+        "full_text": "Marianne (cover)"
       },
       {
-        "name": "Mr. 5",
-        "url": "/wiki/Gem",
-        "note": "cover",
-        "full_text": "Mr. 5 (cover)"
-      },
-      {
-        "name": "Miss Valentine",
-        "url": "/wiki/Mikita",
-        "note": "cover",
-        "full_text": "Miss Valentine (cover)"
-      },
-      {
-        "name": "Miss Doublefinger",
+        "name": "Zala",
         "url": "/wiki/Zala",
         "note": "cover",
-        "full_text": "Miss Doublefinger (cover)"
+        "full_text": "Zala (cover)"
       },
       {
-        "name": "Mr. 4",
+        "name": "Babe",
         "url": "/wiki/Babe",
         "note": "cover",
-        "full_text": "Mr. 4 (cover)"
+        "full_text": "Babe (cover)"
       },
       {
-        "name": "Miss Merry Christmas",
+        "name": "Drophy",
         "url": "/wiki/Drophy",
         "note": "cover",
-        "full_text": "Miss Merry Christmas (cover)"
+        "full_text": "Drophy (cover)"
+      },
+      {
+        "name": "Gem",
+        "url": "/wiki/Gem",
+        "note": "cover",
+        "full_text": "Gem (cover)"
+      },
+      {
+        "name": "Mikita",
+        "url": "/wiki/Mikita",
+        "note": "cover",
+        "full_text": "Mikita (cover)"
       },
       {
         "name": "Lassoo",
@@ -41407,8 +41713,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O",
-        "full_text": "Tony Tony Chopper (K.O)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -41532,8 +41838,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O",
-        "full_text": "Tony Tony Chopper (K.O)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -41828,8 +42134,8 @@
       {
         "name": "Kaku",
         "url": "/wiki/Kaku",
-        "note": "defeated",
-        "full_text": "Kaku (defeated)"
+        "note": "",
+        "full_text": "Kaku"
       },
       {
         "name": "Fukurou",
@@ -41876,14 +42182,14 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Paulie",
@@ -41957,12 +42263,6 @@
         "full_text": "Kashii"
       },
       {
-        "name": "Jaguar D. Saul",
-        "url": "/wiki/Jaguar_D._Saul",
-        "note": "flashback",
-        "full_text": "Jaguar D. Saul (flashback)"
-      },
-      {
         "name": "Spandam",
         "url": "/wiki/Spandam",
         "note": "",
@@ -42001,14 +42301,14 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Paulie",
@@ -42039,6 +42339,12 @@
         "url": "/wiki/Clou_D._Clover",
         "note": "flashback",
         "full_text": "Clover (flashback)"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "flashback",
+        "full_text": "Jaguar D. Saul (flashback)"
       }
     ]
   },
@@ -42084,14 +42390,26 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O",
-        "full_text": "Tony Tony Chopper (K.O)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
         "note": "",
         "full_text": "Nico Robin"
+      },
+      {
+        "name": "Oimo",
+        "url": "/wiki/Oimo",
+        "note": "",
+        "full_text": "Oimo"
+      },
+      {
+        "name": "Kashii",
+        "url": "/wiki/Kashii",
+        "note": "",
+        "full_text": "Kashii"
       },
       {
         "name": "Strawberry",
@@ -42124,18 +42442,6 @@
         "full_text": "Momonga"
       },
       {
-        "name": "Oimo",
-        "url": "/wiki/Oimo",
-        "note": "",
-        "full_text": "Oimo"
-      },
-      {
-        "name": "Kashii",
-        "url": "/wiki/Kashii",
-        "note": "",
-        "full_text": "Kashii"
-      },
-      {
         "name": "Spandam",
         "url": "/wiki/Spandam",
         "note": "",
@@ -42162,14 +42468,14 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Paulie",
@@ -42245,8 +42551,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O",
-        "full_text": "Tony Tony Chopper (K.O)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -42287,26 +42593,26 @@
       {
         "name": "Kaku",
         "url": "/wiki/Kaku",
-        "note": "K.O",
-        "full_text": "Kaku (K.O)"
+        "note": "K.O.",
+        "full_text": "Kaku (K.O.)"
       },
       {
         "name": "Kalifa",
         "url": "/wiki/Kalifa",
-        "note": "K.O",
-        "full_text": "Kalifa (K.O)"
+        "note": "K.O.",
+        "full_text": "Kalifa (K.O.)"
       },
       {
         "name": "Jabra",
         "url": "/wiki/Jabra",
-        "note": "K.O",
-        "full_text": "Jabra (K.O)"
+        "note": "K.O.",
+        "full_text": "Jabra (K.O.)"
       },
       {
         "name": "Fukurou",
         "url": "/wiki/Fukurou",
-        "note": "K.O",
-        "full_text": "Fukurou (K.O)"
+        "note": "K.O.",
+        "full_text": "Fukurou (K.O.)"
       },
       {
         "name": "Franky",
@@ -42317,14 +42623,14 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Kokoro",
@@ -42388,8 +42694,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O",
-        "full_text": "Tony Tony Chopper (K.O)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -42477,8 +42783,8 @@
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "K.O",
-        "full_text": "Tony Tony Chopper (K.O)"
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper (K.O.)"
       },
       {
         "name": "Nico Robin",
@@ -42531,26 +42837,20 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Iceburg",
         "url": "/wiki/Iceburg",
         "note": "flashback",
         "full_text": "Iceburg (flashback)"
-      },
-      {
-        "name": "Yokozuna",
-        "url": "/wiki/Yokozuna",
-        "note": "",
-        "full_text": "Yokozuna"
       },
       {
         "name": "Kokoro",
@@ -42569,6 +42869,12 @@
         "url": "/wiki/Gonbe",
         "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Yokozuna",
+        "url": "/wiki/Yokozuna",
+        "note": "",
+        "full_text": "Yokozuna"
       },
       {
         "name": "Nefertari Vivi",
@@ -42630,18 +42936,6 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Strawberry",
-        "url": "/wiki/Strawberry",
-        "note": "",
-        "full_text": "Strawberry"
-      },
-      {
-        "name": "Momonga",
-        "url": "/wiki/Momonga",
-        "note": "",
-        "full_text": "Momonga"
-      },
-      {
         "name": "Oimo",
         "url": "/wiki/Oimo",
         "note": "",
@@ -42652,6 +42946,18 @@
         "url": "/wiki/Kashii",
         "note": "",
         "full_text": "Kashii"
+      },
+      {
+        "name": "Strawberry",
+        "url": "/wiki/Strawberry",
+        "note": "",
+        "full_text": "Strawberry"
+      },
+      {
+        "name": "Momonga",
+        "url": "/wiki/Momonga",
+        "note": "",
+        "full_text": "Momonga"
       },
       {
         "name": "Rob Lucci",
@@ -42692,32 +42998,32 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Dago",
         "url": "/wiki/Dago",
-        "note": "K.O",
-        "full_text": "Dago (K.O)"
+        "note": "K.O.",
+        "full_text": "Dago (K.O.)"
       },
       {
         "name": "Ottoland",
         "url": "/wiki/Ottoland",
-        "note": "K.O",
-        "full_text": "Ottoland (K.O)"
+        "note": "K.O.",
+        "full_text": "Ottoland (K.O.)"
       },
       {
         "name": "Footbianco",
         "url": "/wiki/Footbianco",
-        "note": "K.O",
-        "full_text": "Footbianco (K.O)"
+        "note": "K.O.",
+        "full_text": "Footbianco (K.O.)"
       },
       {
         "name": "Paulie",
@@ -42738,12 +43044,6 @@
         "full_text": "Tilestone"
       },
       {
-        "name": "Yokozuna",
-        "url": "/wiki/Yokozuna",
-        "note": "",
-        "full_text": "Yokozuna"
-      },
-      {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
         "note": "",
@@ -42762,10 +43062,10 @@
         "full_text": "Gonbe"
       },
       {
-        "name": "Nola",
-        "url": "/wiki/Nola",
-        "note": "cover",
-        "full_text": "Nola (cover)"
+        "name": "Yokozuna",
+        "url": "/wiki/Yokozuna",
+        "note": "",
+        "full_text": "Yokozuna"
       },
       {
         "name": "Conis",
@@ -42784,6 +43084,12 @@
         "url": "/wiki/Raki",
         "note": "cover",
         "full_text": "Raki (cover)"
+      },
+      {
+        "name": "Nola",
+        "url": "/wiki/Nola",
+        "note": "cover",
+        "full_text": "Nola (cover)"
       }
     ]
   },
@@ -43053,16 +43359,16 @@
         "full_text": "Nico Robin"
       },
       {
-        "name": "Momonga",
-        "url": "/wiki/Momonga",
-        "note": "",
-        "full_text": "Momonga"
-      },
-      {
         "name": "Aokiji",
         "url": "/wiki/Kuzan",
         "note": "flashback",
         "full_text": "Aokiji (flashback)"
+      },
+      {
+        "name": "Momonga",
+        "url": "/wiki/Momonga",
+        "note": "",
+        "full_text": "Momonga"
       },
       {
         "name": "Rob Lucci",
@@ -43264,14 +43570,14 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Paulie",
@@ -43292,12 +43598,6 @@
         "full_text": "Tilestone"
       },
       {
-        "name": "Yokozuna",
-        "url": "/wiki/Yokozuna",
-        "note": "",
-        "full_text": "Yokozuna"
-      },
-      {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
         "note": "",
@@ -43314,6 +43614,12 @@
         "url": "/wiki/Gonbe",
         "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Yokozuna",
+        "url": "/wiki/Yokozuna",
+        "note": "",
+        "full_text": "Yokozuna"
       }
     ]
   },
@@ -43449,14 +43755,14 @@
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "K.O",
-        "full_text": "Sodom (K.O)"
+        "note": "K.O.",
+        "full_text": "Sodom (K.O.)"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "K.O",
-        "full_text": "Gomorrah (K.O)"
+        "note": "K.O.",
+        "full_text": "Gomorrah (K.O.)"
       },
       {
         "name": "Kokoro",
@@ -43600,6 +43906,18 @@
         "url": "/wiki/Enel",
         "note": "cover",
         "full_text": "Enel (cover)"
+      },
+      {
+        "name": "Mottled",
+        "url": "/wiki/Mottled",
+        "note": "flashback",
+        "full_text": "Mottled (flashback)"
+      },
+      {
+        "name": "Island Eater",
+        "url": "/wiki/Island_Eater",
+        "note": "flashback",
+        "full_text": "Island Eater (flashback)"
       }
     ]
   },
@@ -45052,6 +45370,12 @@
         "full_text": "Franky"
       },
       {
+        "name": "Seamars",
+        "url": "/wiki/Seamars",
+        "note": "cover",
+        "full_text": "Seamars (cover)"
+      },
+      {
         "name": "Aokiji",
         "url": "/wiki/Kuzan",
         "note": "",
@@ -45106,22 +45430,16 @@
         "full_text": "Spacey (cover)"
       },
       {
-        "name": "Cosmo",
-        "url": "/wiki/Cosmo",
+        "name": "Galaxy",
+        "url": "/wiki/Galaxy",
         "note": "cover",
-        "full_text": "Cosmo (cover)"
+        "full_text": "Galaxy (cover)"
       },
       {
         "name": "Macro",
         "url": "/wiki/Macro_(Automaton)",
         "note": "cover",
         "full_text": "Macro (cover)"
-      },
-      {
-        "name": "Seamars",
-        "url": "/wiki/Seamars",
-        "note": "cover",
-        "full_text": "Seamars (cover)"
       }
     ]
   },
@@ -45458,6 +45776,12 @@
         "full_text": "Laffitte (flashback)"
       },
       {
+        "name": "Seamars",
+        "url": "/wiki/Seamars",
+        "note": "cover",
+        "full_text": "Seamars (cover)"
+      },
+      {
         "name": "Monkey D. Dragon",
         "url": "/wiki/Monkey_D._Dragon",
         "note": "",
@@ -45578,16 +45902,10 @@
         "full_text": "Spacey (cover)"
       },
       {
-        "name": "Cosmo",
-        "url": "/wiki/Cosmo",
+        "name": "Galaxy",
+        "url": "/wiki/Galaxy",
         "note": "cover, K.O.",
-        "full_text": "Cosmo (cover, K.O.)"
-      },
-      {
-        "name": "Seamars",
-        "url": "/wiki/Seamars",
-        "note": "cover",
-        "full_text": "Seamars (cover)"
+        "full_text": "Galaxy (cover, K.O.)"
       }
     ]
   },
@@ -56129,6 +56447,12 @@
         "url": "/wiki/Very_Good",
         "note": "cover",
         "full_text": "Very Good (cover)"
+      },
+      {
+        "name": "Scales",
+        "url": "/wiki/Scales",
+        "note": "",
+        "full_text": "Scales"
       }
     ]
   },
@@ -132512,6 +132836,12 @@
         "full_text": "Beegirl"
       },
       {
+        "name": "Battaman",
+        "url": "/wiki/Battaman",
+        "note": "",
+        "full_text": "Battaman"
+      },
+      {
         "name": "Doubt Brothers",
         "url": "/wiki/Doubt_Brothers",
         "note": "",
@@ -141643,7 +141973,7 @@
     "volume": "101",
     "chapter_display": "1024",
     "title": "So-and-So",
-    "pages": "17 (Excluding two-page color spread)*",
+    "pages": "17 (Excluding two-page color spread) *",
     "release_date": "September 6, 2021",
     "jump_info": "2021 Issue 40",
     "characters": [
@@ -160991,6 +161321,12 @@
         "full_text": "Figarland Garling"
       },
       {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
         "name": "Sakazuki",
         "url": "/wiki/Sakazuki",
         "note": "",
@@ -165285,10 +165621,10 @@
   },
   {
     "chapter_number": 1145,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1145",
     "title": "Wildfire in Forest Sector 2, Branch Route 8",
-    "pages": "17 (Excluding two-page color spread)*",
+    "pages": "17 (Excluding two-page color spread) *",
     "release_date": "April 7, 2025",
     "jump_info": "2025 Issue 19",
     "characters": [
@@ -165548,7 +165884,7 @@
   },
   {
     "chapter_number": 1146,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1146",
     "title": "Motion in Stillness",
     "pages": "17",
@@ -165811,7 +166147,7 @@
   },
   {
     "chapter_number": 1147,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1147",
     "title": "What We're Afraid Of",
     "pages": "17",
@@ -166032,7 +166368,7 @@
   },
   {
     "chapter_number": 1148,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1148",
     "title": "Ronja",
     "pages": "15",
@@ -166229,7 +166565,7 @@
   },
   {
     "chapter_number": 1149,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1149",
     "title": "One Second",
     "pages": "19",
@@ -166432,7 +166768,7 @@
   },
   {
     "chapter_number": 1150,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1150",
     "title": "Domi Reversi",
     "pages": "15",
@@ -166581,7 +166917,7 @@
   },
   {
     "chapter_number": 1151,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1151",
     "title": "I Get the Idea!!!",
     "pages": "15",
@@ -166808,7 +167144,7 @@
   },
   {
     "chapter_number": 1152,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1152",
     "title": "A Horrible Day",
     "pages": "17",
@@ -166981,7 +167317,7 @@
   },
   {
     "chapter_number": 1153,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1153",
     "title": "The Birth of Loki",
     "pages": "17",
@@ -167070,7 +167406,7 @@
   },
   {
     "chapter_number": 1154,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1154",
     "title": "Can't Even Die",
     "pages": "17",
@@ -167201,7 +167537,7 @@
   },
   {
     "chapter_number": 1155,
-    "volume": "TBA",
+    "volume": "113",
     "chapter_display": "1155",
     "title": "The Rocks Pirates",
     "pages": "17",
@@ -167853,6 +168189,1553 @@
         "url": "/wiki/Page_One",
         "note": "cover",
         "full_text": "Page One (cover)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1158,
+    "volume": "TBA",
+    "chapter_display": "1158",
+    "title": "Rocks vs. Harald",
+    "pages": "15",
+    "release_date": "September 1, 2025",
+    "jump_info": "2025 Issue 40",
+    "characters": [
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Moon Isaac Jr.",
+        "url": "/wiki/Moon_Isaac_Jr.",
+        "note": "",
+        "full_text": "Moon Isaac Jr."
+      },
+      {
+        "name": "Donquino",
+        "url": "/wiki/Donquino",
+        "note": "",
+        "full_text": "Donquino"
+      },
+      {
+        "name": "Erio",
+        "url": "/wiki/Erio",
+        "note": "",
+        "full_text": "Erio"
+      },
+      {
+        "name": "Spencer",
+        "url": "/wiki/Spencer",
+        "note": "",
+        "full_text": "Spencer"
+      },
+      {
+        "name": "Petermoo",
+        "url": "/wiki/Petermoo",
+        "note": "",
+        "full_text": "Petermoo"
+      },
+      {
+        "name": "MAX Marx",
+        "url": "/wiki/MAX_Marx",
+        "note": "",
+        "full_text": "MAX Marx"
+      },
+      {
+        "name": "Seagull Guns Nozdon",
+        "url": "/wiki/Seagull_Guns_Nozdon",
+        "note": "",
+        "full_text": "Seagull Guns Nozdon"
+      },
+      {
+        "name": "Sunbell",
+        "url": "/wiki/Sunbell",
+        "note": "",
+        "full_text": "Sunbell"
+      },
+      {
+        "name": "Taro",
+        "url": "/wiki/Taro",
+        "note": "",
+        "full_text": "Taro"
+      },
+      {
+        "name": "Ganryu",
+        "url": "/wiki/Ganryu_(Roger_Pirates)",
+        "note": "",
+        "full_text": "Ganryu"
+      },
+      {
+        "name": "CB Gallant",
+        "url": "/wiki/CB_Gallant",
+        "note": "",
+        "full_text": "CB Gallant"
+      },
+      {
+        "name": "Mr. Momora",
+        "url": "/wiki/Mr._Momora",
+        "note": "",
+        "full_text": "Mr. Momora"
+      },
+      {
+        "name": "Bankuro",
+        "url": "/wiki/Bankuro",
+        "note": "",
+        "full_text": "Bankuro"
+      },
+      {
+        "name": "Yamon",
+        "url": "/wiki/Yamon",
+        "note": "",
+        "full_text": "Yamon"
+      },
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "",
+        "full_text": "Buckingham Stussy"
+      },
+      {
+        "name": "Ochoku",
+        "url": "/wiki/Ochoku",
+        "note": "",
+        "full_text": "Ochoku"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Gloriosa",
+        "url": "/wiki/Gloriosa",
+        "note": "",
+        "full_text": "Gloriosa"
+      },
+      {
+        "name": "Marcus Mars",
+        "url": "/wiki/Marcus_Mars",
+        "note": "",
+        "full_text": "Marcus Mars"
+      },
+      {
+        "name": "Topman Warcury",
+        "url": "/wiki/Topman_Warcury",
+        "note": "",
+        "full_text": "Topman Warcury"
+      },
+      {
+        "name": "Ethanbaron V. Nusjuro",
+        "url": "/wiki/Ethanbaron_V._Nusjuro",
+        "note": "",
+        "full_text": "Ethanbaron V. Nusjuro"
+      },
+      {
+        "name": "Shepherd Ju Peter",
+        "url": "/wiki/Shepherd_Ju_Peter",
+        "note": "",
+        "full_text": "Shepherd Ju Peter"
+      },
+      {
+        "name": "Figarland Garling",
+        "url": "/wiki/Figarland_Garling",
+        "note": "",
+        "full_text": "Figarland Garling"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Ida",
+        "url": "/wiki/Ida",
+        "note": "",
+        "full_text": "Ida"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Mato",
+        "url": "/wiki/Mato",
+        "note": "",
+        "full_text": "Mato"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Kikunojo",
+        "url": "/wiki/Kikunojo",
+        "note": "cover",
+        "full_text": "Kikunojo (cover)"
+      },
+      {
+        "name": "Cho",
+        "url": "/wiki/Cho",
+        "note": "cover",
+        "full_text": "Cho (cover)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1159,
+    "volume": "TBA",
+    "chapter_display": "1159",
+    "title": "The Island of Fate",
+    "pages": "17",
+    "release_date": "September 8, 2025",
+    "jump_info": "2025 Issue 41",
+    "characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "",
+        "full_text": "Buckingham Stussy"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Ochoku",
+        "url": "/wiki/Ochoku",
+        "note": "",
+        "full_text": "Ochoku"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "",
+        "full_text": "Ganzui"
+      },
+      {
+        "name": "Marlon",
+        "url": "/wiki/Marlon",
+        "note": "deceased",
+        "full_text": "Marlon (deceased)"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "",
+        "full_text": "John"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "",
+        "full_text": "Napoleon"
+      },
+      {
+        "name": "Streusen",
+        "url": "/wiki/Streusen",
+        "note": "",
+        "full_text": "Streusen"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "Kyo",
+        "url": "/wiki/Kyo",
+        "note": "",
+        "full_text": "Kyo"
+      },
+      {
+        "name": "Gloriosa",
+        "url": "/wiki/Gloriosa",
+        "note": "",
+        "full_text": "Gloriosa"
+      },
+      {
+        "name": "Gill Bastar",
+        "url": "/wiki/Gill_Bastar",
+        "note": "",
+        "full_text": "Gill Bastar"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "image",
+        "full_text": "Scopper Gaban (image)"
+      },
+      {
+        "name": "Donquino",
+        "url": "/wiki/Donquino",
+        "note": "",
+        "full_text": "Donquino"
+      },
+      {
+        "name": "Seagull Guns Nozdon",
+        "url": "/wiki/Seagull_Guns_Nozdon",
+        "note": "",
+        "full_text": "Seagull Guns Nozdon"
+      },
+      {
+        "name": "Mr. Momora",
+        "url": "/wiki/Mr._Momora",
+        "note": "",
+        "full_text": "Mr. Momora"
+      },
+      {
+        "name": "Figarland Garling",
+        "url": "/wiki/Figarland_Garling",
+        "note": "",
+        "full_text": "Figarland Garling"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
+        "note": "",
+        "full_text": "Manmayer Gunko"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "url": "/wiki/Monkey_D._Dragon",
+        "note": "",
+        "full_text": "Monkey D. Dragon"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "url": "/wiki/Bartholomew_Kuma",
+        "note": "",
+        "full_text": "Bartholomew Kuma"
+      },
+      {
+        "name": "Emporio Ivankov",
+        "url": "/wiki/Emporio_Ivankov",
+        "note": "",
+        "full_text": "Emporio Ivankov"
+      },
+      {
+        "name": "Ginny",
+        "url": "/wiki/Ginny",
+        "note": "",
+        "full_text": "Ginny"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Eris",
+        "url": "/wiki/Eris",
+        "note": "",
+        "full_text": "Eris"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "",
+        "full_text": "Marshall D. Teach"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Onimaru",
+        "url": "/wiki/Onimaru",
+        "note": "cover",
+        "full_text": "Onimaru (cover)"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover",
+        "full_text": "Ulti (cover)"
+      },
+      {
+        "name": "Page One",
+        "url": "/wiki/Page_One",
+        "note": "cover",
+        "full_text": "Page One (cover)"
+      },
+      {
+        "name": "Morgans",
+        "url": "/wiki/Morgans",
+        "note": "",
+        "full_text": "Morgans"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1160,
+    "volume": "TBA",
+    "chapter_display": "1160",
+    "title": "The God Valley Incident",
+    "pages": "17",
+    "release_date": "September 15, 2025",
+    "jump_info": "2025 Issue 42",
+    "characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "",
+        "full_text": "Buckingham Stussy"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "",
+        "full_text": "John"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "",
+        "full_text": "Napoleon"
+      },
+      {
+        "name": "Streusen",
+        "url": "/wiki/Streusen",
+        "note": "",
+        "full_text": "Streusen"
+      },
+      {
+        "name": "Barbel",
+        "url": "/wiki/Barbel",
+        "note": "",
+        "full_text": "Barbel"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "Kyo",
+        "url": "/wiki/Kyo",
+        "note": "",
+        "full_text": "Kyo"
+      },
+      {
+        "name": "Gloriosa",
+        "url": "/wiki/Gloriosa",
+        "note": "",
+        "full_text": "Gloriosa"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Donquino",
+        "url": "/wiki/Donquino",
+        "note": "",
+        "full_text": "Donquino"
+      },
+      {
+        "name": "Petermoo",
+        "url": "/wiki/Petermoo",
+        "note": "",
+        "full_text": "Petermoo"
+      },
+      {
+        "name": "Jacksonbanner",
+        "url": "/wiki/Jacksonbanner",
+        "note": "",
+        "full_text": "Jacksonbanner"
+      },
+      {
+        "name": "MAX Marx",
+        "url": "/wiki/MAX_Marx",
+        "note": "",
+        "full_text": "MAX Marx"
+      },
+      {
+        "name": "Taro",
+        "url": "/wiki/Taro",
+        "note": "",
+        "full_text": "Taro"
+      },
+      {
+        "name": "Mr. Momora",
+        "url": "/wiki/Mr._Momora",
+        "note": "",
+        "full_text": "Mr. Momora"
+      },
+      {
+        "name": "Rangram",
+        "url": "/wiki/Rangram",
+        "note": "",
+        "full_text": "Rangram"
+      },
+      {
+        "name": "Mugren",
+        "url": "/wiki/Mugren",
+        "note": "",
+        "full_text": "Mugren"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "url": "/wiki/Jaygarcia_Saturn",
+        "note": "",
+        "full_text": "Jaygarcia Saturn"
+      },
+      {
+        "name": "Figarland Garling",
+        "url": "/wiki/Figarland_Garling",
+        "note": "",
+        "full_text": "Figarland Garling"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Satchels Maffey",
+        "url": "/wiki/Satchels_Maffey",
+        "note": "",
+        "full_text": "Satchels Maffey"
+      },
+      {
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
+        "note": "",
+        "full_text": "Manmayer Gunko"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Bogard",
+        "url": "/wiki/Bogard",
+        "note": "",
+        "full_text": "Bogard"
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "url": "/wiki/Monkey_D._Dragon",
+        "note": "",
+        "full_text": "Monkey D. Dragon"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "url": "/wiki/Bartholomew_Kuma",
+        "note": "",
+        "full_text": "Bartholomew Kuma"
+      },
+      {
+        "name": "Emporio Ivankov",
+        "url": "/wiki/Emporio_Ivankov",
+        "note": "",
+        "full_text": "Emporio Ivankov"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Eris",
+        "url": "/wiki/Eris",
+        "note": "",
+        "full_text": "Eris"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "",
+        "full_text": "Marshall D. Teach"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1161,
+    "volume": "TBA",
+    "chapter_display": "1161",
+    "title": "A Song of Love Bound Under a Hail of Arrows",
+    "pages": "19",
+    "release_date": "September 29, 2025",
+    "jump_info": "2025 Issue 44",
+    "characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "",
+        "full_text": "Ganzui"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "",
+        "full_text": "John"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "",
+        "full_text": "Napoleon"
+      },
+      {
+        "name": "Prometheus",
+        "url": "/wiki/Prometheus",
+        "note": "",
+        "full_text": "Prometheus"
+      },
+      {
+        "name": "Zeus",
+        "url": "/wiki/Zeus",
+        "note": "",
+        "full_text": "Zeus"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "Kyo",
+        "url": "/wiki/Kyo",
+        "note": "",
+        "full_text": "Kyo"
+      },
+      {
+        "name": "Gloriosa",
+        "url": "/wiki/Gloriosa",
+        "note": "",
+        "full_text": "Gloriosa"
+      },
+      {
+        "name": "Gill Bastar",
+        "url": "/wiki/Gill_Bastar",
+        "note": "",
+        "full_text": "Gill Bastar"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Satchels Maffey",
+        "url": "/wiki/Satchels_Maffey",
+        "note": "",
+        "full_text": "Satchels Maffey"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "url": "/wiki/Monkey_D._Dragon",
+        "note": "",
+        "full_text": "Monkey D. Dragon"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "url": "/wiki/Bartholomew_Kuma",
+        "note": "",
+        "full_text": "Bartholomew Kuma"
+      },
+      {
+        "name": "Emporio Ivankov",
+        "url": "/wiki/Emporio_Ivankov",
+        "note": "",
+        "full_text": "Emporio Ivankov"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Kouzuki Momonosuke",
+        "url": "/wiki/Kouzuki_Momonosuke",
+        "note": "cover",
+        "full_text": "Kouzuki Momonosuke (cover)"
+      },
+      {
+        "name": "Kin'emon",
+        "url": "/wiki/Kin%27emon",
+        "note": "cover",
+        "full_text": "Kin'emon (cover)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1162,
+    "volume": "TBA",
+    "chapter_display": "1162",
+    "title": "God Valley Battle Royale",
+    "pages": "17",
+    "release_date": "October 13, 2025",
+    "jump_info": "2025 Issue 46",
+    "characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "",
+        "full_text": "Buckingham Stussy"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "",
+        "full_text": "Ganzui"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "",
+        "full_text": "Napoleon"
+      },
+      {
+        "name": "Barbel",
+        "url": "/wiki/Barbel",
+        "note": "",
+        "full_text": "Barbel"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "Kyo",
+        "url": "/wiki/Kyo",
+        "note": "",
+        "full_text": "Kyo"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Millet Pine",
+        "url": "/wiki/Millet_Pine",
+        "note": "",
+        "full_text": "Millet Pine"
+      },
+      {
+        "name": "Rowing",
+        "url": "/wiki/Rowing",
+        "note": "",
+        "full_text": "Rowing"
+      },
+      {
+        "name": "Spencer",
+        "url": "/wiki/Spencer",
+        "note": "",
+        "full_text": "Spencer"
+      },
+      {
+        "name": "Petermoo",
+        "url": "/wiki/Petermoo",
+        "note": "",
+        "full_text": "Petermoo"
+      },
+      {
+        "name": "Seagull Guns Nozdon",
+        "url": "/wiki/Seagull_Guns_Nozdon",
+        "note": "",
+        "full_text": "Seagull Guns Nozdon"
+      },
+      {
+        "name": "Taro",
+        "url": "/wiki/Taro",
+        "note": "",
+        "full_text": "Taro"
+      },
+      {
+        "name": "Ganryu",
+        "url": "/wiki/Ganryu_(Roger_Pirates)",
+        "note": "",
+        "full_text": "Ganryu"
+      },
+      {
+        "name": "Yui",
+        "url": "/wiki/Yui",
+        "note": "",
+        "full_text": "Yui"
+      },
+      {
+        "name": "Mugren",
+        "url": "/wiki/Mugren",
+        "note": "",
+        "full_text": "Mugren"
+      },
+      {
+        "name": "Imu",
+        "url": "/wiki/Imu",
+        "note": "",
+        "full_text": "Imu"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "url": "/wiki/Jaygarcia_Saturn",
+        "note": "",
+        "full_text": "Jaygarcia Saturn"
+      },
+      {
+        "name": "Figarland Garling",
+        "url": "/wiki/Figarland_Garling",
+        "note": "",
+        "full_text": "Figarland Garling"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Sengoku",
+        "url": "/wiki/Sengoku",
+        "note": "image",
+        "full_text": "Sengoku (image)"
+      },
+      {
+        "name": "Bogard",
+        "url": "/wiki/Bogard",
+        "note": "",
+        "full_text": "Bogard"
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "url": "/wiki/Monkey_D._Dragon",
+        "note": "",
+        "full_text": "Monkey D. Dragon"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "url": "/wiki/Bartholomew_Kuma",
+        "note": "",
+        "full_text": "Bartholomew Kuma"
+      },
+      {
+        "name": "Emporio Ivankov",
+        "url": "/wiki/Emporio_Ivankov",
+        "note": "",
+        "full_text": "Emporio Ivankov"
+      },
+      {
+        "name": "Ginny",
+        "url": "/wiki/Ginny",
+        "note": "",
+        "full_text": "Ginny"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Eris",
+        "url": "/wiki/Eris",
+        "note": "",
+        "full_text": "Eris"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "",
+        "full_text": "Marshall D. Teach"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Kouzuki Momonosuke",
+        "url": "/wiki/Kouzuki_Momonosuke",
+        "note": "cover",
+        "full_text": "Kouzuki Momonosuke (cover)"
+      },
+      {
+        "name": "Kin'emon",
+        "url": "/wiki/Kin%27emon",
+        "note": "cover",
+        "full_text": "Kin'emon (cover)"
+      },
+      {
+        "name": "Ulti",
+        "url": "/wiki/Ulti",
+        "note": "cover",
+        "full_text": "Ulti (cover)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1163,
+    "volume": "TBA",
+    "chapter_display": "1163",
+    "title": "Promise",
+    "pages": "17",
+    "release_date": "October 27, 2025",
+    "jump_info": "2025 Issue 48",
+    "characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "",
+        "full_text": "Ganzui"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "",
+        "full_text": "John"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "",
+        "full_text": "Napoleon"
+      },
+      {
+        "name": "Zeus",
+        "url": "/wiki/Zeus",
+        "note": "",
+        "full_text": "Zeus"
+      },
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "cover",
+        "full_text": "Monkey D. Luffy (cover)"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Donquino",
+        "url": "/wiki/Donquino",
+        "note": "",
+        "full_text": "Donquino"
+      },
+      {
+        "name": "Millet Pine",
+        "url": "/wiki/Millet_Pine",
+        "note": "",
+        "full_text": "Millet Pine"
+      },
+      {
+        "name": "Rowing",
+        "url": "/wiki/Rowing",
+        "note": "",
+        "full_text": "Rowing"
+      },
+      {
+        "name": "Erio",
+        "url": "/wiki/Erio",
+        "note": "",
+        "full_text": "Erio"
+      },
+      {
+        "name": "Taro",
+        "url": "/wiki/Taro",
+        "note": "",
+        "full_text": "Taro"
+      },
+      {
+        "name": "Doringo",
+        "url": "/wiki/Doringo",
+        "note": "",
+        "full_text": "Doringo"
+      },
+      {
+        "name": "Mr. Momora",
+        "url": "/wiki/Mr._Momora",
+        "note": "",
+        "full_text": "Mr. Momora"
+      },
+      {
+        "name": "Mugren",
+        "url": "/wiki/Mugren",
+        "note": "",
+        "full_text": "Mugren"
+      },
+      {
+        "name": "Imu",
+        "url": "/wiki/Imu",
+        "note": "",
+        "full_text": "Imu"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "url": "/wiki/Jaygarcia_Saturn",
+        "note": "possessed",
+        "full_text": "Jaygarcia Saturn (possessed)"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "url": "/wiki/Monkey_D._Dragon",
+        "note": "",
+        "full_text": "Monkey D. Dragon"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Eris",
+        "url": "/wiki/Eris",
+        "note": "",
+        "full_text": "Eris"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "",
+        "full_text": "Marshall D. Teach"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1164,
+    "volume": "TBA",
+    "chapter_display": "1164",
+    "title": "Davy Blood",
+    "pages": "17",
+    "release_date": "November 3, 2025",
+    "jump_info": "2025 Issue 49",
+    "characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "",
+        "full_text": "Ganzui"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "",
+        "full_text": "John"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "",
+        "full_text": "Napoleon"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "Dracule Mihawk",
+        "url": "/wiki/Dracule_Mihawk",
+        "note": "cover; fantasy",
+        "full_text": "Dracule Mihawk (cover; fantasy)"
+      },
+      {
+        "name": "Perona",
+        "url": "/wiki/Perona",
+        "note": "cover",
+        "full_text": "Perona (cover)"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Moon Isaac Jr.",
+        "url": "/wiki/Moon_Isaac_Jr.",
+        "note": "",
+        "full_text": "Moon Isaac Jr."
+      },
+      {
+        "name": "Spencer",
+        "url": "/wiki/Spencer",
+        "note": "",
+        "full_text": "Spencer"
+      },
+      {
+        "name": "Taro",
+        "url": "/wiki/Taro",
+        "note": "",
+        "full_text": "Taro"
+      },
+      {
+        "name": "Doringo",
+        "url": "/wiki/Doringo",
+        "note": "",
+        "full_text": "Doringo"
+      },
+      {
+        "name": "Ganryu",
+        "url": "/wiki/Ganryu_(Roger_Pirates)",
+        "note": "",
+        "full_text": "Ganryu"
+      },
+      {
+        "name": "CB Gallant",
+        "url": "/wiki/CB_Gallant",
+        "note": "",
+        "full_text": "CB Gallant"
+      },
+      {
+        "name": "Mr. Momora",
+        "url": "/wiki/Mr._Momora",
+        "note": "",
+        "full_text": "Mr. Momora"
+      },
+      {
+        "name": "Randolph",
+        "url": "/wiki/Randolph",
+        "note": "cover",
+        "full_text": "Randolph (cover)"
+      },
+      {
+        "name": "Imu",
+        "url": "/wiki/Imu",
+        "note": "",
+        "full_text": "Imu"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "url": "/wiki/Jaygarcia_Saturn",
+        "note": "possessed",
+        "full_text": "Jaygarcia Saturn (possessed)"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "url": "/wiki/Monkey_D._Dragon",
+        "note": "",
+        "full_text": "Monkey D. Dragon"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "url": "/wiki/Bartholomew_Kuma",
+        "note": "",
+        "full_text": "Bartholomew Kuma"
+      },
+      {
+        "name": "Emporio Ivankov",
+        "url": "/wiki/Emporio_Ivankov",
+        "note": "",
+        "full_text": "Emporio Ivankov"
+      },
+      {
+        "name": "Ginny",
+        "url": "/wiki/Ginny",
+        "note": "",
+        "full_text": "Ginny"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Eris",
+        "url": "/wiki/Eris",
+        "note": "",
+        "full_text": "Eris"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "",
+        "full_text": "Marshall D. Teach"
       }
     ]
   }
