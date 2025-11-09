@@ -2591,7 +2591,7 @@
   },
   {
     "volume_number": 75,
-    "english_title": "{{{US Title}}}",
+    "english_title": "My Repayment",
     "japanese_title": "おれの恩返し",
     "cover_characters": [
       {
@@ -4256,6 +4256,37 @@
       {
         "name": "Jaguar D. Saul",
         "slug": "Jaguar_D._Saul"
+      }
+    ]
+  },
+  {
+    "volume_number": 113,
+    "english_title": "The Birth of Loki",
+    "japanese_title": "ロキ誕生",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "slug": "Figarland_Shamrock"
+      },
+      {
+        "name": "Gunko",
+        "slug": "Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "slug": "Shepherd_Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "slug": "Rimoshifu_Killingham"
+      },
+      {
+        "name": "Scopper Gaban",
+        "slug": "Scopper_Gaban"
       }
     ]
   }
