@@ -152,6 +152,29 @@ uv run onepieceofdata parse --characters-file data/characters_detail.json
 uv run onepieceofdata export --format csv --output-dir exports/
 ```
 
+### Character Management
+
+```bash
+# Merge duplicate characters (run once after character scraping)
+# Preview changes first
+uv run onepieceofdata merge-characters --dry-run
+
+# Apply character merges
+uv run onepieceofdata merge-characters
+
+# Show characters in a specific chapter (useful to check for duplicates)
+uv run onepieceofdata show-chapter-characters --chapter 1000
+uv run onepieceofdata show-chapter-characters  # Shows latest chapter
+```
+
+**Note on Character Merging**: Characters may appear with multiple IDs due to:
+- Code names (Mr. 1 / Daz Bonez)
+- Epithets (Akainu / Sakazuki)
+- Disguises (Lucy / Sabo)
+
+The merge command consolidates these duplicates using `data/character_aliases.json`.
+Run this once after scraping characters, or when you notice duplicates.
+
 ### Pipeline Management
 
 ```bash
