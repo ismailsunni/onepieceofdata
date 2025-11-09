@@ -803,6 +803,80 @@ def merge_characters(alias_file: str, dry_run: bool) -> None:
 
 @main.command()
 @click.option(
+    "--chapter",
+    type=int,
+    default=None,
+    help="Chapter number to show characters from (default: latest chapter)"
+)
+def show_chapter_characters(chapter: Optional[int]) -> None:
+    """Show all characters appearing in a specific chapter.
+
+    This command is useful for checking if there are duplicate character IDs
+    for the same character (e.g., Akainu vs Sakazuki).
+    """
+    try:
+        with DatabaseManager() as db:
+            # Get latest chapter if not specified
+            if chapter is None:
+                latest = db.query("SELECT MAX(number) as max_chapter FROM chapter")
+                if latest.empty or latest.iloc[0]['max_chapter'] is None:
+                    click.echo("❌ No chapters found in database")
+                    sys.exit(1)
+                chapter = int(latest.iloc[0]['max_chapter'])
+
+            # Get chapter title
+            chapter_info = db.query(f"SELECT title FROM chapter WHERE number = {chapter}")
+            if chapter_info.empty:
+                click.echo(f"❌ Chapter {chapter} not found in database")
+                sys.exit(1)
+
+            chapter_title = chapter_info.iloc[0]['title']
+
+            # Get characters in this chapter
+            result = db.query(f"""
+                SELECT
+                    coc.character as id,
+                    c.name
+                FROM coc
+                LEFT JOIN character c ON coc.character = c.id
+                WHERE coc.chapter = {chapter}
+                ORDER BY coc.character
+            """)
+
+            if result.empty:
+                click.echo(f"📖 Chapter {chapter}: {chapter_title}")
+                click.echo("   No characters found")
+                return
+
+            click.echo(f"📖 Chapter {chapter}: {chapter_title}")
+            click.echo(f"   {len(result)} character(s) appearing:\n")
+
+            # Show character list
+            for _, row in result.iterrows():
+                char_id = row['id']
+                char_name = row['name'] if row['name'] else '(unknown)'
+                click.echo(f"   • {char_id:30} | {char_name}")
+
+            # Check for potential duplicates (same name, different IDs)
+            name_counts = result.groupby('name').size()
+            duplicates = name_counts[name_counts > 1]
+
+            if not duplicates.empty:
+                click.echo("\n⚠️  Potential duplicates found (same name, different IDs):")
+                for name in duplicates.index:
+                    if name:  # Skip None names
+                        dup_chars = result[result['name'] == name]
+                        ids = ', '.join(dup_chars['id'].tolist())
+                        click.echo(f"   • {name}: {ids}")
+                click.echo("\n💡 Consider running: uv run onepieceofdata merge-characters --dry-run")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
     "--volumes-json",
     type=click.Path(exists=True),
     help="Path to volumes JSON file (defaults to data/volumes.json)"
