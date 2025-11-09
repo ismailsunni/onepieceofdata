@@ -212,13 +212,16 @@ run-full-pipeline:
 	@echo "Step 4: Loading basic data into database (volumes, chapters, characters)..."
 	$(MAKE) run-parse
 	@echo ""
-	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
+	@echo "Step 5: Scraping story structure (arcs and sagas)..."
 	$(MAKE) run-scrape-story-structure
 	@echo ""
-	@echo "Step 6: Parsing birth dates and adding birth_date column..."
+	@echo "Step 6: Loading story structure into database (arcs and sagas)..."
+	$(MAKE) run-parse-story-structure
+	@echo ""
+	@echo "Step 7: Parsing birth dates and adding birth_date column..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "Step 7: Loading character-on-volume (COV) data..."
+	@echo "Step 8: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
 	@echo "✅ Pipeline completed! Check status with 'make db-status'"
@@ -242,13 +245,16 @@ run-full-pipeline-parallel:
 	@echo "Step 5: Scraping story structure (arcs and sagas)..."
 	$(MAKE) run-scrape-story-structure
 	@echo ""
-	@echo "Step 6: Loading all data into database..."
+	@echo "Step 6: Loading story structure into database (arcs and sagas)..."
+	$(MAKE) run-parse-story-structure
+	@echo ""
+	@echo "Step 7: Loading all data into database..."
 	$(MAKE) run-parse
 	@echo ""
-	@echo "Step 7: Parsing birth dates and adding birth_date column..."
+	@echo "Step 8: Parsing birth dates and adding birth_date column..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "Step 8: Loading character-on-volume (COV) data..."
+	@echo "Step 9: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
 	@echo "✅ Parallel pipeline completed!"
@@ -271,13 +277,16 @@ run-full-pipeline-workers:
 	@echo "Step 4: Loading basic data into database (volumes, chapters, characters)..."
 	$(MAKE) run-parse
 	@echo ""
-	@echo "Step 5: Scraping and loading story structure (arcs and sagas)..."
+	@echo "Step 5: Scraping story structure (arcs and sagas)..."
 	$(MAKE) run-scrape-story-structure
 	@echo ""
-	@echo "Step 6: Parsing birth dates and adding birth_date column..."
+	@echo "Step 6: Loading story structure into database (arcs and sagas)..."
+	$(MAKE) run-parse-story-structure
+	@echo ""
+	@echo "Step 7: Parsing birth dates and adding birth_date column..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "Step 7: Loading character-on-volume (COV) data..."
+	@echo "Step 8: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
 	@echo "✅ Pipeline with $(WORKERS) workers completed! Check status with 'make db-status'"

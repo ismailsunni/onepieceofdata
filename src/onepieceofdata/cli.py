@@ -511,7 +511,23 @@ def status() -> None:
             click.echo(f"  ✅ {name}: {path} {size_str}")
         else:
             click.echo(f"  ❌ {name}: {path} (missing)")
-    
+
+    # Show database table counts if database exists
+    if settings.database_path.exists():
+        click.echo("\n📊 Database Table Counts:")
+        try:
+            with DatabaseManager() as db:
+                stats = db.get_database_stats()
+                click.echo(f"  📖 Chapters: {stats.get('chapter', 0):,}")
+                click.echo(f"  📚 Volumes: {stats.get('volume', 0):,}")
+                click.echo(f"  👥 Characters: {stats.get('character', 0):,}")
+                click.echo(f"  📝 CoC entries: {stats.get('coc', 0):,}")
+                click.echo(f"  📦 CoV entries: {stats.get('cov', 0):,}")
+                click.echo(f"  🏴‍☠️ Arcs: {stats.get('arc', 0):,}")
+                click.echo(f"  📖 Sagas: {stats.get('saga', 0):,}")
+        except Exception as e:
+            click.echo(f"  ❌ Error reading database: {str(e)}")
+
     click.echo(f"\n⚙️  Configuration:")
     click.echo(f"  🔄 Scraping Delay: {settings.scraping_delay}s")
     click.echo(f"  🔁 Max Retries: {settings.max_retries}")
