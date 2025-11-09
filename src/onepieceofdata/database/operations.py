@@ -815,7 +815,106 @@ class DatabaseManager:
         except Exception as e:
             logger.error(f"Failed to get database stats: {str(e)}")
             return {}
-    
+
+    def merge_characters(self, alias_mapping: Dict[str, str], dry_run: bool = False) -> Dict[str, int]:
+        """Merge duplicate characters using an alias mapping.
+
+        Args:
+            alias_mapping: Dictionary mapping alias IDs to canonical IDs
+            dry_run: If True, only report what would be changed without modifying database
+
+        Returns:
+            Dictionary with merge statistics
+        """
+        try:
+            conn = self.connect()
+            stats = {
+                'characters_merged': 0,
+                'coc_entries_updated': 0,
+                'errors': 0
+            }
+
+            logger.info(f"Starting character merge operation (dry_run={dry_run})")
+            logger.info(f"Processing {len(alias_mapping)} character aliases")
+
+            # Start transaction
+            if not dry_run:
+                conn.execute("BEGIN TRANSACTION")
+
+            for alias_id, canonical_id in alias_mapping.items():
+                try:
+                    # Check if both characters exist
+                    alias_exists = conn.execute(
+                        "SELECT COUNT(*) FROM character WHERE id = ?",
+                        [alias_id]
+                    ).fetchone()[0] > 0
+
+                    canonical_exists = conn.execute(
+                        "SELECT COUNT(*) FROM character WHERE id = ?",
+                        [canonical_id]
+                    ).fetchone()[0] > 0
+
+                    if not alias_exists:
+                        logger.warning(f"Alias character not found: {alias_id}")
+                        continue
+
+                    if not canonical_exists:
+                        logger.warning(f"Canonical character not found: {canonical_id}, skipping {alias_id}")
+                        stats['errors'] += 1
+                        continue
+
+                    # Count CoC entries that will be updated
+                    coc_count = conn.execute(
+                        "SELECT COUNT(*) FROM coc WHERE character = ?",
+                        [alias_id]
+                    ).fetchone()[0]
+
+                    if dry_run:
+                        logger.info(f"Would merge {alias_id} -> {canonical_id} ({coc_count} CoC entries)")
+                    else:
+                        # Update CoC entries
+                        conn.execute(
+                            "UPDATE coc SET character = ? WHERE character = ?",
+                            [canonical_id, alias_id]
+                        )
+
+                        # Delete the alias character
+                        conn.execute(
+                            "DELETE FROM character WHERE id = ?",
+                            [alias_id]
+                        )
+
+                        logger.info(f"Merged {alias_id} -> {canonical_id} ({coc_count} CoC entries)")
+
+                    stats['characters_merged'] += 1
+                    stats['coc_entries_updated'] += coc_count
+
+                except Exception as e:
+                    logger.error(f"Error merging {alias_id} -> {canonical_id}: {str(e)}")
+                    stats['errors'] += 1
+                    continue
+
+            # Commit transaction
+            if not dry_run:
+                conn.execute("COMMIT")
+                logger.success(f"Merge complete: {stats['characters_merged']} characters merged, "
+                             f"{stats['coc_entries_updated']} CoC entries updated")
+            else:
+                logger.info(f"Dry run complete: would merge {stats['characters_merged']} characters, "
+                          f"update {stats['coc_entries_updated']} CoC entries")
+
+            return stats
+
+        except Exception as e:
+            if not dry_run:
+                try:
+                    conn.execute("ROLLBACK")
+                    logger.error("Transaction rolled back due to error")
+                except:
+                    pass
+            logger.error(f"Failed to merge characters: {str(e)}")
+            return {'characters_merged': 0, 'coc_entries_updated': 0, 'errors': 1}
+
     def export_to_csv(self, output_dir: str) -> bool:
         """Export all tables to CSV files.
         

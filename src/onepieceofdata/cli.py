@@ -736,6 +736,73 @@ def migrate_birth_dates(date_format: str) -> None:
 
 @main.command()
 @click.option(
+    "--alias-file",
+    type=click.Path(exists=True),
+    default="data/character_aliases.json",
+    help="Path to character alias mapping JSON file"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Preview changes without modifying the database"
+)
+def merge_characters(alias_file: str, dry_run: bool) -> None:
+    """Merge duplicate characters using alias mapping file.
+
+    This command reads a JSON file with character alias mappings and merges
+    duplicate characters in the database. For each alias->canonical pair:
+    - Updates all CoC entries to use the canonical character ID
+    - Deletes the alias character record
+
+    Use --dry-run to preview changes before applying them.
+    """
+    click.echo("🔄 Merging duplicate characters...")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made")
+
+    # Load alias mapping
+    try:
+        with open(alias_file, 'r') as f:
+            alias_mapping = json.load(f)
+
+        click.echo(f"📄 Loaded {len(alias_mapping)} alias mappings from {alias_file}")
+
+    except Exception as e:
+        click.echo(f"❌ Failed to load alias file: {str(e)}")
+        sys.exit(1)
+
+    # Perform merge
+    try:
+        with DatabaseManager() as db:
+            stats = db.merge_characters(alias_mapping, dry_run=dry_run)
+
+            click.echo("\n📊 Merge Statistics:")
+            click.echo(f"  Characters merged: {stats['characters_merged']:,}")
+            click.echo(f"  CoC entries updated: {stats['coc_entries_updated']:,}")
+
+            if stats['errors'] > 0:
+                click.echo(f"  ⚠️  Errors encountered: {stats['errors']}")
+
+            if dry_run:
+                click.echo("\n💡 Run without --dry-run to apply these changes")
+            else:
+                click.echo("\n✅ Character merge completed!")
+
+                # Show updated stats
+                db_stats = db.get_database_stats()
+                click.echo(f"\n📈 Updated Database Counts:")
+                click.echo(f"  Characters: {db_stats.get('character', 0):,}")
+                click.echo(f"  CoC entries: {db_stats.get('coc', 0):,}")
+
+    except Exception as e:
+        click.echo(f"❌ Error during merge: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
     "--volumes-json",
     type=click.Path(exists=True),
     help="Path to volumes JSON file (defaults to data/volumes.json)"
