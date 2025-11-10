@@ -62,14 +62,27 @@ class CharacterScraper:
     
     def _remove_note(self, text: str) -> str:
         """Remove notes in parentheses from text.
-        
+
         Args:
             text: Text to clean
-            
+
         Returns:
             Text without notes
         """
         return text.split("(")[0].strip()
+
+    def _remove_wiki_markers(self, text: str) -> str:
+        """Remove wiki navigation markers like [ v · e ] from text.
+
+        Args:
+            text: Text to clean
+
+        Returns:
+            Text without wiki markers
+        """
+        # Remove patterns like [ v · e ], [v · e], [ v·e ], etc.
+        text = re.sub(r"\[\s*v\s*[·•]\s*e\s*\]", "", text, flags=re.IGNORECASE)
+        return text.strip()
     
     def _parse_affiliation(self, div_element: Tag) -> List[str]:
         """Parse affiliation information from div element.
@@ -214,7 +227,9 @@ class CharacterScraper:
             character_name = None
             if name_h2:
                 character_name = name_h2.text.strip()
-            
+                # Clean up wiki markers like [ v · e ]
+                character_name = self._remove_wiki_markers(character_name)
+
             character_info["name"] = character_name
             
             # Parse character sections
