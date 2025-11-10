@@ -296,6 +296,47 @@ export:
 	@echo "📤 Exporting database to CSV files..."
 	$(UV) run onepieceofdata export --output-dir exports
 
+# PostgreSQL Export Commands
+postgres-start:
+	@echo "🐘 Starting PostgreSQL with Docker..."
+	docker compose up -d
+	@echo ""
+	@echo "✅ PostgreSQL is running!"
+	@echo "   PostgreSQL: localhost:5432 (user: postgres, password: onepiece)"
+	@echo "   pgAdmin:    http://localhost:5050 (email: admin@onepiece.com, password: admin)"
+
+postgres-stop:
+	@echo "🛑 Stopping PostgreSQL..."
+	docker compose down
+
+postgres-logs:
+	@echo "📋 PostgreSQL logs (Ctrl+C to exit)..."
+	docker compose logs -f postgres
+
+export-postgres-full:
+	@echo "🚀 Exporting to PostgreSQL (full sync)..."
+	$(UV) run onepieceofdata export-postgres --mode full
+
+export-postgres:
+	@echo "🚀 Exporting to PostgreSQL (incremental sync)..."
+	$(UV) run onepieceofdata export-postgres --mode incremental
+
+postgres-status:
+	@echo "🔍 Checking PostgreSQL sync status..."
+	$(UV) run onepieceofdata sync-status
+
+# Combined: start PostgreSQL and run full export
+postgres-init:
+	@echo "🚀 Initializing local PostgreSQL and exporting data..."
+	@$(MAKE) postgres-start
+	@echo ""
+	@echo "⏳ Waiting 5 seconds for PostgreSQL to be ready..."
+	@sleep 5
+	@echo ""
+	@$(MAKE) export-postgres-full
+	@echo ""
+	@echo "✅ Done! Check status with 'make postgres-status'"
+
 # Show pipeline status
 status:
 	$(UV) run onepieceofdata status
