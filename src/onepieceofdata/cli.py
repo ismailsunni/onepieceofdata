@@ -936,7 +936,13 @@ def export_postgres(mode: str, tables: Optional[str], dry_run: bool) -> None:
         # Check configuration
         try:
             postgres_url = settings.postgres_connection_url
-            click.echo(f"📍 Target: {settings.postgres_host}:{settings.postgres_port}/{settings.postgres_db}")
+            # Parse URL to display correct target (handles both URL and individual settings)
+            from urllib.parse import urlparse
+            parsed = urlparse(postgres_url)
+            target_host = parsed.hostname or settings.postgres_host
+            target_port = parsed.port or settings.postgres_port
+            target_db = parsed.path.lstrip('/') or settings.postgres_db
+            click.echo(f"📍 Target: {target_host}:{target_port}/{target_db}")
         except ValueError as e:
             click.echo(f"❌ Configuration error: {str(e)}")
             click.echo("\n💡 Set PostgreSQL connection details in .env:")

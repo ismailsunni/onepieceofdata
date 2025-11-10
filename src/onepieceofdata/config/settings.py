@@ -106,8 +106,13 @@ class Settings(BaseSettings):
         if not self.postgres_password:
             raise ValueError("POSTGRES_PASSWORD is required for PostgreSQL export")
 
+        # URL-encode credentials to handle special characters
+        from urllib.parse import quote_plus
+        encoded_user = quote_plus(self.postgres_user)
+        encoded_password = quote_plus(self.postgres_password)
+
         return (
-            f"postgresql://{self.postgres_user}:{self.postgres_password}"
+            f"postgresql://{encoded_user}:{encoded_password}"
             f"@{self.postgres_host}:{self.postgres_port}/{self.postgres_db}"
             f"?sslmode={self.postgres_ssl_mode}"
         )
