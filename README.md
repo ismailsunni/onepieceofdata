@@ -201,14 +201,16 @@ uv run onepieceofdata export-postgres --dry-run
 Start a local PostgreSQL instance for testing:
 
 ```bash
-# Start PostgreSQL and pgAdmin
-docker-compose up -d
+# Quick start: Initialize PostgreSQL and export data
+make postgres-init
 
-# Stop services
-docker-compose down
-
-# View logs
-docker-compose logs -f postgres
+# Or run commands individually:
+make postgres-start           # Start PostgreSQL and pgAdmin
+make export-postgres-full     # Full export to PostgreSQL
+make export-postgres          # Incremental export (only changes)
+make postgres-status          # Check sync status
+make postgres-logs            # View PostgreSQL logs
+make postgres-stop            # Stop services
 ```
 
 **Access:**
