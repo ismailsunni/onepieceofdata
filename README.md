@@ -175,6 +175,64 @@ uv run onepieceofdata show-chapter-characters  # Shows latest chapter
 The merge command consolidates these duplicates using `data/character_aliases.json`.
 Run this once after scraping characters, or when you notice duplicates.
 
+### PostgreSQL Export
+
+Export your One Piece data to PostgreSQL (works with local PostgreSQL or Supabase):
+
+```bash
+# Full export (complete sync)
+uv run onepieceofdata export-postgres --mode full
+
+# Incremental export (only changed tables)
+uv run onepieceofdata export-postgres --mode incremental
+
+# Export specific tables only
+uv run onepieceofdata export-postgres --tables chapter,character
+
+# Check sync status
+uv run onepieceofdata sync-status
+
+# Preview without making changes
+uv run onepieceofdata export-postgres --dry-run
+```
+
+#### Local PostgreSQL Testing with Docker
+
+Start a local PostgreSQL instance for testing:
+
+```bash
+# Start PostgreSQL and pgAdmin
+docker-compose up -d
+
+# Stop services
+docker-compose down
+
+# View logs
+docker-compose logs -f postgres
+```
+
+**Access:**
+- PostgreSQL: `localhost:5432` (user: `postgres`, password: `onepiece`)
+- pgAdmin: `http://localhost:5050` (email: `admin@onepiece.com`, password: `admin`)
+
+#### Configuration
+
+Set PostgreSQL connection details in `.env`:
+
+```bash
+# Local PostgreSQL
+POSTGRES_HOST=localhost
+POSTGRES_PORT=5432
+POSTGRES_DB=onepiece
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=onepiece
+
+# Or use connection URL (for Supabase)
+POSTGRES_URL=postgresql://postgres:password@host:port/database
+```
+
+See `.env.example` for full configuration options.
+
 ### Pipeline Management
 
 ```bash
