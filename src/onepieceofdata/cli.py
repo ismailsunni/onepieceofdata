@@ -877,6 +877,181 @@ def show_chapter_characters(chapter: Optional[int]) -> None:
 
 @main.command()
 @click.option(
+    "--mode",
+    type=click.Choice(['full', 'incremental']),
+    default='incremental',
+    help="Export mode: 'full' (complete sync) or 'incremental' (only changes)"
+)
+@click.option(
+    "--tables",
+    type=str,
+    default=None,
+    help="Comma-separated list of tables to export (default: all tables)"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Show what would be exported without making changes"
+)
+def export_postgres(mode: str, tables: Optional[str], dry_run: bool) -> None:
+    """Export DuckDB database to PostgreSQL (works with local or Supabase).
+
+    This command exports your One Piece data from DuckDB to PostgreSQL.
+    Works with both local PostgreSQL and cloud PostgreSQL (Supabase).
+
+    \b
+    Export modes:
+    - full: Complete sync - drops and recreates all data
+    - incremental: Only updates tables that have changed
+
+    \b
+    Examples:
+    # Full export to PostgreSQL
+    uv run onepieceofdata export-postgres --mode full
+
+    # Incremental export (only changed tables)
+    uv run onepieceofdata export-postgres --mode incremental
+
+    # Export specific tables only
+    uv run onepieceofdata export-postgres --tables chapter,character
+
+    # Preview without changes
+    uv run onepieceofdata export-postgres --dry-run
+    """
+    from .database.postgres_export import PostgresExporter
+
+    click.echo(f"🚀 Exporting to PostgreSQL (mode: {mode})")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made")
+
+    # Parse tables list
+    table_list = None
+    if tables:
+        table_list = [t.strip() for t in tables.split(',')]
+        click.echo(f"📋 Tables to export: {', '.join(table_list)}")
+
+    try:
+        # Check configuration
+        try:
+            postgres_url = settings.postgres_connection_url
+            click.echo(f"📍 Target: {settings.postgres_host}:{settings.postgres_port}/{settings.postgres_db}")
+        except ValueError as e:
+            click.echo(f"❌ Configuration error: {str(e)}")
+            click.echo("\n💡 Set PostgreSQL connection details in .env:")
+            click.echo("   POSTGRES_HOST=localhost")
+            click.echo("   POSTGRES_PORT=5432")
+            click.echo("   POSTGRES_DB=onepiece")
+            click.echo("   POSTGRES_USER=postgres")
+            click.echo("   POSTGRES_PASSWORD=your-password")
+            sys.exit(1)
+
+        if dry_run:
+            click.echo("\n✅ Configuration valid. Run without --dry-run to proceed.")
+            return
+
+        # Perform export
+        with PostgresExporter() as exporter:
+            result = exporter.export_all(
+                mode=mode,
+                tables=table_list,
+                show_progress=True
+            )
+
+            # Display results
+            click.echo(f"\n📊 Export Results:")
+            click.echo(f"  Status: {result['status']}")
+            click.echo(f"  Mode: {result['mode']}")
+            click.echo(f"  Tables exported: {result['tables_exported']}")
+            click.echo(f"  Total rows: {result['total_rows']:,}")
+            click.echo(f"  Duration: {result['duration']:.2f}s")
+
+            if result.get('message'):
+                click.echo(f"  {result['message']}")
+
+            # Show per-table results
+            if result.get('tables'):
+                click.echo("\n📋 Per-table results:")
+                for table_result in result['tables']:
+                    status_icon = "✅" if table_result['status'] == 'success' else "❌"
+                    table_name = table_result['table']
+                    rows = table_result['rows_exported']
+                    duration = table_result.get('duration', 0)
+                    click.echo(f"  {status_icon} {table_name}: {rows:,} rows in {duration:.2f}s")
+
+                    if table_result.get('error'):
+                        click.echo(f"     Error: {table_result['error']}")
+
+            click.echo("\n✅ Export completed!")
+            click.echo("💡 Run 'uv run onepieceofdata sync-status' to verify")
+
+    except Exception as e:
+        click.echo(f"\n❌ Export failed: {str(e)}")
+        import traceback
+        click.echo(traceback.format_exc())
+        sys.exit(1)
+
+
+@main.command()
+def sync_status() -> None:
+    """Check PostgreSQL sync status.
+
+    Shows the current state of data synchronization between DuckDB and PostgreSQL.
+    Compares row counts to detect if tables are in sync.
+    """
+    from .database.postgres_export import PostgresExporter
+
+    click.echo("🔍 Checking PostgreSQL sync status...")
+
+    try:
+        with PostgresExporter() as exporter:
+            status = exporter.get_sync_status()
+
+            # Display sync status
+            last_sync = status.get('last_sync')
+            if last_sync:
+                click.echo(f"\n⏰ Last sync: {last_sync}")
+            else:
+                click.echo("\n⚠️  No sync metadata found (never synced)")
+
+            click.echo("\n📊 Table Status:")
+            click.echo(f"{'Table':<15} {'DuckDB':<12} {'PostgreSQL':<12} {'Status'}")
+            click.echo("-" * 55)
+
+            for table_info in status['tables']:
+                if 'error' in table_info:
+                    click.echo(f"{table_info['name']:<15} ERROR: {table_info['error']}")
+                    continue
+
+                name = table_info['name']
+                duckdb_rows = table_info['duckdb_rows']
+                postgres_rows = table_info['postgres_rows']
+                in_sync = table_info['in_sync']
+
+                status_icon = "✅" if in_sync else "⚠️ "
+                status_text = "In sync" if in_sync else "Out of sync"
+
+                click.echo(
+                    f"{name:<15} {duckdb_rows:<12,} {postgres_rows:<12,} {status_icon} {status_text}"
+                )
+
+            # Summary
+            tables_in_sync = sum(1 for t in status['tables'] if t.get('in_sync'))
+            total_tables = len(status['tables'])
+
+            click.echo(f"\n📈 Summary: {tables_in_sync}/{total_tables} tables in sync")
+
+            if tables_in_sync < total_tables:
+                click.echo("\n💡 Run 'uv run onepieceofdata export-postgres --mode incremental' to sync")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
     "--volumes-json",
     type=click.Path(exists=True),
     help="Path to volumes JSON file (defaults to data/volumes.json)"
