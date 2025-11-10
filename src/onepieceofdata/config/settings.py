@@ -44,7 +44,20 @@ class Settings(BaseSettings):
     enable_parallel: bool = Field(default=False, alias="OP_ENABLE_PARALLEL")
     max_workers: int = Field(default=4, alias="OP_MAX_WORKERS")
     parallel_chunk_size: int = Field(default=10, alias="OP_PARALLEL_CHUNK_SIZE")
-    
+
+    # PostgreSQL Export Configuration (works for Supabase or local PostgreSQL)
+    postgres_url: Optional[str] = Field(default=None, alias="POSTGRES_URL")
+    postgres_host: str = Field(default="localhost", alias="POSTGRES_HOST")
+    postgres_port: int = Field(default=5432, alias="POSTGRES_PORT")
+    postgres_db: str = Field(default="onepiece", alias="POSTGRES_DB")
+    postgres_user: str = Field(default="postgres", alias="POSTGRES_USER")
+    postgres_password: Optional[str] = Field(default=None, alias="POSTGRES_PASSWORD")
+    postgres_ssl_mode: str = Field(default="prefer", alias="POSTGRES_SSL_MODE")
+
+    # Export Configuration
+    export_batch_size: int = Field(default=1000, alias="OP_EXPORT_BATCH_SIZE")
+    export_enable_sync_tracking: bool = Field(default=True, alias="OP_EXPORT_ENABLE_SYNC_TRACKING")
+
     # Website URLs
     base_chapter_url: str = Field(default="https://onepiece.fandom.com/wiki/Chapter_", alias="OP_BASE_CHAPTER_URL")
     base_character_url: str = Field(default="https://onepiece.fandom.com/wiki/", alias="OP_BASE_CHARACTER_URL")
@@ -79,7 +92,31 @@ class Settings(BaseSettings):
     def coc_csv_path(self) -> Path:
         """Path to characters of chapters CSV file."""
         return self.data_dir / "coc.csv"
-    
+
+    @property
+    def postgres_connection_url(self) -> str:
+        """Build PostgreSQL connection URL.
+
+        If POSTGRES_URL is set, use it directly. Otherwise, build from components.
+        Works for both Supabase and local PostgreSQL instances.
+        """
+        if self.postgres_url:
+            return self.postgres_url
+
+        if not self.postgres_password:
+            raise ValueError("POSTGRES_PASSWORD is required for PostgreSQL export")
+
+        return (
+            f"postgresql://{self.postgres_user}:{self.postgres_password}"
+            f"@{self.postgres_host}:{self.postgres_port}/{self.postgres_db}"
+            f"?sslmode={self.postgres_ssl_mode}"
+        )
+
+    @property
+    def sync_metadata_path(self) -> Path:
+        """Path to sync metadata file for tracking exports."""
+        return self.data_dir / "sync_metadata.json"
+
     def ensure_directories(self) -> None:
         """Ensure all required directories exist."""
         self.data_dir.mkdir(parents=True, exist_ok=True)
