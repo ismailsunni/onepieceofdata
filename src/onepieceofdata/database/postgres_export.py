@@ -299,9 +299,13 @@ class PostgresExporter:
                     'message': 'No changes detected'
                 }
 
-        # Create tables if they don't exist
+        # Create tables
         for table_name in export_tables:
-            if not self._table_exists(table_name):
+            if mode == 'full':
+                # In full mode, always drop and recreate to ensure schema is up to date
+                self.create_table(table_name, drop_if_exists=True)
+            elif not self._table_exists(table_name):
+                # In incremental mode, only create if doesn't exist
                 self.create_table(table_name, drop_if_exists=False)
 
         # Export each table
@@ -312,7 +316,7 @@ class PostgresExporter:
             try:
                 result = self.export_table(
                     table_name,
-                    truncate=(mode == 'full'),
+                    truncate=False,  # No need to truncate - tables are already empty (either freshly created in full mode or updated in incremental)
                     show_progress=show_progress
                 )
                 results.append(result)
