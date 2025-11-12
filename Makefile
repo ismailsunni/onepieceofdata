@@ -287,14 +287,14 @@ run-full-pipeline-parallel:
 	@echo "Step 4: Scraping characters (parallel)..."
 	$(MAKE) run-scrape-characters-parallel
 	@echo ""
-	@echo "Step 5: Scraping story structure (arcs and sagas)..."
+	@echo "Step 5: Loading basic data into database (volumes, chapters, characters)..."
+	$(MAKE) run-parse
+	@echo ""
+	@echo "Step 6: Scraping story structure (arcs and sagas)..."
 	$(MAKE) run-scrape-story-structure
 	@echo ""
-	@echo "Step 6: Loading story structure into database (arcs and sagas)..."
+	@echo "Step 7: Loading story structure into database (arcs and sagas)..."
 	$(MAKE) run-parse-story-structure
-	@echo ""
-	@echo "Step 7: Loading all data into database..."
-	$(MAKE) run-parse
 	@echo ""
 	@echo "Step 8: Parsing birth dates and adding birth_date column..."
 	$(MAKE) migrate-birth-dates
