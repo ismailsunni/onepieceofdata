@@ -171,6 +171,18 @@ extract-characters:
 	fi
 	$(UV) run onepieceofdata extract-characters
 
+# Merge duplicate characters (dry-run mode)
+merge-characters-dry-run:
+	@echo "🔍 Previewing character merge (dry-run mode)..."
+	$(UV) run onepieceofdata merge-characters --dry-run
+
+# Merge duplicate characters (actual merge)
+merge-characters:
+	@echo "🔀 Merging duplicate characters..."
+	@echo "⚠️  This will modify the database. Press Ctrl+C to cancel or Enter to continue..."
+	@read -p "" confirm
+	$(UV) run onepieceofdata merge-characters
+
 # Run arc scraping (story arcs)
 run-scrape-arcs:
 	@echo "🏴‍☠️ Running arc scraping (story arcs)..."
