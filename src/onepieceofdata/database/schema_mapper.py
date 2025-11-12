@@ -16,6 +16,7 @@ class SchemaMapper:
         'DATE': 'DATE',
         'TIMESTAMP': 'TIMESTAMP',
         'BOOLEAN': 'BOOLEAN',
+        'INTEGER[]': 'INTEGER[]',
     }
 
     # Tables in dependency order (respects foreign keys)
@@ -40,9 +41,18 @@ class SchemaMapper:
         Returns:
             The corresponding PostgreSQL type
         """
-        # Handle types with parameters (e.g., VARCHAR(255))
-        base_type = duckdb_type.split('(')[0].upper()
+        # Normalize type to uppercase for comparison
+        normalized_type = duckdb_type.upper()
 
+        # Check for exact match first (handles array types like INTEGER[])
+        if normalized_type in cls.TYPE_MAPPING:
+            mapped_type = cls.TYPE_MAPPING[normalized_type]
+            if normalized_type != mapped_type:
+                logger.debug(f"Mapped DuckDB type {duckdb_type} -> PostgreSQL type {mapped_type}")
+            return mapped_type
+
+        # Handle types with parameters (e.g., VARCHAR(255))
+        base_type = normalized_type.split('(')[0]
         mapped_type = cls.TYPE_MAPPING.get(base_type, duckdb_type)
 
         if base_type != mapped_type.split('(')[0]:
