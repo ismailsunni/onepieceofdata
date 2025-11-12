@@ -775,8 +775,14 @@ def merge_characters(alias_file: str, dry_run: bool) -> None:
 
     # Perform merge
     try:
+        click.echo(f"\n🔄 Processing {len(alias_mapping)} character merges...\n")
+
         with DatabaseManager() as db:
-            stats = db.merge_characters(alias_mapping, dry_run=dry_run)
+            # Progress callback to show what's happening
+            def progress_callback(current: int, total: int, alias_id: str, canonical_id: str):
+                click.echo(f"  [{current}/{total}] Merging {alias_id} → {canonical_id}")
+
+            stats = db.merge_characters(alias_mapping, dry_run=dry_run, progress_callback=progress_callback)
 
             click.echo("\n📊 Merge Statistics:")
             click.echo(f"  Characters merged: {stats['characters_merged']:,}")
