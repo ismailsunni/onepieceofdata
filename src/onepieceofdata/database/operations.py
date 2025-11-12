@@ -140,7 +140,13 @@ class DatabaseManager:
             bounty BIGINT,
             age INT,
             scraping_status TEXT,
-            scraping_note TEXT
+            scraping_note TEXT,
+            chapter_list INTEGER[],
+            volume_list INTEGER[],
+            appearance_count INTEGER,
+            volume_appearance_count INTEGER,
+            first_appearance INTEGER,
+            last_appearance INTEGER
         )
         """
         conn.execute(character_table_query)
@@ -923,6 +929,152 @@ class DatabaseManager:
                     pass
             logger.error(f"Failed to merge characters: {str(e)}")
             return {'characters_merged': 0, 'coc_entries_updated': 0, 'errors': 1}
+
+    def sync_character_appearances(self, progress_callback: Optional[Callable] = None) -> Dict[str, int]:
+        """Sync character appearance analytics from CoC/CoV tables.
+
+        Populates the following columns in character table:
+        - chapter_list: sorted list of chapter numbers
+        - volume_list: sorted list of volume numbers
+        - appearance_count: total chapter appearances
+        - volume_appearance_count: total volume appearances
+        - first_appearance: first chapter number
+        - last_appearance: last chapter number
+
+        Args:
+            progress_callback: Optional callback function(current, total, character_id, stats)
+
+        Returns:
+            Dictionary with sync statistics
+        """
+        try:
+            conn = self.connect()
+
+            logger.info("Starting character appearance sync...")
+
+            # Add columns if they don't exist (for existing databases)
+            try:
+                logger.info("Checking for appearance analytics columns...")
+                # Try to query the columns - if it fails, they don't exist
+                conn.execute("SELECT chapter_list FROM character LIMIT 1")
+                logger.info("Columns already exist")
+            except:
+                logger.info("Adding appearance analytics columns to character table...")
+                conn.execute("ALTER TABLE character ADD COLUMN chapter_list INTEGER[]")
+                conn.execute("ALTER TABLE character ADD COLUMN volume_list INTEGER[]")
+                conn.execute("ALTER TABLE character ADD COLUMN appearance_count INTEGER")
+                conn.execute("ALTER TABLE character ADD COLUMN volume_appearance_count INTEGER")
+                conn.execute("ALTER TABLE character ADD COLUMN first_appearance INTEGER")
+                conn.execute("ALTER TABLE character ADD COLUMN last_appearance INTEGER")
+                conn.commit()
+                logger.success("Appearance analytics columns added successfully")
+
+            # Get all characters
+            characters = conn.execute("SELECT id FROM character ORDER BY id").fetchall()
+            total_characters = len(characters)
+
+            if total_characters == 0:
+                logger.warning("No characters found in database")
+                return {'characters_updated': 0, 'total_appearances': 0, 'errors': 0}
+
+            stats = {
+                'characters_updated': 0,
+                'total_appearances': 0,
+                'characters_with_no_appearances': 0,
+                'errors': 0
+            }
+
+            logger.info(f"Processing {total_characters} characters...")
+
+            for idx, (character_id,) in enumerate(characters, 1):
+                try:
+                    # Get chapter appearances from CoC
+                    chapter_data = conn.execute("""
+                        SELECT chapter
+                        FROM coc
+                        WHERE character = ?
+                        ORDER BY chapter
+                    """, [character_id]).fetchall()
+
+                    chapter_list = [row[0] for row in chapter_data]
+                    appearance_count = len(chapter_list)
+
+                    # Get volume appearances by joining with chapter table
+                    volume_data = conn.execute("""
+                        SELECT DISTINCT c.volume
+                        FROM coc coc_table
+                        JOIN chapter c ON coc_table.chapter = c.number
+                        WHERE coc_table.character = ? AND c.volume IS NOT NULL
+                        ORDER BY c.volume
+                    """, [character_id]).fetchall()
+
+                    volume_list = [row[0] for row in volume_data]
+                    volume_appearance_count = len(volume_list)
+
+                    # Calculate first and last appearances
+                    first_appearance = chapter_list[0] if chapter_list else None
+                    last_appearance = chapter_list[-1] if chapter_list else None
+
+                    # Update character table
+                    conn.execute("""
+                        UPDATE character
+                        SET chapter_list = ?,
+                            volume_list = ?,
+                            appearance_count = ?,
+                            volume_appearance_count = ?,
+                            first_appearance = ?,
+                            last_appearance = ?
+                        WHERE id = ?
+                    """, [
+                        chapter_list,
+                        volume_list,
+                        appearance_count,
+                        volume_appearance_count,
+                        first_appearance,
+                        last_appearance,
+                        character_id
+                    ])
+
+                    stats['characters_updated'] += 1
+                    stats['total_appearances'] += appearance_count
+
+                    if appearance_count == 0:
+                        stats['characters_with_no_appearances'] += 1
+
+                    # Call progress callback if provided
+                    if progress_callback:
+                        progress_callback(
+                            idx,
+                            total_characters,
+                            character_id,
+                            {
+                                'chapters': appearance_count,
+                                'volumes': volume_appearance_count,
+                                'first': first_appearance,
+                                'last': last_appearance
+                            }
+                        )
+
+                    logger.debug(f"Synced {character_id}: {appearance_count} chapters, {volume_appearance_count} volumes")
+
+                except Exception as e:
+                    logger.error(f"Error syncing character {character_id}: {str(e)}")
+                    stats['errors'] += 1
+                    continue
+
+            conn.commit()
+
+            logger.success(f"Sync complete: {stats['characters_updated']} characters updated, "
+                         f"{stats['total_appearances']} total appearances")
+
+            if stats['characters_with_no_appearances'] > 0:
+                logger.info(f"Note: {stats['characters_with_no_appearances']} characters have no appearances")
+
+            return stats
+
+        except Exception as e:
+            logger.error(f"Failed to sync character appearances: {str(e)}")
+            return {'characters_updated': 0, 'total_appearances': 0, 'errors': 1}
 
     def export_to_csv(self, output_dir: str) -> bool:
         """Export all tables to CSV files.
