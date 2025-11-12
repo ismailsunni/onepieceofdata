@@ -1,7 +1,7 @@
 """Modern database operations for One Piece of Data."""
 
 import json
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any, Optional, Callable
 from pathlib import Path
 from datetime import datetime
 import duckdb
@@ -816,12 +816,13 @@ class DatabaseManager:
             logger.error(f"Failed to get database stats: {str(e)}")
             return {}
 
-    def merge_characters(self, alias_mapping: Dict[str, str], dry_run: bool = False) -> Dict[str, int]:
+    def merge_characters(self, alias_mapping: Dict[str, str], dry_run: bool = False, progress_callback: Optional[Callable] = None) -> Dict[str, int]:
         """Merge duplicate characters using an alias mapping.
 
         Args:
             alias_mapping: Dictionary mapping alias IDs to canonical IDs
             dry_run: If True, only report what would be changed without modifying database
+            progress_callback: Optional callback function(current, total, alias_id, canonical_id) for progress updates
 
         Returns:
             Dictionary with merge statistics
@@ -841,7 +842,15 @@ class DatabaseManager:
             if not dry_run:
                 conn.execute("BEGIN TRANSACTION")
 
+            total = len(alias_mapping)
+            current = 0
+
             for alias_id, canonical_id in alias_mapping.items():
+                current += 1
+
+                # Call progress callback if provided
+                if progress_callback:
+                    progress_callback(current, total, alias_id, canonical_id)
                 try:
                     # Check if both characters exist
                     alias_exists = conn.execute(
