@@ -183,6 +183,36 @@ merge-characters:
 	@read -p "" confirm
 	$(UV) run onepieceofdata merge-characters
 
+# Sync character appearance analytics from CoC/CoV tables
+sync-character-appearances:
+	@echo "🔄 Syncing character appearance analytics..."
+	$(UV) run onepieceofdata sync-character-appearances
+
+# Sync character appearances with verbose output
+sync-character-appearances-verbose:
+	@echo "🔄 Syncing character appearance analytics (verbose mode)..."
+	$(UV) run onepieceofdata sync-character-appearances --verbose
+
+# Complete character workflow (scrape → parse → merge → sync)
+run-character-workflow:
+	@echo "👥 Running complete character workflow..."
+	@echo ""
+	@$(MAKE) run-scrape-characters
+	@echo ""
+	@$(MAKE) run-parse
+	@echo ""
+	@echo "📋 Step 1/3: Merge Characters"
+	@$(MAKE) merge-characters-dry-run
+	@echo ""
+	@echo "⚠️  Review the merge preview above. Continue with merge? [Enter to continue, Ctrl+C to cancel]"
+	@read -p "" confirm
+	@$(MAKE) merge-characters
+	@echo ""
+	@echo "📋 Step 2/3: Sync Appearances"
+	@$(MAKE) sync-character-appearances
+	@echo ""
+	@echo "✅ Character workflow complete!"
+
 # Run arc scraping (story arcs)
 run-scrape-arcs:
 	@echo "🏴‍☠️ Running arc scraping (story arcs)..."
@@ -236,6 +266,9 @@ run-full-pipeline:
 	@echo "Step 8: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
+	@echo "Step 9: Syncing character appearance analytics..."
+	$(MAKE) sync-character-appearances
+	@echo ""
 	@echo "✅ Pipeline completed! Check status with 'make db-status'"
 
 # Run complete pipeline with parallel processing
@@ -268,6 +301,9 @@ run-full-pipeline-parallel:
 	@echo ""
 	@echo "Step 9: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
+	@echo ""
+	@echo "Step 10: Syncing character appearance analytics..."
+	$(MAKE) sync-character-appearances
 	@echo ""
 	@echo "✅ Parallel pipeline completed!"
 	$(MAKE) db-status

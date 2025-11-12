@@ -342,12 +342,26 @@ def scrape_volumes(start_volume: int, end_volume: Optional[int], parallel: bool,
     is_flag=True,
     help="Create database tables (will drop existing tables)"
 )
+@click.option(
+    "--auto-sync",
+    is_flag=True,
+    default=True,
+    help="Auto-sync character appearances after loading CoC data (default: True)"
+)
+@click.option(
+    "--no-auto-sync",
+    is_flag=True,
+    default=False,
+    help="Skip auto-sync of character appearances"
+)
 def parse(
     database_path: Optional[str],
     chapters_file: Optional[str],
     volumes_file: Optional[str],
     characters_file: Optional[str],
-    create_tables: bool
+    create_tables: bool,
+    auto_sync: bool,
+    no_auto_sync: bool
 ) -> None:
     """Parse scraped data and load into DuckDB database."""
     from .database.operations import DatabaseManager
@@ -414,13 +428,26 @@ def parse(
             
             # Show database stats
             stats = db.get_database_stats()
+            coc_count = 0
             if stats:
                 click.echo(f"\n📊 Database Statistics:")
                 click.echo(f"   📖 Chapters: {stats.get('chapter', 0)}")
                 click.echo(f"   📚 Volumes: {stats.get('volume', 0)}")
                 click.echo(f"   👥 Characters: {stats.get('character', 0)}")
-                click.echo(f"   🔗 Character-Chapter links: {stats.get('coc', 0)}")
-            
+                coc_count = stats.get('coc', 0)
+                click.echo(f"   🔗 Character-Chapter links: {coc_count}")
+
+            # Auto-sync character appearances if CoC data was loaded
+            should_sync = auto_sync and not no_auto_sync and coc_count > 0
+            if should_sync:
+                click.echo("\n🔄 Auto-syncing character appearances...")
+                try:
+                    sync_stats = db.sync_character_appearances()
+                    click.echo(f"✅ Synced {sync_stats['characters_updated']:,} characters with {sync_stats['total_appearances']:,} appearances")
+                except Exception as e:
+                    click.echo(f"⚠️  Auto-sync failed: {str(e)}")
+                    click.echo("   You can manually run: make sync-character-appearances")
+
             click.echo(f"\n✅ Data parsing completed!")
             click.echo(f"📊 Results: {success_count}/{total_files} files loaded successfully")
             click.echo(f"💾 Database saved to: {database_path}")
@@ -878,6 +905,71 @@ def show_chapter_characters(chapter: Optional[int]) -> None:
 
     except Exception as e:
         click.echo(f"❌ Error: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--verbose",
+    is_flag=True,
+    default=False,
+    help="Show detailed progress for each character"
+)
+def sync_character_appearances(verbose: bool) -> None:
+    """Sync character appearance analytics from CoC/CoV tables.
+
+    This command populates appearance_count, chapter_list, and other
+    analytics columns in the character table based on CoC/CoV data.
+
+    Run this after:
+    - Initial data load
+    - Character merge operations
+    - Any manual CoC/CoV changes
+
+    This enables fast analytics queries without needing joins.
+    """
+    from .database.operations import DatabaseManager
+
+    click.echo("🔄 Syncing character appearance analytics...\n")
+
+    try:
+        with DatabaseManager() as db:
+            # Progress callback to show what's happening
+            if verbose:
+                def progress_callback(current: int, total: int, character_id: str, stats: dict):
+                    chapters = stats.get('chapters', 0)
+                    volumes = stats.get('volumes', 0)
+                    first = stats.get('first', '?')
+                    last = stats.get('last', '?')
+                    click.echo(f"  [{current:,}/{total:,}] {character_id}: {chapters} chapters, {volumes} volumes (#{first}-#{last})")
+            else:
+                # Show progress every 100 characters
+                def progress_callback(current: int, total: int, character_id: str, stats: dict):
+                    if current % 100 == 0 or current == total:
+                        click.echo(f"  Progress: {current:,}/{total:,} characters...")
+
+            sync_stats = db.sync_character_appearances(progress_callback=progress_callback)
+
+            click.echo("\n📊 Sync Statistics:")
+            click.echo(f"  Characters updated: {sync_stats['characters_updated']:,}")
+            click.echo(f"  Total appearances: {sync_stats['total_appearances']:,}")
+
+            if sync_stats['characters_updated'] > 0:
+                avg_appearances = sync_stats['total_appearances'] / sync_stats['characters_updated']
+                click.echo(f"  Average per character: {avg_appearances:.1f}")
+
+            if sync_stats['characters_with_no_appearances'] > 0:
+                click.echo(f"  ⚠️  Characters with no appearances: {sync_stats['characters_with_no_appearances']:,}")
+
+            if sync_stats['errors'] > 0:
+                click.echo(f"  ⚠️  Errors encountered: {sync_stats['errors']}")
+
+            click.echo("\n✅ Character appearance sync complete!")
+            click.echo("\n💡 You can now run analytics queries without joins:")
+            click.echo("   SELECT name, appearance_count FROM character ORDER BY appearance_count DESC LIMIT 10;")
+
+    except Exception as e:
+        click.echo(f"❌ Error during sync: {str(e)}")
         sys.exit(1)
 
 
