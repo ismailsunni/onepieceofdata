@@ -1522,14 +1522,21 @@ def parse_story_structure(arcs_json: Optional[str], sagas_json: Optional[str]) -
             save_to_db=True
         )
         cli_logger.success(f"Loaded {len(validated_sagas)} sagas into database")
-        
-        # Process arcs and save to DB
+
+        # Process arcs (without saving to DB yet)
         validated_arcs = arc_parser.process_arc_data(
             [ScrapingResult(success=True, data=data) for data in arc_data],
             output_json=None,  # Don't save to JSON again
-            save_to_db=True
+            save_to_db=False  # Don't save yet - we need to link to sagas first
         )
-        cli_logger.success(f"Loaded {len(validated_arcs)} arcs into database")
+
+        # Auto-link arcs to sagas based on chapter ranges
+        cli_logger.info("Linking arcs to sagas based on chapter ranges...")
+        linked_arcs = arc_parser.auto_link_arcs_to_sagas(validated_arcs, sagas_json)
+
+        # Now save the linked arcs to database
+        arc_parser.save_arcs_to_database(linked_arcs)
+        cli_logger.success(f"Loaded {len(linked_arcs)} arcs into database")
         
         cli_logger.success(f"Story structure parsing completed: {len(validated_sagas)} sagas, {len(validated_arcs)} arcs loaded into database")
         
