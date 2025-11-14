@@ -182,16 +182,16 @@ class ArcParser:
         
     def link_arcs_to_sagas(self, arcs: List[ArcModel], saga_arc_mapping: Dict[str, str]) -> List[ArcModel]:
         """Link arcs to their respective sagas.
-        
+
         Args:
             arcs: List of ArcModel objects
             saga_arc_mapping: Dictionary mapping arc_id to saga_id
-            
+
         Returns:
             List of ArcModel objects with saga_id populated
         """
         logger.info(f"Linking {len(arcs)} arcs to sagas")
-        
+
         linked_arcs = []
         for arc in arcs:
             if arc.arc_id in saga_arc_mapping:
@@ -199,8 +199,63 @@ class ArcParser:
                 logger.debug(f"Linked arc '{arc.title}' to saga '{arc.saga_id}'")
             else:
                 logger.debug(f"No saga mapping found for arc '{arc.title}'")
-                
+
             linked_arcs.append(arc)
-            
+
         logger.success(f"Successfully linked arcs to sagas")
         return linked_arcs
+
+    def auto_link_arcs_to_sagas(self, arcs: List[ArcModel], sagas_json_path: str) -> List[ArcModel]:
+        """Automatically link arcs to sagas based on chapter ranges.
+
+        Args:
+            arcs: List of ArcModel objects
+            sagas_json_path: Path to JSON file containing saga data
+
+        Returns:
+            List of ArcModel objects with saga_id populated
+        """
+        logger.info(f"Auto-linking {len(arcs)} arcs to sagas based on chapter ranges")
+
+        try:
+            # Load saga data
+            with open(sagas_json_path, 'r', encoding='utf-8') as f:
+                sagas_data = json.load(f)
+
+            # Convert to SagaModel for validation (optional, but good practice)
+            from ..models.data import SagaModel
+            sagas = []
+            for saga_data in sagas_data:
+                try:
+                    saga = SagaModel(**saga_data)
+                    sagas.append(saga)
+                except Exception as e:
+                    logger.warning(f"Failed to load saga: {str(e)}")
+                    continue
+
+            logger.info(f"Loaded {len(sagas)} sagas for linking")
+
+            # Link each arc to its saga based on chapter range
+            linked_count = 0
+            for arc in arcs:
+                if arc.start_chapter is None or arc.end_chapter is None:
+                    logger.debug(f"Arc '{arc.title}' has no chapter range, skipping")
+                    continue
+
+                # Find the saga that contains this arc's chapter range
+                for saga in sagas:
+                    if (saga.start_chapter <= arc.start_chapter and
+                        saga.end_chapter >= arc.end_chapter):
+                        arc.saga_id = saga.saga_id
+                        linked_count += 1
+                        logger.debug(f"Linked arc '{arc.title}' (ch {arc.start_chapter}-{arc.end_chapter}) to saga '{saga.title}' (ch {saga.start_chapter}-{saga.end_chapter})")
+                        break
+                else:
+                    logger.warning(f"No saga found for arc '{arc.title}' (chapters {arc.start_chapter}-{arc.end_chapter})")
+
+            logger.success(f"Successfully auto-linked {linked_count}/{len(arcs)} arcs to sagas")
+            return arcs
+
+        except Exception as e:
+            logger.error(f"Failed to auto-link arcs to sagas: {str(e)}")
+            return arcs
