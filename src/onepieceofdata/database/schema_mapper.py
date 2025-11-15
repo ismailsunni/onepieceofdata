@@ -17,17 +17,18 @@ class SchemaMapper:
         'TIMESTAMP': 'TIMESTAMP',
         'BOOLEAN': 'BOOLEAN',
         'INTEGER[]': 'INTEGER[]',
+        'TEXT[]': 'TEXT[]',
     }
 
     # Tables in dependency order (respects foreign keys)
     # Tables should be exported in this order to avoid FK violations
+    # Note: 'coc' table is excluded - character appearances are denormalized into character table
     TABLE_ORDER = [
         'saga',      # No dependencies
         'arc',       # Depends on: saga
         'volume',    # No dependencies
         'chapter',   # Depends on: volume (nullable)
-        'character', # No dependencies
-        'coc',       # Depends on: chapter, character
+        'character', # No dependencies (includes denormalized arc_list, saga_list, chapter_list)
         'cov',       # Depends on: volume, character
     ]
 
@@ -128,10 +129,7 @@ class SchemaMapper:
             'arc': [
                 "ALTER TABLE arc ADD CONSTRAINT fk_arc_saga FOREIGN KEY (saga_id) REFERENCES saga(saga_id) ON DELETE SET NULL;"
             ],
-            'coc': [
-                "ALTER TABLE coc ADD CONSTRAINT fk_coc_chapter FOREIGN KEY (chapter) REFERENCES chapter(number) ON DELETE CASCADE;",
-                "ALTER TABLE coc ADD CONSTRAINT fk_coc_character FOREIGN KEY (character) REFERENCES character(id) ON DELETE CASCADE;"
-            ],
+            # Note: 'coc' table is excluded from export - character appearances are denormalized
             'cov': [
                 "ALTER TABLE cov ADD CONSTRAINT fk_cov_volume FOREIGN KEY (volume) REFERENCES volume(number) ON DELETE CASCADE;",
                 "ALTER TABLE cov ADD CONSTRAINT fk_cov_character FOREIGN KEY (character) REFERENCES character(id) ON DELETE CASCADE;"

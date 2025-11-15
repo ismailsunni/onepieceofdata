@@ -143,6 +143,8 @@ class DatabaseManager:
             scraping_note TEXT,
             chapter_list INTEGER[],
             volume_list INTEGER[],
+            arc_list TEXT[],
+            saga_list TEXT[],
             appearance_count INTEGER,
             volume_appearance_count INTEGER,
             first_appearance INTEGER,
@@ -936,6 +938,8 @@ class DatabaseManager:
         Populates the following columns in character table:
         - chapter_list: sorted list of chapter numbers
         - volume_list: sorted list of volume numbers
+        - arc_list: sorted list of arc IDs (computed from chapter_list)
+        - saga_list: sorted list of saga IDs (computed from chapter_list)
         - appearance_count: total chapter appearances
         - volume_appearance_count: total volume appearances
         - first_appearance: first chapter number
@@ -957,9 +961,9 @@ class DatabaseManager:
                 logger.info("Checking for appearance analytics columns...")
                 # Try to query the columns - if it fails, they don't exist
                 conn.execute("SELECT chapter_list FROM character LIMIT 1")
-                logger.info("Columns already exist")
+                logger.info("Basic columns already exist")
             except:
-                logger.info("Adding appearance analytics columns to character table...")
+                logger.info("Adding basic appearance analytics columns to character table...")
                 conn.execute("ALTER TABLE character ADD COLUMN chapter_list INTEGER[]")
                 conn.execute("ALTER TABLE character ADD COLUMN volume_list INTEGER[]")
                 conn.execute("ALTER TABLE character ADD COLUMN appearance_count INTEGER")
@@ -967,7 +971,18 @@ class DatabaseManager:
                 conn.execute("ALTER TABLE character ADD COLUMN first_appearance INTEGER")
                 conn.execute("ALTER TABLE character ADD COLUMN last_appearance INTEGER")
                 conn.commit()
-                logger.success("Appearance analytics columns added successfully")
+                logger.success("Basic appearance analytics columns added successfully")
+
+            # Check for arc_list and saga_list columns (added later)
+            try:
+                conn.execute("SELECT arc_list FROM character LIMIT 1")
+                logger.info("Arc/saga columns already exist")
+            except:
+                logger.info("Adding arc_list and saga_list columns to character table...")
+                conn.execute("ALTER TABLE character ADD COLUMN arc_list TEXT[]")
+                conn.execute("ALTER TABLE character ADD COLUMN saga_list TEXT[]")
+                conn.commit()
+                logger.success("Arc/saga columns added successfully")
 
             # Get all characters
             characters = conn.execute("SELECT id FROM character ORDER BY id").fetchall()
@@ -1015,11 +1030,48 @@ class DatabaseManager:
                     first_appearance = chapter_list[0] if chapter_list else None
                     last_appearance = chapter_list[-1] if chapter_list else None
 
+                    # Compute arc appearances based on chapter_list
+                    arc_list = []
+                    saga_list = []
+
+                    if chapter_list:
+                        # Get arcs where character appears
+                        # Check if any chapter in chapter_list falls within arc range
+                        arc_data = conn.execute("""
+                            SELECT DISTINCT arc_id
+                            FROM arc
+                            WHERE (
+                                SELECT COUNT(*)
+                                FROM (SELECT UNNEST(?) AS ch) chapters
+                                WHERE ch BETWEEN start_chapter AND end_chapter
+                            ) > 0
+                            ORDER BY start_chapter
+                        """, [chapter_list]).fetchall()
+
+                        arc_list = [row[0] for row in arc_data]
+
+                        # Get sagas where character appears
+                        # Check if any chapter in chapter_list falls within saga range
+                        saga_data = conn.execute("""
+                            SELECT DISTINCT saga_id
+                            FROM saga
+                            WHERE (
+                                SELECT COUNT(*)
+                                FROM (SELECT UNNEST(?) AS ch) chapters
+                                WHERE ch BETWEEN start_chapter AND end_chapter
+                            ) > 0
+                            ORDER BY start_chapter
+                        """, [chapter_list]).fetchall()
+
+                        saga_list = [row[0] for row in saga_data]
+
                     # Update character table
                     conn.execute("""
                         UPDATE character
                         SET chapter_list = ?,
                             volume_list = ?,
+                            arc_list = ?,
+                            saga_list = ?,
                             appearance_count = ?,
                             volume_appearance_count = ?,
                             first_appearance = ?,
@@ -1028,6 +1080,8 @@ class DatabaseManager:
                     """, [
                         chapter_list,
                         volume_list,
+                        arc_list,
+                        saga_list,
                         appearance_count,
                         volume_appearance_count,
                         first_appearance,
@@ -1050,12 +1104,14 @@ class DatabaseManager:
                             {
                                 'chapters': appearance_count,
                                 'volumes': volume_appearance_count,
+                                'arcs': len(arc_list),
+                                'sagas': len(saga_list),
                                 'first': first_appearance,
                                 'last': last_appearance
                             }
                         )
 
-                    logger.debug(f"Synced {character_id}: {appearance_count} chapters, {volume_appearance_count} volumes")
+                    logger.debug(f"Synced {character_id}: {appearance_count} chapters, {volume_appearance_count} volumes, {len(arc_list)} arcs, {len(saga_list)} sagas")
 
                 except Exception as e:
                     logger.error(f"Error syncing character {character_id}: {str(e)}")
