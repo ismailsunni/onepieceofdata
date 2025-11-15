@@ -918,8 +918,8 @@ def show_chapter_characters(chapter: Optional[int]) -> None:
 def sync_character_appearances(verbose: bool) -> None:
     """Sync character appearance analytics from CoC/CoV tables.
 
-    This command populates appearance_count, chapter_list, and other
-    analytics columns in the character table based on CoC/CoV data.
+    This command populates appearance_count, chapter_list, arc_list, saga_list,
+    and other analytics columns in the character table based on CoC/CoV data.
 
     Run this after:
     - Initial data load
@@ -939,9 +939,11 @@ def sync_character_appearances(verbose: bool) -> None:
                 def progress_callback(current: int, total: int, character_id: str, stats: dict):
                     chapters = stats.get('chapters', 0)
                     volumes = stats.get('volumes', 0)
+                    arcs = stats.get('arcs', 0)
+                    sagas = stats.get('sagas', 0)
                     first = stats.get('first', '?')
                     last = stats.get('last', '?')
-                    click.echo(f"  [{current:,}/{total:,}] {character_id}: {chapters} chapters, {volumes} volumes (#{first}-#{last})")
+                    click.echo(f"  [{current:,}/{total:,}] {character_id}: {chapters} chapters, {volumes} volumes, {arcs} arcs, {sagas} sagas (#{first}-#{last})")
             else:
                 # Show progress every 100 characters
                 def progress_callback(current: int, total: int, character_id: str, stats: dict):
