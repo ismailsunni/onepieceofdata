@@ -270,8 +270,6 @@ merge-characters-dry-run:
 # Merge duplicate characters (actual merge)
 merge-characters:
 	@echo "🔀 Merging duplicate characters..."
-	@echo "⚠️  This will modify the database. Press Ctrl+C to cancel or Enter to continue..."
-	@read -p "" confirm
 	$(UV) run onepieceofdata merge-characters
 
 # Sync character appearance analytics from CoC/CoV tables
@@ -295,11 +293,10 @@ run-character-workflow:
 	@echo "📋 Step 1/3: Merge Characters"
 	@$(MAKE) merge-characters-dry-run
 	@echo ""
-	@echo "⚠️  Review the merge preview above. Continue with merge? [Enter to continue, Ctrl+C to cancel]"
-	@read -p "" confirm
+	@echo "📋 Step 2/3: Proceeding with merge..."
 	@$(MAKE) merge-characters
 	@echo ""
-	@echo "📋 Step 2/3: Sync Appearances"
+	@echo "📋 Step 3/3: Sync Appearances"
 	@$(MAKE) sync-character-appearances
 	@echo ""
 	@echo "✅ Character workflow complete!"
