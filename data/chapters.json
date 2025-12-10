@@ -36391,6 +36391,12 @@
         "full_text": "Schollzo"
       },
       {
+        "name": "Tamagon",
+        "url": "/wiki/Tamagon",
+        "note": "",
+        "full_text": "Tamagon"
+      },
+      {
         "name": "Dago",
         "url": "/wiki/Dago",
         "note": "",
@@ -36576,12 +36582,6 @@
         "full_text": "Rob Lucci"
       },
       {
-        "name": "Hattori",
-        "url": "/wiki/Hattori",
-        "note": "",
-        "full_text": "Hattori"
-      },
-      {
         "name": "Kaku",
         "url": "/wiki/Kaku",
         "note": "",
@@ -36616,12 +36616,6 @@
         "url": "/wiki/Zambai",
         "note": "",
         "full_text": "Zambai"
-      },
-      {
-        "name": "Tamagon",
-        "url": "/wiki/Tamagon",
-        "note": "",
-        "full_text": "Tamagon"
       },
       {
         "name": "Dago",
@@ -54565,7 +54559,7 @@
       },
       {
         "name": "Nyon",
-        "url": "/wiki/Nyon",
+        "url": "/wiki/Gloriosa",
         "note": "",
         "full_text": "Nyon"
       },
@@ -55620,7 +55614,7 @@
       },
       {
         "name": "Nyon",
-        "url": "/wiki/Nyon",
+        "url": "/wiki/Gloriosa",
         "note": "",
         "full_text": "Nyon"
       },
@@ -55793,7 +55787,7 @@
       },
       {
         "name": "Nyon",
-        "url": "/wiki/Nyon",
+        "url": "/wiki/Gloriosa",
         "note": "",
         "full_text": "Nyon"
       },
@@ -56026,7 +56020,7 @@
       },
       {
         "name": "Nyon",
-        "url": "/wiki/Nyon",
+        "url": "/wiki/Gloriosa",
         "note": "",
         "full_text": "Nyon"
       },
@@ -59226,10 +59220,10 @@
         "full_text": "Heracles (cover)"
       },
       {
-        "name": "Reuder",
-        "url": "/wiki/Reuder",
+        "name": "Royder",
+        "url": "/wiki/Royder",
         "note": "",
-        "full_text": "Reuder"
+        "full_text": "Royder"
       },
       {
         "name": "Mr. 3",
@@ -59465,10 +59459,10 @@
         "full_text": "Portgas D. Rouge (flashback)"
       },
       {
-        "name": "Reuder",
-        "url": "/wiki/Reuder",
+        "name": "Royder",
+        "url": "/wiki/Royder",
         "note": "",
-        "full_text": "Reuder"
+        "full_text": "Royder"
       },
       {
         "name": "Galdino",
@@ -121851,6 +121845,12 @@
         "full_text": "Carrot"
       },
       {
+        "name": "Wanda",
+        "url": "/wiki/Wanda",
+        "note": "",
+        "full_text": "Wanda"
+      },
+      {
         "name": "Miyagi",
         "url": "/wiki/Miyagi",
         "note": "",
@@ -150933,7 +150933,7 @@
     "chapter_number": 1069,
     "volume": "106",
     "chapter_display": "1069",
-    "title": "All Things Are Brought Into This World With Hope",
+    "title": "All Things Are Brought into This World with Hope",
     "pages": "17",
     "release_date": "December 12, 2022",
     "jump_info": "2023 Issue 2",
@@ -157443,7 +157443,7 @@
     "chapter_number": 1105,
     "volume": "109",
     "chapter_display": "1105",
-    "title": "The Height Of Folly",
+    "title": "The Height of Folly",
     "pages": "13",
     "release_date": "January 29, 2024",
     "jump_info": "2024 Issue 9",
@@ -157675,7 +157675,7 @@
     "chapter_number": 1107,
     "volume": "109",
     "chapter_display": "1107",
-    "title": "I've Been Looking For You!!",
+    "title": "I've Been Looking for You!!",
     "pages": "17",
     "release_date": "February 19, 2024",
     "jump_info": "2024 Issue 12",
@@ -160717,7 +160717,7 @@
     "chapter_number": 1119,
     "volume": "110",
     "chapter_display": "1119",
-    "title": "EMET",
+    "title": "Emet",
     "pages": "13",
     "release_date": "July 1, 2024",
     "jump_info": "2024 Issue 31",
@@ -169939,6 +169939,771 @@
         "url": "/wiki/Yomo",
         "note": "cover",
         "full_text": "Yomo (cover)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1166,
+    "volume": "TBA",
+    "chapter_display": "1166",
+    "title": "New Stories",
+    "pages": "19",
+    "release_date": "November 24, 2025",
+    "jump_info": "2025 Issue 52",
+    "characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "",
+        "full_text": "Napoleon"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "Gloriosa",
+        "url": "/wiki/Gloriosa",
+        "note": "",
+        "full_text": "Gloriosa"
+      },
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "cover",
+        "full_text": "Monkey D. Luffy (cover)"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "cover",
+        "full_text": "Roronoa Zoro (cover)"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "cover",
+        "full_text": "Nami (cover)"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "cover",
+        "full_text": "Usopp (cover)"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "cover",
+        "full_text": "Sanji (cover)"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "cover",
+        "full_text": "Tony Tony Chopper (cover)"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Moon Isaac Jr.",
+        "url": "/wiki/Moon_Isaac_Jr.",
+        "note": "",
+        "full_text": "Moon Isaac Jr."
+      },
+      {
+        "name": "Donquino",
+        "url": "/wiki/Donquino",
+        "note": "",
+        "full_text": "Donquino"
+      },
+      {
+        "name": "Rowing",
+        "url": "/wiki/Rowing",
+        "note": "",
+        "full_text": "Rowing"
+      },
+      {
+        "name": "Erio",
+        "url": "/wiki/Erio",
+        "note": "",
+        "full_text": "Erio"
+      },
+      {
+        "name": "Spencer",
+        "url": "/wiki/Spencer",
+        "note": "",
+        "full_text": "Spencer"
+      },
+      {
+        "name": "Jacksonbanner",
+        "url": "/wiki/Jacksonbanner",
+        "note": "",
+        "full_text": "Jacksonbanner"
+      },
+      {
+        "name": "Doringo",
+        "url": "/wiki/Doringo",
+        "note": "",
+        "full_text": "Doringo"
+      },
+      {
+        "name": "Mr. Momora",
+        "url": "/wiki/Mr._Momora",
+        "note": "",
+        "full_text": "Mr. Momora"
+      },
+      {
+        "name": "Rangram",
+        "url": "/wiki/Rangram",
+        "note": "",
+        "full_text": "Rangram"
+      },
+      {
+        "name": "Mugren",
+        "url": "/wiki/Mugren",
+        "note": "",
+        "full_text": "Mugren"
+      },
+      {
+        "name": "Imu",
+        "url": "/wiki/Imu",
+        "note": "",
+        "full_text": "Imu"
+      },
+      {
+        "name": "Figarland Garling",
+        "url": "/wiki/Figarland_Garling",
+        "note": "",
+        "full_text": "Figarland Garling"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Satchels Maffey",
+        "url": "/wiki/Satchels_Maffey",
+        "note": "",
+        "full_text": "Satchels Maffey"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "url": "/wiki/Monkey_D._Garp",
+        "note": "",
+        "full_text": "Monkey D. Garp"
+      },
+      {
+        "name": "Sengoku",
+        "url": "/wiki/Sengoku",
+        "note": "",
+        "full_text": "Sengoku"
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "url": "/wiki/Monkey_D._Dragon",
+        "note": "",
+        "full_text": "Monkey D. Dragon"
+      },
+      {
+        "name": "Fishbonen",
+        "url": "/wiki/Fishbonen",
+        "note": "",
+        "full_text": "Fishbonen"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "url": "/wiki/Bartholomew_Kuma",
+        "note": "",
+        "full_text": "Bartholomew Kuma"
+      },
+      {
+        "name": "Emporio Ivankov",
+        "url": "/wiki/Emporio_Ivankov",
+        "note": "",
+        "full_text": "Emporio Ivankov"
+      },
+      {
+        "name": "Ginny",
+        "url": "/wiki/Ginny",
+        "note": "",
+        "full_text": "Ginny"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Ida",
+        "url": "/wiki/Ida",
+        "note": "",
+        "full_text": "Ida"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Shakuyaku",
+        "url": "/wiki/Shakuyaku",
+        "note": "",
+        "full_text": "Shakuyaku"
+      },
+      {
+        "name": "Eris",
+        "url": "/wiki/Eris",
+        "note": "",
+        "full_text": "Eris"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "",
+        "full_text": "Marshall D. Teach"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato (cover)"
+      },
+      {
+        "name": "Shinobu",
+        "url": "/wiki/Shinobu",
+        "note": "cover",
+        "full_text": "Shinobu (cover)"
+      },
+      {
+        "name": "Kurozumi Tama",
+        "url": "/wiki/Kurozumi_Tama",
+        "note": "cover",
+        "full_text": "Kurozumi Tama (cover)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1167,
+    "volume": "TBA",
+    "chapter_display": "1167",
+    "title": "Ida's Sons",
+    "pages": "17",
+    "release_date": "December 1, 2025",
+    "jump_info": "2026 Issue 1",
+    "characters": [
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "url": "/wiki/Silvers_Rayleigh",
+        "note": "",
+        "full_text": "Silvers Rayleigh"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Crocus",
+        "url": "/wiki/Crocus",
+        "note": "",
+        "full_text": "Crocus"
+      },
+      {
+        "name": "Erio",
+        "url": "/wiki/Erio",
+        "note": "",
+        "full_text": "Erio"
+      },
+      {
+        "name": "Spencer",
+        "url": "/wiki/Spencer",
+        "note": "",
+        "full_text": "Spencer"
+      },
+      {
+        "name": "MAX Marx",
+        "url": "/wiki/MAX_Marx",
+        "note": "",
+        "full_text": "MAX Marx"
+      },
+      {
+        "name": "Mugren",
+        "url": "/wiki/Mugren",
+        "note": "",
+        "full_text": "Mugren"
+      },
+      {
+        "name": "Buggy",
+        "url": "/wiki/Buggy",
+        "note": "",
+        "full_text": "Buggy"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "",
+        "full_text": "Kaidou"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "",
+        "full_text": "Charlotte Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "",
+        "full_text": "Napoleon"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "",
+        "full_text": "Shiki"
+      },
+      {
+        "name": "Fisher Tiger",
+        "url": "/wiki/Fisher_Tiger",
+        "note": "",
+        "full_text": "Fisher Tiger"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "url": "/wiki/Jaygarcia_Saturn",
+        "note": "",
+        "full_text": "Jaygarcia Saturn"
+      },
+      {
+        "name": "Marcus Mars",
+        "url": "/wiki/Marcus_Mars",
+        "note": "",
+        "full_text": "Marcus Mars"
+      },
+      {
+        "name": "Topman Warcury",
+        "url": "/wiki/Topman_Warcury",
+        "note": "",
+        "full_text": "Topman Warcury"
+      },
+      {
+        "name": "Ethanbaron V. Nusjuro",
+        "url": "/wiki/Ethanbaron_V._Nusjuro",
+        "note": "",
+        "full_text": "Ethanbaron V. Nusjuro"
+      },
+      {
+        "name": "Shepherd Ju Peter",
+        "url": "/wiki/Shepherd_Ju_Peter",
+        "note": "",
+        "full_text": "Shepherd Ju Peter"
+      },
+      {
+        "name": "Figarland Garling",
+        "url": "/wiki/Figarland_Garling",
+        "note": "",
+        "full_text": "Figarland Garling"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Lacroix",
+        "url": "/wiki/Lacroix",
+        "note": "",
+        "full_text": "Lacroix"
+      },
+      {
+        "name": "Boa Hancock",
+        "url": "/wiki/Boa_Hancock",
+        "note": "",
+        "full_text": "Boa Hancock"
+      },
+      {
+        "name": "Boa Sandersonia",
+        "url": "/wiki/Boa_Sandersonia",
+        "note": "",
+        "full_text": "Boa Sandersonia"
+      },
+      {
+        "name": "Boa Marigold",
+        "url": "/wiki/Boa_Marigold",
+        "note": "",
+        "full_text": "Boa Marigold"
+      },
+      {
+        "name": "Koala",
+        "url": "/wiki/Koala",
+        "note": "",
+        "full_text": "Koala"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Ida",
+        "url": "/wiki/Ida",
+        "note": "",
+        "full_text": "Ida"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Mato",
+        "url": "/wiki/Mato",
+        "note": "",
+        "full_text": "Mato"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
+        "name": "Ochoku",
+        "url": "/wiki/Ochoku",
+        "note": "",
+        "full_text": "Ochoku"
+      },
+      {
+        "name": "Neptune",
+        "url": "/wiki/Neptune",
+        "note": "",
+        "full_text": "Neptune"
+      },
+      {
+        "name": "Otohime",
+        "url": "/wiki/Otohime",
+        "note": "",
+        "full_text": "Otohime"
+      },
+      {
+        "name": "Fukaboshi",
+        "url": "/wiki/Fukaboshi",
+        "note": "",
+        "full_text": "Fukaboshi"
+      },
+      {
+        "name": "Ryuboshi",
+        "url": "/wiki/Ryuboshi",
+        "note": "",
+        "full_text": "Ryuboshi"
+      },
+      {
+        "name": "Manboshi",
+        "url": "/wiki/Manboshi",
+        "note": "",
+        "full_text": "Manboshi"
+      },
+      {
+        "name": "Genzo",
+        "url": "/wiki/Genzo",
+        "note": "cover",
+        "full_text": "Genzo (cover)"
+      },
+      {
+        "name": "Nojiko",
+        "url": "/wiki/Nojiko",
+        "note": "cover",
+        "full_text": "Nojiko (cover)"
+      },
+      {
+        "name": "Morgans",
+        "url": "/wiki/Morgans",
+        "note": "",
+        "full_text": "Morgans"
+      },
+      {
+        "name": "Royder",
+        "url": "/wiki/Royder",
+        "note": "",
+        "full_text": "Royder"
+      },
+      {
+        "name": "Mottled",
+        "url": "/wiki/Mottled",
+        "note": "",
+        "full_text": "Mottled"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1168,
+    "volume": "TBA",
+    "chapter_display": "1168",
+    "title": "The Snows of Elbaph",
+    "pages": "15",
+    "release_date": "December 8, 2025",
+    "jump_info": "2026 Issue 2",
+    "characters": [
+      {
+        "name": "Imu",
+        "url": "/wiki/Imu",
+        "note": "",
+        "full_text": "Imu"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "url": "/wiki/Jaygarcia_Saturn",
+        "note": "",
+        "full_text": "Jaygarcia Saturn"
+      },
+      {
+        "name": "Marcus Mars",
+        "url": "/wiki/Marcus_Mars",
+        "note": "",
+        "full_text": "Marcus Mars"
+      },
+      {
+        "name": "Topman Warcury",
+        "url": "/wiki/Topman_Warcury",
+        "note": "",
+        "full_text": "Topman Warcury"
+      },
+      {
+        "name": "Ethanbaron V. Nusjuro",
+        "url": "/wiki/Ethanbaron_V._Nusjuro",
+        "note": "",
+        "full_text": "Ethanbaron V. Nusjuro"
+      },
+      {
+        "name": "Shepherd Ju Peter",
+        "url": "/wiki/Shepherd_Ju_Peter",
+        "note": "",
+        "full_text": "Shepherd Ju Peter"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Ida",
+        "url": "/wiki/Ida",
+        "note": "flashback",
+        "full_text": "Ida (flashback)"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "flashback",
+        "full_text": "Ripley (flashback)"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "flashback",
+        "full_text": "Scopper Gaban (flashback)"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "flashback",
+        "full_text": "Colon (flashback)"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "flashback",
+        "full_text": "Hajrudin (flashback)"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "flashback",
+        "full_text": "Stansen (flashback)"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "flashback",
+        "full_text": "Road (flashback)"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "flashback",
+        "full_text": "Goldberg (flashback)"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "flashback",
+        "full_text": "Gerd (flashback)"
+      },
+      {
+        "name": "Mato",
+        "url": "/wiki/Mato",
+        "note": "flashback",
+        "full_text": "Mato (flashback)"
+      },
+      {
+        "name": "Hatchan",
+        "url": "/wiki/Hatchan",
+        "note": "cover",
+        "full_text": "Hatchan (cover)"
+      },
+      {
+        "name": "Umit",
+        "url": "/wiki/Umit",
+        "note": "",
+        "full_text": "Umit"
       }
     ]
   }
