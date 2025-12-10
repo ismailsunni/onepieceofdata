@@ -6,6 +6,7 @@ UV := uv
 	run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes \
 	run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-parse-story-structure \
 	run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers \
+	run-all-scrapers run-all-parsers run-all-postprocessors run-all-exports run-data-pipeline \
 	status db-status migrate-birth-dates migrate-birth-dates-full load-cov config export \
 	postgres-start postgres-stop postgres-logs postgres-init export-postgres export-postgres-full postgres-status \
 	test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
@@ -34,7 +35,7 @@ help:
 	@echo "  ┌─ POST-PROCESSING ───────────────────────────────────────────┐"
 	@echo "  │  8. migrate-birth-dates       → Add birth_date column       │"
 	@echo "  │  9. load-cov                  → Load cover characters       │"
-	@echo "  │ 10. merge-characters          → Deduplicate characters      │"
+	@echo "  │ 10. merge-characters          → Merge duplicate characters  │"
 	@echo "  │ 11. sync-character-appearances→ Compute appearance stats    │"
 	@echo "  └─────────────────────────────────────────────────────────────┘"
 	@echo "           ↓"
@@ -45,8 +46,13 @@ help:
 	@echo ""
 	@echo "🚀 QUICK START:"
 	@echo "  make setup                      # First-time setup"
+	@echo ""
+	@echo "  ⭐ RECOMMENDED TWO-COMMAND WORKFLOW:"
+	@echo "  make run-data-pipeline          # 1. Scrape → Parse → Post-process (all data in DuckDB)"
+	@echo "  make run-all-exports            # 2. Export to CSV + PostgreSQL"
+	@echo ""
+	@echo "  OR use the all-in-one command:"
 	@echo "  make run-full-pipeline-parallel # Run entire pipeline with parallel processing"
-	@echo "  make postgres-init              # Export to PostgreSQL"
 	@echo ""
 	@echo "════════════════════════════════════════════════════════════════════════"
 	@echo ""
@@ -102,8 +108,8 @@ help:
 	@echo "  migrate-birth-dates              - Parse birth strings → birth_date (MM-DD)"
 	@echo "  migrate-birth-dates-full         - Parse birth strings → birth_date (YYYY-MM-DD)"
 	@echo "  load-cov                         - Load character-on-volume (cover characters)"
-	@echo "  merge-characters-dry-run         - Preview character deduplication"
-	@echo "  merge-characters                 - Merge duplicate characters (interactive)"
+	@echo "  merge-characters-dry-run         - Preview character deduplication (recommended first)"
+	@echo "  merge-characters                 - Merge duplicate characters"
 	@echo "  sync-character-appearances       - Compute appearance analytics"
 	@echo "  sync-character-appearances-verbose - Compute appearances (verbose output)"
 	@echo ""
@@ -113,6 +119,17 @@ help:
 	@echo "  run-full-pipeline-parallel       - Complete pipeline (parallel, 4 workers) ⭐"
 	@echo "  run-full-pipeline-workers WORKERS=N - Complete pipeline (N workers)"
 	@echo "  run-character-workflow           - Character workflow (scrape→parse→merge→sync)"
+	@echo ""
+	@echo "📦 CONTAINER COMMANDS (Modular Pipeline Stages)"
+	@echo "─────────────────────────────────────────────────────────────────────"
+	@echo "  run-all-scrapers         - Run ALL scrapers in parallel (chapters, volumes, characters, arcs/sagas)"
+	@echo "  run-all-parsers          - Run ALL parsers (load scraped data into DuckDB)"
+	@echo "  run-all-postprocessors   - Run ALL post-processors (birth dates, COV, merge, appearances)"
+	@echo "  run-all-exports          - Run ALL exports (CSV + PostgreSQL full sync)"
+	@echo ""
+	@echo "  🌟 TWO-COMMAND WORKFLOW:"
+	@echo "     make run-data-pipeline    - Scraping → Parsing → Post-Processing ⭐⭐"
+	@echo "     make run-all-exports      - Export to CSV + PostgreSQL"
 	@echo ""
 	@echo "🐘 POSTGRESQL EXPORT"
 	@echo "─────────────────────────────────────────────────────────────────────"
@@ -134,9 +151,12 @@ help:
 	@echo "  config               - Show current configuration (workers, delays, etc.)"
 	@echo ""
 	@echo "💡 TIPS:"
-	@echo "  • For first run: make setup && make run-full-pipeline-parallel"
+	@echo "  • RECOMMENDED: Use the two-command workflow for better control:"
+	@echo "    1. make run-data-pipeline  (prepare all data)"
+	@echo "    2. make run-all-exports    (export when ready)"
+	@echo "  • For quick all-in-one: make setup && make run-full-pipeline-parallel"
 	@echo "  • Parallel commands use 4 workers by default (faster)"
-	@echo "  • Use WORKERS=N to customize parallelism: make run-scrape-workers WORKERS=8"
+	@echo "  • Use WORKERS=N to customize: make run-scrape-workers WORKERS=8"
 	@echo "  • Story arcs auto-link to sagas based on chapter range containment"
 	@echo "  • PostgreSQL export requires Docker (use postgres-init for easy setup)"
 	@echo ""
@@ -409,6 +429,100 @@ run-full-pipeline-workers:
 	$(MAKE) load-cov
 	@echo ""
 	@echo "✅ Pipeline with $(WORKERS) workers completed! Check status with 'make db-status'"
+
+# ============================================================================
+# CONTAINER COMMANDS - Grouped pipeline stages for modular execution
+# ============================================================================
+
+# Run ALL scrapers in parallel mode
+run-all-scrapers:
+	@echo "🕷️  Running ALL scrapers in parallel mode..."
+	@echo ""
+	@echo "📖 Step 1/5: Scraping chapters (parallel)..."
+	$(MAKE) run-scrape-parallel
+	@echo ""
+	@echo "📚 Step 2/5: Scraping volumes..."
+	$(MAKE) run-scrape-volumes
+	@echo ""
+	@echo "👥 Step 3/5: Extracting character list from chapters..."
+	$(MAKE) extract-characters
+	@echo ""
+	@echo "👤 Step 4/5: Scraping character details (parallel)..."
+	$(MAKE) run-scrape-characters-parallel
+	@echo ""
+	@echo "⚓ Step 5/5: Scraping story structure (arcs and sagas)..."
+	$(MAKE) run-scrape-story-structure
+	@echo ""
+	@echo "✅ All scraping completed!"
+
+# Run ALL parsers (load data into DuckDB)
+run-all-parsers:
+	@echo "📊 Running ALL parsers (loading data into DuckDB)..."
+	@echo ""
+	@echo "🗄️  Step 1/2: Parsing basic data (chapters, volumes, characters)..."
+	$(MAKE) run-parse
+	@echo ""
+	@echo "⚓ Step 2/2: Parsing story structure (arcs and sagas)..."
+	$(MAKE) run-parse-story-structure
+	@echo ""
+	@echo "✅ All parsing completed!"
+
+# Run ALL post-processors (enrich and transform data)
+run-all-postprocessors:
+	@echo "🔧 Running ALL post-processors..."
+	@echo ""
+	@echo "📅 Step 1/4: Migrating birth dates..."
+	$(MAKE) migrate-birth-dates
+	@echo ""
+	@echo "🎨 Step 2/4: Loading character-on-volume (COV) data..."
+	$(MAKE) load-cov
+	@echo ""
+	@echo "🔀 Step 3/4: Merging duplicate characters..."
+	$(MAKE) merge-characters
+	@echo ""
+	@echo "🔄 Step 4/4: Syncing character appearance analytics..."
+	$(MAKE) sync-character-appearances
+	@echo ""
+	@echo "✅ All post-processing completed!"
+
+# Run ALL exports (CSV + PostgreSQL)
+run-all-exports:
+	@echo "📤 Running ALL exports..."
+	@echo ""
+	@echo "📄 Step 1/2: Exporting to CSV files..."
+	$(MAKE) export
+	@echo ""
+	@echo "🐘 Step 2/2: Exporting to PostgreSQL (full sync)..."
+	$(MAKE) export-postgres-full
+	@echo ""
+	@echo "✅ All exports completed!"
+
+# MAIN WORKFLOW: Run scraping + parsing + post-processing (NO export)
+# This is the command to prepare all data in DuckDB
+run-data-pipeline:
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo "🚀 RUNNING COMPLETE DATA PIPELINE (Scraping → Parsing → Post-Processing)"
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 1/3: SCRAPING                                          ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) run-all-scrapers
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 2/3: PARSING                                           ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) run-all-parsers
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 3/3: POST-PROCESSING                                   ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) run-all-postprocessors
+	@echo ""
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo "✅ DATA PIPELINE COMPLETED!"
+	@echo "═══════════════════════════════════════════════════════════════"
+	@$(MAKE) db-status
 
 # Export database to CSV files
 export:
