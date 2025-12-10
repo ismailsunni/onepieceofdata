@@ -27,29 +27,35 @@ class SagaScraper:
     )
     def _fetch_page(self, url: str) -> BeautifulSoup:
         """Fetch and parse a web page with retry logic.
-        
+
         Args:
             url: URL to fetch
-            
+
         Returns:
             BeautifulSoup parsed page
         """
         logger.debug(f"Fetching page: {url}")
-        
+
         response = self.http_pool.request(
-            'GET', 
+            'GET',
             url,
             headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            }
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Accept-Encoding': 'gzip, deflate',
+                'Connection': 'keep-alive',
+                'Upgrade-Insecure-Requests': '1'
+            },
+            decode_content=True
         )
-        
+
         if response.status != 200:
             raise Exception(f"HTTP {response.status} error for {url}")
-            
+
         soup = BeautifulSoup(response.data, 'html.parser')
         logger.debug(f"Successfully parsed page: {url}")
-        
+
         return soup
         
     def _extract_chapter_range(self, text: str) -> tuple[Optional[int], Optional[int]]:
