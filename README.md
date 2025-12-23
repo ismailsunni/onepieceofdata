@@ -91,25 +91,58 @@ That's it! The setup will:
 - Create required directories
 - Set up the development environment
 
+### Next Steps
+
+After setup, use the recommended two-command workflow:
+
+```bash
+# 1. Prepare all data (scrape, parse, post-process)
+make run-data-pipeline
+
+# 2. Export when ready (CSV + PostgreSQL)
+make run-all-exports
+```
+
+Or use the all-in-one command:
+
+```bash
+make run-full-pipeline-parallel
+```
+
 ### Basic Usage
+
+**Recommended Two-Command Workflow** (most users should use this):
+
+1. **Prepare all data** (scrape → parse → post-process):
+   ```bash
+   make run-data-pipeline
+   ```
+
+2. **Export when ready** (CSV + PostgreSQL):
+   ```bash
+   make run-all-exports
+   ```
+
+**Alternative: All-in-One Command** (includes export):
+```bash
+make run-full-pipeline-parallel
+```
+
+**Quick Testing** (before running full pipeline):
 
 1. **Check pipeline status**:
    ```bash
    make status
-   # or
-   uv run onepieceofdata status
    ```
 
-2. **Scrape chapter data** (test with first 10 chapters):
+2. **Test scraping** (first 10 chapters):
    ```bash
-   make run-scrape
-   # or
-   uv run onepieceofdata scrape-chapters --start-chapter 1 --end-chapter 10
+   make test-scrape-parallel
    ```
 
 3. **View configuration**:
    ```bash
-   uv run onepieceofdata config
+   make config
    ```
 
 ## 🎮 Command Line Interface
@@ -155,12 +188,24 @@ uv run onepieceofdata export --format csv --output-dir exports/
 ### Character Management
 
 ```bash
+# Complete character workflow (extract → scrape → parse → merge → sync)
+make run-character-workflow
+
+# Individual character commands:
+
+# Extract character list from chapters
+uv run onepieceofdata extract-characters
+
 # Merge duplicate characters (run once after character scraping)
 # Preview changes first
 uv run onepieceofdata merge-characters --dry-run
 
 # Apply character merges
 uv run onepieceofdata merge-characters
+
+# Sync character appearance analytics (chapter_list, appearance_count, etc.)
+uv run onepieceofdata sync-character-appearances
+uv run onepieceofdata sync-character-appearances --verbose  # Detailed output
 
 # Show characters in a specific chapter (useful to check for duplicates)
 uv run onepieceofdata show-chapter-characters --chapter 1000
@@ -174,6 +219,13 @@ uv run onepieceofdata show-chapter-characters  # Shows latest chapter
 
 The merge command consolidates these duplicates using `data/character_aliases.json`.
 Run this once after scraping characters, or when you notice duplicates.
+
+**Note on Character Appearance Syncing**: The `sync-character-appearances` command computes:
+- `chapter_list`: Array of chapter numbers where character appears
+- `volume_list`: Array of volume numbers where character appears
+- `appearance_count`: Total number of chapter appearances
+- `first_appearance`: First chapter number
+- `last_appearance`: Last chapter number
 
 ### PostgreSQL Export
 
@@ -234,6 +286,45 @@ POSTGRES_URL=postgresql://postgres:password@host:port/database
 ```
 
 See `.env.example` for full configuration options.
+
+### Modular Pipeline Commands
+
+The pipeline is organized into modular stages that can be run independently or combined:
+
+```bash
+# RECOMMENDED: Two-command workflow for better control
+make run-data-pipeline    # 1. Scrape → Parse → Post-process (all data in DuckDB)
+make run-all-exports      # 2. Export to CSV + PostgreSQL (when ready)
+
+# Individual pipeline stages:
+
+# Stage 1: Run ALL scrapers (chapters, volumes, characters, arcs, sagas)
+make run-all-scrapers
+
+# Stage 2: Run ALL parsers (load scraped JSON data into DuckDB)
+make run-all-parsers
+
+# Stage 3: Run ALL post-processors (birth dates, COV, merge, appearances)
+make run-all-postprocessors
+
+# Stage 4: Run ALL exports (CSV + PostgreSQL)
+make run-all-exports
+
+# Alternative: All-in-one command (runs all stages including export)
+make run-full-pipeline-parallel
+```
+
+**Why use the modular approach?**
+- **Better control**: Separate data preparation from export
+- **Iterative development**: Re-run only the stages you need
+- **Error handling**: If one stage fails, you don't lose previous work
+- **Flexibility**: Mix and match stages as needed
+
+**Pipeline Stages Breakdown**:
+1. **`run-all-scrapers`**: Scrapes chapters (parallel), volumes, characters (parallel), and story structure
+2. **`run-all-parsers`**: Loads all JSON files into DuckDB (chapters, volumes, characters, arcs, sagas)
+3. **`run-all-postprocessors`**: Enriches data (birth dates, COV, merge duplicates, appearance analytics)
+4. **`run-all-exports`**: Exports to CSV files and PostgreSQL
 
 ### Pipeline Management
 
@@ -366,14 +457,14 @@ make format
 # Run linting
 make lint
 
-# Run all checks
+# Run all checks (lint + test)
 make check
 
 # Clean up generated files
 make clean
 ```
 
-### Running Tests
+### Testing Commands
 
 ```bash
 # Run all tests
@@ -384,16 +475,42 @@ uv run pytest --cov=src/onepieceofdata
 
 # Run specific test file
 uv run pytest tests/test_config.py -v
+
+# Test scraping with limited data
+make test-scrape                   # Sequential (chapters 1-10)
+make test-scrape-parallel          # Parallel (chapters 1-10, 4 workers)
+make test-scrape-workers WORKERS=2 # Custom workers (chapters 1-10)
+
+# Test volume scraping
+make test-scrape-volumes           # Volumes 1-5
+
+# Test story structure scraping
+make test-scrape-story-structure   # Arcs and sagas
 ```
 
 ## 📊 Data Pipeline
 
-The **v2.0 pipeline** is a complete, production-ready system with three main stages:
+The **v2.0 pipeline** is a complete, production-ready system organized into **four modular stages**:
 
-### 1. **Scraping Stage**
+### Recommended Workflow
+
+**Two-Command Approach** (best for most users):
+```bash
+make run-data-pipeline    # Stages 1-3: Prepare all data in DuckDB
+make run-all-exports      # Stage 4: Export when ready
+```
+
+**Alternative All-in-One**:
+```bash
+make run-full-pipeline-parallel    # All stages including export
+```
+
+### Pipeline Stages
+
+### 1. **Scraping Stage** (`make run-all-scrapers`)
 
 - **Chapters**: Extract 1,153+ chapters with complete metadata
-- **Volumes**: Extract 112+ volumes with titles and details  
+- **Volumes**: Extract 112+ volumes with titles and details
 - **Characters**: Extract 1,533+ characters with full biographical data
 - **Story Arcs**: Extract detailed arc information with chapter ranges
 - **Story Sagas**: Extract saga data and arc relationships
@@ -401,21 +518,28 @@ The **v2.0 pipeline** is a complete, production-ready system with three main sta
 - **Retry Logic**: Automatic retry with exponential backoff
 - **Data Validation**: Pydantic models ensure data integrity
 
-### 2. **Processing Stage**
+### 2. **Parsing Stage** (`make run-all-parsers`)
 
 - **Complex Parsing**: Handle annotated page numbers, special characters
 - **Data Cleaning**: Normalize character names, parse dates and numbers
 - **Quality Tracking**: Built-in scraping status and error categorization
 - **Relationship Mapping**: Character-to-chapter associations
 - **Story Structure**: Arc-to-saga relationships and chapter mappings
+- **Database Loading**: Load all scraped JSON files into DuckDB
 
-### 3. **Storage Stage**
+### 3. **Post-Processing Stage** (`make run-all-postprocessors`)
 
-- **Enhanced Schema**: New columns for data quality tracking
-- **Complete Coverage**: 100% data compatibility with original database
-- **Story Organization**: Dedicated tables for arcs and sagas
-- **Performance**: Optimized DuckDB operations with proper indexing
-- **Export Options**: CSV, JSON, and direct SQL query support
+- **Birth Date Migration**: Parse birth strings into structured dates
+- **COV Loading**: Load character-on-volume (cover) data
+- **Character Merging**: Deduplicate characters with multiple IDs
+- **Appearance Analytics**: Compute chapter/volume appearance statistics
+
+### 4. **Export Stage** (`make run-all-exports`)
+
+- **CSV Export**: Export all tables to CSV files
+- **PostgreSQL Export**: Full sync to PostgreSQL database
+- **Schema Mapping**: Automatic type conversion (DuckDB → PostgreSQL)
+- **Incremental Updates**: Support for incremental exports
 
 ### Data Quality Metrics
 
@@ -436,20 +560,23 @@ The **v2.0 pipeline** is a complete, production-ready system with three main sta
 | Performance | Sequential only | **Parallel processing (4x faster)** |
 | Data Quality | No tracking | **Built-in quality metrics** |
 | Missing Data | Silent failures | **Tracked with status codes** |
-| Architecture | Monolithic scripts | **Modern CLI + modules** |
+| Architecture | Monolithic scripts | **Modular pipeline stages** |
 | Testing | None | **Comprehensive test suite** |
 | Maintenance | Manual | **Automated with make commands** |
+| Export | CSV only | **CSV + PostgreSQL sync** |
 
 ## 🎉 Completed Features (v2.0)
 
 - [x] **UV Migration**: Lightning-fast dependency management
-- [x] **Complete Scrapers**: All chapters, volumes, and characters  
+- [x] **Complete Scrapers**: All chapters, volumes, and characters
 - [x] **Story Structure Scrapers**: Comprehensive arc and saga extraction
 - [x] **Modern Database**: Enhanced DuckDB schema with quality tracking
 - [x] **Parallel Processing**: 4x faster scraping with robust error handling
 - [x] **Data Quality**: 100% coverage with built-in status tracking
+- [x] **Modular Pipeline**: Four-stage pipeline with independent execution
 - [x] **CLI Interface**: Comprehensive command-line tools
-- [x] **Export System**: CSV and JSON export capabilities
+- [x] **Export System**: CSV and PostgreSQL export capabilities
+- [x] **Character Analytics**: Appearance tracking and deduplication
 - [x] **Testing Suite**: Full test coverage with pytest
 - [x] **Production Ready**: Robust error handling and validation
 
@@ -459,13 +586,15 @@ The **v2.0 pipeline** is a complete, production-ready system with three main sta
 - 🎯 **[FEATURES.md](FEATURES.md)** - Feature overview and CLI command reference
 - 📋 **[IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)** - Technical implementation details
 
-## �🚀 Future Enhancements
+## 🚀 Future Enhancements
 
 - [ ] **Incremental Updates**: Smart re-scraping of only new content
-- [ ] **Data Analytics**: Built-in analysis and visualization tools  
+- [ ] **Data Analytics**: Built-in analysis and visualization tools
 - [ ] **API Server**: REST API for data access
 - [ ] **Real-time Monitoring**: Live scraping status dashboard
-- [ ] **Advanced Exports**: PostgreSQL, MySQL, and cloud database connectors
+- [ ] **Additional Database Connectors**: MySQL and cloud database support
+- [ ] **Enhanced Character Analytics**: Devil fruit categorization, affiliations tracking
+- [ ] **Visual Data Explorer**: Interactive web interface for browsing data
 
 ## 🤝 Contributing
 
