@@ -84979,6 +84979,12 @@
         "full_text": "Nubon"
       },
       {
+        "name": "Bobomba",
+        "url": "/wiki/Bobomba",
+        "note": "",
+        "full_text": "Bobomba"
+      },
+      {
         "name": "Pellini",
         "url": "/wiki/Pellini",
         "note": "",
@@ -87501,6 +87507,12 @@
         "full_text": "Gancho"
       },
       {
+        "name": "Leo",
+        "url": "/wiki/Leo",
+        "note": "",
+        "full_text": "Leo"
+      },
+      {
         "name": "Baburu",
         "url": "/wiki/Baburu",
         "note": "cover",
@@ -87722,10 +87734,10 @@
         "full_text": "Bomba"
       },
       {
-        "name": "Kabu",
-        "url": "/wiki/Kabu",
+        "name": "Rampo",
+        "url": "/wiki/Rampo",
         "note": "",
-        "full_text": "Kabu"
+        "full_text": "Rampo"
       },
       {
         "name": "Flapper",
@@ -129538,10 +129550,10 @@
         "full_text": "Mugren"
       },
       {
-        "name": "MAX Marks",
-        "url": "/wiki/MAX_Marks",
+        "name": "MAX Marx",
+        "url": "/wiki/MAX_Marx",
         "note": "",
-        "full_text": "MAX Marks"
+        "full_text": "MAX Marx"
       },
       {
         "name": "Moon Isaac Jr.",
@@ -130677,6 +130689,12 @@
         "url": "/wiki/Hanzo",
         "note": "",
         "full_text": "Hanzo"
+      },
+      {
+        "name": "Sarutobi",
+        "url": "/wiki/Sarutobi",
+        "note": "",
+        "full_text": "Sarutobi"
       },
       {
         "name": "Hana",
@@ -170704,6 +170722,161 @@
         "url": "/wiki/Umit",
         "note": "",
         "full_text": "Umit"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1169,
+    "volume": "TBA",
+    "chapter_display": "1169",
+    "title": "My Death Cannot Come Soon Enough",
+    "pages": "19",
+    "release_date": "December 22, 2025",
+    "jump_info": "2026 Issue 4-5",
+    "characters": [
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "flashback",
+        "full_text": "Jaguar D. Saul (flashback)"
+      },
+      {
+        "name": "Imu",
+        "url": "/wiki/Imu",
+        "note": "",
+        "full_text": "Imu"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "cover",
+        "full_text": "Rocks D. Xebec (cover)"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "cover",
+        "full_text": "Edward Newgate (cover)"
+      },
+      {
+        "name": "Shiki",
+        "url": "/wiki/Shiki",
+        "note": "cover",
+        "full_text": "Shiki (cover)"
+      },
+      {
+        "name": "Buckingham Stussy",
+        "url": "/wiki/Buckingham_Stussy",
+        "note": "cover",
+        "full_text": "Buckingham Stussy (cover)"
+      },
+      {
+        "name": "Marlon",
+        "url": "/wiki/Marlon",
+        "note": "cover",
+        "full_text": "Marlon (cover)"
+      },
+      {
+        "name": "Ochoku",
+        "url": "/wiki/Ochoku",
+        "note": "cover",
+        "full_text": "Ochoku (cover)"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "cover",
+        "full_text": "Ganzui (cover)"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "cover",
+        "full_text": "John (cover)"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "url": "/wiki/Charlotte_Linlin",
+        "note": "cover",
+        "full_text": "Charlotte Linlin (cover)"
+      },
+      {
+        "name": "Napoleon",
+        "url": "/wiki/Napoleon",
+        "note": "cover",
+        "full_text": "Napoleon (cover)"
+      },
+      {
+        "name": "Streusen",
+        "url": "/wiki/Streusen",
+        "note": "cover",
+        "full_text": "Streusen (cover)"
+      },
+      {
+        "name": "Barbel",
+        "url": "/wiki/Barbel",
+        "note": "cover",
+        "full_text": "Barbel (cover)"
+      },
+      {
+        "name": "Kaidou",
+        "url": "/wiki/Kaidou",
+        "note": "cover",
+        "full_text": "Kaidou (cover)"
+      },
+      {
+        "name": "Kyo",
+        "url": "/wiki/Kyo",
+        "note": "cover",
+        "full_text": "Kyo (cover)"
+      },
+      {
+        "name": "Gloriosa",
+        "url": "/wiki/Gloriosa",
+        "note": "cover",
+        "full_text": "Gloriosa (cover)"
       }
     ]
   }
