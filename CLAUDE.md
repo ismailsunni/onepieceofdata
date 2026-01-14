@@ -51,6 +51,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Arc-to-saga linking is **automatic** based on chapter range containment (not scraped)
 - Character table includes chapter appearance analytics: `chapter_list`, `volume_list`, `appearance_count`, `first_appearance`, `last_appearance`, `arc_list`, `saga_list` (from CoC table)
 - Character table includes cover appearance analytics: `cover_volume_list`, `cover_appearance_count` (from CoV table)
+- **PostgreSQL export excludes CoC and CoV tables** - all appearance data is denormalized into the character table for efficient querying
 - PostgreSQL export uses `SchemaMapper` for type conversion (DuckDB INTEGER[] → PostgreSQL INTEGER[])
 
 ## Common Development Commands
@@ -111,6 +112,10 @@ This is NOT scraped - it's computed from chapter ranges.
 
 ### PostgreSQL Export Schema Sync
 Full export mode (`--mode full`) **always** drops and recreates tables to ensure schema stays in sync with DuckDB. This is critical when new columns are added. Incremental mode only exports changed data without schema updates.
+
+**Exported tables** (in dependency order):
+- `saga`, `arc`, `volume`, `chapter`, `character`
+- **Excluded**: `coc` and `cov` (denormalized into character table)
 
 The `SchemaMapper` handles type conversions:
 - Checks for exact type matches first (handles `INTEGER[]`)
