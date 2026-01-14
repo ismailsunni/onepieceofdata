@@ -1132,6 +1132,130 @@ class DatabaseManager:
             logger.error(f"Failed to sync character appearances: {str(e)}")
             return {'characters_updated': 0, 'total_appearances': 0, 'errors': 1}
 
+    def sync_cover_appearances(self, progress_callback: Optional[Callable] = None) -> Dict[str, int]:
+        """Sync character volume cover appearance analytics from CoV table.
+
+        Populates the following columns in character table:
+        - cover_volume_list: sorted list of volume numbers where character appears on cover
+        - cover_appearance_count: total volume cover appearances
+
+        Args:
+            progress_callback: Optional callback function(current, total, character_id, stats)
+
+        Returns:
+            Dictionary with sync statistics
+        """
+        try:
+            conn = self.connect()
+
+            logger.info("Starting character cover appearance sync...")
+
+            # Add columns if they don't exist (for existing databases)
+            try:
+                logger.info("Checking for cover appearance analytics columns...")
+                # Try to query the columns - if it fails, they don't exist
+                conn.execute("SELECT cover_volume_list FROM character LIMIT 1")
+                logger.info("Cover columns already exist")
+            except:
+                logger.info("Adding cover appearance analytics columns to character table...")
+                conn.execute("ALTER TABLE character ADD COLUMN cover_volume_list INTEGER[]")
+                conn.execute("ALTER TABLE character ADD COLUMN cover_appearance_count INTEGER")
+                conn.commit()
+                logger.success("Cover appearance analytics columns added successfully")
+
+            # Get all characters
+            characters = conn.execute("SELECT id FROM character ORDER BY id").fetchall()
+            total_characters = len(characters)
+
+            if total_characters == 0:
+                logger.warning("No characters found in database")
+                return {
+                    'total_characters': 0,
+                    'characters_with_covers': 0,
+                    'total_cover_appearances': 0,
+                    'characters_without_covers': 0,
+                    'errors': 0
+                }
+
+            stats = {
+                'total_characters': total_characters,
+                'characters_with_covers': 0,
+                'total_cover_appearances': 0,
+                'characters_without_covers': 0,
+                'errors': 0
+            }
+
+            logger.info(f"Processing {total_characters} characters...")
+
+            for idx, (character_id,) in enumerate(characters, 1):
+                try:
+                    # Get volume cover appearances from CoV
+                    cover_data = conn.execute("""
+                        SELECT volume
+                        FROM cov
+                        WHERE character = ?
+                        ORDER BY volume
+                    """, [character_id]).fetchall()
+
+                    cover_volume_list = [row[0] for row in cover_data]
+                    cover_appearance_count = len(cover_volume_list)
+
+                    # Update character table
+                    conn.execute("""
+                        UPDATE character
+                        SET cover_volume_list = ?,
+                            cover_appearance_count = ?
+                        WHERE id = ?
+                    """, [
+                        cover_volume_list,
+                        cover_appearance_count,
+                        character_id
+                    ])
+
+                    if cover_appearance_count > 0:
+                        stats['characters_with_covers'] += 1
+                        stats['total_cover_appearances'] += cover_appearance_count
+                    else:
+                        stats['characters_without_covers'] += 1
+
+                    # Call progress callback if provided
+                    if progress_callback:
+                        progress_callback(
+                            idx,
+                            total_characters,
+                            character_id,
+                            {
+                                'covers': cover_appearance_count
+                            }
+                        )
+
+                    logger.debug(f"Synced {character_id}: {cover_appearance_count} cover appearances")
+
+                except Exception as e:
+                    logger.error(f"Error syncing character {character_id}: {str(e)}")
+                    stats['errors'] += 1
+                    continue
+
+            conn.commit()
+
+            logger.success(f"Sync complete: {stats['characters_with_covers']} characters with covers, "
+                         f"{stats['total_cover_appearances']} total cover appearances")
+
+            if stats['characters_without_covers'] > 0:
+                logger.info(f"Note: {stats['characters_without_covers']} characters have no cover appearances")
+
+            return stats
+
+        except Exception as e:
+            logger.error(f"Failed to sync cover appearances: {str(e)}")
+            return {
+                'total_characters': 0,
+                'characters_with_covers': 0,
+                'total_cover_appearances': 0,
+                'characters_without_covers': 0,
+                'errors': 1
+            }
+
     def export_to_csv(self, output_dir: str) -> bool:
         """Export all tables to CSV files.
         
