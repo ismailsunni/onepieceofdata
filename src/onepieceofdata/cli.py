@@ -977,6 +977,69 @@ def sync_character_appearances(verbose: bool) -> None:
 
 @main.command()
 @click.option(
+    "--verbose",
+    is_flag=True,
+    default=False,
+    help="Show detailed progress for each character"
+)
+def sync_cover_appearances(verbose: bool) -> None:
+    """Sync character volume cover appearance analytics from CoV table.
+
+    This command populates cover_volume_list and cover_appearance_count columns
+    in the character table based on volume cover data from the CoV table.
+
+    Run this after:
+    - load-cov (to load cover character data from volumes.json)
+    - Any manual CoV changes
+
+    This enables fast analytics queries about which characters appear on volume covers.
+    """
+    from .database.operations import DatabaseManager
+
+    click.echo("🔄 Syncing character cover appearance analytics...\n")
+
+    try:
+        with DatabaseManager() as db:
+            # Progress callback to show what's happening
+            if verbose:
+                def progress_callback(current: int, total: int, character_id: str, stats: dict):
+                    covers = stats.get('covers', 0)
+                    click.echo(f"  [{current:,}/{total:,}] {character_id}: {covers} cover appearances")
+            else:
+                # Show progress every 100 characters
+                def progress_callback(current: int, total: int, character_id: str, stats: dict):
+                    if current % 100 == 0 or current == total:
+                        click.echo(f"  Progress: {current:,}/{total:,} characters...")
+
+            sync_stats = db.sync_cover_appearances(progress_callback=progress_callback)
+
+            click.echo("\n📊 Sync Statistics:")
+            click.echo(f"  Total characters: {sync_stats['total_characters']:,}")
+            click.echo(f"  Characters with covers: {sync_stats['characters_with_covers']:,}")
+            click.echo(f"  Total cover appearances: {sync_stats['total_cover_appearances']:,}")
+
+            if sync_stats['characters_with_covers'] > 0:
+                avg_covers = sync_stats['total_cover_appearances'] / sync_stats['characters_with_covers']
+                click.echo(f"  Average covers per character: {avg_covers:.1f}")
+
+            if sync_stats['characters_without_covers'] > 0:
+                click.echo(f"  Characters without covers: {sync_stats['characters_without_covers']:,}")
+
+            if sync_stats['errors'] > 0:
+                click.echo(f"  ⚠️  Errors encountered: {sync_stats['errors']}")
+
+            click.echo("\n✅ Character cover appearance sync complete!")
+            click.echo("\n💡 You can now run analytics queries about cover appearances:")
+            click.echo("   SELECT name, cover_appearance_count, cover_volume_list FROM character")
+            click.echo("   WHERE cover_appearance_count > 0 ORDER BY cover_appearance_count DESC LIMIT 10;")
+
+    except Exception as e:
+        click.echo(f"❌ Error during sync: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
     "--mode",
     type=click.Choice(['full', 'incremental']),
     default='incremental',

@@ -2,7 +2,7 @@
 UV := uv
 
 .PHONY: help install install-dev test lint format clean setup check \
-	extract-characters merge-characters merge-characters-dry-run sync-character-appearances sync-character-appearances-verbose run-character-workflow \
+	extract-characters merge-characters merge-characters-dry-run sync-character-appearances sync-character-appearances-verbose sync-cover-appearances sync-cover-appearances-verbose run-character-workflow \
 	run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes \
 	run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-parse-story-structure \
 	run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers \
@@ -36,7 +36,8 @@ help:
 	@echo "  │  8. migrate-birth-dates       → Add birth_date column       │"
 	@echo "  │  9. load-cov                  → Load cover characters       │"
 	@echo "  │ 10. merge-characters          → Merge duplicate characters  │"
-	@echo "  │ 11. sync-character-appearances→ Compute appearance stats    │"
+	@echo "  │ 11. sync-character-appearances→ Compute chapter stats       │"
+	@echo "  │ 12. sync-cover-appearances    → Compute cover stats         │"
 	@echo "  └─────────────────────────────────────────────────────────────┘"
 	@echo "           ↓"
 	@echo "  ┌─ EXPORT ────────────────────────────────────────────────────┐"
@@ -110,8 +111,10 @@ help:
 	@echo "  load-cov                         - Load character-on-volume (cover characters)"
 	@echo "  merge-characters-dry-run         - Preview character deduplication (recommended first)"
 	@echo "  merge-characters                 - Merge duplicate characters"
-	@echo "  sync-character-appearances       - Compute appearance analytics"
-	@echo "  sync-character-appearances-verbose - Compute appearances (verbose output)"
+	@echo "  sync-character-appearances       - Compute chapter appearance analytics"
+	@echo "  sync-character-appearances-verbose - Compute chapter appearances (verbose output)"
+	@echo "  sync-cover-appearances           - Compute cover appearance analytics"
+	@echo "  sync-cover-appearances-verbose   - Compute cover appearances (verbose output)"
 	@echo ""
 	@echo "🔄 FULL PIPELINES"
 	@echo "─────────────────────────────────────────────────────────────────────"
@@ -124,7 +127,7 @@ help:
 	@echo "─────────────────────────────────────────────────────────────────────"
 	@echo "  run-all-scrapers         - Run ALL scrapers in parallel (chapters, volumes, characters, arcs/sagas)"
 	@echo "  run-all-parsers          - Run ALL parsers (load scraped data into DuckDB)"
-	@echo "  run-all-postprocessors   - Run ALL post-processors (birth dates, COV, merge, appearances)"
+	@echo "  run-all-postprocessors   - Run ALL post-processors (birth dates, COV, merge, chapter/cover appearances)"
 	@echo "  run-all-exports          - Run ALL exports (CSV + PostgreSQL full sync)"
 	@echo ""
 	@echo "  🌟 TWO-COMMAND WORKFLOW:"
@@ -282,6 +285,16 @@ sync-character-appearances-verbose:
 	@echo "🔄 Syncing character appearance analytics (verbose mode)..."
 	$(UV) run onepieceofdata sync-character-appearances --verbose
 
+# Sync character volume cover appearance analytics from CoV table
+sync-cover-appearances:
+	@echo "🔄 Syncing character cover appearance analytics..."
+	$(UV) run onepieceofdata sync-cover-appearances
+
+# Sync cover appearances with verbose output
+sync-cover-appearances-verbose:
+	@echo "🔄 Syncing character cover appearance analytics (verbose mode)..."
+	$(UV) run onepieceofdata sync-cover-appearances --verbose
+
 # Complete character workflow (scrape → parse → merge → sync)
 run-character-workflow:
 	@echo "👥 Running complete character workflow..."
@@ -354,8 +367,11 @@ run-full-pipeline:
 	@echo "Step 8: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
-	@echo "Step 9: Syncing character appearance analytics..."
+	@echo "Step 9: Syncing character chapter appearance analytics..."
 	$(MAKE) sync-character-appearances
+	@echo ""
+	@echo "Step 10: Syncing character cover appearance analytics..."
+	$(MAKE) sync-cover-appearances
 	@echo ""
 	@echo "✅ Pipeline completed! Check status with 'make db-status'"
 
@@ -390,8 +406,11 @@ run-full-pipeline-parallel:
 	@echo "Step 9: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
-	@echo "Step 10: Syncing character appearance analytics..."
+	@echo "Step 10: Syncing character chapter appearance analytics..."
 	$(MAKE) sync-character-appearances
+	@echo ""
+	@echo "Step 11: Syncing character cover appearance analytics..."
+	$(MAKE) sync-cover-appearances
 	@echo ""
 	@echo "✅ Parallel pipeline completed!"
 	$(MAKE) db-status
@@ -468,17 +487,20 @@ run-all-parsers:
 run-all-postprocessors:
 	@echo "🔧 Running ALL post-processors..."
 	@echo ""
-	@echo "📅 Step 1/4: Migrating birth dates..."
+	@echo "📅 Step 1/5: Migrating birth dates..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "🎨 Step 2/4: Loading character-on-volume (COV) data..."
+	@echo "🎨 Step 2/5: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
-	@echo "🔀 Step 3/4: Merging duplicate characters..."
+	@echo "🔀 Step 3/5: Merging duplicate characters..."
 	$(MAKE) merge-characters
 	@echo ""
-	@echo "🔄 Step 4/4: Syncing character appearance analytics..."
+	@echo "🔄 Step 4/5: Syncing character chapter appearance analytics..."
 	$(MAKE) sync-character-appearances
+	@echo ""
+	@echo "🎨 Step 5/5: Syncing character cover appearance analytics..."
+	$(MAKE) sync-cover-appearances
 	@echo ""
 	@echo "✅ All post-processing completed!"
 

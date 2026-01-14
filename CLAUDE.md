@@ -49,7 +49,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### Critical Schema Details
 - Arc-to-saga linking is **automatic** based on chapter range containment (not scraped)
-- Character table includes appearance analytics: `chapter_list`, `volume_list`, `appearance_count`, `first_appearance`, `last_appearance` (all INTEGER[] or INTEGER)
+- Character table includes chapter appearance analytics: `chapter_list`, `volume_list`, `appearance_count`, `first_appearance`, `last_appearance`, `arc_list`, `saga_list` (from CoC table)
+- Character table includes cover appearance analytics: `cover_volume_list`, `cover_appearance_count` (from CoV table)
 - PostgreSQL export uses `SchemaMapper` for type conversion (DuckDB INTEGER[] → PostgreSQL INTEGER[])
 
 ## Common Development Commands
@@ -65,8 +66,11 @@ make check              # Run lint + test
 
 ### Pipeline Operations
 ```bash
-# Full pipeline with parallel processing
+# Full pipeline with parallel processing (includes all sync commands)
 make run-full-pipeline-parallel
+
+# All post-processors (includes both sync commands)
+make run-all-postprocessors
 
 # Individual steps (in order)
 make run-scrape-parallel              # Scrape chapters
@@ -78,7 +82,8 @@ make run-scrape-story-structure       # Scrape arcs and sagas
 make run-parse-story-structure        # Load story structure (auto-links arcs→sagas)
 make migrate-birth-dates              # Parse birth strings
 make load-cov                         # Load volume cover characters
-make sync-character-appearances       # Sync appearance analytics
+make sync-character-appearances       # Sync chapter appearance analytics
+make sync-cover-appearances           # Sync cover appearance analytics
 
 # PostgreSQL export
 make export-postgres-full             # Full sync (drops/recreates tables)
@@ -112,11 +117,20 @@ The `SchemaMapper` handles type conversions:
 - Falls back to base type extraction for parameterized types (`VARCHAR(255)`)
 
 ### Character Appearance Analytics
-The `sync_character_appearances` command populates character analytics by:
-1. Querying CoC table for chapter appearances
-2. Joining with chapter table to get volume info
-3. Computing aggregates: lists, counts, first/last appearances
-4. Storing as DuckDB arrays (INTEGER[])
+There are two types of character appearance analytics:
+
+**Chapter Appearance Analytics** (`sync_character_appearances`):
+1. Queries CoC (character-of-chapter) table for chapter appearances
+2. Joins with chapter table to get volume info
+3. Computes arc and saga appearances based on chapter ranges
+4. Populates: `chapter_list`, `volume_list`, `arc_list`, `saga_list`, `appearance_count`, `first_appearance`, `last_appearance`
+
+**Cover Appearance Analytics** (`sync_cover_appearances`):
+1. Queries CoV (character-on-volume) table for volume cover appearances
+2. Computes which volumes a character appears on the cover of
+3. Populates: `cover_volume_list`, `cover_appearance_count`
+
+Both store data as DuckDB arrays (INTEGER[] or TEXT[]). Run these after loading CoC/CoV data to enable fast analytics queries without joins.
 
 ### Parallel Processing
 Parallel scraping uses Python's `concurrent.futures.ProcessPoolExecutor`:
