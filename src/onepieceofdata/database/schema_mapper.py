@@ -22,14 +22,15 @@ class SchemaMapper:
 
     # Tables in dependency order (respects foreign keys)
     # Tables should be exported in this order to avoid FK violations
-    # Note: 'coc' table is excluded - character appearances are denormalized into character table
+    # Note: 'coc' and 'cov' tables are excluded - appearances are denormalized into character table
+    #       - 'coc' (chapter appearances) → chapter_list, volume_list, arc_list, saga_list
+    #       - 'cov' (cover appearances) → cover_volume_list, cover_appearance_count
     TABLE_ORDER = [
         'saga',      # No dependencies
         'arc',       # Depends on: saga
         'volume',    # No dependencies
         'chapter',   # Depends on: volume (nullable)
-        'character', # No dependencies (includes denormalized arc_list, saga_list, chapter_list)
-        'cov',       # Depends on: volume, character
+        'character', # No dependencies (includes denormalized appearance analytics)
     ]
 
     @classmethod
