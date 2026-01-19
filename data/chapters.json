@@ -37489,12 +37489,6 @@
         "full_text": "Rob Lucci (image)"
       },
       {
-        "name": "Mozu and Kiwi",
-        "url": "/wiki/Mozu_and_Kiwi",
-        "note": "",
-        "full_text": "Mozu and Kiwi"
-      },
-      {
         "name": "Zambai",
         "url": "/wiki/Zambai",
         "note": "",
@@ -37614,12 +37608,6 @@
         "full_text": "Nami"
       },
       {
-        "name": "Sogeking",
-        "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Sogeking"
-      },
-      {
         "name": "Sanji",
         "url": "/wiki/Sanji",
         "note": "",
@@ -37702,6 +37690,12 @@
         "url": "/wiki/Franky",
         "note": "",
         "full_text": "Franky"
+      },
+      {
+        "name": "Mozu and Kiwi",
+        "url": "/wiki/Mozu_and_Kiwi",
+        "note": "",
+        "full_text": "Mozu and Kiwi"
       },
       {
         "name": "Zambai",
@@ -37841,6 +37835,12 @@
         "full_text": "Kiev"
       },
       {
+        "name": "Kop",
+        "url": "/wiki/Kop",
+        "note": "",
+        "full_text": "Kop"
+      },
+      {
         "name": "Sodom",
         "url": "/wiki/Sodom",
         "note": "",
@@ -37960,10 +37960,10 @@
         "full_text": "Baskerville"
       },
       {
-        "name": "Just Eleven Jurymen",
-        "url": "/wiki/Just_Eleven_Jurymen",
+        "name": "Guilty Jury",
+        "url": "/wiki/Guilty_Jury",
         "note": "",
-        "full_text": "Just Eleven Jurymen"
+        "full_text": "Guilty Jury"
       },
       {
         "name": "Watchdog Unit of the Law",
@@ -38211,6 +38211,12 @@
         "full_text": "Kop"
       },
       {
+        "name": "Tamagon",
+        "url": "/wiki/Tamagon",
+        "note": "flashback",
+        "full_text": "Tamagon (flashback)"
+      },
+      {
         "name": "Sodom",
         "url": "/wiki/Sodom",
         "note": "K.O.",
@@ -38294,10 +38300,10 @@
         "full_text": "Oimo"
       },
       {
-        "name": "Just Eleven Jurymen",
-        "url": "/wiki/Just_Eleven_Jurymen",
+        "name": "Guilty Jury",
+        "url": "/wiki/Guilty_Jury",
         "note": "",
-        "full_text": "Just Eleven Jurymen"
+        "full_text": "Guilty Jury"
       },
       {
         "name": "Spandam",
@@ -38346,6 +38352,12 @@
         "url": "/wiki/Tamagon",
         "note": "",
         "full_text": "Tamagon"
+      },
+      {
+        "name": "Schollzo",
+        "url": "/wiki/Schollzo",
+        "note": "",
+        "full_text": "Schollzo"
       },
       {
         "name": "Kop",
@@ -38568,10 +38580,10 @@
         "full_text": "Baskerville"
       },
       {
-        "name": "Just Eleven Jurymen",
-        "url": "/wiki/Just_Eleven_Jurymen",
+        "name": "Guilty Jury",
+        "url": "/wiki/Guilty_Jury",
         "note": "",
-        "full_text": "Just Eleven Jurymen"
+        "full_text": "Guilty Jury"
       },
       {
         "name": "Spandam",
@@ -38896,10 +38908,10 @@
         "full_text": "Baskerville"
       },
       {
-        "name": "Just Eleven Jurymen",
-        "url": "/wiki/Just_Eleven_Jurymen",
+        "name": "Guilty Jury",
+        "url": "/wiki/Guilty_Jury",
         "note": "",
-        "full_text": "Just Eleven Jurymen"
+        "full_text": "Guilty Jury"
       },
       {
         "name": "Spandam",
@@ -39411,8 +39423,8 @@
       {
         "name": "Oran",
         "url": "/wiki/Oran",
-        "note": "",
-        "full_text": "Oran"
+        "note": "flashback",
+        "full_text": "Oran (flashback)"
       },
       {
         "name": "Clover",
@@ -39449,6 +39461,12 @@
         "url": "/wiki/Roche",
         "note": "",
         "full_text": "Roche"
+      },
+      {
+        "name": "Gram",
+        "url": "/wiki/Gram",
+        "note": "",
+        "full_text": "Gram"
       },
       {
         "name": "Nico Olvia",
@@ -39532,18 +39550,6 @@
         "url": "/wiki/Nico_Robin",
         "note": "",
         "full_text": "Nico Robin"
-      },
-      {
-        "name": "Roji",
-        "url": "/wiki/Roji",
-        "note": "",
-        "full_text": "Roji"
-      },
-      {
-        "name": "Oran",
-        "url": "/wiki/Oran",
-        "note": "",
-        "full_text": "Oran"
       },
       {
         "name": "Clover",
@@ -39679,14 +39685,14 @@
       {
         "name": "Roji",
         "url": "/wiki/Roji",
-        "note": "",
-        "full_text": "Roji"
+        "note": "flashback",
+        "full_text": "Roji (flashback)"
       },
       {
         "name": "Oran",
         "url": "/wiki/Oran",
-        "note": "",
-        "full_text": "Oran"
+        "note": "flashback",
+        "full_text": "Oran (flashback)"
       },
       {
         "name": "Clover",
@@ -39891,34 +39897,46 @@
         "full_text": "Rint"
       },
       {
-        "name": "Hocha",
-        "url": "/wiki/Hocha",
-        "note": "",
-        "full_text": "Hocha"
-      },
-      {
         "name": "Roche",
         "url": "/wiki/Roche",
         "note": "",
         "full_text": "Roche"
       },
       {
-        "name": "Busshiri",
-        "url": "/wiki/Busshiri",
+        "name": "Hocha",
+        "url": "/wiki/Hocha",
         "note": "",
-        "full_text": "Busshiri"
-      },
-      {
-        "name": "Zadie",
-        "url": "/wiki/Zadie",
-        "note": "",
-        "full_text": "Zadie"
+        "full_text": "Hocha"
       },
       {
         "name": "Nico Olvia",
         "url": "/wiki/Nico_Olvia",
         "note": "",
         "full_text": "Nico Olvia"
+      },
+      {
+        "name": "Gram",
+        "url": "/wiki/Gram",
+        "note": "flashback",
+        "full_text": "Gram (flashback)"
+      },
+      {
+        "name": "Zadie",
+        "url": "/wiki/Zadie",
+        "note": "flashback",
+        "full_text": "Zadie (flashback)"
+      },
+      {
+        "name": "Busshiri",
+        "url": "/wiki/Busshiri",
+        "note": "flashback",
+        "full_text": "Busshiri (flashback)"
+      },
+      {
+        "name": "Hack",
+        "url": "/wiki/Hack_(Archaeologist)",
+        "note": "flashback",
+        "full_text": "Hack (flashback)"
       },
       {
         "name": "Jaguar D. Saul",
@@ -40066,8 +40084,8 @@
       {
         "name": "Crocodile",
         "url": "/wiki/Crocodile",
-        "note": "flashback",
-        "full_text": "Crocodile (flashback)"
+        "note": "cover & flashback",
+        "full_text": "Crocodile (cover & flashback)"
       },
       {
         "name": "Daz Bonez",
@@ -40165,10 +40183,10 @@
         "full_text": "Baskerville"
       },
       {
-        "name": "Just Eleven Jurymen",
-        "url": "/wiki/Just_Eleven_Jurymen",
-        "note": "",
-        "full_text": "Just Eleven Jurymen"
+        "name": "Guilty Jury",
+        "url": "/wiki/Guilty_Jury",
+        "note": "K.O.",
+        "full_text": "Guilty Jury (K.O.)"
       },
       {
         "name": "Spandam",
@@ -40247,12 +40265,6 @@
         "url": "/wiki/Tamagon",
         "note": "",
         "full_text": "Tamagon"
-      },
-      {
-        "name": "Kop",
-        "url": "/wiki/Kop",
-        "note": "",
-        "full_text": "Kop"
       },
       {
         "name": "Miss Doublefinger",
@@ -58720,6 +58732,12 @@
         "full_text": "Crocodile"
       },
       {
+        "name": "Daigin",
+        "url": "/wiki/Daigin",
+        "note": "",
+        "full_text": "Daigin"
+      },
+      {
         "name": "Bunny Joe",
         "url": "/wiki/Bunny_Joe",
         "note": "cover story",
@@ -62975,22 +62993,22 @@
         "full_text": "Sengoku"
       },
       {
-        "name": "Borsalino",
-        "url": "/wiki/Borsalino",
+        "name": "Kizaru",
+        "url": "/wiki/Kizaru",
         "note": "",
-        "full_text": "Borsalino"
+        "full_text": "Kizaru"
       },
       {
-        "name": "Sakazuki",
-        "url": "/wiki/Sakazuki",
+        "name": "Akainu",
+        "url": "/wiki/Akainu",
         "note": "",
-        "full_text": "Sakazuki"
+        "full_text": "Akainu"
       },
       {
-        "name": "Kuzan",
-        "url": "/wiki/Kuzan",
+        "name": "Aokiji",
+        "url": "/wiki/Aokiji",
         "note": "",
-        "full_text": "Kuzan"
+        "full_text": "Aokiji"
       },
       {
         "name": "Monkey D. Garp",
@@ -97121,6 +97139,12 @@
         "full_text": "Orlumbus"
       },
       {
+        "name": "Ideo",
+        "url": "/wiki/Ideo",
+        "note": "",
+        "full_text": "Ideo"
+      },
+      {
         "name": "Koala",
         "url": "/wiki/Koala",
         "note": "",
@@ -100911,6 +100935,12 @@
         "url": "/wiki/Ryunosuke",
         "note": "",
         "full_text": "Ryunosuke"
+      },
+      {
+        "name": "Zunesha",
+        "url": "/wiki/Zunesha",
+        "note": "",
+        "full_text": "Zunesha"
       }
     ]
   },
@@ -101286,6 +101316,12 @@
         "url": "/wiki/Nekozaemon",
         "note": "",
         "full_text": "Nekozaemon"
+      },
+      {
+        "name": "Zunesha",
+        "url": "/wiki/Zunesha",
+        "note": "",
+        "full_text": "Zunesha"
       }
     ]
   },
@@ -101471,6 +101507,12 @@
         "url": "/wiki/Tristan",
         "note": "",
         "full_text": "Tristan"
+      },
+      {
+        "name": "Monjii",
+        "url": "/wiki/Monjii",
+        "note": "",
+        "full_text": "Monjii"
       },
       {
         "name": "Milky",
@@ -171014,6 +171056,149 @@
         "url": "/wiki/Shepherd_Sommers",
         "note": "image",
         "full_text": "Shepherd Sommers (image)"
+      }
+    ]
+  },
+  {
+    "chapter_number": 1171,
+    "volume": "TBA",
+    "chapter_display": "1171",
+    "title": "Ragnir",
+    "pages": "17",
+    "release_date": "January 19, 2026",
+    "jump_info": "2026 Issue 8",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "",
+        "full_text": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "flashback",
+        "full_text": "Shanks (flashback)"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "flashback",
+        "full_text": "Harald (flashback)"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Ragnir",
+        "url": "/wiki/Ragnir",
+        "note": "",
+        "full_text": "Ragnir"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "flashback",
+        "full_text": "Jarul (flashback)"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Imu",
+        "url": "/wiki/Imu",
+        "note": "flashback",
+        "full_text": "Imu (flashback)"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "url": "/wiki/Jaygarcia_Saturn",
+        "note": "flashback",
+        "full_text": "Jaygarcia Saturn (flashback)"
+      },
+      {
+        "name": "Marcus Mars",
+        "url": "/wiki/Marcus_Mars",
+        "note": "flashback",
+        "full_text": "Marcus Mars (flashback)"
+      },
+      {
+        "name": "Topman Warcury",
+        "url": "/wiki/Topman_Warcury",
+        "note": "flashback",
+        "full_text": "Topman Warcury (flashback)"
+      },
+      {
+        "name": "Ethanbaron V. Nusjuro",
+        "url": "/wiki/Ethanbaron_V._Nusjuro",
+        "note": "flashback",
+        "full_text": "Ethanbaron V. Nusjuro (flashback)"
+      },
+      {
+        "name": "Shepherd Ju Peter",
+        "url": "/wiki/Shepherd_Ju_Peter",
+        "note": "flashback",
+        "full_text": "Shepherd Ju Peter (flashback)"
+      },
+      {
+        "name": "Figarland Garling",
+        "url": "/wiki/Figarland_Garling",
+        "note": "flashback",
+        "full_text": "Figarland Garling (flashback)"
       }
     ]
   }
