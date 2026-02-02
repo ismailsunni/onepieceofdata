@@ -1,7 +1,7 @@
 """Modern character scraper for One Piece characters."""
 
 from typing import List, Optional, Dict, Any
-import urllib3
+import cloudscraper
 import pandas as pd
 import re
 import multiprocessing
@@ -46,8 +46,17 @@ class CharacterScraper:
     def __init__(self):
         """Initialize the character scraper."""
         self.settings = get_settings()
-        self.http_pool = urllib3.PoolManager()
         self.base_url = "https://onepiece.fandom.com"
+
+    def _create_scraper(self):
+        """Create a new cloudscraper instance for each request."""
+        return cloudscraper.create_scraper(
+            browser={
+                'browser': 'chrome',
+                'platform': 'windows',
+                'desktop': True
+            }
+        )
         
     def _remove_footnote(self, text: str) -> str:
         """Remove footnote references from text.
@@ -196,7 +205,7 @@ class CharacterScraper:
     @retry(
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=4, max=10),
-        retry=retry_if_exception_type((urllib3.exceptions.HTTPError, Exception)),
+        retry=retry_if_exception_type(Exception),
     )
     def _scrape_character_from_url(self, character_url: str) -> Dict[str, Any]:
         """Scrape character information from URL.
@@ -211,13 +220,15 @@ class CharacterScraper:
             Exception: If scraping fails after retries
         """
         logger.debug(f"Scraping character from: {character_url}")
-        
+
         try:
-            response = self.http_pool.urlopen("GET", character_url)
-            if response.status != 200:
-                raise Exception(f"HTTP {response.status}: Failed to fetch character page")
-                
-            html_page = response.data
+            # Create a new scraper for each request to bypass Cloudflare session blocking
+            scraper = self._create_scraper()
+            response = scraper.get(character_url, timeout=self.settings.request_timeout)
+            if response.status_code != 200:
+                raise Exception(f"HTTP {response.status_code}: Failed to fetch character page")
+
+            html_page = response.content
             soup = BeautifulSoup(html_page, "html.parser")
             
             character_info = {}
@@ -274,12 +285,9 @@ class CharacterScraper:
             
             logger.debug(f"Successfully scraped character: {character_name}")
             return character_info
-            
-        except urllib3.exceptions.HTTPError as e:
-            logger.error(f"HTTP error scraping character from {character_url}: {str(e)}")
-            raise
+
         except Exception as e:
-            logger.error(f"Unexpected error scraping character from {character_url}: {str(e)}")
+            logger.error(f"Error scraping character from {character_url}: {str(e)}")
             raise
     
     def scrape_character(self, character_data: Dict[str, Any]) -> ScrapingResult:

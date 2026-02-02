@@ -1,7 +1,7 @@
 """Modern volume scraper for One Piece volumes."""
 
 from typing import List, Optional, Dict, Any
-import urllib3
+import cloudscraper
 from bs4 import BeautifulSoup, Tag
 from loguru import logger
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
@@ -16,8 +16,17 @@ class VolumeScraper:
     def __init__(self):
         """Initialize the volume scraper."""
         self.settings = get_settings()
-        self.http_pool = urllib3.PoolManager()
         self.base_url = "https://onepiece.fandom.com/wiki/Chapters_and_Volumes/Volumes"
+
+    def _create_scraper(self):
+        """Create a new cloudscraper instance for each request."""
+        return cloudscraper.create_scraper(
+            browser={
+                'browser': 'chrome',
+                'platform': 'windows',
+                'desktop': True
+            }
+        )
         
     def _parse_volume_table(self, soup: BeautifulSoup, volume_number: int) -> Optional[Dict[str, Any]]:
         """Parse volume information from the HTML table.
@@ -98,7 +107,7 @@ class VolumeScraper:
     @retry(
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=4, max=10),
-        retry=retry_if_exception_type((urllib3.exceptions.HTTPError, Exception)),
+        retry=retry_if_exception_type(Exception),
     )
     def _fetch_volumes_page(self) -> BeautifulSoup:
         """Fetch the volumes page with retry logic.
@@ -110,19 +119,21 @@ class VolumeScraper:
             Exception: If all retry attempts fail
         """
         logger.info(f"Fetching volumes page: {self.base_url}")
-        
+
         try:
-            response = self.http_pool.urlopen("GET", self.base_url)
-            if response.status != 200:
-                raise Exception(f"HTTP {response.status}: Failed to fetch volumes page")
-                
-            html_page = response.data
+            # Create a new scraper for each request to bypass Cloudflare session blocking
+            scraper = self._create_scraper()
+            response = scraper.get(self.base_url, timeout=self.settings.request_timeout)
+            if response.status_code != 200:
+                raise Exception(f"HTTP {response.status_code}: Failed to fetch volumes page")
+
+            html_page = response.content
             soup = BeautifulSoup(html_page, "html.parser")
-            
+
             logger.debug("Successfully fetched and parsed volumes page")
             return soup
-            
-        except urllib3.exceptions.HTTPError as e:
+
+        except Exception as e:
             logger.error(f"HTTP error fetching volumes page: {str(e)}")
             raise
         except Exception as e:
