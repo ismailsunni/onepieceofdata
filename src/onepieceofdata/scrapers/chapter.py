@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Dict, List, Optional, Any
 from urllib.parse import urljoin
 
-import urllib3
+import cloudscraper
 from bs4 import BeautifulSoup
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
@@ -52,42 +52,47 @@ class ChapterScraper:
     
     def __init__(self):
         """Initialize the chapter scraper."""
-        self.http_pool = urllib3.PoolManager(
-            timeout=urllib3.Timeout(connect=10.0, read=settings.request_timeout)
-        )
         self.base_url = settings.base_chapter_url
-        
-    def __del__(self):
-        """Clean up HTTP pool."""
-        if hasattr(self, 'http_pool'):
-            self.http_pool.clear()
+
+    def _create_scraper(self):
+        """Create a new cloudscraper instance for each request."""
+        return cloudscraper.create_scraper(
+            browser={
+                'browser': 'chrome',
+                'platform': 'windows',
+                'desktop': True
+            }
+        )
     
     @retry(
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=4, max=10),
-        retry=retry_if_exception_type((urllib3.exceptions.HTTPError, Exception))
+        retry=retry_if_exception_type(Exception)
     )
     def _fetch_page(self, url: str) -> bytes:
         """
         Fetch a web page with retry logic.
-        
+        Creates a new scraper instance for each request to avoid Cloudflare blocking.
+
         Args:
             url: URL to fetch
-            
+
         Returns:
             Raw HTML content
-            
+
         Raises:
             Exception: If all retry attempts fail
         """
         try:
             logger.debug(f"Fetching URL: {url}")
-            response = self.http_pool.urlopen("GET", url)
-            
-            if response.status != 200:
-                raise Exception(f"HTTP {response.status}: {url}")
-                
-            return response.data
+            # Create a new scraper for each request to bypass Cloudflare session blocking
+            scraper = self._create_scraper()
+            response = scraper.get(url, timeout=settings.request_timeout)
+
+            if response.status_code != 200:
+                raise Exception(f"HTTP {response.status_code}: {url}")
+
+            return response.content
         except Exception as e:
             logger.warning(f"Failed to fetch {url}: {e}")
             raise
