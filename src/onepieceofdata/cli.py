@@ -104,34 +104,26 @@ def scrape_chapters(start_chapter: int, end_chapter: Optional[int], parallel: bo
         
         # Initialize scraper and run
         scraper = ChapterScraper()
-        
+
         if parallel:
-            # Use the new parallel method
+            # Use parallel processing
             chapters = scraper.scrape_chapters(
                 start_chapter=start_chapter,
                 end_chapter=end_chapter,
                 use_parallel=True,
                 max_workers=workers
             )
-            failed_chapters = []  # Failed chapters are handled internally in parallel mode
+            failed_chapters = []  # Failed chapters are handled internally
         else:
-            # Use sequential mode with progress bar
-            with click.progressbar(
-                length=end_chapter - start_chapter + 1,
-                label=f"Scraping chapters {start_chapter}-{end_chapter}"
-            ) as bar:
-                chapters = []
-                failed_chapters = []
-                
-                for chapter_num in range(start_chapter, end_chapter + 1):
-                    result = scraper.scrape_chapter(chapter_num)
-                    if result.success:
-                        chapters.append(result.data)
-                    else:
-                        failed_chapters.append(chapter_num)
-                        cli_logger.error(f"Failed to scrape chapter {chapter_num}")
-                    
-                    bar.update(1)
+            # Use batch API mode by default (much faster)
+            # This scrapes 50 chapters per API request
+            cli_logger.info("Using batch API mode for faster scraping")
+            chapters = scraper.scrape_chapters(
+                start_chapter=start_chapter,
+                end_chapter=end_chapter,
+                use_batch=True
+            )
+            failed_chapters = []  # Failed chapters are tracked internally
         
         # Save results
         scraper.save_chapters(chapters, output_path)
