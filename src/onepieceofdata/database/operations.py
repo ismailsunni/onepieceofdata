@@ -139,6 +139,7 @@ class DatabaseManager:
             bounties TEXT,
             bounty BIGINT,
             age INT,
+            is_likely_character BOOLEAN,
             scraping_status TEXT,
             scraping_note TEXT,
             chapter_list INTEGER[],
@@ -453,16 +454,17 @@ class DatabaseManager:
                     blood_type, blood_type_group = self._parse_blood_type(character_data)
                     bounties, bounty = self._parse_bounty(character_data)
                     age = self._parse_age(character_data)
-                    
+                    is_likely_character = character_data.get('is_likely_character', True)  # Default True for backward compat
+
                     # Determine scraping status and note
                     scraping_status, scraping_note = self._determine_scraping_status(character_data)
-                    
+
                     # Insert character (simple INSERT since table is cleared)
                     conn.execute("""
-                        INSERT INTO character 
-                        (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, scraping_status, scraping_note)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    """, [char_id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, scraping_status, scraping_note])
+                        INSERT INTO character
+                        (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, is_likely_character, scraping_status, scraping_note)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, [char_id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, is_likely_character, scraping_status, scraping_note])
                     
                 except Exception as e:
                     logger.error(f"Failed to insert character {character_data.get('name', 'unknown')}: {str(e)}")
