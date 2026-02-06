@@ -126,7 +126,7 @@ class CharacterScraper:
                 "alias": "alias",
                 "epithet": "epithet",
                 "age": "age",
-                "birth": "birthday",
+                "birth": "birth",
                 "height": "height",
                 "bounty": "bounty",
 
