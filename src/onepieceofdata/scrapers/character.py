@@ -151,14 +151,34 @@ class CharacterScraper:
                 if source in field_mapping:
                     value_div = field.find('div', {'class': 'pi-data-value'})
                     if value_div:
-                        # Use separator to preserve line breaks between multiple values
-                        value = value_div.get_text(separator='\n', strip=True)
+                        import re
 
-                        # Clean up reference markers
-                        if '[' in value:
-                            # Remove [1], [2], etc
-                            import re
-                            value = re.sub(r'\[\d+\]', '', value)
+                        # Fields that contain multiple values need newline separation
+                        multi_value_fields = ['bounty', 'age', 'height', 'blood type']
+
+                        if source in multi_value_fields:
+                            # Use newline separator for fields with multiple values
+                            value = value_div.get_text(separator='\n', strip=True)
+
+                            # Clean up reference markers
+                            if '[' in value:
+                                value = re.sub(r'\[\s*\d+\s*\]', '', value)
+                                # Collapse multiple consecutive newlines into single newlines
+                                value = re.sub(r'\n\s*\n+', '\n', value)
+                                # Remove lines that are just whitespace or brackets
+                                lines = [line.strip() for line in value.split('\n')]
+                                lines = [line for line in lines if line and line not in ['[', ']']]
+                                value = '\n'.join(lines)
+                        else:
+                            # Use space separator for single-value fields
+                            value = value_div.get_text(separator=' ', strip=True)
+
+                            # Clean up reference markers
+                            if '[' in value:
+                                value = re.sub(r'\[\s*\d+\s*\]', '', value)
+
+                            # Collapse multiple spaces
+                            value = re.sub(r'\s+', ' ', value).strip()
 
                         output_key = field_mapping[source]
                         character_info[output_key] = value
