@@ -9,6 +9,21 @@
     "bounty": "At least\n5,000,000\nbounty 1"
   },
   {
+    "id": "Anjo",
+    "name": "Anjo",
+    "japanese_name": "アンジョウ",
+    "romanized_name": "Anjō",
+    "english_name": "Anjo",
+    "first_appearance": "Chapter 1 ; We Are!",
+    "origin": "East Blue",
+    "status": "Alive",
+    "birth": "January 1st"
+  },
+  {
+    "id": "Animals",
+    "name": "Animals"
+  },
+  {
     "id": "Acrobatic_Fuwas",
     "name": "Acrobatic Fuwas",
     "japanese_name": "バギー海賊団",
@@ -16,10 +31,6 @@
     "english_name": "Buggy's Band of Pirates",
     "first_appearance": "Chapter 8 ; Episode 4",
     "bounty": "At least\n3,320,000,000\nbounty 1\nAt least\n144,000,000\nbounty 2\n20,000,000\nbounty 3\n15,000,000\nbounty 4"
-  },
-  {
-    "id": "Animals",
-    "name": "Animals"
   },
   {
     "id": "Bonk_Punch",
@@ -31,17 +42,6 @@
     "affiliation": "Red Hair Pirates",
     "occupation": "Pirate ; Senior Officer ; Musician",
     "status": "Alive"
-  },
-  {
-    "id": "Anjo",
-    "name": "Anjo",
-    "japanese_name": "アンジョウ",
-    "romanized_name": "Anjō",
-    "english_name": "Anjo",
-    "first_appearance": "Chapter 1 ; We Are!",
-    "origin": "East Blue",
-    "status": "Alive",
-    "birthday": "January 1st"
   },
   {
     "id": "Bounty_Hunter",
@@ -63,7 +63,7 @@
     "residence": "Orange Town",
     "status": "Alive",
     "age": "73 (debut)\n75 (after timeskip)",
-    "birthday": "January 16th",
+    "birth": "January 16th",
     "height": "172 cm (5'8\")",
     "blood_type": "F"
   },
@@ -88,28 +88,18 @@
     "origin": "North Blue",
     "status": "Alive",
     "age": "38 (debut);\n48 (pre-timeskip);\n50 (after timeskip)",
-    "birthday": "November 9th",
+    "birth": "November 9th",
     "height": "206 cm (6'9\")",
     "blood_type": "X",
     "bounty": "Unknown"
   },
   {
-    "id": "Cabaji",
-    "name": "Cabaji",
-    "japanese_name": "カバジ",
-    "romanized_name": "Kabaji",
-    "english_name": "Cabaji",
-    "first_appearance": "Chapter 9 ; Episode 7",
-    "affiliation": "Cross Guild ; Buggy's Delivery ; Buggy and Alvida Alliance , Buggy Pirates",
-    "occupation": "Pirate ; Chief of Staff ; Acrobat; Swordsman",
-    "origin": "East Blue",
-    "residence": "Karai Bari Island",
-    "epithet": "\"Cabaji the Acrobat\" ( 曲芸のカバジ , Kyokugi no Kabaji ? )",
-    "status": "Alive",
-    "age": "32 (debut)\n34 (after timeskip)",
-    "birthday": "September 8th",
-    "height": "208 cm (6'10\")",
-    "blood_type": "X"
+    "id": "Cocoyasi_Village",
+    "name": "Cocoyasi Village",
+    "japanese_name": "ココヤシ村",
+    "romanized_name": "Kokoyashi-mura",
+    "english_name": "Coco Village (VIZ manga, 4Kids dub, Funimation dub (Episode of East Blue), Live Action); Cocoyashi Village (Funimation); Coconut Village (Odex)",
+    "first_appearance": "Chapter 70 ; Episode 32"
   },
   {
     "id": "Captain",
@@ -119,6 +109,19 @@
     "english_name": "Captain",
     "first_appearance": "Chapter 4 ; Episode 2",
     "affiliation": "Marines"
+  },
+  {
+    "id": "Chicken",
+    "name": "Chicken",
+    "japanese_name": "チキン",
+    "romanized_name": "Chikin",
+    "english_name": "Mrs. Chicken",
+    "first_appearance": "Chapter 1 ; Episode 505",
+    "occupation": "Fishmonger",
+    "origin": "East Blue ( Goa Kingdom )",
+    "residence": "Foosha Village",
+    "status": "Alive",
+    "birth": "February 8th"
   },
   {
     "id": "Alvida",
@@ -134,50 +137,28 @@
     "epithet": "\"Iron Mace\" ( 金棒 , Kanabō ? , English versions: \"Iron Club\")",
     "status": "Alive",
     "age": "25 (debut)\n27 (after timeskip)",
-    "birthday": "March 14th",
+    "birth": "March 14th",
     "height": "198 cm (6'6\")",
     "blood_type": "S",
     "bounty": "5,000,000"
   },
   {
-    "id": "Cocoyasi_Village",
-    "name": "Cocoyasi Village",
-    "japanese_name": "ココヤシ村",
-    "romanized_name": "Kokoyashi-mura",
-    "english_name": "Coco Village (VIZ manga, 4Kids dub, Funimation dub (Episode of East Blue), Live Action); Cocoyashi Village (Funimation); Coconut Village (Odex)",
-    "first_appearance": "Chapter 70 ; Episode 32"
-  },
-  {
-    "id": "Domo-kun",
-    "name": "Domo-kun",
-    "japanese_name": "どーも君, ンーケ君",
-    "romanized_name": "Dōmo-kun, Nnke-kun",
-    "english_name": "Domo-kun, Nnke-kun",
-    "first_appearance": "Future Present from God ; Chapter 9",
+    "id": "Cabaji",
+    "name": "Cabaji",
+    "japanese_name": "カバジ",
+    "romanized_name": "Kabaji",
+    "english_name": "Cabaji",
+    "first_appearance": "Chapter 9 ; Episode 7",
+    "affiliation": "Cross Guild ; Buggy's Delivery ; Buggy and Alvida Alliance , Buggy Pirates",
+    "occupation": "Pirate ; Chief of Staff ; Acrobat; Swordsman",
+    "origin": "East Blue",
+    "residence": "Karai Bari Island",
+    "epithet": "\"Cabaji the Acrobat\" ( 曲芸のカバジ , Kyokugi no Kabaji ? )",
     "status": "Alive",
-    "birthday": "January 30th (Domo-kun)"
-  },
-  {
-    "id": "Chicken",
-    "name": "Chicken",
-    "japanese_name": "チキン",
-    "romanized_name": "Chikin",
-    "english_name": "Mrs. Chicken",
-    "first_appearance": "Chapter 1 ; Episode 505",
-    "occupation": "Fishmonger",
-    "origin": "East Blue ( Goa Kingdom )",
-    "residence": "Foosha Village",
-    "status": "Alive",
-    "birthday": "February 8th"
-  },
-  {
-    "id": "Foosha_Village",
-    "name": "Foosha Village",
-    "japanese_name": "フーシャ村",
-    "romanized_name": "Fūsha-mura",
-    "english_name": "Windmill Village, Fusha Village (Funimation subs)",
-    "first_appearance": "Chapter 1 ; Episode 4",
-    "affiliation": "Goa Kingdom"
+    "age": "32 (debut)\n34 (after timeskip)",
+    "birth": "September 8th",
+    "height": "208 cm (6'10\")",
+    "blood_type": "X"
   },
   {
     "id": "Chouchou",
@@ -192,8 +173,27 @@
     "residence": "Orange Town",
     "status": "Alive",
     "age": "12 (debut);\n14 (after timeskip)",
-    "birthday": "November 22nd",
+    "birth": "November 22nd",
     "height": "40 cm (1'4\")"
+  },
+  {
+    "id": "Domo-kun",
+    "name": "Domo-kun",
+    "japanese_name": "どーも君, ンーケ君",
+    "romanized_name": "Dōmo-kun, Nnke-kun",
+    "english_name": "Domo-kun, Nnke-kun",
+    "first_appearance": "Future Present from God ; Chapter 9",
+    "status": "Alive",
+    "birth": "January 30th (Domo-kun)"
+  },
+  {
+    "id": "Foosha_Village",
+    "name": "Foosha Village",
+    "japanese_name": "フーシャ村",
+    "romanized_name": "Fūsha-mura",
+    "english_name": "Windmill Village, Fusha Village (Funimation subs)",
+    "first_appearance": "Chapter 1 ; Episode 4",
+    "affiliation": "Goa Kingdom"
   },
   {
     "id": "Gyoru",
@@ -206,35 +206,7 @@
     "origin": "East Blue ( Goa Kingdom )",
     "residence": "Foosha Village",
     "status": "Alive",
-    "birthday": "March 7th"
-  },
-  {
-    "id": "Heppoko",
-    "name": "Heppoko",
-    "japanese_name": "ヘッポコ",
-    "romanized_name": "Heppoko",
-    "english_name": "Heppoko",
-    "first_appearance": "Chapter 2 ; Episode 1",
-    "affiliation": "Alvida Pirates (disbanded)",
-    "occupation": "Pirate",
-    "origin": "East Blue",
-    "residence": "Goat Island",
-    "status": "Alive",
-    "birthday": "September 2nd"
-  },
-  {
-    "id": "Hocker",
-    "name": "Hocker",
-    "japanese_name": "ホッカー",
-    "romanized_name": "Hokkā",
-    "english_name": "Hocker",
-    "first_appearance": "Chapter 12 ; Episode 6",
-    "affiliation": "Chouchou",
-    "occupation": "Pet Shop Owner",
-    "origin": "East Blue ( Orange Town )",
-    "residence": "Orange Town",
-    "status": "Deceased",
-    "birthday": "May 17th"
+    "birth": "March 7th"
   },
   {
     "id": "Buggy",
@@ -250,10 +222,38 @@
     "epithet": "\"Buggy the Clown\" ( 道化のバギー , Dōke no Bagī ? ) \"Buggy the Star Clown\" ( 千両道化のバギー , Senryō Dōke no Bagī ? , English versions: Buggy the Genius Jester)",
     "status": "Alive",
     "age": "37 (debut);\n39 (after timeskip)",
-    "birthday": "August 8th",
+    "birth": "August 8th",
     "height": "192 cm (6'4\") (age 39)\n130 cm (4'3\") (age 13)",
     "blood_type": "F",
     "bounty": "3,189,000,000\n15,000,000"
+  },
+  {
+    "id": "Hocker",
+    "name": "Hocker",
+    "japanese_name": "ホッカー",
+    "romanized_name": "Hokkā",
+    "english_name": "Hocker",
+    "first_appearance": "Chapter 12 ; Episode 6",
+    "affiliation": "Chouchou",
+    "occupation": "Pet Shop Owner",
+    "origin": "East Blue ( Orange Town )",
+    "residence": "Orange Town",
+    "status": "Deceased",
+    "birth": "May 17th"
+  },
+  {
+    "id": "Heppoko",
+    "name": "Heppoko",
+    "japanese_name": "ヘッポコ",
+    "romanized_name": "Heppoko",
+    "english_name": "Heppoko",
+    "first_appearance": "Chapter 2 ; Episode 1",
+    "affiliation": "Alvida Pirates (disbanded)",
+    "occupation": "Pirate",
+    "origin": "East Blue",
+    "residence": "Goat Island",
+    "status": "Alive",
+    "birth": "September 2nd"
   },
   {
     "id": "Higuma",
@@ -266,7 +266,7 @@
     "occupation": "Bandit Leader",
     "origin": "East Blue",
     "status": "Deceased",
-    "birthday": "November 18th",
+    "birth": "November 18th",
     "height": "190 cm (6'3\")",
     "blood_type": "X",
     "bounty": "8,000,000"
@@ -283,21 +283,22 @@
     "status": "Alive"
   },
   {
-    "id": "Helmeppo",
-    "name": "Helmeppo",
-    "japanese_name": "ヘルメッポ",
-    "romanized_name": "Herumeppo",
-    "english_name": "Helmeppo",
-    "first_appearance": "Chapter 3 ; Episode 2",
-    "affiliation": "Marines ( Headquarters ; SWORD ) (formerly 153rd Branch )",
-    "occupation": "Lieutenant Commander ; Chief Petty Officer (promoted); Chore Boy (promoted)",
-    "residence": "Shells Town ( 153rd Branch ) (former)",
-    "status": "Alive",
-    "age": "20 (debut)\n22 (after timeskip)",
-    "birthday": "July 16th",
-    "height": "179 cm (5'10\")",
+    "id": "Gold_Roger",
+    "name": "Gold Roger",
+    "japanese_name": "ゴール・ D ・ロジャー",
+    "romanized_name": "Gōru Dī Rojā",
+    "english_name": "Gol D. Roger",
+    "first_appearance": "Chapter 1 ; Episode 1",
+    "affiliation": "Roger Pirates ; Clan of D.",
+    "occupation": "Pirate Captain",
+    "origin": "East Blue ( Loguetown )",
+    "alias": "Gold Roger ( ゴールド・ロジャー , Gōrudo Rojā ? )",
+    "epithet": "Pirate King ( 海賊王 , Kaizoku-Ō ? , King of the Pirates (English versions))",
+    "status": "Deceased",
+    "birth": "December 31st",
+    "height": "274 cm (9'0\")",
     "blood_type": "S",
-    "bounty": "★ (\n100,000,000)"
+    "bounty": "5,564,800,000"
   },
   {
     "id": "Koushirou",
@@ -311,9 +312,26 @@
     "origin": "East Blue",
     "status": "Alive",
     "age": "40 (debut)\n49 (pre-timeskip)\n51 (after timeskip)",
-    "birthday": "May 4th",
+    "birth": "May 4th",
     "height": "184 cm (6'0½\")",
     "blood_type": "S"
+  },
+  {
+    "id": "Helmeppo",
+    "name": "Helmeppo",
+    "japanese_name": "ヘルメッポ",
+    "romanized_name": "Herumeppo",
+    "english_name": "Helmeppo",
+    "first_appearance": "Chapter 3 ; Episode 2",
+    "affiliation": "Marines ( Headquarters ; SWORD ) (formerly 153rd Branch )",
+    "occupation": "Lieutenant Commander ; Chief Petty Officer (promoted); Chore Boy (promoted)",
+    "residence": "Shells Town ( 153rd Branch ) (former)",
+    "status": "Alive",
+    "age": "20 (debut)\n22 (after timeskip)",
+    "birth": "July 16th",
+    "height": "179 cm (5'10\")",
+    "blood_type": "S",
+    "bounty": "★ (\n100,000,000)"
   },
   {
     "id": "Kuina",
@@ -327,39 +345,9 @@
     "origin": "East Blue (Shimotsuki Village)",
     "residence": "Shimotsuki Village",
     "status": "Deceased",
-    "birthday": "September 17th",
+    "birth": "September 17th",
     "height": "150 cm (4'11\")",
     "blood_type": "S"
-  },
-  {
-    "id": "Gold_Roger",
-    "name": "Gold Roger",
-    "japanese_name": "ゴール・ D ・ロジャー",
-    "romanized_name": "Gōru Dī Rojā",
-    "english_name": "Gol D. Roger",
-    "first_appearance": "Chapter 1 ; Episode 1",
-    "affiliation": "Roger Pirates ; Clan of D.",
-    "occupation": "Pirate Captain",
-    "origin": "East Blue ( Loguetown )",
-    "alias": "Gold Roger ( ゴールド・ロジャー , Gōrudo Rojā ? )",
-    "epithet": "Pirate King ( 海賊王 , Kaizoku-Ō ? , King of the Pirates (English versions))",
-    "status": "Deceased",
-    "birthday": "December 31st",
-    "height": "274 cm (9'0\")",
-    "blood_type": "S",
-    "bounty": "5,564,800,000"
-  },
-  {
-    "id": "Lord_of_the_Coast",
-    "name": "Lord of the Coast",
-    "japanese_name": "近海の主",
-    "romanized_name": "Kinkai no Nushi",
-    "english_name": "\"Local Sea Monster\"; Master of the Near Sea (video games) ; Lord of the Coast (live-action series, OPCG )",
-    "first_appearance": "Chapter 1 ; Episode 4",
-    "occupation": "Foosha Village 's local Sea King",
-    "origin": "East Blue",
-    "status": "Alive",
-    "birthday": "September 14th"
   },
   {
     "id": "Limejuice",
@@ -377,6 +365,18 @@
     "name": "Lieutenant Junior Grade"
   },
   {
+    "id": "Lord_of_the_Coast",
+    "name": "Lord of the Coast",
+    "japanese_name": "近海の主",
+    "romanized_name": "Kinkai no Nushi",
+    "english_name": "\"Local Sea Monster\"; Master of the Near Sea (video games) ; Lord of the Coast (live-action series, OPCG )",
+    "first_appearance": "Chapter 1 ; Episode 4",
+    "occupation": "Foosha Village 's local Sea King",
+    "origin": "East Blue",
+    "status": "Alive",
+    "birth": "September 14th"
+  },
+  {
     "id": "Makino",
     "name": "Makino",
     "japanese_name": "マキノ",
@@ -389,7 +389,7 @@
     "residence": "Foosha Village",
     "status": "Alive",
     "age": "19 (debut);\n29 (pre-timeskip)\n31 (after timeskip)",
-    "birthday": "February 23rd",
+    "birth": "February 23rd",
     "height": "166 cm (5'5\")",
     "blood_type": "S"
   },
@@ -402,7 +402,7 @@
     "first_appearance": "Chapter 1",
     "origin": "East Blue",
     "status": "Alive",
-    "birthday": "March 26th",
+    "birth": "March 26th",
     "bounty": "¥1,000,000"
   },
   {
@@ -419,7 +419,7 @@
     "epithet": "\"Hero\" ( 英雄 , Eiyū ? )",
     "status": "Alive",
     "age": "16 (debut)\n18 (after timeskip)",
-    "birthday": "May 13th",
+    "birth": "May 13th",
     "height": "167 cm (5'6\")",
     "blood_type": "F",
     "bounty": "★★★★★\n(\n500,000,000)"
@@ -436,7 +436,7 @@
     "origin": "South Blue",
     "status": "Alive",
     "age": "23 (debut);\n33 (pre-timeskip);\n35 (after timeskip)",
-    "birthday": "July 6th",
+    "birth": "July 6th",
     "height": "241 cm (7'11\")",
     "blood_type": "F",
     "bounty": "Unknown"
@@ -452,7 +452,7 @@
     "occupation": "Pirate ; Senior Officer ; Musician",
     "origin": "East Blue",
     "status": "Alive",
-    "birthday": "October 31st"
+    "birth": "October 31st"
   },
   {
     "id": "Mohji",
@@ -468,7 +468,7 @@
     "epithet": "Beast Tamer ( 猛獣使いのモージ , Mōjū-tsukai no Mōji ? ) ; Beast Breaker (4Kids)",
     "status": "Alive",
     "age": "27 (debut)\n29 (after timeskip)",
-    "birthday": "October 1st",
+    "birth": "October 1st",
     "height": "197 cm (6'6\")",
     "blood_type": "S"
   },
@@ -489,6 +489,23 @@
     "first_appearance": "Chapter 8 ; Episode 4"
   },
   {
+    "id": "Morgan",
+    "name": "Morgan",
+    "japanese_name": "モーガン",
+    "romanized_name": "Mōgan",
+    "english_name": "Morgan",
+    "first_appearance": "Chapter 4 ; Episode 2",
+    "affiliation": "Marines ( 153rd Branch ) (former, defected)",
+    "occupation": "Marine Captain (former); Marine Lieutenant Commander (former); Marine Chief Petty Officer (former)",
+    "residence": "Shells Town (153rd Branch) (former)",
+    "epithet": "Axe-Hand Morgan ( 斧手のモーガン , Onote no Mōgan ? )",
+    "status": "Alive",
+    "age": "42 (debut)\n44 (after timeskip)",
+    "birth": "April 13th",
+    "height": "285 cm (9'4\")",
+    "blood_type": "XF"
+  },
+  {
     "id": "Marines",
     "name": "Marines",
     "japanese_name": "海軍",
@@ -496,18 +513,6 @@
     "english_name": "Navy ( VIZ , 4Kids , edited Funimation dub, Odex); Marines (Funimation, live-action series )",
     "first_appearance": "Chapter 3 ; Episode 1",
     "affiliation": "World Government"
-  },
-  {
-    "id": "Pinky",
-    "name": "Pinky",
-    "japanese_name": "ピンキー",
-    "romanized_name": "Pinkī",
-    "english_name": "Pinky",
-    "first_appearance": "Chapter 8 ; Episode 4",
-    "origin": "East Blue",
-    "epithet": "\"Monstrous Bird\" ( 怪鳥 , Kaichō ? )",
-    "status": "Alive",
-    "birthday": "September 29th"
   },
   {
     "id": "Peppoko",
@@ -521,24 +526,19 @@
     "origin": "East Blue",
     "residence": "Goat Island",
     "status": "Alive",
-    "birthday": "September 2nd"
+    "birth": "September 2nd"
   },
   {
-    "id": "Morgan",
-    "name": "Morgan",
-    "japanese_name": "モーガン",
-    "romanized_name": "Mōgan",
-    "english_name": "Morgan",
-    "first_appearance": "Chapter 4 ; Episode 2",
-    "affiliation": "Marines ( 153rd Branch ) (former, defected)",
-    "occupation": "Marine Captain (former); Marine Lieutenant Commander (former); Marine Chief Petty Officer (former)",
-    "residence": "Shells Town (153rd Branch) (former)",
-    "epithet": "Axe-Hand Morgan ( 斧手のモーガン , Onote no Mōgan ? )",
+    "id": "Pinky",
+    "name": "Pinky",
+    "japanese_name": "ピンキー",
+    "romanized_name": "Pinkī",
+    "english_name": "Pinky",
+    "first_appearance": "Chapter 8 ; Episode 4",
+    "origin": "East Blue",
+    "epithet": "\"Monstrous Bird\" ( 怪鳥 , Kaichō ? )",
     "status": "Alive",
-    "age": "42 (debut)\n44 (after timeskip)",
-    "birthday": "April 13th",
-    "height": "285 cm (9'4\")",
-    "blood_type": "XF"
+    "birth": "September 29th"
   },
   {
     "id": "Pirate_Bear",
@@ -550,27 +550,6 @@
     "occupation": "Pirate",
     "alias": "Paw-san ( ポーさん , Pō-san ? )",
     "status": "Alive"
-  },
-  {
-    "id": "Poppoko",
-    "name": "Poppoko",
-    "japanese_name": "ポッポコ",
-    "romanized_name": "Poppoko",
-    "english_name": "Poppoko",
-    "first_appearance": "Chapter 2 ; Episode 1",
-    "affiliation": "Alvida Pirates (disbanded)",
-    "occupation": "Pirate",
-    "origin": "East Blue",
-    "residence": "Goat Island",
-    "status": "Alive",
-    "birthday": "September 2nd"
-  },
-  {
-    "id": "Pirate",
-    "name": "Pirate",
-    "japanese_name": "海賊",
-    "romanized_name": "Kaizoku",
-    "first_appearance": "Chapter 1 ; Episode 1"
   },
   {
     "id": "Nami",
@@ -587,7 +566,7 @@
     "epithet": "Cat Burglar ( 泥棒猫 , Dorobō Neko ? )",
     "status": "Alive",
     "age": "18 (debut)\n20 (after timeskip)",
-    "birthday": "July 3rd",
+    "birth": "July 3rd",
     "height": "169 cm (5'7\") (debut)\n170 cm (5'7\") (after timeskip)",
     "blood_type": "X",
     "bounty": "366,000,000\n66,000,000\n16,000,000"
@@ -607,23 +586,31 @@
     "epithet": "Straw Hat Luffy ( 麦わらのルフィ , Mugiwara no Rufi ? )",
     "status": "Alive",
     "age": "7 (debut);\n17 (pre-timeskip);\n19 (post-timeskip)",
-    "birthday": "May 5th (Children's Day)",
+    "birth": "May 5th (Children's Day)",
     "height": "91 cm (3') (debut, child)\n172 cm (5'8\") (pre-timeskip)\n174 cm (5'9\") (post-timeskip)",
     "blood_type": "F",
     "bounty": "3,000,000,000\n1,500,000,000\n500,000,000\n400,000,000\n300,000,000\n100,000,000\n30,000,000"
   },
   {
-    "id": "Ririka",
-    "name": "Ririka",
-    "japanese_name": "リリカ",
-    "romanized_name": "Ririka",
-    "english_name": "Ririka",
-    "first_appearance": "Chapter 4 ; Episode 2",
-    "occupation": "Bartender",
+    "id": "Poppoko",
+    "name": "Poppoko",
+    "japanese_name": "ポッポコ",
+    "romanized_name": "Poppoko",
+    "english_name": "Poppoko",
+    "first_appearance": "Chapter 2 ; Episode 1",
+    "affiliation": "Alvida Pirates (disbanded)",
+    "occupation": "Pirate",
     "origin": "East Blue",
-    "residence": "Shells Town",
+    "residence": "Goat Island",
     "status": "Alive",
-    "birthday": "November 15th"
+    "birth": "September 2nd"
+  },
+  {
+    "id": "Pirate",
+    "name": "Pirate",
+    "japanese_name": "海賊",
+    "romanized_name": "Kaizoku",
+    "first_appearance": "Chapter 1 ; Episode 1"
   },
   {
     "id": "Red_Hair_Pirates",
@@ -633,34 +620,6 @@
     "english_name": "Red-Haired Pirates (VIZ, 4Kids); Red-Hair Pirates (Funimation)",
     "first_appearance": "Chapter 1 ; Episode 4",
     "bounty": "At least\n4,142,900,000\nbounty 1"
-  },
-  {
-    "id": "Richie",
-    "name": "Richie",
-    "japanese_name": "リッチー",
-    "romanized_name": "Ritchī",
-    "english_name": "Richie Richy ( Odex )",
-    "first_appearance": "Chapter 9 ; Episode 6",
-    "affiliation": "Cross Guild ; Buggy's Delivery ; Buggy and Alvida Alliance ; Buggy Pirates",
-    "occupation": "Pet ; Pirate Captain (former)",
-    "residence": "Karai Bari Island",
-    "status": "Alive",
-    "birthday": "July 23rd"
-  },
-  {
-    "id": "Rokkaku",
-    "name": "Rokkaku",
-    "japanese_name": "ロッカク",
-    "romanized_name": "Rokkaku",
-    "english_name": "Rokkaku",
-    "first_appearance": "Chapter 4 ; Episode 2",
-    "affiliation": "Marines ( 153rd Branch )",
-    "occupation": "Marine Lieutenant Junior Grade",
-    "origin": "East Blue",
-    "residence": "Shells Town ( 153rd Branch )",
-    "status": "Alive",
-    "birthday": "June 19th",
-    "bounty": "At least\n1,000,000"
   },
   {
     "id": "Ripper",
@@ -674,7 +633,7 @@
     "origin": "East Blue",
     "residence": "Shells Town (153rd Branch)",
     "status": "Alive",
-    "birthday": "June 13th",
+    "birth": "June 13th",
     "bounty": "At least\n1,000,000"
   },
   {
@@ -689,15 +648,48 @@
     "origin": "East Blue",
     "residence": "Shells Town ( 153rd Branch )",
     "status": "Alive",
-    "birthday": "June 18th"
+    "birth": "June 18th"
   },
   {
-    "id": "Shimotsuki_Village",
-    "name": "Shimotsuki Village",
-    "japanese_name": "シモツキ村",
-    "romanized_name": "Shimotsuki-mura",
-    "english_name": "Frost Moon Village (VIZ); Shimotsuki Village (Funimation)",
-    "first_appearance": "Chapter 5 ; Episode 2"
+    "id": "Ririka",
+    "name": "Ririka",
+    "japanese_name": "リリカ",
+    "romanized_name": "Ririka",
+    "english_name": "Ririka",
+    "first_appearance": "Chapter 4 ; Episode 2",
+    "occupation": "Bartender",
+    "origin": "East Blue",
+    "residence": "Shells Town",
+    "status": "Alive",
+    "birth": "November 15th"
+  },
+  {
+    "id": "Richie",
+    "name": "Richie",
+    "japanese_name": "リッチー",
+    "romanized_name": "Ritchī",
+    "english_name": "Richie Richy ( Odex )",
+    "first_appearance": "Chapter 9 ; Episode 6",
+    "affiliation": "Cross Guild ; Buggy's Delivery ; Buggy and Alvida Alliance ; Buggy Pirates",
+    "occupation": "Pet ; Pirate Captain (former)",
+    "residence": "Karai Bari Island",
+    "status": "Alive",
+    "birth": "July 23rd"
+  },
+  {
+    "id": "Rokkaku",
+    "name": "Rokkaku",
+    "japanese_name": "ロッカク",
+    "romanized_name": "Rokkaku",
+    "english_name": "Rokkaku",
+    "first_appearance": "Chapter 4 ; Episode 2",
+    "affiliation": "Marines ( 153rd Branch )",
+    "occupation": "Marine Lieutenant Junior Grade",
+    "origin": "East Blue",
+    "residence": "Shells Town ( 153rd Branch )",
+    "status": "Alive",
+    "birth": "June 19th",
+    "bounty": "At least\n1,000,000"
   },
   {
     "id": "Shells_Town",
@@ -706,6 +698,18 @@
     "romanized_name": "Sheruzu Taun",
     "english_name": "Shells Town; Naval Base Island ( 4Kids )",
     "first_appearance": "Chapter 3 ; Episode 1"
+  },
+  {
+    "id": "Seaman_Recruit",
+    "name": "Seaman Recruit"
+  },
+  {
+    "id": "Shimotsuki_Village",
+    "name": "Shimotsuki Village",
+    "japanese_name": "シモツキ村",
+    "romanized_name": "Shimotsuki-mura",
+    "english_name": "Frost Moon Village (VIZ); Shimotsuki Village (Funimation)",
+    "first_appearance": "Chapter 5 ; Episode 2"
   },
   {
     "id": "Soro",
@@ -719,11 +723,16 @@
     "origin": "East Blue",
     "residence": "Shells Town",
     "status": "Deceased",
-    "birthday": "November 11th"
+    "birth": "November 11th"
   },
   {
-    "id": "Seaman_Recruit",
-    "name": "Seaman Recruit"
+    "id": "Superhuman_Domingos",
+    "name": "Superhuman Domingos",
+    "japanese_name": "バギー海賊団",
+    "romanized_name": "Bagī Kaizokudan",
+    "english_name": "Buggy's Band of Pirates",
+    "first_appearance": "Chapter 8 ; Episode 4",
+    "bounty": "At least\n3,320,000,000\nbounty 1\nAt least\n144,000,000\nbounty 2\n20,000,000\nbounty 3\n15,000,000\nbounty 4"
   },
   {
     "id": "Roronoa_Zoro",
@@ -740,10 +749,32 @@
     "epithet": "\"Pirate Hunter Zoro\" ( 海賊狩りのゾロ , Kaizoku Gari no Zoro ? )",
     "status": "Alive",
     "age": "19 (debut)\n21 (after timeskip)",
-    "birthday": "November 11th",
+    "birth": "November 11th",
     "height": "178 cm (5'10\") (debut)\n181 cm (5'11\") (after timeskip)",
     "blood_type": "XF",
     "bounty": "1,111,000,000\n320,000,000\n120,000,000\n60,000,000"
+  },
+  {
+    "id": "Ukkari",
+    "name": "Ukkari"
+  },
+  {
+    "id": "Tightrope_Walking_Funan_Bros",
+    "name": "Tightrope Walking Funan Bros",
+    "japanese_name": "バギー海賊団",
+    "romanized_name": "Bagī Kaizokudan",
+    "english_name": "Buggy's Band of Pirates",
+    "first_appearance": "Chapter 8 ; Episode 4",
+    "bounty": "At least\n3,320,000,000\nbounty 1\nAt least\n144,000,000\nbounty 2\n20,000,000\nbounty 3\n15,000,000\nbounty 4"
+  },
+  {
+    "id": "Straw_Hat_Pirates",
+    "name": "Straw Hat Pirates",
+    "japanese_name": "麦わらの一味",
+    "romanized_name": "Mugiwara no Ichimi",
+    "english_name": "Straw Hat Pirates; Straw Hat Crew ( OPCG )",
+    "first_appearance": "Chapter 5 ; Episode 3",
+    "bounty": "8,816,001,000\nbounty 1\n3,161,000,100\nbounty 2\n1,570,000,100\nbounty 3\n800,000,050\nbounty 4\n700,000,050\nbounty 5\n667,000,050\nbounty 6\n239,000,000\nbounty 7\n30,000,000\nbounty 8"
   },
   {
     "id": "Shanks",
@@ -759,46 +790,10 @@
     "epithet": "\"Red-Haired Shanks\" ( 赤髪のシャンクス , Akagami no Shankusu ? )",
     "status": "Alive",
     "age": "27 (debut);\n37 (pre-timeskip);\n39 (after timeskip)",
-    "birthday": "March 9th",
+    "birth": "March 9th",
     "height": "199 cm (6'6\") (age 39)\n132 cm (4'4\") (age 13)",
     "blood_type": "XF",
     "bounty": "4,048,900,000\n1,040,000,000"
-  },
-  {
-    "id": "Ukkari",
-    "name": "Ukkari"
-  },
-  {
-    "id": "Superhuman_Domingos",
-    "name": "Superhuman Domingos",
-    "japanese_name": "バギー海賊団",
-    "romanized_name": "Bagī Kaizokudan",
-    "english_name": "Buggy's Band of Pirates",
-    "first_appearance": "Chapter 8 ; Episode 4",
-    "bounty": "At least\n3,320,000,000\nbounty 1\nAt least\n144,000,000\nbounty 2\n20,000,000\nbounty 3\n15,000,000\nbounty 4"
-  },
-  {
-    "id": "Woop_Slap",
-    "name": "Woop Slap",
-    "japanese_name": "ウープ・スラップ",
-    "romanized_name": "Ūpu Surappu",
-    "english_name": "Woop Slap",
-    "first_appearance": "Chapter 1 ; Episode 4",
-    "affiliation": "Foosha Village",
-    "occupation": "Mayor",
-    "origin": "East Blue ( Goa Kingdom )",
-    "residence": "Foosha Village",
-    "status": "Alive",
-    "birthday": "February 28th"
-  },
-  {
-    "id": "Tightrope_Walking_Funan_Bros",
-    "name": "Tightrope Walking Funan Bros",
-    "japanese_name": "バギー海賊団",
-    "romanized_name": "Bagī Kaizokudan",
-    "english_name": "Buggy's Band of Pirates",
-    "first_appearance": "Chapter 8 ; Episode 4",
-    "bounty": "At least\n3,320,000,000\nbounty 1\nAt least\n144,000,000\nbounty 2\n20,000,000\nbounty 3\n15,000,000\nbounty 4"
   },
   {
     "id": "Yasopp",
@@ -814,18 +809,23 @@
     "epithet": "\"Chaser\" ( 追擊者 , Cheisā ? )",
     "status": "Alive",
     "age": "35 (debut);\n45 (pre-timeskip);\n47 (after timeskip)",
-    "birthday": "August 2nd",
+    "birth": "August 2nd",
     "height": "183 cm (6'0\")",
     "blood_type": "S",
     "bounty": "Unknown"
   },
   {
-    "id": "Straw_Hat_Pirates",
-    "name": "Straw Hat Pirates",
-    "japanese_name": "麦わらの一味",
-    "romanized_name": "Mugiwara no Ichimi",
-    "english_name": "Straw Hat Pirates; Straw Hat Crew ( OPCG )",
-    "first_appearance": "Chapter 5 ; Episode 3",
-    "bounty": "8,816,001,000\nbounty 1\n3,161,000,100\nbounty 2\n1,570,000,100\nbounty 3\n800,000,050\nbounty 4\n700,000,050\nbounty 5\n667,000,050\nbounty 6\n239,000,000\nbounty 7\n30,000,000\nbounty 8"
+    "id": "Woop_Slap",
+    "name": "Woop Slap",
+    "japanese_name": "ウープ・スラップ",
+    "romanized_name": "Ūpu Surappu",
+    "english_name": "Woop Slap",
+    "first_appearance": "Chapter 1 ; Episode 4",
+    "affiliation": "Foosha Village",
+    "occupation": "Mayor",
+    "origin": "East Blue ( Goa Kingdom )",
+    "residence": "Foosha Village",
+    "status": "Alive",
+    "birth": "February 28th"
   }
 ]
