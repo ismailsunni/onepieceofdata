@@ -142,7 +142,7 @@ class CharacterScraper:
 
                 # Additional fields
                 "status": "status",
-                "blood": "blood_type",
+                "blood type": "blood_type",
             }
 
             for field in fields:
