@@ -165,9 +165,11 @@ class CharacterScraper:
                                 value = re.sub(r'\[\s*\d+\s*\]', '', value)
                                 # Collapse multiple consecutive newlines into single newlines
                                 value = re.sub(r'\n\s*\n+', '\n', value)
-                                # Remove lines that are just whitespace or brackets
+                                # Remove lines that are just whitespace, brackets, or labels like "bounty 1"
                                 lines = [line.strip() for line in value.split('\n')]
-                                lines = [line for line in lines if line and line not in ['[', ']']]
+                                lines = [line for line in lines
+                                        if line and line not in ['[', ']']
+                                        and not re.match(r'^bounty\s+\d+$', line.lower())]
                                 value = '\n'.join(lines)
                         else:
                             # Use space separator for single-value fields

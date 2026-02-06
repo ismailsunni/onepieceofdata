@@ -732,34 +732,35 @@ class DatabaseManager:
             return None, None
 
         bounties = ";".join(bounties_list)
-        first_entry = bounties_list[0].replace("¥", "")
-        
-        if "★" in first_entry or first_entry == "Unknown" or first_entry == "":
-            if len(bounties_list) > 1:
-                first_entry = bounties_list[1]
-            else:
-                first_entry = first_entry.replace("★", "")
-        
-        if first_entry in ["Unknown", ""] or "Unknown" in first_entry:
+
+        # Find the first entry that looks like a bounty value (contains digits)
+        first_entry = None
+        for entry in bounties_list:
+            entry = entry.replace("¥", "").strip()
+            # Skip entries that are just text prefixes
+            if entry in ["At least", "Unknown", "Over", "★"] or entry.startswith("bounty"):
+                continue
+            # Skip entries with just stars
+            if entry.replace("★", "").replace(" ", "") == "":
+                continue
+            # This looks like it might have a bounty value
+            first_entry = entry
+            break
+
+        if not first_entry or first_entry in ["Unknown", ""] or "Unknown" in first_entry:
             bounty = None
         else:
             try:
-                bounty = int(
-                    first_entry.split(" ")[-1]
-                    .replace(";", "")
-                    .replace("(", "")
-                    .replace(")", "")
-                )
-            except ValueError:
-                try:
-                    bounty = int(
-                        first_entry.split(" ")[0]
-                        .replace(";", "")
-                        .replace("(", "")
-                        .replace(")", "")
-                    )
-                except ValueError:
+                # Try to extract just the number part
+                import re
+                # Look for a number with commas like "3,189,000,000"
+                match = re.search(r'[\d,]+', first_entry)
+                if match:
+                    bounty = int(match.group().replace(",", ""))
+                else:
                     bounty = None
+            except (ValueError, AttributeError):
+                bounty = None
         
         # Special case for Buggy (from original parser)
         if attributes.get("id") == "Buggy":
