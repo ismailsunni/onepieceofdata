@@ -252,7 +252,17 @@ class CharacterScraper:
             if "name" not in result_data or not result_data["name"]:
                 result_data["name"] = name
 
-            logger.debug(f"Successfully scraped character: {name}")
+            # Detect if this is likely a group/organization vs individual character
+            # Real characters have personal data fields (age, birth)
+            has_age = bool(character_info.get("age"))
+            has_birth = bool(character_info.get("birth"))
+            is_likely_character = has_age or has_birth
+
+            result_data["is_likely_character"] = is_likely_character
+            if not is_likely_character:
+                logger.debug(f"Flagged as likely group/organization (no age/birth): {name}")
+            else:
+                logger.debug(f"Successfully scraped character: {name}")
 
             return ScrapingResult(
                 success=True,
