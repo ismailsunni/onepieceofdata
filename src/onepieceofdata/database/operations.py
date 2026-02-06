@@ -674,31 +674,63 @@ class DatabaseManager:
     
     def _parse_blood_type(self, attributes: Dict[str, Any]) -> tuple[Optional[str], Optional[str]]:
         """Parse blood type information."""
-        if "blood type" not in attributes:
+        # Check both "blood type" (old) and "blood_type" (new API scraper)
+        blood_types_raw = attributes.get("blood type") or attributes.get("blood_type")
+        if not blood_types_raw:
             return None, None
-        
-        blood_types = attributes["blood type"]
+
+        # Handle both string (from new API scraper) and list (from old scraper)
+        if isinstance(blood_types_raw, str):
+            # Split by newlines and keep only non-empty, non-reference lines
+            blood_types = []
+            for line in blood_types_raw.split('\n'):
+                line = line.strip()
+                if line and not line.isdigit() and line not in ['[', ']']:
+                    blood_types.append(line)
+        else:
+            blood_types = blood_types_raw
+
         if not blood_types:
             return None, None
-        
+
         if len(blood_types) > 1:
             blood_type = ", ".join(blood_types)
             blood_type_group = "mixed"
         else:
             blood_type = blood_types[0]
             blood_type_group = self._get_blood_type_group(blood_type)
-        
+
         return blood_type, blood_type_group
     
     def _parse_bounty(self, attributes: Dict[str, Any]) -> tuple[Optional[str], Optional[int]]:
         """Parse bounty information."""
         if "bounty" not in attributes:
             return None, None
-        
-        bounties_list = attributes["bounty"]
+
+        bounties_raw = attributes["bounty"]
+        if not bounties_raw:
+            return None, None
+
+        # Handle both string (from new API scraper) and list (from old scraper)
+        if isinstance(bounties_raw, str):
+            # Split by newlines and keep only lines that look like bounty values
+            bounties_list = []
+            for line in bounties_raw.split('\n'):
+                line = line.strip()
+                # Skip empty lines, brackets, single numbers (reference markers), and lone brackets
+                if not line or line in ['[', ']']:
+                    continue
+                # Skip if it's just a number (reference marker like "14", "15")
+                if line.isdigit():
+                    continue
+                # Keep lines that contain bounty-like content
+                bounties_list.append(line)
+        else:
+            bounties_list = bounties_raw
+
         if not bounties_list:
             return None, None
-        
+
         bounties = ";".join(bounties_list)
         first_entry = bounties_list[0].replace("¥", "")
         
@@ -739,11 +771,22 @@ class DatabaseManager:
         """Parse age information."""
         if "age" not in attributes:
             return None
-        
-        ages = attributes["age"]
+
+        ages_raw = attributes["age"]
+        if not ages_raw:
+            return None
+
+        # Handle both string (from new API scraper) and list (from old scraper)
+        if isinstance(ages_raw, str):
+            # Split by newlines and filter out empty lines and reference markers
+            ages = [line.strip() for line in ages_raw.split('\n')
+                   if line.strip() and not line.strip().startswith('[')]
+        else:
+            ages = ages_raw
+
         if not ages:
             return None
-        
+
         def parse_raw_age(raw_age: str) -> Optional[int]:
             age_string = raw_age.split(" ")
             if age_string[0] in ["Over", "Under", "Roughly", "Bas:", "And:", "Kerville:"]:
