@@ -242,3 +242,8 @@ class ArcScraper:
         except Exception as e:
             logger.error(f"Failed to export arcs to {output_path}: {str(e)}")
             return False
+
+    def cleanup(self):
+        """Clean up resources."""
+        if hasattr(self.api_client, 'http_pool') and hasattr(self.api_client.http_pool, 'clear'):
+            self.api_client.http_pool.clear()
