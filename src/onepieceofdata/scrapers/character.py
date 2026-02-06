@@ -253,14 +253,47 @@ class CharacterScraper:
                 result_data["name"] = name
 
             # Detect if this is likely a group/organization vs individual character
-            # Real characters have personal data fields (age, birth)
+            # Use multiple criteria for better accuracy
+            import re
+
+            # Check for personal data fields
             has_age = bool(character_info.get("age"))
             has_birth = bool(character_info.get("birth"))
-            is_likely_character = has_age or has_birth
+            has_bounty = bool(character_info.get("bounty"))
+            has_personal_data = has_age or has_birth or has_bounty
+
+            # Check for generic/group name patterns
+            name_lower = name.lower()
+            generic_patterns = [
+                r'\bpirates?\b',      # "Pirates", "Pirate"
+                r'\bmarines?\b',      # "Marines", "Marine"
+                r'\banimals?\b',      # "Animals", "Animal"
+                r'\bcountry\b',       # "Wano Country"
+                r'\bvillage\b',       # "Foosha Village"
+                r'\btown\b',          # "Shells Town"
+                r'\bisland\b',        # "Whole Cake Island"
+                r'\bbounty hunters?\b',  # "Bounty Hunter"
+                r'\bcrew\b',          # "Crew"
+                r'\bkingdom\b',       # "Kingdom"
+                r'\barmy\b',          # "Revolutionary Army"
+            ]
+
+            matches_generic_pattern = any(re.search(pattern, name_lower) for pattern in generic_patterns)
+
+            # Refined logic for character detection:
+            # - If matches group pattern AND lacks age/birth: likely NOT a character
+            #   (even if has bounty - could be group bounty)
+            # - If has age OR birth: definitely a character
+            # - Otherwise (no pattern match, no personal data): assume character (benefit of doubt)
+            if matches_generic_pattern and not (has_age or has_birth):
+                is_likely_character = False
+            else:
+                is_likely_character = True
 
             result_data["is_likely_character"] = is_likely_character
+
             if not is_likely_character:
-                logger.debug(f"Flagged as likely group/organization (no age/birth): {name}")
+                logger.debug(f"Flagged as likely group/organization: {name} (pattern match, no personal data)")
             else:
                 logger.debug(f"Successfully scraped character: {name}")
 
