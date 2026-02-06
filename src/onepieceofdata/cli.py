@@ -143,9 +143,130 @@ def scrape_chapters(start_chapter: int, end_chapter: Optional[int], parallel: bo
         if failed_chapters:
             click.echo(f"❌ Failed chapters: {failed_chapters}")
             sys.exit(1)
-            
+
     except Exception as e:
         cli_logger.error(f"Chapter scraping failed: {e}")
+        click.echo(f"❌ Error: {e}", err=True)
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--start-chapter",
+    default=1,
+    type=int,
+    help="Starting chapter number to scrape"
+)
+@click.option(
+    "--end-chapter",
+    default=None,
+    type=int,
+    help="Ending chapter number to scrape (default: from config)"
+)
+@click.option(
+    "--parallel",
+    is_flag=True,
+    help="Enable parallel processing for faster scraping"
+)
+@click.option(
+    "--batch",
+    is_flag=True,
+    default=True,
+    help="Enable batch API queries (faster, default: True)"
+)
+@click.option(
+    "--workers",
+    default=None,
+    type=int,
+    help="Number of parallel workers (default: from config)"
+)
+@click.option(
+    "--output",
+    type=click.Path(),
+    help="Output file path (default: from config)"
+)
+def scrape_chapters_api(start_chapter: int, end_chapter: Optional[int], parallel: bool,
+                       batch: bool, workers: Optional[int], output: Optional[str]) -> None:
+    """Scrape chapter data using Fandom MediaWiki API (bypasses Cloudflare)."""
+    from .scrapers.chapter_api import ChapterScraperAPI
+
+    try:
+        # Determine processing mode
+        if parallel:
+            processing_mode = "parallel"
+            actual_workers = workers or settings.max_workers
+            cli_logger.info(f"Using parallel API processing with {actual_workers} workers")
+        elif batch:
+            processing_mode = "batch API"
+            cli_logger.info("Using batch API queries (up to 50 chapters per request)")
+        else:
+            processing_mode = "sequential API"
+            cli_logger.info("Using sequential API processing")
+
+        cli_logger.info(f"Starting chapter scraping via API in {processing_mode} mode...")
+
+        # Validate inputs
+        if start_chapter < 1:
+            raise click.BadParameter("Start chapter must be positive")
+
+        if end_chapter is None:
+            end_chapter = settings.last_chapter
+
+        if end_chapter < start_chapter:
+            raise click.BadParameter("End chapter must be >= start chapter")
+
+        # Determine output path
+        output_path = Path(output) if output else settings.chapters_json_path
+
+        # Initialize API scraper and run
+        scraper = ChapterScraperAPI()
+
+        if parallel:
+            # Parallel processing
+            chapters = scraper.scrape_chapters(
+                start_chapter=start_chapter,
+                end_chapter=end_chapter,
+                use_parallel=True,
+                max_workers=workers
+            )
+        elif batch:
+            # Batch API queries (faster)
+            chapters = scraper.scrape_chapters(
+                start_chapter=start_chapter,
+                end_chapter=end_chapter,
+                use_batch=True
+            )
+        else:
+            # Sequential processing with progress bar
+            total_chapters = end_chapter - start_chapter + 1
+            with click.progressbar(
+                length=total_chapters,
+                label=f"Scraping chapters {start_chapter}-{end_chapter} via API"
+            ) as bar:
+                chapters = []
+                for chapter_num in range(start_chapter, end_chapter + 1):
+                    result = scraper.scrape_chapter(chapter_num)
+                    if result.success:
+                        chapters.append(result.data)
+                    else:
+                        cli_logger.error(f"Failed to scrape chapter {chapter_num}: {result.error}")
+                    bar.update(1)
+
+        # Save results
+        scraper.save_chapters(chapters, output_path)
+
+        # Report results
+        click.echo(f"\n✅ Successfully scraped {len(chapters)} chapters via API")
+        click.echo(f"📁 Saved to: {output_path}")
+
+        total_expected = end_chapter - start_chapter + 1
+        if len(chapters) < total_expected:
+            failed_count = total_expected - len(chapters)
+            click.echo(f"⚠️  {failed_count} chapters failed")
+            sys.exit(1)
+
+    except Exception as e:
+        cli_logger.error(f"API chapter scraping failed: {e}")
         click.echo(f"❌ Error: {e}", err=True)
         sys.exit(1)
 
