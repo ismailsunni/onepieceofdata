@@ -151,7 +151,8 @@ class CharacterScraper:
                 if source in field_mapping:
                     value_div = field.find('div', {'class': 'pi-data-value'})
                     if value_div:
-                        value = value_div.get_text(strip=True)
+                        # Use separator to preserve line breaks between multiple values
+                        value = value_div.get_text(separator='\n', strip=True)
 
                         # Clean up reference markers
                         if '[' in value:
