@@ -1,25 +1,25 @@
 {
-  "last_sync": "2026-01-14T17:58:04.862046",
+  "last_sync": "2026-01-24T08:11:34.331095",
   "tables": {
     "saga": {
       "row_count": 11,
-      "last_synced": "2026-01-14T17:58:04.968902"
+      "last_synced": "2026-01-24T08:11:34.442834"
     },
     "arc": {
       "row_count": 33,
-      "last_synced": "2026-01-14T17:58:05.075030"
+      "last_synced": "2026-01-24T08:11:34.553765"
     },
     "volume": {
       "row_count": 113,
-      "last_synced": "2026-01-14T17:58:05.180860"
+      "last_synced": "2026-01-24T08:11:34.662658"
     },
     "chapter": {
-      "row_count": 1170,
-      "last_synced": "2026-01-14T17:58:05.286957"
+      "row_count": 1171,
+      "last_synced": "2026-01-24T08:11:34.773830"
     },
     "character": {
       "row_count": 1509,
-      "last_synced": "2026-01-14T17:58:05.392754"
+      "last_synced": "2026-01-24T08:11:34.886011"
     }
   }
 }

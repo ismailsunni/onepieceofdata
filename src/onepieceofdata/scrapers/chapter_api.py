@@ -88,6 +88,67 @@ class ChapterScraperAPI:
             logger.warning(f"Failed to fetch chapter {chapter_number}: {e}")
             raise
 
+    def _fetch_chapter_html(self, chapter_number: int) -> Optional[str]:
+        """
+        Fetch chapter HTML from API (rendered version) for metadata extraction.
+
+        Args:
+            chapter_number: Chapter number to fetch
+
+        Returns:
+            Rendered HTML content or None if failed
+        """
+        try:
+            page_title = f"Chapter {chapter_number}"
+            html = self.api_client.get_page_html(page_title)
+            return html
+        except Exception as e:
+            logger.debug(f"Could not fetch HTML for chapter {chapter_number}: {e}")
+            return None
+
+    def _parse_metadata_from_html(self, html: str) -> Dict[str, str]:
+        """
+        Parse metadata fields (volume, pages, etc) from rendered HTML.
+        These fields are in portable infoboxes that are auto-generated.
+
+        Args:
+            html: Rendered HTML content
+
+        Returns:
+            Dictionary with metadata fields
+        """
+        from bs4 import BeautifulSoup
+
+        metadata = {}
+
+        try:
+            soup = BeautifulSoup(html, "html.parser")
+
+            # Find infobox sections with data-source attributes
+            info_mapping = {
+                "vol": "volume",
+                "chapter": "chapter_display",
+                "page": "pages",
+                "date2": "release_date",
+                "jump": "jump_info"
+            }
+
+            for data_source, field_name in info_mapping.items():
+                elements = soup.find_all("div", {"data-source": data_source})
+                if elements:
+                    value_divs = elements[0].find_all("div", {"class": "pi-data-value"})
+                    if value_divs:
+                        value = value_divs[0].text.strip()
+                        # Clean up reference markers
+                        if "[ref]" in value:
+                            value = value.replace("[ref]", "").strip()
+                        metadata[field_name] = value
+
+        except Exception as e:
+            logger.debug(f"Error parsing HTML metadata: {e}")
+
+        return metadata
+
     def _parse_chapter_info(self, wikitext: str, chapter_number: int) -> Dict[str, Any]:
         """
         Parse chapter information from wikitext.
@@ -117,18 +178,23 @@ class ChapterScraperAPI:
                     chapter_info["japanese_title"] = chapter_box["japanese_title"]
 
                 # Extract additional fields that might be in the template
-                for key in ["vol", "chapter", "page", "date2", "jump"]:
-                    if key in chapter_box:
-                        # Map to our field names
-                        field_mapping = {
-                            "vol": "volume",
-                            "chapter": "chapter_display",
-                            "page": "pages",
-                            "date2": "release_date",
-                            "jump": "jump_info"
-                        }
-                        field_name = field_mapping.get(key, key)
-                        chapter_info[field_name] = chapter_box[key]
+                # Try both the field name and its possible variations
+                field_mapping = {
+                    "vol": "volume",
+                    "chapter": "chapter_display",
+                    "page": "pages",
+                    "pages": "pages",  # Sometimes it's already "pages"
+                    "date2": "release_date",
+                    "date": "release_date",  # Fallback
+                    "jump": "jump_info",
+                    "jname": "japanese_title",  # Additional japanese name field
+                    "ename": "english_name",  # Additional english name field
+                }
+
+                for template_key, output_key in field_mapping.items():
+                    if template_key in chapter_box and output_key not in chapter_info:
+                        chapter_info[output_key] = chapter_box[template_key]
+
             else:
                 logger.warning(f"No Chapter Box found for chapter {chapter_number}")
 
@@ -201,8 +267,18 @@ class ChapterScraperAPI:
             if not wikitext:
                 raise Exception(f"Failed to fetch wikitext for chapter {chapter_number}")
 
-            # Parse the content
+            # Parse the content from wikitext
             chapter_info = self._parse_chapter_info(wikitext, chapter_number)
+
+            # Also fetch HTML to get metadata fields (volume, pages, etc)
+            # These are auto-generated in portable infoboxes
+            html = self._fetch_chapter_html(chapter_number)
+            if html:
+                metadata = self._parse_metadata_from_html(html)
+                # Merge metadata into chapter_info (don't overwrite existing fields)
+                for key, value in metadata.items():
+                    if key not in chapter_info or not chapter_info[key]:
+                        chapter_info[key] = value
 
             logger.debug(f"Successfully scraped chapter {chapter_number}")
 
