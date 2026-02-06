@@ -1,1 +1,4293 @@
-[]
+[
+  {
+    "volume_number": 1,
+    "english_title": "Romance Dawn",
+    "japanese_title": "ROMANCE DAWN—冒険の夜明け—",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      }
+    ]
+  },
+  {
+    "volume_number": 2,
+    "english_title": "Buggy the Clown",
+    "japanese_title": "VERSUS!! バギー海賊団",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Buggy",
+        "slug": "Buggy"
+      },
+      {
+        "name": "Mohji",
+        "slug": "Mohji"
+      },
+      {
+        "name": "Cabaji",
+        "slug": "Cabaji"
+      }
+    ]
+  },
+  {
+    "volume_number": 3,
+    "english_title": "Don't Get Fooled Again",
+    "japanese_title": "偽れぬもの",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      }
+    ]
+  },
+  {
+    "volume_number": 4,
+    "english_title": "The Black Cat Pirates",
+    "japanese_title": "三日月",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Kuro",
+        "slug": "Kuro"
+      },
+      {
+        "name": "Jango",
+        "slug": "Jango"
+      },
+      {
+        "name": "Sham",
+        "slug": "Sham"
+      },
+      {
+        "name": "Buchi",
+        "slug": "Buchi"
+      }
+    ]
+  },
+  {
+    "volume_number": 5,
+    "english_title": "For Whom the Bell Tolls",
+    "japanese_title": "誰が為に鐘は鳴る",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Ninjin",
+        "slug": "Ninjin"
+      },
+      {
+        "name": "Piiman",
+        "slug": "Piiman"
+      },
+      {
+        "name": "Tamanegi",
+        "slug": "Tamanegi"
+      },
+      {
+        "name": "Kaya",
+        "slug": "Kaya"
+      }
+    ]
+  },
+  {
+    "volume_number": 6,
+    "english_title": "The Oath",
+    "japanese_title": "誓い",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      }
+    ]
+  },
+  {
+    "volume_number": 7,
+    "english_title": "The Crap-Geezer",
+    "japanese_title": "クソジジイ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      }
+    ]
+  },
+  {
+    "volume_number": 8,
+    "english_title": "I Won't Die",
+    "japanese_title": "死なねェよ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Krieg",
+        "slug": "Krieg"
+      },
+      {
+        "name": "Gin",
+        "slug": "Gin"
+      },
+      {
+        "name": "Pearl",
+        "slug": "Pearl"
+      }
+    ]
+  },
+  {
+    "volume_number": 9,
+    "english_title": "Tears",
+    "japanese_title": "涙",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      }
+    ]
+  },
+  {
+    "volume_number": 10,
+    "english_title": "OK, Let's Stand Up!",
+    "japanese_title": "OK, Let's STAND UP!",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Arlong",
+        "slug": "Arlong"
+      },
+      {
+        "name": "Hatchan",
+        "slug": "Hatchan"
+      },
+      {
+        "name": "Kuroobi",
+        "slug": "Kuroobi"
+      },
+      {
+        "name": "Chew",
+        "slug": "Chew"
+      },
+      {
+        "name": "Momoo",
+        "slug": "Momoo"
+      }
+    ]
+  },
+  {
+    "volume_number": 11,
+    "english_title": "The Meanest Man In the East",
+    "japanese_title": "東一番の悪",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      }
+    ]
+  },
+  {
+    "volume_number": 12,
+    "english_title": "The Legend Begins",
+    "japanese_title": "伝説は始まった",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      }
+    ]
+  },
+  {
+    "volume_number": 13,
+    "english_title": "It's All Right!",
+    "japanese_title": "大丈夫!!!",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Mr. 5",
+        "slug": "Gem"
+      },
+      {
+        "name": "Miss Valentine",
+        "slug": "Mikita"
+      },
+      {
+        "name": "Igaram",
+        "slug": "Igaram"
+      },
+      {
+        "name": "Miss Monday",
+        "slug": "Miss_Monday"
+      },
+      {
+        "name": "Mr. 9",
+        "slug": "Mr._9"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "slug": "Nefertari_Vivi"
+      },
+      {
+        "name": "Mr. 13",
+        "slug": "Mr._13"
+      },
+      {
+        "name": "Miss Friday",
+        "slug": "Miss_Friday"
+      }
+    ]
+  },
+  {
+    "volume_number": 14,
+    "english_title": "Instinct",
+    "japanese_title": "本能",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "slug": "Nefertari_Vivi"
+      },
+      {
+        "name": "Karoo",
+        "slug": "Karoo"
+      },
+      {
+        "name": "Mr. 3",
+        "slug": "Galdino"
+      },
+      {
+        "name": "Miss Goldenweek",
+        "slug": "Marianne"
+      }
+    ]
+  },
+  {
+    "volume_number": 15,
+    "english_title": "Straight Ahead!!!",
+    "japanese_title": "まっすぐ!!!",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Dorry",
+        "slug": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "slug": "Brogy"
+      }
+    ]
+  },
+  {
+    "volume_number": 16,
+    "english_title": "Carrying On His Will",
+    "japanese_title": "受け継がれる意志",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Hiriluk",
+        "slug": "Hiriluk"
+      }
+    ]
+  },
+  {
+    "volume_number": 17,
+    "english_title": "Hiriluk's Cherry Blossoms",
+    "japanese_title": "ヒルルクの桜",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Wapol",
+        "slug": "Wapol"
+      },
+      {
+        "name": "Chess",
+        "slug": "Chess"
+      },
+      {
+        "name": "Kuromarimo",
+        "slug": "Kuromarimo"
+      }
+    ]
+  },
+  {
+    "volume_number": 18,
+    "english_title": "Ace Arrives",
+    "japanese_title": "エース登場",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "slug": "Nefertari_Vivi"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "slug": "Portgas_D._Ace"
+      },
+      {
+        "name": "Matsuge",
+        "slug": "Matsuge"
+      },
+      {
+        "name": "Kung-Fu Dugongs",
+        "slug": "Kung-Fu_Dugong"
+      }
+    ]
+  },
+  {
+    "volume_number": 19,
+    "english_title": "Rebellion",
+    "japanese_title": "反乱",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Koza",
+        "slug": "Koza"
+      },
+      {
+        "name": "Nefertari Cobra",
+        "slug": "Nefertari_Cobra"
+      },
+      {
+        "name": "Pell",
+        "slug": "Pell"
+      },
+      {
+        "name": "Chaka",
+        "slug": "Chaka"
+      }
+    ]
+  },
+  {
+    "volume_number": 20,
+    "english_title": "Showdown At Alubarna",
+    "japanese_title": "決戦はアルバーナ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Crocodile",
+        "slug": "Crocodile"
+      },
+      {
+        "name": "Nefertari Cobra",
+        "slug": "Nefertari_Cobra"
+      },
+      {
+        "name": "Koza",
+        "slug": "Koza"
+      },
+      {
+        "name": "Smoker",
+        "slug": "Smoker"
+      },
+      {
+        "name": "Karoo",
+        "slug": "Karoo"
+      }
+    ]
+  },
+  {
+    "volume_number": 21,
+    "english_title": "Utopia",
+    "japanese_title": "理想郷",
+    "cover_characters": [
+      {
+        "name": "Crocodile",
+        "slug": "Crocodile"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Mr. 1",
+        "slug": "Daz_Bonez"
+      },
+      {
+        "name": "Miss Doublefinger",
+        "slug": "Zala"
+      },
+      {
+        "name": "Mr. 2 Bon Kurei",
+        "slug": "Bentham"
+      },
+      {
+        "name": "Mr. 4",
+        "slug": "Babe"
+      },
+      {
+        "name": "Miss Merry Christmas",
+        "slug": "Drophy"
+      },
+      {
+        "name": "Lassoo",
+        "slug": "Lassoo"
+      }
+    ]
+  },
+  {
+    "volume_number": 22,
+    "english_title": "HOPE!!",
+    "japanese_title": "HOPE!!",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "slug": "Nefertari_Vivi"
+      },
+      {
+        "name": "Karoo",
+        "slug": "Karoo"
+      },
+      {
+        "name": "Matsuge",
+        "slug": "Matsuge"
+      }
+    ]
+  },
+  {
+    "volume_number": 23,
+    "english_title": "Vivi's Adventure",
+    "japanese_title": "ビビの冒険",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "slug": "Nefertari_Vivi"
+      }
+    ]
+  },
+  {
+    "volume_number": 24,
+    "english_title": "People's Dreams",
+    "japanese_title": "人の夢",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Masira",
+        "slug": "Masira"
+      },
+      {
+        "name": "Shoujou",
+        "slug": "Shoujou"
+      },
+      {
+        "name": "Bellamy",
+        "slug": "Bellamy"
+      }
+    ]
+  },
+  {
+    "volume_number": 25,
+    "english_title": "The 100 Million Berry Man",
+    "japanese_title": "一億の男",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Shanks",
+        "slug": "Shanks"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "slug": "Marshall_D._Teach"
+      },
+      {
+        "name": "Buggy",
+        "slug": "Buggy"
+      },
+      {
+        "name": "Master",
+        "slug": "Master"
+      },
+      {
+        "name": "Sengoku's Goat",
+        "slug": "Sengoku"
+      }
+    ]
+  },
+  {
+    "volume_number": 26,
+    "english_title": "Adventure on Kami's Island",
+    "japanese_title": "神の島の冒険",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      }
+    ]
+  },
+  {
+    "volume_number": 27,
+    "english_title": "Overture",
+    "japanese_title": "序曲",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Satori",
+        "slug": "Satori"
+      },
+      {
+        "name": "Shura",
+        "slug": "Shura"
+      },
+      {
+        "name": "Gedatsu",
+        "slug": "Gedatsu"
+      },
+      {
+        "name": "Ohm",
+        "slug": "Ohm"
+      }
+    ]
+  },
+  {
+    "volume_number": 28,
+    "english_title": "Wyper the Berserker",
+    "japanese_title": "「戦鬼」ワイパー",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Braham",
+        "slug": "Braham"
+      },
+      {
+        "name": "Genbo",
+        "slug": "Genbo"
+      },
+      {
+        "name": "Kamakiri",
+        "slug": "Kamakiri"
+      },
+      {
+        "name": "Raki",
+        "slug": "Raki"
+      },
+      {
+        "name": "Wyper",
+        "slug": "Wyper"
+      }
+    ]
+  },
+  {
+    "volume_number": 29,
+    "english_title": "Oratorio",
+    "japanese_title": "聖譚曲",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nola",
+        "slug": "Nola"
+      },
+      {
+        "name": "Aisa",
+        "slug": "Aisa"
+      },
+      {
+        "name": "Gan Fall",
+        "slug": "Gan_Fall"
+      },
+      {
+        "name": "Pierre",
+        "slug": "Pierre"
+      },
+      {
+        "name": "Conis",
+        "slug": "Conis"
+      },
+      {
+        "name": "Su",
+        "slug": "Su"
+      }
+    ]
+  },
+  {
+    "volume_number": 30,
+    "english_title": "Capriccio",
+    "japanese_title": "狂想曲",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Enel",
+        "slug": "Enel"
+      }
+    ]
+  },
+  {
+    "volume_number": 31,
+    "english_title": "We'll Be Here",
+    "japanese_title": "ここにいる",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Mont Blanc Noland",
+        "slug": "Mont_Blanc_Noland"
+      },
+      {
+        "name": "Kalgara",
+        "slug": "Kalgara"
+      },
+      {
+        "name": "Nola",
+        "slug": "Nola"
+      }
+    ]
+  },
+  {
+    "volume_number": 32,
+    "english_title": "Love Song",
+    "japanese_title": "島の歌声",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "South Bird",
+        "slug": "South_Bird"
+      }
+    ]
+  },
+  {
+    "volume_number": 33,
+    "english_title": "Davy Back Fight",
+    "japanese_title": "DAVY BACK FIGHT!!",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Foxy",
+        "slug": "Foxy"
+      },
+      {
+        "name": "Porche",
+        "slug": "Porche"
+      },
+      {
+        "name": "Capote",
+        "slug": "Capote"
+      },
+      {
+        "name": "Monda",
+        "slug": "Monda"
+      },
+      {
+        "name": "Hamburg",
+        "slug": "Hamburg"
+      },
+      {
+        "name": "Pickles",
+        "slug": "Pickles"
+      },
+      {
+        "name": "Big Pan",
+        "slug": "Big_Pan"
+      },
+      {
+        "name": "Itomimizu",
+        "slug": "Itomimizu"
+      },
+      {
+        "name": "Chuchun",
+        "slug": "Chuchun"
+      }
+    ]
+  },
+  {
+    "volume_number": 34,
+    "english_title": "The City of Water, Water Seven",
+    "japanese_title": "水の都ウォーターセブン",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Iceburg",
+        "slug": "Iceburg"
+      },
+      {
+        "name": "Kalifa",
+        "slug": "Kalifa"
+      },
+      {
+        "name": "Yagara Bull",
+        "slug": "Yagara_Bull"
+      },
+      {
+        "name": "Paulie",
+        "slug": "Paulie"
+      },
+      {
+        "name": "Rob Lucci",
+        "slug": "Rob_Lucci"
+      },
+      {
+        "name": "Kaku",
+        "slug": "Kaku"
+      }
+    ]
+  },
+  {
+    "volume_number": 35,
+    "english_title": "Captain",
+    "japanese_title": "船長",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Kiwi",
+        "slug": "Mozu_and_Kiwi"
+      },
+      {
+        "name": "Mozu",
+        "slug": "Mozu_and_Kiwi"
+      }
+    ]
+  },
+  {
+    "volume_number": 36,
+    "english_title": "The Ninth Justice",
+    "japanese_title": "9番目の正義",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Kalifa",
+        "slug": "Kalifa"
+      },
+      {
+        "name": "Rob Lucci",
+        "slug": "Rob_Lucci"
+      },
+      {
+        "name": "Kaku",
+        "slug": "Kaku"
+      },
+      {
+        "name": "Blueno",
+        "slug": "Blueno"
+      }
+    ]
+  },
+  {
+    "volume_number": 37,
+    "english_title": "Tom",
+    "japanese_title": "トムさん",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Iceburg",
+        "slug": "Iceburg"
+      }
+    ]
+  },
+  {
+    "volume_number": 38,
+    "english_title": "Rocketman!!",
+    "japanese_title": "ロケットマン!!",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sogeking",
+        "slug": "Personality_and_Relationships#Sogeking"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Kokoro",
+        "slug": "Kokoro"
+      },
+      {
+        "name": "Chimney",
+        "slug": "Chimney"
+      },
+      {
+        "name": "Gonbe",
+        "slug": "Gonbe"
+      },
+      {
+        "name": "Sodom",
+        "slug": "Sodom"
+      },
+      {
+        "name": "Gomorrah",
+        "slug": "Gomorrah"
+      }
+    ]
+  },
+  {
+    "volume_number": 39,
+    "english_title": "Scramble",
+    "japanese_title": "争奪戦",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "T Bone",
+        "slug": "T_Bone"
+      },
+      {
+        "name": "Wanze",
+        "slug": "Wanze"
+      },
+      {
+        "name": "Nero",
+        "slug": "Nero"
+      }
+    ]
+  },
+  {
+    "volume_number": 40,
+    "english_title": "Gear",
+    "japanese_title": "ギア",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Blueno",
+        "slug": "Blueno"
+      },
+      {
+        "name": "Baskerville",
+        "slug": "Baskerville"
+      },
+      {
+        "name": "Oimo",
+        "slug": "Oimo"
+      },
+      {
+        "name": "Kashii",
+        "slug": "Kashii"
+      }
+    ]
+  },
+  {
+    "volume_number": 41,
+    "english_title": "Declaration of War",
+    "japanese_title": "宣戦布告",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nico Robin (8 years old)",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Sogeking",
+        "slug": "Personality_and_Relationships#Sogeking"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "slug": "Jaguar_D._Saul"
+      },
+      {
+        "name": "Nico Olvia",
+        "slug": "Nico_Olvia"
+      }
+    ]
+  },
+  {
+    "volume_number": 42,
+    "english_title": "Pirates vs. CP9",
+    "japanese_title": "海賊 VS CP9",
+    "cover_characters": [
+      {
+        "name": "Rob Lucci",
+        "slug": "Rob_Lucci"
+      },
+      {
+        "name": "Hattori",
+        "slug": "Hattori"
+      },
+      {
+        "name": "Kaku",
+        "slug": "Kaku"
+      },
+      {
+        "name": "Jabra",
+        "slug": "Jabra"
+      },
+      {
+        "name": "Kalifa",
+        "slug": "Kalifa"
+      },
+      {
+        "name": "Kumadori",
+        "slug": "Kumadori"
+      },
+      {
+        "name": "Fukurou",
+        "slug": "Fukurou"
+      },
+      {
+        "name": "Spandam",
+        "slug": "Spandam"
+      },
+      {
+        "name": "Funkfreed",
+        "slug": "Funkfreed"
+      }
+    ]
+  },
+  {
+    "volume_number": 43,
+    "english_title": "Legend of a Hero",
+    "japanese_title": "英雄伝説",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      }
+    ]
+  },
+  {
+    "volume_number": 44,
+    "english_title": "Let's Go Back",
+    "japanese_title": "帰ろう",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Rob Lucci",
+        "slug": "Rob_Lucci"
+      }
+    ]
+  },
+  {
+    "volume_number": 45,
+    "english_title": "You Have My Sympathies",
+    "japanese_title": "心中お察しする",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "slug": "Portgas_D._Ace"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "slug": "Marshall_D._Teach"
+      },
+      {
+        "name": "Shanks",
+        "slug": "Shanks"
+      },
+      {
+        "name": "Edward Newgate",
+        "slug": "Edward_Newgate"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "slug": "Monkey_D._Garp"
+      },
+      {
+        "name": "Koby",
+        "slug": "Koby"
+      },
+      {
+        "name": "Helmeppo",
+        "slug": "Helmeppo"
+      }
+    ]
+  },
+  {
+    "volume_number": 46,
+    "english_title": "Adventure on Ghost Island",
+    "japanese_title": "ゴースト島の冒険",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Cerberus",
+        "slug": "Cerberus"
+      },
+      {
+        "name": "zombies",
+        "slug": "Zombie"
+      }
+    ]
+  },
+  {
+    "volume_number": 47,
+    "english_title": "Cloudy, Partly Bony",
+    "japanese_title": "くもり時々ホネ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Gecko Moria",
+        "slug": "Gecko_Moria"
+      },
+      {
+        "name": "Hogback",
+        "slug": "Hogback"
+      },
+      {
+        "name": "Absalom",
+        "slug": "Absalom"
+      },
+      {
+        "name": "Perona",
+        "slug": "Perona"
+      },
+      {
+        "name": "Lola",
+        "slug": "Lola_(Zombie)"
+      },
+      {
+        "name": "Kumashi",
+        "slug": "Kumashi"
+      },
+      {
+        "name": "Victoria Cindry",
+        "slug": "Victoria_Cindry"
+      }
+    ]
+  },
+  {
+    "volume_number": 48,
+    "english_title": "Adventures of Oars",
+    "japanese_title": "オーズの冒険",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Oars",
+        "slug": "Oars"
+      }
+    ]
+  },
+  {
+    "volume_number": 49,
+    "english_title": "Nightmare Luffy",
+    "japanese_title": "ナイトメア・ルフィ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy (Nightmare Luffy)",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Gecko Moria",
+        "slug": "Gecko_Moria"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "slug": "Bartholomew_Kuma"
+      },
+      {
+        "name": "Lola",
+        "slug": "Lola"
+      }
+    ]
+  },
+  {
+    "volume_number": 50,
+    "english_title": "Arriving Again",
+    "japanese_title": "再び辿りつく",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      }
+    ]
+  },
+  {
+    "volume_number": 51,
+    "english_title": "The Eleven Supernovas",
+    "japanese_title": "11人の超新星",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Capone Bege",
+        "slug": "Capone_Bege"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "slug": "Jewelry_Bonney"
+      },
+      {
+        "name": "Basil Hawkins",
+        "slug": "Basil_Hawkins"
+      },
+      {
+        "name": "Eustass Kid",
+        "slug": "Eustass_Kid"
+      },
+      {
+        "name": "Scratchmen Apoo",
+        "slug": "Scratchmen_Apoo"
+      },
+      {
+        "name": "Urouge",
+        "slug": "Urouge"
+      },
+      {
+        "name": "Killer",
+        "slug": "Killer"
+      },
+      {
+        "name": "X Drake",
+        "slug": "X_Drake"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      }
+    ]
+  },
+  {
+    "volume_number": 52,
+    "english_title": "Roger and Rayleigh",
+    "japanese_title": "ロジャーとレイリー",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "slug": "Silvers_Rayleigh"
+      }
+    ]
+  },
+  {
+    "volume_number": 53,
+    "english_title": "Natural Born King",
+    "japanese_title": "王の資質",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Boa Hancock",
+        "slug": "Boa_Hancock"
+      },
+      {
+        "name": "Boa Sandersonia",
+        "slug": "Boa_Sandersonia"
+      },
+      {
+        "name": "Boa Marigold",
+        "slug": "Boa_Marigold"
+      },
+      {
+        "name": "Salome",
+        "slug": "Salome"
+      },
+      {
+        "name": "Bacura",
+        "slug": "Bacura"
+      }
+    ]
+  },
+  {
+    "volume_number": 54,
+    "english_title": "Unstoppable",
+    "japanese_title": "もう誰にも止められない",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Magellan",
+        "slug": "Magellan"
+      },
+      {
+        "name": "Hannyabal",
+        "slug": "Hannyabal"
+      },
+      {
+        "name": "Sadi",
+        "slug": "Sadi"
+      },
+      {
+        "name": "Saldeath",
+        "slug": "Saldeath"
+      },
+      {
+        "name": "Minotaurus",
+        "slug": "Minotaurus"
+      },
+      {
+        "name": "Blue Gorillas",
+        "slug": "Blue_Gorillas"
+      }
+    ]
+  },
+  {
+    "volume_number": 55,
+    "english_title": "A Ray of Hope",
+    "japanese_title": "地獄に仏",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "slug": "Portgas_D._Ace"
+      },
+      {
+        "name": "Bentham",
+        "slug": "Bentham"
+      },
+      {
+        "name": "Galdino",
+        "slug": "Galdino"
+      },
+      {
+        "name": "Buggy",
+        "slug": "Buggy"
+      },
+      {
+        "name": "Minorhinoceros",
+        "slug": "Minorhinoceros"
+      },
+      {
+        "name": "Minokoala",
+        "slug": "Minokoala"
+      },
+      {
+        "name": "Minozebra",
+        "slug": "Minozebra"
+      }
+    ]
+  },
+  {
+    "volume_number": 56,
+    "english_title": "Thank You",
+    "japanese_title": "ありがとう",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Emporio Ivankov",
+        "slug": "Emporio_Ivankov"
+      },
+      {
+        "name": "Inazuma",
+        "slug": "Inazuma"
+      },
+      {
+        "name": "Crocodile",
+        "slug": "Crocodile"
+      },
+      {
+        "name": "Jinbe",
+        "slug": "Jinbe"
+      },
+      {
+        "name": "Daz Bonez",
+        "slug": "Daz_Bonez"
+      }
+    ]
+  },
+  {
+    "volume_number": 57,
+    "english_title": "Paramount War",
+    "japanese_title": "頂上決戦",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Edward Newgate",
+        "slug": "Edward_Newgate"
+      },
+      {
+        "name": "Marco",
+        "slug": "Marco"
+      },
+      {
+        "name": "Jozu",
+        "slug": "Jozu"
+      },
+      {
+        "name": "Vista",
+        "slug": "Vista"
+      },
+      {
+        "name": "Blamenco",
+        "slug": "Blamenco"
+      },
+      {
+        "name": "Rakuyo",
+        "slug": "Rakuyo"
+      },
+      {
+        "name": "Blenheim",
+        "slug": "Blenheim"
+      },
+      {
+        "name": "Curiel",
+        "slug": "Curiel"
+      },
+      {
+        "name": "Kingdew",
+        "slug": "Kingdew"
+      },
+      {
+        "name": "Namur",
+        "slug": "Namur"
+      },
+      {
+        "name": "Haruta",
+        "slug": "Haruta"
+      },
+      {
+        "name": "Atmos",
+        "slug": "Atmos"
+      },
+      {
+        "name": "Speed Jiru",
+        "slug": "Speed_Jiru"
+      },
+      {
+        "name": "Fossa",
+        "slug": "Fossa"
+      },
+      {
+        "name": "Izou",
+        "slug": "Izou"
+      }
+    ]
+  },
+  {
+    "volume_number": 58,
+    "english_title": "The Name Of This Era Is \"Whitebeard\"",
+    "japanese_title": "この時代の名を\"白ひげ\"と呼ぶ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sengoku",
+        "slug": "Sengoku"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "slug": "Monkey_D._Garp"
+      },
+      {
+        "name": "Borsalino",
+        "slug": "Borsalino"
+      },
+      {
+        "name": "Sakazuki",
+        "slug": "Sakazuki"
+      },
+      {
+        "name": "Kuzan",
+        "slug": "Kuzan"
+      }
+    ]
+  },
+  {
+    "volume_number": 59,
+    "english_title": "The Death of Portgaz D. Ace",
+    "japanese_title": "ポートガス・D・エース死す",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "slug": "Portgas_D._Ace"
+      },
+      {
+        "name": "Shanks",
+        "slug": "Shanks"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "slug": "Marshall_D._Teach"
+      },
+      {
+        "name": "Edward Newgate",
+        "slug": "Edward_Newgate"
+      },
+      {
+        "name": "Jinbe",
+        "slug": "Jinbe"
+      }
+    ]
+  },
+  {
+    "volume_number": 60,
+    "english_title": "My Little Brother",
+    "japanese_title": "弟よ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "slug": "Portgas_D._Ace"
+      },
+      {
+        "name": "Sabo",
+        "slug": "Sabo"
+      },
+      {
+        "name": "Monkey D. Dragon",
+        "slug": "Monkey_D._Dragon"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "slug": "Silvers_Rayleigh"
+      },
+      {
+        "name": "Curly Dadan",
+        "slug": "Curly_Dadan"
+      },
+      {
+        "name": "Makino",
+        "slug": "Makino"
+      }
+    ]
+  },
+  {
+    "volume_number": 61,
+    "english_title": "Romance Dawn For The New World",
+    "japanese_title": "ROMANCE DAWN for the new world—新しい世界への冒険の夜明け—",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      }
+    ]
+  },
+  {
+    "volume_number": 62,
+    "english_title": "Adventure on Fish-Man Island",
+    "japanese_title": "魚人島の冒険",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Surume",
+        "slug": "Surume"
+      },
+      {
+        "name": "Neptune",
+        "slug": "Neptune"
+      },
+      {
+        "name": "Megalo",
+        "slug": "Megalo"
+      },
+      {
+        "name": "Camie",
+        "slug": "Camie"
+      },
+      {
+        "name": "Pappag",
+        "slug": "Pappag"
+      },
+      {
+        "name": "Medaka Mermaid Quintuplets",
+        "slug": "Medaka_Mermaid_Quintuplets"
+      },
+      {
+        "name": "Ishilly",
+        "slug": "Ishilly"
+      },
+      {
+        "name": "Hiramera",
+        "slug": "Hiramera"
+      },
+      {
+        "name": "Mero",
+        "slug": "Mero"
+      }
+    ]
+  },
+  {
+    "volume_number": 63,
+    "english_title": "Otohime and Tiger",
+    "japanese_title": "オトヒメとタイガー",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Megalo",
+        "slug": "Megalo"
+      },
+      {
+        "name": "Shirahoshi",
+        "slug": "Shirahoshi"
+      },
+      {
+        "name": "Fisher Tiger",
+        "slug": "Fisher_Tiger"
+      },
+      {
+        "name": "Otohime",
+        "slug": "Otohime"
+      }
+    ]
+  },
+  {
+    "volume_number": 64,
+    "english_title": "100,000 vs. 10",
+    "japanese_title": "10万VS10",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "slug": "Jinbe"
+      }
+    ]
+  },
+  {
+    "volume_number": 65,
+    "english_title": "To Nothing",
+    "japanese_title": "ゼロに",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Hody Jones",
+        "slug": "Hody_Jones"
+      },
+      {
+        "name": "Fukaboshi",
+        "slug": "Fukaboshi"
+      },
+      {
+        "name": "Vander Decken IX",
+        "slug": "Vander_Decken_IX"
+      },
+      {
+        "name": "Wadatsumi",
+        "slug": "Wadatsumi"
+      },
+      {
+        "name": "Dosun",
+        "slug": "Dosun"
+      },
+      {
+        "name": "Zeo",
+        "slug": "Zeo"
+      },
+      {
+        "name": "Daruma",
+        "slug": "Daruma"
+      },
+      {
+        "name": "Ikaros Much",
+        "slug": "Ikaros_Much"
+      },
+      {
+        "name": "Hyouzou",
+        "slug": "Hyouzou"
+      }
+    ]
+  },
+  {
+    "volume_number": 66,
+    "english_title": "The Road Toward the Sun",
+    "japanese_title": "タイヨウへと続く道",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Jinbe",
+        "slug": "Jinbe"
+      },
+      {
+        "name": "Shirahoshi",
+        "slug": "Shirahoshi"
+      },
+      {
+        "name": "Tamago",
+        "slug": "Tamago"
+      },
+      {
+        "name": "Pekoms",
+        "slug": "Pekoms"
+      },
+      {
+        "name": "Smoker",
+        "slug": "Smoker"
+      },
+      {
+        "name": "Tashigi",
+        "slug": "Tashigi"
+      }
+    ]
+  },
+  {
+    "volume_number": 67,
+    "english_title": "Cool Fight",
+    "japanese_title": "COOL FIGHT",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Smoker",
+        "slug": "Smoker"
+      },
+      {
+        "name": "Tashigi",
+        "slug": "Tashigi"
+      },
+      {
+        "name": "Kin'emon",
+        "slug": "Kin%27emon"
+      },
+      {
+        "name": "Monet",
+        "slug": "Monet"
+      },
+      {
+        "name": "Caesar Clown",
+        "slug": "Caesar_Clown"
+      }
+    ]
+  },
+  {
+    "volume_number": 68,
+    "english_title": "Pirate Alliance",
+    "japanese_title": "海賊同盟",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Smoker",
+        "slug": "Smoker"
+      },
+      {
+        "name": "Caesar Clown‎",
+        "slug": "Caesar_Clown"
+      }
+    ]
+  },
+  {
+    "volume_number": 69,
+    "english_title": "S.A.D.",
+    "japanese_title": "SAD",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Smoker",
+        "slug": "Smoker"
+      },
+      {
+        "name": "Tashigi",
+        "slug": "Tashigi"
+      },
+      {
+        "name": "Kouzuki Momonosuke",
+        "slug": "Kouzuki_Momonosuke"
+      },
+      {
+        "name": "Mocha",
+        "slug": "Mocha"
+      },
+      {
+        "name": "Doran",
+        "slug": "Doran"
+      }
+    ]
+  },
+  {
+    "volume_number": 70,
+    "english_title": "Enter Doflamingo",
+    "japanese_title": "ドフラミンゴ現る",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "General Franky",
+        "slug": "General_Franky"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Donquixote Doflamingo",
+        "slug": "Donquixote_Doflamingo"
+      },
+      {
+        "name": "Baby 5",
+        "slug": "Baby_5"
+      },
+      {
+        "name": "Buffalo",
+        "slug": "Buffalo"
+      },
+      {
+        "name": "Eustass Kid",
+        "slug": "Eustass_Kid"
+      },
+      {
+        "name": "Scratchmen Apoo",
+        "slug": "Scratchmen_Apoo"
+      },
+      {
+        "name": "Basil Hawkins",
+        "slug": "Basil_Hawkins"
+      }
+    ]
+  },
+  {
+    "volume_number": 71,
+    "english_title": "Coliseum of Scoundrels",
+    "japanese_title": "曲者達のコロシアム",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Kin'emon",
+        "slug": "Kin%27emon"
+      },
+      {
+        "name": "Elizabello II",
+        "slug": "Elizabello_II"
+      },
+      {
+        "name": "Bartolomeo",
+        "slug": "Bartolomeo"
+      },
+      {
+        "name": "Sai",
+        "slug": "Sai"
+      },
+      {
+        "name": "Cavendish",
+        "slug": "Cavendish"
+      },
+      {
+        "name": "Bellamy",
+        "slug": "Bellamy"
+      },
+      {
+        "name": "Boo",
+        "slug": "Boo"
+      },
+      {
+        "name": "Rebecca",
+        "slug": "Rebecca"
+      },
+      {
+        "name": "Jesus Burgess",
+        "slug": "Jesus_Burgess"
+      },
+      {
+        "name": "Chinjao",
+        "slug": "Chinjao"
+      },
+      {
+        "name": "Suleiman",
+        "slug": "Suleiman"
+      },
+      {
+        "name": "Dagama",
+        "slug": "Dagama"
+      },
+      {
+        "name": "Kyros (statue)",
+        "slug": "Kyros"
+      }
+    ]
+  },
+  {
+    "volume_number": 72,
+    "english_title": "Dressrosa's Forgotten",
+    "japanese_title": "ドレスローザの忘れ物",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Chinjao",
+        "slug": "Chinjao"
+      },
+      {
+        "name": "Rebecca",
+        "slug": "Rebecca"
+      },
+      {
+        "name": "Thunder Soldier",
+        "slug": "Kyros"
+      },
+      {
+        "name": "Kabu",
+        "slug": "Kabu"
+      },
+      {
+        "name": "Leo",
+        "slug": "Leo"
+      },
+      {
+        "name": "Wicca",
+        "slug": "Wicca"
+      },
+      {
+        "name": "Flapper",
+        "slug": "Flapper"
+      },
+      {
+        "name": "Bomba",
+        "slug": "Bomba"
+      },
+      {
+        "name": "Mont Blanc Noland (statue)",
+        "slug": "Mont_Blanc_Noland"
+      }
+    ]
+  },
+  {
+    "volume_number": 73,
+    "english_title": "Operation Dressrosa S.O.P.",
+    "japanese_title": "ドレスローザSOP作戦",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Kouzuki Momonosuke",
+        "slug": "Kouzuki_Momonosuke"
+      },
+      {
+        "name": "Caesar Clown",
+        "slug": "Caesar_Clown"
+      },
+      {
+        "name": "Donquixote Doflamingo",
+        "slug": "Donquixote_Doflamingo"
+      },
+      {
+        "name": "Riku Doldo III",
+        "slug": "Riku_Doldo_III"
+      }
+    ]
+  },
+  {
+    "volume_number": 74,
+    "english_title": "Ever At Your Side",
+    "japanese_title": "いつでもキミのそばにいる",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Trebol",
+        "slug": "Trebol"
+      },
+      {
+        "name": "Pica",
+        "slug": "Pica"
+      },
+      {
+        "name": "Sugar",
+        "slug": "Sugar"
+      },
+      {
+        "name": "Senor Pink",
+        "slug": "Senor_Pink"
+      },
+      {
+        "name": "Thunder Soldier",
+        "slug": "Kyros"
+      },
+      {
+        "name": "Viola",
+        "slug": "Viola"
+      }
+    ]
+  },
+  {
+    "volume_number": 75,
+    "english_title": "My Repayment",
+    "japanese_title": "おれの恩返し",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Kyros",
+        "slug": "Kyros"
+      },
+      {
+        "name": "Sabo",
+        "slug": "Sabo"
+      },
+      {
+        "name": "Koala",
+        "slug": "Koala"
+      },
+      {
+        "name": "Issho",
+        "slug": "Issho"
+      },
+      {
+        "name": "Pica",
+        "slug": "Pica"
+      }
+    ]
+  },
+  {
+    "volume_number": 76,
+    "english_title": "Just Keep Going",
+    "japanese_title": "構わず進め",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Kyros",
+        "slug": "Kyros"
+      },
+      {
+        "name": "Rebecca",
+        "slug": "Rebecca"
+      },
+      {
+        "name": "Leo",
+        "slug": "Leo"
+      },
+      {
+        "name": "Sabo",
+        "slug": "Sabo"
+      },
+      {
+        "name": "Bartolomeo",
+        "slug": "Bartolomeo"
+      },
+      {
+        "name": "Cavendish",
+        "slug": "Cavendish"
+      },
+      {
+        "name": "Farul",
+        "slug": "Farul"
+      },
+      {
+        "name": "Kurozumi Kanjuro",
+        "slug": "Kurozumi_Kanjuro"
+      }
+    ]
+  },
+  {
+    "volume_number": 77,
+    "english_title": "Smile",
+    "japanese_title": "スマイル",
+    "cover_characters": [
+      {
+        "name": "Donquixote Doflamingo",
+        "slug": "Donquixote_Doflamingo"
+      },
+      {
+        "name": "Trebol",
+        "slug": "Trebol"
+      },
+      {
+        "name": "Diamante",
+        "slug": "Diamante"
+      },
+      {
+        "name": "Pica",
+        "slug": "Pica"
+      },
+      {
+        "name": "Sugar",
+        "slug": "Sugar"
+      },
+      {
+        "name": "Giolla",
+        "slug": "Giolla"
+      },
+      {
+        "name": "Lao G",
+        "slug": "Lao_G"
+      },
+      {
+        "name": "Senor Pink",
+        "slug": "Senor_Pink"
+      },
+      {
+        "name": "Machvise",
+        "slug": "Machvise"
+      },
+      {
+        "name": "Dellinger",
+        "slug": "Dellinger"
+      },
+      {
+        "name": "Gladius",
+        "slug": "Gladius"
+      },
+      {
+        "name": "Buffalo",
+        "slug": "Buffalo"
+      },
+      {
+        "name": "Baby 5",
+        "slug": "Baby_5"
+      }
+    ]
+  },
+  {
+    "volume_number": 78,
+    "english_title": "Champion of Evil",
+    "japanese_title": "悪のカリスマ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Hajrudin",
+        "slug": "Hajrudin"
+      },
+      {
+        "name": "Orlumbus",
+        "slug": "Orlumbus"
+      },
+      {
+        "name": "Cavendish",
+        "slug": "Cavendish"
+      },
+      {
+        "name": "Bartolomeo",
+        "slug": "Bartolomeo"
+      },
+      {
+        "name": "Sai",
+        "slug": "Sai"
+      },
+      {
+        "name": "Ideo",
+        "slug": "Ideo"
+      },
+      {
+        "name": "Elizabello II",
+        "slug": "Elizabello_II"
+      },
+      {
+        "name": "Rampo",
+        "slug": "Rampo"
+      },
+      {
+        "name": "Wicca",
+        "slug": "Wicca"
+      },
+      {
+        "name": "Chao",
+        "slug": "Chao"
+      },
+      {
+        "name": "Kabu",
+        "slug": "Kabu"
+      },
+      {
+        "name": "Mansherry",
+        "slug": "Mansherry"
+      },
+      {
+        "name": "Leo",
+        "slug": "Leo"
+      },
+      {
+        "name": "Inhel",
+        "slug": "Inhel"
+      },
+      {
+        "name": "Bomba",
+        "slug": "Bomba"
+      },
+      {
+        "name": "Bian",
+        "slug": "Bian"
+      }
+    ]
+  },
+  {
+    "volume_number": 79,
+    "english_title": "Lucy!!",
+    "japanese_title": "LUCY!!",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Donquixote Doflamingo",
+        "slug": "Donquixote_Doflamingo"
+      },
+      {
+        "name": "Sakazuki",
+        "slug": "Sakazuki"
+      },
+      {
+        "name": "Issho",
+        "slug": "Issho"
+      },
+      {
+        "name": "Gatz",
+        "slug": "Gatz"
+      },
+      {
+        "name": "Mansherry",
+        "slug": "Mansherry"
+      },
+      {
+        "name": "Kabu",
+        "slug": "Kabu"
+      },
+      {
+        "name": "Thunder Soldier",
+        "slug": "Kyros"
+      }
+    ]
+  },
+  {
+    "volume_number": 80,
+    "english_title": "Opening Speech",
+    "japanese_title": "開幕宣言",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Rebecca",
+        "slug": "Rebecca"
+      },
+      {
+        "name": "Issho",
+        "slug": "Issho"
+      },
+      {
+        "name": "Tsuru",
+        "slug": "Tsuru"
+      },
+      {
+        "name": "Sengoku",
+        "slug": "Sengoku"
+      },
+      {
+        "name": "Buggy",
+        "slug": "Buggy"
+      },
+      {
+        "name": "Edward Weevil",
+        "slug": "Edward_Weevil"
+      },
+      {
+        "name": "Bakkin",
+        "slug": "Bakkin"
+      },
+      {
+        "name": "Sai",
+        "slug": "Sai"
+      },
+      {
+        "name": "Bartolomeo",
+        "slug": "Bartolomeo"
+      },
+      {
+        "name": "Hajrudin",
+        "slug": "Hajrudin"
+      },
+      {
+        "name": "Ideo",
+        "slug": "Ideo"
+      },
+      {
+        "name": "Orlumbus",
+        "slug": "Orlumbus"
+      }
+    ]
+  },
+  {
+    "volume_number": 81,
+    "english_title": "Let's Go See Master Nekomamushi",
+    "japanese_title": "ネコマムシの旦那に会いに行こう",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Kouzuki Momonosuke",
+        "slug": "Kouzuki_Momonosuke"
+      },
+      {
+        "name": "Inuarashi",
+        "slug": "Inuarashi"
+      },
+      {
+        "name": "Nekomamushi",
+        "slug": "Nekomamushi"
+      },
+      {
+        "name": "Wanda",
+        "slug": "Wanda"
+      },
+      {
+        "name": "Carrot",
+        "slug": "Carrot"
+      },
+      {
+        "name": "Shishilian",
+        "slug": "Shishilian"
+      },
+      {
+        "name": "Giovanni",
+        "slug": "Giovanni"
+      },
+      {
+        "name": "Pedro",
+        "slug": "Pedro"
+      },
+      {
+        "name": "Roddy",
+        "slug": "Roddy"
+      },
+      {
+        "name": "Blackback",
+        "slug": "Blackback"
+      },
+      {
+        "name": "Keith",
+        "slug": "Keith"
+      }
+    ]
+  },
+  {
+    "volume_number": 82,
+    "english_title": "A World Abuzz",
+    "japanese_title": "ざわつく世界",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Pekoms",
+        "slug": "Pekoms"
+      },
+      {
+        "name": "Pedro",
+        "slug": "Pedro"
+      },
+      {
+        "name": "Carrot",
+        "slug": "Carrot"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "slug": "Nefertari_Vivi"
+      }
+    ]
+  },
+  {
+    "volume_number": 83,
+    "english_title": "Emperor of the Sea, Charlotte Linlin",
+    "japanese_title": "海賊「四皇」シャーロット・リンリン",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "slug": "Charlotte_Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "slug": "Napoleon"
+      },
+      {
+        "name": "Charlotte Praline",
+        "slug": "Charlotte_Praline"
+      },
+      {
+        "name": "Charlotte Brûlée",
+        "slug": "Charlotte_Br%C3%BBl%C3%A9e"
+      },
+      {
+        "name": "Charlotte Perospero",
+        "slug": "Charlotte_Perospero"
+      },
+      {
+        "name": "Charlotte Cracker",
+        "slug": "Charlotte_Cracker"
+      },
+      {
+        "name": "Charlotte Opera",
+        "slug": "Charlotte_Opera"
+      },
+      {
+        "name": "Charlotte Mont-d'Or",
+        "slug": "Charlotte_Mont-d%27Or"
+      },
+      {
+        "name": "Charlotte Chiffon",
+        "slug": "Charlotte_Chiffon"
+      }
+    ]
+  },
+  {
+    "volume_number": 84,
+    "english_title": "Luffy vs. Sanji",
+    "japanese_title": "ルフィVSサンジ",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Vinsmoke Judge",
+        "slug": "Vinsmoke_Judge"
+      },
+      {
+        "name": "Vinsmoke Reiju",
+        "slug": "Vinsmoke_Reiju"
+      },
+      {
+        "name": "Vinsmoke Ichiji",
+        "slug": "Vinsmoke_Ichiji"
+      },
+      {
+        "name": "Vinsmoke Niji",
+        "slug": "Vinsmoke_Niji"
+      },
+      {
+        "name": "Vinsmoke Yonji",
+        "slug": "Vinsmoke_Yonji"
+      }
+    ]
+  },
+  {
+    "volume_number": 85,
+    "english_title": "Liar",
+    "japanese_title": "ウソつき",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "slug": "Jinbe"
+      },
+      {
+        "name": "Pedro",
+        "slug": "Pedro"
+      },
+      {
+        "name": "Carrot",
+        "slug": "Carrot"
+      },
+      {
+        "name": "Vinsmoke Reiju",
+        "slug": "Vinsmoke_Reiju"
+      }
+    ]
+  },
+  {
+    "volume_number": 86,
+    "english_title": "Emperor Assassination Plan",
+    "japanese_title": "四皇暗殺作戦",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Capone Bege",
+        "slug": "Capone_Bege"
+      },
+      {
+        "name": "Caesar Clown",
+        "slug": "Caesar_Clown"
+      },
+      {
+        "name": "Charlotte Pudding",
+        "slug": "Charlotte_Pudding"
+      },
+      {
+        "name": "Vito",
+        "slug": "Vito"
+      },
+      {
+        "name": "Gotti",
+        "slug": "Gotti"
+      },
+      {
+        "name": "Charlotte Chiffon",
+        "slug": "Charlotte_Chiffon"
+      },
+      {
+        "name": "Capone Pez",
+        "slug": "Capone_Pez"
+      }
+    ]
+  },
+  {
+    "volume_number": 87,
+    "english_title": "Not Sweet",
+    "japanese_title": "甘くない",
+    "cover_characters": [
+      {
+        "name": "Charlotte Linlin",
+        "slug": "Charlotte_Linlin"
+      },
+      {
+        "name": "Charlotte Perospero",
+        "slug": "Charlotte_Perospero"
+      },
+      {
+        "name": "Charlotte Katakuri",
+        "slug": "Charlotte_Katakuri"
+      },
+      {
+        "name": "Charlotte Daifuku",
+        "slug": "Charlotte_Daifuku"
+      },
+      {
+        "name": "Charlotte Oven",
+        "slug": "Charlotte_Oven"
+      },
+      {
+        "name": "Charlotte Mont-d'Or",
+        "slug": "Charlotte_Mont-d%27Or"
+      },
+      {
+        "name": "Charlotte Compote",
+        "slug": "Charlotte_Compote"
+      },
+      {
+        "name": "Charlotte Brûlée",
+        "slug": "Charlotte_Br%C3%BBl%C3%A9e"
+      },
+      {
+        "name": "Charlotte Smoothie",
+        "slug": "Charlotte_Smoothie"
+      },
+      {
+        "name": "Charlotte Galette",
+        "slug": "Charlotte_Galette"
+      },
+      {
+        "name": "Tamago",
+        "slug": "Tamago"
+      },
+      {
+        "name": "Pekoms",
+        "slug": "Pekoms"
+      },
+      {
+        "name": "Streusen",
+        "slug": "Streusen"
+      },
+      {
+        "name": "Napoleon",
+        "slug": "Napoleon"
+      },
+      {
+        "name": "Zeus",
+        "slug": "Zeus"
+      },
+      {
+        "name": "Prometheus",
+        "slug": "Prometheus"
+      }
+    ]
+  },
+  {
+    "volume_number": 88,
+    "english_title": "Lion",
+    "japanese_title": "獅子",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "slug": "Jinbe"
+      },
+      {
+        "name": "Carrot",
+        "slug": "Carrot"
+      },
+      {
+        "name": "Capone Bege",
+        "slug": "Capone_Bege"
+      },
+      {
+        "name": "Charlotte Chiffon",
+        "slug": "Charlotte_Chiffon"
+      },
+      {
+        "name": "Charlotte Pudding",
+        "slug": "Charlotte_Pudding"
+      }
+    ]
+  },
+  {
+    "volume_number": 89,
+    "english_title": "Bad End Musical",
+    "japanese_title": "BADEND MUSICAL",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Charlotte Katakuri",
+        "slug": "Charlotte_Katakuri"
+      }
+    ]
+  },
+  {
+    "volume_number": 90,
+    "english_title": "The Holy Land Mary Geoise",
+    "japanese_title": "聖地マリージョア",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nefertari Cobra",
+        "slug": "Nefertari_Cobra"
+      },
+      {
+        "name": "Rob Lucci",
+        "slug": "Rob_Lucci"
+      },
+      {
+        "name": "Hattori",
+        "slug": "Hattori"
+      },
+      {
+        "name": "Sabo",
+        "slug": "Sabo"
+      },
+      {
+        "name": "Rebecca",
+        "slug": "Rebecca"
+      },
+      {
+        "name": "Mansherry",
+        "slug": "Mansherry"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "slug": "Monkey_D._Garp"
+      },
+      {
+        "name": "Karoo",
+        "slug": "Karoo"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "slug": "Nefertari_Vivi"
+      },
+      {
+        "name": "Leo",
+        "slug": "Leo"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "slug": "Bartholomew_Kuma"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "slug": "Jewelry_Bonney"
+      },
+      {
+        "name": "Wapol",
+        "slug": "Wapol"
+      },
+      {
+        "name": "Shirahoshi",
+        "slug": "Shirahoshi"
+      }
+    ]
+  },
+  {
+    "volume_number": 91,
+    "english_title": "Adventure in the Land of Samurai",
+    "japanese_title": "侍の国の冒険",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Tama",
+        "slug": "Tama"
+      }
+    ]
+  },
+  {
+    "volume_number": 92,
+    "english_title": "Introducing Komurasaki the Oiran",
+    "japanese_title": "花魁小紫登場",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Kaidou",
+        "slug": "Kaidou"
+      },
+      {
+        "name": "Eustass Kid",
+        "slug": "Eustass_Kid"
+      },
+      {
+        "name": "Kouzuki Hiyori",
+        "slug": "Kouzuki_Hiyori"
+      },
+      {
+        "name": "Toko",
+        "slug": "Toko"
+      },
+      {
+        "name": "Gama Pyonnosuke",
+        "slug": "Gama_Pyonnosuke"
+      }
+    ]
+  },
+  {
+    "volume_number": 93,
+    "english_title": "The Star of Ebisu Town",
+    "japanese_title": "えびす町の人気者",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Queen",
+        "slug": "Queen"
+      },
+      {
+        "name": "Shimotsuki Yasuie",
+        "slug": "Shimotsuki_Yasuie"
+      },
+      {
+        "name": "Hyougoro",
+        "slug": "Hyougoro"
+      },
+      {
+        "name": "Kouzuki Hiyori",
+        "slug": "Kouzuki_Hiyori"
+      },
+      {
+        "name": "Toko",
+        "slug": "Toko"
+      }
+    ]
+  },
+  {
+    "volume_number": 94,
+    "english_title": "A Soldier's Dream",
+    "japanese_title": "兵どもが夢",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Kouzuki Momonosuke",
+        "slug": "Kouzuki_Momonosuke"
+      },
+      {
+        "name": "Raizo",
+        "slug": "Raizo"
+      },
+      {
+        "name": "Kikunojo",
+        "slug": "Kikunojo"
+      },
+      {
+        "name": "Kawamatsu",
+        "slug": "Kawamatsu"
+      },
+      {
+        "name": "Hyougoro",
+        "slug": "Hyougoro"
+      },
+      {
+        "name": "Tama",
+        "slug": "Tama"
+      },
+      {
+        "name": "Kaidou",
+        "slug": "Kaidou"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "slug": "Charlotte_Linlin"
+      }
+    ]
+  },
+  {
+    "volume_number": 95,
+    "english_title": "Oden's Adventure",
+    "japanese_title": "おでんの冒険",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "slug": "Charlotte_Linlin"
+      },
+      {
+        "name": "Napoleon",
+        "slug": "Napoleon"
+      },
+      {
+        "name": "Kaidou",
+        "slug": "Kaidou"
+      },
+      {
+        "name": "Shanks",
+        "slug": "Shanks"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "slug": "Marshall_D._Teach"
+      }
+    ]
+  },
+  {
+    "volume_number": 96,
+    "english_title": "I am Oden, And I Was Born to Boil",
+    "japanese_title": "煮えてなんぼのおでんに候",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Kouzuki Oden",
+        "slug": "Kouzuki_Oden"
+      },
+      {
+        "name": "Gol D. Roger",
+        "slug": "Gol_D._Roger"
+      },
+      {
+        "name": "Silvers Rayleigh",
+        "slug": "Silvers_Rayleigh"
+      },
+      {
+        "name": "Shanks",
+        "slug": "Shanks"
+      },
+      {
+        "name": "Buggy",
+        "slug": "Buggy"
+      },
+      {
+        "name": "Edward Newgate",
+        "slug": "Edward_Newgate"
+      },
+      {
+        "name": "Marco",
+        "slug": "Marco"
+      },
+      {
+        "name": "Jozu",
+        "slug": "Jozu"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "slug": "Marshall_D._Teach"
+      }
+    ]
+  },
+  {
+    "volume_number": 97,
+    "english_title": "My Bible",
+    "japanese_title": "僕の聖書",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Eustass Kid",
+        "slug": "Eustass_Kid"
+      },
+      {
+        "name": "Who's Who",
+        "slug": "Who%27s_Who"
+      },
+      {
+        "name": "X Drake",
+        "slug": "X_Drake"
+      },
+      {
+        "name": "Page One",
+        "slug": "Page_One"
+      },
+      {
+        "name": "Sasaki",
+        "slug": "Sasaki"
+      },
+      {
+        "name": "Black Maria",
+        "slug": "Black_Maria"
+      },
+      {
+        "name": "Ulti",
+        "slug": "Ulti"
+      }
+    ]
+  },
+  {
+    "volume_number": 98,
+    "english_title": "Vassals of Glory",
+    "japanese_title": "忠臣錦",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Yamato",
+        "slug": "Yamato"
+      },
+      {
+        "name": "Kin'emon",
+        "slug": "Kin%27emon"
+      },
+      {
+        "name": "Denjiro",
+        "slug": "Denjiro"
+      },
+      {
+        "name": "Izou",
+        "slug": "Izou"
+      },
+      {
+        "name": "Kikunojo",
+        "slug": "Kikunojo"
+      },
+      {
+        "name": "Raizo",
+        "slug": "Raizo"
+      },
+      {
+        "name": "Ashura Doji",
+        "slug": "Ashura_Doji"
+      },
+      {
+        "name": "Inuarashi",
+        "slug": "Inuarashi"
+      },
+      {
+        "name": "Nekomamushi",
+        "slug": "Nekomamushi"
+      },
+      {
+        "name": "Kawamatsu",
+        "slug": "Kawamatsu"
+      }
+    ]
+  },
+  {
+    "volume_number": 99,
+    "english_title": "Straw Hat Luffy",
+    "japanese_title": "麦わらのルフィ",
+    "cover_characters": [
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Jinbe",
+        "slug": "Jinbe"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "slug": "Charlotte_Linlin"
+      },
+      {
+        "name": "Zeus",
+        "slug": "Zeus"
+      },
+      {
+        "name": "Napoleon",
+        "slug": "Napoleon"
+      },
+      {
+        "name": "Prometheus",
+        "slug": "Prometheus"
+      },
+      {
+        "name": "Homies",
+        "slug": "Homies"
+      }
+    ]
+  },
+  {
+    "volume_number": 100,
+    "english_title": "Color of the Supreme King",
+    "japanese_title": "覇王色",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "slug": "Portgas_D._Ace"
+      },
+      {
+        "name": "Yamato",
+        "slug": "Yamato"
+      }
+    ]
+  },
+  {
+    "volume_number": 101,
+    "english_title": "The Stars Take the Stage",
+    "japanese_title": "花形登場",
+    "cover_characters": [
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Kaidou",
+        "slug": "Kaidou"
+      }
+    ]
+  },
+  {
+    "volume_number": 102,
+    "english_title": "The Pivotal Clash",
+    "japanese_title": "天王山",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Kouzuki Momonosuke",
+        "slug": "Kouzuki_Momonosuke"
+      },
+      {
+        "name": "Kaidou",
+        "slug": "Kaidou"
+      },
+      {
+        "name": "King",
+        "slug": "King"
+      },
+      {
+        "name": "Queen",
+        "slug": "Queen"
+      }
+    ]
+  },
+  {
+    "volume_number": 103,
+    "english_title": "Warrior of Liberation",
+    "japanese_title": "解放の戦士",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Eustass Kid",
+        "slug": "Eustass_Kid"
+      },
+      {
+        "name": "Trafalgar D. Water Law",
+        "slug": "Trafalgar_D._Water_Law"
+      },
+      {
+        "name": "Kaidou",
+        "slug": "Kaidou"
+      }
+    ]
+  },
+  {
+    "volume_number": 104,
+    "english_title": "Shogun of Wano, Kozuki Momonosuke",
+    "japanese_title": "ワノ国将軍 光月モモの助",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Kouzuki Momonosuke",
+        "slug": "Kouzuki_Momonosuke"
+      },
+      {
+        "name": "Kouzuki Hiyori",
+        "slug": "Kouzuki_Hiyori"
+      }
+    ]
+  },
+  {
+    "volume_number": 105,
+    "english_title": "Luffy's Dream",
+    "japanese_title": "ルフィの夢",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "slug": "Marshall_D._Teach"
+      },
+      {
+        "name": "Shanks",
+        "slug": "Shanks"
+      },
+      {
+        "name": "Buggy",
+        "slug": "Buggy"
+      },
+      {
+        "name": "Carrot",
+        "slug": "Carrot"
+      }
+    ]
+  },
+  {
+    "volume_number": 106,
+    "english_title": "A Genius's Dream",
+    "japanese_title": "天才の夢",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Brook",
+        "slug": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "slug": "Jinbe"
+      }
+    ]
+  },
+  {
+    "volume_number": 107,
+    "english_title": "The Hero of Legend",
+    "japanese_title": "伝説の英雄",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Monkey D. Garp",
+        "slug": "Monkey_D._Garp"
+      },
+      {
+        "name": "Koby",
+        "slug": "Koby"
+      },
+      {
+        "name": "Helmeppo",
+        "slug": "Helmeppo"
+      },
+      {
+        "name": "Kujaku",
+        "slug": "Kujaku"
+      },
+      {
+        "name": "Hibari",
+        "slug": "Hibari"
+      },
+      {
+        "name": "Prince Grus",
+        "slug": "Prince_Grus"
+      },
+      {
+        "name": "Sabo",
+        "slug": "Sabo"
+      },
+      {
+        "name": "Nefertari Cobra",
+        "slug": "Nefertari_Cobra"
+      },
+      {
+        "name": "Morgans",
+        "slug": "Morgans"
+      }
+    ]
+  },
+  {
+    "volume_number": 108,
+    "english_title": "Better Off Dead in This World",
+    "japanese_title": "死んだ方がいい世界",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Franky",
+        "slug": "Franky"
+      },
+      {
+        "name": "Borsalino",
+        "slug": "Borsalino"
+      },
+      {
+        "name": "Sentomaru",
+        "slug": "Sentomaru"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "slug": "Jewelry_Bonney"
+      },
+      {
+        "name": "Vegapunk",
+        "slug": "Vegapunk"
+      },
+      {
+        "name": "Atlas",
+        "slug": "Atlas"
+      }
+    ]
+  },
+  {
+    "volume_number": 109,
+    "english_title": "On Your Side",
+    "japanese_title": "きみの味方",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Bartholomew Kuma",
+        "slug": "Bartholomew_Kuma"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "slug": "Jewelry_Bonney"
+      },
+      {
+        "name": "Vegapunk",
+        "slug": "Vegapunk"
+      },
+      {
+        "name": "Sentomaru",
+        "slug": "Sentomaru"
+      },
+      {
+        "name": "Borsalino",
+        "slug": "Borsalino"
+      },
+      {
+        "name": "Stussy",
+        "slug": "Stussy"
+      }
+    ]
+  },
+  {
+    "volume_number": 110,
+    "english_title": "The Upheaval of the Era",
+    "japanese_title": "時代のうねり",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "slug": "Jewelry_Bonney"
+      },
+      {
+        "name": "Dorry",
+        "slug": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "slug": "Brogy"
+      },
+      {
+        "name": "Jaygarcia Saturn",
+        "slug": "Jaygarcia_Saturn"
+      },
+      {
+        "name": "Marcus Mars",
+        "slug": "Marcus_Mars"
+      },
+      {
+        "name": "Topman Warcury",
+        "slug": "Topman_Warcury"
+      },
+      {
+        "name": "Ethanbaron V. Nusjuro",
+        "slug": "Ethanbaron_V._Nusjuro"
+      },
+      {
+        "name": "Shepherd Ju Peter",
+        "slug": "Shepherd_Ju_Peter"
+      }
+    ]
+  },
+  {
+    "volume_number": 111,
+    "english_title": "Adventure in Elbaph",
+    "japanese_title": "エルバフの冒険",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "slug": "Roronoa_Zoro"
+      },
+      {
+        "name": "Nami",
+        "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "slug": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "slug": "Tony_Tony_Chopper"
+      },
+      {
+        "name": "Loki",
+        "slug": "Loki"
+      }
+    ]
+  },
+  {
+    "volume_number": 112,
+    "english_title": "The Harley",
+    "japanese_title": "神典",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Nico Robin",
+        "slug": "Nico_Robin"
+      },
+      {
+        "name": "Hajrudin",
+        "slug": "Hajrudin"
+      },
+      {
+        "name": "Gerd",
+        "slug": "Gerd"
+      },
+      {
+        "name": "Road",
+        "slug": "Road"
+      },
+      {
+        "name": "Goldberg",
+        "slug": "Goldberg"
+      },
+      {
+        "name": "Stansen",
+        "slug": "Stansen"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "slug": "Jaguar_D._Saul"
+      }
+    ]
+  },
+  {
+    "volume_number": 113,
+    "english_title": "The Birth of Loki",
+    "japanese_title": "ロキ誕生",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "slug": "Figarland_Shamrock"
+      },
+      {
+        "name": "Gunko",
+        "slug": "Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "slug": "Shepherd_Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "slug": "Rimoshifu_Killingham"
+      },
+      {
+        "name": "Scopper Gaban",
+        "slug": "Scopper_Gaban"
+      }
+    ]
+  }
+]
