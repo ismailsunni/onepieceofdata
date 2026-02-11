@@ -1723,5 +1723,76 @@ def parse_story_structure(arcs_json: Optional[str], sagas_json: Optional[str]) -
         sys.exit(1)
 
 
+@main.command()
+@click.option(
+    "--database-path",
+    type=click.Path(),
+    help="Database file path (default: from config)"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Preview removals without modifying the database"
+)
+@click.option(
+    "--verbose",
+    is_flag=True,
+    default=False,
+    help="Show each entry being processed"
+)
+def filter_non_characters(database_path: Optional[str], dry_run: bool, verbose: bool) -> None:
+    """Remove non-character entries (crews, locations, titles, etc.) from character table.
+
+    Removes entries that have neither origin nor status, which indicates they
+    are not actual characters. A built-in whitelist preserves known characters
+    that happen to lack both fields.
+
+    Use --dry-run to preview what would be removed.
+    """
+    from .postprocessors.filter_non_characters import filter_non_characters as do_filter
+
+    click.echo("🧹 Filtering non-character entries...")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made")
+
+    if database_path is None:
+        database_path = str(settings.database_path)
+
+    if verbose:
+        def progress_cb(current: int, total: int, cid: str) -> None:
+            click.echo(f"  [{current}/{total}] checking {cid}")
+    else:
+        progress_cb = None
+
+    try:
+        result = do_filter(database_path, dry_run=dry_run, progress_callback=progress_cb)
+
+        click.echo(f"\n📊 Results:")
+        click.echo(f"  Entries checked (no origin & no status): {result['total_checked']}")
+        click.echo(f"  Removed: {result['removed']}")
+        click.echo(f"  Kept (whitelisted): {result['kept_whitelist']}")
+
+        if result['whitelisted_entries']:
+            click.echo("\n✅ Whitelisted characters kept:")
+            for cid, name in result['whitelisted_entries']:
+                click.echo(f"    • {name} ({cid})")
+
+        if result['removed_entries']:
+            click.echo(f"\n{'🔍 Would remove:' if dry_run else '🗑️  Removed:'}")
+            for cid, name in result['removed_entries']:
+                click.echo(f"    • {name} ({cid})")
+
+        if dry_run:
+            click.echo(f"\n💡 Run without --dry-run to apply changes")
+        else:
+            click.echo(f"\n✅ Non-character filtering complete!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}")
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     main()

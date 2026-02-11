@@ -2,6 +2,7 @@
 UV := uv
 
 .PHONY: help install install-dev test lint format clean setup check \
+	filter-non-characters filter-non-characters-dry-run \
 	extract-characters merge-characters merge-characters-dry-run sync-character-appearances sync-character-appearances-verbose sync-cover-appearances sync-cover-appearances-verbose run-character-workflow \
 	run-scrape run-scrape-parallel run-scrape-workers run-scrape-characters run-scrape-characters-parallel run-scrape-characters-workers run-scrape-volumes \
 	run-scrape-arcs run-scrape-sagas run-scrape-story-structure run-parse run-parse-story-structure \
@@ -106,6 +107,8 @@ help:
 	@echo ""
 	@echo "🔧 POST-PROCESSING"
 	@echo "─────────────────────────────────────────────────────────────────────"
+	@echo "  filter-non-characters             - Remove non-character entries (crews, locations, etc.)"
+	@echo "  filter-non-characters-dry-run    - Preview non-character removal"
 	@echo "  migrate-birth-dates              - Parse birth strings → birth_date (MM-DD)"
 	@echo "  migrate-birth-dates-full         - Parse birth strings → birth_date (YYYY-MM-DD)"
 	@echo "  load-cov                         - Load character-on-volume (cover characters)"
@@ -487,19 +490,22 @@ run-all-parsers:
 run-all-postprocessors:
 	@echo "🔧 Running ALL post-processors..."
 	@echo ""
-	@echo "📅 Step 1/5: Migrating birth dates..."
+	@echo "🧹 Step 1/6: Filtering non-character entries..."
+	$(MAKE) filter-non-characters
+	@echo ""
+	@echo "📅 Step 2/6: Migrating birth dates..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "🎨 Step 2/5: Loading character-on-volume (COV) data..."
+	@echo "🎨 Step 3/6: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
-	@echo "🔀 Step 3/5: Merging duplicate characters..."
+	@echo "🔀 Step 4/6: Merging duplicate characters..."
 	$(MAKE) merge-characters
 	@echo ""
-	@echo "🔄 Step 4/5: Syncing character chapter appearance analytics..."
+	@echo "🔄 Step 5/6: Syncing character chapter appearance analytics..."
 	$(MAKE) sync-character-appearances
 	@echo ""
-	@echo "🎨 Step 5/5: Syncing character cover appearance analytics..."
+	@echo "🎨 Step 6/6: Syncing character cover appearance analytics..."
 	$(MAKE) sync-cover-appearances
 	@echo ""
 	@echo "✅ All post-processing completed!"
@@ -597,6 +603,15 @@ status:
 db-status:
 	@echo "🗄️  Checking database content status..."
 	$(UV) run onepieceofdata db-status
+
+# Filter non-character entries (crews, locations, titles, etc.)
+filter-non-characters:
+	@echo "🧹 Filtering non-character entries..."
+	$(UV) run onepieceofdata filter-non-characters
+
+filter-non-characters-dry-run:
+	@echo "🔍 Previewing non-character filter (dry run)..."
+	$(UV) run onepieceofdata filter-non-characters --dry-run --verbose
 
 # Migrate birth dates (parse birth strings and add birth_date column)
 migrate-birth-dates:
