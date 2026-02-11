@@ -705,7 +705,7 @@ class DatabaseManager:
         return blood_type, blood_type_group
     
     def _parse_bounty(self, attributes: Dict[str, Any]) -> tuple[Optional[str], Optional[int]]:
-        """Parse bounty information."""
+        """Parse bounty information with improved parsing for new API format."""
         if "bounty" not in attributes:
             return None, None
 
@@ -715,18 +715,19 @@ class DatabaseManager:
 
         # Handle both string (from new API scraper) and list (from old scraper)
         if isinstance(bounties_raw, str):
-            # Split by newlines and keep only lines that look like bounty values
-            bounties_list = []
-            for line in bounties_raw.split('\n'):
-                line = line.strip()
-                # Skip empty lines, brackets, single numbers (reference markers), and lone brackets
-                if not line or line in ['[', ']']:
-                    continue
-                # Skip if it's just a number (reference marker like "14", "15")
-                if line.isdigit():
-                    continue
-                # Keep lines that contain bounty-like content
-                bounties_list.append(line)
+            # Handle both newline and semicolon separated formats
+            if '\n' in bounties_raw:
+                # Old format: split by newlines
+                bounties_list = []
+                for line in bounties_raw.split('\n'):
+                    line = line.strip()
+                    # Skip empty lines, brackets, single numbers (reference markers)
+                    if not line or line in ['[', ']'] or line.isdigit():
+                        continue
+                    bounties_list.append(line)
+            else:
+                # New format: may contain semicolons
+                bounties_list = [bounties_raw.strip()]
         else:
             bounties_list = bounties_raw
 
@@ -735,34 +736,38 @@ class DatabaseManager:
 
         bounties = ";".join(bounties_list)
 
-        # Find the first entry that looks like a bounty value (contains digits)
-        first_entry = None
+        # Improved bounty parsing that handles semicolon-separated format
+        bounty = None
+        import re
+        
+        # Look through all parts (split by semicolon and newline)
+        all_parts = []
         for entry in bounties_list:
-            entry = entry.replace("¥", "").strip()
-            # Skip entries that are just text prefixes
-            if entry in ["At least", "Unknown", "Over", "★"] or entry.startswith("bounty"):
+            # Split by semicolons to handle new API format
+            parts = [part.strip() for part in entry.split(';')]
+            all_parts.extend(parts)
+        
+        # Find numeric bounty value from all parts
+        for part in all_parts:
+            part = part.replace("¥", "").strip()
+            
+            # Skip obvious non-bounty parts
+            if part in ["At least", "Unknown", "Over", "★", "(", ")"] or part.startswith("bounty"):
                 continue
-            # Skip entries with just stars
-            if entry.replace("★", "").replace(" ", "") == "":
+            if part.replace("★", "").replace(" ", "") == "":
                 continue
-            # This looks like it might have a bounty value
-            first_entry = entry
-            break
-
-        if not first_entry or first_entry in ["Unknown", ""] or "Unknown" in first_entry:
-            bounty = None
-        else:
-            try:
-                # Try to extract just the number part
-                import re
-                # Look for a number with commas like "3,189,000,000"
-                match = re.search(r'[\d,]+', first_entry)
-                if match:
-                    bounty = int(match.group().replace(",", ""))
-                else:
-                    bounty = None
-            except (ValueError, AttributeError):
-                bounty = None
+                
+            # Look for numbers with commas
+            match = re.search(r'[\d,]+', part)
+            if match:
+                try:
+                    potential_bounty = int(match.group().replace(",", ""))
+                    # Sanity check - bounties should be reasonable
+                    if potential_bounty > 0 and potential_bounty <= 10_000_000_000:
+                        bounty = potential_bounty
+                        break
+                except ValueError:
+                    continue
         
         # Special case for Buggy (from original parser)
         if attributes.get("id") == "Buggy":
