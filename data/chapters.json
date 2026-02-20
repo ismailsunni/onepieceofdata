@@ -108251,38 +108251,62 @@
       {
         "name": "Impel Down",
         "url": "/wiki/Impel_Down",
-        "note": "",
+        "note": "image",
         "full_text": "Impel Down"
       },
       {
         "name": "Straw Hat Pirates",
         "url": "/wiki/Straw_Hat_Pirates",
-        "note": "",
+        "note": "image",
         "full_text": "Straw Hat Pirates"
       },
       {
         "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
+        "note": "image",
         "full_text": "Monkey D. Luffy"
       },
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "",
+        "note": "image",
         "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "image",
+        "full_text": "Nami"
       },
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "",
+        "note": "image",
         "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "image",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "image",
+        "full_text": "Tony Tony Chopper"
       },
       {
         "name": "Nico Robin",
         "url": "/wiki/Nico_Robin",
-        "note": "",
+        "note": "image",
         "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "image",
+        "full_text": "Franky"
       },
       {
         "name": "Brook",
@@ -108373,6 +108397,18 @@
         "url": "/wiki/Brownbeard",
         "note": "",
         "full_text": "Brownbeard"
+      },
+      {
+        "name": "Master",
+        "url": "/wiki/Caesar_Clown",
+        "note": "",
+        "full_text": "Master"
+      },
+      {
+        "name": "Samurai",
+        "url": "/wiki/Kin'emon",
+        "note": "",
+        "full_text": "Samurai"
       }
     ],
     "volume": "67",
@@ -110557,31 +110593,31 @@
       {
         "name": "Straw Hat Pirates",
         "url": "/wiki/Straw_Hat_Pirates",
-        "note": "",
+        "note": "voice",
         "full_text": "Straw Hat Pirates"
       },
       {
         "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
-        "note": "",
+        "note": "voice",
         "full_text": "Monkey D. Luffy"
       },
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "",
+        "note": "voice",
         "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
         "url": "/wiki/Nami",
-        "note": "",
+        "note": "voice",
         "full_text": "Nami"
       },
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "",
+        "note": "voice",
         "full_text": "Usopp"
       },
       {
@@ -153530,6 +153566,18 @@
         "full_text": "Napoleon"
       },
       {
+        "name": "Giant Warrior Pirates",
+        "url": "/wiki/Giant_Warrior_Pirates",
+        "note": "flashback",
+        "full_text": "Giant Warrior Pirates"
+      },
+      {
+        "name": "Kashii",
+        "url": "/wiki/Kashii",
+        "note": "flashback",
+        "full_text": "Kashii"
+      },
+      {
         "name": "Elbaph",
         "url": "/wiki/Elbaph",
         "note": "flashback",
@@ -153658,26 +153706,44 @@
       {
         "name": "Fire Tank Pirates",
         "url": "/wiki/Fire_Tank_Pirates",
-        "note": "cover",
+        "note": "flashback",
         "full_text": "Fire Tank Pirates"
       },
       {
         "name": "Capone Bege",
         "url": "/wiki/Capone_Bege",
-        "note": "cover",
+        "note": "flashback",
         "full_text": "Capone Bege"
       },
       {
         "name": "Vito",
         "url": "/wiki/Vito",
-        "note": "cover",
+        "note": "flashback",
         "full_text": "Vito"
       },
       {
         "name": "Gotti",
         "url": "/wiki/Gotti",
-        "note": "cover",
+        "note": "flashback",
         "full_text": "Gotti"
+      },
+      {
+        "name": "Giant Warrior Pirates",
+        "url": "/wiki/Giant_Warrior_Pirates",
+        "note": "flashback",
+        "full_text": "Giant Warrior Pirates"
+      },
+      {
+        "name": "Oimo",
+        "url": "/wiki/Oimo",
+        "note": "flashback",
+        "full_text": "Oimo"
+      },
+      {
+        "name": "Kashii",
+        "url": "/wiki/Kashii",
+        "note": "flashback",
+        "full_text": "Kashii"
       },
       {
         "name": "Beautiful Pirates",
@@ -155629,10 +155695,10 @@
         "full_text": "Charlotte Tablet"
       },
       {
-        "name": "Charlotte Kato",
-        "url": "/wiki/Charlotte_Kato",
+        "name": "Charlotte Kanten",
+        "url": "/wiki/Charlotte_Kanten",
         "note": "",
-        "full_text": "Charlotte Kato"
+        "full_text": "Charlotte Kanten"
       },
       {
         "name": "Charlotte Mobile",
@@ -156783,6 +156849,18 @@
         "url": "/wiki/Shishilian",
         "note": "flashback",
         "full_text": "Shishilian"
+      },
+      {
+        "name": "Concelot",
+        "url": "/wiki/Concelot",
+        "note": "flashback",
+        "full_text": "Concelot"
+      },
+      {
+        "name": "Giovanni",
+        "url": "/wiki/Giovanni",
+        "note": "flashback",
+        "full_text": "Giovanni"
       }
     ],
     "volume": "87",
@@ -167562,6 +167640,12 @@
         "url": "/wiki/Kouzuki_Hiyori",
         "note": "",
         "full_text": "Komurasaki"
+      },
+      {
+        "name": "Bunbuku",
+        "url": "/wiki/Bunbuku",
+        "note": "",
+        "full_text": "Bunbuku"
       },
       {
         "name": "Zou",
@@ -211145,20 +211229,32 @@
       {
         "name": "Jinbe",
         "url": "/wiki/Jinbe",
-        "note": "",
+        "note": "Zombie",
         "full_text": "Jinbe"
       },
       {
         "name": "Bonney Pirates",
         "url": "/wiki/Bonney_Pirates",
-        "note": "",
+        "note": "Zombie",
         "full_text": "Bonney Pirates"
       },
       {
         "name": "Jewelry Bonney",
         "url": "/wiki/Jewelry_Bonney",
-        "note": "",
+        "note": "Zombie",
         "full_text": "Jewelry Bonney"
+      },
+      {
+        "name": "Thriller Bark Pirates",
+        "url": "/wiki/Thriller_Bark_Pirates",
+        "note": "Zombie",
+        "full_text": "Thriller Bark Pirates"
+      },
+      {
+        "name": "Ryuma",
+        "url": "/wiki/Ryuma_(Zombie)",
+        "note": "cover",
+        "full_text": "Ryuma"
       },
       {
         "name": "Five Elders",
@@ -211507,7 +211603,7 @@
       {
         "name": "Pirate",
         "url": "/wiki/Pirate",
-        "note": "cover",
+        "note": "",
         "full_text": "Pirate"
       },
       {
@@ -211547,16 +211643,16 @@
         "full_text": "Silvers Rayleigh"
       },
       {
-        "name": "Sunbell",
-        "url": "/wiki/Sunbell",
-        "note": "",
-        "full_text": "Sunbell"
-      },
-      {
         "name": "Scopper Gaban",
         "url": "/wiki/Scopper_Gaban",
-        "note": "voice",
+        "note": "",
         "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Sunbell",
+        "url": "/wiki/Sunbell",
+        "note": "voice",
+        "full_text": "Sunbell"
       },
       {
         "name": "Millet Pine",
@@ -217540,42 +217636,42 @@
       {
         "name": "Jewelry Bonney",
         "url": "/wiki/Jewelry_Bonney",
-        "note": "",
+        "note": "Pirate",
         "full_text": "Jewelry Bonney"
       },
       {
         "name": "Giant Warrior Pirates",
         "url": "/wiki/Giant_Warrior_Pirates",
-        "note": "",
+        "note": "Pirate",
         "full_text": "Giant Warrior Pirates"
       },
       {
         "name": "Dorry",
         "url": "/wiki/Dorry",
-        "note": "",
+        "note": "Pirate",
         "full_text": "Dorry"
       },
       {
         "name": "Brogy",
         "url": "/wiki/Brogy",
-        "note": "",
+        "note": "Pirate",
         "full_text": "Brogy"
       },
       {
         "name": "Oimo",
         "url": "/wiki/Oimo",
-        "note": "",
+        "note": "Pirate",
         "full_text": "Oimo"
       },
       {
         "name": "Kashii",
         "url": "/wiki/Kashii",
-        "note": "",
+        "note": "Pirate",
         "full_text": "Kashii"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn",
+        "url": "/wiki/Bjorn_(Pirate)",
         "note": "",
         "full_text": "Bjorn"
       },
@@ -221849,48 +221945,48 @@
       {
         "name": "Jaguar D. Saul",
         "url": "/wiki/Jaguar_D._Saul",
-        "note": "Student",
+        "note": "",
         "full_text": "Jaguar D. Saul"
       },
       {
         "name": "Ripley",
         "url": "/wiki/Ripley",
-        "note": "Student",
+        "note": "",
         "full_text": "Ripley"
       },
       {
         "name": "Ange",
         "url": "/wiki/Ange",
-        "note": "Student",
+        "note": "",
         "full_text": "Ange"
       },
       {
         "name": "Biblo",
         "url": "/wiki/Biblo",
-        "note": "Student",
+        "note": "",
         "full_text": "Biblo"
       },
       {
         "name": "Loki",
         "url": "/wiki/Loki",
-        "note": "Student",
+        "note": "",
         "full_text": "Loki"
       },
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Aegir",
         "url": "/wiki/Aegir",
-        "note": "Student",
+        "note": "",
         "full_text": "Aegir"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "",
         "full_text": "Bjorn"
       },
@@ -223560,24 +223656,24 @@
       {
         "name": "Wolf",
         "url": "/wiki/Wolf_(Elbaph)",
-        "note": "Student",
+        "note": "",
         "full_text": "Wolf"
       },
       {
         "name": "Aegir",
         "url": "/wiki/Aegir",
-        "note": "Student",
+        "note": "",
         "full_text": "Aegir"
       },
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "",
         "full_text": "Bjorn"
       },
@@ -223861,54 +223957,54 @@
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Skaldi",
         "url": "/wiki/Skaldi",
-        "note": "Student",
+        "note": "",
         "full_text": "Skaldi"
       },
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "Student",
+        "note": "",
         "full_text": "Olav"
       },
       {
         "name": "Karin",
         "url": "/wiki/Karin",
-        "note": "Student",
+        "note": "",
         "full_text": "Karin"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "",
         "full_text": "Mag"
       },
       {
         "name": "Ronja",
         "url": "/wiki/Ronja",
-        "note": "Student",
+        "note": "",
         "full_text": "Ronja"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "",
         "full_text": "Bjorn"
       },
@@ -224096,54 +224192,54 @@
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Skaldi",
         "url": "/wiki/Skaldi",
-        "note": "Student",
+        "note": "",
         "full_text": "Skaldi"
       },
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "Student",
+        "note": "",
         "full_text": "Olav"
       },
       {
         "name": "Karin",
         "url": "/wiki/Karin",
-        "note": "Student",
+        "note": "",
         "full_text": "Karin"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "",
         "full_text": "Mag"
       },
       {
         "name": "Ronja",
         "url": "/wiki/Ronja",
-        "note": "Student",
+        "note": "",
         "full_text": "Ronja"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "",
         "full_text": "Bjorn"
       },
@@ -224457,54 +224553,54 @@
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Skaldi",
         "url": "/wiki/Skaldi",
-        "note": "Student",
+        "note": "",
         "full_text": "Skaldi"
       },
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "Student",
+        "note": "",
         "full_text": "Olav"
       },
       {
         "name": "Karin",
         "url": "/wiki/Karin",
-        "note": "Student",
+        "note": "",
         "full_text": "Karin"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "",
         "full_text": "Mag"
       },
       {
         "name": "Ronja",
         "url": "/wiki/Ronja",
-        "note": "Student",
+        "note": "",
         "full_text": "Ronja"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "cover",
         "full_text": "Bjorn"
       },
@@ -224752,54 +224848,54 @@
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Skaldi",
         "url": "/wiki/Skaldi",
-        "note": "Student",
+        "note": "",
         "full_text": "Skaldi"
       },
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "Student",
+        "note": "",
         "full_text": "Olav"
       },
       {
         "name": "Karin",
         "url": "/wiki/Karin",
-        "note": "Student",
+        "note": "",
         "full_text": "Karin"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "",
         "full_text": "Mag"
       },
       {
         "name": "Ronja",
         "url": "/wiki/Ronja",
-        "note": "Student",
+        "note": "flashback",
         "full_text": "Ronja"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "flashback",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "flashback",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "flashback",
         "full_text": "Bjorn"
       },
@@ -225059,54 +225155,54 @@
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Skaldi",
         "url": "/wiki/Skaldi",
-        "note": "Student",
+        "note": "",
         "full_text": "Skaldi"
       },
       {
         "name": "Ronja",
         "url": "/wiki/Ronja",
-        "note": "Student",
+        "note": "",
         "full_text": "Ronja"
       },
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "Student",
+        "note": "",
         "full_text": "Olav"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "",
         "full_text": "Mag"
       },
       {
         "name": "Karin",
         "url": "/wiki/Karin",
-        "note": "Student",
+        "note": "",
         "full_text": "Karin"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "cover",
         "full_text": "Bjorn"
       },
@@ -225318,48 +225414,48 @@
       {
         "name": "Biblo",
         "url": "/wiki/Biblo",
-        "note": "Student",
+        "note": "",
         "full_text": "Biblo"
       },
       {
         "name": "Scopper Gaban",
         "url": "/wiki/Scopper_Gaban",
-        "note": "Student",
+        "note": "",
         "full_text": "Scopper Gaban"
       },
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "",
         "full_text": "Mag"
       },
       {
         "name": "Ronja",
         "url": "/wiki/Ronja",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Ronja"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "cover",
         "full_text": "Bjorn"
       },
@@ -225577,54 +225673,54 @@
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Skaldi",
         "url": "/wiki/Skaldi",
-        "note": "Student",
+        "note": "",
         "full_text": "Skaldi"
       },
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "Student",
+        "note": "",
         "full_text": "Olav"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "",
         "full_text": "Mag"
       },
       {
         "name": "Ronja",
         "url": "/wiki/Ronja",
-        "note": "Student",
+        "note": "",
         "full_text": "Ronja"
       },
       {
         "name": "Karin",
         "url": "/wiki/Karin",
-        "note": "Student",
+        "note": "",
         "full_text": "Karin"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "cover",
         "full_text": "Bjorn"
       },
@@ -226028,48 +226124,48 @@
       {
         "name": "Ripley",
         "url": "/wiki/Ripley",
-        "note": "Student",
+        "note": "",
         "full_text": "Ripley"
       },
       {
         "name": "Scopper Gaban",
         "url": "/wiki/Scopper_Gaban",
-        "note": "Student",
+        "note": "",
         "full_text": "Scopper Gaban"
       },
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Karin",
         "url": "/wiki/Karin",
-        "note": "Student",
+        "note": "",
         "full_text": "Karin"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Mag"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "cover",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "cover",
         "full_text": "Bjorn"
       },
@@ -232166,54 +232262,54 @@
       {
         "name": "Ylva",
         "url": "/wiki/Ylva",
-        "note": "Student",
+        "note": "",
         "full_text": "Ylva"
       },
       {
         "name": "Skaldi",
         "url": "/wiki/Skaldi",
-        "note": "Student",
+        "note": "",
         "full_text": "Skaldi"
       },
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "Student",
+        "note": "through Gunko",
         "full_text": "Olav"
       },
       {
         "name": "Karin",
         "url": "/wiki/Karin",
-        "note": "Student",
+        "note": "through Gunko",
         "full_text": "Karin"
       },
       {
         "name": "Mag",
         "url": "/wiki/Mag",
-        "note": "Student",
+        "note": "through Gunko",
         "full_text": "Mag"
       },
       {
         "name": "Ronja",
         "url": "/wiki/Ronja",
-        "note": "Student",
+        "note": "through Gunko",
         "full_text": "Ronja"
       },
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "Student",
+        "note": "through Gunko",
         "full_text": "Bent"
       },
       {
         "name": "Johanna",
         "url": "/wiki/Johanna",
-        "note": "Student",
+        "note": "through Gunko",
         "full_text": "Johanna"
       },
       {
         "name": "Bjorn",
-        "url": "/wiki/Bjorn_(Student)",
+        "url": "/wiki/Bjorn",
         "note": "through Gunko",
         "full_text": "Bjorn"
       },
@@ -232271,5 +232367,203 @@
     "pages": "17",
     "release_date": "February 9, 2026",
     "jump_info": "2026 Issue 11"
+  },
+  {
+    "chapter_number": 1174,
+    "title": "The Strongest Thing in the World",
+    "japanese_title": "せかいで1ばんつよいもの{{Web ref|name=title|url=https://x.com/Eiichiro_Staff/status/2023049675188957330|title=【訂正】|last=ONE PIECE スタッフ【公式】/ Official|user=Eiichiro_Staff|lang=ja|trans-title=Correction|site:x.com|date=2026-02-15|access-date=2026-02-15",
+    "characters": [
+      {
+        "name": "Pirate",
+        "url": "/wiki/Pirate",
+        "note": "",
+        "full_text": "Pirate"
+      },
+      {
+        "name": "World Government",
+        "url": "/wiki/World_Government",
+        "note": "",
+        "full_text": "World Government"
+      },
+      {
+        "name": "Straw Hat Pirates",
+        "url": "/wiki/Straw_Hat_Pirates",
+        "note": "",
+        "full_text": "Straw Hat Pirates"
+      },
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "New Giant Warrior Pirates",
+        "url": "/wiki/New_Giant_Warrior_Pirates",
+        "note": "",
+        "full_text": "New Giant Warrior Pirates"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "cover",
+        "full_text": "Road"
+      },
+      {
+        "name": "Giant Warrior Pirates",
+        "url": "/wiki/Giant_Warrior_Pirates",
+        "note": "cover",
+        "full_text": "Giant Warrior Pirates"
+      },
+      {
+        "name": "Oimo",
+        "url": "/wiki/Oimo",
+        "note": "cover",
+        "full_text": "Oimo"
+      },
+      {
+        "name": "Roger Pirates",
+        "url": "/wiki/Roger_Pirates",
+        "note": "cover",
+        "full_text": "Roger Pirates"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "cover",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Elbaph",
+        "url": "/wiki/Elbaph",
+        "note": "",
+        "full_text": "Elbaph"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Ragnir",
+        "url": "/wiki/Ragnir",
+        "note": "",
+        "full_text": "Ragnir"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
+      },
+      {
+        "name": "Olav",
+        "url": "/wiki/Olav",
+        "note": "through Gunko",
+        "full_text": "Olav"
+      },
+      {
+        "name": "Karin",
+        "url": "/wiki/Karin",
+        "note": "through Gunko",
+        "full_text": "Karin"
+      },
+      {
+        "name": "Mag",
+        "url": "/wiki/Mag",
+        "note": "through Gunko",
+        "full_text": "Mag"
+      },
+      {
+        "name": "Ronja",
+        "url": "/wiki/Ronja",
+        "note": "through Gunko",
+        "full_text": "Ronja"
+      },
+      {
+        "name": "Bent",
+        "url": "/wiki/Bent",
+        "note": "through Gunko",
+        "full_text": "Bent"
+      },
+      {
+        "name": "Johanna",
+        "url": "/wiki/Johanna",
+        "note": "through Gunko",
+        "full_text": "Johanna"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn",
+        "note": "through Gunko",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Imu",
+        "url": "/wiki/Imu",
+        "note": "through Gunko",
+        "full_text": "Imu"
+      },
+      {
+        "name": "Knights of God",
+        "url": "/wiki/Knights_of_God",
+        "note": "possessed",
+        "full_text": "Knights of God"
+      },
+      {
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
+        "note": "possessed",
+        "full_text": "Manmayer Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "",
+        "full_text": "Rimoshifu Killingham"
+      }
+    ],
+    "volume": "TBA",
+    "chapter_display": "1174",
+    "pages": "17",
+    "release_date": "February 16, 2026",
+    "jump_info": "2026 Issue 12"
   }
 ]
