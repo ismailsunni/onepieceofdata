@@ -7519,6 +7519,7 @@ chapter,character,note
 483,Brook,
 483,Margarita,
 483,Egana,
+483,Thriller_Bark_Victim's_Association,
 483,Spoil,
 484,Monkey_D._Luffy,K.O.
 484,Roronoa_Zoro,
@@ -11700,10 +11701,14 @@ chapter,character,note
 661,Mocha,
 661,Uzu,
 661,Konbu,
-662,Monkey_D._Luffy,
-662,Roronoa_Zoro,
-662,Usopp,
-662,Nico_Robin,
+662,Monkey_D._Luffy,image
+662,Roronoa_Zoro,image
+662,Nami,image
+662,Usopp,image
+662,Sanji,image
+662,Tony_Tony_Chopper,image
+662,Nico_Robin,image
+662,Franky,image
 662,Brook,
 662,Trafalgar_D._Water_Law,cover
 662,Smoker,cover
@@ -11715,6 +11720,8 @@ chapter,character,note
 662,Minochihuahua,cover
 662,Monet,
 662,Brownbeard,
+662,Caesar_Clown,
+662,Kin'emon,
 663,Monkey_D._Luffy,
 663,Roronoa_Zoro,
 663,Nami,
@@ -11965,10 +11972,10 @@ chapter,character,note
 674,Konbu,
 674,Biyo,
 674,Ally,
-675,Monkey_D._Luffy,
-675,Roronoa_Zoro,
-675,Nami,
-675,Usopp,
+675,Monkey_D._Luffy,voice
+675,Roronoa_Zoro,voice
+675,Nami,voice
+675,Usopp,voice
 675,Sanji,
 675,Nico_Robin,
 675,Franky,
@@ -16912,6 +16919,7 @@ chapter,character,note
 867,Monkey_D._Luffy,
 867,Charlotte_Linlin,flashback
 867,Napoleon,flashback
+867,Kashii,flashback
 867,Carmel,flashback
 867,Pandora,flashback
 867,Jorul,flashback
@@ -16926,9 +16934,11 @@ chapter,character,note
 868,Tony_Tony_Chopper,
 868,Brook,
 868,Jinbe,
-868,Capone_Bege,cover
-868,Vito,cover
-868,Gotti,cover
+868,Capone_Bege,flashback
+868,Vito,flashback
+868,Gotti,flashback
+868,Oimo,flashback
+868,Kashii,flashback
 868,Cavendish,cover
 868,Suleiman,cover
 868,Charlotte_Linlin,
@@ -17194,7 +17204,7 @@ chapter,character,note
 873,Charlotte_Laurin,
 873,Charlotte_Mont-d'Or,
 873,Charlotte_Tablet,
-873,Charlotte_Kato,
+873,Charlotte_Kanten,
 873,Charlotte_Mobile,
 873,Charlotte_Compote,Cont.
 873,Charlotte_Brûlée,Cont.
@@ -17339,6 +17349,8 @@ chapter,character,note
 878,Wanda,flashback
 878,Carrot,flashback
 878,Shishilian,flashback
+878,Concelot,flashback
+878,Giovanni,flashback
 879,Monkey_D._Luffy,
 879,Nami,
 879,Sanji,
@@ -18597,6 +18609,7 @@ chapter,character,note
 925,Ashura_Doji,
 925,Komachiyo,
 925,Kouzuki_Hiyori,
+925,Bunbuku,
 925,Inuarashi,
 925,Shishilian,
 925,Carrot,
@@ -23968,8 +23981,9 @@ chapter,character,note
 1094,Tony_Tony_Chopper,
 1094,Nico_Robin,
 1094,Franky,
-1094,Jinbe,
-1094,Jewelry_Bonney,
+1094,Jinbe,Zombie
+1094,Jewelry_Bonney,Zombie
+1094,Ryuma,cover
 1094,Jaygarcia_Saturn,
 1094,Borsalino,
 1094,Pomsky,
@@ -24009,8 +24023,8 @@ chapter,character,note
 1096,Roronoa_Zoro,cover
 1096,Gol_D._Roger,
 1096,Silvers_Rayleigh,
-1096,Sunbell,
-1096,Scopper_Gaban,voice
+1096,Scopper_Gaban,
+1096,Sunbell,voice
 1096,Millet_Pine,voice
 1096,Spencer,voice
 1096,Yui,voice
@@ -24689,11 +24703,11 @@ chapter,character,note
 1118,Usopp,
 1118,Sanji,
 1118,Franky,
-1118,Jewelry_Bonney,
-1118,Dorry,
-1118,Brogy,
-1118,Oimo,
-1118,Kashii,
+1118,Jewelry_Bonney,Pirate
+1118,Dorry,Pirate
+1118,Brogy,Pirate
+1118,Oimo,Pirate
+1118,Kashii,Pirate
 1118,Bjorn,
 1118,Sig,
 1118,Leo,
@@ -25198,13 +25212,13 @@ chapter,character,note
 1134,Jewelry_Bonney,
 1134,Brogy,
 1134,Gerd,
-1134,Jaguar_D._Saul,Student
-1134,Ripley,Student
-1134,Ange,Student
-1134,Biblo,Student
-1134,Loki,Student
-1134,Ylva,Student
-1134,Aegir,Student
+1134,Jaguar_D._Saul,
+1134,Ripley,
+1134,Ange,
+1134,Biblo,
+1134,Loki,
+1134,Ylva,
+1134,Aegir,
 1134,Bjorn,
 1134,Skaldi,image
 1134,Ronja,image
@@ -25399,9 +25413,9 @@ chapter,character,note
 1142,Jaguar_D._Saul,Elbaph
 1142,Blade,Elbaph
 1142,Ange,Elbaph
-1142,Wolf,Student
-1142,Aegir,Student
-1142,Ylva,Student
+1142,Wolf,
+1142,Aegir,
+1142,Ylva,
 1142,Bjorn,
 1142,Skaldi,
 1142,Olav,
@@ -25439,14 +25453,14 @@ chapter,character,note
 1143,Jarul,
 1143,Jaguar_D._Saul,
 1143,Ange,
-1143,Ylva,Student
-1143,Skaldi,Student
-1143,Olav,Student
-1143,Karin,Student
-1143,Mag,Student
-1143,Ronja,Student
-1143,Bent,Student
-1143,Johanna,Student
+1143,Ylva,
+1143,Skaldi,
+1143,Olav,
+1143,Karin,
+1143,Mag,
+1143,Ronja,
+1143,Bent,
+1143,Johanna,
 1143,Bjorn,
 1143,Loki,
 1143,Manmayer_Gunko,
@@ -25469,14 +25483,14 @@ chapter,character,note
 1144,Jaguar_D._Saul,
 1144,Ange,
 1144,Ripley,
-1144,Ylva,Student
-1144,Skaldi,Student
-1144,Olav,Student
-1144,Karin,Student
-1144,Mag,Student
-1144,Ronja,Student
-1144,Bent,Student
-1144,Johanna,Student
+1144,Ylva,
+1144,Skaldi,
+1144,Olav,
+1144,Karin,
+1144,Mag,
+1144,Ronja,
+1144,Bent,
+1144,Johanna,
 1144,Bjorn,
 1144,Colon,
 1144,Scopper_Gaban,cover
@@ -25513,14 +25527,14 @@ chapter,character,note
 1145,Page_One,cover
 1145,Loki,
 1145,Jaguar_D._Saul,
-1145,Ylva,Student
-1145,Skaldi,Student
-1145,Olav,Student
-1145,Karin,Student
-1145,Mag,Student
-1145,Ronja,Student
-1145,Bent,Student
-1145,Johanna,Student
+1145,Ylva,
+1145,Skaldi,
+1145,Olav,
+1145,Karin,
+1145,Mag,
+1145,Ronja,
+1145,Bent,cover
+1145,Johanna,cover
 1145,Bjorn,cover
 1145,Colon,cover
 1145,Scopper_Gaban,cover
@@ -25548,14 +25562,14 @@ chapter,character,note
 1146,Jaguar_D._Saul,
 1146,Ange,
 1146,Ripley,
-1146,Ylva,Student
-1146,Skaldi,Student
-1146,Olav,Student
-1146,Karin,Student
-1146,Mag,Student
-1146,Ronja,Student
-1146,Bent,Student
-1146,Johanna,Student
+1146,Ylva,
+1146,Skaldi,
+1146,Olav,
+1146,Karin,
+1146,Mag,
+1146,Ronja,flashback
+1146,Bent,flashback
+1146,Johanna,flashback
 1146,Bjorn,flashback
 1146,Colon,flashback
 1146,Loki,flashback
@@ -25587,14 +25601,14 @@ chapter,character,note
 1147,Ange,
 1147,Ripley,
 1147,Scopper_Gaban,
-1147,Ylva,Student
-1147,Skaldi,Student
-1147,Ronja,Student
-1147,Olav,Student
-1147,Mag,Student
-1147,Karin,Student
-1147,Bent,Student
-1147,Johanna,Student
+1147,Ylva,
+1147,Skaldi,
+1147,Ronja,
+1147,Olav,
+1147,Mag,
+1147,Karin,
+1147,Bent,
+1147,Johanna,
 1147,Bjorn,cover
 1147,Colon,cover
 1147,Lilith,cover
@@ -25619,13 +25633,13 @@ chapter,character,note
 1148,Jaguar_D._Saul,
 1148,Ange,
 1148,Ripley,
-1148,Biblo,Student
-1148,Scopper_Gaban,Student
-1148,Ylva,Student
-1148,Mag,Student
-1148,Ronja,Student
-1148,Bent,Student
-1148,Johanna,Student
+1148,Biblo,
+1148,Scopper_Gaban,
+1148,Ylva,
+1148,Mag,
+1148,Ronja,cover
+1148,Bent,cover
+1148,Johanna,cover
 1148,Bjorn,cover
 1148,Colon,cover
 1148,Yamato,cover
@@ -25652,14 +25666,14 @@ chapter,character,note
 1149,Blade,
 1149,Ripley,
 1149,Scopper_Gaban,
-1149,Ylva,Student
-1149,Skaldi,Student
-1149,Olav,Student
-1149,Mag,Student
-1149,Ronja,Student
-1149,Karin,Student
-1149,Bent,Student
-1149,Johanna,Student
+1149,Ylva,
+1149,Skaldi,
+1149,Olav,
+1149,Mag,
+1149,Ronja,
+1149,Karin,
+1149,Bent,cover
+1149,Johanna,cover
 1149,Bjorn,cover
 1149,Colon,cover
 1149,Lilith,cover
@@ -25708,13 +25722,13 @@ chapter,character,note
 1151,Road,
 1151,Goldberg,
 1151,Gerd,
-1151,Ripley,Student
-1151,Scopper_Gaban,Student
-1151,Ylva,Student
-1151,Karin,Student
-1151,Mag,Student
-1151,Bent,Student
-1151,Johanna,Student
+1151,Ripley,
+1151,Scopper_Gaban,
+1151,Ylva,
+1151,Karin,
+1151,Mag,cover
+1151,Bent,cover
+1151,Johanna,cover
 1151,Bjorn,cover
 1151,Colon,cover
 1151,Loki,cover
@@ -26463,14 +26477,14 @@ chapter,character,note
 1173,Ripley,flashback
 1173,Ange,flashback
 1173,Colon,
-1173,Ylva,Student
-1173,Skaldi,Student
-1173,Olav,Student
-1173,Karin,Student
-1173,Mag,Student
-1173,Ronja,Student
-1173,Bent,Student
-1173,Johanna,Student
+1173,Ylva,
+1173,Skaldi,
+1173,Olav,through Gunko
+1173,Karin,through Gunko
+1173,Mag,through Gunko
+1173,Ronja,through Gunko
+1173,Bent,through Gunko
+1173,Johanna,through Gunko
 1173,Bjorn,through Gunko
 1173,Imu,through Gunko
 1173,Manmayer_Gunko,
@@ -26478,3 +26492,26 @@ chapter,character,note
 1173,Dorry,
 1173,Brogy,
 1173,Thormann,
+1174,Monkey_D._Luffy,
+1174,Road,cover
+1174,Oimo,cover
+1174,Gol_D._Roger,cover
+1174,Loki,
+1174,Ragnir,
+1174,Jarul,
+1174,Ripley,
+1174,Ange,
+1174,Colon,
+1174,Ylva,
+1174,Skaldi,
+1174,Olav,through Gunko
+1174,Karin,through Gunko
+1174,Mag,through Gunko
+1174,Ronja,through Gunko
+1174,Bent,through Gunko
+1174,Johanna,through Gunko
+1174,Bjorn,through Gunko
+1174,Imu,through Gunko
+1174,Manmayer_Gunko,possessed
+1174,Shepherd_Sommers,
+1174,Rimoshifu_Killingham,
