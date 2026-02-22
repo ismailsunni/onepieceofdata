@@ -1794,5 +1794,76 @@ def filter_non_characters(database_path: Optional[str], dry_run: bool, verbose: 
         sys.exit(1)
 
 
+@main.command()
+@click.option(
+    "--database-path",
+    type=click.Path(),
+    help="Database file path (default: from config)"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Classify origins but do not write results to the database"
+)
+@click.option(
+    "--verbose",
+    is_flag=True,
+    default=False,
+    help="Show the region assigned to each character"
+)
+def sync_origin_region(database_path: Optional[str], dry_run: bool, verbose: bool) -> None:
+    """Populate the origin_region column based on each character's origin field.
+
+    Classifies characters into broad geographic regions:
+    East Blue, North Blue, West Blue, South Blue, Grand Line, New World,
+    Sky Island, Red Line, Calm Belt, Underwater.
+
+    The origin_region column is created automatically if it does not exist.
+    Use --dry-run to preview classifications without writing to the database.
+    """
+    from .postprocessors.sync_origin_region import sync_origin_region as do_sync
+
+    click.echo("🗺️  Syncing character origin regions...\n")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made\n")
+
+    if database_path is None:
+        database_path = str(settings.database_path)
+
+    if verbose:
+        def progress_callback(current: int, total: int, char_id: str, stats: dict) -> None:
+            region = stats.get("region") or "unclassified"
+            click.echo(f"  [{current:,}/{total:,}] {char_id}: {region}")
+    else:
+        def progress_callback(current: int, total: int, char_id: str, stats: dict) -> None:
+            if current % 100 == 0 or current == total:
+                click.echo(f"  Progress: {current:,}/{total:,} characters...")
+
+    try:
+        result = do_sync(database_path, dry_run=dry_run, progress_callback=progress_callback)
+
+        click.echo("\n📊 Results:")
+        click.echo(f"  Total characters:   {result['total']:,}")
+        click.echo(f"  Classified:         {result['classified']:,}")
+        click.echo(f"  Unknown region:     {result['unknown_region']:,}  (has origin text, but region not recognised)")
+        click.echo(f"  No origin info:     {result['no_origin']:,}  (origin field is empty)")
+
+        if result["by_region"]:
+            click.echo("\n  By region:")
+            for region, count in sorted(result["by_region"].items(), key=lambda x: -x[1]):
+                click.echo(f"    {region}: {count:,}")
+
+        if dry_run:
+            click.echo("\n💡 Run without --dry-run to apply changes")
+        else:
+            click.echo("\n✅ Origin region sync complete!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}")
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     main()
