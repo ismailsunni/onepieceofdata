@@ -22,7 +22,7 @@ from ..utils.logging import get_logger
 logger = get_logger(__name__)
 
 
-def scrape_chapter_worker(chapter_num: int) -> ScrapingResult:
+def scrape_chapter_worker_api(chapter_num: int) -> ScrapingResult:
     """
     Worker function for parallel chapter scraping using API.
     This function creates its own API client to avoid sharing state.
@@ -34,7 +34,7 @@ def scrape_chapter_worker(chapter_num: int) -> ScrapingResult:
         ScrapingResult with chapter data
     """
     try:
-        scraper = ChapterScraper()
+        scraper = ChapterScraperAPI()
         result = scraper.scrape_chapter(chapter_num)
         return result
     except Exception as e:
@@ -47,7 +47,7 @@ def scrape_chapter_worker(chapter_num: int) -> ScrapingResult:
         )
 
 
-class ChapterScraper:
+class ChapterScraperAPI:
     """API-based chapter scraper using Fandom MediaWiki API."""
 
     def __init__(self):
@@ -433,7 +433,7 @@ class ChapterScraper:
             with ProcessPoolExecutor(max_workers=actual_workers) as executor:
                 # Submit all tasks
                 future_to_chapter = {
-                    executor.submit(scrape_chapter_worker, chapter_num): chapter_num
+                    executor.submit(scrape_chapter_worker_api, chapter_num): chapter_num
                     for chapter_num in chapter_range
                 }
 
@@ -491,23 +491,10 @@ class ChapterScraper:
 
 
 # Convenience function for backwards compatibility
-def scrap_chapters(last_chapter: int, output_path: str) -> None:
-    """
-    Legacy function for scraping chapters.
-
-    Args:
-        last_chapter: Last chapter number to scrape
-        output_path: Path to save the JSON file
-    """
-    scraper = ChapterScraper()
-    chapters = scraper.scrape_chapters(end_chapter=last_chapter, use_batch=True)
-    scraper.save_chapters(chapters, Path(output_path))
-
-
 def scrape_chapters_api(start_chapter: int, end_chapter: int, output_path: str,
                        use_batch: bool = True) -> None:
     """
-    Alternative function for scraping chapters using API with specific range.
+    Legacy function for scraping chapters using API.
 
     Args:
         start_chapter: Starting chapter number
@@ -515,7 +502,7 @@ def scrape_chapters_api(start_chapter: int, end_chapter: int, output_path: str,
         output_path: Path to save the JSON file
         use_batch: Whether to use batch API queries
     """
-    scraper = ChapterScraper()
+    scraper = ChapterScraperAPI()
     chapters = scraper.scrape_chapters(
         start_chapter=start_chapter,
         end_chapter=end_chapter,

@@ -22,7 +22,7 @@ from ..utils.logging import get_logger
 logger = get_logger(__name__)
 
 
-def scrape_character_worker(character_data: Dict[str, Any]) -> ScrapingResult:
+def scrape_character_worker_api(character_data: Dict[str, Any]) -> ScrapingResult:
     """
     Worker function for parallel character scraping using API.
 
@@ -33,7 +33,7 @@ def scrape_character_worker(character_data: Dict[str, Any]) -> ScrapingResult:
         ScrapingResult with character data
     """
     try:
-        scraper = CharacterScraper()
+        scraper = CharacterScraperAPI()
         result = scraper.scrape_character(character_data)
         return result
     except Exception as e:
@@ -46,7 +46,7 @@ def scrape_character_worker(character_data: Dict[str, Any]) -> ScrapingResult:
         )
 
 
-class CharacterScraper:
+class CharacterScraperAPI:
     """API-based character scraper using Fandom MediaWiki API."""
 
     def __init__(self):
@@ -126,7 +126,7 @@ class CharacterScraper:
                 "alias": "alias",
                 "epithet": "epithet",
                 "age": "age",
-                "birth": "birth",
+                "birth": "birthday",
                 "height": "height",
                 "bounty": "bounty",
 
@@ -142,7 +142,7 @@ class CharacterScraper:
 
                 # Additional fields
                 "status": "status",
-                "blood type": "blood_type",
+                "blood": "blood_type",
             }
 
             for field in fields:
@@ -151,36 +151,13 @@ class CharacterScraper:
                 if source in field_mapping:
                     value_div = field.find('div', {'class': 'pi-data-value'})
                     if value_div:
-                        import re
+                        value = value_div.get_text(strip=True)
 
-                        # Fields that contain multiple values need newline separation
-                        multi_value_fields = ['bounty', 'age', 'height', 'blood type']
-
-                        if source in multi_value_fields:
-                            # Use newline separator for fields with multiple values
-                            value = value_div.get_text(separator='\n', strip=True)
-
-                            # Clean up reference markers
-                            if '[' in value:
-                                value = re.sub(r'\[\s*\d+\s*\]', '', value)
-                                # Collapse multiple consecutive newlines into single newlines
-                                value = re.sub(r'\n\s*\n+', '\n', value)
-                                # Remove lines that are just whitespace, brackets, or labels like "bounty 1"
-                                lines = [line.strip() for line in value.split('\n')]
-                                lines = [line for line in lines
-                                        if line and line not in ['[', ']']
-                                        and not re.match(r'^bounty\s+\d+$', line.lower())]
-                                value = '\n'.join(lines)
-                        else:
-                            # Use space separator for single-value fields
-                            value = value_div.get_text(separator=' ', strip=True)
-
-                            # Clean up reference markers
-                            if '[' in value:
-                                value = re.sub(r'\[\s*\d+\s*\]', '', value)
-
-                            # Collapse multiple spaces
-                            value = re.sub(r'\s+', ' ', value).strip()
+                        # Clean up reference markers
+                        if '[' in value:
+                            # Remove [1], [2], etc
+                            import re
+                            value = re.sub(r'\[\d+\]', '', value)
 
                         output_key = field_mapping[source]
                         character_info[output_key] = value
@@ -252,50 +229,7 @@ class CharacterScraper:
             if "name" not in result_data or not result_data["name"]:
                 result_data["name"] = name
 
-            # Detect if this is likely a group/organization vs individual character
-            # Use multiple criteria for better accuracy
-            import re
-
-            # Check for personal data fields
-            has_age = bool(character_info.get("age"))
-            has_birth = bool(character_info.get("birth"))
-            has_bounty = bool(character_info.get("bounty"))
-            has_personal_data = has_age or has_birth or has_bounty
-
-            # Check for generic/group name patterns
-            name_lower = name.lower()
-            generic_patterns = [
-                r'\bpirates?\b',      # "Pirates", "Pirate"
-                r'\bmarines?\b',      # "Marines", "Marine"
-                r'\banimals?\b',      # "Animals", "Animal"
-                r'\bcountry\b',       # "Wano Country"
-                r'\bvillage\b',       # "Foosha Village"
-                r'\btown\b',          # "Shells Town"
-                r'\bisland\b',        # "Whole Cake Island"
-                r'\bbounty hunters?\b',  # "Bounty Hunter"
-                r'\bcrew\b',          # "Crew"
-                r'\bkingdom\b',       # "Kingdom"
-                r'\barmy\b',          # "Revolutionary Army"
-            ]
-
-            matches_generic_pattern = any(re.search(pattern, name_lower) for pattern in generic_patterns)
-
-            # Refined logic for character detection:
-            # - If matches group pattern AND lacks age/birth: likely NOT a character
-            #   (even if has bounty - could be group bounty)
-            # - If has age OR birth: definitely a character
-            # - Otherwise (no pattern match, no personal data): assume character (benefit of doubt)
-            if matches_generic_pattern and not (has_age or has_birth):
-                is_likely_character = False
-            else:
-                is_likely_character = True
-
-            result_data["is_likely_character"] = is_likely_character
-
-            if not is_likely_character:
-                logger.debug(f"Flagged as likely group/organization: {name} (pattern match, no personal data)")
-            else:
-                logger.debug(f"Successfully scraped character: {name}")
+            logger.debug(f"Successfully scraped character: {name}")
 
             return ScrapingResult(
                 success=True,
@@ -370,7 +304,7 @@ class CharacterScraper:
             with ProcessPoolExecutor(max_workers=actual_workers) as executor:
                 # Submit all tasks
                 future_to_character = {
-                    executor.submit(scrape_character_worker, char_data): char_data
+                    executor.submit(scrape_character_worker_api, char_data): char_data
                     for char_data in characters_data
                 }
 

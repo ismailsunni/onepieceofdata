@@ -104,34 +104,26 @@ def scrape_chapters(start_chapter: int, end_chapter: Optional[int], parallel: bo
         
         # Initialize scraper and run
         scraper = ChapterScraper()
-        
+
         if parallel:
-            # Use the new parallel method
+            # Use parallel processing
             chapters = scraper.scrape_chapters(
                 start_chapter=start_chapter,
                 end_chapter=end_chapter,
                 use_parallel=True,
                 max_workers=workers
             )
-            failed_chapters = []  # Failed chapters are handled internally in parallel mode
+            failed_chapters = []  # Failed chapters are handled internally
         else:
-            # Use sequential mode with progress bar
-            with click.progressbar(
-                length=end_chapter - start_chapter + 1,
-                label=f"Scraping chapters {start_chapter}-{end_chapter}"
-            ) as bar:
-                chapters = []
-                failed_chapters = []
-                
-                for chapter_num in range(start_chapter, end_chapter + 1):
-                    result = scraper.scrape_chapter(chapter_num)
-                    if result.success:
-                        chapters.append(result.data)
-                    else:
-                        failed_chapters.append(chapter_num)
-                        cli_logger.error(f"Failed to scrape chapter {chapter_num}")
-                    
-                    bar.update(1)
+            # Use batch API mode by default (much faster)
+            # This scrapes 50 chapters per API request
+            cli_logger.info("Using batch API mode for faster scraping")
+            chapters = scraper.scrape_chapters(
+                start_chapter=start_chapter,
+                end_chapter=end_chapter,
+                use_batch=True
+            )
+            failed_chapters = []  # Failed chapters are tracked internally
         
         # Save results
         scraper.save_chapters(chapters, output_path)
@@ -143,9 +135,130 @@ def scrape_chapters(start_chapter: int, end_chapter: Optional[int], parallel: bo
         if failed_chapters:
             click.echo(f"❌ Failed chapters: {failed_chapters}")
             sys.exit(1)
-            
+
     except Exception as e:
         cli_logger.error(f"Chapter scraping failed: {e}")
+        click.echo(f"❌ Error: {e}", err=True)
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--start-chapter",
+    default=1,
+    type=int,
+    help="Starting chapter number to scrape"
+)
+@click.option(
+    "--end-chapter",
+    default=None,
+    type=int,
+    help="Ending chapter number to scrape (default: from config)"
+)
+@click.option(
+    "--parallel",
+    is_flag=True,
+    help="Enable parallel processing for faster scraping"
+)
+@click.option(
+    "--batch",
+    is_flag=True,
+    default=True,
+    help="Enable batch API queries (faster, default: True)"
+)
+@click.option(
+    "--workers",
+    default=None,
+    type=int,
+    help="Number of parallel workers (default: from config)"
+)
+@click.option(
+    "--output",
+    type=click.Path(),
+    help="Output file path (default: from config)"
+)
+def scrape_chapters_api(start_chapter: int, end_chapter: Optional[int], parallel: bool,
+                       batch: bool, workers: Optional[int], output: Optional[str]) -> None:
+    """Scrape chapter data using Fandom MediaWiki API (bypasses Cloudflare)."""
+    from .scrapers.chapter_api import ChapterScraperAPI
+
+    try:
+        # Determine processing mode
+        if parallel:
+            processing_mode = "parallel"
+            actual_workers = workers or settings.max_workers
+            cli_logger.info(f"Using parallel API processing with {actual_workers} workers")
+        elif batch:
+            processing_mode = "batch API"
+            cli_logger.info("Using batch API queries (up to 50 chapters per request)")
+        else:
+            processing_mode = "sequential API"
+            cli_logger.info("Using sequential API processing")
+
+        cli_logger.info(f"Starting chapter scraping via API in {processing_mode} mode...")
+
+        # Validate inputs
+        if start_chapter < 1:
+            raise click.BadParameter("Start chapter must be positive")
+
+        if end_chapter is None:
+            end_chapter = settings.last_chapter
+
+        if end_chapter < start_chapter:
+            raise click.BadParameter("End chapter must be >= start chapter")
+
+        # Determine output path
+        output_path = Path(output) if output else settings.chapters_json_path
+
+        # Initialize API scraper and run
+        scraper = ChapterScraperAPI()
+
+        if parallel:
+            # Parallel processing
+            chapters = scraper.scrape_chapters(
+                start_chapter=start_chapter,
+                end_chapter=end_chapter,
+                use_parallel=True,
+                max_workers=workers
+            )
+        elif batch:
+            # Batch API queries (faster)
+            chapters = scraper.scrape_chapters(
+                start_chapter=start_chapter,
+                end_chapter=end_chapter,
+                use_batch=True
+            )
+        else:
+            # Sequential processing with progress bar
+            total_chapters = end_chapter - start_chapter + 1
+            with click.progressbar(
+                length=total_chapters,
+                label=f"Scraping chapters {start_chapter}-{end_chapter} via API"
+            ) as bar:
+                chapters = []
+                for chapter_num in range(start_chapter, end_chapter + 1):
+                    result = scraper.scrape_chapter(chapter_num)
+                    if result.success:
+                        chapters.append(result.data)
+                    else:
+                        cli_logger.error(f"Failed to scrape chapter {chapter_num}: {result.error}")
+                    bar.update(1)
+
+        # Save results
+        scraper.save_chapters(chapters, output_path)
+
+        # Report results
+        click.echo(f"\n✅ Successfully scraped {len(chapters)} chapters via API")
+        click.echo(f"📁 Saved to: {output_path}")
+
+        total_expected = end_chapter - start_chapter + 1
+        if len(chapters) < total_expected:
+            failed_count = total_expected - len(chapters)
+            click.echo(f"⚠️  {failed_count} chapters failed")
+            sys.exit(1)
+
+    except Exception as e:
+        cli_logger.error(f"API chapter scraping failed: {e}")
         click.echo(f"❌ Error: {e}", err=True)
         sys.exit(1)
 
@@ -1607,6 +1720,148 @@ def parse_story_structure(arcs_json: Optional[str], sagas_json: Optional[str]) -
         
     except Exception as e:
         cli_logger.error(f"Story structure parsing failed: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--database-path",
+    type=click.Path(),
+    help="Database file path (default: from config)"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Preview removals without modifying the database"
+)
+@click.option(
+    "--verbose",
+    is_flag=True,
+    default=False,
+    help="Show each entry being processed"
+)
+def filter_non_characters(database_path: Optional[str], dry_run: bool, verbose: bool) -> None:
+    """Remove non-character entries (crews, locations, titles, etc.) from character table.
+
+    Removes entries that have neither origin nor status, which indicates they
+    are not actual characters. A built-in whitelist preserves known characters
+    that happen to lack both fields.
+
+    Use --dry-run to preview what would be removed.
+    """
+    from .postprocessors.filter_non_characters import filter_non_characters as do_filter
+
+    click.echo("🧹 Filtering non-character entries...")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made")
+
+    if database_path is None:
+        database_path = str(settings.database_path)
+
+    if verbose:
+        def progress_cb(current: int, total: int, cid: str) -> None:
+            click.echo(f"  [{current}/{total}] checking {cid}")
+    else:
+        progress_cb = None
+
+    try:
+        result = do_filter(database_path, dry_run=dry_run, progress_callback=progress_cb)
+
+        click.echo(f"\n📊 Results:")
+        click.echo(f"  Entries checked (no origin & no status): {result['total_checked']}")
+        click.echo(f"  Removed: {result['removed']}")
+        click.echo(f"  Kept (whitelisted): {result['kept_whitelist']}")
+
+        if result['whitelisted_entries']:
+            click.echo("\n✅ Whitelisted characters kept:")
+            for cid, name in result['whitelisted_entries']:
+                click.echo(f"    • {name} ({cid})")
+
+        if result['removed_entries']:
+            click.echo(f"\n{'🔍 Would remove:' if dry_run else '🗑️  Removed:'}")
+            for cid, name in result['removed_entries']:
+                click.echo(f"    • {name} ({cid})")
+
+        if dry_run:
+            click.echo(f"\n💡 Run without --dry-run to apply changes")
+        else:
+            click.echo(f"\n✅ Non-character filtering complete!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--database-path",
+    type=click.Path(),
+    help="Database file path (default: from config)"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Classify origins but do not write results to the database"
+)
+@click.option(
+    "--verbose",
+    is_flag=True,
+    default=False,
+    help="Show the region assigned to each character"
+)
+def sync_origin_region(database_path: Optional[str], dry_run: bool, verbose: bool) -> None:
+    """Populate the origin_region column based on each character's origin field.
+
+    Classifies characters into broad geographic regions:
+    East Blue, North Blue, West Blue, South Blue, Grand Line, New World,
+    Sky Island, Red Line, Calm Belt, Underwater.
+
+    The origin_region column is created automatically if it does not exist.
+    Use --dry-run to preview classifications without writing to the database.
+    """
+    from .postprocessors.sync_origin_region import sync_origin_region as do_sync
+
+    click.echo("🗺️  Syncing character origin regions...\n")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made\n")
+
+    if database_path is None:
+        database_path = str(settings.database_path)
+
+    if verbose:
+        def progress_callback(current: int, total: int, char_id: str, stats: dict) -> None:
+            region = stats.get("region") or "unclassified"
+            click.echo(f"  [{current:,}/{total:,}] {char_id}: {region}")
+    else:
+        def progress_callback(current: int, total: int, char_id: str, stats: dict) -> None:
+            if current % 100 == 0 or current == total:
+                click.echo(f"  Progress: {current:,}/{total:,} characters...")
+
+    try:
+        result = do_sync(database_path, dry_run=dry_run, progress_callback=progress_callback)
+
+        click.echo("\n📊 Results:")
+        click.echo(f"  Total characters:   {result['total']:,}")
+        click.echo(f"  Classified:         {result['classified']:,}")
+        click.echo(f"  Unknown region:     {result['unknown_region']:,}  (has origin text, but region not recognised)")
+        click.echo(f"  No origin info:     {result['no_origin']:,}  (origin field is empty)")
+
+        if result["by_region"]:
+            click.echo("\n  By region:")
+            for region, count in sorted(result["by_region"].items(), key=lambda x: -x[1]):
+                click.echo(f"    {region}: {count:,}")
+
+        if dry_run:
+            click.echo("\n💡 Run without --dry-run to apply changes")
+        else:
+            click.echo("\n✅ Origin region sync complete!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}")
         sys.exit(1)
 
 
