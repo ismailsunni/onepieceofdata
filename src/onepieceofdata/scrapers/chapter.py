@@ -1,19 +1,19 @@
-"""Modern chapter scraper with error handling and retry logic."""
+"""API-based chapter scraper using Fandom MediaWiki API.
 
-import asyncio
+This is a replacement for chapter.py that uses the official MediaWiki API
+instead of HTML scraping with cloudscraper. This bypasses Cloudflare blocking.
+"""
+
 import json
 import multiprocessing
 import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from functools import partial
 from pathlib import Path
 from typing import Dict, List, Optional, Any
-from urllib.parse import urljoin
 
-import urllib3
-from bs4 import BeautifulSoup
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
+from ..api import FandomAPIClient, WikitextParser
 from ..config import settings
 from ..models import ChapterModel, ScrapingResult
 from ..utils.logging import get_logger
@@ -24,12 +24,12 @@ logger = get_logger(__name__)
 
 def scrape_chapter_worker(chapter_num: int) -> ScrapingResult:
     """
-    Worker function for parallel chapter scraping.
-    This function creates its own scraper instance to avoid sharing state.
-    
+    Worker function for parallel chapter scraping using API.
+    This function creates its own API client to avoid sharing state.
+
     Args:
         chapter_num: Chapter number to scrape
-        
+
     Returns:
         ScrapingResult with chapter data
     """
@@ -43,291 +43,400 @@ def scrape_chapter_worker(chapter_num: int) -> ScrapingResult:
             success=False,
             data=None,
             error=f"Worker error: {str(e)}",
-            url=f"{settings.base_chapter_url}{chapter_num}"
+            url=f"https://onepiece.fandom.com/wiki/Chapter_{chapter_num}"
         )
 
 
 class ChapterScraper:
-    """Modern chapter scraper with robust error handling."""
-    
+    """API-based chapter scraper using Fandom MediaWiki API."""
+
     def __init__(self):
-        """Initialize the chapter scraper."""
-        self.http_pool = urllib3.PoolManager(
-            timeout=urllib3.Timeout(connect=10.0, read=settings.request_timeout)
-        )
-        self.base_url = settings.base_chapter_url
-        
-    def __del__(self):
-        """Clean up HTTP pool."""
-        if hasattr(self, 'http_pool'):
-            self.http_pool.clear()
-    
+        """Initialize the API-based chapter scraper."""
+        self.api_client = FandomAPIClient(wiki="onepiece")
+        self.parser = WikitextParser()
+
     @retry(
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=4, max=10),
-        retry=retry_if_exception_type((urllib3.exceptions.HTTPError, Exception))
+        retry=retry_if_exception_type(Exception)
     )
-    def _fetch_page(self, url: str) -> bytes:
+    def _fetch_chapter_wikitext(self, chapter_number: int) -> Optional[str]:
         """
-        Fetch a web page with retry logic.
-        
+        Fetch chapter wikitext from API with retry logic.
+
         Args:
-            url: URL to fetch
-            
+            chapter_number: Chapter number to fetch
+
         Returns:
-            Raw HTML content
-            
+            Raw wikitext content or None if failed
+
         Raises:
             Exception: If all retry attempts fail
         """
         try:
-            logger.debug(f"Fetching URL: {url}")
-            response = self.http_pool.urlopen("GET", url)
-            
-            if response.status != 200:
-                raise Exception(f"HTTP {response.status}: {url}")
-                
-            return response.data
+            page_title = f"Chapter {chapter_number}"
+            logger.debug(f"Fetching wikitext for: {page_title}")
+
+            wikitext = self.api_client.get_page_wikitext(page_title)
+
+            if not wikitext:
+                raise Exception(f"No wikitext returned for {page_title}")
+
+            return wikitext
+
         except Exception as e:
-            logger.warning(f"Failed to fetch {url}: {e}")
+            logger.warning(f"Failed to fetch chapter {chapter_number}: {e}")
             raise
-    
-    def _parse_chapter_info(self, soup: BeautifulSoup, chapter_number: int) -> Dict[str, Any]:
+
+    def _fetch_chapter_html(self, chapter_number: int) -> Optional[str]:
         """
-        Parse chapter information from BeautifulSoup object.
-        
+        Fetch chapter HTML from API (rendered version) for metadata extraction.
+
         Args:
-            soup: BeautifulSoup object of the page
-            chapter_number: Chapter number being parsed
-            
+            chapter_number: Chapter number to fetch
+
         Returns:
-            Dictionary with chapter information
+            Rendered HTML content or None if failed
         """
-        chapter_info = {"chapter_number": chapter_number}
-        
         try:
-            # Find the main info section
-            chapter_sections = soup.findAll("section", {"class": "pi-item pi-group pi-border-color"})
-            if not chapter_sections:
-                logger.warning(f"No chapter info section found for chapter {chapter_number}")
-                return chapter_info
-                
-            chapter_section = chapter_sections[0]
-            
-            # Extract basic information
+            page_title = f"Chapter {chapter_number}"
+            html = self.api_client.get_page_html(page_title)
+            return html
+        except Exception as e:
+            logger.debug(f"Could not fetch HTML for chapter {chapter_number}: {e}")
+            return None
+
+    def _parse_metadata_from_html(self, html: str) -> Dict[str, str]:
+        """
+        Parse metadata fields (volume, pages, etc) from rendered HTML.
+        These fields are in portable infoboxes that are auto-generated.
+
+        Args:
+            html: Rendered HTML content
+
+        Returns:
+            Dictionary with metadata fields
+        """
+        from bs4 import BeautifulSoup
+
+        metadata = {}
+
+        try:
+            soup = BeautifulSoup(html, "html.parser")
+
+            # Find infobox sections with data-source attributes
             info_mapping = {
                 "vol": "volume",
                 "chapter": "chapter_display",
-                "ename": "title",
                 "page": "pages",
                 "date2": "release_date",
                 "jump": "jump_info"
             }
-            
+
             for data_source, field_name in info_mapping.items():
-                try:
-                    elements = chapter_section.findAll("div", {"data-source": data_source})
-                    if elements:
-                        value_div = elements[0].findAll("div", {"class": "pi-data-value"})
-                        if value_div:
-                            value = value_div[0].text.strip()
-                            # Clean up reference markers
-                            if "[ref]" in value:
-                                value = value.replace("[ref]", "").strip()
-                            chapter_info[field_name] = value
-                except (IndexError, AttributeError) as e:
-                    logger.debug(f"Could not extract {field_name} for chapter {chapter_number}: {e}")
-            
-            # Parse characters
-            chapter_info["characters"] = self._parse_characters(soup, chapter_number)
-            
+                elements = soup.find_all("div", {"data-source": data_source})
+                if elements:
+                    value_divs = elements[0].find_all("div", {"class": "pi-data-value"})
+                    if value_divs:
+                        value = value_divs[0].text.strip()
+                        # Clean up reference markers
+                        if "[ref]" in value:
+                            value = value.replace("[ref]", "").strip()
+                        metadata[field_name] = value
+
+        except Exception as e:
+            logger.debug(f"Error parsing HTML metadata: {e}")
+
+        return metadata
+
+    def _parse_chapter_info(self, wikitext: str, chapter_number: int) -> Dict[str, Any]:
+        """
+        Parse chapter information from wikitext.
+
+        Args:
+            wikitext: Raw wikitext content
+            chapter_number: Chapter number being parsed
+
+        Returns:
+            Dictionary with chapter information
+        """
+        chapter_info = {"chapter_number": chapter_number}
+
+        try:
+            # Parse Chapter Box template
+            chapter_box = self.parser.parse_chapter_box(wikitext)
+
+            if chapter_box:
+                # Map template fields to our schema
+                if "title" in chapter_box:
+                    chapter_info["title"] = chapter_box["title"]
+
+                if "english_title" in chapter_box:
+                    chapter_info["english_name"] = chapter_box["english_title"]
+
+                if "japanese_title" in chapter_box:
+                    chapter_info["japanese_title"] = chapter_box["japanese_title"]
+
+                # Extract additional fields that might be in the template
+                # Try both the field name and its possible variations
+                field_mapping = {
+                    "vol": "volume",
+                    "chapter": "chapter_display",
+                    "page": "pages",
+                    "pages": "pages",  # Sometimes it's already "pages"
+                    "date2": "release_date",
+                    "date": "release_date",  # Fallback
+                    "jump": "jump_info",
+                    "jname": "japanese_title",  # Additional japanese name field
+                    "ename": "english_name",  # Additional english name field
+                }
+
+                for template_key, output_key in field_mapping.items():
+                    if template_key in chapter_box and output_key not in chapter_info:
+                        chapter_info[output_key] = chapter_box[template_key]
+
+            else:
+                logger.warning(f"No Chapter Box found for chapter {chapter_number}")
+
+            # Parse character table
+            chapter_info["characters"] = self._parse_characters(wikitext, chapter_number)
+
         except Exception as e:
             logger.error(f"Error parsing chapter {chapter_number}: {e}")
-            
+
         return chapter_info
-    
-    def _parse_characters(self, soup: BeautifulSoup, chapter_number: int) -> List[Dict[str, str]]:
+
+    def _parse_characters(self, wikitext: str, chapter_number: int) -> List[Dict[str, str]]:
         """
-        Parse character information from chapter page.
-        
+        Parse character information from wikitext.
+
         Args:
-            soup: BeautifulSoup object of the page
+            wikitext: Raw wikitext content
             chapter_number: Chapter number being parsed
-            
+
         Returns:
             List of character dictionaries
         """
-        characters = []
-        
         try:
-            character_tables = soup.findAll("table", {"class": "CharTable"})
-            if not character_tables:
-                logger.debug(f"No character table found for chapter {chapter_number}")
-                return characters
-                
-            character_table = character_tables[0]
-            char_items = character_table.findAll("li")
-            
-            for char_item in char_items:
-                try:
-                    full_text = char_item.text.rstrip("\n").strip()
-                    if not full_text:
-                        continue
-                        
-                    # Extract note from parentheses
-                    note = ""
-                    if "(" in full_text and ")" in full_text:
-                        start = full_text.find("(")
-                        end = full_text.find(")")
-                        if start < end:
-                            note = full_text[start + 1:end]
-                    
-                    # Extract character name and URL
-                    char_links = char_item.findAll("a")
-                    if char_links:
-                        char_name = char_links[0].text.strip()
-                        char_url = char_links[0].get("href", "")
-                    else:
-                        char_name = full_text
-                        char_url = ""
-                        logger.debug(f"No URL found for character in chapter {chapter_number}: {full_text}")
-                    
-                    if char_name:  # Only add if we have a name
-                        character_data = {
-                            "name": char_name,
-                            "url": char_url,
-                            "note": note,
-                            "full_text": full_text
-                        }
-                        characters.append(character_data)
-                        
-                        if note:
-                            logger.debug(f"Character note in chapter {chapter_number} - {char_name}: {note}")
-                            
-                except Exception as e:
-                    logger.warning(f"Error parsing character in chapter {chapter_number}: {e}")
-                    continue
-                    
+            characters = self.parser.parse_character_table(wikitext)
+
+            if not characters:
+                logger.debug(f"No characters found for chapter {chapter_number}")
+                return []
+
+            # Transform to match existing format
+            formatted_characters = []
+            for char in characters:
+                char_data = {
+                    "name": char.get("name", ""),
+                    "url": char.get("url", ""),
+                    "note": char.get("note", ""),
+                    "full_text": char.get("name", "")  # Use name as full_text for compatibility
+                }
+                if char_data["name"]:  # Only add if we have a name
+                    formatted_characters.append(char_data)
+
+            logger.debug(f"Found {len(formatted_characters)} characters in chapter {chapter_number}")
+            return formatted_characters
+
         except Exception as e:
             logger.error(f"Error parsing characters for chapter {chapter_number}: {e}")
-            
-        return characters
-    
+            return []
+
     def scrape_chapter(self, chapter_number: int) -> ScrapingResult:
         """
-        Scrape a single chapter.
-        
+        Scrape a single chapter using the API.
+
         Args:
             chapter_number: Chapter number to scrape
-            
+
         Returns:
             ScrapingResult with chapter data or error information
         """
-        chapter_url = f"{self.base_url}{chapter_number}"
-        
+        chapter_url = f"https://onepiece.fandom.com/wiki/Chapter_{chapter_number}"
+
         try:
-            logger.info(f"Scraping chapter {chapter_number}")
-            
+            logger.info(f"Scraping chapter {chapter_number} via API")
+
             # Add delay to be respectful to the server
             time.sleep(settings.scraping_delay)
-            
-            # Fetch the page
-            html_content = self._fetch_page(chapter_url)
-            
-            # Parse the content
-            soup = BeautifulSoup(html_content, "html.parser")
-            chapter_info = self._parse_chapter_info(soup, chapter_number)
-            
+
+            # Fetch the wikitext
+            wikitext = self._fetch_chapter_wikitext(chapter_number)
+
+            if not wikitext:
+                raise Exception(f"Failed to fetch wikitext for chapter {chapter_number}")
+
+            # Parse the content from wikitext
+            chapter_info = self._parse_chapter_info(wikitext, chapter_number)
+
+            # Also fetch HTML to get metadata fields (volume, pages, etc)
+            # These are auto-generated in portable infoboxes
+            html = self._fetch_chapter_html(chapter_number)
+            if html:
+                metadata = self._parse_metadata_from_html(html)
+                # Merge metadata into chapter_info (don't overwrite existing fields)
+                for key, value in metadata.items():
+                    if key not in chapter_info or not chapter_info[key]:
+                        chapter_info[key] = value
+
             logger.debug(f"Successfully scraped chapter {chapter_number}")
-            
+
             return ScrapingResult(
                 success=True,
                 data=chapter_info,
                 url=chapter_url
             )
-            
+
         except Exception as e:
             error_msg = f"Failed to scrape chapter {chapter_number}: {e}"
             logger.error(error_msg)
-            
+
             return ScrapingResult(
                 success=False,
                 error=error_msg,
                 url=chapter_url
             )
-    
-    def scrape_chapters(self, start_chapter: int = 1, end_chapter: Optional[int] = None, 
-                       use_parallel: bool = False, max_workers: Optional[int] = None) -> List[Dict[str, Any]]:
+
+    def scrape_chapters(self, start_chapter: int = 1, end_chapter: Optional[int] = None,
+                       use_parallel: bool = False, max_workers: Optional[int] = None,
+                       use_batch: bool = True) -> List[Dict[str, Any]]:
         """
-        Scrape multiple chapters with optional parallel processing.
-        
+        Scrape multiple chapters with optional parallel processing and batch queries.
+
         Args:
             start_chapter: Starting chapter number
             end_chapter: Ending chapter number (uses settings.last_chapter if None)
             use_parallel: Whether to use parallel processing
             max_workers: Maximum number of worker processes (defaults to config)
-            
+            use_batch: Whether to use batch API queries (faster but less granular error handling)
+
         Returns:
             List of chapter data dictionaries
         """
         if end_chapter is None:
             end_chapter = settings.last_chapter
-            
+
         if max_workers is None:
             max_workers = settings.max_workers
-            
+
         chapter_range = list(range(start_chapter, end_chapter + 1))
         total_chapters = len(chapter_range)
-        
+
         logger.info(f"Starting to scrape chapters {start_chapter} to {end_chapter}")
         logger.info(f"Total chapters to scrape: {total_chapters}")
-        
-        if use_parallel and total_chapters > 1:
+
+        # Use batch API queries if enabled and not using parallel processing
+        if use_batch and not use_parallel:
+            return self._scrape_chapters_batch(chapter_range)
+        elif use_parallel and total_chapters > 1:
             return self._scrape_chapters_parallel(chapter_range, max_workers)
         else:
             return self._scrape_chapters_sequential(chapter_range)
-    
-    def _scrape_chapters_sequential(self, chapter_range: List[int]) -> List[Dict[str, Any]]:
-        """Scrape chapters sequentially (original behavior)."""
-        logger.info("Using sequential processing")
-        
+
+    def _scrape_chapters_batch(self, chapter_range: List[int]) -> List[Dict[str, Any]]:
+        """
+        Scrape chapters using batch API queries.
+        This is faster than sequential but processes in groups.
+        """
+        logger.info(f"Using batch API queries (up to 50 chapters per request)")
+
         successful_chapters = []
         failed_chapters = []
-        
+
+        # Batch size of 50 (API limit)
+        batch_size = 50
+
+        for i in range(0, len(chapter_range), batch_size):
+            batch = chapter_range[i:i+batch_size]
+            logger.info(f"Fetching batch of {len(batch)} chapters...")
+
+            try:
+                # Build page titles
+                titles = [f"Chapter {num}" for num in batch]
+
+                # Fetch all wikitexts in one API call
+                wikitext_map = self.api_client.get_multiple_pages_wikitext(titles)
+
+                # Parse each chapter
+                for title, wikitext in wikitext_map.items():
+                    chapter_num = self.parser.extract_chapter_number_from_title(title)
+
+                    if not chapter_num:
+                        logger.warning(f"Could not extract chapter number from: {title}")
+                        continue
+
+                    if not wikitext:
+                        logger.warning(f"No wikitext for chapter {chapter_num}")
+                        failed_chapters.append(chapter_num)
+                        continue
+
+                    try:
+                        chapter_info = self._parse_chapter_info(wikitext, chapter_num)
+                        successful_chapters.append(chapter_info)
+                    except Exception as e:
+                        logger.error(f"Failed to parse chapter {chapter_num}: {e}")
+                        failed_chapters.append(chapter_num)
+
+                # Add delay between batches
+                if settings.scraping_delay > 0:
+                    time.sleep(settings.scraping_delay)
+
+            except Exception as e:
+                logger.error(f"Batch query failed: {e}")
+                # Add entire batch to failed
+                failed_chapters.extend(batch)
+
+        # Sort by chapter number
+        successful_chapters.sort(key=lambda x: x.get('chapter_number', 0))
+
+        logger.info(f"Successfully scraped {len(successful_chapters)} chapters using batch queries")
+        if failed_chapters:
+            logger.warning(f"Failed to scrape {len(failed_chapters)} chapters: {sorted(failed_chapters)}")
+
+        return successful_chapters
+
+    def _scrape_chapters_sequential(self, chapter_range: List[int]) -> List[Dict[str, Any]]:
+        """Scrape chapters sequentially (one at a time)."""
+        logger.info("Using sequential processing")
+
+        successful_chapters = []
+        failed_chapters = []
+
         for chapter_num in chapter_range:
             result = self.scrape_chapter(chapter_num)
             if result.success:
                 successful_chapters.append(result.data)
             else:
                 failed_chapters.append(chapter_num)
-                
-            # Add delay between requests when sequential
+
+            # Add delay between requests
             if settings.scraping_delay > 0:
                 time.sleep(settings.scraping_delay)
-                
+
         logger.info(f"Successfully scraped {len(successful_chapters)} chapters")
         if failed_chapters:
             logger.warning(f"Failed to scrape {len(failed_chapters)} chapters: {failed_chapters}")
-            
+
         return successful_chapters
-    
+
     def _scrape_chapters_parallel(self, chapter_range: List[int], max_workers: int) -> List[Dict[str, Any]]:
         """Scrape chapters in parallel using ProcessPoolExecutor."""
         # Cap workers at reasonable limits
         actual_workers = min(max_workers, multiprocessing.cpu_count() - 1, 8)
         logger.info(f"Using parallel processing with {actual_workers} workers")
-        
+
         successful_chapters = []
         failed_chapters = []
-        
+
         try:
             with ProcessPoolExecutor(max_workers=actual_workers) as executor:
                 # Submit all tasks
                 future_to_chapter = {
-                    executor.submit(scrape_chapter_worker, chapter_num): chapter_num 
+                    executor.submit(scrape_chapter_worker, chapter_num): chapter_num
                     for chapter_num in chapter_range
                 }
-                
+
                 # Process completed tasks
                 for future in as_completed(future_to_chapter):
                     chapter_num = future_to_chapter[future]
@@ -342,26 +451,26 @@ class ChapterScraper:
                     except Exception as e:
                         failed_chapters.append(chapter_num)
                         logger.error(f"Exception while processing chapter {chapter_num}: {str(e)}")
-                        
+
         except Exception as e:
             logger.error(f"Parallel processing failed: {str(e)}")
             # Fallback to sequential processing
             logger.info("Falling back to sequential processing")
             return self._scrape_chapters_sequential(chapter_range)
-        
+
         # Sort successful chapters by chapter number
         successful_chapters.sort(key=lambda x: x.get('chapter_number', 0))
-        
+
         logger.info(f"Successfully scraped {len(successful_chapters)} chapters using parallel processing")
         if failed_chapters:
             logger.warning(f"Failed to scrape {len(failed_chapters)} chapters: {sorted(failed_chapters)}")
-            
+
         return successful_chapters
-    
+
     def save_chapters(self, chapters: List[Dict[str, Any]], output_path: Path) -> None:
         """
         Save chapters to JSON file.
-        
+
         Args:
             chapters: List of chapter data
             output_path: Path to save the JSON file
@@ -369,13 +478,13 @@ class ChapterScraper:
         try:
             # Ensure directory exists
             output_path.parent.mkdir(parents=True, exist_ok=True)
-            
+
             # Save to JSON
             with open(output_path, "w", encoding="utf-8") as f:
                 json.dump(chapters, f, indent=2, ensure_ascii=False)
-                
+
             logger.info(f"Saved {len(chapters)} chapters to {output_path}")
-            
+
         except Exception as e:
             logger.error(f"Failed to save chapters to {output_path}: {e}")
             raise
@@ -385,11 +494,31 @@ class ChapterScraper:
 def scrap_chapters(last_chapter: int, output_path: str) -> None:
     """
     Legacy function for scraping chapters.
-    
+
     Args:
         last_chapter: Last chapter number to scrape
         output_path: Path to save the JSON file
     """
     scraper = ChapterScraper()
-    chapters = scraper.scrape_chapters(end_chapter=last_chapter)
+    chapters = scraper.scrape_chapters(end_chapter=last_chapter, use_batch=True)
+    scraper.save_chapters(chapters, Path(output_path))
+
+
+def scrape_chapters_api(start_chapter: int, end_chapter: int, output_path: str,
+                       use_batch: bool = True) -> None:
+    """
+    Alternative function for scraping chapters using API with specific range.
+
+    Args:
+        start_chapter: Starting chapter number
+        end_chapter: Last chapter number to scrape
+        output_path: Path to save the JSON file
+        use_batch: Whether to use batch API queries
+    """
+    scraper = ChapterScraper()
+    chapters = scraper.scrape_chapters(
+        start_chapter=start_chapter,
+        end_chapter=end_chapter,
+        use_batch=use_batch
+    )
     scraper.save_chapters(chapters, Path(output_path))

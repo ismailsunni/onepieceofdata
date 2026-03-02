@@ -139,6 +139,7 @@ class DatabaseManager:
             bounties TEXT,
             bounty BIGINT,
             age INT,
+            is_likely_character BOOLEAN,
             scraping_status TEXT,
             scraping_note TEXT,
             chapter_list INTEGER[],
@@ -453,16 +454,17 @@ class DatabaseManager:
                     blood_type, blood_type_group = self._parse_blood_type(character_data)
                     bounties, bounty = self._parse_bounty(character_data)
                     age = self._parse_age(character_data)
-                    
+                    is_likely_character = character_data.get('is_likely_character', True)  # Default True for backward compat
+
                     # Determine scraping status and note
                     scraping_status, scraping_note = self._determine_scraping_status(character_data)
-                    
+
                     # Insert character (simple INSERT since table is cleared)
                     conn.execute("""
-                        INSERT INTO character 
-                        (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, scraping_status, scraping_note)
-                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    """, [char_id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, scraping_status, scraping_note])
+                        INSERT INTO character
+                        (id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, is_likely_character, scraping_status, scraping_note)
+                        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """, [char_id, name, origin, status, birth, blood_type, blood_type_group, bounties, bounty, age, is_likely_character, scraping_status, scraping_note])
                     
                 except Exception as e:
                     logger.error(f"Failed to insert character {character_data.get('name', 'unknown')}: {str(e)}")
@@ -674,60 +676,98 @@ class DatabaseManager:
     
     def _parse_blood_type(self, attributes: Dict[str, Any]) -> tuple[Optional[str], Optional[str]]:
         """Parse blood type information."""
-        if "blood type" not in attributes:
+        # Check both "blood type" (old) and "blood_type" (new API scraper)
+        blood_types_raw = attributes.get("blood type") or attributes.get("blood_type")
+        if not blood_types_raw:
             return None, None
-        
-        blood_types = attributes["blood type"]
+
+        # Handle both string (from new API scraper) and list (from old scraper)
+        if isinstance(blood_types_raw, str):
+            # Split by newlines and keep only non-empty, non-reference lines
+            blood_types = []
+            for line in blood_types_raw.split('\n'):
+                line = line.strip()
+                if line and not line.isdigit() and line not in ['[', ']']:
+                    blood_types.append(line)
+        else:
+            blood_types = blood_types_raw
+
         if not blood_types:
             return None, None
-        
+
         if len(blood_types) > 1:
             blood_type = ", ".join(blood_types)
             blood_type_group = "mixed"
         else:
             blood_type = blood_types[0]
             blood_type_group = self._get_blood_type_group(blood_type)
-        
+
         return blood_type, blood_type_group
     
     def _parse_bounty(self, attributes: Dict[str, Any]) -> tuple[Optional[str], Optional[int]]:
-        """Parse bounty information."""
+        """Parse bounty information with improved parsing for new API format."""
         if "bounty" not in attributes:
             return None, None
-        
-        bounties_list = attributes["bounty"]
+
+        bounties_raw = attributes["bounty"]
+        if not bounties_raw:
+            return None, None
+
+        # Handle both string (from new API scraper) and list (from old scraper)
+        if isinstance(bounties_raw, str):
+            # Handle both newline and semicolon separated formats
+            if '\n' in bounties_raw:
+                # Old format: split by newlines
+                bounties_list = []
+                for line in bounties_raw.split('\n'):
+                    line = line.strip()
+                    # Skip empty lines, brackets, single numbers (reference markers)
+                    if not line or line in ['[', ']'] or line.isdigit():
+                        continue
+                    bounties_list.append(line)
+            else:
+                # New format: may contain semicolons
+                bounties_list = [bounties_raw.strip()]
+        else:
+            bounties_list = bounties_raw
+
         if not bounties_list:
             return None, None
-        
+
         bounties = ";".join(bounties_list)
-        first_entry = bounties_list[0].replace("¥", "")
+
+        # Improved bounty parsing that handles semicolon-separated format
+        bounty = None
+        import re
         
-        if "★" in first_entry or first_entry == "Unknown" or first_entry == "":
-            if len(bounties_list) > 1:
-                first_entry = bounties_list[1]
-            else:
-                first_entry = first_entry.replace("★", "")
+        # Look through all parts (split by semicolon and newline)
+        all_parts = []
+        for entry in bounties_list:
+            # Split by semicolons to handle new API format
+            parts = [part.strip() for part in entry.split(';')]
+            all_parts.extend(parts)
         
-        if first_entry in ["Unknown", ""] or "Unknown" in first_entry:
-            bounty = None
-        else:
-            try:
-                bounty = int(
-                    first_entry.split(" ")[-1]
-                    .replace(";", "")
-                    .replace("(", "")
-                    .replace(")", "")
-                )
-            except ValueError:
+        # Find numeric bounty value from all parts
+        for part in all_parts:
+            part = part.replace("¥", "").strip()
+            
+            # Skip obvious non-bounty parts
+            if part in ["At least", "Unknown", "Over", "★", "(", ")"] or part.startswith("bounty"):
+                continue
+            if part.replace("★", "").replace(" ", "") == "":
+                continue
+                
+            # Look for numbers with commas
+            match = re.search(r'[\d,]+', part)
+            if match:
                 try:
-                    bounty = int(
-                        first_entry.split(" ")[0]
-                        .replace(";", "")
-                        .replace("(", "")
-                        .replace(")", "")
-                    )
+                    potential_bounty = int(match.group().replace(",", ""))
+                    # Sanity check - bounties should be reasonable
+                    if potential_bounty > 0 and potential_bounty <= 10_000_000_000:
+                        bounty = potential_bounty
+                        break
                 except ValueError:
-                    bounty = None
+                    continue
         
         # Special case for Buggy (from original parser)
         if attributes.get("id") == "Buggy":
@@ -739,11 +779,22 @@ class DatabaseManager:
         """Parse age information."""
         if "age" not in attributes:
             return None
-        
-        ages = attributes["age"]
+
+        ages_raw = attributes["age"]
+        if not ages_raw:
+            return None
+
+        # Handle both string (from new API scraper) and list (from old scraper)
+        if isinstance(ages_raw, str):
+            # Split by newlines and filter out empty lines and reference markers
+            ages = [line.strip() for line in ages_raw.split('\n')
+                   if line.strip() and not line.strip().startswith('[')]
+        else:
+            ages = ages_raw
+
         if not ages:
             return None
-        
+
         def parse_raw_age(raw_age: str) -> Optional[int]:
             age_string = raw_age.split(" ")
             if age_string[0] in ["Over", "Under", "Roughly", "Bas:", "And:", "Kerville:"]:

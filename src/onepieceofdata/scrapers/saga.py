@@ -1,69 +1,69 @@
-"""Modern saga scraper for One Piece story sagas."""
+"""API-based saga scraper using Fandom MediaWiki API.
+
+This uses the MediaWiki API to bypass Cloudflare protection.
+"""
 
 from typing import List, Optional, Dict, Any
-import urllib3
 import re
 from bs4 import BeautifulSoup, Tag
-from loguru import logger
 from tenacity import retry, stop_after_attempt, wait_exponential, retry_if_exception_type
 
+from ..api import FandomAPIClient
 from ..models.data import SagaModel, ScrapingResult
 from ..config.settings import get_settings
+from ..utils.logging import get_logger
+
+
+logger = get_logger(__name__)
 
 
 class SagaScraper:
-    """Modern saga scraper with error handling and retry mechanisms."""
-    
+    """API-based saga scraper using Fandom MediaWiki API."""
+
     def __init__(self):
-        """Initialize the saga scraper."""
+        """Initialize the API-based saga scraper."""
         self.settings = get_settings()
-        self.http_pool = urllib3.PoolManager()
+        self.api_client = FandomAPIClient(wiki="onepiece")
         self.base_url = "https://onepiece.fandom.com"
-        
+
     @retry(
         stop=stop_after_attempt(3),
         wait=wait_exponential(multiplier=1, min=4, max=10),
-        retry=retry_if_exception_type((urllib3.exceptions.HTTPError, Exception))
+        retry=retry_if_exception_type(Exception)
     )
-    def _fetch_page(self, url: str) -> BeautifulSoup:
-        """Fetch and parse a web page with retry logic.
-
-        Args:
-            url: URL to fetch
+    def _fetch_story_arcs_page(self) -> BeautifulSoup:
+        """Fetch the Story Arcs page with retry logic.
 
         Returns:
-            BeautifulSoup parsed page
+            BeautifulSoup object of the Story Arcs page
+
+        Raises:
+            Exception: If all retry attempts fail
         """
-        logger.debug(f"Fetching page: {url}")
+        logger.info(f"Fetching Story Arcs page via API")
 
-        response = self.http_pool.request(
-            'GET',
-            url,
-            headers={
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                'Accept-Language': 'en-US,en;q=0.5',
-                'Accept-Encoding': 'gzip, deflate',
-                'Connection': 'keep-alive',
-                'Upgrade-Insecure-Requests': '1'
-            },
-            decode_content=True
-        )
+        try:
+            # Use API to get rendered HTML
+            html = self.api_client.get_page_html("Story_Arcs")
 
-        if response.status != 200:
-            raise Exception(f"HTTP {response.status} error for {url}")
+            if not html:
+                raise Exception("Failed to fetch Story Arcs page HTML")
 
-        soup = BeautifulSoup(response.data, 'html.parser')
-        logger.debug(f"Successfully parsed page: {url}")
+            soup = BeautifulSoup(html, "html.parser")
+            logger.debug("Successfully fetched and parsed Story Arcs page")
 
-        return soup
-        
+            return soup
+
+        except Exception as e:
+            logger.error(f"Error fetching Story Arcs page: {str(e)}")
+            raise
+
     def _extract_chapter_range(self, text: str) -> tuple[Optional[int], Optional[int]]:
         """Extract chapter range from text.
-        
+
         Args:
             text: Text containing chapter information
-            
+
         Returns:
             Tuple of (start_chapter, end_chapter)
         """
@@ -82,7 +82,7 @@ class SagaScraper:
         match = re.search(r'\((\d+)-(\d+)\)', text)
         if match:
             return int(match.group(1)), int(match.group(2))
-            
+
         match = re.search(r'\((\d+)\)', text)
         if match:
             start = int(match.group(1))
@@ -90,13 +90,13 @@ class SagaScraper:
 
         logger.warning(f"Could not extract chapter range from text: {text}")
         return None, None
-        
+
     def _clean_title(self, title: str) -> str:
         """Clean saga title by removing extra whitespace and formatting.
-        
+
         Args:
             title: Raw title string
-            
+
         Returns:
             Cleaned title
         """
@@ -105,27 +105,27 @@ class SagaScraper:
         title = re.sub(r'\s+', ' ', title.strip())
         title = re.sub(r'\s+(Saga)\s*$', '', title, flags=re.IGNORECASE)
         return title.strip()
-        
+
     def scrape_sagas_from_list_page(self) -> List[ScrapingResult]:
         """Scrape sagas from the One Piece story arcs list page.
-        
+
         Returns:
             List of ScrapingResult objects containing saga data
         """
         url = f"{self.base_url}/wiki/Story_Arcs"
         results = []
-        
+
         try:
             logger.info(f"Scraping sagas from: {url}")
-            soup = self._fetch_page(url)
-            
+            soup = self._fetch_story_arcs_page()
+
             content = soup.find('div', {'class': 'mw-parser-output'})
             if not content:
                 raise Exception("Could not find main content area")
 
             # Sagas are under h3 tags
             saga_headers = content.find_all('h3')
-            
+
             for header in saga_headers:
                 span = header.find('span', {'class': 'mw-headline'})
                 if not span:
@@ -137,7 +137,7 @@ class SagaScraper:
                     continue
 
                 min_start_chapter, max_end_chapter = float('inf'), float('-inf')
-                
+
                 # Find all arcs (h4) under this saga (h3)
                 next_element = header.find_next_sibling()
                 while next_element and next_element.name != 'h3':
@@ -178,7 +178,7 @@ class SagaScraper:
 
             logger.success(f"Successfully scraped {len(results)} sagas")
             return results
-            
+
         except Exception as e:
             logger.error(f"Failed to scrape sagas: {str(e)}")
             return [ScrapingResult(
@@ -187,10 +187,10 @@ class SagaScraper:
                 error=str(e),
                 url=url
             )]
-            
+
     def scrape_all_sagas(self) -> List[ScrapingResult]:
         """Scrape all sagas from various sources.
-        
+
         Returns:
             List of ScrapingResult objects containing all saga data
         """
@@ -198,8 +198,33 @@ class SagaScraper:
         all_results = self.scrape_sagas_from_list_page()
         logger.success(f"Completed saga scraping. Total sagas: {len([r for r in all_results if r.success])}")
         return all_results
-        
+
+    def export_to_json(self, results: List[ScrapingResult], output_path: str) -> bool:
+        """Export scraping results to JSON file.
+
+        Args:
+            results: List of scraping results
+            output_path: Path to output JSON file
+
+        Returns:
+            True if export successful, False otherwise
+        """
+        try:
+            import json
+
+            successful_results = [r.data for r in results if r.success and r.data]
+
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(successful_results, f, indent=2, ensure_ascii=False)
+
+            logger.success(f"Exported {len(successful_results)} sagas to {output_path}")
+            return True
+
+        except Exception as e:
+            logger.error(f"Failed to export sagas to {output_path}: {str(e)}")
+            return False
+
     def cleanup(self):
         """Clean up resources."""
-        if hasattr(self.http_pool, 'clear'):
-            self.http_pool.clear()
+        if hasattr(self.api_client, 'http_pool') and hasattr(self.api_client.http_pool, 'clear'):
+            self.api_client.http_pool.clear()
