@@ -1008,12 +1008,12 @@
         "slug": "Iceburg"
       },
       {
-        "name": "Kalifa",
-        "slug": "Kalifa"
+        "name": "Tyrannosaurus",
+        "slug": "Tyrannosaurus"
       },
       {
-        "name": "Yagara Bull",
-        "slug": "Yagara_Bull"
+        "name": "Kalifa",
+        "slug": "Kalifa"
       },
       {
         "name": "Paulie",
@@ -1026,6 +1026,10 @@
       {
         "name": "Kaku",
         "slug": "Kaku"
+      },
+      {
+        "name": "Yagara Bull",
+        "slug": "Yagara_Bull"
       }
     ]
   },
@@ -1412,8 +1416,8 @@
         "slug": "Cerberus"
       },
       {
-        "name": "zombies",
-        "slug": "Zombie"
+        "name": "Zombies",
+        "slug": "Zombies"
       }
     ]
   },
@@ -1485,12 +1489,12 @@
         "slug": "Roronoa_Zoro"
       },
       {
-        "name": "Usopp",
-        "slug": "Usopp"
-      },
-      {
         "name": "Nami",
         "slug": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "slug": "Usopp"
       },
       {
         "name": "Sanji",
@@ -2317,8 +2321,16 @@
         "slug": "Mocha"
       },
       {
+        "name": "Sind",
+        "slug": "Sind"
+      },
+      {
         "name": "Doran",
         "slug": "Doran"
+      },
+      {
+        "name": "Konbu",
+        "slug": "Konbu"
       }
     ]
   },
@@ -2658,24 +2670,24 @@
         "slug": "Trafalgar_D._Water_Law"
       },
       {
-        "name": "Kyros",
-        "slug": "Kyros"
-      },
-      {
         "name": "Rebecca",
         "slug": "Rebecca"
+      },
+      {
+        "name": "Bartolomeo",
+        "slug": "Bartolomeo"
       },
       {
         "name": "Leo",
         "slug": "Leo"
       },
       {
-        "name": "Sabo",
-        "slug": "Sabo"
+        "name": "Kyros",
+        "slug": "Kyros"
       },
       {
-        "name": "Bartolomeo",
-        "slug": "Bartolomeo"
+        "name": "Kanjuro",
+        "slug": "Kurozumi_Kanjuro"
       },
       {
         "name": "Cavendish",
@@ -2686,8 +2698,12 @@
         "slug": "Farul"
       },
       {
-        "name": "Kurozumi Kanjuro",
-        "slug": "Kurozumi_Kanjuro"
+        "name": "Sabo",
+        "slug": "Sabo"
+      },
+      {
+        "name": "Koala",
+        "slug": "Koala"
       }
     ]
   },
@@ -2918,8 +2934,8 @@
         "slug": "Edward_Weevil"
       },
       {
-        "name": "Bakkin",
-        "slug": "Bakkin"
+        "name": "Buckin",
+        "slug": "Buckingham_Stussy"
       },
       {
         "name": "Sai",
@@ -2995,6 +3011,14 @@
       {
         "name": "Giovanni",
         "slug": "Giovanni"
+      },
+      {
+        "name": "Concelot",
+        "slug": "Concelot"
+      },
+      {
+        "name": "Yomo",
+        "slug": "Yomo"
       },
       {
         "name": "Pedro",
@@ -4273,8 +4297,8 @@
         "slug": "Figarland_Shamrock"
       },
       {
-        "name": "Gunko",
-        "slug": "Gunko"
+        "name": "Manmayer Gunko",
+        "slug": "Manmayer_Gunko"
       },
       {
         "name": "Shepherd Sommers",
@@ -4287,6 +4311,73 @@
       {
         "name": "Scopper Gaban",
         "slug": "Scopper_Gaban"
+      }
+    ]
+  },
+  {
+    "volume_number": 114,
+    "english_title": "The God Valley Incident",
+    "japanese_title": "ゴッドバレー事件",
+    "cover_characters": [
+      {
+        "name": "Rocks D. Xebec",
+        "slug": "Rocks_D._Xebec"
+      },
+      {
+        "name": "Gloriosa",
+        "slug": "Gloriosa"
+      },
+      {
+        "name": "Streusen",
+        "slug": "Streusen"
+      },
+      {
+        "name": "Shiki",
+        "slug": "Shiki"
+      },
+      {
+        "name": "John",
+        "slug": "John"
+      },
+      {
+        "name": "Ochoku",
+        "slug": "Ochoku"
+      },
+      {
+        "name": "Marlon",
+        "slug": "Marlon"
+      },
+      {
+        "name": "Kyo",
+        "slug": "Kyo"
+      },
+      {
+        "name": "Kaidou",
+        "slug": "Kaidou"
+      },
+      {
+        "name": "Edward Newgate",
+        "slug": "Edward_Newgate"
+      },
+      {
+        "name": "Charlotte Linlin",
+        "slug": "Charlotte_Linlin"
+      },
+      {
+        "name": "Prometheus",
+        "slug": "Prometheus"
+      },
+      {
+        "name": "Napoleon",
+        "slug": "Napoleon"
+      },
+      {
+        "name": "Ganzui",
+        "slug": "Ganzui"
+      },
+      {
+        "name": "Barbel",
+        "slug": "Barbel"
       }
     ]
   }
