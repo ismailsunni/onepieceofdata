@@ -7519,7 +7519,6 @@ chapter,character,note
 483,Brook,
 483,Margarita,
 483,Egana,
-483,Thriller_Bark_Victim's_Association,
 483,Spoil,
 484,Monkey_D._Luffy,K.O.
 484,Roronoa_Zoro,
@@ -8887,12 +8886,12 @@ chapter,character,note
 551,McGuy,
 551,Decalvan_Brothers,
 551,Squard,
-551,Elmy,
+551,Elmy,flashback
 551,A_O,flashback
 551,Ramba,flashback
 551,Delacuaji,flashback
-551,Buggy,flashback
 551,Gol_D._Roger,flashback
+551,Buggy,
 551,Salome,
 551,Sengoku,
 551,Kuzan,
@@ -9262,7 +9261,6 @@ chapter,character,note
 563,Fossa,
 563,Izou,
 563,Squard,
-563,Buggy,
 563,McGuy,
 563,Doma,
 563,Blondie,
@@ -9273,6 +9271,7 @@ chapter,character,note
 563,Rush,
 563,Great_Michael,
 563,Arthur,
+563,Buggy,
 563,Sengoku,
 563,Borsalino,
 563,Sakazuki,
@@ -9428,12 +9427,12 @@ chapter,character,note
 568,Curiel,
 568,Haruta,
 568,Fossa,
-568,Buggy,
 568,Blondie,
 568,Pavlik,
 568,Rush,
 568,Elmy,
 568,Jinbe,
+568,Buggy,
 568,Sengoku,
 568,Borsalino,
 568,Sakazuki,
@@ -9486,12 +9485,12 @@ chapter,character,note
 570,Karma,
 570,Epoida,
 570,Ramba,
-570,Buggy,
 570,Andre,
 570,Choi,
 570,Delacuaji,
 570,Hangan,
 570,Kinga,
+570,Buggy,
 570,Salome,
 570,Sengoku,
 570,Borsalino,
@@ -9594,7 +9593,6 @@ chapter,character,note
 574,Kingdew,
 574,Speed_Jiru,
 574,Fossa,
-574,Buggy,
 574,Ramba,
 574,Hangan,
 574,Choi,
@@ -9602,6 +9600,7 @@ chapter,character,note
 574,Rush,
 574,Arthur,
 574,Colscon,
+574,Buggy,
 574,Sengoku,
 574,Sakazuki,
 574,Kuzan,
@@ -9682,10 +9681,10 @@ chapter,character,note
 577,Rakuyo,
 577,Namur,
 577,Fossa,
-577,Buggy,
 577,Karma,
 577,Brew,
 577,Elmy,
+577,Buggy,
 577,Marshall_D._Teach,
 577,Van_Augur,
 577,Jesus_Burgess,
@@ -9727,13 +9726,13 @@ chapter,character,note
 578,Atmos,
 578,Fossa,
 578,Izou,
-578,Buggy,
 578,Agsilly,
 578,Julius,
 578,Andre,
 578,Pavlik,
 578,Happygun,
 578,Blondie,
+578,Buggy,
 578,Marshall_D._Teach,
 578,Van_Augur,
 578,Jesus_Burgess,
@@ -9760,10 +9759,10 @@ chapter,character,note
 579,Marco,K.O.
 579,Fossa,K.O.
 579,Curiel,K.O.
-579,Buggy,
 579,Doma,
 579,McGuy,
 579,A_O,
+579,Buggy,
 579,Marshall_D._Teach,
 579,Van_Augur,
 579,Jesus_Burgess,
@@ -9785,6 +9784,7 @@ chapter,character,note
 579,Jinbe,K.O.
 579,Nefertari_Vivi,cover
 579,Karoo,cover
+580,Monkey_D._Luffy,K.O.
 580,Edward_Newgate,deceased
 580,Marco,deceased
 580,Portgas_D._Ace,deceased
@@ -9795,14 +9795,13 @@ chapter,character,note
 580,Haruta,
 580,Fossa,
 580,Izou,
-580,Buggy,K.O.
 580,Islewan,K.O.
 580,Epoida,K.O.
 580,Andre,K.O.
 580,Palms,K.O.
 580,Kinoko,K.O.
 580,Oars_Jr.,K.O.
-580,Monkey_D._Luffy,K.O.
+580,Buggy,
 580,Marshall_D._Teach,
 580,Van_Augur,
 580,Jesus_Burgess,
@@ -10305,7 +10304,7 @@ chapter,character,note
 599,Sweet_Pea,flashback
 599,Aphelandra,flashback
 599,Salome,flashback
-599,Sentomaru,
+599,Sentomaru,silhouette
 599,Beak_Remark,flashback
 600,Monkey_D._Luffy,
 600,Roronoa_Zoro,
@@ -13353,8 +13352,9 @@ chapter,character,note
 731,Kyros,
 731,Rebecca,
 731,Acilia,
-731,Gancho,cover
+731,Gancho,
 731,Leo,cover
+731,Bomba,cover
 731,Rampo,cover
 731,Kabu,cover
 731,Bian,cover
@@ -15229,34 +15229,35 @@ chapter,character,note
 801,Sai,flashback
 801,Donquixote_Doflamingo,flashback
 801,Bellamy,flashback
-801,Shanks,silhouette
-801,Kaidou,silhouette
-801,Jack,silhouette
-801,Charlotte_Linlin,silhouette
-801,Marshall_D._Teach,silhouette
-801,Dracule_Mihawk,silhouette
+801,Shanks,"image, silhouette"
+801,Kaidou,"image, silhouette"
+801,Jack,"image, silhouette"
+801,Charlotte_Linlin,"image, silhouette"
+801,Marshall_D._Teach,"image, silhouette"
+801,Dracule_Mihawk,"image, silhouette"
 801,Bartholomew_Kuma,"image, silhouette"
-801,Boa_Hancock,silhouette
-801,Buggy,silhouette
-801,Edward_Weevil,silhouette
-801,Eustass_Kid,silhouette
-801,Killer,silhouette
-801,Scratchmen_Apoo,silhouette
-801,Basil_Hawkins,silhouette
-801,X_Drake,silhouette
-801,Jewelry_Bonney,silhouette
-801,Capone_Bege,silhouette
-801,Urouge,silhouette
+801,Boa_Hancock,"image, silhouette"
+801,Buggy,"image, silhouette"
+801,Edward_Weevil,"image, silhouette"
+801,Eustass_Kid,"image, silhouette"
+801,Killer,"image, silhouette"
+801,Scratchmen_Apoo,"image, silhouette"
+801,Basil_Hawkins,"image, silhouette"
+801,X_Drake,"image, silhouette"
+801,Jewelry_Bonney,"image, silhouette"
+801,Capone_Bege,"image, silhouette"
+801,Urouge,"image, silhouette"
 801,Hajrudin,flashback
-801,Sakazuki,silhouette
-801,Borsalino,silhouette
-801,Issho,silhouette
-801,Aramaki,silhouette
+801,Sakazuki,"image, silhouette"
+801,Borsalino,"image, silhouette"
+801,Issho,"image, silhouette"
+801,Aramaki,"image, silhouette"
 801,Tsuru,
-801,Sengoku,
-801,Rob_Lucci,
-801,Hattori,
-801,Spandam,
+801,Sengoku,voice
+801,Rob_Lucci,voice
+801,Hattori,voice
+801,Spandam,voice
+801,Kaku,voice
 801,Kin'emon,
 801,Kanjuro,statue
 801,Riku_Doldo_III,statue
@@ -15280,10 +15281,10 @@ chapter,character,note
 801,Abdullah,flashback
 801,Jeet,flashback
 801,Orlumbus,flashback
-801,Monkey_D._Dragon,silhouette
-801,Sabo,silhouette
-801,Emporio_Ivankov,silhouette
-801,Morley,silhouette
+801,Monkey_D._Dragon,"image, silhouette"
+801,Sabo,"image, silhouette"
+801,Emporio_Ivankov,"image, silhouette"
+801,Morley,"image, silhouette"
 802,Monkey_D._Luffy,cover
 802,Roronoa_Zoro,cover
 802,Nami,cover
@@ -26515,3 +26516,37 @@ chapter,character,note
 1174,Manmayer_Gunko,possessed
 1174,Shepherd_Sommers,
 1174,Rimoshifu_Killingham,
+1175,Monkey_D._Luffy,
+1175,Roronoa_Zoro,
+1175,Nami,
+1175,Usopp,
+1175,Sanji,
+1175,Tony_Tony_Chopper,
+1175,Nico_Robin,
+1175,Jinbe,
+1175,Road,
+1175,Oimo,flashback
+1175,Kashii,flashback
+1175,Shanks,flashback
+1175,Loki,
+1175,Ragnir,
+1175,Jarul,
+1175,Scopper_Gaban,
+1175,Ripley,
+1175,Ange,
+1175,Colon,
+1175,Ylva,
+1175,Skaldi,
+1175,Olav,
+1175,Karin,
+1175,Mag,
+1175,Ronja,
+1175,Bent,possessed
+1175,Johanna,possessed
+1175,Bjorn,possessed
+1175,Imu,possessed
+1175,Manmayer_Gunko,possessed
+1175,Shepherd_Sommers,cover
+1175,Thormann,cover
+1175,Sabo,cover
+1175,Koala,cover
