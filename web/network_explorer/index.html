@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>One Piece Character Network Explorer</title>
+  <script src="../vendor/vis-network.min.js"></script>
+  <script src="../vendor/papaparse.min.js"></script>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; height: 100%; background: #0b1020; color: #e5ecff;
+      font-family: Inter, system-ui, sans-serif; font-size: 13px; overflow: hidden; }
+    #layout { display: flex; width: 100vw; height: 100vh; }
+    #sidebar { width: 300px; flex-shrink: 0; background: #121a30;
+      border-right: 1px solid #273455; padding: 14px; overflow-y: auto;
+      display: flex; flex-direction: column; gap: 10px; }
+    #sidebar h1 { font-size: 14px; }
+    small { color: #7a90b8; font-size: 11px; }
+    label { display: block; color: #9db0d1; font-size: 11px; margin-bottom: 4px; }
+    .ctrl { display: flex; gap: 6px; align-items: center; }
+    .ctrl input[type=range] { flex: 1; }
+    .ctrl span { width: 36px; text-align: right; }
+    input[type=number], input[type=text] { width: 100%; padding: 6px 8px;
+      border: 1px solid #273455; border-radius: 6px; background: #0e1630; color: #e5ecff; }
+    button { width: 100%; padding: 7px 0; border: 1px solid #273455; border-radius: 6px;
+      background: #1a2a4a; color: #e5ecff; cursor: pointer; }
+    button:hover { background: #223560; }
+    #stats { background: #0e1630; border: 1px solid #273455; border-radius: 6px;
+      padding: 8px; line-height: 1.7; color: #9db0d1; font-size: 11px; white-space: pre; }
+    #debug { background: #1a0a10; border: 1px solid #6b2233; border-radius: 6px;
+      padding: 8px; line-height: 1.7; color: #ff8ca8; font-size: 10px;
+      white-space: pre-wrap; display: none; }
+    #right { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+    #topbar { flex-shrink: 0; height: 40px; padding: 0 14px; background: #0e1630;
+      border-bottom: 1px solid #273455; display: flex;
+      justify-content: space-between; align-items: center; }
+    #topbar span { color: #5aa8ff; font-size: 12px; }
+    #network-wrap { flex: 1; position: relative; min-height: 0; }
+    #network { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+    #overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+      background: #0b1020; display: flex; align-items: center;
+      justify-content: center; font-size: 15px; color: #9db0d1; z-index: 10; }
+  </style>
+</head>
+<body>
+<div id="layout">
+  <aside id="sidebar">
+    <h1>Network Controls</h1>
+    <small>Source: exports/network_analysis/*.csv</small>
+    <div>
+      <label>Min chapter appearances (node filter)</label>
+      <div class="ctrl">
+        <input type="range" id="minApp" min="11" max="1001" value="11" />
+        <span id="minAppVal">11</span>
+      </div>
+    </div>
+    <div>
+      <label>Min co-appearance weight (edge filter)</label>
+      <div class="ctrl">
+        <input type="range" id="minWt" min="1" max="762" value="10" />
+        <span id="minWtVal">10</span>
+      </div>
+    </div>
+    <div>
+      <label>Max edges rendered</label>
+      <input type="number" id="maxEdges" min="50" max="10000" step="50" value="500" />
+    </div>
+    <div>
+      <label>Find character</label>
+      <input type="text" id="search" list="charList" placeholder="Type a name..." />
+      <datalist id="charList"></datalist>
+    </div>
+    <button id="focusBtn">Focus character</button>
+    <button id="applyBtn">Apply filters</button>
+    <button id="fitBtn">Fit / Reset view</button>
+    <div id="stats">Loading...</div>
+    <div id="debug"></div>
+  </aside>
+  <div id="right">
+    <div id="topbar">
+      <strong>One Piece Character Co-Appearance Explorer</strong>
+      <span id="status">Loading...</span>
+    </div>
+    <div id="network-wrap">
+      <div id="overlay">Loading network data...</div>
+      <div id="network"></div>
+    </div>
+  </div>
+</div>
+<script>
+  var NODE_CSV = "../../exports/network_analysis/character_network_nodes_gt10.csv";
+  var EDGE_CSV = "../../exports/network_analysis/character_coappearance_edges_gt10.csv";
+  function get(id) { return document.getElementById(id); }
+
+  var allNodes = [], allEdges = [], nameToId = {}, net = null;
+
+  function dbg(msg) {
+    var d = get("debug");
+    d.style.display = "block";
+    d.textContent += msg + "\n";
+    console.warn("[NetExplorer]", msg);
+  }
+
+  function loadCsv(url, cb) {
+    Papa.parse(url, {
+      header: true, download: true, dynamicTyping: true, skipEmptyLines: true,
+      complete: function(r) {
+        if (r.errors && r.errors.length)
+          dbg("CSV warn [" + url.split("/").pop() + "]: " + r.errors[0].message);
+        cb(null, r.data);
+      },
+      error: function(e) { cb(e, []); }
+    });
+  }
+
+  function buildGraph() {
+    var minApp = parseInt(get("minApp").value, 10) || 11;
+    var minWt  = parseInt(get("minWt").value,  10) || 1;
+    var maxE   = parseInt(get("maxEdges").value,10) || 500;
+
+    var eligible = allNodes.filter(function(n) { return n.appearance_count >= minApp; });
+    var allowed  = {};
+    eligible.forEach(function(n) { allowed[n.id] = true; });
+
+    var filteredEdges = allEdges
+      .filter(function(e) { return e.weight >= minWt && allowed[e.source] && allowed[e.target]; })
+      .sort(function(a, b) { return b.weight - a.weight; })
+      .slice(0, maxE);
+
+    var seen = {};
+    filteredEdges.forEach(function(e) { seen[e.source] = true; seen[e.target] = true; });
+
+    var nodes = eligible
+      .filter(function(n) { return seen[n.id]; })
+      .map(function(n) { return {
+        id:    n.id,
+        label: n.name,
+        size:  Math.max(8, Math.min(28, 8 + Math.log10(Math.max(1, n.appearance_count)) * 7)),
+        title: "<b>" + n.name + "</b><br>Appearances: " + n.appearance_count + "<br>Weighted degree: " + n.weighted_degree,
+        color: { background: "#5aa8ff", border: "#3468a8",
+                 highlight: { background: "#ffcc44", border: "#cc8800" } },
+        font:  { color: "#e5ecff", size: 11 },
+      }; });
+
+    get("stats").textContent =
+      "Nodes shown: "    + nodes.length   + "\n" +
+      "Edges shown: "    + filteredEdges.length + "\n" +
+      "Min appearances: "+ minApp         + "\n" +
+      "Min edge weight: "+ minWt          + "\n" +
+      "Edge cap: "       + maxE           + "\n" +
+      "Total eligible: " + eligible.length;
+
+    get("status").textContent = nodes.length + " nodes / " + filteredEdges.length + " edges";
+
+    if (nodes.length === 0) {
+      if (net) { net.destroy(); net = null; }
+      get("status").textContent = "No nodes match filters — lower the sliders";
+      return;
+    }
+
+    var visEdges = filteredEdges.map(function(e) { return {
+      from:  e.source, to: e.target,
+      width: Math.max(1, Math.min(6, Math.log10(Math.max(1, e.weight)) * 2)),
+      title: e.source_name + " + " + e.target_name + ": " + e.weight + " chapters",
+      color: { color: "#4a7fcc", opacity: 0.5, highlight: "#ffcc44" },
+    }; });
+
+    var container = get("network");
+    if (net) { net.destroy(); net = null; }
+
+    net = new vis.Network(
+      container,
+      { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(visEdges) },
+      {
+        nodes: { shape: "dot" },
+        edges: { smooth: false },
+        layout: { randomSeed: 7, improvedLayout: nodes.length < 80 },
+        interaction: { hover: true, tooltipDelay: 100, navigationButtons: true, keyboard: true },
+        physics: {
+          barnesHut: { gravitationalConstant: -2000, springLength: 120, springConstant: 0.04, damping: 0.2 },
+          stabilization: { enabled: true, iterations: 300, fit: true },
+        },
+      }
+    );
+
+    net.once("stabilizationIterationsDone", function() {
+      net.setOptions({ physics: false });
+      net.fit({ animation: true });
+    });
+  }
+
+  function focusCharacter() {
+    if (!net) return;
+    var q  = get("search").value.trim();
+    var id = nameToId[q];
+    if (!id) { get("status").textContent = 'Not found: "' + q + '"'; return; }
+    net.selectNodes([id]);
+    net.focus(id, { scale: 1.5, animation: { duration: 400, easingFunction: "easeInOutQuad" } });
+    get("status").textContent = "Focused: " + q;
+  }
+
+  function init() {
+    get("status").textContent = "Fetching CSVs...";
+    var loaded = 0;
+    var rawN, rawE;
+
+    function tryBuild() {
+      loaded++;
+      if (loaded < 2) return;
+      dbg("Rows loaded: nodes=" + rawN.length + ", edges=" + rawE.length);
+      allNodes = rawN.map(function(n) { return {
+        id:               String(n.id   || ""),
+        name:             String(n.name || n.id || ""),
+        appearance_count: Number(n.appearance_count) || 0,
+        weighted_degree:  Number(n.weighted_degree)  || 0,
+        degree:           Number(n.degree)           || 0,
+      }; }).filter(function(n) { return n.id; });
+
+      allEdges = rawE.map(function(e) { return {
+        source:      String(e.source      || ""),
+        source_name: String(e.source_name || e.source || ""),
+        target:      String(e.target      || ""),
+        target_name: String(e.target_name || e.target || ""),
+        weight:      Number(e.weight) || 0,
+      }; }).filter(function(e) { return e.source && e.target; });
+
+      dbg("Parsed: nodes=" + allNodes.length + ", edges=" + allEdges.length);
+
+      allNodes.forEach(function(n) { nameToId[n.name] = n.id; });
+
+      get("charList").innerHTML = allNodes
+        .map(function(n) { return '<option value="' + n.name.replace(/"/g, "&quot;") + '">'; })
+        .join("");
+
+      get("minApp").max = Math.max.apply(null, allNodes.map(function(n){ return n.appearance_count; }).concat([11]));
+      get("minWt").max  = Math.max.apply(null, allEdges.map(function(e){ return e.weight; }).concat([1]));
+
+      get("overlay").style.display = "none";
+      buildGraph();
+    }
+
+    loadCsv(NODE_CSV, function(err, data) {
+      if (err) dbg("Node CSV error: " + err);
+      rawN = data || [];
+      tryBuild();
+    });
+    loadCsv(EDGE_CSV, function(err, data) {
+      if (err) dbg("Edge CSV error: " + err);
+      rawE = data || [];
+      tryBuild();
+    });
+  }
+
+  get("minApp").addEventListener("input",  function() { get("minAppVal").textContent = get("minApp").value; });
+  get("minWt").addEventListener("input",   function() { get("minWtVal").textContent  = get("minWt").value;  });
+  get("minApp").addEventListener("change", buildGraph);
+  get("minWt").addEventListener("change",  buildGraph);
+  get("maxEdges").addEventListener("change", buildGraph);
+  get("applyBtn").addEventListener("click", buildGraph);
+  get("focusBtn").addEventListener("click", focusCharacter);
+  get("fitBtn").addEventListener("click",   function() { if (net) net.fit({ animation: true }); });
+  get("search").addEventListener("keydown", function(e) { if (e.key === "Enter") focusCharacter(); });
+
+  window.addEventListener("load", init);
+</script>
+</body>
+</html>

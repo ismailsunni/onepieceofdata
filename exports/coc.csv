@@ -2054,7 +2054,7 @@ chapter,character,note
 167,Marine_Headquarters_Court,cover
 167,Fullbody,cover
 167,Nefertari_Cobra,
-167,Nefertari_Vivi,flashback
+167,Nefertari_Vivi,
 167,Chaka,flashback
 167,Pell,flashback
 167,Koza,flashback
@@ -2062,6 +2062,7 @@ chapter,character,note
 167,Farafra,flashback
 167,Okame,flashback
 167,Kebi,flashback
+167,Natto,flashback
 167,Toto,flashback
 167,Kappa,image only
 167,Crocodile,image only
@@ -19139,6 +19140,7 @@ chapter,character,note
 944,Shinobu,
 944,Hyougoro,
 944,Toko,
+944,Daikoku,
 944,Tabuhachiro,
 944,Kurosawa,
 944,Hidayu,
@@ -19181,6 +19183,7 @@ chapter,character,note
 945,Sugamichi_and_Warazane,cont.
 945,Sugamichi_and_Warazane,cont.
 945,Hoisassa,cont.
+945,Kojuro,cont.
 945,Kouzuki_Momonosuke,
 945,Kouzuki_Hiyori,
 945,Kin'emon,
@@ -25938,7 +25941,8 @@ chapter,character,note
 1158,Hajrudin,
 1158,Loki,
 1158,Mato,
-1158,Shakuyaku,cover
+1158,Shakuyaku,
+1158,Magnolia,cover
 1158,Figarland_Shamrock,cover
 1158,Shanks,cover
 1158,Yamato,cover
@@ -25977,6 +25981,7 @@ chapter,character,note
 1159,Shakuyaku,
 1159,Eris,
 1159,Marshall_D._Teach,cover
+1159,Magnolia,cover
 1159,Figarland_Shamrock,cover
 1159,Shanks,cover
 1159,Yamato,cover
@@ -26020,6 +26025,7 @@ chapter,character,note
 1160,Shakuyaku,
 1160,Eris,
 1160,Marshall_D._Teach,cover
+1160,Magnolia,cover
 1160,Figarland_Shamrock,cover
 1160,Shanks,cover
 1160,Yamato,cover
@@ -26550,3 +26556,25 @@ chapter,character,note
 1175,Thormann,cover
 1175,Sabo,cover
 1175,Koala,cover
+1176,Monkey_D._Luffy,cover
+1176,Roronoa_Zoro,cover
+1176,Nami,cover
+1176,Usopp,cover
+1176,Sanji,cover
+1176,Tony_Tony_Chopper,cover
+1176,Nico_Robin,cover
+1176,Franky,cover
+1176,Brook,cover
+1176,Jinbe,
+1176,Zeus,
+1176,Hajrudin,
+1176,Stansen,
+1176,Dorry,
+1176,Brogy,
+1176,Jewelry_Bonney,
+1176,Loki,
+1176,Jarul,
+1176,Jaguar_D._Saul,
+1176,Lilith,
+1176,Rimoshifu_Killingham,
+1176,Thormann,

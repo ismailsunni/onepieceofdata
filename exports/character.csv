@@ -246,8 +246,8 @@ Brogy,Brogy,Grand Line (Elbaph),Alive,February 1st,F,F,"1,800,000,000;100,000,00
   129  366  384  430  633  866 1076 1079 1106 1107 1108 1110 1111 1112
  1114 1115 1117 1118 1119 1120 1121 1122 1123 1124 1126 1130 1131 1132
  1133 1134 1135 1138 1141 1143 1144 1145 1146 1147 1148 1149 1150 1151
- 1152 1153 1161 1172 1173]",[ 13  14  15  38  40  44  64  86 106 107 109 110 111 112 113 114],"['little_garden' 'water_7' 'enies_lobby' 'fish_man_island'
- 'whole_cake_island' 'egghead' 'elbaph']",['arabasta' 'water_7' 'fish_man_island' 'whole_cake_island' 'final'],61,16,115,1173,02-01,[ 15 110],2,New World
+ 1152 1153 1161 1172 1173 1176]",[ 13  14  15  38  40  44  64  86 106 107 109 110 111 112 113 114],"['little_garden' 'water_7' 'enies_lobby' 'fish_man_island'
+ 'whole_cake_island' 'egghead' 'elbaph']",['arabasta' 'water_7' 'fish_man_island' 'whole_cake_island' 'final'],62,16,115,1176,02-01,[ 15 110],2,New World
 Brontosaurus,Brontosaurus,Grand Line ( Little Garden ),Deceased,November 19th,,,,,,True,success,Successfully scraped character details,[115 116],[13],['little_garden'],['arabasta'],2,1,115,116,11-19,[],0,Grand Line
 Brook,Brook,West Blue,Alive,April 3rd,X,X,"383,000,000;83,000,000;33,000,000",383000000,90,True,success,Successfully scraped character details,"[ 442  443  444  453  454  455  456  458  459  462  466  467  469  470
   471  474  475  476  478  479  480  481  482  483  484  485  486  487
@@ -277,14 +277,14 @@ Brook,Brook,West Blue,Alive,April 3rd,X,X,"383,000,000;83,000,000;33,000,000",38
  1078 1081 1086 1089 1090 1091 1092 1093 1098 1102 1103 1105 1107 1110
  1111 1112 1113 1114 1117 1120 1121 1124 1126 1128 1130 1131 1132 1133
  1134 1135 1136 1138 1139 1141 1143 1144 1145 1146 1147 1148 1149 1150
- 1151 1155 1156 1161 1173]","[ 46  47  48  49  50  51  52  53  54  55  57  58  59  60  61  62  63  64
+ 1151 1155 1156 1161 1173 1176]","[ 46  47  48  49  50  51  52  53  54  55  57  58  59  60  61  62  63  64
   65  66  67  68  69  70  71  72  73  74  75  76  77  78  79  80  81  82
   83  84  85  86  87  88  89  90  91  92  93  94  95  96  97  98  99 100
  101 102 103 104 105 106 107 108 109 110 111 112 113 114]","['thriller_bark' 'sabaody_archipelago' 'amazon_lily' 'impel_down'
  'marineford' 'post_war' 'return_to_sabaody' 'fish_man_island'
  'punk_hazard' 'dressrosa' 'zou' 'whole_cake_island' 'levely'
  'wano_country' 'egghead' 'elbaph']","['thriller_bark' 'summit_war' 'fish_man_island' 'dressrosa'
- 'whole_cake_island' 'wano_country' 'final']",397,68,442,1173,04-03,[ 46  49  50  52  61  64  73  81  82  85  88  91  95 101 106],15,West Blue
+ 'whole_cake_island' 'wano_country' 'final']",398,68,442,1176,04-03,[ 46  49  50  52  61  64  73  81  82  85  88  91  95 101 106],15,West Blue
 Brownbeard,Brownbeard,,,,,,,,,True,success,Successfully scraped character details,"[581 594 661 662 663 664 665 666 667 668 674 677 678 679 680 682 689 690
  691 692 694 696 697 698]",[59 60 67 68 69 70],['post_war' 'punk_hazard'],['summit_war' 'dressrosa'],24,6,581,698,,[],0,
 Bubblegum,Bubblegum,,Unknown,,,,,,,True,success,Successfully scraped character details,[1029 1046 1052 1053 1079],[102 103 104 107],['wano_country' 'egghead'],['wano_country' 'final'],5,4,1029,1079,,[],0,
@@ -591,7 +591,7 @@ Daidalos,Daidalos,Grand Line ( Ryugu Kingdom ; Fish-Man Island ),Deceased,,,,,,,
 Daifugo,Daifugo,,Alive,,,,,,,True,success,Successfully scraped character details,"[ 934  935  937  940  943  946  947  948  949 1004 1016 1017 1018 1026
  1030]",[ 93  94  99 101 102],['wano_country'],['wano_country'],15,5,934,1030,,[],0,
 Daigin,Daigin,West Blue,Alive,August 24th,,,"At least ★;(At least;100,000,000)",100000000,,True,success,Successfully scraped character details,[531 546 691],[54 56 70],['impel_down' 'punk_hazard'],['summit_war' 'dressrosa'],3,3,531,691,08-24,[],0,West Blue
-Daikoku,Daikoku,Grand Line ( Wano Country ),Alive,May 12th,S,S,,,42,True,success,Successfully scraped character details,[ 931  932  933  942  945  958  971  990  994 1006 1007],[ 92  93  94  95  96  98 100],['wano_country'],['wano_country'],11,7,931,1007,05-12,[],0,New World
+Daikoku,Daikoku,Grand Line ( Wano Country ),Alive,May 12th,S,S,,,42,True,success,Successfully scraped character details,[ 931  932  933  942  944  945  958  971  990  994 1006 1007],[ 92  93  94  95  96  98 100],['wano_country'],['wano_country'],12,7,931,1007,05-12,[],0,New World
 Daikon,Daikon,,Alive,,,,,,,True,success,Successfully scraped character details,[732 733 736 739 776 798 893],[74 78 80 89],['dressrosa' 'whole_cake_island'],['dressrosa' 'whole_cake_island'],7,4,732,893,,[],0,
 Daisy,Daisy,Calm Belt (Amazon Lily),Alive,February 15th,,,,,,True,success,Successfully scraped character details,[ 516  517  518  519  521  522  523  594  597  599 1059],[ 53  54  60  61 105],['amazon_lily' 'post_war' 'return_to_sabaody' 'egghead'],['summit_war' 'fish_man_island' 'final'],11,5,516,1059,02-15,[],0,Calm Belt
 Dalmatian,Dalmatian,,Alive,November 1st,,,"At least ★★★★★;(At least;500,000,000)",500000000,,True,success,Successfully scraped character details,[553 567 691],[57 58 70],['marineford' 'punk_hazard'],['summit_war' 'dressrosa'],3,3,553,691,11-01,[],0,
@@ -677,8 +677,8 @@ Dorry,Dorry,Grand Line (Elbaph),Alive,October 2nd,F,F,"1,800,000,000;100,000,000
   365  366  384  430  633  866 1076 1079 1106 1107 1108 1110 1111 1112
  1114 1115 1117 1118 1119 1120 1121 1122 1123 1124 1126 1130 1131 1132
  1133 1135 1141 1143 1144 1145 1146 1147 1148 1150 1151 1152 1153 1161
- 1172 1173]",[ 13  14  15  38  40  44  64  86 106 107 109 110 111 112 113 114],"['little_garden' 'water_7' 'enies_lobby' 'fish_man_island'
- 'whole_cake_island' 'egghead' 'elbaph']",['arabasta' 'water_7' 'fish_man_island' 'whole_cake_island' 'final'],58,16,116,1173,10-02,[ 15 110],2,New World
+ 1172 1173 1176]",[ 13  14  15  38  40  44  64  86 106 107 109 110 111 112 113 114],"['little_garden' 'water_7' 'enies_lobby' 'fish_man_island'
+ 'whole_cake_island' 'egghead' 'elbaph']",['arabasta' 'water_7' 'fish_man_island' 'whole_cake_island' 'final'],59,16,116,1176,10-02,[ 15 110],2,New World
 Dosun,Dosun,Grand Line ( Ryugu Kingdom ; Fish-Man Island ),Alive,October 9th,S,S,,,30,True,success,Successfully scraped character details,"[611 613 615 616 620 622 630 631 632 633 634 635 636 640 642 644 645 646
  647 649 650]",[62 63 64 65 66],['fish_man_island'],['fish_man_island'],21,5,611,650,10-09,[65],1,Underwater
 Dotaku,Dotaku,,Alive,,,,,,,True,success,Successfully scraped character details,[ 926 1006],[ 92 100],['wano_country'],['wano_country'],2,2,926,1006,,[],0,
@@ -817,7 +817,7 @@ Franky,Franky,South Blue,Alive,March 9th,XF,XF,"394,000,000;94,000,000;44,000,00
  1074 1075 1076 1077 1078 1081 1085 1086 1089 1090 1091 1092 1093 1094
  1095 1102 1103 1104 1105 1106 1107 1108 1110 1111 1112 1113 1115 1118
  1119 1120 1121 1123 1124 1126 1128 1130 1131 1132 1133 1134 1135 1138
- 1141 1143 1144 1146 1147 1148 1155 1156 1161]","[ 35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
+ 1141 1143 1144 1146 1147 1148 1155 1156 1161 1176]","[ 35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52
   53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70
   71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87  88
   89  90  91  92  93  94  95  96  97  98  99 100 101 102 103 104 105 106
@@ -825,7 +825,7 @@ Franky,Franky,South Blue,Alive,March 9th,XF,XF,"394,000,000;94,000,000;44,000,00
  'sabaody_archipelago' 'amazon_lily' 'impel_down' 'marineford' 'post_war'
  'return_to_sabaody' 'fish_man_island' 'punk_hazard' 'dressrosa' 'zou'
  'whole_cake_island' 'wano_country' 'egghead' 'elbaph']","['water_7' 'thriller_bark' 'summit_war' 'fish_man_island' 'dressrosa'
- 'whole_cake_island' 'wano_country' 'final']",471,80,329,1161,03-09,[ 35  37  39  43  49  52  61  64  67  71  74  76  78  91  92 101 106 108],18,South Blue
+ 'whole_cake_island' 'wano_country' 'final']",472,80,329,1176,03-09,[ 35  37  39  43  49  52  61  64  67  71  74  76  78  91  92 101 106 108],18,South Blue
 Franky_Family,Franky Family,,Unknown,,,,,,,True,success,Successfully scraped character details,"[324 325 326 327 329 330 334 335 336 337 338 339 341 342 346 350 351 352
  353 358 359 360 361 365 366 367 368 369 370 371 372 373 374 375 376 377
  378 379 380 381 382 383 384 385 386 387 388 389 390 391 398 399 400 402
@@ -983,7 +983,7 @@ Hajrudin,Hajrudin,Grand Line (Elbaph),Alive,August 12th,XF,XF,,,81,True,success,
   751  752  753  754  768  770  777  785  787  788  789  791  795  796
   797  798  799  800  801  866  867  868  896  919 1066 1129 1131 1132
  1133 1135 1136 1137 1138 1141 1142 1143 1145 1146 1151 1152 1153 1154
- 1156 1157 1158 1166 1167 1168 1171 1172 1173]",[ 71  72  73  74  75  76  77  78  79  80  86  89  91 106 111 112 113 114],['dressrosa' 'whole_cake_island' 'wano_country' 'egghead' 'elbaph'],['dressrosa' 'whole_cake_island' 'wano_country' 'final'],65,18,706,1173,08-12,[ 78  80 112],3,New World
+ 1156 1157 1158 1166 1167 1168 1171 1172 1173 1176]",[ 71  72  73  74  75  76  77  78  79  80  86  89  91 106 111 112 113 114],['dressrosa' 'whole_cake_island' 'wano_country' 'egghead' 'elbaph'],['dressrosa' 'whole_cake_island' 'wano_country' 'final'],66,18,706,1176,08-12,[ 78  80 112],3,New World
 Hakowan,Hakowan,,Alive,,,,,,,True,success,Successfully scraped character details,[245 247 248 249 250 251 252 253 256 257 258 261 262 635 823 906],[26 27 28 64 82 90],['skypiea' 'fish_man_island' 'zou' 'levely'],['sky_island' 'fish_man_island' 'whole_cake_island'],16,6,245,906,,[],0,
 Hakugan,Hakugan,North Blue ( Welbems Island ),Unknown,,,,,,,True,success,Successfully scraped character details,[ 810  815  951  982  984 1015 1021 1023 1025 1028 1040 1053 1064],[ 81  94  97 100 101 102 103 104 105],['zou' 'wano_country' 'egghead'],['whole_cake_island' 'wano_country' 'final'],13,9,810,1064,,[],0,North Blue
 Ham_Burger,Ham Burger,,Alive,July 20th,,,,,,True,success,Successfully scraped character details,[ 823  905  906  908  956 1085],[ 82  90  95 107],['zou' 'levely' 'wano_country' 'egghead'],['whole_cake_island' 'wano_country' 'final'],6,4,823,1085,07-20,[],0,
@@ -1168,8 +1168,8 @@ Jacksonbanner,Jacksonbanner,,Unknown,,,,,,,True,success,Successfully scraped cha
 Jaguar,Jaguar,,Unknown,,,,,,,True,success,Successfully scraped character details,[1039 1040 1049 1053],[103 104],['wano_country'],['wano_country'],4,2,1039,1053,,[],0,
 Jaguar_D._Saul,Jaguar D. Saul,South Blue,Alive,March 6th,F,F,,,127,True,success,Successfully scraped character details,"[ 392  393  394  395  396  397  398  419  432  691 1020 1066 1077 1114
  1133 1134 1135 1138 1142 1143 1144 1145 1146 1147 1148 1149 1161 1167
- 1168 1169 1172 1173]",[ 41  43  45  70 101 106 107 110 111 112 113 114],"['enies_lobby' 'post_enies_lobby' 'punk_hazard' 'wano_country' 'egghead'
- 'elbaph']",['water_7' 'dressrosa' 'wano_country' 'final'],32,12,392,1173,03-06,[ 41 112],2,South Blue
+ 1168 1169 1172 1173 1176]",[ 41  43  45  70 101 106 107 110 111 112 113 114],"['enies_lobby' 'post_enies_lobby' 'punk_hazard' 'wano_country' 'egghead'
+ 'elbaph']",['water_7' 'dressrosa' 'wano_country' 'final'],33,12,392,1176,03-06,[ 41 112],2,South Blue
 Jaki,Jaki,,Alive,,,,,,,True,success,Successfully scraped character details,[954 973 989 991],[95 96 98],['wano_country'],['wano_country'],4,3,954,991,,[],0,
 Jalmack,Jalmack,,Alive,November 9th,,,,,,True,success,Successfully scraped character details,[588],[60],['post_war'],['summit_war'],1,1,588,588,11-09,[],0,
 Jango,Jango,East Blue,Alive,December 28th,S,S,"(At least;1,000,000);9,000,000",1000000,29,True,success,Successfully scraped character details,"[  25   26   28   29   30   31   32   33   34   35   36   37   38   39
@@ -1181,7 +1181,7 @@ Jango,Jango,East Blue,Alive,December 28th,S,S,"(At least;1,000,000);9,000,000",1
  'enies_lobby' 'post_enies_lobby' 'amazon_lily' 'marineford' 'zou'
  'levely' 'egghead']",['east_blue' 'arabasta' 'water_7' 'summit_war' 'whole_cake_island' 'final'],66,22,25,1087,12-28,[4],1,East Blue
 Jarul,Jarul,Grand Line (Elbaph),Alive,December 8th,F,F,,,408,True,success,Successfully scraped character details,"[ 866  867  868 1135 1136 1138 1139 1141 1143 1144 1147 1148 1149 1150
- 1152 1153 1154 1166 1168 1169 1170 1171 1172 1173 1174 1175]",[ 86 112 113 114],['whole_cake_island' 'elbaph'],['whole_cake_island' 'final'],26,4,866,1175,12-08,[],0,New World
+ 1152 1153 1154 1166 1168 1169 1170 1171 1172 1173 1174 1175 1176]",[ 86 112 113 114],['whole_cake_island' 'elbaph'],['whole_cake_island' 'final'],27,4,866,1176,12-08,[],0,New World
 Jaygarcia_Saturn,Jaygarcia Saturn,,Deceased,,,,,,,True,success,Successfully scraped character details,"[ 233  303  355  395  433  594  793  907  908 1037 1044 1052 1060 1073
  1075 1078 1084 1085 1086 1089 1090 1091 1093 1094 1095 1096 1099 1100
  1102 1103 1104 1105 1106 1107 1108 1109 1110 1111 1112 1113 1114 1115
@@ -1212,9 +1212,9 @@ Jewelry_Bonney,Jewelry Bonney,Red Line ( Mary Geoise ),Alive,September 1st,F,F,"
  1078 1083 1084 1086 1089 1090 1091 1092 1093 1094 1095 1098 1099 1100
  1101 1102 1103 1104 1105 1106 1107 1108 1109 1110 1111 1112 1113 1115
  1117 1118 1119 1120 1121 1123 1124 1126 1131 1132 1133 1134 1135 1144
- 1146 1147 1149]","[ 51  52  58  59  61  67  70  79  80  90 102 105 106 107 108 109 110 111
+ 1146 1147 1149 1176]","[ 51  52  58  59  61  67  70  79  80  90 102 105 106 107 108 109 110 111
  112 113]","['sabaody_archipelago' 'marineford' 'post_war' 'punk_hazard' 'dressrosa'
- 'levely' 'wano_country' 'egghead' 'elbaph']",['summit_war' 'dressrosa' 'whole_cake_island' 'wano_country' 'final'],73,20,498,1149,09-01,[ 51  90 108 109 110],5,Red Line
+ 'levely' 'wano_country' 'egghead' 'elbaph']",['summit_war' 'dressrosa' 'whole_cake_island' 'wano_country' 'final'],74,20,498,1176,09-01,[ 51  90 108 109 110],5,Red Line
 Jibuemon,Jibuemon,,Alive,,,,,,,True,success,Successfully scraped character details,[ 920  959  978  979  981 1047],[ 91  95  97 104],['wano_country'],['wano_country'],6,4,920,1047,,[],0,
 Jigoku_Benten,Jigoku Benten,Grand Line ( Wano Country ),Alive,October 18th,X,X,,,21,True,success,Successfully scraped character details,[ 931  932  945  978  986  994 1006],[ 92  93  94  97  98 100],['wano_country'],['wano_country'],7,6,931,1006,10-18,[],0,New World
 Jigokukamabuta_Megatenpanchiro,Jigokukamabuta Megatenpanchiro,,Unknown,,,,,,,True,success,Successfully scraped character details,[943 963],[94 95],['wano_country'],['wano_country'],2,2,943,963,,[],0,
@@ -1240,12 +1240,12 @@ Jinbe,Jinbe,"Grand Line (Ryugu Kingdom, Fish-Man Island )",Alive,April 2nd,F,F,"
  1091 1092 1093 1094 1100 1102 1103 1107 1110 1111 1113 1115 1117 1120
  1121 1122 1124 1126 1128 1130 1131 1132 1133 1134 1135 1136 1139 1141
  1143 1144 1145 1146 1147 1148 1149 1150 1151 1155 1156 1161 1170 1172
- 1173 1175]","[ 54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
+ 1173 1175 1176]","[ 54  55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71
   72  73  75  76  77  78  83  84  85  86  87  88  89  90  93  95  96  97
   98  99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114]","['amazon_lily' 'impel_down' 'marineford' 'post_war' 'fish_man_island'
  'punk_hazard' 'dressrosa' 'whole_cake_island' 'wano_country' 'egghead'
  'elbaph']","['summit_war' 'fish_man_island' 'dressrosa' 'whole_cake_island'
- 'wano_country' 'final']",282,53,523,1175,04-02,[ 56  59  64  66  85  88  99 106],8,Underwater
+ 'wano_country' 'final']",283,53,523,1176,04-02,[ 56  59  64  66  85  88  99 106],8,Underwater
 Jiron,Jiron,,Alive,,,,,,,True,success,Successfully scraped character details,[1082 1083 1109 1116 1125],[107 109 110 111],['egghead'],['final'],5,4,1082,1125,,[],0,
 Jobo,Jobo,,Alive,,,,,,,True,success,Successfully scraped character details,[232 233],[25],['jaya'],['sky_island'],2,1,232,233,,[],0,
 Johanna,Johanna,,Alive,,,,,,,True,success,Successfully scraped character details,[1135 1142 1143 1144 1145 1146 1147 1148 1149 1151 1172 1173 1174 1175],[112 113],['elbaph'],['final'],14,2,1135,1175,,[],0,
@@ -1431,7 +1431,7 @@ Koby,Koby,East Blue ( Satsuruzo Kingdom ),Alive,May 13th,F,F,"★★★★★;(;
 Koda,Koda,,Alive,,,,,,,True,success,Successfully scraped character details,[285 286 302],[30 31 32],['skypiea'],['sky_island'],3,3,285,302,,[],0,
 Koito,Koito,,Alive,,,,,,,True,success,Successfully scraped character details,[930],[92],['wano_country'],['wano_country'],1,1,930,930,,[],0,
 Koiwa,Koiwa,,Unknown,,,,,,,True,success,Successfully scraped character details,[960 961],[95],['wano_country'],['wano_country'],2,1,960,961,,[],0,
-Kojuro,Kojuro,,Alive,,,,,,,True,success,Successfully scraped character details,[ 926  938  939  942  951  955  975  978  987  988  990 1006],[ 92  93  94  95  97  98 100],['wano_country'],['wano_country'],12,7,926,1006,,[],0,
+Kojuro,Kojuro,,Alive,,,,,,,True,success,Successfully scraped character details,[ 926  938  939  942  945  951  955  975  978  987  988  990 1006],[ 92  93  94  95  97  98 100],['wano_country'],['wano_country'],13,7,926,1006,,[],0,
 Kokoro,Kokoro,Grand Line ( Ryugu Kingdom ; Fish-Man Island ),Alive,October 5th,S,S,,,72,True,success,Successfully scraped character details,"[322 323 335 338 339 341 350 352 353 354 355 356 357 358 362 363 364 365
  366 367 371 374 375 376 378 380 381 384 388 399 400 409 413 414 418 420
  421 422 423 424 425 426 428 429 430 431 432 433 435 436 437 439 486 596
@@ -1549,7 +1549,7 @@ Leo,Leo,Grand Line ( Green Bit ),Alive,July 24th,S,S,,,25,True,success,Successfu
 Leonero,Leonero,,Alive,,,,,,,True,success,Successfully scraped character details,[552 999],[57 99],['marineford' 'wano_country'],['summit_war' 'wano_country'],2,2,552,999,,[],0,
 Lilith,Lilith,Grand Line ( Egghead ),Alive,March 22nd,S,S,,,2,True,success,Successfully scraped character details,"[1062 1064 1065 1067 1068 1071 1072 1073 1075 1077 1078 1089 1090 1091
  1092 1093 1101 1105 1107 1110 1111 1112 1113 1114 1117 1118 1120 1124
- 1126 1130 1131 1132 1133 1134 1135 1144 1146 1147 1149 1161]",[105 106 107 108 109 110 111 112 113 114],['egghead' 'elbaph'],['final'],40,10,1062,1161,03-22,[],0,New World
+ 1126 1130 1131 1132 1133 1134 1135 1144 1146 1147 1149 1161 1176]",[105 106 107 108 109 110 111 112 113 114],['egghead' 'elbaph'],['final'],41,10,1062,1176,03-22,[],0,New World
 Lily,Lily,North Blue ( Notice ),Unknown,,,,,,,True,success,Successfully scraped character details,[222 223 224 225 227 232 233 235 303],[24 25 32],['jaya' 'long_ring_long_land'],['sky_island' 'water_7'],9,3,222,303,,[],0,North Blue
 Lim,Lim,New World ( Waford ),Alive,September 2nd,,,,,214,True,success,Successfully scraped character details,[1053],[104],['wano_country'],['wano_country'],1,1,1053,1053,09-02,[],0,New World
 Limejuice,Limejuice,,Alive,,,,,,,True,success,Successfully scraped character details,[   1   25   41  580 1054 1065 1076 1079],[  1   3   5  59 104 105 106 107],['romance_dawn' 'syrup_village' 'marineford' 'wano_country' 'egghead'],['east_blue' 'summit_war' 'wano_country' 'final'],8,8,1,1079,,[],0,
@@ -1560,7 +1560,7 @@ Lionbuta,Lionbuta,,Alive,,,,,,,True,success,Successfully scraped character detai
 Lip_Doughty,Lip Doughty,,Alive,,,,"88,000,000",88000000,,True,success,Successfully scraped character details,[600 601],[61],['return_to_sabaody'],['fish_man_island'],2,1,600,601,,[],0,
 Loki,Loki,Grand Line ( Elbaph ),Alive,,,,"2,600,000,000",2600000000,63,True,success,Successfully scraped character details,"[ 858 1130 1131 1132 1134 1136 1137 1138 1141 1142 1143 1145 1146 1151
  1152 1153 1154 1155 1156 1157 1158 1166 1167 1168 1169 1170 1171 1174
- 1175]",[ 85 111 112 113 114],['whole_cake_island' 'elbaph'],['whole_cake_island' 'final'],29,5,858,1175,,[111],1,New World
+ 1175 1176]",[ 85 111 112 113 114],['whole_cake_island' 'elbaph'],['whole_cake_island' 'final'],30,5,858,1176,,[111],1,New World
 Lola,Lola,Grand Line ( Totto Land ),Alive,January 27th (Proposal Day),F,F,"24,000,000",24000000,26,True,success,Successfully scraped character details,"[451 454 471 476 479 480 481 482 483 484 485 486 488 489 490 654 836 847
  848 858 884 956 960 966 968 973 974 975 977 978 980 982 983 984 988 989
  990 991 993]",[47 49 50 66 83 84 85 88 95 96 97 98],"['thriller_bark' 'sabaody_archipelago' 'punk_hazard' 'whole_cake_island'
@@ -1585,6 +1585,7 @@ Mag,Mag,,Alive,,,,,,,True,success,Successfully scraped character details,"[1134 
  1174 1175]",[112 113],['elbaph'],['final'],16,2,1134,1175,,[],0,
 Magellan,Magellan,Grand Line,Alive,October 9th,X,X,,,47,True,success,Successfully scraped character details,"[ 528  531  532  533  534  535  537  538  539  540  542  543  544  545
   546  547  548  585  610  665  671 1114]",[ 54  55  56  60  62  67  68 110],['impel_down' 'post_war' 'fish_man_island' 'punk_hazard' 'egghead'],['summit_war' 'fish_man_island' 'dressrosa' 'final'],22,8,528,1114,10-09,[54],1,Grand Line
+Magnolia,Magnolia,,Deceased,,,,,,,True,success,Successfully scraped character details,[1158 1159 1160],[114],['elbaph'],['final'],3,1,1158,1160,,[],0,
 Magra,Magra,,Alive,October 30th,,,,,,True,success,Successfully scraped character details,[ 582  583  584  586  587  589  615  806  956 1089],[ 59  60  63  80  95 108],['post_war' 'fish_man_island' 'zou' 'wano_country' 'egghead'],['summit_war' 'fish_man_island' 'whole_cake_island' 'wano_country' 'final'],10,6,582,1089,10-30,[],0,
 Maha,Maha,,Unknown,,,,,,,True,success,Successfully scraped character details,[ 929 1003 1007 1016 1018 1028 1030 1031 1032 1036 1038 1041 1042],[ 92  99 100 101 102 103],['wano_country'],['wano_country'],13,6,929,1042,,[],0,
 Maidy,Maidy,,Alive,,,,,,,True,success,Successfully scraped character details,[215 639],[23 65],['arabasta' 'fish_man_island'],['arabasta' 'fish_man_island'],2,2,215,639,,[],0,
@@ -1744,78 +1745,7 @@ Monkey_D._Garp,Monkey D. Garp,East Blue ( Goa Kingdom ),Alive,May 2nd,F,F,"(;3,0
  'marineford' 'post_war' 'punk_hazard' 'dressrosa' 'zou' 'levely'
  'wano_country' 'egghead' 'elbaph']","['east_blue' 'arabasta' 'water_7' 'summit_war' 'dressrosa'
  'whole_cake_island' 'wano_country' 'final']",78,28,92,1166,05-02,[ 45  58  90 107],4,East Blue
-Monkey_D._Luffy,Monkey D. Luffy,East Blue ( Foosha Village ),Alive,May 5th (Children's Day),F,F,"3,000,000,000;1,500,000,000;500,000,000;400,000,000;300,000,000;100,000,000;30,000,000",3000000000,19,True,success,Successfully scraped character details,"[   1    2    3    4    5    6    7    8    9   10   11   12   13   14
-   15   16   17   18   19   20   21   22   23   24   25   26   27   28
-   29   30   31   32   33   34   35   36   37   38   39   40   41   42
-   43   44   45   46   47   48   49   50   51   52   53   54   55   56
-   58   59   60   61   62   63   64   65   66   67   68   69   70   73
-   74   75   76   77   79   80   81   82   83   84   85   86   87   88
-   89   90   91   92   93   94   95   96   97   98   99  100  101  102
-  103  104  105  106  107  108  109  110  111  112  113  114  115  116
-  117  118  119  120  121  122  123  124  125  126  127  128  129  130
-  131  132  133  134  135  136  137  138  139  140  141  145  146  147
-  148  149  150  151  152  153  154  155  156  157  158  159  160  161
-  162  163  164  165  166  167  168  169  170  172  173  174  175  176
-  177  178  179  180  183  186  189  194  196  198  199  200  201  202
-  203  204  205  206  207  208  209  210  211  212  213  214  215  216
-  217  218  219  220  221  222  223  224  225  226  227  228  229  230
-  231  232  233  234  235  236  237  238  239  240  241  242  243  244
-  245  246  247  250  251  252  253  254  255  257  258  260  261  264
-  265  266  267  268  269  270  271  273  274  277  278  279  280  281
-  282  283  284  285  286  287  293  294  295  296  297  298  299  300
-  301  302  303  304  305  306  307  308  309  310  311  312  313  314
-  315  316  317  318  319  320  321  322  323  324  325  326  327  328
-  329  330  331  332  333  334  335  336  337  338  339  340  341  342
-  343  344  345  346  347  348  349  351  352  357  360  361  362  363
-  364  365  366  367  368  369  371  373  374  375  376  377  378  379
-  381  382  383  384  385  387  388  389  390  391  394  398  399  400
-  401  402  403  404  405  408  409  410  414  415  416  418  419  420
-  421  422  423  424  425  426  427  428  429  430  431  432  433  434
-  435  436  437  438  439  440  442  443  444  446  447  448  449  450
-  451  452  453  454  455  456  457  458  459  460  461  463  464  469
-  470  471  473  474  475  476  478  479  480  481  482  483  484  485
-  486  488  489  490  491  492  493  494  495  496  497  498  499  500
-  501  502  503  504  505  506  507  508  509  510  511  512  513  514
-  515  516  517  518  519  520  521  522  523  524  525  526  527  528
-  529  530  531  532  533  534  535  536  537  538  539  540  541  542
-  543  544  545  546  547  548  549  550  551  552  553  556  557  558
-  559  560  561  562  563  564  565  566  567  568  569  570  571  572
-  573  574  575  576  577  578  579  580  581  582  583  584  585  586
-  587  588  589  590  591  592  594  595  596  597  598  599  600  601
-  602  603  604  605  606  607  608  609  610  611  612  613  614  615
-  616  617  618  619  620  622  627  628  629  633  634  635  636  637
-  638  639  640  641  642  643  644  645  647  648  649  650  651  652
-  653  654  655  656  657  658  659  660  661  662  663  664  665  666
-  667  668  669  670  671  672  673  674  675  676  677  678  679  680
-  681  683  684  685  688  689  690  691  692  693  694  695  696  697
-  698  699  700  701  702  703  704  705  706  707  708  709  710  712
-  713  714  715  716  717  718  719  720  721  722  724  725  726  728
-  729  730  731  732  733  734  735  736  737  740  741  742  743  744
-  745  746  747  748  749  750  751  752  753  754  756  757  758  759
-  760  761  764  766  769  770  771  773  775  779  780  781  782  783
-  784  785  786  787  788  789  790  791  792  793  794  796  797  798
-  799  800  801  802  803  804  805  806  807  808  809  810  811  812
-  814  815  816  817  818  819  820  821  822  823  824  825  826  827
-  828  829  830  831  832  833  834  835  836  837  838  839  841  842
-  843  844  845  846  847  848  850  851  852  853  854  855  856  857
-  858  859  861  862  863  864  865  867  868  869  870  871  872  873
-  874  875  876  877  878  879  880  881  882  883  884  885  886  888
-  890  891  892  893  894  895  896  897  898  899  900  901  902  903
-  905  906  907  908  910  911  912  913  914  915  916  917  918  919
-  920  921  922  923  924  926  928  929  934  935  936  937  939  940
-  941  943  944  945  946  947  948  949  950  951  952  954  955  957
-  959  960  967  972  974  975  976  977  978  979  980  981  982  983
-  984  985  986  987  988  989  990  991  992  993  994  995  996  997
-  998 1000 1001 1002 1003 1006 1008 1009 1010 1011 1013 1014 1015 1017
- 1019 1020 1021 1022 1023 1025 1026 1027 1028 1030 1033 1036 1037 1039
- 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054
- 1055 1056 1057 1058 1059 1060 1061 1062 1063 1064 1065 1066 1067 1068
- 1069 1070 1071 1073 1074 1075 1076 1077 1078 1079 1081 1085 1086 1088
- 1089 1090 1091 1092 1093 1094 1095 1100 1101 1102 1103 1105 1106 1107
- 1108 1109 1110 1111 1112 1113 1114 1115 1117 1118 1119 1120 1121 1122
- 1123 1124 1126 1127 1128 1129 1130 1131 1132 1133 1134 1135 1136 1137
- 1138 1139 1140 1141 1142 1143 1145 1146 1149 1151 1152 1155 1156 1161
- 1163 1166 1170 1171 1174 1175]","[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
+Monkey_D._Luffy,Monkey D. Luffy,East Blue ( Foosha Village ),Alive,May 5th (Children's Day),F,F,"3,000,000,000;1,500,000,000;500,000,000;400,000,000;300,000,000;100,000,000;30,000,000",3000000000,19,True,success,Successfully scraped character details,[   1    2    3 ... 1174 1175 1176],"[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
   19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36
   37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54
   55  56  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72
@@ -1829,7 +1759,7 @@ Monkey_D._Luffy,Monkey D. Luffy,East Blue ( Foosha Village ),Alive,May 5th (Chil
  'fish_man_island' 'punk_hazard' 'dressrosa' 'zou' 'whole_cake_island'
  'levely' 'wano_country' 'egghead' 'elbaph']","['east_blue' 'arabasta' 'sky_island' 'water_7' 'thriller_bark'
  'summit_war' 'fish_man_island' 'dressrosa' 'whole_cake_island'
- 'wano_country' 'final']",1000,114,1,1175,05-05,"[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
+ 'wano_country' 'final']",1001,114,1,1176,05-05,"[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
   19  20  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37
   38  39  40  41  43  44  45  46  47  48  49  50  51  52  53  54  55  56
   57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74
@@ -1949,7 +1879,7 @@ Nami,Nami,East Blue ( Conomi Islands ),Alive,July 3rd,X,X,"366,000,000;66,000,00
  1105 1107 1108 1109 1110 1111 1112 1113 1114 1115 1117 1118 1120 1121
  1122 1123 1124 1126 1127 1128 1129 1130 1131 1132 1133 1134 1135 1136
  1137 1138 1139 1140 1141 1143 1144 1145 1146 1147 1148 1149 1150 1151
- 1155 1156 1161 1166 1170 1172 1173 1175]","[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
+ 1155 1156 1161 1166 1170 1172 1173 1175 1176]","[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
   19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36
   37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54
   55  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73
@@ -1963,7 +1893,7 @@ Nami,Nami,East Blue ( Conomi Islands ),Alive,July 3rd,X,X,"366,000,000;66,000,00
  'fish_man_island' 'punk_hazard' 'dressrosa' 'zou' 'whole_cake_island'
  'levely' 'wano_country' 'egghead' 'elbaph']","['east_blue' 'arabasta' 'sky_island' 'water_7' 'thriller_bark'
  'summit_war' 'fish_man_island' 'dressrosa' 'whole_cake_island'
- 'wano_country' 'final']",820,113,1,1175,07-03,"[  1   5   6   9  11  12  18  22  23  26  32  37  43  46  49  50  52  61
+ 'wano_country' 'final']",821,113,1,1176,07-03,"[  1   5   6   9  11  12  18  22  23  26  32  37  43  46  49  50  52  61
   64  67  70  73  81  82  85  88  91 101 106 111]",30,East Blue
 Namur,Namur,Grand Line,Alive,July 6th,,,,,,True,success,Successfully scraped character details,[552 562 566 577],[57 58 59],['marineford'],['summit_war'],4,3,552,577,07-06,[57],1,Grand Line
 Nanday,Nanday,Grand Line ( Cactus Island ),Alive,,,,,,,True,success,Successfully scraped character details,[ 632 1118],[ 64 110],['fish_man_island' 'egghead'],['fish_man_island' 'final'],2,2,632,1118,,[],0,Grand Line
@@ -1980,7 +1910,7 @@ Napoleon,Napoleon,Grand Line,Unknown,December 2nd,,,,,38,True,success,Successful
  'egghead' 'elbaph']",['fish_man_island' 'whole_cake_island' 'wano_country' 'final'],111,26,651,1169,12-02,[ 83  87  95  99 114],5,Grand Line
 Nash,Nash,,Alive,,,,,,,True,success,Successfully scraped character details,[ 899 1130 1131 1132 1133 1137 1141 1143 1145 1152 1167 1172 1173],[ 89 111 112 113],['whole_cake_island' 'elbaph'],['whole_cake_island' 'final'],13,4,899,1173,,[],0,
 Nashi,Nashi,,Alive,,,,,,,True,success,Successfully scraped character details,[906 956],[90 95],['levely' 'wano_country'],['whole_cake_island' 'wano_country'],2,2,906,956,,[],0,
-Natto,Natto,,Alive,,,,,,,True,success,Successfully scraped character details,[163 164],[18],['arabasta'],['arabasta'],2,1,163,164,,[],0,
+Natto,Natto,,Alive,,,,,,,True,success,Successfully scraped character details,[163 164 167],[18 19],['arabasta'],['arabasta'],3,2,163,167,,[],0,
 Needle_God,Needle God,,Alive,,,,,,,True,success,Successfully scraped character details,[1127],[111],['elbaph'],['final'],1,1,1127,1127,,[],0,
 Nefertari_Cobra,Nefertari Cobra,Grand Line (Arabasta Kingdom),Deceased,February 13th,F,F,,,50,True,success,Successfully scraped character details,"[ 142  155  156  163  164  167  171  179  180  182  188  192  193  196
   197  198  199  200  201  202  203  204  205  206  207  208  209  210
@@ -2069,7 +1999,7 @@ Nico_Robin,Nico Robin,West Blue,Alive,February 6th,S,S,"930,000,000;130,000,000;
  1070 1071 1073 1074 1075 1076 1077 1078 1084 1086 1089 1090 1094 1100
  1102 1103 1105 1106 1108 1109 1111 1112 1113 1114 1120 1121 1124 1126
  1128 1130 1131 1132 1133 1134 1135 1138 1142 1143 1144 1145 1146 1147
- 1148 1149 1150 1151 1155 1156 1161 1170 1172 1173 1175]","[ 13  15  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32
+ 1148 1149 1150 1151 1155 1156 1161 1170 1172 1173 1175 1176]","[ 13  15  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32
   33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50
   51  52  53  54  55  56  57  58  59  60  61  62  63  64  65  66  67  68
   69  70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86
@@ -2080,7 +2010,7 @@ Nico_Robin,Nico Robin,West Blue,Alive,February 6th,S,S,"930,000,000;130,000,000;
  'marineford' 'post_war' 'return_to_sabaody' 'fish_man_island'
  'punk_hazard' 'dressrosa' 'zou' 'whole_cake_island' 'levely'
  'wano_country' 'egghead' 'elbaph']","['arabasta' 'sky_island' 'water_7' 'thriller_bark' 'summit_war'
- 'fish_man_island' 'dressrosa' 'whole_cake_island' 'wano_country' 'final']",599,100,114,1175,02-06,"[ 21  24  26  28  32  36  39  41  44  49  52  61  64  76  78  91  92  99
+ 'fish_man_island' 'dressrosa' 'whole_cake_island' 'wano_country' 'final']",600,100,114,1176,02-06,"[ 21  24  26  28  32  36  39  41  44  49  52  61  64  76  78  91  92  99
  106 112]",20,West Blue
 Nigeratta,Nigeratta,,Alive,,,,,,,True,success,Successfully scraped character details,[398],[41],['enies_lobby'],['water_7'],1,1,398,398,,[],0,
 Nightcrab_Girl,Nightcrab Girl,,Alive,,,,,,,True,success,Successfully scraped character details,[980],[97],['wano_country'],['wano_country'],1,1,980,980,,[],0,
@@ -2312,7 +2242,7 @@ Riku_Doldo_III,Riku Doldo III,Grand Line (Dressrosa),Alive,June 27th,S,S,,,60,Tr
   768  769  774  776  777  778  779  780  781  783  785  786  787  788
   789  790  791  792  793  795  796  797  798  801  823  847  894  903
   908  956 1085]",[ 71  72  73  74  75  76  77  78  79  80  82  84  89  90  95 107],['dressrosa' 'zou' 'whole_cake_island' 'levely' 'wano_country' 'egghead'],['dressrosa' 'whole_cake_island' 'wano_country' 'final'],59,16,706,1085,06-27,[73],1,New World
-Rimoshifu_Killingham,Rimoshifu Killingham,,Alive,,,,,,,True,success,Successfully scraped character details,[1140 1142 1143 1144 1146 1147 1149 1150 1151 1172 1174],[112 113],['elbaph'],['final'],11,2,1140,1174,,[113],1,
+Rimoshifu_Killingham,Rimoshifu Killingham,,Alive,,,,,,,True,success,Successfully scraped character details,[1140 1142 1143 1144 1146 1147 1149 1150 1151 1172 1174 1176],[112 113],['elbaph'],['final'],12,2,1140,1176,,[113],1,
 Rindo,Rindo,Calm Belt (Amazon Lily),Alive,September 16th,,,,,,True,success,Successfully scraped character details,[ 516  517  518  519  521  522  523  594  599 1059],[ 53  54  60  61 105],['amazon_lily' 'post_war' 'return_to_sabaody' 'egghead'],['summit_war' 'fish_man_island' 'final'],10,5,516,1059,09-16,[],0,Calm Belt
 Rint,Rint,,Deceased,,,,,,,True,success,Successfully scraped character details,[ 391  392  393  394  395  397 1077 1133],[ 41 107 111],['enies_lobby' 'egghead' 'elbaph'],['water_7' 'final'],8,3,391,1133,,[],0,
 Ripley,Ripley,,Alive,,,,,,80,True,success,Successfully scraped character details,"[1134 1135 1138 1139 1141 1144 1146 1147 1148 1149 1151 1152 1167 1168
@@ -2408,7 +2338,7 @@ Roronoa_Zoro,Roronoa Zoro,East Blue,Alive,November 11th,XF,XF,"1,111,000,000;320
  1103 1107 1110 1111 1113 1115 1117 1120 1121 1122 1123 1124 1126 1127
  1128 1129 1130 1131 1132 1133 1134 1135 1136 1137 1138 1139 1140 1141
  1142 1143 1145 1149 1151 1152 1155 1156 1161 1166 1170 1171 1172 1173
- 1175]","[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
+ 1175 1176]","[  1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18
   19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36
   37  38  39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54
   55  57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73
@@ -2422,7 +2352,7 @@ Roronoa_Zoro,Roronoa Zoro,East Blue,Alive,November 11th,XF,XF,"1,111,000,000;320
  'fish_man_island' 'punk_hazard' 'dressrosa' 'zou' 'whole_cake_island'
  'levely' 'wano_country' 'egghead' 'elbaph']","['east_blue' 'arabasta' 'sky_island' 'water_7' 'thriller_bark'
  'summit_war' 'fish_man_island' 'dressrosa' 'whole_cake_island'
- 'wano_country' 'final']",785,113,2,1175,11-11,"[  1   3   5   6   9  11  12  18  22  23  26  28  32  37  39  43  49  50
+ 'wano_country' 'final']",786,113,2,1176,11-11,"[  1   3   5   6   9  11  12  18  22  23  26  28  32  37  39  43  49  50
   51  52  61  63  64  69  71  75  76  78  91  92  93 100 102 106 111]",35,East Blue
 Roshio,Roshio,,Alive,June 15th,,,"42,000,000",42000000,,True,success,Successfully scraped character details,[ 222 1115],[ 24 110],['jaya' 'egghead'],['sky_island' 'final'],2,2,222,1115,06-15,[],0,
 Ross,Ross,North Blue ( Notice ),Unknown,,,,,,,True,success,Successfully scraped character details,[223 224 225 227 229 231 232 233 235 303],[24 25 32],['jaya' 'long_ring_long_land'],['sky_island' 'water_7'],10,3,223,303,,[],0,North Blue
@@ -2533,7 +2463,7 @@ Sanji,Sanji,North Blue,Alive,March 2nd,S (RH-),S,"1,032,000,000;330,000,000;177,
  1095 1100 1102 1103 1104 1105 1106 1107 1108 1109 1110 1111 1113 1115
  1117 1118 1119 1120 1121 1122 1123 1124 1126 1127 1128 1129 1130 1131
  1132 1133 1134 1135 1136 1139 1141 1142 1143 1145 1149 1151 1152 1155
- 1156 1161 1166 1170 1171 1172 1173 1175]","[  5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22
+ 1156 1161 1166 1170 1171 1172 1173 1175 1176]","[  5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21  22
   23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40
   41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56  57  58
   59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74  75  76
@@ -2547,7 +2477,7 @@ Sanji,Sanji,North Blue,Alive,March 2nd,S (RH-),S,"1,032,000,000;330,000,000;177,
  'punk_hazard' 'dressrosa' 'zou' 'whole_cake_island' 'levely'
  'wano_country' 'egghead' 'elbaph']","['east_blue' 'arabasta' 'sky_island' 'water_7' 'thriller_bark'
  'summit_war' 'fish_man_island' 'dressrosa' 'whole_cake_island'
- 'wano_country' 'final']",764,110,43,1175,03-02,"[  7   9  11  12  17  18  22  23  26  31  32  38  43  49  52  61  62  64
+ 'wano_country' 'final']",765,110,43,1176,03-02,"[  7   9  11  12  17  18  22  23  26  31  32  38  43  49  52  61  62  64
   67  71  73  81  84  86  88  91  93 100 102 106 108 111]",32,North Blue
 Sanjuan_Wolf,Sanjuan Wolf,West Blue,Alive,March 2nd,S,S,Unknown,,99,True,success,Successfully scraped character details,[ 575  576  595 1080 1081 1087 1088 1126],[ 59  61 107 111],['marineford' 'post_war' 'egghead' 'elbaph'],['summit_war' 'final'],8,4,575,1126,03-02,[],0,West Blue
 Sapi,Sapi,East Blue,Alive,March 22nd,,,,,,True,success,Successfully scraped character details,[98],[11],['loguetown'],['east_blue'],1,1,98,98,03-22,[],0,East Blue
@@ -2638,8 +2568,8 @@ Shepherd_Ju_Peter,Shepherd Ju Peter,,Alive,,,,,,,True,success,Successfully scrap
  'wano_country' 'final']",37,17,233,1171,,[110],1,
 Shepherd_Sommers,Shepherd Sommers,,Alive,,,,,,,True,success,Successfully scraped character details,"[1140 1142 1143 1144 1145 1146 1147 1148 1149 1150 1151 1159 1160 1161
  1166 1167 1170 1172 1173 1174 1175]",[112 113 114],['elbaph'],['final'],21,3,1140,1175,,[113],1,
-Shiki,Shiki,,Unknown,March 20th,,,,,,True,success,Successfully scraped character details,"[ 962 1096 1154 1155 1156 1157 1159 1160 1161 1162 1163 1164 1165 1167
- 1169]",[ 95 108 113 114],['wano_country' 'egghead' 'elbaph'],['wano_country' 'final'],15,4,962,1169,03-20,[114],1,
+Shiki,Shiki,Yano Country,Alive,March 20th,,,,,73,True,success,Successfully scraped character details,"[ 962 1096 1154 1155 1156 1157 1159 1160 1161 1162 1163 1164 1165 1167
+ 1169]",[ 95 108 113 114],['wano_country' 'egghead' 'elbaph'],['wano_country' 'final'],15,4,962,1169,03-20,[114],1,Unknown Region
 Shikon_Kettai,Shikon Kettai,,Alive,,,,,,,True,success,Successfully scraped character details,[963 964],[95],['wano_country'],['wano_country'],2,1,963,964,,[],0,
 Shimotsuki_Kouzaburou,Shimotsuki Kouzaburou,Grand Line ( Wano Country ),Deceased,November 14th,XF,XF,,,,True,success,Successfully scraped character details,[1033 1094],[102 108],['wano_country' 'egghead'],['wano_country' 'final'],2,2,1033,1094,11-14,[],0,New World
 Shimotsuki_Ryuma,Shimotsuki Ryuma,Wano Country,Deceased,November 6th,XF,XF,,,,True,success,Successfully scraped character details,[1023 1094],[101 108],['wano_country' 'egghead'],['wano_country' 'final'],2,2,1023,1094,11-06,[],0,New World
@@ -2731,7 +2661,7 @@ Stainless,Stainless,,Alive,,,,"At least ★★★★★;(At least;500,000,000)",
  'wano_country' 'egghead']",['east_blue' 'sky_island' 'summit_war' 'dressrosa' 'wano_country' 'final'],10,9,96,1122,,[],0,
 Stalker,Stalker,Grand Line,Alive,September 28th,,,"At least;1,000,000",1000000,,True,success,Successfully scraped character details,[524 691],[54 70],['amazon_lily' 'punk_hazard'],['summit_war' 'dressrosa'],2,2,524,691,09-28,[],0,Grand Line
 Stansen,Stansen,Grand Line,Alive,May 27th,,,,,81,True,success,Successfully scraped character details,"[ 500  501  503  504  866  897  947 1131 1132 1133 1135 1136 1137 1138
- 1141 1142 1143 1145 1151 1152 1154 1167 1168 1171 1172 1173]",[ 51  52  86  89  94 111 112 113],['sabaody_archipelago' 'whole_cake_island' 'wano_country' 'elbaph'],['summit_war' 'whole_cake_island' 'wano_country' 'final'],26,8,500,1173,05-27,[112],1,Grand Line
+ 1141 1142 1143 1145 1151 1152 1154 1167 1168 1171 1172 1173 1176]",[ 51  52  86  89  94 111 112 113],['sabaody_archipelago' 'whole_cake_island' 'wano_country' 'elbaph'],['summit_war' 'whole_cake_island' 'wano_country' 'final'],27,8,500,1176,05-27,[112],1,Grand Line
 Sterry,Sterry,East Blue ( Dawn Island ),Alive,March 12th,S,S,,,20,True,success,Successfully scraped character details,[ 586  587  823  905  906  907  908  956 1086],[ 60  82  90  95 107],['post_war' 'zou' 'levely' 'wano_country' 'egghead'],['summit_war' 'whole_cake_island' 'wano_country' 'final'],9,5,586,1086,03-12,[],0,East Blue
 Stevie,Stevie,,Alive,,,,,,,True,success,Successfully scraped character details,[361 362 365],[38],['water_7'],['water_7'],3,1,361,365,,[],0,
 Strawberry,Strawberry,,Alive,January 5th,,,"At least ★★★★★;(At least;500,000,000)",500000000,,True,success,Successfully scraped character details,[420 424 428 553 566 571 576 580 622 623 624 691 907],[44 57 58 59 63 70 90],['enies_lobby' 'marineford' 'fish_man_island' 'punk_hazard' 'levely'],['water_7' 'summit_war' 'fish_man_island' 'dressrosa' 'whole_cake_island'],13,7,420,907,01-05,[],0,
@@ -2814,7 +2744,7 @@ Terry,Terry,,Alive,,,,,,,True,success,Successfully scraped character details,[22
 Terry_Gilteo,Terry Gilteo,,Alive,,,,,,,True,success,Successfully scraped character details,[ 440 1102],[ 45 109],['post_enies_lobby' 'egghead'],['water_7' 'final'],2,2,440,1102,,[],0,
 Thalassa_Lucas,Thalassa Lucas,,Unknown,July 27th,,,,,,True,success,Successfully scraped character details,[142],[16],['drum_island'],['arabasta'],1,1,142,142,07-27,[],0,
 Thatch,Thatch,North Blue,Deceased,March 24th,,,,,,True,success,Successfully scraped character details,[440 552],[45 57],['post_enies_lobby' 'marineford'],['water_7' 'summit_war'],2,2,440,552,03-24,[],0,North Blue
-Thormann,Thormann,,Alive,,,,,,,True,success,Successfully scraped character details,[1117 1120 1123 1126 1136 1150 1151 1173 1175],[110 111 112 113],['egghead' 'elbaph'],['final'],9,4,1117,1175,,[],0,
+Thormann,Thormann,,Alive,,,,,,,True,success,Successfully scraped character details,[1117 1120 1123 1126 1136 1150 1151 1173 1175 1176],[110 111 112 113],['egghead' 'elbaph'],['final'],10,4,1117,1176,,[],0,
 Thriller_Bark,Thriller Bark,,Active,,,,,,,True,success,Successfully scraped character details,"[444 445 446 447 448 449 450 451 452 453 454 455 456 457 458 459 460 461
  462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479
  480 481 482 483 486 489 840 847 995]",[46 47 48 49 50 84 99],['thriller_bark' 'whole_cake_island' 'wano_country'],['thriller_bark' 'whole_cake_island' 'wano_country'],45,7,444,995,,[],0,
@@ -2882,7 +2812,7 @@ Tony_Tony_Chopper,Tony Tony Chopper,Grand Line ( Drum Island ),Alive,December 24
  1090 1091 1093 1094 1102 1103 1105 1107 1109 1110 1111 1112 1113 1114
  1117 1120 1121 1122 1123 1124 1126 1128 1129 1130 1131 1132 1133 1134
  1135 1138 1142 1143 1144 1145 1146 1147 1148 1149 1151 1152 1155 1156
- 1161 1166 1170 1171 1172 1173 1175]","[ 15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32
+ 1161 1166 1170 1171 1172 1173 1175 1176]","[ 15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32
   33  34  35  36  37  38  39  40  41  42  43  44  45  46  47  48  49  50
   51  52  53  54  55  57  58  59  60  61  62  63  64  65  66  67  68  69
   70  71  72  73  74  75  76  77  78  79  80  81  82  83  84  85  86  87
@@ -2892,7 +2822,7 @@ Tony_Tony_Chopper,Tony Tony Chopper,Grand Line ( Drum Island ),Alive,December 24
  'amazon_lily' 'impel_down' 'marineford' 'post_war' 'return_to_sabaody'
  'fish_man_island' 'punk_hazard' 'dressrosa' 'zou' 'whole_cake_island'
  'levely' 'wano_country' 'egghead' 'elbaph']","['arabasta' 'sky_island' 'water_7' 'thriller_bark' 'summit_war'
- 'fish_man_island' 'dressrosa' 'whole_cake_island' 'wano_country' 'final']",693,99,133,1175,12-24,"[ 16  17  18  22  23  26  28  31  32  37  43  46  49  52  61  62  64  67
+ 'fish_man_island' 'dressrosa' 'whole_cake_island' 'wano_country' 'final']",694,99,133,1176,12-24,"[ 16  17  18  22  23  26  28  31  32  37  43  46  49  52  61  62  64  67
   69  73  81  82  85  88  91  94  95  99 106 111]",30,Grand Line
 Topknot,Topknot,,Alive,,,,,,,True,success,Successfully scraped character details,[101 647 648 967 968],[12 66 96],['reverse_mountain' 'fish_man_island' 'wano_country'],['arabasta' 'fish_man_island' 'wano_country'],5,3,101,968,,[],0,
 Topman_Warcury,Topman Warcury,,Alive,,,,,,,True,success,Successfully scraped character details,"[ 233  303  355  395  433  594  793  907  908 1037 1044 1052 1053 1060
@@ -3026,7 +2956,7 @@ Usopp,Usopp,East Blue ( Gecko Islands ),Alive,April 1st (April Fool's Day),S,S,"
  1093 1094 1100 1102 1103 1105 1107 1109 1110 1111 1112 1113 1114 1115
  1117 1118 1120 1121 1122 1123 1124 1126 1127 1128 1129 1130 1131 1132
  1133 1134 1135 1136 1138 1139 1141 1143 1144 1145 1146 1147 1148 1149
- 1150 1151 1155 1156 1161 1166 1170 1172 1173 1175]","[  3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+ 1150 1151 1155 1156 1161 1166 1170 1172 1173 1175 1176]","[  3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
   21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38
   39  40  41  42  43  44  45  46  47  48  49  50  51  52  53  54  55  56
   57  58  59  60  61  62  63  64  65  66  67  68  69  70  71  72  73  74
@@ -3040,7 +2970,7 @@ Usopp,Usopp,East Blue ( Gecko Islands ),Alive,April 1st (April Fool's Day),S,S,"
  'punk_hazard' 'dressrosa' 'zou' 'whole_cake_island' 'levely'
  'wano_country' 'egghead' 'elbaph']","['east_blue' 'arabasta' 'sky_island' 'water_7' 'thriller_bark'
  'summit_war' 'fish_man_island' 'dressrosa' 'whole_cake_island'
- 'wano_country' 'final']",752,112,23,1175,04-01,"[  5   6   9  11  12  15  18  19  22  23  26  32  35  43  46  49  52  61
+ 'wano_country' 'final']",753,112,23,1176,04-01,"[  5   6   9  11  12  15  18  19  22  23  26  32  35  43  46  49  52  61
   64  70  72  74  76  78  91  92  99 106 111]",29,East Blue
 Usunoro,Usunoro,,Alive,,,,,,,True,success,Successfully scraped character details,[978 980 993],[97 98],['wano_country'],['wano_country'],3,2,978,993,,[],0,
 Uta,Uta,,Unknown,October 1st,XF,XF,,,21,True,success,Successfully scraped character details,[1055 1065 1071 1108],[104 105 106 109],['wano_country' 'egghead'],['wano_country' 'final'],4,4,1055,1108,10-01,[],0,
@@ -3205,8 +3135,8 @@ Zeus,Zeus,Grand Line,Alive,June 26th,,,,,44,True,success,Successfully scraped ch
   903  931  933  975  976  983  985  988  995  996  997  999 1000 1001
  1002 1003 1008 1009 1010 1011 1012 1013 1016 1018 1030 1041 1046 1050
  1055 1065 1077 1082 1084 1113 1127 1129 1136 1145 1146 1157 1161 1163
- 1165]","[ 82  83  84  85  86  87  88  89  90  92  93  97  98  99 100 101 102 103
- 104 105 107 110 111 112 113 114]",['whole_cake_island' 'levely' 'wano_country' 'egghead' 'elbaph'],['whole_cake_island' 'wano_country' 'final'],71,26,827,1165,06-26,[87 99],2,Grand Line
+ 1165 1176]","[ 82  83  84  85  86  87  88  89  90  92  93  97  98  99 100 101 102 103
+ 104 105 107 110 111 112 113 114]",['whole_cake_island' 'levely' 'wano_country' 'egghead' 'elbaph'],['whole_cake_island' 'wano_country' 'final'],72,26,827,1176,06-26,[87 99],2,Grand Line
 Zodia,Zodia,,Alive,,,,,,,True,success,Successfully scraped character details,[553 558 572 575],[57 58 59],['marineford'],['summit_war'],4,3,553,575,,[],0,
 Zotto,Zotto,,Alive,,,,"At least;1,000,000",1000000,,True,success,Successfully scraped character details,[533 691],[55 70],['impel_down' 'punk_hazard'],['summit_war' 'dressrosa'],2,2,533,691,,[],0,
 Zucca,Zucca,,Alive,,,,,,,True,success,Successfully scraped character details,[564 574],[58 59],['marineford'],['summit_war'],2,2,564,574,,[],0,
