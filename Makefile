@@ -10,7 +10,8 @@ UV := uv
 	run-all-scrapers run-all-parsers run-all-postprocessors run-all-exports run-data-pipeline \
 	status db-status migrate-birth-dates migrate-birth-dates-full load-cov config export \
 	postgres-start postgres-stop postgres-logs postgres-init export-postgres export-postgres-full postgres-status \
-	test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure
+	test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure \
+	run-network-explorer
 
 # Default target
 help:
@@ -155,6 +156,7 @@ help:
 	@echo "─────────────────────────────────────────────────────────────────────"
 	@echo "  status               - Show pipeline status (files, sizes, record counts)"
 	@echo "  config               - Show current configuration (workers, delays, etc.)"
+	@echo "  run-network-explorer - Launch local web app to explore character network"
 	@echo ""
 	@echo "💡 TIPS:"
 	@echo "  • RECOMMENDED: Use the two-command workflow for better control:"
@@ -645,6 +647,11 @@ config:
 	@echo "📋 Current Configuration:"
 	@echo "========================"
 	@$(UV) run python -c "from src.onepieceofdata.config.settings import settings; print(f'Last Chapter: {settings.last_chapter}'); print(f'Last Volume: {settings.last_volume}'); print(f'Enable Parallel: {settings.enable_parallel}'); print(f'Max Workers: {settings.max_workers}'); print(f'Scraping Delay: {settings.scraping_delay}s')"
+
+# Launch interactive web app for character co-appearance network exploration
+run-network-explorer:
+	@echo "🌐 Starting network explorer web app..."
+	$(UV) run python scripts/run_network_explorer.py
 
 # Test commands for development (limited scope)
 test-scrape:

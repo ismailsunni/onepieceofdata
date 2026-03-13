@@ -1,0 +1,511 @@
+id,name,appearance_count,weighted_degree,degree,betweenness
+Monkey_D._Luffy,Monkey D. Luffy,1001,19160,509,0.0
+Nami,Nami,821,15876,509,0.0
+Roronoa_Zoro,Roronoa Zoro,786,15239,509,0.0
+Sanji,Sanji,765,15218,509,0.0
+Usopp,Usopp,753,15073,509,0.0
+Tony_Tony_Chopper,Tony Tony Chopper,694,14539,508,0.0
+Nico_Robin,Nico Robin,600,12919,503,0.0
+Franky,Franky,472,11013,492,0.0
+Brook,Brook,398,9603,473,0.0
+Jinbe,Jinbe,283,7210,461,0.0
+Trafalgar_D._Water_Law,Trafalgar D. Water Law,207,5401,341,0.0
+Kin'emon,Kin'emon,172,4759,362,0.0
+Kouzuki_Momonosuke,Kouzuki Momonosuke,139,3904,360,0.0
+Charlotte_Linlin,Charlotte Linlin,139,3731,330,0.0
+Donquixote_Doflamingo,Donquixote Doflamingo,124,3192,323,0.0
+Carrot,Carrot,113,3134,325,0.0
+Napoleon,Napoleon,111,2918,296,0.0
+Yamato,Yamato,98,2813,325,0.0
+Kaidou,Kaidou,96,2714,303,0.0
+Rob_Lucci,Rob Lucci,116,2600,303,0.0
+Nefertari_Vivi,Nefertari Vivi,142,2492,357,0.0
+Eustass_Kid,Eustass Kid,85,2474,276,0.0
+Inuarashi,Inuarashi,82,2447,242,0.0
+Caesar_Clown,Caesar Clown,95,2393,322,0.0
+Kikunojo,Kikunojo,82,2368,224,0.0
+Raizo,Raizo,79,2362,212,0.0
+Kaku,Kaku,102,2312,288,0.0
+Kanjuro,Kanjuro,77,2211,250,0.0
+Kawamatsu,Kawamatsu,73,2175,221,0.0
+Portgas_D._Ace,Portgas D. Ace,111,2105,339,0.0
+Rebecca,Rebecca,73,2101,258,0.0
+Leo,Leo,68,2089,280,0.0
+Nekomamushi,Nekomamushi,70,2086,236,0.0
+Jewelry_Bonney,Jewelry Bonney,74,2078,321,0.0
+Buggy,Buggy,112,2059,348,0.0
+Marco,Marco,71,2016,298,0.0
+Zeus,Zeus,72,2000,316,0.0
+Tama,Tama,74,1988,280,0.0
+Bepo,Bepo,65,1962,282,0.0
+Shinobu,Shinobu,65,1962,230,0.0
+Capone_Bege,Capone Bege,67,1946,297,0.0
+Bartholomew_Kuma,Bartholomew Kuma,80,1930,317,0.0
+Sabo,Sabo,72,1929,358,0.0
+Bartolomeo,Bartolomeo,71,1926,230,0.0
+Hattori,Hattori,86,1905,260,0.0
+Queen,Queen,65,1862,193,0.0
+Hajrudin,Hajrudin,66,1852,243,0.0
+Crocodile,Crocodile,97,1842,304,0.0
+Kyros,Kyros,66,1838,194,0.0
+Franky_Family,Franky Family,84,1806,113,0.0
+Edward_Newgate,Edward Newgate,72,1802,321,0.0
+Monkey_D._Garp,Monkey D. Garp,78,1797,334,0.0
+Denjiro,Denjiro,60,1745,215,0.0
+Shanks,Shanks,67,1744,381,0.0
+Smoker,Smoker,85,1736,277,0.0
+Riku_Doldo_III,Riku Doldo III,59,1724,219,0.0
+Emporio_Ivankov,Emporio Ivankov,72,1696,293,0.0
+Marshall_D._Teach,Marshall D. Teach,62,1694,349,0.0
+Viola,Viola,56,1670,221,0.0
+Hyougoro,Hyougoro,57,1657,183,0.0
+Killer,Killer,55,1656,259,0.0
+Jaygarcia_Saturn,Jaygarcia Saturn,58,1636,322,0.0
+Borsalino,Borsalino,64,1624,271,0.0
+Caribou,Caribou,76,1616,274,0.0
+Ashura_Doji,Ashura Doji,51,1598,171,0.0
+Boa_Hancock,Boa Hancock,64,1590,320,0.0
+Kouzuki_Hiyori,Kouzuki Hiyori,55,1565,240,0.0
+Prometheus,Prometheus,58,1561,266,0.0
+X_Drake,X Drake,53,1560,303,0.0
+Tashigi,Tashigi,78,1556,252,0.0
+Brogy,Brogy,62,1553,273,0.0
+Hatchan,Hatchan,93,1547,192,0.0
+Cavendish,Cavendish,57,1529,200,0.0
+Sengoku,Sengoku,57,1496,273,0.0
+Silvers_Rayleigh,Silvers Rayleigh,59,1493,330,0.0
+Dorry,Dorry,59,1490,275,0.0
+Izou,Izou,48,1474,208,0.0
+Kuzan,Kuzan,59,1470,307,0.0
+Sakazuki,Sakazuki,52,1456,295,0.0
+Sai,Sai,54,1442,195,0.0
+Pedro,Pedro,56,1439,214,0.0
+Kashii,Kashii,50,1435,257,0.0
+Kalifa,Kalifa,73,1432,163,0.0
+Shachi,Shachi,47,1430,239,0.0
+Paulie,Paulie,62,1427,140,0.0
+Vegapunk,Vegapunk,53,1418,255,0.0
+Oimo,Oimo,49,1417,259,0.0
+Charlotte_Perospero,Charlotte Perospero,49,1413,196,0.0
+Issho,Issho,49,1410,200,0.0
+Camie,Camie,69,1399,225,0.0
+Shirahoshi,Shirahoshi,54,1393,266,0.0
+Bomba,Bomba,44,1378,196,0.0
+Vinsmoke_Reiju,Vinsmoke Reiju,51,1357,246,0.0
+Kokoro,Kokoro,58,1354,166,0.0
+Koby,Koby,64,1322,279,0.0
+Scratchmen_Apoo,Scratchmen Apoo,44,1322,240,0.0
+Kurozumi_Orochi,Kurozumi Orochi,47,1319,168,0.0
+Mozu_and_Kiwi,Mozu and Kiwi,52,1290,122,0.0
+Monkey_D._Dragon,Monkey D. Dragon,48,1284,315,0.0
+Kabu,Kabu,40,1280,225,0.0
+Topman_Warcury,Topman Warcury,40,1279,328,0.0
+Dracule_Mihawk,Dracule Mihawk,48,1275,290,0.0
+Vinsmoke_Ichiji,Vinsmoke Ichiji,47,1265,224,0.0
+Flapper,Flapper,39,1256,187,0.0
+Charlotte_Pudding,Charlotte Pudding,48,1254,235,0.0
+Jean_Bart,Jean Bart,42,1254,224,0.0
+Inhel,Inhel,40,1246,158,0.0
+Karoo,Karoo,71,1244,281,0.0
+Vinsmoke_Niji,Vinsmoke Niji,46,1242,231,0.0
+Charlotte_Chiffon,Charlotte Chiffon,43,1241,223,0.0
+Zambai,Zambai,49,1238,116,0.0
+Penguin,Penguin,42,1226,221,0.0
+Chinjao,Chinjao,46,1224,131,0.0
+Baby_5,Baby 5,48,1221,138,0.0
+Lilith,Lilith,41,1209,217,0.0
+Blueno,Blueno,59,1200,149,0.0
+King,King,38,1177,211,0.0
+Marcus_Mars,Marcus Mars,38,1176,301,0.0
+Neptune,Neptune,47,1172,265,0.0
+Peepley_Lulu,Peepley Lulu,44,1172,176,0.0
+Pappag,Pappag,60,1165,172,0.0
+Ethanbaron_V._Nusjuro,Ethanbaron V. Nusjuro,37,1159,304,0.0
+Gotti,Gotti,42,1156,172,0.0
+Shepherd_Ju_Peter,Shepherd Ju Peter,37,1155,300,0.0
+Tilestone,Tilestone,42,1144,163,0.0
+Chimney,Chimney,48,1143,140,0.0
+Shishilian,Shishilian,33,1142,217,0.0
+Basil_Hawkins,Basil Hawkins,43,1137,218,0.0
+Wanda,Wanda,38,1129,214,0.0
+Gonbe,Gonbe,47,1126,136,0.0
+Vinsmoke_Yonji,Vinsmoke Yonji,43,1110,192,0.0
+Vinsmoke_Judge,Vinsmoke Judge,41,1096,191,0.0
+Iceburg,Iceburg,49,1093,203,0.0
+Vito,Vito,41,1076,185,0.0
+Charlotte_Katakuri,Charlotte Katakuri,41,1072,202,0.0
+Wicca,Wicca,34,1071,192,0.0
+Ulti,Ulti,36,1068,202,0.0
+Helmeppo,Helmeppo,56,1061,232,0.0
+Jesus_Burgess,Jesus Burgess,43,1049,218,0.0
+Enel,Enel,66,1027,166,0.0
+Charlotte_Mont-d'Or,Charlotte Mont-d'Or,37,1026,183,0.0
+Hack,Hack,40,1018,165,0.0
+Komachiyo,Komachiyo,38,1012,188,0.0
+Gol_D._Roger,Gol D. Roger,39,1010,290,0.0
+Charlotte_Brûlée,Charlotte Brûlée,44,1000,160,0.0
+Galdino,Galdino,59,997,187,0.0
+Jango,Jango,66,996,178,0.0
+Koala,Koala,35,989,282,0.0
+Trebol,Trebol,41,979,100,0.0
+Diamante,Diamante,41,971,101,0.0
+Scopper_Gaban,Scopper Gaban,36,966,191,0.0
+Stussy,Stussy,32,964,206,0.0
+Fukaboshi,Fukaboshi,39,962,217,0.0
+Sentomaru,Sentomaru,38,949,222,0.0
+Spandam,Spandam,42,948,168,0.0
+Yokozuna,Yokozuna,38,947,134,0.0
+Nefertari_Cobra,Nefertari Cobra,49,943,211,0.0
+Jack,Jack,30,941,206,0.0
+Gatz,Gatz,36,941,143,0.0
+Kouzuki_Oden,Kouzuki Oden,36,940,173,0.0
+Kiev,Kiev,36,936,94,0.0
+Tank_Lepanto,Tank Lepanto,31,934,151,0.0
+Orlumbus,Orlumbus,33,916,173,0.0
+Gecko_Moria,Gecko Moria,45,915,167,0.0
+Mansherry,Mansherry,27,911,227,0.0
+Jabra,Jabra,42,907,152,0.0
+Jaguar_D._Saul,Jaguar D. Saul,33,903,226,0.0
+Ideo,Ideo,32,900,161,0.0
+Morgans,Morgans,27,898,257,0.0
+Tsuru,Tsuru,32,896,277,0.0
+Lola,Lola,39,894,205,0.0
+Bentham,Bentham,57,893,158,0.0
+Imu,Imu,29,883,225,0.0
+Elizabello_II,Elizabello II,30,883,164,0.0
+Wapol,Wapol,53,874,198,0.0
+Bian,Bian,28,873,202,0.0
+Charlotte_Smoothie,Charlotte Smoothie,31,870,161,0.0
+Page_One,Page One,30,869,185,0.0
+Charlotte_Oven,Charlotte Oven,30,862,184,0.0
+Capone_Pez,Capone Pez,28,856,186,0.0
+Fukurou,Fukurou,38,852,143,0.0
+Atlas,Atlas,34,848,146,0.0
+Bellamy,Bellamy,44,846,154,0.0
+Cotton,Cotton,25,844,155,0.0
+Rampo,Rampo,26,839,164,0.0
+Toko,Toko,28,835,164,0.0
+Salome,Salome,39,830,190,0.0
+Tamagon,Tamagon,31,813,87,0.0
+Manboshi,Manboshi,32,806,204,0.0
+Ryuboshi,Ryuboshi,32,806,204,0.0
+Gomorrah,Gomorrah,29,801,87,0.0
+Charlotte_Daifuku,Charlotte Daifuku,26,799,163,0.0
+Abdullah,Abdullah,28,793,155,0.0
+Kumadori,Kumadori,37,789,141,0.0
+Perona,Perona,38,787,231,0.0
+Sodom,Sodom,28,780,87,0.0
+Fukurokuju,Fukurokuju,25,777,144,0.0
+Pica,Pica,32,775,98,0.0
+Mikita,Mikita,40,768,119,0.0
+Van_Augur,Van Augur,31,762,192,0.0
+Marianne,Marianne,39,755,123,0.0
+Fullbody,Fullbody,40,753,180,0.0
+Gladius,Gladius,29,745,91,0.0
+Gerd,Gerd,27,744,154,0.0
+Miyagi,Miyagi,23,743,172,0.0
+Loki,Loki,30,743,124,0.0
+Jeet,Jeet,26,742,149,0.0
+Chao,Chao,23,733,161,0.0
+Blue_Gilly,Blue Gilly,26,727,144,0.0
+Daz_Bonez,Daz Bonez,43,723,158,0.0
+Igaram,Igaram,38,721,180,0.0
+Senor_Pink,Senor Pink,27,720,133,0.0
+Hina,Hina,27,717,216,0.0
+Tristan,Tristan,24,713,188,0.0
+Wadatsumi,Wadatsumi,32,710,174,0.0
+Edison,Edison,24,707,161,0.0
+Tamago,Tamago,29,707,155,0.0
+Minister_of_the_Right,Minister of the Right,28,705,197,0.0
+Stansen,Stansen,27,704,143,0.0
+Pekoms,Pekoms,30,700,173,0.0
+York,York,24,697,156,0.0
+Sind,Sind,29,693,141,0.0
+Machvise,Machvise,26,689,100,0.0
+Yatappe,Yatappe,21,688,128,0.0
+Blackback,Blackback,21,682,150,0.0
+Heat,Heat,21,678,204,0.0
+Wyper,Wyper,40,673,110,0.0
+Shakuyaku,Shakuyaku,24,671,199,0.0
+Shimotsuki_Yasuie,Shimotsuki Yasuie,25,669,166,0.0
+Schollzo,Schollzo,25,669,83,0.0
+Chaka,Chaka,33,667,195,0.0
+Shepherd_Sommers,Shepherd Sommers,21,664,131,0.0
+Wire,Wire,20,663,195,0.0
+Who's-Who,Who's-Who,22,662,169,0.0
+Gan_Fall,Gan Fall,44,661,73,0.0
+Bastille,Bastille,21,660,153,0.0
+Gem,Gem,37,657,79,0.0
+Hody_Jones,Hody Jones,32,655,96,0.0
+Manmayer_Gunko,Manmayer Gunko,23,653,88,0.0
+Zeff,Zeff,40,650,187,0.0
+Minister_of_the_Left,Minister of the Left,26,649,173,0.0
+Jarul,Jarul,27,649,114,0.0
+Baratie,Baratie,40,648,187,0.0
+Doran,Doran,28,647,120,0.0
+Concelot,Concelot,18,641,183,0.0
+Conis,Conis,35,641,152,0.0
+Pierre,Pierre,43,641,73,0.0
+Giovanni,Giovanni,17,640,176,0.0
+Tenguyama_Hitetsu,Tenguyama Hitetsu,24,636,157,0.0
+Cho,Cho,21,636,157,0.0
+Dellinger,Dellinger,24,636,88,0.0
+Jozu,Jozu,26,634,172,0.0
+Shaka,Shaka,23,632,125,0.0
+Sugar,Sugar,24,627,139,0.0
+Mocha,Mocha,26,624,140,0.0
+Thriller_Bark,Thriller Bark,45,619,76,0.0
+Uni,Uni,18,612,152,0.0
+Omasa,Omasa,18,605,129,0.0
+Road,Road,24,598,106,0.0
+Monet,Monet,31,598,94,0.0
+Zunesha,Zunesha,21,596,180,0.0
+Dagama,Dagama,20,595,122,0.0
+Boo,Boo,23,595,102,0.0
+Lao_G,Lao G,23,592,101,0.0
+Colon,Colon,21,588,94,0.0
+Doc_Q,Doc Q,25,586,165,0.0
+Gedatsu,Gedatsu,41,581,70,0.0
+Shiryu,Shiryu,22,579,181,0.0
+Suleiman,Suleiman,18,575,146,0.0
+Pell,Pell,26,573,178,0.0
+Konbu,Konbu,24,573,130,0.0
+Goldberg,Goldberg,21,571,121,0.0
+Fossa,Fossa,21,568,115,0.0
+Buffalo,Buffalo,23,568,108,0.0
+Megalo,Megalo,24,565,145,0.0
+Vista,Vista,22,562,110,0.0
+Speed,Speed,21,559,150,0.0
+Iron_Giant,Iron Giant,18,557,180,0.0
+Arlong,Arlong,37,556,104,0.0
+Kop,Kop,23,555,67,0.0
+Doberman,Doberman,20,554,176,0.0
+Uzu,Uzu,23,553,104,0.0
+Kureha,Kureha,28,547,192,0.0
+Ripley,Ripley,19,547,96,0.0
+Aisa,Aisa,32,544,106,0.0
+Zeo,Zeo,24,544,92,0.0
+Babanuki,Babanuki,19,542,129,0.0
+Kouzuki_Toki,Kouzuki Toki,20,542,111,0.0
+Momonga,Momonga,22,541,173,0.0
+Tyrannosaurus,Tyrannosaurus,26,541,110,0.0
+Ylva,Ylva,18,540,67,0.0
+Brownbeard,Brownbeard,24,538,104,0.0
+Sasaki,Sasaki,16,534,115,0.0
+Roddy,Roddy,17,530,129,0.0
+Macro,Macro,29,526,113,0.0
+Ikkaku,Ikkaku,18,522,138,0.0
+Nojiko,Nojiko,30,515,164,0.0
+Pythagoras,Pythagoras,18,513,108,0.0
+Vergo,Vergo,26,512,98,0.0
+Dago,Dago,17,510,86,0.0
+Footbianco,Footbianco,17,510,86,0.0
+Koza,Koza,28,508,126,0.0
+Genzo,Genzo,29,507,164,0.0
+Charlotte_Galette,Charlotte Galette,18,507,118,0.0
+Tsunagoro,Tsunagoro,15,504,140,0.0
+Daruma,Daruma,22,503,86,0.0
+Mag,Mag,16,500,67,0.0
+Ottoland,Ottoland,16,494,86,0.0
+Charlotte_Mobile,Charlotte Mobile,15,490,117,0.0
+Giolla,Giolla,19,488,100,0.0
+Baburu,Baburu,20,487,103,0.0
+Black_Maria,Black Maria,15,486,119,0.0
+Clione,Clione,16,483,145,0.0
+Bent,Bent,15,479,67,0.0
+Rocks_D._Xebec,Rocks D. Xebec,18,477,127,0.0
+Dalton,Dalton,26,475,161,0.0
+Dosun,Dosun,21,474,80,0.0
+Ange,Ange,16,471,66,0.0
+Karin,Karin,15,471,65,0.0
+Catarina_Devon,Catarina Devon,15,469,169,0.0
+Morley,Morley,15,468,201,0.0
+S-Snake,S-Snake,15,465,150,0.0
+Skaldi,Skaldi,15,463,64,0.0
+Farul,Farul,14,462,142,0.0
+Charlotte_Kato,Charlotte Kato,14,462,124,0.0
+Spacey,Spacey,24,461,91,0.0
+Yomo,Yomo,15,459,170,0.0
+Stronger,Stronger,20,459,128,0.0
+Rakuyo,Rakuyo,16,457,117,0.0
+Ikaros_Much,Ikaros Much,20,455,80,0.0
+S-Bear,S-Bear,15,454,113,0.0
+Figarland_Shamrock,Figarland Shamrock,14,452,179,0.0
+Toto,Toto,25,452,123,0.0
+Johanna,Johanna,14,450,67,0.0
+Bobomba,Bobomba,16,448,104,0.0
+Ronja,Ronja,14,447,66,0.0
+Laffitte,Laffitte,18,440,128,0.0
+Crocus,Crocus,20,438,201,0.0
+Curiel,Curiel,16,437,103,0.0
+Takoyaki_8,Takoyaki 8,19,435,82,0.0
+Hyouzou,Hyouzou,21,435,80,0.0
+Bjorn,Bjorn,14,435,78,0.0
+Hakugan,Hakugan,13,434,131,0.0
+Charlotte_Tablet,Charlotte Tablet,13,434,100,0.0
+Pound,Pound,17,433,123,0.0
+Harald,Harald,18,431,108,0.0
+Gloriosa,Gloriosa,14,429,169,0.0
+Urouge,Urouge,15,429,157,0.0
+Gancho,Gancho,12,426,135,0.0
+Rabiyan,Rabiyan,19,426,114,0.0
+Nitro,Nitro,20,425,108,0.0
+Kojuro,Kojuro,13,420,106,0.0
+Matsuge,Matsuge,27,420,80,0.0
+Drophy,Drophy,21,418,122,0.0
+Olav,Olav,14,418,60,0.0
+Streusen,Streusen,14,416,110,0.0
+Guernika,Guernika,17,411,116,0.0
+Clover,Clover,17,410,168,0.0
+Zala,Zala,24,409,64,0.0
+Shiki,Shiki,15,408,131,0.0
+Charlotte_Cinnamon,Charlotte Cinnamon,14,407,83,0.0
+Boa_Marigold,Boa Marigold,18,406,161,0.0
+Boa_Sandersonia,Boa Sandersonia,18,406,161,0.0
+Doll,Doll,15,404,114,0.0
+Nola,Nola,24,404,104,0.0
+Coribou,Coribou,21,404,101,0.0
+Baxcon,Baxcon,13,403,110,0.0
+Tamanegi,Tamanegi,24,400,162,0.0
+Strawberry,Strawberry,13,400,162,0.0
+Donquixote_Rosinante,Donquixote Rosinante,18,398,153,0.0
+Ganzui,Ganzui,17,398,119,0.0
+Pellini,Pellini,14,397,79,0.0
+Benn_Beckman,Benn Beckman,17,395,158,0.0
+Absalom,Absalom,26,391,71,0.0
+Yosaku,Yosaku,30,390,60,0.0
+Inazuma,Inazuma,21,389,120,0.0
+Karasu,Karasu,14,380,157,0.0
+Bariete,Bariete,13,379,131,0.0
+Hamlet,Hamlet,12,378,104,0.0
+Patty,Patty,28,377,120,0.0
+Kelly_Funk,Kelly Funk,14,377,85,0.0
+Cabaji,Cabaji,27,375,131,0.0
+Aladine,Aladine,16,375,119,0.0
+Nash,Nash,13,375,106,0.0
+John,John,16,374,115,0.0
+Charlotte_Basskarte,Charlotte Basskarte,12,373,103,0.0
+Mohji,Mohji,27,371,130,0.0
+S-Hawk,S-Hawk,12,371,128,0.0
+Hanzo,Hanzo,14,370,105,0.0
+Yasopp,Yasopp,16,369,152,0.0
+Atmos,Atmos,14,369,103,0.0
+Alvida,Alvida,22,366,137,0.0
+Biyo,Biyo,16,366,64,0.0
+Blenheim,Blenheim,13,365,100,0.0
+Marguerite,Marguerite,18,362,134,0.0
+Lucky_Roux,Lucky Roux,15,358,145,0.0
+Kuroobi,Kuroobi,24,358,67,0.0
+Kamakiri,Kamakiri,19,357,98,0.0
+Richie,Richie,27,355,125,0.0
+Bogard,Bogard,19,353,136,0.0
+Curly_Dadan,Curly Dadan,16,351,192,0.0
+S-Shark,S-Shark,11,351,113,0.0
+Goro,Goro,23,347,49,0.0
+Johnny,Johnny,28,346,46,0.0
+Vasco_Shot,Vasco Shot,12,345,108,0.0
+Figarland_Garling,Figarland Garling,12,344,131,0.0
+Avalo_Pizarro,Avalo Pizarro,12,343,140,0.0
+Belo_Betty,Belo Betty,13,342,159,0.0
+Vander_Decken_IX,Vander Decken IX,18,339,69,0.0
+Rimoshifu_Killingham,Rimoshifu Killingham,12,338,57,0.0
+Epoida,Epoida,12,337,100,0.0
+Queen_Mama_Chanter,Queen Mama Chanter,12,336,118,0.0
+Babe,Babe,20,336,63,0.0
+Nubon,Nubon,11,335,103,0.0
+Duval,Duval,14,334,106,0.0
+Daifugo,Daifugo,15,334,97,0.0
+Risky_Brothers,Risky Brothers,21,333,100,0.0
+Joseph,Joseph,12,332,116,0.0
+Otohime,Otohime,14,331,117,0.0
+Surume,Surume,17,330,72,0.0
+Maha,Maha,13,328,97,0.0
+Charlos,Charlos,12,327,149,0.0
+Braham,Braham,17,326,98,0.0
+Su,Su,21,326,36,0.0
+Kaya,Kaya,21,319,137,0.0
+Heracles,Heracles,11,318,170,0.0
+Magellan,Magellan,22,318,96,0.0
+Onimaru,Onimaru,12,315,127,0.0
+Buckingham_Stussy,Buckingham Stussy,13,315,95,0.0
+Haruta,Haruta,11,314,78,0.0
+Andre,Andre,11,312,101,0.0
+Haredas,Haredas,12,311,156,0.0
+Ninjin,Ninjin,21,311,123,0.0
+Piiman,Piiman,21,311,123,0.0
+Genbo,Genbo,15,310,98,0.0
+Ally,Ally,12,309,88,0.0
+Daikoku,Daikoku,12,308,102,0.0
+Galaxy,Galaxy,17,306,75,0.0
+Charlotte_Amande,Charlotte Amande,12,303,73,0.0
+Diesel,Diesel,13,302,81,0.0
+Shandia_Chief,Shandia Chief,17,302,62,0.0
+Carne,Carne,22,301,103,0.0
+Chew,Chew,20,301,59,0.0
+Tom,Tom,12,299,142,0.0
+Kamijiro,Kamijiro,13,299,112,0.0
+Hoe,Hoe,12,298,125,0.0
+Pagaya,Pagaya,20,298,53,0.0
+Laboon,Laboon,16,295,150,0.0
+Sweet_Pea,Sweet Pea,15,295,102,0.0
+Oars,Oars,20,294,27,0.0
+Makino,Makino,11,292,170,0.0
+Holed'em,Holed'em,13,292,113,0.0
+Charlotte_Opera,Charlotte Opera,13,292,75,0.0
+Woop_Slap,Woop Slap,11,291,162,0.0
+Comil,Comil,13,289,126,0.0
+Ammo_Knights,Ammo Knights,12,289,92,0.0
+McKinley,McKinley,18,289,50,0.0
+Onigumo,Onigumo,12,286,113,0.0
+Kingbaum,Kingbaum,15,283,77,0.0
+Gyogyo,Gyogyo,13,282,117,0.0
+Mont_Blanc_Cricket,Mont Blanc Cricket,16,280,102,0.0
+Prince_Grus,Prince Grus,11,276,129,0.0
+Krieg,Krieg,24,273,65,0.0
+Hannyabal,Hannyabal,19,272,75,0.0
+Nico_Olvia,Nico Olvia,12,269,142,0.0
+Rosward,Rosward,11,269,109,0.0
+Shyarly,Shyarly,11,260,83,0.0
+Raki,Raki,14,255,66,0.0
+Dirt_Boss,Dirt Boss,15,255,37,0.0
+Ginny,Ginny,11,251,98,0.0
+Ohm,Ohm,17,250,31,0.0
+Hakowan,Hakowan,16,248,80,0.0
+Cosmo,Cosmo,14,244,47,0.0
+Aphelandra,Aphelandra,13,242,72,0.0
+Mashikaku,Mashikaku,11,240,98,0.0
+Nako,Nako,15,240,81,0.0
+Mont_Blanc_Noland,Mont Blanc Noland,15,238,99,0.0
+Daisy,Daisy,11,233,83,0.0
+Gyaro,Gyaro,13,233,71,0.0
+Tansui,Tansui,13,233,71,0.0
+Masira,Masira,15,229,79,0.0
+Hogback,Hogback,16,229,36,0.0
+Sadi,Sadi,14,224,63,0.0
+Erik,Erik,11,214,89,0.0
+Morgan,Morgan,18,213,78,0.0
+Shura,Shura,15,213,28,0.0
+Shoujou,Shoujou,13,212,79,0.0
+Kumashi,Kumashi,14,212,47,0.0
+Foxy,Foxy,15,206,67,0.0
+Hiriluk,Hiriluk,12,205,101,0.0
+Gin,Gin,18,204,57,0.0
+Sarquiss,Sarquiss,15,202,59,0.0
+Moda,Moda,11,199,101,0.0
+Victoria_Cindry,Victoria Cindry,13,199,25,0.0
+Kebi,Kebi,13,196,38,0.0
+Kuro,Kuro,19,194,63,0.0
+Charlotte_Cracker,Charlotte Cracker,11,192,94,0.0
+Holy,Holy,12,180,30,0.0
+Spandine,Spandine,11,171,83,0.0
+Dadan_Family,Dadan Family,11,170,82,0.0
+Minokoala,Minokoala,11,169,45,0.0
+Hamburg,Hamburg,11,167,67,0.0
+Porche,Porche,11,167,67,0.0
+Mr._9,Mr. 9,11,146,75,0.0
+Chess,Chess,14,146,23,0.0
+Itomimizu,Itomimizu,13,141,14,0.0
+Kuromarimo,Kuromarimo,13,133,22,0.0
+Chuchun,Chuchun,12,132,14,0.0
+Kalgara,Kalgara,11,120,25,0.0
+Boodle,Boodle,11,116,59,0.0

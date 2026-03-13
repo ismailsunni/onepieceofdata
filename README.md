@@ -586,6 +586,41 @@ make run-full-pipeline-parallel    # All stages including export
 - 🎯 **[FEATURES.md](FEATURES.md)** - Feature overview and CLI command reference
 - 📋 **[IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)** - Technical implementation details
 
+## 🌐 Character Network Explorer
+
+Explore the chapter co-appearance network in a local interactive web app.
+
+### Prerequisites
+
+Make sure these files exist:
+
+- `exports/network_analysis/character_network_nodes_gt10.csv`
+- `exports/network_analysis/character_coappearance_edges_gt10.csv`
+
+Start the app:
+
+```bash
+python scripts/run_network_explorer.py
+```
+
+Or via Makefile:
+
+```bash
+make run-network-explorer
+```
+
+Then open:
+
+- http://127.0.0.1:8765/web/network_explorer/index.html
+
+### What you can do
+
+- Filter nodes by minimum chapter appearances
+- Filter edges by minimum co-appearance weight
+- Limit max rendered edges for smoother performance
+- Search and focus a character node
+- Zoom, pan, drag, and inspect edge/node tooltips
+
 ## 🚀 Future Enhancements
 
 - [ ] **Incremental Updates**: Smart re-scraping of only new content
