@@ -648,6 +648,26 @@ config:
 	@echo "========================"
 	@$(UV) run python -c "from src.onepieceofdata.config.settings import settings; print(f'Last Chapter: {settings.last_chapter}'); print(f'Last Volume: {settings.last_volume}'); print(f'Enable Parallel: {settings.enable_parallel}'); print(f'Max Workers: {settings.max_workers}'); print(f'Scraping Delay: {settings.scraping_delay}s')"
 
+# Build character co-appearance graph JSON files for all weight types
+build-character-graphs:
+	@echo "Building character graph: arc..."
+	@$(UV) run python scripts/build_character_graph.py --weight arc --output data/network_arc.json
+	@echo "Building character graph: saga..."
+	@$(UV) run python scripts/build_character_graph.py --weight saga --output data/network_saga.json
+	@echo "Building character graph: chapter..."
+	@$(UV) run python scripts/build_character_graph.py --weight chapter --output data/network_chapter.json
+	@echo "Building character graph: consec-2..."
+	@$(UV) run python scripts/build_character_graph.py --weight consec-2 --output data/network_consec-2.json
+	@echo "Building character graph: consec-3..."
+	@$(UV) run python scripts/build_character_graph.py --weight consec-3 --output data/network_consec-3.json
+	@echo "Building character graph: consec-4..."
+	@$(UV) run python scripts/build_character_graph.py --weight consec-4 --output data/network_consec-4.json
+	@echo "Building character graph: consec-5..."
+	@$(UV) run python scripts/build_character_graph.py --weight consec-5 --output data/network_consec-5.json
+	@echo "Building character graph: consec-7..."
+	@$(UV) run python scripts/build_character_graph.py --weight consec-7 --output data/network_consec-7.json
+	@echo "Done. Output files in data/network_*.json"
+
 # Launch interactive web app for character co-appearance network exploration
 run-network-explorer:
 	@echo "🌐 Starting network explorer web app..."
