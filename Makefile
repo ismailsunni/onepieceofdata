@@ -739,6 +739,9 @@ embed-status: ## Show embedding stats
 search: ## Search wiki (usage: make search Q="gear 5")
 	uv run python -m onepieceofdata.cli.embed --search "$(Q)" --db ./onepiece-master.duckdb
 
+chat: ## Start One Piece chatbot
+	uv run python -m onepieceofdata.cli.chat --db ./onepiece-master.duckdb
+
 # Clean up generated files
 clean:
 	@echo "🧹 Cleaning up..."
