@@ -715,6 +715,19 @@ test-scrape-story-structure:
 	@echo "⚓ Testing story structure scraping (arcs and sagas)..."
 	$(UV) run onepieceofdata scrape-story-structure
 
+# RAG Pipeline
+wiki-scrape: ## Scrape all wiki pages (characters + arcs + sagas)
+	uv run python -m onepieceofdata.cli.wiki_scrape --all
+
+wiki-scrape-characters: ## Scrape character wiki pages only
+	uv run python -m onepieceofdata.cli.wiki_scrape --characters
+
+wiki-scrape-arcs: ## Scrape arc and saga wiki pages only
+	uv run python -m onepieceofdata.cli.wiki_scrape --arcs
+
+wiki-status: ## Show wiki scraping progress
+	uv run python -m onepieceofdata.cli.wiki_scrape --status
+
 # Clean up generated files
 clean:
 	@echo "🧹 Cleaning up..."
