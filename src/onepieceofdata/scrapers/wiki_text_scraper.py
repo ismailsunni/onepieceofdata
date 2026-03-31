@@ -156,6 +156,78 @@ class WikiTextScraper:
         )
         return all_pages
 
+    def save_to_duckdb(self, pages: list, db_path: str = None):
+        """Save scraped wiki text pages to DuckDB.
+
+        Creates the wiki_text table if it doesn't exist.
+        Uses INSERT OR REPLACE for upsert behavior.
+
+        Args:
+            pages: List of page dicts from scrape_*() methods.
+            db_path: DuckDB path. Defaults to the configured database.
+        """
+        import duckdb
+        import json
+        from datetime import datetime
+
+        db_path = db_path or self._get_db_path()
+        conn = duckdb.connect(db_path)
+
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS wiki_text (
+                page_id VARCHAR PRIMARY KEY,
+                page_type VARCHAR NOT NULL,
+                title VARCHAR NOT NULL,
+                intro_text TEXT,
+                full_text TEXT,
+                sections JSON,
+                scraped_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+
+        now = datetime.now()
+        inserted = 0
+        for page in pages:
+            conn.execute("""
+                INSERT OR REPLACE INTO wiki_text
+                (page_id, page_type, title, intro_text, full_text, sections, scraped_at)
+                VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, [
+                page['page_id'],
+                page.get('page_type', 'character'),
+                page['title'],
+                page.get('intro_text', ''),
+                page.get('full_text', ''),
+                json.dumps(page.get('sections', {})),
+                now,
+            ])
+            inserted += 1
+
+        conn.close()
+        logger.success(f"Saved {inserted} wiki text pages to DuckDB ({db_path})")
+
+    def get_duckdb_stats(self, db_path: str = None) -> dict:
+        """Get wiki_text table stats from DuckDB.
+
+        Returns:
+            Dict with total count and counts by page_type.
+        """
+        import duckdb
+
+        db_path = db_path or self._get_db_path()
+        conn = duckdb.connect(db_path, read_only=True)
+
+        try:
+            total = conn.execute("SELECT count(*) FROM wiki_text").fetchone()[0]
+            by_type = conn.execute(
+                "SELECT page_type, count(*) FROM wiki_text GROUP BY page_type ORDER BY page_type"
+            ).fetchall()
+            conn.close()
+            return {"total": total, "by_type": {r[0]: r[1] for r in by_type}}
+        except Exception:
+            conn.close()
+            return {"total": 0, "by_type": {}}
+
     # ------------------------------------------------------------------
     # Internal helpers
     # ------------------------------------------------------------------
