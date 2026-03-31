@@ -11,7 +11,9 @@ UV := uv
 	status db-status migrate-birth-dates migrate-birth-dates-full load-cov config export \
 	postgres-start postgres-stop postgres-logs postgres-init export-postgres export-postgres-full postgres-status \
 	test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure \
-	run-network-explorer
+	run-network-explorer \
+	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
+	embed-wiki embed-status search
 
 # Default target
 help:
@@ -727,6 +729,15 @@ wiki-scrape-arcs: ## Scrape arc and saga wiki pages only
 
 wiki-status: ## Show wiki scraping progress
 	uv run python -m onepieceofdata.cli.wiki_scrape --status
+
+embed-wiki: ## Chunk + embed wiki text + save to DuckDB
+	uv run python -m onepieceofdata.cli.embed --run --db ./onepiece-master.duckdb
+
+embed-status: ## Show embedding stats
+	uv run python -m onepieceofdata.cli.embed --status --db ./onepiece-master.duckdb
+
+search: ## Search wiki (usage: make search Q="gear 5")
+	uv run python -m onepieceofdata.cli.embed --search "$(Q)" --db ./onepiece-master.duckdb
 
 # Clean up generated files
 clean:
