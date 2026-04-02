@@ -13,7 +13,8 @@ UV := uv
 	test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure \
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
-	embed-wiki embed-status search
+	embed-wiki embed-status search \
+	export-supabase-fts update-new-chapter
 
 # Default target
 help:
@@ -159,6 +160,28 @@ help:
 	@echo "  status               - Show pipeline status (files, sizes, record counts)"
 	@echo "  config               - Show current configuration (workers, delays, etc.)"
 	@echo "  run-network-explorer - Launch local web app to explore character network"
+	@echo ""
+	@echo "🤖 RAG / AI CHATBOT"
+	@echo "─────────────────────────────────────────────────────────────────────"
+	@echo "  wiki-scrape              - Scrape all wiki pages (characters + arcs + sagas)"
+	@echo "  wiki-scrape-characters   - Scrape character wiki pages only"
+	@echo "  wiki-scrape-arcs         - Scrape arc and saga wiki pages only"
+	@echo "  wiki-status              - Show wiki scraping progress"
+	@echo "  embed-wiki               - Chunk + embed wiki text into DuckDB vector store"
+	@echo "  embed-status             - Show embedding stats"
+	@echo "  search Q=\"...\"           - Test semantic search (e.g. make search Q=\"gear 5\")"
+	@echo "  export-supabase-fts      - Export wiki text + chunks to Supabase (with FTS indexes)"
+	@echo "  chat                     - Start interactive One Piece chatbot"
+	@echo ""
+	@echo "📅 WEEKLY: NEW CHAPTER RELEASED"
+	@echo "─────────────────────────────────────────────────────────────────────"
+	@echo "  1. Update OP_LAST_CHAPTER (and OP_LAST_VOLUME if needed) in .env"
+	@echo "  2. make update-new-chapter    - Runs the full update pipeline:"
+	@echo "     → run-data-pipeline        (scrape + parse + post-process)"
+	@echo "     → run-all-exports          (export CSV + PostgreSQL)"
+	@echo "     → wiki-scrape              (re-scrape wiki text)"
+	@echo "     → embed-wiki               (re-chunk + re-embed)"
+	@echo "     → export-supabase-fts      (export wiki + chunks to Supabase)"
 	@echo ""
 	@echo "💡 TIPS:"
 	@echo "  • RECOMMENDED: Use the two-command workflow for better control:"
@@ -741,6 +764,47 @@ search: ## Search wiki (usage: make search Q="gear 5")
 
 chat: ## Start One Piece chatbot
 	uv run python -m onepieceofdata.cli.chat --db ./onepiece-master.duckdb
+
+# Export wiki text + chunks to Supabase with FTS indexes
+export-supabase-fts:
+	@echo "📤 Exporting wiki text + chunks to Supabase..."
+	$(UV) run python scripts/export_to_supabase_fts.py
+
+# Weekly routine: update everything when a new chapter is released
+# Before running, update OP_LAST_CHAPTER (and OP_LAST_VOLUME if needed) in .env
+update-new-chapter:
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo "📅 NEW CHAPTER UPDATE PIPELINE"
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 1/5: DATA PIPELINE (Scrape → Parse → Post-Process)    ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) run-data-pipeline
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 2/5: EXPORT (CSV + PostgreSQL)                         ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) run-all-exports
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 3/5: WIKI SCRAPE (Re-scrape wiki text)                ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) wiki-scrape
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 4/5: EMBED WIKI (Re-chunk + re-embed)                 ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) embed-wiki
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 5/5: EXPORT WIKI TO SUPABASE (FTS)                    ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) export-supabase-fts
+	@echo ""
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo "✅ NEW CHAPTER UPDATE COMPLETED!"
+	@echo "═══════════════════════════════════════════════════════════════"
 
 # Clean up generated files
 clean:
