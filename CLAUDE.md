@@ -158,11 +158,49 @@ All managed via `src/onepieceofdata/config/settings.py` using pydantic-settings.
 
 ## CLI Entry Point
 
-`src/onepieceofdata/cli.py` contains all Click commands. Commands use:
+`src/onepieceofdata/cli/commands.py` contains all Click commands (re-exported via `cli/__init__.py`). Commands use:
 - Scrapers for data extraction
 - Parsers for data processing
 - DatabaseManager for DuckDB operations
 - PostgresExporter for PostgreSQL sync
+
+## RAG / AI Chatbot
+
+The project includes a RAG (Retrieval-Augmented Generation) chatbot for answering One Piece questions.
+
+### RAG Pipeline (4 phases)
+
+1. **Wiki Text Scraping** (`make wiki-scrape`): Fetches wikitext from Fandom Wiki via MediaWiki API, cleans it (`parsers/wikitext_cleaner.py`), stores in DuckDB `wiki_text` table with `intro_text`, `full_text`, and `sections` (JSON)
+2. **Embeddings** (`make embed-wiki`): Chunks wiki sections (`embeddings/chunker.py`), embeds with `all-MiniLM-L6-v2` (384-dim), stores in DuckDB `wiki_chunks` table with vector embeddings
+3. **Chat** (`make chat`): Groq LLM (`llama-3.3-70b`) with tool-calling — 3 tools: `query_database` (SQL), `search_wiki` (vector search), `get_character_profile` (structured + intro text)
+4. **Supabase Export** (`make export-supabase-fts`): Exports `wiki_text` and `wiki_chunks` to Supabase/PostgreSQL with full-text search indexes via `scripts/export_to_supabase_fts.py`
+
+### Key RAG Files
+- `src/onepieceofdata/cli/chat.py` — Chat CLI entry point
+- `src/onepieceofdata/cli/embed.py` — Embedding CLI commands
+- `src/onepieceofdata/cli/wiki_scrape.py` — Wiki scraping CLI
+- `src/onepieceofdata/rag/chat.py` — Chat loop with tool-calling
+- `src/onepieceofdata/rag/tools.py` — Tool definitions (JSON schema)
+- `src/onepieceofdata/rag/tool_handlers.py` — Tool implementations
+- `src/onepieceofdata/embeddings/` — Chunker, embedder, vector store
+- `src/onepieceofdata/scrapers/wiki_text_scraper.py` — Wiki page fetching
+- `src/onepieceofdata/parsers/wikitext_cleaner.py` — Wikitext → plaintext
+- `scripts/export_to_supabase_fts.py` — Supabase FTS export script
+
+## Weekly Update: New Chapter Released
+
+When a new chapter is released, update `OP_LAST_CHAPTER` (and `OP_LAST_VOLUME` if needed) in `.env`, then run:
+
+```bash
+make update-new-chapter
+```
+
+This single command runs all 5 stages:
+1. `run-data-pipeline` — Scrape + parse + post-process structured data
+2. `run-all-exports` — Export CSV + PostgreSQL
+3. `wiki-scrape` — Re-scrape wiki text
+4. `embed-wiki` — Re-chunk + re-embed
+5. `export-supabase-fts` — Export wiki text + chunks to Supabase
 
 ## Git Commit Guidelines
 
