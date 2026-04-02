@@ -8,15 +8,15 @@ from typing import Optional
 import click
 from loguru import logger
 
-from .config import settings
-from .utils import setup_logging, get_logger
-from .scrapers.chapter import ChapterScraper
-from .scrapers.arc import ArcScraper
-from .scrapers.saga import SagaScraper
-from .parsers.arc import ArcParser
-from .parsers.saga import SagaParser
-from .models import ScrapingResult
-from .database.operations import DatabaseManager
+from ..config import settings
+from ..utils import setup_logging, get_logger
+from ..scrapers.chapter import ChapterScraper
+from ..scrapers.arc import ArcScraper
+from ..scrapers.saga import SagaScraper
+from ..parsers.arc import ArcParser
+from ..parsers.saga import SagaParser
+from ..models import ScrapingResult
+from ..database.operations import DatabaseManager
 
 
 # Setup logging for CLI
@@ -180,7 +180,7 @@ def scrape_chapters(start_chapter: int, end_chapter: Optional[int], parallel: bo
 def scrape_chapters_api(start_chapter: int, end_chapter: Optional[int], parallel: bool,
                        batch: bool, workers: Optional[int], output: Optional[str]) -> None:
     """Scrape chapter data using Fandom MediaWiki API (bypasses Cloudflare)."""
-    from .scrapers.chapter_api import ChapterScraperAPI
+    from ..scrapers.chapter_api import ChapterScraperAPI
 
     try:
         # Determine processing mode
@@ -288,7 +288,7 @@ def scrape_chapters_api(start_chapter: int, end_chapter: Optional[int], parallel
 def scrape_characters(input_file: Optional[str], output: Optional[str], 
                      parallel: bool, workers: Optional[int]) -> None:
     """Scrape character details from One Piece Fandom Wiki."""
-    from .scrapers.character import CharacterScraper
+    from ..scrapers.character import CharacterScraper
     
     processing_mode = "parallel" if parallel else "sequential"
     click.echo(f"🏴‍☠️ Starting character scraping in {processing_mode} mode...")
@@ -385,7 +385,7 @@ def scrape_characters(input_file: Optional[str], output: Optional[str],
 def scrape_volumes(start_volume: int, end_volume: Optional[int], parallel: bool,
                   workers: Optional[int], output: Optional[str]) -> None:
     """Scrape volume information from One Piece Fandom Wiki."""
-    from .scrapers.volume import VolumeScraper
+    from ..scrapers.volume import VolumeScraper
     
     processing_mode = "parallel" if parallel else "sequential"
     click.echo(f"📚 Starting volume scraping in {processing_mode} mode...")
@@ -477,7 +477,7 @@ def parse(
     no_auto_sync: bool
 ) -> None:
     """Parse scraped data and load into DuckDB database."""
-    from .database.operations import DatabaseManager
+    from ..database.operations import DatabaseManager
     
     click.echo("�️  Starting data parsing and database loading...")
     
@@ -589,7 +589,7 @@ def parse(
 )
 def export(export_format: str, output_dir: Optional[str], database_path: Optional[str]) -> None:
     """Export data from database to various formats."""
-    from .database.operations import DatabaseManager
+    from ..database.operations import DatabaseManager
     
     click.echo(f"� Exporting data in {export_format.upper()} format...")
     
@@ -1041,7 +1041,7 @@ def sync_character_appearances(verbose: bool) -> None:
 
     This enables fast analytics queries without needing joins.
     """
-    from .database.operations import DatabaseManager
+    from ..database.operations import DatabaseManager
 
     click.echo("🔄 Syncing character appearance analytics...\n")
 
@@ -1107,7 +1107,7 @@ def sync_cover_appearances(verbose: bool) -> None:
 
     This enables fast analytics queries about which characters appear on volume covers.
     """
-    from .database.operations import DatabaseManager
+    from ..database.operations import DatabaseManager
 
     click.echo("🔄 Syncing character cover appearance analytics...\n")
 
@@ -1195,7 +1195,7 @@ def export_postgres(mode: str, tables: Optional[str], dry_run: bool) -> None:
     # Preview without changes
     uv run onepieceofdata export-postgres --dry-run
     """
-    from .database.postgres_export import PostgresExporter
+    from ..database.postgres_export import PostgresExporter
 
     click.echo(f"🚀 Exporting to PostgreSQL (mode: {mode})")
 
@@ -1282,7 +1282,7 @@ def sync_status() -> None:
     Shows the current state of data synchronization between DuckDB and PostgreSQL.
     Compares row counts to detect if tables are in sync.
     """
-    from .database.postgres_export import PostgresExporter
+    from ..database.postgres_export import PostgresExporter
 
     click.echo("🔍 Checking PostgreSQL sync status...")
 
@@ -1750,7 +1750,7 @@ def filter_non_characters(database_path: Optional[str], dry_run: bool, verbose: 
 
     Use --dry-run to preview what would be removed.
     """
-    from .postprocessors.filter_non_characters import filter_non_characters as do_filter
+    from ..postprocessors.filter_non_characters import filter_non_characters as do_filter
 
     click.echo("🧹 Filtering non-character entries...")
 
@@ -1822,7 +1822,7 @@ def sync_origin_region(database_path: Optional[str], dry_run: bool, verbose: boo
     The origin_region column is created automatically if it does not exist.
     Use --dry-run to preview classifications without writing to the database.
     """
-    from .postprocessors.sync_origin_region import sync_origin_region as do_sync
+    from ..postprocessors.sync_origin_region import sync_origin_region as do_sync
 
     click.echo("🗺️  Syncing character origin regions...\n")
 
