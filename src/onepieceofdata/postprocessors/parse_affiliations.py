@@ -100,9 +100,12 @@ def parse_affiliations(
 
     alias_map = _load_alias_mapping(alias_file)
 
-    # Load valid character IDs from the database to filter out non-characters
+    # Load valid character IDs from the database, excluding non-living entities
+    # (ships, buildings, organizations with status Active/Destroyed)
     conn = duckdb.connect(str(db_path), read_only=True)
-    valid_ids = {r[0] for r in conn.execute("SELECT id FROM character").fetchall()}
+    valid_ids = {r[0] for r in conn.execute(
+        "SELECT id FROM character WHERE status IS NULL OR status NOT IN ('Active', 'Destroyed')"
+    ).fetchall()}
     conn.close()
 
     merged_count = 0
