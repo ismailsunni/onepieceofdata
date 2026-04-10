@@ -1186,6 +1186,9 @@ def parse_affiliations(database_path: str, dry_run: bool) -> None:
         click.echo(f"  Characters with affiliations: {result['character_count']:,}")
         click.echo(f"  Unique groups: {result['group_count']:,}")
         click.echo(f"  Total entries: {result['entry_count']:,}")
+        if result['aliases_merged'] > 0:
+            click.echo(f"  Aliases merged: {result['aliases_merged']:,}")
+            click.echo(f"  Duplicates removed: {result['duplicates_removed']:,}")
 
         if dry_run:
             click.echo(f"\n💡 Run without --dry-run to save to database")
