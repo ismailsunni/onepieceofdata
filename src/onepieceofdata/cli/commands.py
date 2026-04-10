@@ -1153,6 +1153,69 @@ def sync_cover_appearances(verbose: bool) -> None:
 
 @main.command()
 @click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (uses default if not specified)"
+)
+@click.option(
+    "--min-appearances",
+    default=5,
+    help="Minimum chapter appearances to include a character (default: 5)"
+)
+@click.option(
+    "--min-edge-weight",
+    default=3,
+    help="Minimum co-appearances to include an edge (default: 3)"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Preview network stats without writing to database"
+)
+def build_network(database_path: str, min_appearances: int, min_edge_weight: int, dry_run: bool) -> None:
+    """Build character co-appearance network from chapter data.
+
+    Creates character_network_node and character_network_edge tables in DuckDB.
+    Characters appearing in the same chapter are connected, weighted by shared chapters.
+    Community detection uses the Louvain algorithm.
+    """
+    from ..postprocessors.build_character_network import build_character_network
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = get_settings().database_path
+
+    action = "Preview" if dry_run else "Building"
+    click.echo(f"🕸️  {action} character co-appearance network...\n")
+    click.echo(f"  Min appearances: {min_appearances}")
+    click.echo(f"  Min edge weight: {min_edge_weight}\n")
+
+    try:
+        result = build_character_network(
+            database_path,
+            min_appearances=min_appearances,
+            min_edge_weight=min_edge_weight,
+            dry_run=dry_run,
+        )
+
+        click.echo(f"\n📊 Network Statistics:")
+        click.echo(f"  Nodes (characters): {result['node_count']:,}")
+        click.echo(f"  Edges (co-appearances): {result['edge_count']:,}")
+        click.echo(f"  Communities detected: {result['community_count']}")
+
+        if dry_run:
+            click.echo(f"\n💡 Run without --dry-run to save to database")
+        else:
+            click.echo(f"\n✅ Network saved to character_network_node and character_network_edge tables!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
     "--mode",
     type=click.Choice(['full', 'incremental']),
     default='incremental',
@@ -1770,8 +1833,10 @@ def filter_non_characters(database_path: Optional[str], dry_run: bool, verbose: 
         result = do_filter(database_path, dry_run=dry_run, progress_callback=progress_cb)
 
         click.echo(f"\n📊 Results:")
-        click.echo(f"  Entries checked (no origin & no status): {result['total_checked']}")
+        click.echo(f"  Entries checked: {result['total_checked']}")
         click.echo(f"  Removed: {result['removed']}")
+        click.echo(f"    - No origin & no status: {result['removed'] - result['non_living_removed']}")
+        click.echo(f"    - Non-living entities (Active/Destroyed): {result['non_living_removed']}")
         click.echo(f"  Kept (whitelisted): {result['kept_whitelist']}")
 
         if result['whitelisted_entries']:

@@ -38,6 +38,7 @@ dependencies = [
     "sqlalchemy>=2.0.0",
     "psycopg2-binary>=2.9.0",
     "groq>=0.33.0",
+    "pyvis>=0.3.2",
 ]
 
 [project.optional-dependencies]
