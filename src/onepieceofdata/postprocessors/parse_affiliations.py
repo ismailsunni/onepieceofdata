@@ -65,10 +65,21 @@ def _parse_single_affiliation(raw: str) -> Optional[dict]:
     return {"group": raw, "sub_group": None, "status": ["current"]}
 
 
+def _load_alias_mapping(alias_path: str = "data/character_aliases.json") -> dict:
+    """Load character alias → canonical ID mapping."""
+    try:
+        with open(alias_path) as f:
+            return json.load(f)
+    except FileNotFoundError:
+        logger.warning(f"Alias file not found: {alias_path}, skipping deduplication")
+        return {}
+
+
 def parse_affiliations(
     db_path: str,
     *,
     characters_json: str = "data/characters_detail.json",
+    alias_file: str = "data/character_aliases.json",
     dry_run: bool = False,
     progress_callback: Optional[Callable] = None,
 ) -> dict:
@@ -77,6 +88,7 @@ def parse_affiliations(
     Args:
         db_path: Path to the DuckDB database file.
         characters_json: Path to characters_detail.json.
+        alias_file: Path to character alias mapping JSON file.
         dry_run: If True, compute but don't write to database.
         progress_callback: Optional callback for progress updates.
 
@@ -85,6 +97,9 @@ def parse_affiliations(
     """
     with open(characters_json) as f:
         characters = json.load(f)
+
+    alias_map = _load_alias_mapping(alias_file)
+    merged_count = 0
 
     rows = []
     groups = set()
@@ -96,6 +111,12 @@ def parse_affiliations(
             continue
 
         cid = char["id"]
+
+        # Remap alias IDs to canonical IDs
+        if cid in alias_map:
+            cid = alias_map[cid]
+            merged_count += 1
+
         parts = aff_raw.split(";")
 
         for part in parts:
@@ -119,6 +140,21 @@ def parse_affiliations(
             rows.append((cid, result["group"], result["sub_group"], status))
             groups.add(result["group"])
             characters_with_aff.add(cid)
+
+    # Deduplicate: when aliases map to the same canonical ID, keep first occurrence
+    # (the ON CONFLICT in SQL would handle this too, but cleaner to dedup here)
+    seen = set()
+    deduped_rows = []
+    for row in rows:
+        key = (row[0], row[1])  # (character_id, group_name)
+        if key not in seen:
+            seen.add(key)
+            deduped_rows.append(row)
+    duplicates_removed = len(rows) - len(deduped_rows)
+    rows = deduped_rows
+
+    if merged_count > 0:
+        logger.info(f"Merged {merged_count} alias IDs to canonical IDs, removed {duplicates_removed} duplicates")
 
     logger.info(
         f"Parsed {len(rows)} affiliation entries "
@@ -163,6 +199,8 @@ def parse_affiliations(
         "entry_count": len(rows),
         "group_count": len(groups),
         "character_count": len(characters_with_aff),
+        "aliases_merged": merged_count,
+        "duplicates_removed": duplicates_removed,
     }
 
 
