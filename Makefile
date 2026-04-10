@@ -14,7 +14,8 @@ UV := uv
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
-	export-supabase-fts update-new-chapter
+	export-supabase-fts update-new-chapter \
+	parse-affiliations parse-affiliations-dry-run
 
 # Default target
 help:
@@ -325,6 +326,15 @@ sync-cover-appearances-verbose:
 	@echo "🔄 Syncing character cover appearance analytics (verbose mode)..."
 	$(UV) run onepieceofdata sync-cover-appearances --verbose
 
+# Parse character affiliations
+parse-affiliations:
+	@echo "🏴 Parsing character affiliations..."
+	$(UV) run onepieceofdata parse-affiliations
+
+parse-affiliations-dry-run:
+	@echo "🏴 Preview character affiliations..."
+	$(UV) run onepieceofdata parse-affiliations --dry-run
+
 # Complete character workflow (scrape → parse → merge → sync)
 run-character-workflow:
 	@echo "👥 Running complete character workflow..."
@@ -517,26 +527,29 @@ run-all-parsers:
 run-all-postprocessors:
 	@echo "🔧 Running ALL post-processors..."
 	@echo ""
-	@echo "🧹 Step 1/7: Filtering non-character entries..."
+	@echo "🧹 Step 1/8: Filtering non-character entries..."
 	$(MAKE) filter-non-characters
 	@echo ""
-	@echo "📅 Step 2/7: Migrating birth dates..."
+	@echo "📅 Step 2/8: Migrating birth dates..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "🎨 Step 3/7: Loading character-on-volume (COV) data..."
+	@echo "🎨 Step 3/8: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
-	@echo "🔀 Step 4/7: Merging duplicate characters..."
+	@echo "🔀 Step 4/8: Merging duplicate characters..."
 	$(MAKE) merge-characters
 	@echo ""
-	@echo "🔄 Step 5/7: Syncing character chapter appearance analytics..."
+	@echo "🔄 Step 5/8: Syncing character chapter appearance analytics..."
 	$(MAKE) sync-character-appearances
 	@echo ""
-	@echo "🎨 Step 6/7: Syncing character cover appearance analytics..."
+	@echo "🎨 Step 6/8: Syncing character cover appearance analytics..."
 	$(MAKE) sync-cover-appearances
 	@echo ""
-	@echo "🗺️  Step 7/7: Syncing character origin regions..."
+	@echo "🗺️  Step 7/8: Syncing character origin regions..."
 	$(MAKE) sync-origin-region
+	@echo ""
+	@echo "🏴 Step 8/8: Parsing character affiliations..."
+	$(MAKE) parse-affiliations
 	@echo ""
 	@echo "✅ All post-processing completed!"
 
