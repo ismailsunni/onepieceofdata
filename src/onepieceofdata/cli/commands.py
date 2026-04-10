@@ -1216,6 +1216,52 @@ def build_network(database_path: str, min_appearances: int, min_edge_weight: int
 
 @main.command()
 @click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (uses default if not specified)"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Preview stats without writing to database"
+)
+def parse_affiliations(database_path: str, dry_run: bool) -> None:
+    """Parse character affiliations into structured data.
+
+    Reads affiliation strings from characters_detail.json, parses group names,
+    sub-groups, and membership status (current, former, defected, etc.),
+    and saves to the character_affiliation table.
+    """
+    from ..postprocessors.parse_affiliations import parse_affiliations as do_parse
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = get_settings().database_path
+
+    action = "Preview" if dry_run else "Parsing"
+    click.echo(f"🏴 {action} character affiliations...\n")
+
+    try:
+        result = do_parse(database_path, dry_run=dry_run)
+
+        click.echo(f"\n📊 Affiliation Statistics:")
+        click.echo(f"  Characters with affiliations: {result['character_count']:,}")
+        click.echo(f"  Unique groups: {result['group_count']:,}")
+        click.echo(f"  Total entries: {result['entry_count']:,}")
+
+        if dry_run:
+            click.echo(f"\n💡 Run without --dry-run to save to database")
+        else:
+            click.echo(f"\n✅ Affiliations saved to character_affiliation table!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {str(e)}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
     "--mode",
     type=click.Choice(['full', 'incremental']),
     default='incremental',
