@@ -31,6 +31,40 @@ RELATIONSHIP_STATUSES = {
 }
 
 
+def _split_affiliations(raw: str) -> list[str]:
+    """Split a raw affiliation string into individual entries.
+
+    Primary delimiter is semicolon. When no semicolons are present,
+    falls back to splitting by commas that are outside parentheses.
+    """
+    if ";" in raw:
+        return [p.strip() for p in raw.split(";") if p.strip()]
+
+    # No semicolons — split by commas outside parentheses
+    parts = []
+    current = []
+    depth = 0
+    for char in raw:
+        if char == "(":
+            depth += 1
+            current.append(char)
+        elif char == ")":
+            depth -= 1
+            current.append(char)
+        elif char == "," and depth == 0:
+            part = "".join(current).strip()
+            if part:
+                parts.append(part)
+            current = []
+        else:
+            current.append(char)
+    # Last segment
+    part = "".join(current).strip()
+    if part:
+        parts.append(part)
+    return parts
+
+
 def _parse_single_affiliation(raw: str) -> Optional[dict]:
     """Parse one semicolon-separated affiliation entry.
 
@@ -129,7 +163,7 @@ def parse_affiliations(
             skipped_invalid += 1
             continue
 
-        parts = aff_raw.split(";")
+        parts = _split_affiliations(aff_raw)
 
         for part in parts:
             result = _parse_single_affiliation(part)
