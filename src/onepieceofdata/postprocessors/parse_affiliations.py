@@ -99,7 +99,14 @@ def parse_affiliations(
         characters = json.load(f)
 
     alias_map = _load_alias_mapping(alias_file)
+
+    # Load valid character IDs from the database to filter out non-characters
+    conn = duckdb.connect(str(db_path), read_only=True)
+    valid_ids = {r[0] for r in conn.execute("SELECT id FROM character").fetchall()}
+    conn.close()
+
     merged_count = 0
+    skipped_invalid = 0
 
     rows = []
     groups = set()
@@ -116,6 +123,11 @@ def parse_affiliations(
         if cid in alias_map:
             cid = alias_map[cid]
             merged_count += 1
+
+        # Skip entries that don't exist in the character table
+        if cid not in valid_ids:
+            skipped_invalid += 1
+            continue
 
         parts = aff_raw.split(";")
 
@@ -155,6 +167,8 @@ def parse_affiliations(
 
     if merged_count > 0:
         logger.info(f"Merged {merged_count} alias IDs to canonical IDs, removed {duplicates_removed} duplicates")
+    if skipped_invalid > 0:
+        logger.info(f"Skipped {skipped_invalid} non-character entries (not in character table)")
 
     logger.info(
         f"Parsed {len(rows)} affiliation entries "
@@ -201,6 +215,7 @@ def parse_affiliations(
         "character_count": len(characters_with_aff),
         "aliases_merged": merged_count,
         "duplicates_removed": duplicates_removed,
+        "non_characters_skipped": skipped_invalid,
     }
 
 
