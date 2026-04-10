@@ -1821,8 +1821,10 @@ def filter_non_characters(database_path: Optional[str], dry_run: bool, verbose: 
         result = do_filter(database_path, dry_run=dry_run, progress_callback=progress_cb)
 
         click.echo(f"\n📊 Results:")
-        click.echo(f"  Entries checked (no origin & no status): {result['total_checked']}")
+        click.echo(f"  Entries checked: {result['total_checked']}")
         click.echo(f"  Removed: {result['removed']}")
+        click.echo(f"    - No origin & no status: {result['removed'] - result['non_living_removed']}")
+        click.echo(f"    - Non-living entities (Active/Destroyed): {result['non_living_removed']}")
         click.echo(f"  Kept (whitelisted): {result['kept_whitelist']}")
 
         if result['whitelisted_entries']:

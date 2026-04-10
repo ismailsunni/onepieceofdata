@@ -1,8 +1,9 @@
 """Post-processor to filter out non-character entries from the character table.
 
-Removes entries that lack both `origin` and `status` fields, which are strong
-indicators that the entry is not an actual character (e.g., pirate crews,
-locations, titles, animal species, organizations).
+Removes entries that:
+1. Lack both `origin` and `status` fields (likely not real characters)
+2. Have a non-living status like "Active" or "Destroyed" (ships, buildings,
+   organizations — e.g., Baratie, Going Merry, World Government)
 
 A whitelist is maintained for known characters that happen to have neither field.
 """
@@ -30,6 +31,10 @@ CHARACTER_WHITELIST = {
     "Ukkari",           # Ukkari - character from Hot-Spring Island
 }
 
+# Statuses that indicate non-living entities (ships, buildings, organizations).
+# Real characters use "Alive", "Deceased", or "Unknown".
+NON_CHARACTER_STATUSES = {"Active", "Destroyed"}
+
 
 def filter_non_characters(
     db_path: str,
@@ -39,9 +44,10 @@ def filter_non_characters(
 ) -> dict:
     """Remove non-character rows from the character table.
 
-    Criteria for removal:
-        - ``status IS NULL`` **and** ``origin IS NULL``
-        - ``id`` is **not** in ``CHARACTER_WHITELIST``
+    Criteria for removal (either triggers removal):
+        1. ``status IS NULL`` **and** ``origin IS NULL`` (and not whitelisted)
+        2. ``status`` is a non-living value like "Active" or "Destroyed"
+           (ships, buildings, organizations)
 
     Args:
         db_path: Path to the DuckDB database file.
@@ -57,7 +63,7 @@ def filter_non_characters(
 
     try:
         # Find candidates: no status AND no origin
-        candidates = conn.execute(
+        null_candidates = conn.execute(
             """
             SELECT id, name
             FROM character
@@ -67,17 +73,34 @@ def filter_non_characters(
             """
         ).fetchall()
 
+        # Find non-living entities by status (ships, buildings, organizations)
+        status_placeholders = ", ".join(f"'{s}'" for s in NON_CHARACTER_STATUSES)
+        non_living_candidates = conn.execute(
+            f"""
+            SELECT id, name
+            FROM character
+            WHERE status IN ({status_placeholders})
+            ORDER BY id
+            """
+        ).fetchall()
+
         to_remove = []
         kept_whitelist = []
 
-        for i, (cid, name) in enumerate(candidates):
+        for i, (cid, name) in enumerate(null_candidates):
             if cid in CHARACTER_WHITELIST:
                 kept_whitelist.append((cid, name))
             else:
                 to_remove.append((cid, name))
 
             if progress_callback:
-                progress_callback(i + 1, len(candidates), cid)
+                progress_callback(i + 1, len(null_candidates), cid)
+
+        # Non-living entities are always removed (no whitelist check)
+        for cid, name in non_living_candidates:
+            to_remove.append((cid, name))
+
+        candidates = null_candidates + non_living_candidates
 
         if not dry_run and to_remove:
             remove_ids = [r[0] for r in to_remove]
@@ -100,6 +123,7 @@ def filter_non_characters(
             "kept_whitelist": len(kept_whitelist),
             "removed_entries": to_remove,
             "whitelisted_entries": kept_whitelist,
+            "non_living_removed": len(non_living_candidates),
         }
     finally:
         conn.close()
