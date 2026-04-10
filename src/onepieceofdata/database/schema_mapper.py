@@ -31,6 +31,7 @@ class SchemaMapper:
         'volume',    # No dependencies
         'chapter',   # Depends on: volume (nullable)
         'character', # No dependencies (includes denormalized appearance analytics)
+        'character_affiliation',    # Depends on: character (by character_id)
         'character_network_node',  # Depends on: character (by character_id)
         'character_network_edge',  # Depends on: character_network_node (by source/target)
     ]
