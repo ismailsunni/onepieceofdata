@@ -15,7 +15,8 @@ UV := uv
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
 	export-supabase-fts update-new-chapter \
-	parse-affiliations parse-affiliations-dry-run
+	parse-affiliations parse-affiliations-dry-run \
+	upload-thumbnails
 
 # Default target
 help:
@@ -777,6 +778,11 @@ search: ## Search wiki (usage: make search Q="gear 5")
 
 chat: ## Start One Piece chatbot
 	uv run python -m onepieceofdata.cli.chat --db ./onepiece-master.duckdb
+
+# Upload character thumbnails to Supabase Storage
+upload-thumbnails:
+	@echo "Uploading character thumbnails to Supabase Storage..."
+	$(UV) run python scripts/upload_character_thumbnails.py
 
 # Export wiki text + chunks to Supabase with FTS indexes
 export-supabase-fts:
