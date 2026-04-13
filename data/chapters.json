@@ -98966,6 +98966,12 @@
         "full_text": "Fillonce"
       },
       {
+        "name": "Lulis",
+        "url": "/wiki/Lulis",
+        "note": "flashback",
+        "full_text": "Lulis"
+      },
+      {
         "name": "Medaka Mermaid Quintuplets",
         "url": "/wiki/Medaka_Mermaid_Quintuplets",
         "note": "",
@@ -105968,7 +105974,7 @@
       {
         "name": "Hatchan",
         "url": "/wiki/Hatchan",
-        "note": "cover",
+        "note": "",
         "full_text": "Hatchan"
       },
       {
@@ -106000,6 +106006,12 @@
         "url": "/wiki/Fillonce",
         "note": "cover",
         "full_text": "Fillonce"
+      },
+      {
+        "name": "Lulis",
+        "url": "/wiki/Lulis",
+        "note": "cover",
+        "full_text": "Lulis"
       },
       {
         "name": "Skypiea",
@@ -106275,20 +106287,50 @@
       {
         "name": "Medaka Mermaid Quintuplets",
         "url": "/wiki/Medaka_Mermaid_Quintuplets",
-        "note": "cover",
+        "note": "",
         "full_text": "Medaka Mermaid Quintuplets"
       },
       {
         "name": "Maria Napole",
         "url": "/wiki/Maria_Napole",
-        "note": "cover",
+        "note": "",
         "full_text": "Maria Napole"
       },
       {
         "name": "Ishilly",
         "url": "/wiki/Ishilly",
-        "note": "cover",
+        "note": "",
         "full_text": "Ishilly"
+      },
+      {
+        "name": "Seira",
+        "url": "/wiki/Seira",
+        "note": "",
+        "full_text": "Seira"
+      },
+      {
+        "name": "Adele",
+        "url": "/wiki/Adele",
+        "note": "",
+        "full_text": "Adele"
+      },
+      {
+        "name": "Fillonce",
+        "url": "/wiki/Fillonce",
+        "note": "cover",
+        "full_text": "Fillonce"
+      },
+      {
+        "name": "Mero",
+        "url": "/wiki/Mero",
+        "note": "cover",
+        "full_text": "Mero"
+      },
+      {
+        "name": "Hiramera",
+        "url": "/wiki/Hiramera",
+        "note": "cover",
+        "full_text": "Hiramera"
       },
       {
         "name": "Blakey",
@@ -107129,6 +107171,12 @@
         "full_text": "Shyarly"
       },
       {
+        "name": "Sora",
+        "url": "/wiki/Sora",
+        "note": "",
+        "full_text": "Sora"
+      },
+      {
         "name": "Ishilly",
         "url": "/wiki/Ishilly",
         "note": "",
@@ -107139,6 +107187,18 @@
         "url": "/wiki/Kairen",
         "note": "",
         "full_text": "Kairen"
+      },
+      {
+        "name": "Lulis",
+        "url": "/wiki/Lulis",
+        "note": "",
+        "full_text": "Lulis"
+      },
+      {
+        "name": "Adele",
+        "url": "/wiki/Adele",
+        "note": "",
+        "full_text": "Adele"
       },
       {
         "name": "Seira",
@@ -144260,8 +144320,14 @@
       {
         "name": "Giovanni",
         "url": "/wiki/Giovanni",
-        "note": "flashback",
+        "note": "",
         "full_text": "Giovanni"
+      },
+      {
+        "name": "Wanda",
+        "url": "/wiki/Wanda",
+        "note": "flashback",
+        "full_text": "Wanda"
       },
       {
         "name": "Roddy",
@@ -163556,14 +163622,14 @@
       {
         "name": "World Government",
         "url": "/wiki/World_Government",
-        "note": "flashback",
+        "note": "",
         "full_text": "World Government"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "flashback",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "World Noble",
@@ -164503,10 +164569,10 @@
         "full_text": "World Government"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -179247,6 +179313,18 @@
         "full_text": "Hanzo"
       },
       {
+        "name": "Sarutobi",
+        "url": "/wiki/Sarutobi",
+        "note": "",
+        "full_text": "Sarutobi"
+      },
+      {
+        "name": "Tsugaru Umi",
+        "url": "/wiki/Tsugaru_Umi",
+        "note": "",
+        "full_text": "Tsugaru Umi"
+      },
+      {
         "name": "Hana",
         "url": "/wiki/Hana",
         "note": "cover",
@@ -180269,6 +180347,12 @@
         "url": "/wiki/Trafalgar_D._Water_Law",
         "note": "",
         "full_text": "Trafalgar D. Water Law"
+      },
+      {
+        "name": "Bepo",
+        "url": "/wiki/Bepo",
+        "note": "",
+        "full_text": "Bepo"
       },
       {
         "name": "Jean Bart",
@@ -181494,7 +181578,7 @@
       {
         "name": "Kawamatsu",
         "url": "/wiki/Kawamatsu",
-        "note": "flashback",
+        "note": "",
         "full_text": "Kawamatsu"
       },
       {
@@ -181532,6 +181616,12 @@
         "url": "/wiki/Cho",
         "note": "flashback",
         "full_text": "Cho"
+      },
+      {
+        "name": "Kojuro",
+        "url": "/wiki/Kojuro",
+        "note": "flashback",
+        "full_text": "Kojuro"
       },
       {
         "name": "Tama",
@@ -202951,10 +203041,10 @@
         "full_text": "Caribou"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -208881,10 +208971,10 @@
         "full_text": "Ulti"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -209152,10 +209242,10 @@
         "full_text": "Pirate"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -209501,10 +209591,10 @@
         "full_text": "Jewelry Bonney"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "flashback",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -210729,30 +210819,6 @@
         "full_text": "Shepherd Ju Peter"
       },
       {
-        "name": "CP0",
-        "url": "/wiki/CP0",
-        "note": "",
-        "full_text": "CP0"
-      },
-      {
-        "name": "Rob Lucci",
-        "url": "/wiki/Rob_Lucci",
-        "note": "",
-        "full_text": "Rob Lucci"
-      },
-      {
-        "name": "Hattori",
-        "url": "/wiki/Hattori",
-        "note": "",
-        "full_text": "Hattori"
-      },
-      {
-        "name": "Kaku",
-        "url": "/wiki/Kaku",
-        "note": "",
-        "full_text": "Kaku"
-      },
-      {
         "name": "Marines",
         "url": "/wiki/Marines",
         "note": "",
@@ -210795,10 +210861,40 @@
         "full_text": "Urban"
       },
       {
+        "name": "CP0",
+        "url": "/wiki/CP0",
+        "note": "",
+        "full_text": "CP0"
+      },
+      {
+        "name": "Rob Lucci",
+        "url": "/wiki/Rob_Lucci",
+        "note": "",
+        "full_text": "Rob Lucci"
+      },
+      {
+        "name": "Hattori",
+        "url": "/wiki/Hattori",
+        "note": "",
+        "full_text": "Hattori"
+      },
+      {
+        "name": "Kaku",
+        "url": "/wiki/Kaku",
+        "note": "",
+        "full_text": "Kaku"
+      },
+      {
         "name": "SSG",
         "url": "/wiki/SSG",
         "note": "",
         "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "",
+        "full_text": "York"
       },
       {
         "name": "S-Snake",
@@ -210891,16 +210987,16 @@
         "full_text": "Atlas"
       },
       {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "",
-        "full_text": "York"
-      },
-      {
         "name": "Sentomaru",
         "url": "/wiki/Sentomaru",
         "note": "",
         "full_text": "Sentomaru"
+      },
+      {
+        "name": "Stussy",
+        "url": "/wiki/Stussy",
+        "note": "",
+        "full_text": "Stussy"
       },
       {
         "name": "Pacifista Mark III",
@@ -210913,12 +211009,6 @@
         "url": "/wiki/Sea_Beast_Weapons",
         "note": "",
         "full_text": "Sea Beast Weapons"
-      },
-      {
-        "name": "Stussy",
-        "url": "/wiki/Stussy",
-        "note": "",
-        "full_text": "Stussy"
       }
     ],
     "volume": "108",
@@ -211078,6 +211168,18 @@
         "full_text": "Hattori"
       },
       {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "",
+        "full_text": "York"
+      },
+      {
         "name": "Egghead",
         "url": "/wiki/Egghead",
         "note": "",
@@ -211100,12 +211202,6 @@
         "url": "/wiki/Vegapunk/Edison",
         "note": "",
         "full_text": "Edison"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "",
-        "full_text": "York"
       },
       {
         "name": "Atlas",
@@ -211157,10 +211253,10 @@
         "full_text": "Pirate"
       },
       {
-        "name": "Marines",
-        "url": "/wiki/Marines",
+        "name": "World Government",
+        "url": "/wiki/World_Government",
         "note": "",
-        "full_text": "Marines"
+        "full_text": "World Government"
       },
       {
         "name": "Revolutionary Army",
@@ -211223,6 +211319,12 @@
         "full_text": "Jewelry Bonney"
       },
       {
+        "name": "Marines",
+        "url": "/wiki/Marines",
+        "note": "",
+        "full_text": "Marines"
+      },
+      {
         "name": "Sakazuki",
         "url": "/wiki/Sakazuki",
         "note": "",
@@ -211233,6 +211335,18 @@
         "url": "/wiki/Borsalino",
         "note": "",
         "full_text": "Borsalino"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "",
+        "full_text": "York"
       },
       {
         "name": "Bartholomew Kuma",
@@ -211263,12 +211377,6 @@
         "url": "/wiki/Vegapunk/Edison",
         "note": "",
         "full_text": "Edison"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "",
-        "full_text": "York"
       },
       {
         "name": "Atlas",
@@ -211644,10 +211752,10 @@
         "full_text": "Doll"
       },
       {
-        "name": "Cipher Pol",
-        "url": "/wiki/Cipher_Pol",
+        "name": "CP0",
+        "url": "/wiki/CP0",
         "note": "",
-        "full_text": "Cipher Pol"
+        "full_text": "CP0"
       },
       {
         "name": "Rob Lucci",
@@ -211905,25 +212013,25 @@
       {
         "name": "Egghead",
         "url": "/wiki/Egghead",
-        "note": "flashback",
+        "note": "silhouette",
         "full_text": "Egghead"
       },
       {
         "name": "Vegapunk",
         "url": "/wiki/Vegapunk",
-        "note": "flashback",
+        "note": "silhouette",
         "full_text": "Vegapunk"
       },
       {
         "name": "Atlas",
         "url": "/wiki/Vegapunk/Atlas",
-        "note": "flashback",
+        "note": "silhouette",
         "full_text": "Atlas"
       },
       {
         "name": "Nika",
         "url": "/wiki/Nika",
-        "note": "flashback",
+        "note": "silhouette",
         "full_text": "Nika"
       }
     ],
@@ -213340,8 +213448,14 @@
       {
         "name": "Jinbe",
         "url": "/wiki/Jinbe",
-        "note": "flashback",
+        "note": "",
         "full_text": "Jinbe"
+      },
+      {
+        "name": "Pacifista",
+        "url": "/wiki/Pacifista",
+        "note": "flashback",
+        "full_text": "Pacifista"
       },
       {
         "name": "PX-1",
@@ -215405,6 +215519,18 @@
         "full_text": "Hattori"
       },
       {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "cover",
+        "full_text": "York"
+      },
+      {
         "name": "Egghead",
         "url": "/wiki/Egghead",
         "note": "cover",
@@ -215421,12 +215547,6 @@
         "url": "/wiki/Vegapunk/Lilith",
         "note": "cover",
         "full_text": "Lilith"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "cover",
-        "full_text": "York"
       },
       {
         "name": "Bartholomew Kuma",
@@ -215606,19 +215726,19 @@
       {
         "name": "Guillotine",
         "url": "/wiki/Guillotine",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Guillotine"
       },
       {
         "name": "Red King",
         "url": "/wiki/Red_King",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Red King"
       },
       {
         "name": "Pomsky",
         "url": "/wiki/Pomsky",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Pomsky"
       },
       {
@@ -215632,6 +215752,18 @@
         "url": "/wiki/Kaku",
         "note": "broadcast",
         "full_text": "Kaku"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "broadcast",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "broadcast",
+        "full_text": "York"
       },
       {
         "name": "Egghead",
@@ -215676,12 +215808,6 @@
         "full_text": "Atlas"
       },
       {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "cover",
-        "full_text": "York"
-      },
-      {
         "name": "Stussy",
         "url": "/wiki/Stussy",
         "note": "cover",
@@ -215694,16 +215820,16 @@
         "full_text": "Wano Country"
       },
       {
-        "name": "Kin'emon",
-        "url": "/wiki/Kin'emon",
-        "note": "cover",
-        "full_text": "Kin'emon"
-      },
-      {
         "name": "Yamato",
         "url": "/wiki/Yamato",
         "note": "cover",
         "full_text": "Yamato"
+      },
+      {
+        "name": "Kin'emon",
+        "url": "/wiki/Kin'emon",
+        "note": "cover",
+        "full_text": "Kin'emon"
       },
       {
         "name": "Bartholomew Kuma",
@@ -215858,13 +215984,13 @@
       {
         "name": "Topman Warcury",
         "url": "/wiki/Topman_Warcury",
-        "note": "flashback",
+        "note": "",
         "full_text": "Topman Warcury"
       },
       {
         "name": "Ethanbaron V. Nusjuro",
         "url": "/wiki/Ethanbaron_V._Nusjuro",
-        "note": "flashback",
+        "note": "",
         "full_text": "Ethanbaron V. Nusjuro"
       },
       {
@@ -215872,6 +215998,18 @@
         "url": "/wiki/Shepherd_Ju_Peter",
         "note": "flashback",
         "full_text": "Shepherd Ju Peter"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "flashback",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "flashback",
+        "full_text": "York"
       },
       {
         "name": "CP9",
@@ -215920,12 +216058,6 @@
         "url": "/wiki/Vegapunk/Atlas",
         "note": "",
         "full_text": "Atlas"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "",
-        "full_text": "York"
       },
       {
         "name": "Syrup Village",
@@ -216163,6 +216295,18 @@
         "full_text": "Brogy"
       },
       {
+        "name": "Donquixote Pirates",
+        "url": "/wiki/Donquixote_Pirates",
+        "note": "",
+        "full_text": "Donquixote Pirates"
+      },
+      {
+        "name": "Donquixote Doflamingo",
+        "url": "/wiki/Donquixote_Doflamingo",
+        "note": "",
+        "full_text": "Donquixote Doflamingo"
+      },
+      {
         "name": "Big Mom Pirates",
         "url": "/wiki/Big_Mom_Pirates",
         "note": "",
@@ -216179,6 +216323,18 @@
         "url": "/wiki/Charlotte_Mont-d'Or",
         "note": "",
         "full_text": "Charlotte Mont-d'Or"
+      },
+      {
+        "name": "Blackbeard Pirates",
+        "url": "/wiki/Blackbeard_Pirates",
+        "note": "",
+        "full_text": "Blackbeard Pirates"
+      },
+      {
+        "name": "Kuzan",
+        "url": "/wiki/Kuzan",
+        "note": "",
+        "full_text": "Kuzan"
       },
       {
         "name": "Kuja Pirates",
@@ -216199,34 +216355,10 @@
         "full_text": "Marguerite"
       },
       {
-        "name": "Donquixote Pirates",
-        "url": "/wiki/Donquixote_Pirates",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Donquixote Pirates"
-      },
-      {
-        "name": "Donquixote Doflamingo",
-        "url": "/wiki/Donquixote_Doflamingo",
-        "note": "",
-        "full_text": "Donquixote Doflamingo"
-      },
-      {
-        "name": "Blackbeard Pirates",
-        "url": "/wiki/Blackbeard_Pirates",
-        "note": "",
-        "full_text": "Blackbeard Pirates"
-      },
-      {
-        "name": "Kuzan",
-        "url": "/wiki/Kuzan",
-        "note": "",
-        "full_text": "Kuzan"
-      },
-      {
-        "name": "Imu",
-        "url": "/wiki/Imu",
-        "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -216285,20 +216417,32 @@
       {
         "name": "Sakazuki",
         "url": "/wiki/Sakazuki",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Sakazuki"
       },
       {
         "name": "Hound",
         "url": "/wiki/Hound",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Hound"
       },
       {
         "name": "Hina",
         "url": "/wiki/Hina",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Hina"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "broadcast",
+        "full_text": "York"
       },
       {
         "name": "Impel Down",
@@ -216335,12 +216479,6 @@
         "url": "/wiki/Vegapunk/Edison",
         "note": "",
         "full_text": "Edison"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "",
-        "full_text": "York"
       },
       {
         "name": "Water 7",
@@ -216584,6 +216722,18 @@
         "full_text": "Jinbe"
       },
       {
+        "name": "Bonney Pirates",
+        "url": "/wiki/Bonney_Pirates",
+        "note": "",
+        "full_text": "Bonney Pirates"
+      },
+      {
+        "name": "Jewelry Bonney",
+        "url": "/wiki/Jewelry_Bonney",
+        "note": "",
+        "full_text": "Jewelry Bonney"
+      },
+      {
         "name": "Giant Warrior Pirates",
         "url": "/wiki/Giant_Warrior_Pirates",
         "note": "",
@@ -216612,18 +216762,6 @@
         "url": "/wiki/Kashii",
         "note": "",
         "full_text": "Kashii"
-      },
-      {
-        "name": "Bonney Pirates",
-        "url": "/wiki/Bonney_Pirates",
-        "note": "",
-        "full_text": "Bonney Pirates"
-      },
-      {
-        "name": "Jewelry Bonney",
-        "url": "/wiki/Jewelry_Bonney",
-        "note": "",
-        "full_text": "Jewelry Bonney"
       },
       {
         "name": "Fake Straw Hat Crew",
@@ -216656,27 +216794,15 @@
         "full_text": "Turco"
       },
       {
-        "name": "Roshio Pirates",
-        "url": "/wiki/Roshio_Pirates",
-        "note": "",
-        "full_text": "Roshio Pirates"
-      },
-      {
-        "name": "Roshio",
-        "url": "/wiki/Roshio",
-        "note": "silhouette",
-        "full_text": "Roshio"
-      },
-      {
         "name": "Foxy Pirates",
         "url": "/wiki/Foxy_Pirates",
-        "note": "silhouette",
+        "note": "",
         "full_text": "Foxy Pirates"
       },
       {
         "name": "Foxy",
         "url": "/wiki/Foxy",
-        "note": "silhouette",
+        "note": "",
         "full_text": "Foxy"
       },
       {
@@ -216692,16 +216818,28 @@
         "full_text": "Hamburg"
       },
       {
+        "name": "Roshio Pirates",
+        "url": "/wiki/Roshio_Pirates",
+        "note": "silhouette",
+        "full_text": "Roshio Pirates"
+      },
+      {
+        "name": "Roshio",
+        "url": "/wiki/Roshio",
+        "note": "silhouette",
+        "full_text": "Roshio"
+      },
+      {
         "name": "Joy Boy",
         "url": "/wiki/Joy_Boy",
         "note": "silhouette",
         "full_text": "Joy Boy"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -216744,6 +216882,36 @@
         "url": "/wiki/Kaku",
         "note": "",
         "full_text": "Kaku"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "",
+        "full_text": "SSG"
+      },
+      {
+        "name": "S-Hawk",
+        "url": "/wiki/S-Hawk",
+        "note": "",
+        "full_text": "S-Hawk"
+      },
+      {
+        "name": "S-Snake",
+        "url": "/wiki/S-Snake",
+        "note": "",
+        "full_text": "S-Snake"
+      },
+      {
+        "name": "S-Shark",
+        "url": "/wiki/S-Shark",
+        "note": "",
+        "full_text": "S-Shark"
+      },
+      {
+        "name": "S-Bear",
+        "url": "/wiki/S-Bear",
+        "note": "",
+        "full_text": "S-Bear"
       },
       {
         "name": "Monkey D. Dragon",
@@ -216804,30 +216972,6 @@
         "url": "/wiki/Vegapunk/Edison",
         "note": "",
         "full_text": "Edison"
-      },
-      {
-        "name": "S-Hawk",
-        "url": "/wiki/S-Hawk",
-        "note": "",
-        "full_text": "S-Hawk"
-      },
-      {
-        "name": "S-Snake",
-        "url": "/wiki/S-Snake",
-        "note": "",
-        "full_text": "S-Snake"
-      },
-      {
-        "name": "S-Shark",
-        "url": "/wiki/S-Shark",
-        "note": "",
-        "full_text": "S-Shark"
-      },
-      {
-        "name": "S-Bear",
-        "url": "/wiki/S-Bear",
-        "note": "",
-        "full_text": "S-Bear"
       },
       {
         "name": "Shimotsuki Village",
@@ -216896,18 +217040,6 @@
         "full_text": "Isshi-100"
       },
       {
-        "name": "Evil Black Drum Kingdom",
-        "url": "/wiki/Evil_Black_Drum_Kingdom",
-        "note": "",
-        "full_text": "Evil Black Drum Kingdom"
-      },
-      {
-        "name": "Wapol",
-        "url": "/wiki/Wapol",
-        "note": "",
-        "full_text": "Wapol"
-      },
-      {
         "name": "Arabasta Kingdom",
         "url": "/wiki/Arabasta_Kingdom",
         "note": "",
@@ -216918,6 +217050,18 @@
         "url": "/wiki/Nefertari_Vivi",
         "note": "",
         "full_text": "Nefertari Vivi"
+      },
+      {
+        "name": "Evil Black Drum Kingdom",
+        "url": "/wiki/Evil_Black_Drum_Kingdom",
+        "note": "",
+        "full_text": "Evil Black Drum Kingdom"
+      },
+      {
+        "name": "Wapol",
+        "url": "/wiki/Wapol",
+        "note": "",
+        "full_text": "Wapol"
       },
       {
         "name": "Spiders Cafe",
@@ -217107,10 +217251,10 @@
         "full_text": "Crocodile"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -217163,26 +217307,44 @@
       {
         "name": "Comil",
         "url": "/wiki/Comil",
-        "note": "broadcast, flashback",
+        "note": "",
         "full_text": "Comil"
       },
       {
         "name": "Sengoku",
         "url": "/wiki/Sengoku",
-        "note": "broadcast, flashback",
+        "note": "",
         "full_text": "Sengoku"
       },
       {
         "name": "CP0",
         "url": "/wiki/CP0",
-        "note": "broadcast, flashback",
+        "note": "",
         "full_text": "CP0"
       },
       {
         "name": "Kaku",
         "url": "/wiki/Kaku",
-        "note": "broadcast, flashback",
+        "note": "",
         "full_text": "Kaku"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "broadcast, flashback",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "broadcast, flashback",
+        "full_text": "York"
+      },
+      {
+        "name": "S-Snake",
+        "url": "/wiki/S-Snake",
+        "note": "broadcast, flashback",
+        "full_text": "S-Snake"
       },
       {
         "name": "Egghead",
@@ -217201,18 +217363,6 @@
         "url": "/wiki/Vegapunk/Edison",
         "note": "image",
         "full_text": "Edison"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "image",
-        "full_text": "York"
-      },
-      {
-        "name": "S-Snake",
-        "url": "/wiki/S-Snake",
-        "note": "image",
-        "full_text": "S-Snake"
       },
       {
         "name": "Arabasta Kingdom",
@@ -217291,18 +217441,6 @@
         "url": "/wiki/Usakkov",
         "note": "",
         "full_text": "Usakkov"
-      },
-      {
-        "name": "Kenzan Island",
-        "url": "/wiki/Kenzan_Island",
-        "note": "",
-        "full_text": "Kenzan Island"
-      },
-      {
-        "name": "Sancrin",
-        "url": "/wiki/Sancrin",
-        "note": "",
-        "full_text": "Sancrin"
       },
       {
         "name": "Prodence Kingdom",
@@ -217419,6 +217557,18 @@
         "full_text": "Laboon"
       },
       {
+        "name": "Kenzan Island",
+        "url": "/wiki/Kenzan_Island",
+        "note": "",
+        "full_text": "Kenzan Island"
+      },
+      {
+        "name": "Sancrin",
+        "url": "/wiki/Sancrin",
+        "note": "",
+        "full_text": "Sancrin"
+      },
+      {
         "name": "Sabaody Archipelago",
         "url": "/wiki/Sabaody_Archipelago",
         "note": "",
@@ -217461,16 +217611,16 @@
         "full_text": "Moda"
       },
       {
-        "name": "Iron Giant",
-        "url": "/wiki/Emet",
-        "note": "",
-        "full_text": "Iron Giant"
-      },
-      {
         "name": "Stussy",
         "url": "/wiki/Stussy",
         "note": "",
         "full_text": "Stussy"
+      },
+      {
+        "name": "Iron Giant",
+        "url": "/wiki/Emet",
+        "note": "",
+        "full_text": "Iron Giant"
       }
     ],
     "volume": "110",
@@ -217770,19 +217920,19 @@
       {
         "name": "Prince Grus",
         "url": "/wiki/Prince_Grus",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Prince Grus"
       },
       {
         "name": "Kujaku",
         "url": "/wiki/Kujaku",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Kujaku"
       },
       {
         "name": "Koby",
         "url": "/wiki/Koby",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Koby"
       },
       {
@@ -217796,6 +217946,18 @@
         "url": "/wiki/Helmeppo",
         "note": "broadcast",
         "full_text": "Helmeppo"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "broadcast",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "broadcast",
+        "full_text": "York"
       },
       {
         "name": "Egghead",
@@ -217820,12 +217982,6 @@
         "url": "/wiki/Vegapunk/Atlas",
         "note": "",
         "full_text": "Atlas"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "",
-        "full_text": "York"
       },
       {
         "name": "Fish-Man Island",
@@ -218083,19 +218239,19 @@
       {
         "name": "Shepherd Ju Peter",
         "url": "/wiki/Shepherd_Ju_Peter",
-        "note": "image",
+        "note": "",
         "full_text": "Shepherd Ju Peter"
       },
       {
         "name": "Marines",
         "url": "/wiki/Marines",
-        "note": "image",
+        "note": "",
         "full_text": "Marines"
       },
       {
         "name": "Doll",
         "url": "/wiki/Doll",
-        "note": "image",
+        "note": "",
         "full_text": "Doll"
       },
       {
@@ -218103,6 +218259,18 @@
         "url": "/wiki/Bluegrass",
         "note": "image",
         "full_text": "Bluegrass"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "image",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "image",
+        "full_text": "York"
       },
       {
         "name": "Egghead",
@@ -218121,24 +218289,6 @@
         "url": "/wiki/Vegapunk/Atlas",
         "note": "",
         "full_text": "Atlas"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "",
-        "full_text": "York"
-      },
-      {
-        "name": "Dressrosa",
-        "url": "/wiki/Dressrosa",
-        "note": "",
-        "full_text": "Dressrosa"
-      },
-      {
-        "name": "Rebecca",
-        "url": "/wiki/Rebecca",
-        "note": "",
-        "full_text": "Rebecca"
       },
       {
         "name": "Arabasta Kingdom",
@@ -218179,13 +218329,13 @@
       {
         "name": "Mr. 9",
         "url": "/wiki/Mr._9",
-        "note": "cover",
+        "note": "",
         "full_text": "Mr. 9"
       },
       {
         "name": "Miss Monday",
         "url": "/wiki/Miss_Monday",
-        "note": "cover",
+        "note": "",
         "full_text": "Miss Monday"
       },
       {
@@ -218199,6 +218349,18 @@
         "url": "/wiki/Nanday",
         "note": "cover",
         "full_text": "Nanday"
+      },
+      {
+        "name": "Dressrosa",
+        "url": "/wiki/Dressrosa",
+        "note": "cover",
+        "full_text": "Dressrosa"
+      },
+      {
+        "name": "Rebecca",
+        "url": "/wiki/Rebecca",
+        "note": "cover",
+        "full_text": "Rebecca"
       },
       {
         "name": "Wano Country",
@@ -218378,25 +218540,25 @@
       {
         "name": "Shepherd Ju Peter",
         "url": "/wiki/Shepherd_Ju_Peter",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Shepherd Ju Peter"
       },
       {
         "name": "Marines",
         "url": "/wiki/Marines",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Marines"
       },
       {
         "name": "Doll",
         "url": "/wiki/Doll",
-        "note": "broadcast",
+        "note": "",
         "full_text": "Doll"
       },
       {
         "name": "CP0",
         "url": "/wiki/CP0",
-        "note": "broadcast",
+        "note": "",
         "full_text": "CP0"
       },
       {
@@ -218404,6 +218566,24 @@
         "url": "/wiki/Kaku",
         "note": "broadcast",
         "full_text": "Kaku"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "broadcast",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "broadcast",
+        "full_text": "York"
+      },
+      {
+        "name": "S-Snake",
+        "url": "/wiki/S-Snake",
+        "note": "broadcast",
+        "full_text": "S-Snake"
       },
       {
         "name": "Egghead",
@@ -218422,18 +218602,6 @@
         "url": "/wiki/Vegapunk/Atlas",
         "note": "",
         "full_text": "Atlas"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "",
-        "full_text": "York"
-      },
-      {
-        "name": "S-Snake",
-        "url": "/wiki/S-Snake",
-        "note": "",
-        "full_text": "S-Snake"
       },
       {
         "name": "Arabasta Kingdom",
@@ -218712,6 +218880,18 @@
         "full_text": "Caesar Clown"
       },
       {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "flashback, broadcast",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "flashback, broadcast",
+        "full_text": "York"
+      },
+      {
         "name": "Egghead",
         "url": "/wiki/Egghead",
         "note": "flashback, broadcast",
@@ -218732,32 +218912,38 @@
       {
         "name": "Atlas",
         "url": "/wiki/Vegapunk/Atlas",
-        "note": "",
+        "note": "flashback",
         "full_text": "Atlas"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "cover",
-        "full_text": "York"
       },
       {
         "name": "Baratie",
         "url": "/wiki/Baratie",
-        "note": "cover",
+        "note": "flashback",
         "full_text": "Baratie"
       },
       {
         "name": "Zeff",
         "url": "/wiki/Zeff",
-        "note": "cover",
+        "note": "flashback",
         "full_text": "Zeff"
       },
       {
         "name": "Patty",
         "url": "/wiki/Patty",
-        "note": "cover",
+        "note": "flashback",
         "full_text": "Patty"
+      },
+      {
+        "name": "Ohara",
+        "url": "/wiki/Ohara",
+        "note": "flashback",
+        "full_text": "Ohara"
+      },
+      {
+        "name": "Clou D. Clover",
+        "url": "/wiki/Clou_D._Clover",
+        "note": "flashback",
+        "full_text": "Clou D. Clover"
       },
       {
         "name": "Wano Country",
@@ -218788,12 +218974,6 @@
         "url": "/wiki/Emet",
         "note": "flashback",
         "full_text": "Emet"
-      },
-      {
-        "name": "Clou D. Clover",
-        "url": "/wiki/Clou_D._Clover",
-        "note": "flashback",
-        "full_text": "Clou D. Clover"
       },
       {
         "name": "Number",
@@ -219049,10 +219229,10 @@
         "full_text": "Gol D. Roger"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -219422,6 +219602,24 @@
         "full_text": "Jinbe"
       },
       {
+        "name": "Giant Warrior Pirates",
+        "url": "/wiki/Giant_Warrior_Pirates",
+        "note": "",
+        "full_text": "Giant Warrior Pirates"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "",
+        "full_text": "Brogy"
+      },
+      {
         "name": "Endurance Curry Pirates",
         "url": "/wiki/Endurance_Curry_Pirates",
         "note": "",
@@ -219452,24 +219650,6 @@
         "full_text": "Mokuba"
       },
       {
-        "name": "Giant Warrior Pirates",
-        "url": "/wiki/Giant_Warrior_Pirates",
-        "note": "",
-        "full_text": "Giant Warrior Pirates"
-      },
-      {
-        "name": "Dorry",
-        "url": "/wiki/Dorry",
-        "note": "",
-        "full_text": "Dorry"
-      },
-      {
-        "name": "Brogy",
-        "url": "/wiki/Brogy",
-        "note": "",
-        "full_text": "Brogy"
-      },
-      {
         "name": "Cross Guild",
         "url": "/wiki/Cross_Guild",
         "note": "",
@@ -219492,18 +219672,6 @@
         "url": "/wiki/Dracule_Mihawk",
         "note": "",
         "full_text": "Dracule Mihawk"
-      },
-      {
-        "name": "Caribou Pirates",
-        "url": "/wiki/Caribou_Pirates",
-        "note": "",
-        "full_text": "Caribou Pirates"
-      },
-      {
-        "name": "Caribou",
-        "url": "/wiki/Caribou",
-        "note": "",
-        "full_text": "Caribou"
       },
       {
         "name": "Blackbeard Pirates",
@@ -219530,10 +219698,22 @@
         "full_text": "Catarina Devon"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Caribou Pirates",
+        "url": "/wiki/Caribou_Pirates",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Caribou Pirates"
+      },
+      {
+        "name": "Caribou",
+        "url": "/wiki/Caribou",
+        "note": "",
+        "full_text": "Caribou"
+      },
+      {
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
+        "note": "",
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -219773,26 +219953,44 @@
       {
         "name": "Thormann",
         "url": "/wiki/Thormann",
-        "note": "flashback, deceased",
+        "note": "flashback",
         "full_text": "Thormann"
       },
       {
         "name": "Marines",
         "url": "/wiki/Marines",
-        "note": "flashback, deceased",
+        "note": "flashback",
         "full_text": "Marines"
       },
       {
         "name": "Doll",
         "url": "/wiki/Doll",
-        "note": "flashback, deceased",
+        "note": "flashback",
         "full_text": "Doll"
       },
       {
         "name": "Pomsky",
         "url": "/wiki/Pomsky",
-        "note": "flashback, deceased",
+        "note": "flashback",
         "full_text": "Pomsky"
+      },
+      {
+        "name": "SSG",
+        "url": "/wiki/SSG",
+        "note": "flashback",
+        "full_text": "SSG"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "flashback",
+        "full_text": "York"
+      },
+      {
+        "name": "S-Snake",
+        "url": "/wiki/S-Snake",
+        "note": "flashback, deceased",
+        "full_text": "S-Snake"
       },
       {
         "name": "Egghead",
@@ -219823,18 +220021,6 @@
         "url": "/wiki/Vegapunk/Atlas",
         "note": "flashback",
         "full_text": "Atlas"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "flashback",
-        "full_text": "York"
-      },
-      {
-        "name": "S-Snake",
-        "url": "/wiki/S-Snake",
-        "note": "cover",
-        "full_text": "S-Snake"
       },
       {
         "name": "Wano Country",
@@ -220056,31 +220242,31 @@
       {
         "name": "Nefertari Vivi",
         "url": "/wiki/Nefertari_Vivi",
-        "note": "silhouette",
+        "note": "shadowed",
         "full_text": "Nefertari Vivi"
       },
       {
         "name": "Evil Black Drum Kingdom",
         "url": "/wiki/Evil_Black_Drum_Kingdom",
-        "note": "silhouette",
+        "note": "shadowed",
         "full_text": "Evil Black Drum Kingdom"
       },
       {
         "name": "Wapol",
         "url": "/wiki/Wapol",
-        "note": "silhouette",
+        "note": "shadowed",
         "full_text": "Wapol"
       },
       {
         "name": "Elbaph",
         "url": "/wiki/Elbaph",
-        "note": "silhouette",
+        "note": "shadowed",
         "full_text": "Elbaph"
       },
       {
         "name": "Scopper Gaban",
         "url": "/wiki/Scopper_Gaban",
-        "note": "silhouette",
+        "note": "shadowed",
         "full_text": "Scopper Gaban"
       },
       {
@@ -220151,10 +220337,10 @@
         "full_text": "Revolutionary Army"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -220197,6 +220383,30 @@
         "url": "/wiki/Figarland_Garling",
         "note": "",
         "full_text": "Figarland Garling"
+      },
+      {
+        "name": "CP0",
+        "url": "/wiki/CP0",
+        "note": "",
+        "full_text": "CP0"
+      },
+      {
+        "name": "Rob Lucci",
+        "url": "/wiki/Rob_Lucci",
+        "note": "",
+        "full_text": "Rob Lucci"
+      },
+      {
+        "name": "Kaku",
+        "url": "/wiki/Kaku",
+        "note": "",
+        "full_text": "Kaku"
+      },
+      {
+        "name": "Hattori",
+        "url": "/wiki/Hattori",
+        "note": "",
+        "full_text": "Hattori"
       },
       {
         "name": "Marines",
@@ -220259,28 +220469,16 @@
         "full_text": "Urban"
       },
       {
-        "name": "CP0",
-        "url": "/wiki/CP0",
+        "name": "SSG",
+        "url": "/wiki/SSG",
         "note": "",
-        "full_text": "CP0"
+        "full_text": "SSG"
       },
       {
-        "name": "Rob Lucci",
-        "url": "/wiki/Rob_Lucci",
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
         "note": "",
-        "full_text": "Rob Lucci"
-      },
-      {
-        "name": "Kaku",
-        "url": "/wiki/Kaku",
-        "note": "",
-        "full_text": "Kaku"
-      },
-      {
-        "name": "Hattori",
-        "url": "/wiki/Hattori",
-        "note": "",
-        "full_text": "Hattori"
+        "full_text": "York"
       },
       {
         "name": "Egghead",
@@ -220311,12 +220509,6 @@
         "url": "/wiki/Vegapunk/Atlas",
         "note": "message",
         "full_text": "Atlas"
-      },
-      {
-        "name": "York",
-        "url": "/wiki/Vegapunk/York",
-        "note": "message",
-        "full_text": "York"
       },
       {
         "name": "Weatheria",
@@ -220375,7 +220567,7 @@
       {
         "name": "Belo Betty",
         "url": "/wiki/Belo_Betty",
-        "note": "flashback",
+        "note": "",
         "full_text": "Belo Betty"
       },
       {
@@ -220407,6 +220599,12 @@
         "url": "/wiki/Ushiano",
         "note": "flashback",
         "full_text": "Ushiano"
+      },
+      {
+        "name": "Gambo",
+        "url": "/wiki/Gambo",
+        "note": "flashback",
+        "full_text": "Gambo"
       },
       {
         "name": "Koala",
@@ -220815,25 +221013,25 @@
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "cover",
+        "note": "",
         "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
         "url": "/wiki/Nami",
-        "note": "cover",
+        "note": "",
         "full_text": "Nami"
       },
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "cover",
+        "note": "",
         "full_text": "Usopp"
       },
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "cover",
+        "note": "",
         "full_text": "Sanji"
       },
       {
@@ -220841,6 +221039,24 @@
         "url": "/wiki/Zeus",
         "note": "cover",
         "full_text": "Zeus"
+      },
+      {
+        "name": "Land of Gods",
+        "url": "/wiki/Land_of_Gods",
+        "note": "cover",
+        "full_text": "Land of Gods"
+      },
+      {
+        "name": "Iscat",
+        "url": "/wiki/Iscat",
+        "note": "cover",
+        "full_text": "Iscat"
+      },
+      {
+        "name": "Needle God",
+        "url": "/wiki/Needle_God",
+        "note": "cover",
+        "full_text": "Needle God"
       },
       {
         "name": "Wano Country",
@@ -220859,24 +221075,6 @@
         "url": "/wiki/Inuarashi",
         "note": "cover",
         "full_text": "Inuarashi"
-      },
-      {
-        "name": "Land of Gods",
-        "url": "/wiki/Land_of_Gods",
-        "note": "",
-        "full_text": "Land of Gods"
-      },
-      {
-        "name": "Iscat",
-        "url": "/wiki/Iscat",
-        "note": "",
-        "full_text": "Iscat"
-      },
-      {
-        "name": "Needle God",
-        "url": "/wiki/Needle_God",
-        "note": "",
-        "full_text": "Needle God"
       }
     ],
     "volume": "111",
@@ -226100,10 +226298,10 @@
         "full_text": "Lilith"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "voice",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -226292,10 +226490,10 @@
         "full_text": "Page One"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "through Gunko",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -226569,10 +226767,10 @@
         "full_text": "Mosa"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "through Gunko",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -227209,10 +227407,10 @@
         "full_text": "Jinbe"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "flashback",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Manmayer Gunko",
@@ -229757,10 +229955,10 @@
         "full_text": "Mugren"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -230060,7 +230258,7 @@
       {
         "name": "Doringo",
         "url": "/wiki/Doringo",
-        "note": "possessed",
+        "note": "",
         "full_text": "Doringo"
       },
       {
@@ -230076,10 +230274,10 @@
         "full_text": "Mugren"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "possessed",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -230323,10 +230521,10 @@
         "full_text": "Randolph"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "possessed",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -230619,7 +230817,7 @@
       },
       {
         "name": "Imu",
-        "url": "/wiki/Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "through Saturn",
         "full_text": "Imu"
       },
@@ -230871,10 +231069,10 @@
         "full_text": "Mugren"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -231503,10 +231701,10 @@
         "full_text": "World Government"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -231732,10 +231930,10 @@
         "full_text": "Jaguar D. Saul"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "cover",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Red Hair Pirates",
@@ -232123,10 +232321,10 @@
         "full_text": "Scopper Gaban"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "flashback",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Five Elders",
@@ -232418,10 +232616,10 @@
         "full_text": "Bentham"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "through Gunko",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -232649,7 +232847,7 @@
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "through Gunko",
+        "note": "",
         "full_text": "Olav"
       },
       {
@@ -232689,10 +232887,10 @@
         "full_text": "Bjorn"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "through Gunko",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -232865,7 +233063,7 @@
       {
         "name": "Olav",
         "url": "/wiki/Olav",
-        "note": "through Gunko",
+        "note": "",
         "full_text": "Olav"
       },
       {
@@ -232905,10 +233103,10 @@
         "full_text": "Bjorn"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "through Gunko",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -233147,7 +233345,7 @@
       {
         "name": "Bent",
         "url": "/wiki/Bent",
-        "note": "possessed",
+        "note": "",
         "full_text": "Bent"
       },
       {
@@ -233163,10 +233361,10 @@
         "full_text": "Bjorn"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "possessed",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -233614,10 +233812,10 @@
         "full_text": "Johanna"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "through Gunko",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -233851,7 +234049,7 @@
       {
         "name": "Egghead",
         "url": "/wiki/Egghead",
-        "note": "possessed",
+        "note": "",
         "full_text": "Egghead"
       },
       {
@@ -233861,10 +234059,10 @@
         "full_text": "Lilith"
       },
       {
-        "name": "Imu",
-        "url": "/wiki/Imu",
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
         "note": "possessed",
-        "full_text": "Imu"
+        "full_text": "Nerona Imu"
       },
       {
         "name": "Knights of God",
@@ -233896,5 +234094,468 @@
     "pages": "15",
     "release_date": "March 30, 2026",
     "jump_info": "2026 Issue 18"
+  },
+  {
+    "chapter_number": 1179,
+    "title": "Nerona Imu Descends",
+    "english_name": "Nerona Imu Descends",
+    "japanese_title": "ネロナ・イム降臨",
+    "characters": [
+      {
+        "name": "Pirate",
+        "url": "/wiki/Pirate",
+        "note": "",
+        "full_text": "Pirate"
+      },
+      {
+        "name": "World Government",
+        "url": "/wiki/World_Government",
+        "note": "K.O.",
+        "full_text": "World Government"
+      },
+      {
+        "name": "Straw Hat Pirates",
+        "url": "/wiki/Straw_Hat_Pirates",
+        "note": "K.O.",
+        "full_text": "Straw Hat Pirates"
+      },
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "K.O.",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "K.O.",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "K.O.",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "K.O.",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "K.O.",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "K.O.",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "K.O.",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "K.O.",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "Zeus",
+        "url": "/wiki/Zeus",
+        "note": "",
+        "full_text": "Zeus"
+      },
+      {
+        "name": "New Giant Warrior Pirates",
+        "url": "/wiki/New_Giant_Warrior_Pirates",
+        "note": "",
+        "full_text": "New Giant Warrior Pirates"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Stansen",
+        "url": "/wiki/Stansen",
+        "note": "",
+        "full_text": "Stansen"
+      },
+      {
+        "name": "Goldberg",
+        "url": "/wiki/Goldberg",
+        "note": "",
+        "full_text": "Goldberg"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Nash",
+        "url": "/wiki/Nash",
+        "note": "",
+        "full_text": "Nash"
+      },
+      {
+        "name": "Giant Warrior Pirates",
+        "url": "/wiki/Giant_Warrior_Pirates",
+        "note": "flashback",
+        "full_text": "Giant Warrior Pirates"
+      },
+      {
+        "name": "Dorry",
+        "url": "/wiki/Dorry",
+        "note": "flashback",
+        "full_text": "Dorry"
+      },
+      {
+        "name": "Brogy",
+        "url": "/wiki/Brogy",
+        "note": "flashback",
+        "full_text": "Brogy"
+      },
+      {
+        "name": "Rocks Pirates",
+        "url": "/wiki/Rocks_Pirates",
+        "note": "flashback",
+        "full_text": "Rocks Pirates"
+      },
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "flashback",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Roger Pirates",
+        "url": "/wiki/Roger_Pirates",
+        "note": "flashback",
+        "full_text": "Roger Pirates"
+      },
+      {
+        "name": "Gol D. Roger",
+        "url": "/wiki/Gol_D._Roger",
+        "note": "flashback",
+        "full_text": "Gol D. Roger"
+      },
+      {
+        "name": "Whitebeard Pirates",
+        "url": "/wiki/Whitebeard_Pirates",
+        "note": "flashback",
+        "full_text": "Whitebeard Pirates"
+      },
+      {
+        "name": "Edward Newgate",
+        "url": "/wiki/Edward_Newgate",
+        "note": "flashback",
+        "full_text": "Edward Newgate"
+      },
+      {
+        "name": "Portgas D. Ace",
+        "url": "/wiki/Portgas_D._Ace",
+        "note": "cover",
+        "full_text": "Portgas D. Ace"
+      },
+      {
+        "name": "Red Hair Pirates",
+        "url": "/wiki/Red_Hair_Pirates",
+        "note": "flashback",
+        "full_text": "Red Hair Pirates"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "flashback",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Blackbeard Pirates",
+        "url": "/wiki/Blackbeard_Pirates",
+        "note": "flashback",
+        "full_text": "Blackbeard Pirates"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "flashback",
+        "full_text": "Marshall D. Teach"
+      },
+      {
+        "name": "Elbaph",
+        "url": "/wiki/Elbaph",
+        "note": "flashback",
+        "full_text": "Elbaph"
+      },
+      {
+        "name": "Harald",
+        "url": "/wiki/Harald",
+        "note": "flashback",
+        "full_text": "Harald"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Ragnir",
+        "url": "/wiki/Ragnir",
+        "note": "",
+        "full_text": "Ragnir"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Skaldi",
+        "url": "/wiki/Skaldi",
+        "note": "",
+        "full_text": "Skaldi"
+      },
+      {
+        "name": "Olav",
+        "url": "/wiki/Olav",
+        "note": "",
+        "full_text": "Olav"
+      },
+      {
+        "name": "Karin",
+        "url": "/wiki/Karin",
+        "note": "",
+        "full_text": "Karin"
+      },
+      {
+        "name": "Mag",
+        "url": "/wiki/Mag",
+        "note": "",
+        "full_text": "Mag"
+      },
+      {
+        "name": "Bent",
+        "url": "/wiki/Bent",
+        "note": "",
+        "full_text": "Bent"
+      },
+      {
+        "name": "Johanna",
+        "url": "/wiki/Johanna",
+        "note": "",
+        "full_text": "Johanna"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn",
+        "note": "",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Egghead",
+        "url": "/wiki/Egghead",
+        "note": "flashback",
+        "full_text": "Egghead"
+      },
+      {
+        "name": "Lilith",
+        "url": "/wiki/Vegapunk/Lilith",
+        "note": "flashback",
+        "full_text": "Lilith"
+      },
+      {
+        "name": "Arabasta Kingdom",
+        "url": "/wiki/Arabasta_Kingdom",
+        "note": "flashback",
+        "full_text": "Arabasta Kingdom"
+      },
+      {
+        "name": "Nefertari Cobra",
+        "url": "/wiki/Nefertari_Cobra",
+        "note": "flashback",
+        "full_text": "Nefertari Cobra"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "url": "/wiki/Nefertari_Vivi",
+        "note": "image",
+        "full_text": "Nefertari Vivi"
+      },
+      {
+        "name": "Nefertari D. Lili",
+        "url": "/wiki/Nefertari_D._Lili",
+        "note": "image",
+        "full_text": "Nefertari D. Lili"
+      },
+      {
+        "name": "Ryugu Kingdom",
+        "url": "/wiki/Ryugu_Kingdom",
+        "note": "flashback",
+        "full_text": "Ryugu Kingdom"
+      },
+      {
+        "name": "Otohime",
+        "url": "/wiki/Otohime",
+        "note": "flashback",
+        "full_text": "Otohime"
+      },
+      {
+        "name": "Fukaboshi",
+        "url": "/wiki/Fukaboshi",
+        "note": "flashback",
+        "full_text": "Fukaboshi"
+      },
+      {
+        "name": "Ryuboshi",
+        "url": "/wiki/Ryuboshi",
+        "note": "flashback",
+        "full_text": "Ryuboshi"
+      },
+      {
+        "name": "Manboshi",
+        "url": "/wiki/Manboshi",
+        "note": "flashback",
+        "full_text": "Manboshi"
+      },
+      {
+        "name": "Shirahoshi",
+        "url": "/wiki/Shirahoshi",
+        "note": "flashback",
+        "full_text": "Shirahoshi"
+      },
+      {
+        "name": "Wano Country",
+        "url": "/wiki/Wano_Country",
+        "note": "cover",
+        "full_text": "Wano Country"
+      },
+      {
+        "name": "Yamato",
+        "url": "/wiki/Yamato",
+        "note": "cover",
+        "full_text": "Yamato"
+      },
+      {
+        "name": "Kurozumi Tama",
+        "url": "/wiki/Kurozumi_Tama",
+        "note": "cover",
+        "full_text": "Kurozumi Tama"
+      },
+      {
+        "name": "First Twenty",
+        "url": "/wiki/First_Twenty",
+        "note": "",
+        "full_text": "First Twenty"
+      },
+      {
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
+        "note": "",
+        "full_text": "Nerona Imu"
+      },
+      {
+        "name": "Five Elders",
+        "url": "/wiki/Five_Elders",
+        "note": "",
+        "full_text": "Five Elders"
+      },
+      {
+        "name": "Marcus Mars",
+        "url": "/wiki/Marcus_Mars",
+        "note": "",
+        "full_text": "Marcus Mars"
+      },
+      {
+        "name": "Topman Warcury",
+        "url": "/wiki/Topman_Warcury",
+        "note": "",
+        "full_text": "Topman Warcury"
+      },
+      {
+        "name": "Ethanbaron V. Nusjuro",
+        "url": "/wiki/Ethanbaron_V._Nusjuro",
+        "note": "",
+        "full_text": "Ethanbaron V. Nusjuro"
+      },
+      {
+        "name": "Shepherd Ju Peter",
+        "url": "/wiki/Shepherd_Ju_Peter",
+        "note": "",
+        "full_text": "Shepherd Ju Peter"
+      },
+      {
+        "name": "Figarland Garling",
+        "url": "/wiki/Figarland_Garling",
+        "note": "",
+        "full_text": "Figarland Garling"
+      },
+      {
+        "name": "Knights of God",
+        "url": "/wiki/Knights_of_God",
+        "note": "frozen",
+        "full_text": "Knights of God"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "frozen",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "frozen",
+        "full_text": "Rimoshifu Killingham"
+      },
+      {
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
+        "note": "frozen",
+        "full_text": "Manmayer Gunko"
+      },
+      {
+        "name": "World Noble",
+        "url": "/wiki/World_Noble",
+        "note": "",
+        "full_text": "World Noble"
+      },
+      {
+        "name": "York",
+        "url": "/wiki/Vegapunk/York",
+        "note": "",
+        "full_text": "York"
+      }
+    ],
+    "volume": "TBA",
+    "chapter_display": "1179",
+    "pages": "17",
+    "release_date": "April 6, 2026",
+    "jump_info": "2026 Issue 19"
   }
 ]
