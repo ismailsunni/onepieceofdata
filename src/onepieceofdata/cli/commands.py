@@ -1918,5 +1918,71 @@ def sync_origin_region(database_path: Optional[str], dry_run: bool, verbose: boo
         sys.exit(1)
 
 
+@main.command()
+@click.option(
+    "--bucket",
+    default=None,
+    help="Supabase Storage bucket name (default: SUPABASE_THUMBNAIL_BUCKET)"
+)
+@click.option(
+    "--width",
+    type=int,
+    default=150,
+    help="Thumbnail width in pixels (default: 150)"
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Only process the first N characters (useful for smoke tests)"
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Resolve images but do not download or upload"
+)
+@click.option(
+    "--force",
+    is_flag=True,
+    default=False,
+    help="Re-upload even when the object already exists"
+)
+def upload_thumbnails(
+    bucket: Optional[str],
+    width: int,
+    limit: Optional[int],
+    dry_run: bool,
+    force: bool,
+) -> None:
+    """Upload character thumbnails from the wiki to Supabase Storage."""
+    # Script lives in scripts/ — import by path so we don't need it on PYTHONPATH.
+    import importlib.util
+    from pathlib import Path as _Path
+
+    script_path = _Path(__file__).resolve().parents[3] / "scripts" / "upload_character_thumbnails.py"
+    spec = importlib.util.spec_from_file_location("_upload_thumbnails", script_path)
+    module = importlib.util.module_from_spec(spec)
+    assert spec.loader is not None
+    # Register in sys.modules before exec so dataclasses / typing can resolve
+    # cls.__module__ back to the module object.
+    sys.modules["_upload_thumbnails"] = module
+    spec.loader.exec_module(module)
+
+    resolved_bucket = bucket or settings.supabase_thumbnail_bucket
+    try:
+        module.run(
+            db_path=settings.database_path,
+            bucket=resolved_bucket,
+            thumb_width=width,
+            limit=limit,
+            dry_run=dry_run,
+            force=force,
+        )
+    except Exception as e:
+        click.echo(f"❌ Error: {e}")
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     main()
