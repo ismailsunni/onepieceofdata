@@ -15,7 +15,8 @@ UV := uv
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
 	export-supabase-fts update-new-chapter \
-	parse-affiliations parse-affiliations-dry-run
+	parse-affiliations parse-affiliations-dry-run \
+	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails
 
 # Default target
 help:
@@ -334,6 +335,20 @@ parse-affiliations:
 parse-affiliations-dry-run:
 	@echo "🏴 Preview character affiliations..."
 	$(UV) run onepieceofdata parse-affiliations --dry-run
+
+# Upload character thumbnails from the wiki to Supabase Storage
+upload-thumbnails:
+	@echo "🖼️  Uploading character thumbnails to Supabase..."
+	$(UV) run onepieceofdata upload-thumbnails
+
+upload-thumbnails-dry-run:
+	@echo "🖼️  Resolving character thumbnails (dry-run)..."
+	$(UV) run onepieceofdata upload-thumbnails --dry-run
+
+# Smoke test: resolve + upload only a small sample (requires Supabase creds)
+test-upload-thumbnails:
+	@echo "🖼️  Smoke-testing thumbnail upload with 3 characters..."
+	$(UV) run onepieceofdata upload-thumbnails --limit 3
 
 # Complete character workflow (scrape → parse → merge → sync)
 run-character-workflow:
