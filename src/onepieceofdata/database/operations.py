@@ -891,6 +891,7 @@ class DatabaseManager:
             stats = {
                 'characters_merged': 0,
                 'coc_entries_updated': 0,
+                'coc_duplicates_collapsed': 0,
                 'errors': 0
             }
 
@@ -962,11 +963,32 @@ class DatabaseManager:
                     stats['errors'] += 1
                     continue
 
+            # Collapse fully-identical CoC rows produced by the merge
+            # (same chapter + character + note). Semantic duplicates with
+            # differing notes like 'cover'/'doll' are preserved.
+            if not dry_run:
+                before = conn.execute("SELECT COUNT(*) FROM coc").fetchone()[0]
+                conn.execute("""
+                    CREATE OR REPLACE TEMPORARY TABLE _coc_dedup AS
+                    SELECT DISTINCT chapter, character, note FROM coc
+                """)
+                conn.execute("DELETE FROM coc")
+                conn.execute("INSERT INTO coc SELECT chapter, character, note FROM _coc_dedup")
+                conn.execute("DROP TABLE _coc_dedup")
+                after = conn.execute("SELECT COUNT(*) FROM coc").fetchone()[0]
+                stats['coc_duplicates_collapsed'] = before - after
+                if stats['coc_duplicates_collapsed']:
+                    logger.info(
+                        f"Collapsed {stats['coc_duplicates_collapsed']} identical CoC rows "
+                        f"({before} → {after})"
+                    )
+
             # Commit transaction
             if not dry_run:
                 conn.execute("COMMIT")
                 logger.success(f"Merge complete: {stats['characters_merged']} characters merged, "
-                             f"{stats['coc_entries_updated']} CoC entries updated")
+                             f"{stats['coc_entries_updated']} CoC entries updated, "
+                             f"{stats['coc_duplicates_collapsed']} identical rows collapsed")
             else:
                 logger.info(f"Dry run complete: would merge {stats['characters_merged']} characters, "
                           f"update {stats['coc_entries_updated']} CoC entries")
@@ -1054,9 +1076,13 @@ class DatabaseManager:
 
             for idx, (character_id,) in enumerate(characters, 1):
                 try:
-                    # Get chapter appearances from CoC
+                    # Get chapter appearances from CoC.
+                    # DISTINCT because CoC can legitimately hold multiple rows
+                    # per (chapter, character) with differing notes (e.g. a
+                    # character appearing both as 'cover' and 'doll' in one
+                    # chapter); chapter_list must still count each chapter once.
                     chapter_data = conn.execute("""
-                        SELECT chapter
+                        SELECT DISTINCT chapter
                         FROM coc
                         WHERE character = ?
                         ORDER BY chapter
