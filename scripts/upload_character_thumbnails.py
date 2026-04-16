@@ -23,6 +23,7 @@ import argparse
 import mimetypes
 import sys
 import time
+import unicodedata
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional
@@ -251,6 +252,16 @@ def list_existing_objects(supabase, bucket: str) -> Dict[str, int]:
     return existing
 
 
+def sanitize_key(name: str) -> str:
+    """Normalize a string to ASCII-safe characters for Supabase Storage keys.
+
+    Decomposes Unicode (é → e + combining-accent), strips combining marks,
+    and removes any remaining non-ASCII or invisible codepoints.
+    """
+    nfkd = unicodedata.normalize("NFKD", name)
+    return "".join(ch for ch in nfkd if unicodedata.category(ch)[0] not in ("M", "C"))
+
+
 def extension_from_mime(mime: Optional[str], fallback_url: Optional[str]) -> str:
     """Prefer the declared MIME type; fall back to the URL's extension."""
     if mime:
@@ -313,6 +324,8 @@ def plan_jobs(
     info = get_imageinfo(client, to_check, thumb_width)
 
     # Select the variant per character.
+    # Prefer the anime variant (colorful, clean, no Japanese text) and
+    # fall back to manga when no anime image exists.
     for job in jobs.values():
         if not job.pageimage:
             continue
@@ -320,17 +333,16 @@ def plan_jobs(
         manga_info = info.get(manga_name) if manga_name else None
         anime_info = info.get(job.pageimage)
 
-        if manga_info and not manga_info["missing"] and manga_info["thumburl"]:
+        if anime_info and not anime_info["missing"] and anime_info["thumburl"]:
+            job.chosen_filename = job.pageimage
+            job.thumb_url = anime_info["thumburl"]
+            job.variant = "anime" if "Anime" in job.pageimage else "as-is"
+            job._mime = anime_info["mime"]  # type: ignore[attr-defined]
+        elif manga_info and not manga_info["missing"] and manga_info["thumburl"]:
             job.chosen_filename = manga_name
             job.thumb_url = manga_info["thumburl"]
             job.variant = "manga"
             job._mime = manga_info["mime"]  # type: ignore[attr-defined]
-        elif anime_info and not anime_info["missing"] and anime_info["thumburl"]:
-            job.chosen_filename = job.pageimage
-            job.thumb_url = anime_info["thumburl"]
-            # If the pageimage name contained no "Anime", report variant as "as-is".
-            job.variant = "anime" if "Anime" in job.pageimage else "as-is"
-            job._mime = anime_info["mime"]  # type: ignore[attr-defined]
         else:
             job.error = "no usable imageinfo"
 
@@ -407,7 +419,7 @@ def run(
 
             mime = getattr(job, "_mime", None)
             ext = extension_from_mime(mime, job.thumb_url)
-            object_path = f"{job.character_id}{ext}"
+            object_path = f"{sanitize_key(job.character_id)}{ext}"
 
             if not force and object_path in existing:
                 stats.already_uploaded += 1
