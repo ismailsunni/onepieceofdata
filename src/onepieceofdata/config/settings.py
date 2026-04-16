@@ -58,6 +58,11 @@ class Settings(BaseSettings):
     export_batch_size: int = Field(default=1000, alias="OP_EXPORT_BATCH_SIZE")
     export_enable_sync_tracking: bool = Field(default=True, alias="OP_EXPORT_ENABLE_SYNC_TRACKING")
 
+    # Supabase Storage (for character thumbnails and other object storage)
+    supabase_url: Optional[str] = Field(default=None, alias="SUPABASE_URL")
+    supabase_service_key: Optional[str] = Field(default=None, alias="SUPABASE_SERVICE_KEY")
+    supabase_thumbnail_bucket: str = Field(default="character-images", alias="SUPABASE_THUMBNAIL_BUCKET")
+
     # Website URLs
     base_chapter_url: str = Field(default="https://onepiece.fandom.com/wiki/Chapter_", alias="OP_BASE_CHAPTER_URL")
     base_character_url: str = Field(default="https://onepiece.fandom.com/wiki/", alias="OP_BASE_CHARACTER_URL")
