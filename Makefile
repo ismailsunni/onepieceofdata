@@ -16,7 +16,8 @@ UV := uv
 	embed-wiki embed-status search \
 	export-supabase-fts update-new-chapter \
 	parse-affiliations parse-affiliations-dry-run \
-	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails
+	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails \
+	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run
 
 # Default target
 help:
@@ -336,6 +337,24 @@ parse-affiliations-dry-run:
 	@echo "🏴 Preview character affiliations..."
 	$(UV) run onepieceofdata parse-affiliations --dry-run
 
+# Parse devil fruit data from character details
+parse-devil-fruits:
+	@echo "🍎 Parsing devil fruit data..."
+	$(UV) run onepieceofdata parse-devil-fruits
+
+parse-devil-fruits-dry-run:
+	@echo "🍎 Preview devil fruit parsing..."
+	$(UV) run onepieceofdata parse-devil-fruits --dry-run
+
+# Sync haki abilities from wiki categories
+sync-haki:
+	@echo "💪 Syncing haki from wiki categories..."
+	$(UV) run onepieceofdata sync-haki
+
+sync-haki-dry-run:
+	@echo "💪 Preview haki sync..."
+	$(UV) run onepieceofdata sync-haki --dry-run
+
 # Upload character thumbnails from the wiki to Supabase Storage
 upload-thumbnails:
 	@echo "🖼️  Uploading character thumbnails to Supabase..."
@@ -542,29 +561,35 @@ run-all-parsers:
 run-all-postprocessors:
 	@echo "🔧 Running ALL post-processors..."
 	@echo ""
-	@echo "🧹 Step 1/8: Filtering non-character entries..."
+	@echo "🧹 Step 1/10: Filtering non-character entries..."
 	$(MAKE) filter-non-characters
 	@echo ""
-	@echo "📅 Step 2/8: Migrating birth dates..."
+	@echo "📅 Step 2/10: Migrating birth dates..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "🎨 Step 3/8: Loading character-on-volume (COV) data..."
+	@echo "🎨 Step 3/10: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
-	@echo "🔀 Step 4/8: Merging duplicate characters..."
+	@echo "🔀 Step 4/10: Merging duplicate characters..."
 	$(MAKE) merge-characters
 	@echo ""
-	@echo "🔄 Step 5/8: Syncing character chapter appearance analytics..."
+	@echo "🔄 Step 5/10: Syncing character chapter appearance analytics..."
 	$(MAKE) sync-character-appearances
 	@echo ""
-	@echo "🎨 Step 6/8: Syncing character cover appearance analytics..."
+	@echo "🎨 Step 6/10: Syncing character cover appearance analytics..."
 	$(MAKE) sync-cover-appearances
 	@echo ""
-	@echo "🗺️  Step 7/8: Syncing character origin regions..."
+	@echo "🗺️  Step 7/10: Syncing character origin regions..."
 	$(MAKE) sync-origin-region
 	@echo ""
-	@echo "🏴 Step 8/8: Parsing character affiliations..."
+	@echo "🏴 Step 8/10: Parsing character affiliations..."
 	$(MAKE) parse-affiliations
+	@echo ""
+	@echo "🍎 Step 9/10: Parsing devil fruit data..."
+	$(MAKE) parse-devil-fruits
+	@echo ""
+	@echo "💪 Step 10/10: Syncing haki abilities..."
+	$(MAKE) sync-haki
 	@echo ""
 	@echo "✅ All post-processing completed!"
 
