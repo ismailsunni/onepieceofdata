@@ -1984,5 +1984,80 @@ def upload_thumbnails(
         sys.exit(1)
 
 
+@main.command()
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Parse but do not write to the database"
+)
+def parse_devil_fruits(dry_run: bool) -> None:
+    """Parse devil fruit data from character details into a structured table."""
+    from ..postprocessors.parse_devil_fruits import parse_devil_fruits as do_parse
+
+    click.echo("🍎 Parsing devil fruit data...\n")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made\n")
+
+    db_path = str(settings.database_path)
+
+    try:
+        result = do_parse(db_path, dry_run=dry_run)
+
+        click.echo(f"\n📊 Results:")
+        click.echo(f"  Devil fruit entries: {result['entry_count']:,}")
+        click.echo(f"  Characters with DF:  {result['character_count']:,}")
+        click.echo(f"  Dual-identity fruits: {result['dual_identity']:,}")
+        click.echo(f"  Multi-fruit chars:    {result['multi_fruit']:,}")
+
+        if dry_run:
+            click.echo("\n💡 Run without --dry-run to apply changes")
+        else:
+            click.echo("\n✅ Devil fruit data saved!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {e}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Fetch categories but do not update the database"
+)
+def sync_haki(dry_run: bool) -> None:
+    """Sync haki abilities from wiki categories into boolean columns."""
+    from ..postprocessors.sync_haki import sync_haki as do_sync
+
+    click.echo("💪 Syncing haki data from wiki categories...\n")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made\n")
+
+    db_path = str(settings.database_path)
+
+    try:
+        result = do_sync(db_path, dry_run=dry_run)
+
+        click.echo(f"\n📊 Results:")
+        click.echo(f"  Total characters:     {result['total']:,}")
+        click.echo(f"  Any haki:             {result['any_haki']:,}")
+        click.echo(f"  Observation (Kenbun): {result['haki_observation']:,}")
+        click.echo(f"  Armament (Buso):      {result['haki_armament']:,}")
+        click.echo(f"  Conqueror (Hao):      {result['haki_conqueror']:,}")
+
+        if dry_run:
+            click.echo("\n💡 Run without --dry-run to apply changes")
+        else:
+            click.echo("\n✅ Haki data synced!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {e}")
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     main()
