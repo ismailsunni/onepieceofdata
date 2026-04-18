@@ -25,18 +25,33 @@ def _clean(value: str) -> str:
     return re.sub(r"\[\d+\]", "", value).strip()
 
 
-def _parse_parenthetical(raw: str) -> tuple[str, Optional[str]]:
-    """Split a value like ``A(B)`` into ``(A, B)``.
+def _strip_artificial_annotation(raw: str) -> str:
+    """Remove ``(Artificial)`` / ``( Artificial )`` / ``(Artifical)`` annotations."""
+    return re.sub(r"\s*\(\s*(?:Artificial|Artifical)\s*\)", "", raw).strip()
 
-    Used for Luffy-style dual-identity fields where the true name/type
-    is in parentheses after the cover identity.  If there are no
-    parentheses, returns ``(raw, None)``.
+
+def _parse_parenthetical(raw: str) -> tuple[str, Optional[str]]:
+    """Split a value like ``A(B)`` into ``(A, B)`` for dual-identity fruits.
+
+    Only applies when the parenthetical looks like a real devil fruit name
+    (contains "no Mi") — e.g. Luffy's ``Gomu Gomu no Mi(Hito Hito no Mi,
+    Model: Nika)``.  Qualifier annotations like ``(Artificial)`` are stripped
+    beforehand and don't trigger dual-identity parsing.
     """
+    # First strip artificial annotations — they're qualifiers, not names.
+    cleaned = _strip_artificial_annotation(raw)
+
     # Match: "Cover Name(True Name)" — no space before paren is common in wiki
-    m = re.match(r"^(.+?)\((.+)\)\s*$", raw)
+    m = re.match(r"^(.+?)\((.+)\)\s*$", cleaned)
     if m:
-        return m.group(1).strip(), m.group(2).strip()
-    return raw, None
+        inner = m.group(2).strip()
+        # Only treat as dual-identity if inner looks like a DF name or type.
+        if "no Mi" in inner or inner in (
+            "Paramecia", "Zoan", "Logia",
+            "Mythical Zoan", "Ancient Zoan", "Special Paramecia",
+        ):
+            return m.group(1).strip(), inner
+    return cleaned, None
 
 
 def _extract_fruit(char: dict, suffix: str = "") -> Optional[dict]:
