@@ -143,6 +143,17 @@ class CharacterScraper:
                 # Additional fields
                 "status": "status",
                 "blood type": "blood_type",
+
+                # Devil fruit fields
+                "dfname": "devil_fruit_name",
+                "dfename": "devil_fruit_english_name",
+                "dfmeaning": "devil_fruit_meaning",
+                "dftype": "devil_fruit_type",
+                # Second devil fruit (e.g. Marshall D. Teach)
+                "dfname2": "devil_fruit_name_2",
+                "dfename2": "devil_fruit_english_name_2",
+                "dfmeaning2": "devil_fruit_meaning_2",
+                "dftype2": "devil_fruit_type_2",
             }
 
             for field in fields:
