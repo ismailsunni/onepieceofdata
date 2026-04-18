@@ -25,6 +25,33 @@ def _clean(value: str) -> str:
     return re.sub(r"\[\d+\]", "", value).strip()
 
 
+def _split_type(raw: Optional[str]) -> tuple[Optional[str], Optional[str]]:
+    """Split a combined type string into (base_type, sub_type).
+
+    Examples:
+        "Mythical Zoan"       → ("Zoan", "Mythical")
+        "Ancient Zoan"        → ("Zoan", "Ancient")
+        "Artificial Paramecia"→ ("Paramecia", "Artificial")
+        "Special Paramecia"   → ("Paramecia", "Special")
+        "Artificial Zoan"     → ("Zoan", "Artificial")
+        "Paramecia"           → ("Paramecia", None)
+        "Logia"               → ("Logia", None)
+        "Unknown"             → ("Unknown", None)
+        None                  → (None, None)
+    """
+    if not raw or not raw.strip():
+        return None, None
+
+    raw = raw.strip()
+    MODIFIERS = {"Mythical", "Ancient", "Artificial", "Special"}
+    for modifier in MODIFIERS:
+        if raw.startswith(modifier + " "):
+            base = raw[len(modifier) + 1:]
+            return base, modifier
+
+    return raw, None
+
+
 def _strip_artificial_annotation(raw: str) -> str:
     """Remove ``(Artificial)`` / ``( Artificial )`` / ``(Artifical)`` annotations."""
     return re.sub(r"\s*\(\s*(?:Artificial|Artifical)\s*\)", "", raw).strip()
@@ -94,11 +121,14 @@ def _extract_fruit(char: dict, suffix: str = "") -> Optional[dict]:
     if not fruit_name:
         return None
 
+    base_type, sub_type = _split_type(fruit_type)
+
     return {
         "fruit_name": fruit_name,
         "english_name": english_name or None,
         "meaning": meaning,
-        "fruit_type": fruit_type or None,
+        "fruit_type": base_type,
+        "fruit_sub_type": sub_type,
     }
 
 
@@ -167,6 +197,7 @@ def parse_devil_fruits(
                 fruit["english_name"],
                 fruit["meaning"],
                 fruit["fruit_type"],
+                fruit["fruit_sub_type"],
             ))
 
         if fruits_for_char:
@@ -190,19 +221,20 @@ def parse_devil_fruits(
             conn.execute("DROP TABLE IF EXISTS character_devil_fruit CASCADE")
             conn.execute("""
                 CREATE TABLE character_devil_fruit (
-                    character_id TEXT NOT NULL,
-                    fruit_name   TEXT NOT NULL,
-                    english_name TEXT,
-                    meaning      TEXT,
-                    fruit_type   TEXT,
+                    character_id   TEXT NOT NULL,
+                    fruit_name     TEXT NOT NULL,
+                    english_name   TEXT,
+                    meaning        TEXT,
+                    fruit_type     TEXT,
+                    fruit_sub_type TEXT,
                     PRIMARY KEY (character_id, fruit_name)
                 )
             """)
             if rows:
                 conn.executemany(
                     """INSERT INTO character_devil_fruit
-                       (character_id, fruit_name, english_name, meaning, fruit_type)
-                       VALUES (?, ?, ?, ?, ?)""",
+                       (character_id, fruit_name, english_name, meaning, fruit_type, fruit_sub_type)
+                       VALUES (?, ?, ?, ?, ?, ?)""",
                     rows,
                 )
             logger.success(
