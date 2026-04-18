@@ -32,6 +32,7 @@ class SchemaMapper:
         'chapter',   # Depends on: volume (nullable)
         'character', # No dependencies (includes denormalized appearance analytics)
         'character_affiliation',  # Depends on: character (by character_id)
+        'character_devil_fruit',  # Depends on: character (by character_id)
     ]
 
     @classmethod
