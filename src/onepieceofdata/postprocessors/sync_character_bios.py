@@ -67,13 +67,6 @@ def sync_character_bios(
 
     conn = duckdb.connect(str(db_path))
     try:
-        # Ensure bio column exists
-        try:
-            conn.execute("SELECT bio FROM character LIMIT 1")
-        except (duckdb.CatalogException, duckdb.BinderException):
-            conn.execute("ALTER TABLE character ADD COLUMN bio TEXT")
-            logger.info("Added column character.bio")
-
         valid_ids = {r[0] for r in conn.execute("SELECT id FROM character").fetchall()}
 
         stats = {"total": 0, "updated": 0, "skipped": 0}

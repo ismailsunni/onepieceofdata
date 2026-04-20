@@ -130,17 +130,6 @@ def sync_origin_region(
     conn = duckdb.connect(str(db_path))
 
     try:
-        # Ensure column exists
-        existing_columns = {
-            row[0]
-            for row in conn.execute(
-                "SELECT column_name FROM information_schema.columns WHERE table_name = 'character'"
-            ).fetchall()
-        }
-        if "origin_region" not in existing_columns:
-            logger.info("Adding origin_region column to character table")
-            conn.execute("ALTER TABLE character ADD COLUMN origin_region TEXT")
-
         rows = conn.execute(
             "SELECT id, origin FROM character ORDER BY id"
         ).fetchall()
