@@ -25,6 +25,20 @@ def _clean(value: str) -> str:
     return re.sub(r"\[\d+\]", "", value).strip()
 
 
+def _split_model(fruit_name: str) -> tuple[str, Optional[str]]:
+    """Split a Zoan fruit name into (base_name, model).
+
+    Examples:
+        "Hito Hito no Mi, Model: Nika"   → ("Hito Hito no Mi", "Nika")
+        "Zou Zou no Mi, Model: Mammoth"   → ("Zou Zou no Mi", "Mammoth")
+        "Gomu Gomu no Mi"                 → ("Gomu Gomu no Mi", None)
+    """
+    if ", Model:" in fruit_name:
+        parts = fruit_name.split(", Model:", 1)
+        return parts[0].strip(), parts[1].strip()
+    return fruit_name, None
+
+
 def _split_type(raw: Optional[str]) -> tuple[Optional[str], Optional[str]]:
     """Split a combined type string into (base_type, sub_type).
 
@@ -136,10 +150,14 @@ def _extract_fruit(char: dict, suffix: str = "") -> Optional[dict]:
     if not fruit_name:
         return None
 
+    # Split Zoan model from fruit name: "Hito Hito no Mi, Model: Nika" → base + model
+    fruit_name, fruit_model = _split_model(fruit_name)
+
     base_type, sub_type = _split_type(fruit_type)
 
     return {
         "fruit_name": fruit_name,
+        "fruit_model": fruit_model,
         "english_name": english_name or None,
         "meaning": meaning,
         "fruit_type": base_type,
@@ -210,6 +228,7 @@ def parse_devil_fruits(
             rows.append((
                 cid,
                 fruit["fruit_name"],
+                fruit["fruit_model"],
                 fruit["english_name"],
                 fruit["meaning"],
                 fruit["fruit_type"],
@@ -240,6 +259,7 @@ def parse_devil_fruits(
                 CREATE TABLE character_devil_fruit (
                     character_id   TEXT NOT NULL,
                     fruit_name     TEXT NOT NULL,
+                    fruit_model    TEXT,
                     english_name   TEXT,
                     meaning        TEXT,
                     fruit_type     TEXT,
@@ -251,9 +271,9 @@ def parse_devil_fruits(
             if rows:
                 conn.executemany(
                     """INSERT INTO character_devil_fruit
-                       (character_id, fruit_name, english_name, meaning,
+                       (character_id, fruit_name, fruit_model, english_name, meaning,
                         fruit_type, fruit_sub_type, is_artificial)
-                       VALUES (?, ?, ?, ?, ?, ?, ?)""",
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
                     rows,
                 )
             logger.success(
