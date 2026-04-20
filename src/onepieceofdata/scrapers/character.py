@@ -196,6 +196,26 @@ class CharacterScraper:
                         output_key = field_mapping[source]
                         character_info[output_key] = value
 
+            # Extract intro text: first <p> tags in the page content
+            # that come before any section headings (h2/h3).
+            try:
+                content_div = soup.find('div', {'class': 'mw-parser-output'})
+                if content_div:
+                    intro_paragraphs = []
+                    for tag in content_div.children:
+                        if hasattr(tag, 'name'):
+                            if tag.name in ('h2', 'h3'):
+                                break
+                            if tag.name == 'p':
+                                text = tag.get_text(separator=' ', strip=True)
+                                # Skip empty paragraphs and disambiguation notes
+                                if text and not text.startswith(':'):
+                                    intro_paragraphs.append(text)
+                    if intro_paragraphs:
+                        character_info['intro_text'] = ' '.join(intro_paragraphs)
+            except Exception as intro_err:
+                logger.debug(f"Could not extract intro text for {character_name}: {intro_err}")
+
         except Exception as e:
             logger.error(f"Error parsing HTML infobox for {character_name}: {e}")
 
