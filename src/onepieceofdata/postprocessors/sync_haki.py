@@ -107,16 +107,6 @@ def sync_haki(
     """
     conn = duckdb.connect(str(db_path))
     try:
-        # Ensure columns exist
-        for col in HAKI_CATEGORIES.values():
-            try:
-                conn.execute(f"SELECT {col} FROM character LIMIT 1")
-            except (duckdb.CatalogException, duckdb.BinderException):
-                conn.execute(
-                    f"ALTER TABLE character ADD COLUMN {col} BOOLEAN DEFAULT FALSE"
-                )
-                logger.info(f"Added column character.{col}")
-
         # Load all character IDs
         character_ids = [
             r[0] for r in conn.execute("SELECT id FROM character ORDER BY id").fetchall()

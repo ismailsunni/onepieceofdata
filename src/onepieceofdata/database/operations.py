@@ -149,7 +149,15 @@ class DatabaseManager:
             appearance_count INTEGER,
             volume_appearance_count INTEGER,
             first_appearance INTEGER,
-            last_appearance INTEGER
+            last_appearance INTEGER,
+            birth_date TEXT,
+            cover_volume_list INTEGER[],
+            cover_appearance_count INTEGER,
+            origin_region TEXT,
+            haki_observation BOOLEAN DEFAULT FALSE,
+            haki_armament BOOLEAN DEFAULT FALSE,
+            haki_conqueror BOOLEAN DEFAULT FALSE,
+            bio TEXT
         )
         """
         conn.execute(character_table_query)
