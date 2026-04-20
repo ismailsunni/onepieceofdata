@@ -28,23 +28,29 @@ def _clean(value: str) -> str:
 def _split_type(raw: Optional[str]) -> tuple[Optional[str], Optional[str]]:
     """Split a combined type string into (base_type, sub_type).
 
+    "Artificial" is NOT a sub-type — it describes origin (man-made vs
+    natural) and is handled separately via ``is_artificial``.
+
     Examples:
         "Mythical Zoan"       → ("Zoan", "Mythical")
         "Ancient Zoan"        → ("Zoan", "Ancient")
-        "Artificial Paramecia"→ ("Paramecia", "Artificial")
         "Special Paramecia"   → ("Paramecia", "Special")
-        "Artificial Zoan"     → ("Zoan", "Artificial")
+        "Artificial Paramecia"→ ("Paramecia", None)   ← artificial handled elsewhere
+        "Artificial Zoan"     → ("Zoan", None)
         "Paramecia"           → ("Paramecia", None)
         "Logia"               → ("Logia", None)
-        "Unknown"             → ("Unknown", None)
         None                  → (None, None)
     """
     if not raw or not raw.strip():
         return None, None
 
     raw = raw.strip()
-    MODIFIERS = {"Mythical", "Ancient", "Artificial", "Special"}
-    for modifier in MODIFIERS:
+    # Strip "Artificial" prefix — handled by is_artificial column instead.
+    if raw.startswith("Artificial "):
+        raw = raw[len("Artificial "):]
+
+    SUB_TYPE_MODIFIERS = {"Mythical", "Ancient", "Special"}
+    for modifier in SUB_TYPE_MODIFIERS:
         if raw.startswith(modifier + " "):
             base = raw[len(modifier) + 1:]
             return base, modifier
@@ -102,6 +108,15 @@ def _extract_fruit(char: dict, suffix: str = "") -> Optional[dict]:
     english_raw = _clean(char.get(f"devil_fruit_english_name{suffix}", "") or "")
     meaning_raw = _clean(char.get(f"devil_fruit_meaning{suffix}", "") or "")
 
+    # Detect artificial origin BEFORE stripping annotations.
+    # Sources: "(Artificial)" annotation, "Artificial ..." type prefix, "SMILE" in name.
+    is_artificial = bool(
+        re.search(r"\(\s*(?:Artificial|Artifical)\s*\)", name_raw)
+        or re.search(r"\(\s*(?:Artificial|Artifical)\s*\)", type_raw)
+        or type_raw.startswith("Artificial")
+        or "SMILE" in name_raw
+    )
+
     # Handle dual-identity fruits like Luffy's:
     #   name = "Gomu Gomu no Mi(Hito Hito no Mi, Model: Nika)"
     #   type = "Paramecia(Mythical Zoan)"
@@ -129,6 +144,7 @@ def _extract_fruit(char: dict, suffix: str = "") -> Optional[dict]:
         "meaning": meaning,
         "fruit_type": base_type,
         "fruit_sub_type": sub_type,
+        "is_artificial": is_artificial,
     }
 
 
@@ -198,6 +214,7 @@ def parse_devil_fruits(
                 fruit["meaning"],
                 fruit["fruit_type"],
                 fruit["fruit_sub_type"],
+                fruit["is_artificial"],
             ))
 
         if fruits_for_char:
@@ -227,14 +244,16 @@ def parse_devil_fruits(
                     meaning        TEXT,
                     fruit_type     TEXT,
                     fruit_sub_type TEXT,
+                    is_artificial  BOOLEAN NOT NULL DEFAULT FALSE,
                     PRIMARY KEY (character_id, fruit_name)
                 )
             """)
             if rows:
                 conn.executemany(
                     """INSERT INTO character_devil_fruit
-                       (character_id, fruit_name, english_name, meaning, fruit_type, fruit_sub_type)
-                       VALUES (?, ?, ?, ?, ?, ?)""",
+                       (character_id, fruit_name, english_name, meaning,
+                        fruit_type, fruit_sub_type, is_artificial)
+                       VALUES (?, ?, ?, ?, ?, ?, ?)""",
                     rows,
                 )
             logger.success(
