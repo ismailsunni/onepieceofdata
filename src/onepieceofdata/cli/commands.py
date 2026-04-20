@@ -2026,6 +2026,43 @@ def parse_devil_fruits(dry_run: bool) -> None:
     "--dry-run",
     is_flag=True,
     default=False,
+    help="Fetch bios but do not update the database"
+)
+def sync_character_bios(dry_run: bool) -> None:
+    """Fetch short character bios from wiki intro text."""
+    from ..postprocessors.sync_character_bios import sync_character_bios as do_sync
+
+    click.echo("📖 Syncing character bios from wiki...\n")
+
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made\n")
+
+    db_path = str(settings.database_path)
+
+    try:
+        result = do_sync(db_path, dry_run=dry_run)
+
+        click.echo(f"\n📊 Results:")
+        click.echo(f"  Total characters: {result['total']:,}")
+        click.echo(f"  Bios updated:     {result['updated']:,}")
+        click.echo(f"  Skipped (no bio): {result['skipped']:,}")
+        click.echo(f"  Failed:           {result['failed']:,}")
+
+        if dry_run:
+            click.echo("\n💡 Run without --dry-run to apply changes")
+        else:
+            click.echo("\n✅ Character bios synced!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {e}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
     help="Fetch categories but do not update the database"
 )
 def sync_haki(dry_run: bool) -> None:

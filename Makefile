@@ -355,6 +355,15 @@ sync-haki-dry-run:
 	@echo "💪 Preview haki sync..."
 	$(UV) run onepieceofdata sync-haki --dry-run
 
+# Sync character bios from wiki intro text
+sync-character-bios:
+	@echo "📖 Syncing character bios from wiki..."
+	$(UV) run onepieceofdata sync-character-bios
+
+sync-character-bios-dry-run:
+	@echo "📖 Preview character bio sync..."
+	$(UV) run onepieceofdata sync-character-bios --dry-run
+
 # Upload character thumbnails from the wiki to Supabase Storage
 upload-thumbnails:
 	@echo "🖼️  Uploading character thumbnails to Supabase..."
@@ -588,8 +597,11 @@ run-all-postprocessors:
 	@echo "🍎 Step 9/10: Parsing devil fruit data..."
 	$(MAKE) parse-devil-fruits
 	@echo ""
-	@echo "💪 Step 10/10: Syncing haki abilities..."
+	@echo "💪 Step 10/11: Syncing haki abilities from wiki categories..."
 	$(MAKE) sync-haki
+	@echo ""
+	@echo "📖 Step 11/11: Syncing character bios..."
+	$(MAKE) sync-character-bios
 	@echo ""
 	@echo "✅ All post-processing completed!"
 
