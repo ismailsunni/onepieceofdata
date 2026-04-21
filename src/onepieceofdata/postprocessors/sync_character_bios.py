@@ -30,11 +30,18 @@ def _extract_bio(intro_text: str) -> Optional[str]:
     if not intro_text or not intro_text.strip():
         return None
 
+    # Reject text that looks like a wiki infobox stats dump (no real bio)
+    # These pages have "Statistics Japanese Name:" instead of intro prose
+    if re.search(r"Statistics\s+Japanese Name:|Romanized Name:", intro_text):
+        return None
+
     # Strip wiki reference markers like [10] or [ 10 ]
     text = re.sub(r"\[\s*\d+\s*\]", "", intro_text)
     # Strip Japanese notation parentheticals: ( Japanese, romanization? )
     # e.g. "( ニャーバン・兄弟, Nyāban Burazāzu? )" or "( 剣豪, kengō? )"
     text = re.sub(r"\(\s*[\u3000-\u9fff\uff00-\uffef・][^)]*\)", "", text)
+    # Strip any remaining CJK characters
+    text = re.sub(r"[\u3000-\u9fff\uff00-\uffef・]+", "", text)
     # Collapse multiple spaces
     text = re.sub(r"\s+", " ", text).strip()
     # Remove spaces before punctuation: "Luffy ," → "Luffy,"
@@ -48,8 +55,13 @@ def _extract_bio(intro_text: str) -> Optional[str]:
     if not text:
         return None
 
-    sentences = re.split(r"(?<=[.!?])\s+", text)
+    # Split on sentence boundaries, but protect "D." initials (One Piece names)
+    # and common honorific abbreviations from being treated as sentence ends.
+    # Replace them with a placeholder, split, then restore.
+    protected = re.sub(r"\b([A-Z])\.\s+([A-Z])", r"\1<DOT> \2", text)
+    sentences = re.split(r"(?<=[.!?])\s+", protected)
     bio = " ".join(sentences[:BIO_SENTENCES]).strip()
+    bio = bio.replace("<DOT>", ".")
 
     return bio or None
 
@@ -98,6 +110,7 @@ def sync_character_bios(
                 updates.append((bio, cid))
                 stats["updated"] += 1
             else:
+                updates.append((None, cid))  # clear any stale bio
                 stats["skipped"] += 1
 
         logger.info(
