@@ -32,10 +32,18 @@ def _extract_bio(intro_text: str) -> Optional[str]:
 
     # Strip wiki reference markers like [10] or [ 10 ]
     text = re.sub(r"\[\s*\d+\s*\]", "", intro_text)
+    # Strip Japanese notation parentheticals: ( Japanese, romanization? )
+    # e.g. "( ニャーバン・兄弟, Nyāban Burazāzu? )" or "( 剣豪, kengō? )"
+    text = re.sub(r"\(\s*[\u3000-\u9fff\uff00-\uffef・][^)]*\)", "", text)
     # Collapse multiple spaces
     text = re.sub(r"\s+", " ", text).strip()
-    # Remove spaces before punctuation (e.g. "Luffy ," → "Luffy,")
+    # Remove spaces before punctuation: "Luffy ," → "Luffy,"
     text = re.sub(r"\s+([,\.;:!?])", r"\1", text)
+    # Remove space before possessive/contractions (straight and curly apostrophes):
+    # "Family 's" → "Family's",  "Bekori \u2019s" → "Bekori\u2019s"
+    text = re.sub(r"\s+(['\u2019])(\w)", r"\1\2", text)
+    # Remove space before hyphen in compound words: "human -traits" → "human-traits"
+    text = re.sub(r"\s+-(\w)", r"-\1", text)
 
     if not text:
         return None
