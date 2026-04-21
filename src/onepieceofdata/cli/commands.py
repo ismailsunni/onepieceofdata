@@ -2046,8 +2046,6 @@ def sync_character_bios(dry_run: bool) -> None:
         click.echo(f"  Total characters: {result['total']:,}")
         click.echo(f"  Bios updated:     {result['updated']:,}")
         click.echo(f"  Skipped (no bio): {result['skipped']:,}")
-        click.echo(f"  Failed:           {result['failed']:,}")
-
         if dry_run:
             click.echo("\n💡 Run without --dry-run to apply changes")
         else:
