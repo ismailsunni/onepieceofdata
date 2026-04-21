@@ -1,9 +1,9 @@
 {
-  "last_sync": "2026-04-20T09:25:14.846809",
+  "last_sync": "2026-04-21T08:46:13.985558",
   "tables": {
-    "character_devil_fruit": {
-      "row_count": 173,
-      "last_synced": "2026-04-20T09:25:14.955600"
+    "character": {
+      "row_count": 1450,
+      "last_synced": "2026-04-21T08:46:14.095590"
     }
   }
 }
