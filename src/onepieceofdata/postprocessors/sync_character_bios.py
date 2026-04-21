@@ -30,7 +30,12 @@ def _extract_bio(intro_text: str) -> Optional[str]:
     if not intro_text or not intro_text.strip():
         return None
 
-    text = re.sub(r"\s+", " ", intro_text).strip()
+    # Strip wiki reference markers like [10] or [ 10 ]
+    text = re.sub(r"\[\s*\d+\s*\]", "", intro_text)
+    # Collapse multiple spaces
+    text = re.sub(r"\s+", " ", text).strip()
+    # Remove spaces before punctuation (e.g. "Luffy ," → "Luffy,")
+    text = re.sub(r"\s+([,\.;:!?])", r"\1", text)
 
     if not text:
         return None
