@@ -2094,5 +2094,44 @@ def sync_haki(dry_run: bool) -> None:
         sys.exit(1)
 
 
+@main.command(name="graph-init-schema")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+@click.option(
+    "--reset",
+    is_flag=True,
+    default=False,
+    help="Drop existing graph tables before re-creating (destructive).",
+)
+def graph_init_schema(database_path: Optional[str], reset: bool) -> None:
+    """Create story-graph tables (idempotent unless --reset is passed)."""
+    from ..graph.schema import create_graph_tables, drop_graph_tables, graph_table_counts
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    click.echo(f"📦 Graph schema target: {database_path}")
+
+    if reset:
+        click.confirm(
+            "This will drop graph_nodes, graph_source_text, graph_extractions, "
+            "graph_edges and all their data. Continue?",
+            abort=True,
+        )
+        drop_graph_tables(database_path)
+
+    create_graph_tables(database_path)
+
+    counts = graph_table_counts(database_path)
+    click.echo("\n📊 Graph table row counts:")
+    for table, count in counts.items():
+        click.echo(f"  {table:24s} {count:>10,}")
+    click.echo("\n✅ Graph schema ready.")
+
+
 if __name__ == "__main__":
     main()
