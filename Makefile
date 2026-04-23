@@ -884,6 +884,10 @@ graph-init-nodes:
 	@echo "🕸️  Populating graph_nodes..."
 	$(UV) run onepieceofdata graph-init-nodes
 
+graph-sync-sources:
+	@echo "🧩 Snapshotting wiki sections into graph_source_text..."
+	$(UV) run onepieceofdata graph-sync-sources
+
 # Clean up generated files
 clean:
 	@echo "🧹 Cleaning up..."
