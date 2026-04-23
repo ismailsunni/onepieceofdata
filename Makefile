@@ -880,6 +880,10 @@ graph-reset-schema:
 	@echo "🕸️  Resetting story graph schema (destructive)..."
 	$(UV) run onepieceofdata graph-init-schema --reset
 
+graph-init-nodes:
+	@echo "🕸️  Populating graph_nodes..."
+	$(UV) run onepieceofdata graph-init-nodes
+
 # Clean up generated files
 clean:
 	@echo "🧹 Cleaning up..."
