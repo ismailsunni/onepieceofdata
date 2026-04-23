@@ -2159,5 +2159,51 @@ def graph_init_nodes(database_path: Optional[str]) -> None:
     click.echo("\n✅ Done.")
 
 
+@main.command(name="graph-sync-sources")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Process at most N wiki pages (for smoke tests).",
+)
+@click.option(
+    "--similarity-threshold",
+    type=float,
+    default=0.95,
+    show_default=True,
+    help="Treat changes as cosmetic if difflib ratio exceeds this.",
+)
+def graph_sync_sources(
+    database_path: Optional[str],
+    limit: Optional[int],
+    similarity_threshold: float,
+) -> None:
+    """Snapshot wiki_text sections into graph_source_text with change detection."""
+    from ..graph.source_sync import sync_sources
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    click.echo(f"🧩 Syncing sources from wiki_text in {database_path}...\n")
+    stats = sync_sources(
+        database_path,
+        similarity_threshold=similarity_threshold,
+        limit=limit,
+    )
+    click.echo("\n📊 Sync stats:")
+    click.echo(f"  Sections scanned:    {stats.scanned:,}")
+    click.echo(f"  Inserted (new):      {stats.inserted:,}")
+    click.echo(f"  Unchanged (touched): {stats.unchanged:,}")
+    click.echo(f"  Superseded:          {stats.superseded:,}")
+    click.echo(f"  Skipped (too short): {stats.skipped_short:,}")
+    click.echo("\n✅ Done.")
+
+
 if __name__ == "__main__":
     main()
