@@ -871,6 +871,15 @@ update-new-chapter:
 	@echo "✅ NEW CHAPTER UPDATE COMPLETED!"
 	@echo "═══════════════════════════════════════════════════════════════"
 
+# Story graph — initialize schema (idempotent)
+graph-init-schema:
+	@echo "🕸️  Initializing story graph schema..."
+	$(UV) run onepieceofdata graph-init-schema
+
+graph-reset-schema:
+	@echo "🕸️  Resetting story graph schema (destructive)..."
+	$(UV) run onepieceofdata graph-init-schema --reset
+
 # Clean up generated files
 clean:
 	@echo "🧹 Cleaning up..."
