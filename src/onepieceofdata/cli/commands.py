@@ -2133,5 +2133,31 @@ def graph_init_schema(database_path: Optional[str], reset: bool) -> None:
     click.echo("\n✅ Graph schema ready.")
 
 
+@main.command(name="graph-init-nodes")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+def graph_init_nodes(database_path: Optional[str]) -> None:
+    """Populate graph_nodes from characters, affiliations, and devil fruits."""
+    from ..graph.init_nodes import init_nodes
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    click.echo(f"🕸️  Populating graph_nodes in {database_path}...\n")
+    result = init_nodes(database_path)
+
+    click.echo("📊 Added this run:")
+    for t, n in sorted(result["added"].items()):
+        click.echo(f"  {t:20s} +{n:,}")
+    click.echo("\n📦 Totals in graph_nodes:")
+    for t, n in sorted(result["totals"].items()):
+        click.echo(f"  {t:20s} {n:>6,}")
+    click.echo("\n✅ Done.")
+
+
 if __name__ == "__main__":
     main()
