@@ -196,7 +196,7 @@ def main():
     logger.info("Proof of Concept Complete!")
     logger.info("=" * 60)
     logger.info("\nNext steps:")
-    logger.info("1. Review API_MIGRATION_ANALYSIS.md for full migration plan")
+    logger.info("1. Review docs/API_MIGRATION_ANALYSIS.md for full migration plan")
     logger.info("2. Decide whether to use regex or mwparserfromhell for parsing")
     logger.info("3. Migrate chapter scraper to use API client")
     logger.info("4. Migrate character and volume scrapers")

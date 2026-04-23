@@ -65,7 +65,7 @@ JOIN chapter c ON c.number BETWEEN s.start_chapter AND s.end_chapter
 GROUP BY s.title;
 ```
 
-📖 **For complete schema documentation, see [DATABASE_SCHEMA.md](DATABASE_SCHEMA.md)**
+📖 **For complete schema documentation, see [docs/DATABASE_SCHEMA.md](docs/DATABASE_SCHEMA.md)**
 
 ## �🚀 Quick Start
 
@@ -408,10 +408,11 @@ onepieceofdata/
 ├── tests/                      # Test suite
 ├── data/                       # Data storage
 ├── logs/                       # Log files
-├── DATABASE_SCHEMA.md          # 📖 Complete database schema
-├── FEATURES.md                 # 🎯 Feature overview & CLI reference
-├── SCHEMA_VISUAL.md            # 📊 Visual database schema
-├── IMPLEMENTATION_SUMMARY.md   # 📋 Technical implementation
+├── docs/                       # 📚 Documentation (schema, features, plans)
+│   ├── DATABASE_SCHEMA.md      # 📖 Complete database schema
+│   ├── FEATURES.md             # 🎯 Feature overview & CLI reference
+│   ├── SCHEMA_VISUAL.md        # 📊 Visual database schema
+│   └── IMPLEMENTATION_SUMMARY.md # 📋 Technical implementation
 ├── pyproject.toml             # Modern Python project config
 ├── Makefile                   # Development commands
 └── .env                       # Environment configuration
@@ -582,9 +583,9 @@ make run-full-pipeline-parallel    # All stages including export
 
 ## � Documentation
 
-- 📖 **[DATABASE_SCHEMA.md](DATABASE_SCHEMA.md)** - Complete database schema with examples
-- 🎯 **[FEATURES.md](FEATURES.md)** - Feature overview and CLI command reference
-- 📋 **[IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md)** - Technical implementation details
+- 📖 **[docs/DATABASE_SCHEMA.md](docs/DATABASE_SCHEMA.md)** - Complete database schema with examples
+- 🎯 **[docs/FEATURES.md](docs/FEATURES.md)** - Feature overview and CLI command reference
+- 📋 **[docs/IMPLEMENTATION_SUMMARY.md](docs/IMPLEMENTATION_SUMMARY.md)** - Technical implementation details
 
 ## 🌐 Character Network Explorer
 
