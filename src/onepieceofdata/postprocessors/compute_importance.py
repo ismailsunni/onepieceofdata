@@ -45,8 +45,9 @@ DEFAULT_WEIGHTS: Dict[str, float] = {
     "affiliation": 0.15,  # keyword-matched affiliation tier
     "cover": 0.10,        # log-normalized volume-cover appearances
     "arc_main": 0.05,     # arcs where the character appears in ≥50% of chapters
-    "devil_fruit": 0.05,  # binary: has a devil fruit
-    "bio_completeness": 0.05,  # proxy for editor attention
+    "conqueror_haki": 0.05,  # binary: has Supreme King / Conqueror's Haki
+    "devil_fruit": 0.03,  # binary: has a devil fruit
+    "bio_completeness": 0.02,  # proxy for editor attention
 }
 assert abs(sum(DEFAULT_WEIGHTS.values()) - 1.0) < 1e-9, "DEFAULT_WEIGHTS must sum to 1.0"
 
@@ -287,6 +288,7 @@ CSV_HEADER = [
     "rank", "tier", "score", "id", "name", "arc_main_count",
     "sig_appearance", "sig_cover", "sig_arc_main", "sig_saga_breadth",
     "sig_bio_completeness", "sig_bounty", "sig_devil_fruit", "sig_affiliation",
+    "sig_conqueror_haki",
 ]
 
 
@@ -393,6 +395,13 @@ def compute_importance(
                 "Run `sync-occupation` to add it."
             )
         occupation_select = "occupation" if has_occupation else "NULL"
+        has_haki = "haki_conqueror" in existing_cols
+        if not has_haki:
+            logger.warning(
+                "character.haki_conqueror column not found — conqueror_haki "
+                "signal will be 0 for all characters. Run `sync-haki` to populate."
+            )
+        haki_select = "COALESCE(haki_conqueror, FALSE)" if has_haki else "FALSE"
 
         rows = conn.execute(
             f"""
@@ -404,7 +413,8 @@ def compute_importance(
                 COALESCE(array_length(saga_list), 0)   AS saga_count,
                 COALESCE(bounty, 0)                    AS bounty,
                 origin, status, birth, blood_type, age, birth_date,
-                {occupation_select}                    AS occupation
+                {occupation_select}                    AS occupation,
+                {haki_select}                          AS haki_conqueror
             FROM character
             """
         ).fetchall()
@@ -425,7 +435,8 @@ def compute_importance(
         enriched = []
         for r in rows:
             cid, name, appearances, covers, saga_count, bounty, \
-                origin, status, birth, blood_type, age, birth_date, occupation = r
+                origin, status, birth, blood_type, age, birth_date, \
+                occupation, haki_conqueror = r
 
             # Bio completeness — fraction of BIO_COMPLETENESS_COLS that are filled.
             bio_values = [origin, status, birth, blood_type, bounty or None, age, birth_date]
@@ -454,6 +465,7 @@ def compute_importance(
                 "bounty": _log_norm(bounty, max_bounty),
                 "devil_fruit": 1.0 if devil_fruits.get(cid) else 0.0,
                 "affiliation": _affiliation_tier_score(aff_text),
+                "conqueror_haki": 1.0 if haki_conqueror else 0.0,
             }
             score = sum(weights[k] * v for k, v in sig.items())
             enriched.append((cid, name, score, sig, arc_main_count))
@@ -477,6 +489,7 @@ def compute_importance(
                 sig["appearance"], sig["cover"], sig["arc_main"],
                 sig["saga_breadth"], sig["bio_completeness"],
                 sig["bounty"], sig["devil_fruit"], sig["affiliation"],
+                sig["conqueror_haki"],
             ))
 
         logger.info(
@@ -507,13 +520,14 @@ def compute_importance(
                     sig_bio_completeness DOUBLE,
                     sig_bounty DOUBLE,
                     sig_devil_fruit DOUBLE,
-                    sig_affiliation DOUBLE
+                    sig_affiliation DOUBLE,
+                    sig_conqueror_haki DOUBLE
                 )
                 """
             )
             conn.executemany(
                 """INSERT INTO character_importance
-                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+                   VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
                 final,
             )
 
