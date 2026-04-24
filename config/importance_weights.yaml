@@ -13,6 +13,7 @@
 #   affiliation       keyword-matched affiliation/occupation tier (0–1)
 #   cover             log-normalized volume-cover appearances
 #   arc_main          arcs where the character covers >=50% of chapters (log-norm)
+#   conqueror_haki    1.0 if the character is a Conqueror's Haki user, else 0
 #   devil_fruit       1.0 if the character has a devil fruit, else 0
 #   bio_completeness  fraction of {origin, status, birth, blood_type, bounty,
 #                     age, birth_date} that are filled — proxy for editor attention
@@ -24,8 +25,9 @@ weights:
   affiliation: 0.15
   cover: 0.10
   arc_main: 0.05
-  devil_fruit: 0.05
-  bio_completeness: 0.05
+  conqueror_haki: 0.05
+  devil_fruit: 0.03
+  bio_completeness: 0.02
 
 # Arc-main threshold: a character is an "arc main" when their distinct-chapter
 # appearances cover >= this fraction of the arc's chapter range.
