@@ -1,0 +1,32 @@
+# Character importance scoring weights.
+#
+# Each weight is the contribution of that signal to the final score.
+# All weights MUST sum to 1.0 (validated at load time).
+#
+# Used by: src/onepieceofdata/postprocessors/compute_importance.py
+# Override at runtime: `compute-importance --weights-config path/to/file.yaml`
+#
+# Signals:
+#   appearance        log-normalized chapter appearance count
+#   saga_breadth      fraction of sagas the character appears in
+#   bounty            log-normalized bounty amount
+#   affiliation       keyword-matched affiliation/occupation tier (0–1)
+#   cover             log-normalized volume-cover appearances
+#   arc_main          arcs where the character covers >=50% of chapters (log-norm)
+#   devil_fruit       1.0 if the character has a devil fruit, else 0
+#   bio_completeness  fraction of {origin, status, birth, blood_type, bounty,
+#                     age, birth_date} that are filled — proxy for editor attention
+
+weights:
+  appearance: 0.25
+  saga_breadth: 0.20
+  bounty: 0.15
+  affiliation: 0.15
+  cover: 0.10
+  arc_main: 0.05
+  devil_fruit: 0.05
+  bio_completeness: 0.05
+
+# Arc-main threshold: a character is an "arc main" when their distinct-chapter
+# appearances cover >= this fraction of the arc's chapter range.
+arc_main_threshold: 0.5

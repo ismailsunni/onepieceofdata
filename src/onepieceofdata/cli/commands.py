@@ -2200,5 +2200,97 @@ def sync_occupation(database_path: str, characters_json: str, dry_run: bool) -> 
         sys.exit(1)
 
 
+@main.command()
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (uses default if not specified)",
+)
+@click.option(
+    "--detail-json",
+    default=None,
+    help="Path to characters_detail.json (default: data/characters_detail.json)",
+)
+@click.option(
+    "--csv",
+    "csv_path",
+    default="data/character_importance.csv",
+    show_default=True,
+    help="Path to write the ranked CSV for review (pass empty string to skip)",
+)
+@click.option(
+    "--weights-config",
+    default=None,
+    help="Path to a YAML weights override (default: config/importance_weights.yaml)",
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Compute and report stats without writing to the database (CSV still written)",
+)
+def compute_importance(
+    database_path: str,
+    detail_json: str,
+    csv_path: str,
+    weights_config: str,
+    dry_run: bool,
+) -> None:
+    """Compute character importance score + S/A/B/C/D tier.
+
+    Combines chapter/volume appearances, bounty, saga breadth, bio completeness,
+    devil-fruit presence, and affiliation tier into a weighted score, then
+    assigns a percentile-based tier. Writes results to a new
+    ``character_importance`` table and updates ``importance_score`` /
+    ``importance_tier`` columns on ``character``.
+    """
+    from ..postprocessors.compute_importance import compute_importance as do_compute
+
+    db_path = database_path or str(settings.database_path)
+    click.echo("⭐ Computing character importance scores...\n")
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made\n")
+
+    try:
+        result = do_compute(
+            db_path,
+            detail_json_path=detail_json,
+            dry_run=dry_run,
+            csv_path=csv_path or None,
+            weights_config=weights_config,
+        )
+
+        tc = result["tier_counts"]
+        cuts = result["cutoffs"]
+        click.echo(f"\n📊 Results ({result['total']:,} characters):")
+        click.echo(f"  S (top ~1%):  {tc['S']:,}  (score ≥ {cuts['S']:.3f})")
+        click.echo(f"  A:            {tc['A']:,}  (score ≥ {cuts['A']:.3f})")
+        click.echo(f"  B:            {tc['B']:,}  (score ≥ {cuts['B']:.3f})")
+        click.echo(f"  C:            {tc['C']:,}  (score ≥ {cuts['C']:.3f})")
+        click.echo(f"  D:            {tc['D']:,}")
+
+        src = result.get("weights_source")
+        if src:
+            click.echo(f"\n⚖️  Weights: {src}")
+        else:
+            click.echo("\n⚖️  Weights: built-in defaults (no YAML found)")
+
+        if result.get("csv_path"):
+            click.echo(f"\n📝 Review CSV: {result['csv_path']}")
+
+        if dry_run:
+            click.echo("\n💡 Run without --dry-run to persist to the database.")
+        else:
+            click.echo("\n✅ Importance scores saved.")
+            click.echo(
+                "   Inspect: SELECT name, score, tier FROM character_importance "
+                "ORDER BY score DESC LIMIT 30;"
+            )
+
+    except Exception as e:
+        click.echo(f"❌ Error: {e}")
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     main()

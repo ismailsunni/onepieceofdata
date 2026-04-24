@@ -39,6 +39,7 @@ dependencies = [
     "psycopg2-binary>=2.9.0",
     "groq>=0.33.0",
     "supabase>=2.6.0",
+    "pyyaml>=6.0",
 ]
 
 [project.optional-dependencies]
