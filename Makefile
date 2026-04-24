@@ -355,6 +355,24 @@ sync-haki-dry-run:
 	@echo "💪 Preview haki sync..."
 	$(UV) run onepieceofdata sync-haki --dry-run
 
+# Add / populate the occupation column on the character table from characters_detail.json
+sync-occupation:
+	@echo "💼 Syncing occupation column..."
+	$(UV) run onepieceofdata sync-occupation
+
+sync-occupation-dry-run:
+	@echo "💼 Preview occupation sync..."
+	$(UV) run onepieceofdata sync-occupation --dry-run
+
+# Parse the occupation string into the character_occupation table
+parse-occupations:
+	@echo "💼 Parsing occupations..."
+	$(UV) run onepieceofdata parse-occupations
+
+parse-occupations-dry-run:
+	@echo "💼 Preview occupation parsing..."
+	$(UV) run onepieceofdata parse-occupations --dry-run
+
 # Sync character bios from wiki intro text
 sync-character-bios:
 	@echo "📖 Syncing character bios from wiki..."

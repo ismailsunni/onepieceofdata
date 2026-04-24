@@ -2094,5 +2094,111 @@ def sync_haki(dry_run: bool) -> None:
         sys.exit(1)
 
 
+@main.command()
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (uses default if not specified)",
+)
+@click.option(
+    "--characters-json",
+    default="data/characters_detail.json",
+    show_default=True,
+    help="Path to characters_detail.json",
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Parse but do not write to the database",
+)
+def parse_occupations(database_path: str, characters_json: str, dry_run: bool) -> None:
+    """Parse character occupations into the character_occupation table.
+
+    Reads occupation strings from characters_detail.json, splits them on
+    semicolons (or commas as a fallback), strips Japanese/VIZ footnote
+    parentheticals, applies manual overrides for known broken source entries
+    (Z, Camie, Rebecca), and saves (character_id, role, status) rows.
+    """
+    from ..postprocessors.parse_occupations import parse_occupations as do_parse
+
+    db_path = database_path or str(settings.database_path)
+    click.echo("💼 Parsing character occupations...\n")
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made\n")
+
+    try:
+        result = do_parse(db_path, characters_json=characters_json, dry_run=dry_run)
+
+        click.echo("\n📊 Occupation parsing:")
+        click.echo(f"  Characters with occupation: {result['character_count']:,}")
+        click.echo(f"  Distinct roles:             {result['role_count']:,}")
+        click.echo(f"  Total entries:              {result['entry_count']:,}")
+        if result["aliases_merged"]:
+            click.echo(f"  Aliases merged:             {result['aliases_merged']:,}")
+            click.echo(f"  Duplicates removed:         {result['duplicates_removed']:,}")
+        if result["non_characters_skipped"]:
+            click.echo(f"  Non-characters skipped:     {result['non_characters_skipped']:,}")
+        if result["footnote_stripped"]:
+            click.echo(f"  Footnote parens stripped:   {result['footnote_stripped']:,}")
+        if result["manual_overrides"]:
+            click.echo(f"  Manual overrides applied:   {result['manual_overrides']:,}")
+
+        if dry_run:
+            click.echo("\n💡 Run without --dry-run to save to database")
+        else:
+            click.echo("\n✅ Occupations saved to character_occupation table!")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {e}")
+        sys.exit(1)
+
+
+@main.command()
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (uses default if not specified)",
+)
+@click.option(
+    "--characters-json",
+    default="data/characters_detail.json",
+    show_default=True,
+    help="Path to characters_detail.json",
+)
+@click.option(
+    "--dry-run",
+    is_flag=True,
+    default=False,
+    help="Report what would change without writing",
+)
+def sync_occupation(database_path: str, characters_json: str, dry_run: bool) -> None:
+    """Add + populate the occupation column on the character table."""
+    from ..postprocessors.sync_occupation import sync_occupation as do_sync
+
+    db_path = database_path or str(settings.database_path)
+    click.echo("💼 Syncing occupation from characters_detail.json...\n")
+    if dry_run:
+        click.echo("🔍 DRY RUN MODE - No changes will be made\n")
+
+    try:
+        result = do_sync(db_path, characters_json=characters_json, dry_run=dry_run)
+
+        click.echo(f"\n📊 Results:")
+        click.echo(f"  Total characters:    {result['total']:,}")
+        click.echo(f"  With occupation:     {result['with_occupation']:,}")
+        click.echo(f"  Blank occupation:    {result['without_occupation']:,}")
+        click.echo(f"  Missing in JSON:     {result['missing_in_json']:,}")
+
+        if dry_run:
+            click.echo("\n💡 Run without --dry-run to apply.")
+        else:
+            click.echo("\n✅ Occupation synced.")
+
+    except Exception as e:
+        click.echo(f"❌ Error: {e}")
+        sys.exit(1)
+
+
 if __name__ == "__main__":
     main()
