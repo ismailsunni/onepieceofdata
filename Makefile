@@ -373,6 +373,15 @@ parse-occupations-dry-run:
 	@echo "💼 Preview occupation parsing..."
 	$(UV) run onepieceofdata parse-occupations --dry-run
 
+# Compute character importance score and tier (S/A/B/C/D)
+compute-importance:
+	@echo "⭐ Computing character importance..."
+	$(UV) run onepieceofdata compute-importance
+
+compute-importance-dry-run:
+	@echo "⭐ Preview character importance..."
+	$(UV) run onepieceofdata compute-importance --dry-run
+
 # Sync character bios from wiki intro text
 sync-character-bios:
 	@echo "📖 Syncing character bios from wiki..."
@@ -588,38 +597,47 @@ run-all-parsers:
 run-all-postprocessors:
 	@echo "🔧 Running ALL post-processors..."
 	@echo ""
-	@echo "🧹 Step 1/10: Filtering non-character entries..."
+	@echo "🧹 Step 1/14: Filtering non-character entries..."
 	$(MAKE) filter-non-characters
 	@echo ""
-	@echo "📅 Step 2/10: Migrating birth dates..."
+	@echo "📅 Step 2/14: Migrating birth dates..."
 	$(MAKE) migrate-birth-dates
 	@echo ""
-	@echo "🎨 Step 3/10: Loading character-on-volume (COV) data..."
+	@echo "🎨 Step 3/14: Loading character-on-volume (COV) data..."
 	$(MAKE) load-cov
 	@echo ""
-	@echo "🔀 Step 4/10: Merging duplicate characters..."
+	@echo "🔀 Step 4/14: Merging duplicate characters..."
 	$(MAKE) merge-characters
 	@echo ""
-	@echo "🔄 Step 5/10: Syncing character chapter appearance analytics..."
+	@echo "🔄 Step 5/14: Syncing character chapter appearance analytics..."
 	$(MAKE) sync-character-appearances
 	@echo ""
-	@echo "🎨 Step 6/10: Syncing character cover appearance analytics..."
+	@echo "🎨 Step 6/14: Syncing character cover appearance analytics..."
 	$(MAKE) sync-cover-appearances
 	@echo ""
-	@echo "🗺️  Step 7/10: Syncing character origin regions..."
+	@echo "🗺️  Step 7/14: Syncing character origin regions..."
 	$(MAKE) sync-origin-region
 	@echo ""
-	@echo "🏴 Step 8/10: Parsing character affiliations..."
+	@echo "💼 Step 8/14: Syncing occupation column..."
+	$(MAKE) sync-occupation
+	@echo ""
+	@echo "🏴 Step 9/14: Parsing character affiliations..."
 	$(MAKE) parse-affiliations
 	@echo ""
-	@echo "🍎 Step 9/10: Parsing devil fruit data..."
+	@echo "💼 Step 10/14: Parsing character occupations..."
+	$(MAKE) parse-occupations
+	@echo ""
+	@echo "🍎 Step 11/14: Parsing devil fruit data..."
 	$(MAKE) parse-devil-fruits
 	@echo ""
-	@echo "💪 Step 10/11: Syncing haki abilities from wiki categories..."
+	@echo "💪 Step 12/14: Syncing haki abilities from wiki categories..."
 	$(MAKE) sync-haki
 	@echo ""
-	@echo "📖 Step 11/11: Syncing character bios..."
+	@echo "📖 Step 13/14: Syncing character bios..."
 	$(MAKE) sync-character-bios
+	@echo ""
+	@echo "⭐ Step 14/14: Computing character importance scores..."
+	$(MAKE) compute-importance
 	@echo ""
 	@echo "✅ All post-processing completed!"
 

@@ -30,9 +30,10 @@ class SchemaMapper:
         'arc',       # Depends on: saga
         'volume',    # No dependencies
         'chapter',   # Depends on: volume (nullable)
-        'character', # No dependencies (includes denormalized appearance analytics)
+        'character', # No dependencies (includes denormalized appearance + importance signals)
         'character_affiliation',  # Depends on: character (by character_id)
         'character_devil_fruit',  # Depends on: character (by character_id)
+        'character_occupation',   # Depends on: character (by character_id)
     ]
 
     @classmethod
