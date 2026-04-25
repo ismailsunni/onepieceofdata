@@ -2292,5 +2292,224 @@ def compute_importance(
         sys.exit(1)
 
 
+@main.command(name="graph-init-schema")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+@click.option(
+    "--reset",
+    is_flag=True,
+    default=False,
+    help="Drop existing graph tables before re-creating (destructive).",
+)
+def graph_init_schema(database_path: Optional[str], reset: bool) -> None:
+    """Create story-graph tables (idempotent unless --reset is passed)."""
+    from ..graph.schema import create_graph_tables, drop_graph_tables, graph_table_counts
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    click.echo(f"📦 Graph schema target: {database_path}")
+
+    if reset:
+        click.confirm(
+            "This will drop graph_nodes, graph_source_text, graph_extractions, "
+            "graph_edges and all their data. Continue?",
+            abort=True,
+        )
+        drop_graph_tables(database_path)
+
+    create_graph_tables(database_path)
+
+    counts = graph_table_counts(database_path)
+    click.echo("\n📊 Graph table row counts:")
+    for table, count in counts.items():
+        click.echo(f"  {table:24s} {count:>10,}")
+    click.echo("\n✅ Graph schema ready.")
+
+
+@main.command(name="graph-init-nodes")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+def graph_init_nodes(database_path: Optional[str]) -> None:
+    """Populate graph_nodes from characters, affiliations, and devil fruits."""
+    from ..graph.init_nodes import init_nodes
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    click.echo(f"🕸️  Populating graph_nodes in {database_path}...\n")
+    result = init_nodes(database_path)
+
+    click.echo("📊 Added this run:")
+    for t, n in sorted(result["added"].items()):
+        click.echo(f"  {t:20s} +{n:,}")
+    click.echo("\n📦 Totals in graph_nodes:")
+    for t, n in sorted(result["totals"].items()):
+        click.echo(f"  {t:20s} {n:>6,}")
+    click.echo("\n✅ Done.")
+
+
+@main.command(name="graph-sync-sources")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Process at most N wiki pages (for smoke tests).",
+)
+@click.option(
+    "--similarity-threshold",
+    type=float,
+    default=0.95,
+    show_default=True,
+    help="Treat changes as cosmetic if difflib ratio exceeds this.",
+)
+def graph_sync_sources(
+    database_path: Optional[str],
+    limit: Optional[int],
+    similarity_threshold: float,
+) -> None:
+    """Snapshot wiki_text sections into graph_source_text with change detection."""
+    from ..graph.source_sync import sync_sources
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    click.echo(f"🧩 Syncing sources from wiki_text in {database_path}...\n")
+    stats = sync_sources(
+        database_path,
+        similarity_threshold=similarity_threshold,
+        limit=limit,
+    )
+    click.echo("\n📊 Sync stats:")
+    click.echo(f"  Sections scanned:    {stats.scanned:,}")
+    click.echo(f"  Inserted (new):      {stats.inserted:,}")
+    click.echo(f"  Unchanged (touched): {stats.unchanged:,}")
+    click.echo(f"  Superseded:          {stats.superseded:,}")
+    click.echo(f"  Skipped (too short): {stats.skipped_short:,}")
+    click.echo("\n✅ Done.")
+
+
+@main.command(name="graph-extract")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Extract at most N source rows (for smoke tests or cost control).",
+)
+@click.option(
+    "--force",
+    is_flag=True,
+    default=False,
+    help="Ignore prompt_version cache; re-extract every eligible source row.",
+)
+@click.option(
+    "--source-id",
+    default=None,
+    help="Extract only rows matching this source_id (e.g. a single wiki page_id).",
+)
+@click.option(
+    "--model",
+    default=None,
+    help="Groq model name (defaults to llama-3.3-70b-versatile).",
+)
+@click.option(
+    "--rate-limit-rpm",
+    type=int,
+    default=25,
+    show_default=True,
+    help="Client-side throttle in requests per minute (Groq free tier ≈30).",
+)
+@click.option(
+    "--scope",
+    type=click.Choice(["all", "important"]),
+    default="all",
+    show_default=True,
+    help=(
+        "Candidate pool. 'all' = every wiki section. 'important' = arcs/sagas "
+        "+ top 500 chars by appearance + top 500 by wiki length + bounty>100M "
+        "+ recent (last_appearance>=1100 AND appearance_count>=3)."
+    ),
+)
+@click.option(
+    "--provider",
+    type=click.Choice(["groq", "anthropic"]),
+    default="groq",
+    show_default=True,
+    help="LLM provider. Anthropic uses Claude (claude-haiku-4-5 default).",
+)
+@click.option(
+    "--concurrency",
+    type=int,
+    default=1,
+    show_default=True,
+    help=(
+        "Parallel API calls. 1 = sequential (with --rate-limit-rpm). "
+        "Use 10-20 with --provider anthropic to amortize per-call latency."
+    ),
+)
+def graph_extract(
+    database_path: Optional[str],
+    limit: Optional[int],
+    force: bool,
+    source_id: Optional[str],
+    model: Optional[str],
+    rate_limit_rpm: int,
+    scope: str,
+    provider: str,
+    concurrency: int,
+) -> None:
+    """Run LLM extraction over pending graph_source_text rows."""
+    from ..graph.extractor import run_extraction
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    click.echo(
+        f"🤖 Extracting triples (provider={provider}, "
+        f"model={model or 'default'}, scope={scope}, concurrency={concurrency})...\n"
+    )
+    stats = run_extraction(
+        db_path=database_path,
+        limit=limit,
+        force=force,
+        source_id=source_id,
+        model=model,
+        rate_limit_rpm=rate_limit_rpm,
+        scope=scope,
+        provider=provider,
+        concurrency=concurrency,
+    )
+
+    click.echo("\n📊 Extraction stats:")
+    click.echo(f"  Candidates:          {stats.candidates:,}")
+    click.echo(f"  Extracted:           {stats.extracted:,}")
+    click.echo(f"  Skipped (cached):    {stats.skipped_cached:,}")
+    click.echo(f"  Skipped (entities):  {stats.skipped_no_entities:,}")
+    click.echo(f"  Failed:              {stats.failed:,}")
+    click.echo(f"  Triples emitted:     {stats.total_triples:,}")
+    click.echo(f"  Tokens in / out:     {stats.input_tokens:,} / {stats.output_tokens:,}")
+    click.echo("\n✅ Done.")
+
+
 if __name__ == "__main__":
     main()
