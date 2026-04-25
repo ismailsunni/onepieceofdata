@@ -2205,5 +2205,78 @@ def graph_sync_sources(
     click.echo("\n✅ Done.")
 
 
+@main.command(name="graph-extract")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+@click.option(
+    "--limit",
+    type=int,
+    default=None,
+    help="Extract at most N source rows (for smoke tests or cost control).",
+)
+@click.option(
+    "--force",
+    is_flag=True,
+    default=False,
+    help="Ignore prompt_version cache; re-extract every eligible source row.",
+)
+@click.option(
+    "--source-id",
+    default=None,
+    help="Extract only rows matching this source_id (e.g. a single wiki page_id).",
+)
+@click.option(
+    "--model",
+    default=None,
+    help="Groq model name (defaults to llama-3.3-70b-versatile).",
+)
+@click.option(
+    "--rate-limit-rpm",
+    type=int,
+    default=25,
+    show_default=True,
+    help="Client-side throttle in requests per minute (Groq free tier ≈30).",
+)
+def graph_extract(
+    database_path: Optional[str],
+    limit: Optional[int],
+    force: bool,
+    source_id: Optional[str],
+    model: Optional[str],
+    rate_limit_rpm: int,
+) -> None:
+    """Run LLM extraction over pending graph_source_text rows."""
+    from ..graph.extractor import run_extraction
+    from ..graph.llm_extract import DEFAULT_MODEL
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    chosen_model = model or DEFAULT_MODEL
+    click.echo(f"🤖 Extracting triples with {chosen_model}...\n")
+    stats = run_extraction(
+        db_path=database_path,
+        limit=limit,
+        force=force,
+        source_id=source_id,
+        model=chosen_model,
+        rate_limit_rpm=rate_limit_rpm,
+    )
+
+    click.echo("\n📊 Extraction stats:")
+    click.echo(f"  Candidates:          {stats.candidates:,}")
+    click.echo(f"  Extracted:           {stats.extracted:,}")
+    click.echo(f"  Skipped (cached):    {stats.skipped_cached:,}")
+    click.echo(f"  Skipped (entities):  {stats.skipped_no_entities:,}")
+    click.echo(f"  Failed:              {stats.failed:,}")
+    click.echo(f"  Triples emitted:     {stats.total_triples:,}")
+    click.echo(f"  Tokens in / out:     {stats.input_tokens:,} / {stats.output_tokens:,}")
+    click.echo("\n✅ Done.")
+
+
 if __name__ == "__main__":
     main()
