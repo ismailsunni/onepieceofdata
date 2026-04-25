@@ -6,6 +6,8 @@ import duckdb
 import psycopg2
 from dotenv import load_dotenv
 
+from onepieceofdata.config.settings import get_settings
+
 load_dotenv('.env')
 
 
@@ -159,7 +161,7 @@ def main():
 
     create_tables(cur)
 
-    duck = duckdb.connect("onepiece-master.duckdb", read_only=True)
+    duck = duckdb.connect(str(get_settings().database_path), read_only=True)
     export_wiki_text(cur, duck)
     export_wiki_chunks(cur, duck)
     duck.close()
