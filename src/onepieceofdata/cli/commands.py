@@ -2240,6 +2240,17 @@ def graph_sync_sources(
     show_default=True,
     help="Client-side throttle in requests per minute (Groq free tier ≈30).",
 )
+@click.option(
+    "--scope",
+    type=click.Choice(["all", "important"]),
+    default="all",
+    show_default=True,
+    help=(
+        "Candidate pool. 'all' = every wiki section. 'important' = arcs/sagas "
+        "+ top 500 chars by appearance + top 500 by wiki length + bounty>100M "
+        "+ recent (last_appearance>=1100 AND appearance_count>=3)."
+    ),
+)
 def graph_extract(
     database_path: Optional[str],
     limit: Optional[int],
@@ -2247,6 +2258,7 @@ def graph_extract(
     source_id: Optional[str],
     model: Optional[str],
     rate_limit_rpm: int,
+    scope: str,
 ) -> None:
     """Run LLM extraction over pending graph_source_text rows."""
     from ..graph.extractor import run_extraction
@@ -2257,7 +2269,7 @@ def graph_extract(
         database_path = str(get_settings().database_path)
 
     chosen_model = model or DEFAULT_MODEL
-    click.echo(f"🤖 Extracting triples with {chosen_model}...\n")
+    click.echo(f"🤖 Extracting triples with {chosen_model} (scope={scope})...\n")
     stats = run_extraction(
         db_path=database_path,
         limit=limit,
@@ -2265,6 +2277,7 @@ def graph_extract(
         source_id=source_id,
         model=chosen_model,
         rate_limit_rpm=rate_limit_rpm,
+        scope=scope,
     )
 
     click.echo("\n📊 Extraction stats:")

@@ -40,6 +40,7 @@ def run_extraction(
     source_id: str | None = None,
     model: str = DEFAULT_MODEL,
     rate_limit_rpm: int = 25,
+    scope: str = "all",
 ) -> ExtractStats:
     """Extract triples from pending source rows, writing to graph_extractions."""
     load_dotenv()
@@ -61,10 +62,10 @@ def run_extraction(
             ).fetchall()
         )
 
-        candidates = _select_candidates(conn, limit, force, source_id)
+        candidates = _select_candidates(conn, limit, force, source_id, scope)
         stats.candidates = len(candidates)
         if not force and limit is None:
-            eligible_total = _count_eligible(conn, source_id)
+            eligible_total = _count_eligible(conn, source_id, scope)
             stats.skipped_cached = max(eligible_total - len(candidates), 0)
         logger.info(
             f"Found {len(candidates):,} source rows to extract "
@@ -131,11 +132,74 @@ def run_extraction(
         conn.close()
 
 
+# --- scope filtering --------------------------------------------------------
+#
+# scope="important" restricts the candidate pool to:
+#   - all arc and saga wiki pages
+#   - top 500 characters by appearance_count
+#   - top 500 characters by wiki page length
+#   - characters with bounty > 100M
+#   - characters with last_appearance >= 1100 AND appearance_count >= 3
+# This is the recommended default for paid-API runs to keep cost bounded
+# while still catching the long tail of recently-introduced major characters.
+
+SCOPE_TOP_CHARS = 500
+SCOPE_MIN_BOUNTY = 100_000_000
+SCOPE_RECENT_FROM = 1100
+SCOPE_RECENT_MIN_APPEARANCES = 3
+
+
+def _scope_clause(scope: str) -> tuple[str, list]:
+    """Return (sql_fragment, params) restricting st.source_id by scope."""
+    if scope == "all":
+        return "", []
+    if scope != "important":
+        raise ValueError(f"Unknown scope: {scope!r}")
+
+    sql = """(
+      st.source_table = 'wiki_text' AND st.source_id IN (
+        SELECT page_id FROM wiki_text WHERE page_type IN ('arc', 'saga')
+        UNION
+        SELECT wt.page_id FROM wiki_text wt
+        JOIN (
+          SELECT name FROM character
+          WHERE appearance_count IS NOT NULL
+          ORDER BY appearance_count DESC LIMIT ?
+        ) top_app ON top_app.name = wt.title
+        WHERE wt.page_type = 'character'
+        UNION
+        SELECT page_id FROM (
+          SELECT page_id FROM wiki_text WHERE page_type = 'character'
+          ORDER BY length(full_text) DESC LIMIT ?
+        )
+        UNION
+        SELECT wt.page_id FROM wiki_text wt
+        JOIN character c ON c.name = wt.title
+        WHERE wt.page_type = 'character' AND c.bounty > ?
+        UNION
+        SELECT wt.page_id FROM wiki_text wt
+        JOIN character c ON c.name = wt.title
+        WHERE wt.page_type = 'character'
+          AND c.last_appearance >= ?
+          AND c.appearance_count >= ?
+      )
+    )"""
+    params = [
+        SCOPE_TOP_CHARS,
+        SCOPE_TOP_CHARS,
+        SCOPE_MIN_BOUNTY,
+        SCOPE_RECENT_FROM,
+        SCOPE_RECENT_MIN_APPEARANCES,
+    ]
+    return sql, params
+
+
 def _select_candidates(
     conn: duckdb.DuckDBPyConnection,
     limit: int | None,
     force: bool,
     source_id: str | None,
+    scope: str = "all",
 ) -> list[tuple[int, str, list[int]]]:
     """Return (source_text_id, text, entities_found) rows needing extraction."""
     where = ["st.superseded_at IS NULL", "array_length(st.entities_found) >= 2"]
@@ -144,6 +208,11 @@ def _select_candidates(
     if source_id is not None:
         where.append("st.source_id = ?")
         params.append(source_id)
+
+    scope_sql, scope_params = _scope_clause(scope)
+    if scope_sql:
+        where.append(scope_sql)
+        params.extend(scope_params)
 
     if not force:
         # Skip sources that already have an extraction at the current PROMPT_VERSION
@@ -169,15 +238,20 @@ def _select_candidates(
 def _count_eligible(
     conn: duckdb.DuckDBPyConnection,
     source_id: str | None,
+    scope: str = "all",
 ) -> int:
     """Count source rows eligible for extraction, ignoring the cache filter."""
-    where = ["superseded_at IS NULL", "array_length(entities_found) >= 2"]
+    where = ["st.superseded_at IS NULL", "array_length(st.entities_found) >= 2"]
     params: list = []
     if source_id is not None:
-        where.append("source_id = ?")
+        where.append("st.source_id = ?")
         params.append(source_id)
+    scope_sql, scope_params = _scope_clause(scope)
+    if scope_sql:
+        where.append(scope_sql)
+        params.extend(scope_params)
     query = (
-        "SELECT COUNT(*) FROM graph_source_text "
+        "SELECT COUNT(*) FROM graph_source_text st "
         f"WHERE {' AND '.join(where)}"
     )
     return conn.execute(query, params).fetchone()[0]

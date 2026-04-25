@@ -900,6 +900,10 @@ graph-extract-force:
 	@echo "🤖 Re-extracting all triples (ignoring cache)..."
 	$(UV) run onepieceofdata graph-extract --force
 
+graph-extract-important:
+	@echo "🤖 Extracting triples for important characters + arcs + sagas..."
+	$(UV) run onepieceofdata graph-extract --scope important
+
 # Clean up generated files
 clean:
 	@echo "🧹 Cleaning up..."
