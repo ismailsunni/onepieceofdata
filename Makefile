@@ -888,6 +888,18 @@ graph-sync-sources:
 	@echo "🧩 Snapshotting wiki sections into graph_source_text..."
 	$(UV) run onepieceofdata graph-sync-sources
 
+graph-extract:
+	@echo "🤖 Extracting triples via Groq..."
+	$(UV) run onepieceofdata graph-extract
+
+graph-extract-sample:
+	@echo "🤖 Extracting triples (sample of 5)..."
+	$(UV) run onepieceofdata graph-extract --limit 5
+
+graph-extract-force:
+	@echo "🤖 Re-extracting all triples (ignoring cache)..."
+	$(UV) run onepieceofdata graph-extract --force
+
 # Clean up generated files
 clean:
 	@echo "🧹 Cleaning up..."
