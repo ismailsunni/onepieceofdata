@@ -4,7 +4,7 @@ Kept intentionally small. Expand by adding entries and bumping PROMPT_VERSION,
 which triggers selective re-extraction in the extraction pipeline.
 """
 
-PROMPT_VERSION = 1
+PROMPT_VERSION = 2
 
 NODE_TYPES = ("character", "crew", "organization", "devil_fruit", "location")
 
