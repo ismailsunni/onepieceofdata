@@ -14,6 +14,7 @@ from __future__ import annotations
 import json
 
 from anthropic import Anthropic
+from loguru import logger
 
 from .llm_extract import (
     MAX_ENTITIES_IN_PROMPT,
@@ -94,6 +95,11 @@ def extract_triples_anthropic(
     text_out = next(
         (b.text for b in response.content if b.type == "text"), "{}"
     )
+    if response.stop_reason == "max_tokens":
+        logger.warning(
+            f"Anthropic response truncated by max_tokens={MAX_OUTPUT_TOKENS}; "
+            "triples after the truncation point will be lost"
+        )
     try:
         parsed = json.loads(text_out)
     except json.JSONDecodeError:

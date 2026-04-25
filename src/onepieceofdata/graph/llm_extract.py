@@ -21,7 +21,7 @@ from .relations import RELATIONS
 
 MAX_TEXT_CHARS = 3000          # truncate to keep cost predictable
 MAX_ENTITIES_IN_PROMPT = 60    # upper bound on entity list size
-MAX_OUTPUT_TOKENS = 1024
+MAX_OUTPUT_TOKENS = 4096
 DEFAULT_MODEL = "llama-3.3-70b-versatile"
 
 
