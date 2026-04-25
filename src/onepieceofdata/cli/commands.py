@@ -2251,6 +2251,23 @@ def graph_sync_sources(
         "+ recent (last_appearance>=1100 AND appearance_count>=3)."
     ),
 )
+@click.option(
+    "--provider",
+    type=click.Choice(["groq", "anthropic"]),
+    default="groq",
+    show_default=True,
+    help="LLM provider. Anthropic uses Claude (claude-haiku-4-5 default).",
+)
+@click.option(
+    "--concurrency",
+    type=int,
+    default=1,
+    show_default=True,
+    help=(
+        "Parallel API calls. 1 = sequential (with --rate-limit-rpm). "
+        "Use 10-20 with --provider anthropic to amortize per-call latency."
+    ),
+)
 def graph_extract(
     database_path: Optional[str],
     limit: Optional[int],
@@ -2259,25 +2276,30 @@ def graph_extract(
     model: Optional[str],
     rate_limit_rpm: int,
     scope: str,
+    provider: str,
+    concurrency: int,
 ) -> None:
     """Run LLM extraction over pending graph_source_text rows."""
     from ..graph.extractor import run_extraction
-    from ..graph.llm_extract import DEFAULT_MODEL
 
     if database_path is None:
         from ..config.settings import get_settings
         database_path = str(get_settings().database_path)
 
-    chosen_model = model or DEFAULT_MODEL
-    click.echo(f"🤖 Extracting triples with {chosen_model} (scope={scope})...\n")
+    click.echo(
+        f"🤖 Extracting triples (provider={provider}, "
+        f"model={model or 'default'}, scope={scope}, concurrency={concurrency})...\n"
+    )
     stats = run_extraction(
         db_path=database_path,
         limit=limit,
         force=force,
         source_id=source_id,
-        model=chosen_model,
+        model=model,
         rate_limit_rpm=rate_limit_rpm,
         scope=scope,
+        provider=provider,
+        concurrency=concurrency,
     )
 
     click.echo("\n📊 Extraction stats:")

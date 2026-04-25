@@ -904,6 +904,24 @@ graph-extract-important:
 	@echo "🤖 Extracting triples for important characters + arcs + sagas..."
 	$(UV) run onepieceofdata graph-extract --scope important
 
+graph-extract-haiku:
+	@echo "🤖 Extracting with Claude Haiku 4.5 (scope=all, concurrency=15)..."
+	$(UV) run onepieceofdata graph-extract \
+		--provider anthropic --model claude-haiku-4-5 \
+		--scope all --concurrency 15
+
+graph-extract-haiku-sample:
+	@echo "🤖 Extracting with Claude Haiku 4.5 (sample of 5)..."
+	$(UV) run onepieceofdata graph-extract \
+		--provider anthropic --model claude-haiku-4-5 \
+		--limit 5 --force
+
+graph-extract-sonnet:
+	@echo "🤖 Extracting with Claude Sonnet 4.6 (scope=all, concurrency=15)..."
+	$(UV) run onepieceofdata graph-extract \
+		--provider anthropic --model claude-sonnet-4-6 \
+		--scope all --concurrency 15
+
 # Clean up generated files
 clean:
 	@echo "🧹 Cleaning up..."
