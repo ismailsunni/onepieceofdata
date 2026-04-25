@@ -2,13 +2,15 @@
 
 Usage:
     python -m onepieceofdata.cli.chat
-    python -m onepieceofdata.cli.chat --db ./onepiece-master.duckdb
+    python -m onepieceofdata.cli.chat --db ./data/onepiece.duckdb
 """
 
 import argparse
 import sys
 
 from dotenv import load_dotenv
+
+from onepieceofdata.config.settings import get_settings
 
 
 TOOL_LABELS = {
@@ -35,11 +37,12 @@ def _on_tool_call(tool_name: str, arguments: dict):
 def main():
     load_dotenv()
 
+    default_db = str(get_settings().database_path)
     parser = argparse.ArgumentParser(description="One Piece chatbot")
     parser.add_argument(
         "--db",
-        default="./onepiece-master.duckdb",
-        help="Path to DuckDB database (default: ./onepiece-master.duckdb)",
+        default=default_db,
+        help=f"Path to DuckDB database (default: {default_db})",
     )
     parser.add_argument(
         "--model",

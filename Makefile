@@ -855,16 +855,16 @@ wiki-status: ## Show wiki scraping progress
 	uv run python -m onepieceofdata.cli.wiki_scrape --status
 
 embed-wiki: ## Chunk + embed wiki text + save to DuckDB
-	uv run python -m onepieceofdata.cli.embed --run --db ./onepiece-master.duckdb
+	uv run python -m onepieceofdata.cli.embed --run
 
 embed-status: ## Show embedding stats
-	uv run python -m onepieceofdata.cli.embed --status --db ./onepiece-master.duckdb
+	uv run python -m onepieceofdata.cli.embed --status
 
 search: ## Search wiki (usage: make search Q="gear 5")
-	uv run python -m onepieceofdata.cli.embed --search "$(Q)" --db ./onepiece-master.duckdb
+	uv run python -m onepieceofdata.cli.embed --search "$(Q)"
 
 chat: ## Start One Piece chatbot
-	uv run python -m onepieceofdata.cli.chat --db ./onepiece-master.duckdb
+	uv run python -m onepieceofdata.cli.chat
 
 # Export wiki text + chunks to Supabase with FTS indexes
 export-supabase-fts:
@@ -906,6 +906,57 @@ update-new-chapter:
 	@echo "═══════════════════════════════════════════════════════════════"
 	@echo "✅ NEW CHAPTER UPDATE COMPLETED!"
 	@echo "═══════════════════════════════════════════════════════════════"
+
+# Story graph — initialize schema (idempotent)
+graph-init-schema:
+	@echo "🕸️  Initializing story graph schema..."
+	$(UV) run onepieceofdata graph-init-schema
+
+graph-reset-schema:
+	@echo "🕸️  Resetting story graph schema (destructive)..."
+	$(UV) run onepieceofdata graph-init-schema --reset
+
+graph-init-nodes:
+	@echo "🕸️  Populating graph_nodes..."
+	$(UV) run onepieceofdata graph-init-nodes
+
+graph-sync-sources:
+	@echo "🧩 Snapshotting wiki sections into graph_source_text..."
+	$(UV) run onepieceofdata graph-sync-sources
+
+graph-extract:
+	@echo "🤖 Extracting triples via Groq..."
+	$(UV) run onepieceofdata graph-extract
+
+graph-extract-sample:
+	@echo "🤖 Extracting triples (sample of 5)..."
+	$(UV) run onepieceofdata graph-extract --limit 5
+
+graph-extract-force:
+	@echo "🤖 Re-extracting all triples (ignoring cache)..."
+	$(UV) run onepieceofdata graph-extract --force
+
+graph-extract-important:
+	@echo "🤖 Extracting triples for important characters + arcs + sagas..."
+	$(UV) run onepieceofdata graph-extract --scope important
+
+graph-extract-haiku:
+	@echo "🤖 Extracting with Claude Haiku 4.5 (scope=all, concurrency=15)..."
+	$(UV) run onepieceofdata graph-extract \
+		--provider anthropic --model claude-haiku-4-5 \
+		--scope all --concurrency 15
+
+graph-extract-haiku-sample:
+	@echo "🤖 Extracting with Claude Haiku 4.5 (sample of 5)..."
+	$(UV) run onepieceofdata graph-extract \
+		--provider anthropic --model claude-haiku-4-5 \
+		--limit 5 --force
+
+graph-extract-sonnet:
+	@echo "🤖 Extracting with Claude Sonnet 4.6 (scope=all, concurrency=15)..."
+	$(UV) run onepieceofdata graph-extract \
+		--provider anthropic --model claude-sonnet-4-6 \
+		--scope all --concurrency 15
 
 # Clean up generated files
 clean:
