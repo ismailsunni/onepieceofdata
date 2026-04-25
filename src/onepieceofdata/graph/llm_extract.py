@@ -36,19 +36,22 @@ You will be given:
 1. A list of ENTITIES known to appear in the text (by their canonical names).
 2. A TEXT passage.
 
-Your task: emit a JSON object {{"triples": [...]}} listing relationships that
-the TEXT explicitly supports.
+Your task: emit a JSON object {{"triples": [...]}} listing ONLY relationships
+that the TEXT itself explicitly supports. Do NOT use prior knowledge.
 
-Rules:
+Hard rules — violations cause the triple to be rejected:
+- evidence_text MUST be a verbatim quote of at least 5 words copied from
+  the TEXT. Do NOT write "none", "n/a", paraphrases, or empty strings.
+  If you cannot quote ≥5 supporting words from the TEXT, DO NOT emit the triple.
+- The quote must directly justify the relation. A passing mention of the
+  object alongside the subject is NOT enough (e.g. "Nami wore the hat" does
+  NOT justify ally_of between Luffy and Nami).
 - Use ONLY the entity names listed in ENTITIES, verbatim, for subject and object.
 - Use ONLY the relation names from this vocabulary:
 {_relations_block()}
-- Do NOT invent relations or entities.
-- If the text does not clearly support a relation, skip it.
-- confidence is 0.0–1.0; use 0.9+ only for claims stated directly.
-- evidence_chapter is an integer chapter number if the text mentions one,
-  otherwise null.
-- evidence_text is a short (≤120 chars) quote or paraphrase from the text.
+- confidence ∈ [0.6, 1.0] only. Anything you would rate below 0.6, OMIT entirely.
+- Do not emit duplicate (subject, relation, object) triples within one response.
+- evidence_chapter: integer if the TEXT mentions a chapter number, else null.
 
 Output strictly this JSON shape (no prose, no markdown):
 {{
@@ -58,12 +61,13 @@ Output strictly this JSON shape (no prose, no markdown):
       "relation": "<relation name>",
       "object": "<entity name>",
       "evidence_chapter": <int or null>,
-      "evidence_text": "<short quote>",
-      "confidence": <float 0..1>
+      "evidence_text": "<verbatim quote, ≥5 words, ≤200 chars>",
+      "confidence": <float 0.6..1.0>
     }}
   ]
 }}
-If nothing qualifies, return {{"triples": []}}."""
+If nothing qualifies, return {{"triples": []}}. An empty result is correct
+and expected for sections that do not describe relationships."""
 
 
 @dataclass
@@ -126,6 +130,9 @@ def extract_triples(
     )
 
 
+_BAD_EVIDENCE = {"", "none", "n/a", "na", "null"}
+
+
 def _valid_triple(t: object) -> bool:
     if not isinstance(t, dict):
         return False
@@ -138,4 +145,22 @@ def _valid_triple(t: object) -> bool:
         return False
     if subj == obj:
         return False
+
+    evidence = t.get("evidence_text")
+    if not isinstance(evidence, str):
+        return False
+    cleaned = evidence.strip().strip("'\"").lower()
+    if cleaned in _BAD_EVIDENCE:
+        return False
+    if len(evidence.split()) < 5:
+        return False
+
+    conf = t.get("confidence")
+    try:
+        conf_f = float(conf) if conf is not None else 0.0
+    except (TypeError, ValueError):
+        return False
+    if conf_f < 0.6:
+        return False
+
     return True
