@@ -1,7 +1,8 @@
 """Driver that walks graph_source_text and writes graph_extractions.
 
 Skips any row that already has an extraction at the current PROMPT_VERSION
-unless --force is passed. Respects a simple rate limit for Groq free tier.
+unless --force is passed. Supports two providers (Groq, Anthropic) and
+optional thread-pool concurrency for Anthropic's higher rate limits.
 """
 
 from __future__ import annotations
@@ -9,11 +10,11 @@ from __future__ import annotations
 import json
 import os
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
 
 import duckdb
 from dotenv import load_dotenv
-from groq import Groq
 from loguru import logger
 
 from .llm_extract import DEFAULT_MODEL, extract_triples
@@ -38,22 +39,23 @@ def run_extraction(
     limit: int | None = None,
     force: bool = False,
     source_id: str | None = None,
-    model: str = DEFAULT_MODEL,
+    model: str | None = None,
     rate_limit_rpm: int = 25,
     scope: str = "all",
+    provider: str = "groq",
+    concurrency: int = 1,
 ) -> ExtractStats:
     """Extract triples from pending source rows, writing to graph_extractions."""
     load_dotenv()
-    if not os.environ.get("GROQ_API_KEY"):
-        raise RuntimeError(
-            "GROQ_API_KEY is not set. Add it to .env or export it before running."
-        )
-    create_graph_tables(db_path)
-    client = Groq()
+    client, extract_fn, resolved_model = _build_client(provider, model)
 
+    create_graph_tables(db_path)
     conn = duckdb.connect(db_path)
     stats = ExtractStats()
-    min_interval = 60.0 / rate_limit_rpm if rate_limit_rpm > 0 else 0.0
+    min_interval = (
+        60.0 / rate_limit_rpm if rate_limit_rpm > 0 and concurrency == 1 else 0.0
+    )
+    model = resolved_model
 
     try:
         id_to_name = dict(
@@ -69,58 +71,29 @@ def run_extraction(
             stats.skipped_cached = max(eligible_total - len(candidates), 0)
         logger.info(
             f"Found {len(candidates):,} source rows to extract "
-            f"(prompt_version={PROMPT_VERSION}, model={model}, force={force})"
+            f"(provider={provider}, model={model}, prompt_version={PROMPT_VERSION}, "
+            f"concurrency={concurrency}, force={force})"
         )
 
-        last_call = 0.0
-        for row_num, (src_id, text, entity_ids) in enumerate(candidates, start=1):
+        # Resolve entity names up front; skip rows with <2 known entities.
+        jobs: list[tuple[int, str, list[str]]] = []
+        for src_id, text, entity_ids in candidates:
             entity_names = [
                 id_to_name[i] for i in (entity_ids or []) if i in id_to_name
             ]
             if len(entity_names) < 2:
                 stats.skipped_no_entities += 1
                 continue
+            jobs.append((src_id, text, entity_names))
 
-            wait = min_interval - (time.monotonic() - last_call)
-            if wait > 0:
-                time.sleep(wait)
-
-            try:
-                result = extract_triples(client, text, entity_names, model=model)
-                last_call = time.monotonic()
-            except Exception as e:
-                logger.warning(f"Extraction failed for source_text_id={src_id}: {e}")
-                stats.failed += 1
-                continue
-
-            stats.extracted += 1
-            stats.input_tokens += result.input_tokens
-            stats.output_tokens += result.output_tokens
-            stats.total_triples += len(result.triples)
-
-            conn.execute(
-                """
-                INSERT INTO graph_extractions
-                    (source_text_id, model, prompt_version, raw_triples,
-                     input_tokens, output_tokens)
-                VALUES (?, ?, ?, ?, ?, ?)
-                """,
-                [
-                    src_id,
-                    result.model,
-                    PROMPT_VERSION,
-                    json.dumps(result.triples),
-                    result.input_tokens,
-                    result.output_tokens,
-                ],
+        if concurrency > 1:
+            _run_concurrent(
+                jobs, conn, stats, client, extract_fn, model, concurrency
             )
-
-            if row_num % 25 == 0 or row_num == len(candidates):
-                logger.info(
-                    f"  progress {row_num}/{len(candidates)} "
-                    f"triples={stats.total_triples} "
-                    f"tokens_in={stats.input_tokens} out={stats.output_tokens}"
-                )
+        else:
+            _run_sequential(
+                jobs, conn, stats, client, extract_fn, model, min_interval
+            )
 
         logger.success(
             f"Extract done — extracted={stats.extracted} "
@@ -130,6 +103,116 @@ def run_extraction(
         return stats
     finally:
         conn.close()
+
+
+# --- provider plumbing ------------------------------------------------------
+
+
+def _build_client(provider: str, model: str | None):
+    """Return (client, extract_fn, resolved_model) for the chosen provider."""
+    if provider == "groq":
+        if not os.environ.get("GROQ_API_KEY"):
+            raise RuntimeError("GROQ_API_KEY is not set.")
+        from groq import Groq
+        return Groq(), extract_triples, model or DEFAULT_MODEL
+
+    if provider == "anthropic":
+        if not os.environ.get("ANTHROPIC_API_KEY"):
+            raise RuntimeError("ANTHROPIC_API_KEY is not set.")
+        from anthropic import Anthropic
+
+        from .anthropic_extract import (
+            DEFAULT_ANTHROPIC_MODEL,
+            extract_triples_anthropic,
+        )
+        return Anthropic(), extract_triples_anthropic, model or DEFAULT_ANTHROPIC_MODEL
+
+    raise ValueError(f"Unknown provider: {provider!r}")
+
+
+def _insert_extraction(conn, src_id, result) -> None:
+    conn.execute(
+        """
+        INSERT INTO graph_extractions
+            (source_text_id, model, prompt_version, raw_triples,
+             input_tokens, output_tokens)
+        VALUES (?, ?, ?, ?, ?, ?)
+        """,
+        [
+            src_id,
+            result.model,
+            PROMPT_VERSION,
+            json.dumps(result.triples),
+            result.input_tokens,
+            result.output_tokens,
+        ],
+    )
+
+
+def _run_sequential(jobs, conn, stats, client, extract_fn, model, min_interval):
+    last_call = 0.0
+    total = len(jobs)
+    for row_num, (src_id, text, entity_names) in enumerate(jobs, start=1):
+        wait = min_interval - (time.monotonic() - last_call)
+        if wait > 0:
+            time.sleep(wait)
+        try:
+            result = extract_fn(client, text, entity_names, model=model)
+            last_call = time.monotonic()
+        except Exception as e:
+            logger.warning(f"Extraction failed for source_text_id={src_id}: {e}")
+            stats.failed += 1
+            continue
+
+        stats.extracted += 1
+        stats.input_tokens += result.input_tokens
+        stats.output_tokens += result.output_tokens
+        stats.total_triples += len(result.triples)
+        _insert_extraction(conn, src_id, result)
+
+        if row_num % 25 == 0 or row_num == total:
+            logger.info(
+                f"  progress {row_num}/{total} "
+                f"triples={stats.total_triples} "
+                f"tokens_in={stats.input_tokens} out={stats.output_tokens}"
+            )
+
+
+def _run_concurrent(jobs, conn, stats, client, extract_fn, model, concurrency):
+    """Thread-pool fan-out. Workers do API calls; main thread writes to DuckDB."""
+    total = len(jobs)
+    done = 0
+
+    def _call(job):
+        src_id, text, entity_names = job
+        try:
+            return src_id, extract_fn(client, text, entity_names, model=model), None
+        except Exception as e:  # noqa: BLE001
+            return src_id, None, e
+
+    with ThreadPoolExecutor(max_workers=concurrency) as pool:
+        futures = [pool.submit(_call, job) for job in jobs]
+        for fut in as_completed(futures):
+            src_id, result, err = fut.result()
+            done += 1
+            if err is not None:
+                logger.warning(
+                    f"Extraction failed for source_text_id={src_id}: {err}"
+                )
+                stats.failed += 1
+            else:
+                stats.extracted += 1
+                stats.input_tokens += result.input_tokens
+                stats.output_tokens += result.output_tokens
+                stats.total_triples += len(result.triples)
+                _insert_extraction(conn, src_id, result)
+
+            if done % 25 == 0 or done == total:
+                logger.info(
+                    f"  progress {done}/{total} "
+                    f"triples={stats.total_triples} "
+                    f"tokens_in={stats.input_tokens} out={stats.output_tokens}"
+                )
 
 
 # --- scope filtering --------------------------------------------------------
