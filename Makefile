@@ -819,16 +819,16 @@ wiki-status: ## Show wiki scraping progress
 	uv run python -m onepieceofdata.cli.wiki_scrape --status
 
 embed-wiki: ## Chunk + embed wiki text + save to DuckDB
-	uv run python -m onepieceofdata.cli.embed --run --db ./onepiece-master.duckdb
+	uv run python -m onepieceofdata.cli.embed --run
 
 embed-status: ## Show embedding stats
-	uv run python -m onepieceofdata.cli.embed --status --db ./onepiece-master.duckdb
+	uv run python -m onepieceofdata.cli.embed --status
 
 search: ## Search wiki (usage: make search Q="gear 5")
-	uv run python -m onepieceofdata.cli.embed --search "$(Q)" --db ./onepiece-master.duckdb
+	uv run python -m onepieceofdata.cli.embed --search "$(Q)"
 
 chat: ## Start One Piece chatbot
-	uv run python -m onepieceofdata.cli.chat --db ./onepiece-master.duckdb
+	uv run python -m onepieceofdata.cli.chat
 
 # Export wiki text + chunks to Supabase with FTS indexes
 export-supabase-fts:
