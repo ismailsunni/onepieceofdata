@@ -31,31 +31,60 @@ def _fetch_categories_batch(
     """Return ``{title: {category_name, ...}}`` for a batch of page titles.
 
     Only categories in :data:`HAKI_CATEGORIES` are kept.
+
+    Implementation note: even with the ``clcategories`` filter, MediaWiki
+    paginates the categories list across multiple responses when the total
+    number of (page, category) pairs in the batch exceeds its internal
+    limit (~10 per request for ``cllimit`` default). We must follow the
+    ``continue`` token until exhausted, otherwise any page whose categories
+    fall after the first-response cutoff is silently treated as having
+    none — this is what was hiding Edward Newgate's three haki tags.
     """
     results: Dict[str, Set[str]] = {t: set() for t in titles}
     target_cats = set(HAKI_CATEGORIES.keys())
-    # Filter server-side so the API only returns the 3 haki categories,
-    # avoiding pagination issues when batching 50 titles at a time.
     cl_filter = "|".join(f"Category:{c}" for c in target_cats)
 
     for i in range(0, len(titles), BATCH_SIZE):
         batch = titles[i : i + BATCH_SIZE]
-        params = {
+        base_params = {
             "action": "query",
             "titles": "|".join(batch),
             "prop": "categories",
             "clcategories": cl_filter,
+            "cllimit": "max",
             "redirects": 1,
         }
-        data = client._make_request(params)  # noqa: SLF001
-        query = data.get("query", {})
 
-        # Build normalization/redirect forward map (same as thumbnail script).
         forward: Dict[str, str] = {}
-        for n in query.get("normalized", []) or []:
-            forward[n["from"]] = n["to"]
-        for r in query.get("redirects", []) or []:
-            forward[r["from"]] = r["to"]
+        cats_by_title: Dict[str, Set[str]] = {}
+        continue_token: Dict[str, str] = {}
+
+        # Follow continuation tokens until the server says it's done.
+        while True:
+            params = {**base_params, **continue_token}
+            data = client._make_request(params)  # noqa: SLF001
+            query = data.get("query", {})
+
+            for n in query.get("normalized", []) or []:
+                forward[n["from"]] = n["to"]
+            for r in query.get("redirects", []) or []:
+                forward[r["from"]] = r["to"]
+
+            for _pid, page in (query.get("pages") or {}).items():
+                title = page.get("title")
+                if not title:
+                    continue
+                bucket = cats_by_title.setdefault(title, set())
+                for cat in page.get("categories") or []:
+                    cat_title = cat.get("title", "")
+                    if cat_title.startswith("Category:"):
+                        bucket.add(cat_title[len("Category:"):])
+
+            cont = data.get("continue")
+            if not cont:
+                break
+            # Drop the bookkeeping "continue" key, keep e.g. "clcontinue".
+            continue_token = {k: v for k, v in cont.items() if k != "continue"}
 
         def resolve(t: str) -> str:
             seen: set = set()
@@ -64,24 +93,13 @@ def _fetch_categories_batch(
                 t = forward[t]
             return t
 
-        # Index pages by title (API returns titles with spaces).
-        by_title: Dict[str, list] = {}
-        for _pid, page in (query.get("pages") or {}).items():
-            title = page.get("title")
-            if title:
-                by_title[title] = page.get("categories") or []
-
         for t in batch:
             resolved = resolve(t)
             resolved_sp = resolved.replace("_", " ")
-            cats = by_title.get(resolved_sp) or by_title.get(resolved) or []
-            for cat in cats:
-                cat_title = cat.get("title", "")
-                # Strip "Category:" prefix
-                if cat_title.startswith("Category:"):
-                    cat_name = cat_title[len("Category:"):]
-                    if cat_name in target_cats:
-                        results[t].add(cat_name)
+            cats = cats_by_title.get(resolved_sp) or cats_by_title.get(resolved) or set()
+            for cat_name in cats:
+                if cat_name in target_cats:
+                    results[t].add(cat_name)
 
     return results
 
