@@ -34,6 +34,8 @@ class SchemaMapper:
         'character_affiliation',  # Depends on: character (by character_id)
         'character_devil_fruit',  # Depends on: character (by character_id)
         'character_occupation',   # Depends on: character (by character_id)
+        'graph_nodes',   # No dependencies (story graph entities)
+        'graph_edges',   # Depends on: graph_nodes (subject_id, object_id)
     ]
 
     @classmethod
@@ -137,7 +139,11 @@ class SchemaMapper:
             'cov': [
                 "ALTER TABLE cov ADD CONSTRAINT fk_cov_volume FOREIGN KEY (volume) REFERENCES volume(number) ON DELETE CASCADE;",
                 "ALTER TABLE cov ADD CONSTRAINT fk_cov_character FOREIGN KEY (character) REFERENCES character(id) ON DELETE CASCADE;"
-            ]
+            ],
+            'graph_edges': [
+                "ALTER TABLE graph_edges ADD CONSTRAINT fk_graph_edges_subject FOREIGN KEY (subject_id) REFERENCES graph_nodes(id) ON DELETE CASCADE;",
+                "ALTER TABLE graph_edges ADD CONSTRAINT fk_graph_edges_object FOREIGN KEY (object_id) REFERENCES graph_nodes(id) ON DELETE CASCADE;",
+            ],
         }
 
         return fk_definitions.get(table_name, [])
