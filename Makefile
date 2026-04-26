@@ -953,10 +953,10 @@ graph-extract-haiku-sample:
 		--limit 5 --force
 
 graph-extract-sonnet:
-	@echo "🤖 Extracting with Claude Sonnet 4.6 (scope=all, concurrency=15)..."
+	@echo "🤖 Extracting with Claude Sonnet 4.6 (scope=all, concurrency=50)..."
 	$(UV) run onepieceofdata graph-extract \
 		--provider anthropic --model claude-sonnet-4-6 \
-		--scope all --concurrency 15
+		--scope all --concurrency 50
 
 # Clean up generated files
 clean:
