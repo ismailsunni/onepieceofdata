@@ -956,6 +956,10 @@ graph-build:
 	@echo "🔨 Building graph_edges from extractions (deterministic)..."
 	$(UV) run onepieceofdata graph-build --show-unlinkable 20
 
+graph-viz:
+	@echo "🌐 Launching interactive graph viewer at http://localhost:8501 ..."
+	$(UV) run streamlit run src/onepieceofdata/graph/viz_app.py
+
 graph-extract-sonnet:
 	@echo "🤖 Extracting with Claude Sonnet 4.6 (scope=all, concurrency=50)..."
 	$(UV) run onepieceofdata graph-extract \
