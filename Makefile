@@ -952,6 +952,10 @@ graph-extract-haiku-sample:
 		--provider anthropic --model claude-haiku-4-5 \
 		--limit 5 --force
 
+graph-build:
+	@echo "🔨 Building graph_edges from extractions (deterministic)..."
+	$(UV) run onepieceofdata graph-build --show-unlinkable 20
+
 graph-extract-sonnet:
 	@echo "🤖 Extracting with Claude Sonnet 4.6 (scope=all, concurrency=50)..."
 	$(UV) run onepieceofdata graph-extract \

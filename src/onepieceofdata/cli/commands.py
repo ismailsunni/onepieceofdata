@@ -2511,5 +2511,63 @@ def graph_extract(
     click.echo("\n✅ Done.")
 
 
+@main.command(name="graph-build")
+@click.option(
+    "--database-path",
+    default=None,
+    help="Path to DuckDB database (defaults to configured database path).",
+)
+@click.option(
+    "--confidence",
+    type=float,
+    default=0.6,
+    show_default=True,
+    help="Drop triples with confidence below this threshold.",
+)
+@click.option(
+    "--show-unlinkable",
+    type=int,
+    default=0,
+    help="Show top-N unlinkable subject/object names (0 = silent).",
+)
+def graph_build(
+    database_path: Optional[str],
+    confidence: float,
+    show_unlinkable: int,
+) -> None:
+    """Build graph_edges from graph_extractions (deterministic, no LLM)."""
+    from ..graph.builder import build_graph
+
+    if database_path is None:
+        from ..config.settings import get_settings
+        database_path = str(get_settings().database_path)
+
+    click.echo(f"🔨 Building graph_edges from {database_path}...\n")
+    stats = build_graph(db_path=database_path, confidence_threshold=confidence)
+
+    click.echo("\n📊 Build stats:")
+    click.echo(f"  Extractions read:        {stats.extractions_read:,}")
+    click.echo(f"  Triples total:           {stats.triples_total:,}")
+    click.echo(f"  Dropped (low conf):      {stats.triples_dropped_low_conf:,}")
+    click.echo(f"  Dropped (unknown rel):   {stats.triples_dropped_unknown_relation:,}")
+    click.echo(f"  Dropped (unlinkable):    {stats.triples_dropped_unlinkable:,}")
+    click.echo(f"  Edges after dedup:       {stats.edges_after_dedup:,}")
+
+    if show_unlinkable and stats.unlinkable_subjects:
+        click.echo(f"\nTop unlinkable subjects (top {show_unlinkable}):")
+        for name, n in sorted(
+            stats.unlinkable_subjects.items(), key=lambda x: -x[1]
+        )[:show_unlinkable]:
+            click.echo(f"  {n:>4}  {name}")
+    if show_unlinkable and stats.unlinkable_objects:
+        click.echo(f"\nTop unlinkable objects (top {show_unlinkable}):")
+        for name, n in sorted(
+            stats.unlinkable_objects.items(), key=lambda x: -x[1]
+        )[:show_unlinkable]:
+            click.echo(f"  {n:>4}  {name}")
+
+    click.echo("\n✅ Done.")
+
+
 if __name__ == "__main__":
     main()
