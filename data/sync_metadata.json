@@ -1,9 +1,13 @@
 {
-  "last_sync": "2026-04-21T08:46:13.985558",
+  "last_sync": "2026-04-27T05:50:31.093981",
   "tables": {
-    "character": {
-      "row_count": 1450,
-      "last_synced": "2026-04-21T08:46:14.095590"
+    "graph_nodes": {
+      "row_count": 1919,
+      "last_synced": "2026-04-27T05:50:31.219491"
+    },
+    "graph_edges": {
+      "row_count": 19320,
+      "last_synced": "2026-04-27T05:50:31.339572"
     }
   }
 }
