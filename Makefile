@@ -14,7 +14,7 @@ UV := uv
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
-	export-supabase-fts update-new-chapter \
+	export-supabase-fts update-new-chapter compare-supabase \
 	parse-affiliations parse-affiliations-dry-run \
 	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails \
 	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run
@@ -174,6 +174,7 @@ help:
 	@echo "  embed-status             - Show embedding stats"
 	@echo "  search Q=\"...\"           - Test semantic search (e.g. make search Q=\"gear 5\")"
 	@echo "  export-supabase-fts      - Export wiki text + chunks to Supabase (with FTS indexes)"
+	@echo "  compare-supabase         - Compare local DuckDB vs Supabase (row counts + PK diffs)"
 	@echo "  chat                     - Start interactive One Piece chatbot"
 	@echo ""
 	@echo "📅 WEEKLY: NEW CHAPTER RELEASED"
@@ -640,6 +641,11 @@ run-all-postprocessors:
 	$(MAKE) compute-importance
 	@echo ""
 	@echo "✅ All post-processing completed!"
+
+# Compare row counts between local DuckDB and Supabase
+compare-supabase:
+	@echo "🔍 Comparing local DuckDB with Supabase..."
+	$(UV) run python scripts/compare_duckdb_supabase.py
 
 # Run ALL exports (CSV + PostgreSQL)
 run-all-exports:
