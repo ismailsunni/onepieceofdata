@@ -9,7 +9,7 @@ UV := uv
 	run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers \
 	run-all-scrapers run-all-parsers run-all-postprocessors run-all-exports run-data-pipeline \
 	status db-status migrate-birth-dates migrate-birth-dates-full load-cov config export \
-	postgres-start postgres-stop postgres-logs postgres-init export-postgres export-postgres-full postgres-status \
+	postgres-start postgres-stop postgres-logs postgres-init export-postgres export-postgres-full export-postgres-chapter export-postgres-graph postgres-status \
 	test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure \
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
@@ -150,8 +150,10 @@ help:
 	@echo "  postgres-stop        - Stop PostgreSQL containers"
 	@echo "  postgres-logs        - View PostgreSQL logs (follow mode)"
 	@echo "  postgres-init        - Start PostgreSQL + run full export ⭐"
-	@echo "  export-postgres-full - Export DuckDB → PostgreSQL (full sync, drops tables)"
-	@echo "  export-postgres      - Export DuckDB → PostgreSQL (incremental sync)"
+	@echo "  export-postgres-full    - Export ALL tables → PostgreSQL (full sync, slow ~13min)"
+	@echo "  export-postgres-chapter - Export chapter/character tables only (full sync, fast)"
+	@echo "  export-postgres-graph   - Export graph_nodes + graph_edges only (full sync, ~10min)"
+	@echo "  export-postgres         - Export DuckDB → PostgreSQL (incremental sync)"
 	@echo "  postgres-status      - Check PostgreSQL sync status and row counts"
 	@echo ""
 	@echo "📤 OTHER EXPORTS"
@@ -647,15 +649,18 @@ compare-supabase:
 	@echo "🔍 Comparing local DuckDB with Supabase..."
 	$(UV) run python scripts/compare_duckdb_supabase.py
 
-# Run ALL exports (CSV + PostgreSQL)
+# Run ALL exports (CSV + PostgreSQL chapter data).
+# NOTE: graph tables (graph_nodes, graph_edges) are NOT exported here — they're
+# slow (~10min for graph_edges) and only change when the story graph is rebuilt.
+# Run `make export-postgres-graph` separately after a graph re-extraction.
 run-all-exports:
 	@echo "📤 Running ALL exports..."
 	@echo ""
 	@echo "📄 Step 1/2: Exporting to CSV files..."
 	$(MAKE) export
 	@echo ""
-	@echo "🐘 Step 2/2: Exporting to PostgreSQL (full sync)..."
-	$(MAKE) export-postgres-full
+	@echo "🐘 Step 2/2: Exporting chapter data to PostgreSQL (full sync, no graph)..."
+	$(MAKE) export-postgres-chapter
 	@echo ""
 	@echo "✅ All exports completed!"
 
@@ -708,9 +713,26 @@ postgres-logs:
 	@echo "📋 PostgreSQL logs (Ctrl+C to exit)..."
 	docker compose logs -f postgres
 
+# Table groups for split exports.
+# Chapter data changes weekly with each new chapter release.
+# Graph data only changes when graph extraction is rerun (rare, expensive).
+POSTGRES_CHAPTER_TABLES := saga,arc,volume,chapter,character,character_affiliation,character_devil_fruit,character_occupation
+POSTGRES_GRAPH_TABLES := graph_nodes,graph_edges
+
 export-postgres-full:
-	@echo "🚀 Exporting to PostgreSQL (full sync)..."
+	@echo "🚀 Exporting to PostgreSQL (full sync, all tables)..."
 	$(UV) run onepieceofdata export-postgres --mode full
+
+# Full sync of chapter-related tables only (skips graph_nodes/graph_edges,
+# which are slow and rarely change between chapter releases).
+export-postgres-chapter:
+	@echo "🚀 Exporting chapter data to PostgreSQL (full sync)..."
+	$(UV) run onepieceofdata export-postgres --mode full --tables $(POSTGRES_CHAPTER_TABLES)
+
+# Full sync of graph tables only (run after re-extracting the story graph).
+export-postgres-graph:
+	@echo "🚀 Exporting graph data to PostgreSQL (full sync)..."
+	$(UV) run onepieceofdata export-postgres --mode full --tables $(POSTGRES_GRAPH_TABLES)
 
 export-postgres:
 	@echo "🚀 Exporting to PostgreSQL (incremental sync)..."
