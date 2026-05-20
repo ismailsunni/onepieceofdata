@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import mimetypes
+import re
 import sys
 import time
 import unicodedata
@@ -142,6 +143,95 @@ def get_pageimages(
             results[t] = by_title.get(resolved_space) or by_title.get(resolved)
 
     return results
+
+
+def get_page_images(
+    client: FandomAPIClient, titles: List[str]
+) -> Dict[str, List[str]]:
+    """Return ``{title: [image_filename, ...]}`` for a batch of titles.
+
+    Uses ``prop=images``, which lists every File: link on the page (infobox,
+    galleries, references, etc.). Used as a fallback when ``pageimages`` is
+    empty for a page.
+    """
+    results: Dict[str, List[str]] = {t: [] for t in titles}
+
+    for i in range(0, len(titles), BATCH_SIZE):
+        batch = titles[i : i + BATCH_SIZE]
+        params = {
+            "action": "query",
+            "titles": "|".join(batch),
+            "prop": "images",
+            "imlimit": "max",
+            "redirects": 1,
+        }
+        data = client._make_request(params)  # noqa: SLF001
+        query = data.get("query", {})
+
+        forward: Dict[str, str] = {}
+        for n in query.get("normalized", []) or []:
+            forward[n["from"]] = n["to"]
+        for r in query.get("redirects", []) or []:
+            forward[r["from"]] = r["to"]
+
+        def resolve(t: str) -> str:
+            seen = set()
+            while t in forward and t not in seen:
+                seen.add(t)
+                t = forward[t]
+            return t
+
+        pages = query.get("pages", {}) or {}
+        by_title: Dict[str, List[str]] = {}
+        for _page_id, page in pages.items():
+            title = page.get("title")
+            if not title:
+                continue
+            images = []
+            for img in page.get("images", []) or []:
+                t = img.get("title", "")
+                if ":" in t:
+                    t = t.split(":", 1)[1]
+                # Normalize to underscores so it matches pageimage style.
+                images.append(t.replace(" ", "_"))
+            by_title[title] = images
+
+        for t in batch:
+            resolved = resolve(t)
+            resolved_space = resolved.replace("_", " ")
+            results[t] = (
+                by_title.get(resolved_space) or by_title.get(resolved) or []
+            )
+
+    return results
+
+
+# Patterns to score candidates from prop=images. Higher index = lower priority.
+_FALLBACK_PATTERNS: List[re.Pattern] = [
+    re.compile(r"Anime.*Infobox", re.IGNORECASE),
+    re.compile(r"Manga.*Infobox", re.IGNORECASE),
+    re.compile(r"Digital[_ ]Colored[_ ]Manga", re.IGNORECASE),
+    re.compile(r"Infobox", re.IGNORECASE),
+]
+
+# Filetypes worth keeping; anything else (svg, gif of unrelated icons) ranks last.
+_IMAGE_EXT_RE = re.compile(r"\.(png|jpe?g|webp)$", re.IGNORECASE)
+
+
+def pick_fallback_image(filenames: List[str]) -> Optional[str]:
+    """Pick the most promising image filename from a page's ``images`` list.
+
+    Priority: Anime Infobox > Manga Infobox > Digital Colored Manga > any
+    Infobox > first remaining image with a usable extension.
+    """
+    candidates = [f for f in filenames if _IMAGE_EXT_RE.search(f)]
+    if not candidates:
+        return None
+    for pattern in _FALLBACK_PATTERNS:
+        for f in candidates:
+            if pattern.search(f):
+                return f
+    return candidates[0]
 
 
 def get_imageinfo(
@@ -309,6 +399,24 @@ def plan_jobs(
         job.pageimage = pageimages.get(cid)
         if not job.pageimage:
             job.error = "no pageimage"
+
+    # Fallback: for characters where pageimages came up empty, query the
+    # page's full File: link list and pick the best-looking infobox image.
+    # Catches pages where the infobox uses a template that the pageimages
+    # extension doesn't recognize (e.g. Cosmo).
+    missing = [cid for cid, job in jobs.items() if not job.pageimage]
+    if missing:
+        logger.info(
+            f"Falling back to prop=images for {len(missing)} characters "
+            "without pageimage..."
+        )
+        page_images = get_page_images(client, missing)
+        for cid in missing:
+            chosen = pick_fallback_image(page_images.get(cid, []))
+            if chosen:
+                jobs[cid].pageimage = chosen
+                jobs[cid].error = None
+                jobs[cid].variant = "fallback"
 
     # Build the combined filename list (anime + manga variant).
     to_check: List[str] = []
