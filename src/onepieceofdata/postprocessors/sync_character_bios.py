@@ -40,6 +40,10 @@ def _extract_bio(intro_text: str) -> Optional[str]:
     # Strip Japanese notation parentheticals: ( Japanese, romanization? )
     # e.g. "( ニャーバン・兄弟, Nyāban Burazāzu? )" or "( 剣豪, kengō? )"
     text = re.sub(r"\(\s*[\u3000-\u9fff\uff00-\uffef・][^)]*\)", "", text)
+    # Also strip romanization-only parentheticals that use the wiki "?" help
+    # marker but start with romaji/codenames, e.g. "( PUNK-02, Panku-Tsu? )".
+    # The trailing "?" is the {{Japanese}} template marker, not a question.
+    text = re.sub(r"\(\s*[^()]*\?\s*\)", "", text)
     # Strip any remaining CJK characters
     text = re.sub(r"[\u3000-\u9fff\uff00-\uffef・]+", "", text)
     # Collapse multiple spaces
@@ -51,6 +55,8 @@ def _extract_bio(intro_text: str) -> Optional[str]:
     text = re.sub(r"\s+(['\u2019])(\w)", r"\1\2", text)
     # Remove space before hyphen in compound words: "human -traits" → "human-traits"
     text = re.sub(r"\s+-(\w)", r"-\1", text)
+    # Trailing possessive on words ending in "s": "MADS ' first" -> "MADS' first"
+    text = re.sub(r"(\w)\s+(['’])\s+", r"\1\2 ", text)
 
     if not text:
         return None
@@ -59,6 +65,31 @@ def _extract_bio(intro_text: str) -> Optional[str]:
     # and common honorific abbreviations from being treated as sentence ends.
     # Replace them with a placeholder, split, then restore.
     protected = re.sub(r"\b([A-Z])\.\s+([A-Z])", r"\1<DOT> \2", text)
+    # Protect multi-letter honorifics/abbreviations followed by a name,
+    # e.g. "Dr. Vegapunk", "Mr. 2", "Mt. Fuji".
+    abbreviations = (
+        "Dr",
+        "Mr",
+        "Mrs",
+        "Ms",
+        "Prof",
+        "St",
+        "Sr",
+        "Jr",
+        "Mt",
+        "Capt",
+        "Lt",
+        "Sgt",
+        "Gen",
+        "Cmdr",
+        "vs",
+        "No",
+    )
+    protected = re.sub(
+        rf"\b({'|'.join(abbreviations)})\.\s+",
+        r"\1<DOT> ",
+        protected,
+    )
     sentences = re.split(r"(?<=[.!?])\s+", protected)
     bio = " ".join(sentences[:BIO_SENTENCES]).strip()
     bio = bio.replace("<DOT>", ".")
