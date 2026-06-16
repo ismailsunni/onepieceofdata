@@ -21964,10 +21964,10 @@
         "full_text": "Smoker"
       },
       {
-        "name": "Arabasta",
-        "url": "/wiki/Arabasta",
+        "name": "Arabasta Kingdom",
+        "url": "/wiki/Arabasta_Kingdom",
         "note": "flashback",
-        "full_text": "Arabasta"
+        "full_text": "Arabasta Kingdom"
       },
       {
         "name": "Nefertari Vivi",
@@ -27827,44 +27827,38 @@
       {
         "name": "Monkey D. Luffy",
         "url": "/wiki/Monkey_D._Luffy",
-        "note": "Marine Rank",
+        "note": "",
         "full_text": "Monkey D. Luffy"
       },
       {
         "name": "Roronoa Zoro",
         "url": "/wiki/Roronoa_Zoro",
-        "note": "Marine Rank",
+        "note": "",
         "full_text": "Roronoa Zoro"
       },
       {
         "name": "Nami",
         "url": "/wiki/Nami",
-        "note": "Marine Rank",
+        "note": "",
         "full_text": "Nami"
       },
       {
         "name": "Usopp",
         "url": "/wiki/Usopp",
-        "note": "Marine Rank",
+        "note": "",
         "full_text": "Usopp"
       },
       {
         "name": "Sanji",
         "url": "/wiki/Sanji",
-        "note": "Marine Rank",
+        "note": "",
         "full_text": "Sanji"
       },
       {
         "name": "Tony Tony Chopper",
         "url": "/wiki/Tony_Tony_Chopper",
-        "note": "Marine Rank",
-        "full_text": "Tony Tony Chopper"
-      },
-      {
-        "name": "Captain",
-        "url": "/wiki/Captain_(Marine_Rank)",
         "note": "",
-        "full_text": "Captain"
+        "full_text": "Tony Tony Chopper"
       },
       {
         "name": "Hina",
@@ -27873,34 +27867,46 @@
         "full_text": "Hina"
       },
       {
-        "name": "Chief Petty Officer",
-        "url": "/wiki/Marine_Ranks#Chief_Petty_Officer",
-        "note": "",
-        "full_text": "Chief Petty Officer"
-      },
-      {
         "name": "Shine",
         "url": "/wiki/Shine",
         "note": "",
         "full_text": "Shine"
       },
       {
-        "name": "Seaman Recruit",
-        "url": "/wiki/Marine_Ranks#Seaman_Recruit",
-        "note": "cover",
-        "full_text": "Seaman Recruit"
-      },
-      {
         "name": "Fullbody",
         "url": "/wiki/Fullbody",
-        "note": "cover",
+        "note": "",
         "full_text": "Fullbody"
       },
       {
         "name": "Jango",
         "url": "/wiki/Jango",
-        "note": "cover",
+        "note": "",
         "full_text": "Jango"
+      },
+      {
+        "name": "Arabasta",
+        "url": "/wiki/Arabasta",
+        "note": "cover",
+        "full_text": "Arabasta"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "url": "/wiki/Nefertari_Vivi",
+        "note": "cover",
+        "full_text": "Nefertari Vivi"
+      },
+      {
+        "name": "Igaram",
+        "url": "/wiki/Igaram",
+        "note": "cover",
+        "full_text": "Igaram"
+      },
+      {
+        "name": "Chaka",
+        "url": "/wiki/Chaka",
+        "note": "cover",
+        "full_text": "Chaka"
       },
       {
         "name": "Sea Floor",
@@ -27915,34 +27921,10 @@
         "full_text": "Octopako"
       },
       {
-        "name": "Headband Catfish Village",
-        "url": "/wiki/Headband_Catfish_Village",
+        "name": "Headband Catfish Village Elder",
+        "url": "/wiki/Headband_Catfish_Village_Elder",
         "note": "cover",
-        "full_text": "Headband Catfish Village"
-      },
-      {
-        "name": "Arabasta",
-        "url": "/wiki/Arabasta",
-        "note": "",
-        "full_text": "Arabasta"
-      },
-      {
-        "name": "Nefertari Vivi",
-        "url": "/wiki/Nefertari_Vivi",
-        "note": "",
-        "full_text": "Nefertari Vivi"
-      },
-      {
-        "name": "Igaram",
-        "url": "/wiki/Igaram",
-        "note": "",
-        "full_text": "Igaram"
-      },
-      {
-        "name": "Chaka",
-        "url": "/wiki/Chaka",
-        "note": "",
-        "full_text": "Chaka"
+        "full_text": "Headband Catfish Village Elder"
       },
       {
         "name": "Officer Agents",
@@ -28089,34 +28071,70 @@
         "full_text": "Hatchan"
       },
       {
-        "name": "Captain",
-        "url": "/wiki/Captain_(Marine_Rank)",
-        "note": "",
-        "full_text": "Captain"
-      },
-      {
         "name": "Hina",
         "url": "/wiki/Hina",
-        "note": "",
+        "note": "photo",
         "full_text": "Hina"
-      },
-      {
-        "name": "Seaman Recruit",
-        "url": "/wiki/Marine_Ranks#Seaman_Recruit",
-        "note": "cover",
-        "full_text": "Seaman Recruit"
       },
       {
         "name": "Fullbody",
         "url": "/wiki/Fullbody",
-        "note": "cover",
+        "note": "photo",
         "full_text": "Fullbody"
       },
       {
         "name": "Jango",
         "url": "/wiki/Jango",
-        "note": "cover",
+        "note": "photo",
         "full_text": "Jango"
+      },
+      {
+        "name": "Arabasta",
+        "url": "/wiki/Arabasta",
+        "note": "photo",
+        "full_text": "Arabasta"
+      },
+      {
+        "name": "Nefertari Cobra",
+        "url": "/wiki/Nefertari_Cobra",
+        "note": "photo",
+        "full_text": "Nefertari Cobra"
+      },
+      {
+        "name": "Nefertari Titi",
+        "url": "/wiki/Nefertari_Titi",
+        "note": "photo",
+        "full_text": "Nefertari Titi"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "url": "/wiki/Nefertari_Vivi",
+        "note": "cover",
+        "full_text": "Nefertari Vivi"
+      },
+      {
+        "name": "Igaram",
+        "url": "/wiki/Igaram",
+        "note": "cover",
+        "full_text": "Igaram"
+      },
+      {
+        "name": "Chaka",
+        "url": "/wiki/Chaka",
+        "note": "cover",
+        "full_text": "Chaka"
+      },
+      {
+        "name": "Terracotta",
+        "url": "/wiki/Terracotta",
+        "note": "cover",
+        "full_text": "Terracotta"
+      },
+      {
+        "name": "Maidy",
+        "url": "/wiki/Maidy",
+        "note": "cover",
+        "full_text": "Maidy"
       },
       {
         "name": "Sea Floor",
@@ -28143,52 +28161,10 @@
         "full_text": "Mash"
       },
       {
-        "name": "Arabasta",
-        "url": "/wiki/Arabasta",
-        "note": "photo",
-        "full_text": "Arabasta"
-      },
-      {
-        "name": "Nefertari Cobra",
-        "url": "/wiki/Nefertari_Cobra",
-        "note": "photo",
-        "full_text": "Nefertari Cobra"
-      },
-      {
-        "name": "Nefertari Titi",
-        "url": "/wiki/Nefertari_Titi",
-        "note": "photo",
-        "full_text": "Nefertari Titi"
-      },
-      {
-        "name": "Nefertari Vivi",
-        "url": "/wiki/Nefertari_Vivi",
-        "note": "",
-        "full_text": "Nefertari Vivi"
-      },
-      {
-        "name": "Igaram",
-        "url": "/wiki/Igaram",
-        "note": "",
-        "full_text": "Igaram"
-      },
-      {
-        "name": "Chaka",
-        "url": "/wiki/Chaka",
-        "note": "",
-        "full_text": "Chaka"
-      },
-      {
-        "name": "Terracotta",
-        "url": "/wiki/Terracotta",
-        "note": "",
-        "full_text": "Terracotta"
-      },
-      {
-        "name": "Maidy",
-        "url": "/wiki/Maidy",
-        "note": "",
-        "full_text": "Maidy"
+        "name": "Headband Catfish Village Elder",
+        "url": "/wiki/Headband_Catfish_Village_Elder",
+        "note": "cover",
+        "full_text": "Headband Catfish Village Elder"
       },
       {
         "name": "Officer Agents",
@@ -28306,16 +28282,52 @@
         "full_text": "Hatchan"
       },
       {
-        "name": "Ensign",
-        "url": "/wiki/Marine_Ranks#Ensign",
-        "note": "cover",
-        "full_text": "Ensign"
-      },
-      {
         "name": "Makko",
         "url": "/wiki/Makko",
-        "note": "cover",
+        "note": "",
         "full_text": "Makko"
+      },
+      {
+        "name": "Arabasta",
+        "url": "/wiki/Arabasta",
+        "note": "",
+        "full_text": "Arabasta"
+      },
+      {
+        "name": "Nefertari Cobra",
+        "url": "/wiki/Nefertari_Cobra",
+        "note": "",
+        "full_text": "Nefertari Cobra"
+      },
+      {
+        "name": "Nefertari Vivi",
+        "url": "/wiki/Nefertari_Vivi",
+        "note": "cover",
+        "full_text": "Nefertari Vivi"
+      },
+      {
+        "name": "Igaram",
+        "url": "/wiki/Igaram",
+        "note": "cover",
+        "full_text": "Igaram"
+      },
+      {
+        "name": "Koza",
+        "url": "/wiki/Koza",
+        "note": "cover",
+        "full_text": "Koza"
+      },
+      {
+        "name": "Toto",
+        "url": "/wiki/Toto",
+        "note": "cover",
+        "full_text": "Toto"
+      },
+      {
+        "name": "Yoshimoto",
+        "url": "/wiki/Yoshimoto",
+        "note": "cover",
+        "full_text": "Yoshimoto"
       },
       {
         "name": "Sea Floor",
@@ -28342,46 +28354,10 @@
         "full_text": "Mash"
       },
       {
-        "name": "Arabasta",
-        "url": "/wiki/Arabasta",
-        "note": "",
-        "full_text": "Arabasta"
-      },
-      {
-        "name": "Nefertari Cobra",
-        "url": "/wiki/Nefertari_Cobra",
-        "note": "",
-        "full_text": "Nefertari Cobra"
-      },
-      {
-        "name": "Nefertari Vivi",
-        "url": "/wiki/Nefertari_Vivi",
-        "note": "",
-        "full_text": "Nefertari Vivi"
-      },
-      {
-        "name": "Igaram",
-        "url": "/wiki/Igaram",
-        "note": "",
-        "full_text": "Igaram"
-      },
-      {
-        "name": "Koza",
-        "url": "/wiki/Koza",
-        "note": "",
-        "full_text": "Koza"
-      },
-      {
-        "name": "Toto",
-        "url": "/wiki/Toto",
-        "note": "",
-        "full_text": "Toto"
-      },
-      {
-        "name": "Yoshimoto",
-        "url": "/wiki/Yoshimoto",
-        "note": "",
-        "full_text": "Yoshimoto"
+        "name": "Headband Catfish Village Elder",
+        "url": "/wiki/Headband_Catfish_Village_Elder",
+        "note": "cover",
+        "full_text": "Headband Catfish Village Elder"
       },
       {
         "name": "Mr. 3",
@@ -29118,7 +29094,7 @@
       {
         "name": "Roshio",
         "url": "/wiki/Roshio",
-        "note": "cover",
+        "note": "",
         "full_text": "Roshio"
       },
       {
@@ -29152,6 +29128,24 @@
         "full_text": "Hatchan"
       },
       {
+        "name": "Mock Town",
+        "url": "/wiki/Mock_Town",
+        "note": "cover",
+        "full_text": "Mock Town"
+      },
+      {
+        "name": "Van Augur",
+        "url": "/wiki/Van_Augur",
+        "note": "cover",
+        "full_text": "Van Augur"
+      },
+      {
+        "name": "Jesus Burgess",
+        "url": "/wiki/Jesus_Burgess",
+        "note": "cover",
+        "full_text": "Jesus Burgess"
+      },
+      {
         "name": "Sea Floor",
         "url": "/wiki/Sea_Floor",
         "note": "cover",
@@ -29176,22 +29170,10 @@
         "full_text": "Octopako"
       },
       {
-        "name": "Mock Town",
-        "url": "/wiki/Mock_Town",
-        "note": "",
-        "full_text": "Mock Town"
-      },
-      {
-        "name": "Van Augur",
-        "url": "/wiki/Van_Augur",
-        "note": "",
-        "full_text": "Van Augur"
-      },
-      {
-        "name": "Jesus Burgess",
-        "url": "/wiki/Jesus_Burgess",
-        "note": "",
-        "full_text": "Jesus Burgess"
+        "name": "Headband Catfish Village Elder",
+        "url": "/wiki/Headband_Catfish_Village_Elder",
+        "note": "cover",
+        "full_text": "Headband Catfish Village Elder"
       }
     ],
     "volume": "24",
@@ -29327,6 +29309,48 @@
         "full_text": "Hatchan"
       },
       {
+        "name": "Mock Town",
+        "url": "/wiki/Mock_Town",
+        "note": "",
+        "full_text": "Mock Town"
+      },
+      {
+        "name": "Terry",
+        "url": "/wiki/Terry",
+        "note": "",
+        "full_text": "Terry"
+      },
+      {
+        "name": "Spector",
+        "url": "/wiki/Spector",
+        "note": "",
+        "full_text": "Spector"
+      },
+      {
+        "name": "Doc Q",
+        "url": "/wiki/Doc_Q",
+        "note": "cover",
+        "full_text": "Doc Q"
+      },
+      {
+        "name": "Stronger",
+        "url": "/wiki/Stronger",
+        "note": "cover",
+        "full_text": "Stronger"
+      },
+      {
+        "name": "Jesus Burgess",
+        "url": "/wiki/Jesus_Burgess",
+        "note": "cover",
+        "full_text": "Jesus Burgess"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "cover",
+        "full_text": "Marshall D. Teach"
+      },
+      {
         "name": "Sea Floor",
         "url": "/wiki/Sea_Floor",
         "note": "cover",
@@ -29351,46 +29375,10 @@
         "full_text": "Octopako"
       },
       {
-        "name": "Mock Town",
-        "url": "/wiki/Mock_Town",
-        "note": "",
-        "full_text": "Mock Town"
-      },
-      {
-        "name": "Terry",
-        "url": "/wiki/Terry",
-        "note": "",
-        "full_text": "Terry"
-      },
-      {
-        "name": "Spector",
-        "url": "/wiki/Spector",
-        "note": "",
-        "full_text": "Spector"
-      },
-      {
-        "name": "Doc Q",
-        "url": "/wiki/Doc_Q",
-        "note": "",
-        "full_text": "Doc Q"
-      },
-      {
-        "name": "Stronger",
-        "url": "/wiki/Stronger",
-        "note": "",
-        "full_text": "Stronger"
-      },
-      {
-        "name": "Jesus Burgess",
-        "url": "/wiki/Jesus_Burgess",
-        "note": "",
-        "full_text": "Jesus Burgess"
-      },
-      {
-        "name": "Marshall D. Teach",
-        "url": "/wiki/Marshall_D._Teach",
-        "note": "",
-        "full_text": "Marshall D. Teach"
+        "name": "Headband Catfish Village Elder",
+        "url": "/wiki/Headband_Catfish_Village_Elder",
+        "note": "cover",
+        "full_text": "Headband Catfish Village Elder"
       }
     ],
     "volume": "24",
@@ -30019,6 +30007,12 @@
         "url": "/wiki/Pappag",
         "note": "cover",
         "full_text": "Pappag"
+      },
+      {
+        "name": "Headband Catfish Village Elder",
+        "url": "/wiki/Headband_Catfish_Village_Elder",
+        "note": "cover",
+        "full_text": "Headband Catfish Village Elder"
       },
       {
         "name": "Lvneel Kingdom",
@@ -66186,6 +66180,12 @@
         "url": "/wiki/Victoria_Cindry",
         "note": "",
         "full_text": "Victoria Cindry"
+      },
+      {
+        "name": "Buhichuck",
+        "url": "/wiki/Buhichuck",
+        "note": "",
+        "full_text": "Buhichuck"
       }
     ],
     "volume": "46",
@@ -66293,32 +66293,38 @@
       {
         "name": "Hildon",
         "url": "/wiki/Hildon",
-        "note": "cover",
+        "note": "image",
         "full_text": "Hildon"
       },
       {
         "name": "Buhichuck",
         "url": "/wiki/Buhichuck",
-        "note": "cover",
+        "note": "image",
         "full_text": "Buhichuck"
       },
       {
         "name": "Surprise Zombies",
         "url": "/wiki/Surprise_Zombies",
-        "note": "cover",
+        "note": "image",
         "full_text": "Surprise Zombies"
       },
       {
         "name": "MocDonald",
         "url": "/wiki/MocDonald",
-        "note": "cover",
+        "note": "image",
         "full_text": "MocDonald"
       },
       {
         "name": "Unigaro",
         "url": "/wiki/Unigaro",
-        "note": "cover",
+        "note": "image",
         "full_text": "Unigaro"
+      },
+      {
+        "name": "Victoria Cindry",
+        "url": "/wiki/Victoria_Cindry",
+        "note": "image",
+        "full_text": "Victoria Cindry"
       },
       {
         "name": "Moon",
@@ -75293,18 +75299,6 @@
         "full_text": "Brook"
       },
       {
-        "name": "Seven Warlords of the Sea",
-        "url": "/wiki/Seven_Warlords_of_the_Sea",
-        "note": "",
-        "full_text": "Seven Warlords of the Sea"
-      },
-      {
-        "name": "Bartholomew Kuma",
-        "url": "/wiki/Pacifista",
-        "note": "",
-        "full_text": "Bartholomew Kuma"
-      },
-      {
         "name": "Kid Pirates",
         "url": "/wiki/Kid_Pirates",
         "note": "",
@@ -75387,6 +75381,12 @@
         "url": "/wiki/Hattori",
         "note": "cover",
         "full_text": "Hattori"
+      },
+      {
+        "name": "Pacifista",
+        "url": "/wiki/Pacifista",
+        "note": "",
+        "full_text": "Pacifista"
       },
       {
         "name": "Sabaody Archipelago",
@@ -75624,18 +75624,6 @@
         "full_text": "Shanks"
       },
       {
-        "name": "Seven Warlords of the Sea",
-        "url": "/wiki/Seven_Warlords_of_the_Sea",
-        "note": "cover",
-        "full_text": "Seven Warlords of the Sea"
-      },
-      {
-        "name": "Bartholomew Kuma",
-        "url": "/wiki/Pacifista",
-        "note": "cover",
-        "full_text": "Bartholomew Kuma"
-      },
-      {
         "name": "CP9",
         "url": "/wiki/CP9",
         "note": "cover",
@@ -75682,6 +75670,12 @@
         "url": "/wiki/Kalifa",
         "note": "cover",
         "full_text": "Kalifa"
+      },
+      {
+        "name": "Pacifista",
+        "url": "/wiki/Pacifista",
+        "note": "silhouette",
+        "full_text": "Pacifista"
       },
       {
         "name": "Admiral",
@@ -79034,7 +79028,6 @@
     "title": "No One Can Stop This Now",
     "english_name": "Unstoppable",
     "japanese_title": "もう誰にも止められない",
-    "pages": "19",
     "characters": [
       {
         "name": "Pirate",
@@ -79175,22 +79168,10 @@
         "full_text": "Portgas D. Ace"
       },
       {
-        "name": "Fleet Admiral",
-        "url": "/wiki/Fleet_Admiral",
-        "note": "",
-        "full_text": "Fleet Admiral"
-      },
-      {
         "name": "Sengoku",
         "url": "/wiki/Sengoku",
         "note": "",
         "full_text": "Sengoku"
-      },
-      {
-        "name": "Admirals",
-        "url": "/wiki/Admirals",
-        "note": "",
-        "full_text": "Admirals"
       },
       {
         "name": "Kizaru",
@@ -79203,12 +79184,6 @@
         "url": "/wiki/Kuzan",
         "note": "",
         "full_text": "Aokiji"
-      },
-      {
-        "name": "Vice Admiral",
-        "url": "/wiki/Vice_Admiral",
-        "note": "",
-        "full_text": "Vice Admiral"
       },
       {
         "name": "Comil",
@@ -79247,22 +79222,10 @@
         "full_text": "Monkey D. Garp"
       },
       {
-        "name": "Commodore",
-        "url": "/wiki/Marine_Ranks#Commodore",
-        "note": "",
-        "full_text": "Commodore"
-      },
-      {
         "name": "Smoker",
         "url": "/wiki/Smoker",
         "note": "",
         "full_text": "Smoker"
-      },
-      {
-        "name": "Captains",
-        "url": "/wiki/Marine_Ranks#Captain",
-        "note": "",
-        "full_text": "Captains"
       },
       {
         "name": "T Bone",
@@ -79277,52 +79240,28 @@
         "full_text": "Hina"
       },
       {
-        "name": "Ensign",
-        "url": "/wiki/Marine_Ranks#Ensign",
-        "note": "",
-        "full_text": "Ensign"
-      },
-      {
         "name": "Tashigi",
         "url": "/wiki/Tashigi",
         "note": "",
         "full_text": "Tashigi"
       },
       {
-        "name": "Lieutenant Junior Grade",
-        "url": "/wiki/Marine_Ranks#Lieutenant_Junior_Grade",
-        "note": "",
-        "full_text": "Lieutenant Junior Grade"
-      },
-      {
         "name": "Stalker",
         "url": "/wiki/Stalker",
-        "note": "",
+        "note": "cover, former",
         "full_text": "Stalker"
-      },
-      {
-        "name": "Chief Petty Officer",
-        "url": "/wiki/Marine_Ranks#Chief_Petty_Officer",
-        "note": "",
-        "full_text": "Chief Petty Officer"
       },
       {
         "name": "Mashikaku",
         "url": "/wiki/Mashikaku",
-        "note": "",
+        "note": "cover, former",
         "full_text": "Mashikaku"
       },
       {
         "name": "Shine",
         "url": "/wiki/Shine",
-        "note": "",
-        "full_text": "Shine"
-      },
-      {
-        "name": "Seaman Recruits",
-        "url": "/wiki/Marine_Ranks#Seaman_Recruit",
         "note": "cover, former",
-        "full_text": "Seaman Recruits"
+        "full_text": "Shine"
       },
       {
         "name": "Jango",
@@ -79363,30 +79302,55 @@
       {
         "name": "Boin Archipelago",
         "url": "/wiki/Boin_Archipelago",
-        "note": "",
+        "note": "Tequila Wolf",
         "full_text": "Boin Archipelago"
       },
       {
         "name": "Heracles",
         "url": "/wiki/Heracles",
-        "note": "",
+        "note": "Tequila Wolf",
         "full_text": "Heracles"
       },
       {
         "name": "Namakura Island",
         "url": "/wiki/Namakura_Island",
-        "note": "",
+        "note": "Tequila Wolf",
         "full_text": "Namakura Island"
       },
       {
         "name": "Pekkori",
         "url": "/wiki/Pekkori",
-        "note": "",
+        "note": "Tequila Wolf",
         "full_text": "Pekkori"
+      },
+      {
+        "name": "Tequila Wolf",
+        "url": "/wiki/Tequila_Wolf",
+        "note": "Tequila Wolf",
+        "full_text": "Tequila Wolf"
+      },
+      {
+        "name": "Tequila Wolf Chief",
+        "url": "/wiki/Chief_(Tequila_Wolf)",
+        "note": "",
+        "full_text": "Tequila Wolf Chief"
+      },
+      {
+        "name": "Torino Kingdom",
+        "url": "/wiki/Torino_Kingdom",
+        "note": "",
+        "full_text": "Torino Kingdom"
+      },
+      {
+        "name": "Shanba",
+        "url": "/wiki/Shanba",
+        "note": "",
+        "full_text": "Shanba"
       }
     ],
     "volume": "54",
     "chapter_display": "524",
+    "pages": "19",
     "release_date": "December 1, 2008",
     "jump_info": "2009 Issue 1"
   },
@@ -167903,8 +167867,14 @@
       {
         "name": "Perona",
         "url": "/wiki/Perona",
-        "note": "",
+        "note": "K.O.",
         "full_text": "Perona"
+      },
+      {
+        "name": "Kumashi",
+        "url": "/wiki/Kumashi",
+        "note": "K.O.",
+        "full_text": "Kumashi"
       },
       {
         "name": "Seven Warlords of the Sea",
@@ -219066,26 +219036,38 @@
       {
         "name": "Atlas",
         "url": "/wiki/Vegapunk/Atlas",
-        "note": "flashback",
+        "note": "Tequila Wolf",
         "full_text": "Atlas"
       },
       {
         "name": "Baratie",
         "url": "/wiki/Baratie",
-        "note": "flashback",
+        "note": "Tequila Wolf",
         "full_text": "Baratie"
       },
       {
         "name": "Zeff",
         "url": "/wiki/Zeff",
-        "note": "flashback",
+        "note": "Tequila Wolf",
         "full_text": "Zeff"
       },
       {
         "name": "Patty",
         "url": "/wiki/Patty",
-        "note": "flashback",
+        "note": "Tequila Wolf",
         "full_text": "Patty"
+      },
+      {
+        "name": "Tequila Wolf",
+        "url": "/wiki/Tequila_Wolf",
+        "note": "Tequila Wolf",
+        "full_text": "Tequila Wolf"
+      },
+      {
+        "name": "Tequila Wolf Chief",
+        "url": "/wiki/Chief_(Tequila_Wolf)",
+        "note": "flashback",
+        "full_text": "Tequila Wolf Chief"
       },
       {
         "name": "Ohara",
@@ -235621,5 +235603,84 @@
     "pages": "13",
     "release_date": "June 1, 2026",
     "jump_info": "2026 Issue 27"
+  },
+  {
+    "chapter_number": 1185,
+    "title": "Mindja Own Beeswax",
+    "english_name": "Mindja Own Beeswax",
+    "japanese_title": "ほっときなはれ",
+    "characters": [
+      {
+        "name": "World Government",
+        "url": "/wiki/World_Government",
+        "note": "",
+        "full_text": "World Government"
+      },
+      {
+        "name": "Pirate",
+        "url": "/wiki/Pirate",
+        "note": "",
+        "full_text": "Pirate"
+      },
+      {
+        "name": "Esperia Kingdom",
+        "url": "/wiki/Esperia_Kingdom",
+        "note": "",
+        "full_text": "Esperia Kingdom"
+      },
+      {
+        "name": "Reuven",
+        "url": "/wiki/Reuven",
+        "note": "",
+        "full_text": "Reuven"
+      },
+      {
+        "name": "Candelle",
+        "url": "/wiki/Candelle",
+        "note": "silhouette",
+        "full_text": "Candelle"
+      },
+      {
+        "name": "Shuri",
+        "url": "/wiki/Manmayer_Gunko",
+        "note": "silhouette",
+        "full_text": "Shuri"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "silhouette",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Five Elders",
+        "url": "/wiki/Five_Elders",
+        "note": "silhouette",
+        "full_text": "Five Elders"
+      },
+      {
+        "name": "Marcus Mars",
+        "url": "/wiki/Marcus_Mars",
+        "note": "silhouette",
+        "full_text": "Marcus Mars"
+      },
+      {
+        "name": "Kuja Pirates",
+        "url": "/wiki/Kuja_Pirates",
+        "note": "cover",
+        "full_text": "Kuja Pirates"
+      },
+      {
+        "name": "Boa Hancock",
+        "url": "/wiki/Boa_Hancock",
+        "note": "cover",
+        "full_text": "Boa Hancock"
+      }
+    ],
+    "volume": "TBA",
+    "chapter_display": "1185",
+    "pages": "17",
+    "release_date": "June 15, 2026",
+    "jump_info": "2026 Issue 29"
   }
 ]
