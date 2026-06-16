@@ -195,12 +195,28 @@ When a new chapter is released, update `OP_LAST_CHAPTER` (and `OP_LAST_VOLUME` i
 make update-new-chapter
 ```
 
-This single command runs all 5 stages:
+This single command runs all 6 stages:
 1. `run-data-pipeline` — Scrape + parse + post-process structured data
 2. `run-all-exports` — Export CSV + PostgreSQL
 3. `wiki-scrape` — Re-scrape wiki text
 4. `embed-wiki` — Re-chunk + re-embed
 5. `export-supabase-fts` — Export wiki text + chunks to Supabase
+6. `release-db` — Publish the DuckDB snapshot to GitHub Releases
+
+## Database Versioning (GitHub Releases, not LFS)
+
+The DuckDB file is a **regenerable artifact** (fully rebuildable from the pipeline,
+and also exported to PostgreSQL/Supabase), so it is NOT tracked in git or Git LFS —
+it's gitignored. Snapshots are versioned as GitHub Release assets instead, which
+don't count against the LFS quota.
+
+- `make release-db` — gzip `data/onepiece.duckdb` (~114MB → ~47MB) and upload it as
+  asset of release `db-chapter-<N>` (chapter from `OP_LAST_CHAPTER`), then prune.
+- `make restore-db` — download + decompress the latest snapshot to `data/onepiece.duckdb`
+  (existing DB backed up to `.bak`).
+- **Tiered retention** (`scripts/release_db.sh`): keeps the newest `DB_RELEASE_KEEP`
+  releases (default 3) **plus** the newest release of each of the most recent
+  `DB_RELEASE_MONTHLY` calendar months (default 6); everything else is deleted.
 
 ## Git Commit Guidelines
 

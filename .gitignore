@@ -130,3 +130,8 @@ dmypy.json
 
 postgres_data/
 logs/
+
+# DuckDB is a regenerable artifact — versioned via GitHub Releases (make release-db),
+# not in git/LFS. See scripts/release_db.sh and scripts/restore_db.sh.
+*.duckdb
+*.duckdb.bak

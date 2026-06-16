@@ -17,7 +17,8 @@ UV := uv
 	export-supabase-fts update-new-chapter compare-supabase \
 	parse-affiliations parse-affiliations-dry-run \
 	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails \
-	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run
+	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run \
+	release-db restore-db
 
 # Default target
 help:
@@ -644,6 +645,18 @@ run-all-postprocessors:
 	@echo ""
 	@echo "✅ All post-processing completed!"
 
+# Publish the local DuckDB as a GitHub Release asset (tiered retention:
+# newest 3 + monthly archive). Releases don't count against the Git LFS quota,
+# so the regenerable database is versioned here instead of in LFS.
+release-db:
+	@echo "📦 Publishing DuckDB snapshot to GitHub Releases..."
+	./scripts/release_db.sh
+
+# Restore the latest DuckDB snapshot from GitHub Releases to data/onepiece.duckdb
+restore-db:
+	@echo "⬇️  Restoring DuckDB snapshot from GitHub Releases..."
+	./scripts/restore_db.sh
+
 # Compare row counts between local DuckDB and Supabase
 compare-supabase:
 	@echo "🔍 Comparing local DuckDB with Supabase..."
@@ -907,29 +920,34 @@ update-new-chapter:
 	@echo "═══════════════════════════════════════════════════════════════"
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 1/5: DATA PIPELINE (Scrape → Parse → Post-Process)    ║"
+	@echo "║  STAGE 1/6: DATA PIPELINE (Scrape → Parse → Post-Process)    ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) run-data-pipeline
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 2/5: EXPORT (CSV + PostgreSQL)                         ║"
+	@echo "║  STAGE 2/6: EXPORT (CSV + PostgreSQL)                         ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) run-all-exports
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 3/5: WIKI SCRAPE (Re-scrape wiki text)                ║"
+	@echo "║  STAGE 3/6: WIKI SCRAPE (Re-scrape wiki text)                ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) wiki-scrape
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 4/5: EMBED WIKI (Re-chunk + re-embed)                 ║"
+	@echo "║  STAGE 4/6: EMBED WIKI (Re-chunk + re-embed)                 ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) embed-wiki
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 5/5: EXPORT WIKI TO SUPABASE (FTS)                    ║"
+	@echo "║  STAGE 5/6: EXPORT WIKI TO SUPABASE (FTS)                    ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) export-supabase-fts
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 6/6: PUBLISH DB SNAPSHOT (GitHub Release)             ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) release-db
 	@echo ""
 	@echo "═══════════════════════════════════════════════════════════════"
 	@echo "✅ NEW CHAPTER UPDATE COMPLETED!"
