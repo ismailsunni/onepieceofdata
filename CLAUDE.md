@@ -195,13 +195,19 @@ When a new chapter is released, update `OP_LAST_CHAPTER` (and `OP_LAST_VOLUME` i
 make update-new-chapter
 ```
 
-This single command runs all 6 stages:
+This runs the **lean weekly flow** (3 stages):
 1. `run-data-pipeline` — Scrape + parse + post-process structured data
-2. `run-all-exports` — Export CSV + PostgreSQL
-3. `wiki-scrape` — Re-scrape wiki text
-4. `embed-wiki` — Re-chunk + re-embed
-5. `export-supabase-fts` — Export wiki text + chunks to Supabase
-6. `release-db` — Publish the DuckDB snapshot to GitHub Releases
+2. `release-db` — Publish the DuckDB snapshot to GitHub Releases
+3. `run-all-exports` — Sync CSV + PostgreSQL (Supabase)
+
+The wiki RAG steps change rarely and are **not** part of the weekly flow. Refresh
+them occasionally (when wiki content changes) with:
+
+```bash
+make update-wiki-rag
+```
+
+which runs `wiki-scrape` → `embed-wiki` → `export-supabase-fts`.
 
 ## Database Versioning (GitHub Releases, not LFS)
 

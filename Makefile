@@ -14,7 +14,7 @@ UV := uv
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
-	export-supabase-fts update-new-chapter compare-supabase \
+	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase \
 	parse-affiliations parse-affiliations-dry-run \
 	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails \
 	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run \
@@ -183,12 +183,13 @@ help:
 	@echo "📅 WEEKLY: NEW CHAPTER RELEASED"
 	@echo "─────────────────────────────────────────────────────────────────────"
 	@echo "  1. Update OP_LAST_CHAPTER (and OP_LAST_VOLUME if needed) in .env"
-	@echo "  2. make update-new-chapter    - Runs the full update pipeline:"
+	@echo "  2. make update-new-chapter    - Lean weekly update:"
 	@echo "     → run-data-pipeline        (scrape + parse + post-process)"
-	@echo "     → run-all-exports          (export CSV + PostgreSQL)"
-	@echo "     → wiki-scrape              (re-scrape wiki text)"
-	@echo "     → embed-wiki               (re-chunk + re-embed)"
-	@echo "     → export-supabase-fts      (export wiki + chunks to Supabase)"
+	@echo "     → release-db               (publish DuckDB snapshot to GitHub Releases)"
+	@echo "     → run-all-exports          (sync CSV + PostgreSQL to Supabase)"
+	@echo ""
+	@echo "  OCCASIONAL (wiki RAG, only when wiki content changes):"
+	@echo "  make update-wiki-rag          - wiki-scrape → embed-wiki → export-supabase-fts"
 	@echo ""
 	@echo "💡 TIPS:"
 	@echo "  • RECOMMENDED: Use the two-command workflow for better control:"
@@ -914,43 +915,59 @@ export-supabase-fts:
 
 # Weekly routine: update everything when a new chapter is released
 # Before running, update OP_LAST_CHAPTER (and OP_LAST_VOLUME if needed) in .env
+# WEEKLY new-chapter update (lean): scrape/parse/post-process → publish DuckDB
+# snapshot → sync structured data to Supabase/PostgreSQL.
+# The wiki RAG steps (wiki-scrape, embed-wiki, export-supabase-fts) are NOT run
+# here — they change rarely; run `make update-wiki-rag` when you want them.
 update-new-chapter:
 	@echo "═══════════════════════════════════════════════════════════════"
 	@echo "📅 NEW CHAPTER UPDATE PIPELINE"
 	@echo "═══════════════════════════════════════════════════════════════"
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 1/6: DATA PIPELINE (Scrape → Parse → Post-Process)    ║"
+	@echo "║  STAGE 1/3: DATA PIPELINE (Scrape → Parse → Post-Process)    ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) run-data-pipeline
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 2/6: EXPORT (CSV + PostgreSQL)                         ║"
+	@echo "║  STAGE 2/3: PUBLISH DB SNAPSHOT (GitHub Release)             ║"
+	@echo "╚═══════════════════════════════════════════════════════════════╝"
+	$(MAKE) release-db
+	@echo ""
+	@echo "╔═══════════════════════════════════════════════════════════════╗"
+	@echo "║  STAGE 3/3: SYNC TO SUPABASE (CSV + PostgreSQL)              ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) run-all-exports
 	@echo ""
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo "✅ NEW CHAPTER UPDATE COMPLETED!"
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo "ℹ️  Wiki RAG not refreshed. Run 'make update-wiki-rag' when needed."
+
+# OCCASIONAL wiki RAG refresh: re-scrape wiki text → re-chunk + re-embed →
+# export wiki text + chunks to Supabase with FTS indexes.
+update-wiki-rag:
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo "🧠 WIKI RAG REFRESH"
+	@echo "═══════════════════════════════════════════════════════════════"
+	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 3/6: WIKI SCRAPE (Re-scrape wiki text)                ║"
+	@echo "║  STAGE 1/3: WIKI SCRAPE (Re-scrape wiki text)               ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) wiki-scrape
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 4/6: EMBED WIKI (Re-chunk + re-embed)                 ║"
+	@echo "║  STAGE 2/3: EMBED WIKI (Re-chunk + re-embed)                ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) embed-wiki
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 5/6: EXPORT WIKI TO SUPABASE (FTS)                    ║"
+	@echo "║  STAGE 3/3: EXPORT WIKI TO SUPABASE (FTS)                   ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) export-supabase-fts
 	@echo ""
-	@echo "╔═══════════════════════════════════════════════════════════════╗"
-	@echo "║  STAGE 6/6: PUBLISH DB SNAPSHOT (GitHub Release)             ║"
-	@echo "╚═══════════════════════════════════════════════════════════════╝"
-	$(MAKE) release-db
-	@echo ""
 	@echo "═══════════════════════════════════════════════════════════════"
-	@echo "✅ NEW CHAPTER UPDATE COMPLETED!"
+	@echo "✅ WIKI RAG REFRESH COMPLETED!"
 	@echo "═══════════════════════════════════════════════════════════════"
 
 # Story graph — initialize schema (idempotent)
