@@ -1802,7 +1802,7 @@
       },
       {
         "name": "Marco",
-        "slug": "Marco"
+        "slug": "Polo_Marco"
       },
       {
         "name": "Jozu",
@@ -3695,7 +3695,7 @@
       },
       {
         "name": "Marco",
-        "slug": "Marco"
+        "slug": "Polo_Marco"
       },
       {
         "name": "Jozu",
@@ -4378,6 +4378,33 @@
       {
         "name": "Barbel",
         "slug": "Barbel"
+      }
+    ]
+  },
+  {
+    "volume_number": 115,
+    "english_title": "The Strongest Thing in the World",
+    "japanese_title": "せかいで1ばんつよいもの",
+    "cover_characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "slug": "Monkey_D._Luffy"
+      },
+      {
+        "name": "Loki",
+        "slug": "Loki"
+      },
+      {
+        "name": "Ragnir",
+        "slug": "Ragnir"
+      },
+      {
+        "name": "Nerona Imu (through Manmayer Gunko)",
+        "slug": "Nerona_Imu"
+      },
+      {
+        "name": "Manmayer Gunko (possessed)",
+        "slug": "Manmayer_Gunko"
       }
     ]
   }

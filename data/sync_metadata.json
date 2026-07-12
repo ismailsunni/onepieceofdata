@@ -1,37 +1,37 @@
 {
-  "last_sync": "2026-06-30T19:53:26.256538",
+  "last_sync": "2026-07-12T15:11:19.451171",
   "tables": {
     "saga": {
       "row_count": 11,
-      "last_synced": "2026-06-30T19:53:26.376820"
+      "last_synced": "2026-07-12T15:11:19.566479"
     },
     "arc": {
       "row_count": 33,
-      "last_synced": "2026-06-30T19:53:26.493919"
+      "last_synced": "2026-07-12T15:11:19.679846"
     },
     "volume": {
-      "row_count": 114,
-      "last_synced": "2026-06-30T19:53:26.612888"
+      "row_count": 115,
+      "last_synced": "2026-07-12T15:11:19.792741"
     },
     "chapter": {
-      "row_count": 1173,
-      "last_synced": "2026-06-30T19:53:26.749903"
+      "row_count": 1187,
+      "last_synced": "2026-07-12T15:11:19.904374"
     },
     "character": {
-      "row_count": 1461,
-      "last_synced": "2026-06-30T19:53:26.867862"
+      "row_count": 1462,
+      "last_synced": "2026-07-12T15:11:20.019819"
     },
     "character_affiliation": {
-      "row_count": 1951,
-      "last_synced": "2026-06-30T19:53:26.988017"
+      "row_count": 1953,
+      "last_synced": "2026-07-12T15:11:20.131684"
     },
     "character_devil_fruit": {
       "row_count": 175,
-      "last_synced": "2026-06-30T19:53:27.108867"
+      "last_synced": "2026-07-12T15:11:20.245370"
     },
     "character_occupation": {
-      "row_count": 2062,
-      "last_synced": "2026-06-30T19:53:27.225950"
+      "row_count": 2064,
+      "last_synced": "2026-07-12T15:11:20.356532"
     }
   }
 }
