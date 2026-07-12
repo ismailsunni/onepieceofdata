@@ -48,8 +48,11 @@ else
 fi
 
 echo "🧹 Pruning ${PREFIX} releases (keeping newest ${KEEP} + ${MONTHLY} monthly) ..."
-OLD_TAGS="$(gh release list --limit 500 --json tagName,createdAt --jq "
-  [.[] | select(.tagName | startswith(\"${PREFIX}\"))] | sort_by(.createdAt) | reverse as \$all
+# Use the REST API (gh api) instead of `gh release list --json`, which is only
+# available on gh >= 2.30. This keeps the script working on older gh versions.
+OLD_TAGS="$(gh api --paginate 'repos/{owner}/{repo}/releases?per_page=100' | jq -s -r "
+  [.[][] | {tagName: .tag_name, createdAt: .created_at}]
+  | [.[] | select(.tagName | startswith(\"${PREFIX}\"))] | sort_by(.createdAt) | reverse as \$all
   | (\$all[:${KEEP}] | map(.tagName)) as \$recent
   | (\$all | group_by(.createdAt[0:7]) | map(max_by(.createdAt))
      | sort_by(.createdAt) | reverse | .[:${MONTHLY}] | map(.tagName)) as \$monthly
