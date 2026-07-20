@@ -44,6 +44,13 @@ from onepieceofdata.config.settings import get_settings  # noqa: E402
 DEFAULT_THUMB_WIDTH = 150
 BATCH_SIZE = 50  # MediaWiki anonymous API limit
 
+# Character IDs whose bare title redirects to a *different* character on the
+# wiki (e.g. "Wolf" → "Sanjuan Wolf"), which would fetch the wrong image.
+# Map them to their real wiki page title.
+WIKI_TITLE_OVERRIDES: Dict[str, str] = {
+    "Wolf": "Wolf (Elbaph)",
+}
+
 
 # --------------------------------------------------------------------------- #
 # Data model
@@ -370,7 +377,11 @@ def extension_from_mime(mime: Optional[str], fallback_url: Optional[str]) -> str
 # --------------------------------------------------------------------------- #
 
 
-def load_character_ids(db_path: Path, limit: Optional[int]) -> List[str]:
+def load_character_ids(
+    db_path: Path, limit: Optional[int], only: Optional[List[str]] = None
+) -> List[str]:
+    if only:
+        return only
     conn = duckdb.connect(str(db_path), read_only=True)
     try:
         query = "SELECT id FROM character ORDER BY id"
@@ -388,15 +399,18 @@ def plan_jobs(
 ) -> List[ThumbnailJob]:
     """Resolve a chosen filename + thumb URL for every character."""
     # Wiki API accepts underscores or spaces for page titles; we send IDs
-    # verbatim (they're already underscored).
+    # verbatim (they're already underscored), except overridden ones whose
+    # bare title redirects to a different character.
+    title_for = {cid: WIKI_TITLE_OVERRIDES.get(cid, cid) for cid in character_ids}
     jobs: Dict[str, ThumbnailJob] = {
-        cid: ThumbnailJob(character_id=cid, wiki_title=cid) for cid in character_ids
+        cid: ThumbnailJob(character_id=cid, wiki_title=title_for[cid])
+        for cid in character_ids
     }
 
     logger.info(f"Fetching pageimages for {len(character_ids)} characters...")
-    pageimages = get_pageimages(client, character_ids)
+    pageimages = get_pageimages(client, [title_for[cid] for cid in character_ids])
     for cid, job in jobs.items():
-        job.pageimage = pageimages.get(cid)
+        job.pageimage = pageimages.get(title_for[cid])
         if not job.pageimage:
             job.error = "no pageimage"
 
@@ -410,9 +424,9 @@ def plan_jobs(
             f"Falling back to prop=images for {len(missing)} characters "
             "without pageimage..."
         )
-        page_images = get_page_images(client, missing)
+        page_images = get_page_images(client, [title_for[cid] for cid in missing])
         for cid in missing:
-            chosen = pick_fallback_image(page_images.get(cid, []))
+            chosen = pick_fallback_image(page_images.get(title_for[cid], []))
             if chosen:
                 jobs[cid].pageimage = chosen
                 jobs[cid].error = None
@@ -488,11 +502,12 @@ def run(
     limit: Optional[int] = None,
     dry_run: bool = False,
     force: bool = False,
+    only: Optional[List[str]] = None,
 ) -> RunStats:
     settings = get_settings()
     stats = RunStats()
 
-    character_ids = load_character_ids(db_path, limit)
+    character_ids = load_character_ids(db_path, limit, only)
     stats.total = len(character_ids)
     logger.info(f"Loaded {stats.total} character IDs from {db_path}")
 
@@ -612,6 +627,10 @@ def _parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     )
     p.add_argument("--limit", type=int, help="Only process the first N characters")
     p.add_argument(
+        "--only",
+        help="Comma-separated character IDs to process (ignores --limit)",
+    )
+    p.add_argument(
         "--dry-run",
         action="store_true",
         help="Resolve images but do not download or upload anything",
@@ -634,6 +653,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             limit=args.limit,
             dry_run=args.dry_run,
             force=args.force,
+            only=[c.strip() for c in args.only.split(",")] if args.only else None,
         )
         return 0
     except Exception as e:  # noqa: BLE001
