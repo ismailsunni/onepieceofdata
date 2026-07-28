@@ -63,7 +63,8 @@ if [[ -n "$OLD_TAGS" ]]; then
   while IFS= read -r old; do
     [[ -n "$old" ]] || continue
     echo "   🗑️  deleting ${old}"
-    gh release delete "$old" --yes --cleanup-tag
+    gh release delete "$old" --yes
+    git push --delete origin "$old" >/dev/null 2>&1 || true
   done <<< "$OLD_TAGS"
 else
   echo "   nothing to prune"

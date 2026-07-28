@@ -62020,7 +62020,7 @@
       {
         "name": "Vice Admiral",
         "url": "/wiki/Vice_Admiral",
-        "note": "flashback",
+        "note": "",
         "full_text": "Vice Admiral"
       },
       {
@@ -62028,6 +62028,12 @@
         "url": "/wiki/Momonga",
         "note": "flashback",
         "full_text": "Momonga"
+      },
+      {
+        "name": "Glove",
+        "url": "/wiki/Glove",
+        "note": "flashback",
+        "full_text": "Glove"
       },
       {
         "name": "CP9",
@@ -62929,10 +62935,10 @@
         "full_text": "Kashii"
       },
       {
-        "name": "Vice-Admiral",
-        "url": "/wiki/Vice-Admiral",
+        "name": "Vice Admiral",
+        "url": "/wiki/Vice_Admiral",
         "note": "",
-        "full_text": "Vice-Admiral"
+        "full_text": "Vice Admiral"
       },
       {
         "name": "Monkey D. Garp",
@@ -63045,13 +63051,13 @@
       {
         "name": "Shift Station",
         "url": "/wiki/Shift_Station",
-        "note": "flashback",
+        "note": "",
         "full_text": "Shift Station"
       },
       {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
-        "note": "flashback",
+        "note": "",
         "full_text": "Kokoro"
       },
       {
@@ -63065,6 +63071,12 @@
         "url": "/wiki/Gonbe",
         "note": "flashback",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Water 7",
+        "url": "/wiki/Water_7",
+        "note": "flashback",
+        "full_text": "Water 7"
       },
       {
         "name": "Yokozuna",
@@ -63238,19 +63250,19 @@
       {
         "name": "Vice Admiral",
         "url": "/wiki/Vice_Admiral",
-        "note": "Cover",
+        "note": "cover",
         "full_text": "Vice Admiral"
       },
       {
         "name": "Monkey D. Garp",
         "url": "/wiki/Monkey_D._Garp",
-        "note": "Cover",
+        "note": "cover",
         "full_text": "Monkey D. Garp"
       },
       {
         "name": "Tsuru",
         "url": "/wiki/Tsuru",
-        "note": "Cover",
+        "note": "cover",
         "full_text": "Tsuru"
       },
       {
@@ -63273,7 +63285,7 @@
       },
       {
         "name": "Captain",
-        "url": "/wiki/Marine_Ranks#Captain",
+        "url": "/wiki/Captain_(Marine_Rank)",
         "note": "cover",
         "full_text": "Captain"
       },
@@ -63298,7 +63310,7 @@
       {
         "name": "Master Chief Petty Officer",
         "url": "/wiki/Master_Chief_Petty_Officer",
-        "note": "cover",
+        "note": "",
         "full_text": "Master Chief Petty Officer"
       },
       {
@@ -63481,6 +63493,12 @@
         "url": "/wiki/Nami",
         "note": "",
         "full_text": "Nami"
+      },
+      {
+        "name": "Sogeking",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Sogeking"
       },
       {
         "name": "Sanji",
@@ -63747,16 +63765,16 @@
         "full_text": "Gonbe"
       },
       {
+        "name": "Water 7",
+        "url": "/wiki/Water_7",
+        "note": "cover",
+        "full_text": "Water 7"
+      },
+      {
         "name": "Yokozuna",
         "url": "/wiki/Yokozuna",
         "note": "cover",
         "full_text": "Yokozuna"
-      },
-      {
-        "name": "Sogeking",
-        "url": "/wiki/Usopp",
-        "note": "cover",
-        "full_text": "Sogeking"
       },
       {
         "name": "Moon",
@@ -63862,16 +63880,16 @@
         "full_text": "Lucky Roux"
       },
       {
-        "name": "Rockstar",
-        "url": "/wiki/Rockstar",
-        "note": "flashback",
-        "full_text": "Rockstar"
-      },
-      {
         "name": "Yasopp",
         "url": "/wiki/Yasopp",
         "note": "flashback",
         "full_text": "Yasopp"
+      },
+      {
+        "name": "Rockstar",
+        "url": "/wiki/Rockstar",
+        "note": "flashback",
+        "full_text": "Rockstar"
       },
       {
         "name": "Buggy Pirates",
@@ -64003,8 +64021,14 @@
       {
         "name": "Nami",
         "url": "/wiki/Nami",
-        "note": "image",
+        "note": "",
         "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "image",
+        "full_text": "Usopp"
       },
       {
         "name": "Sanji",
@@ -64197,12 +64221,6 @@
         "url": "/wiki/Spacey",
         "note": "cover",
         "full_text": "Spacey"
-      },
-      {
-        "name": "Usopp",
-        "url": "/wiki/Usopp",
-        "note": "",
-        "full_text": "Usopp"
       }
     ],
     "volume": "45",
@@ -64400,32 +64418,56 @@
       {
         "name": "Shift Station",
         "url": "/wiki/Shift_Station",
-        "note": "cover",
+        "note": "",
         "full_text": "Shift Station"
       },
       {
         "name": "Kokoro",
         "url": "/wiki/Kokoro",
-        "note": "cover",
+        "note": "",
         "full_text": "Kokoro"
       },
       {
         "name": "Chimney",
         "url": "/wiki/Chimney",
-        "note": "cover",
+        "note": "",
         "full_text": "Chimney"
       },
       {
         "name": "Gonbe",
         "url": "/wiki/Gonbe",
-        "note": "cover",
+        "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Water 7",
+        "url": "/wiki/Water_7",
+        "note": "cover",
+        "full_text": "Water 7"
       },
       {
         "name": "Yokozuna",
         "url": "/wiki/Yokozuna",
         "note": "cover",
         "full_text": "Yokozuna"
+      },
+      {
+        "name": "Pucci",
+        "url": "/wiki/Pucci",
+        "note": "cover",
+        "full_text": "Pucci"
+      },
+      {
+        "name": "Marumieta",
+        "url": "/wiki/Marumieta",
+        "note": "cover",
+        "full_text": "Marumieta"
+      },
+      {
+        "name": "Yamenahare",
+        "url": "/wiki/Yamenahare",
+        "note": "cover",
+        "full_text": "Yamenahare"
       },
       {
         "name": "Moon",
@@ -64444,18 +64486,6 @@
         "url": "/wiki/Spacey",
         "note": "cover",
         "full_text": "Spacey"
-      },
-      {
-        "name": "Marumieta",
-        "url": "/wiki/Marumieta",
-        "note": "",
-        "full_text": "Marumieta"
-      },
-      {
-        "name": "Yamenahare",
-        "url": "/wiki/Yamenahare",
-        "note": "",
-        "full_text": "Yamenahare"
       }
     ],
     "volume": "45",
@@ -64575,44 +64605,32 @@
       {
         "name": "Dago",
         "url": "/wiki/Dago",
-        "note": "flashback",
+        "note": "",
         "full_text": "Dago"
       },
       {
         "name": "Ottoland",
         "url": "/wiki/Ottoland",
-        "note": "flashback",
+        "note": "",
         "full_text": "Ottoland"
       },
       {
         "name": "Footbianco",
         "url": "/wiki/Footbianco",
-        "note": "flashback",
+        "note": "",
         "full_text": "Footbianco"
       },
       {
         "name": "Sodom",
         "url": "/wiki/Sodom",
-        "note": "flashback",
+        "note": "",
         "full_text": "Sodom"
       },
       {
         "name": "Gomorrah",
         "url": "/wiki/Gomorrah",
-        "note": "flashback",
+        "note": "",
         "full_text": "Gomorrah"
-      },
-      {
-        "name": "Tom's Workers",
-        "url": "/wiki/Tom's_Workers",
-        "note": "flashback",
-        "full_text": "Tom's Workers"
-      },
-      {
-        "name": "Tom",
-        "url": "/wiki/Tom",
-        "note": "flashback",
-        "full_text": "Tom"
       },
       {
         "name": "Galley-La Company",
@@ -64629,26 +64647,38 @@
       {
         "name": "Tyrannosaurus",
         "url": "/wiki/Tyrannosaurus",
-        "note": "",
+        "note": "flashback",
         "full_text": "Tyrannosaurus"
       },
       {
         "name": "Paulie",
         "url": "/wiki/Paulie",
-        "note": "",
+        "note": "flashback",
         "full_text": "Paulie"
       },
       {
         "name": "Peepley Lulu",
         "url": "/wiki/Peepley_Lulu",
-        "note": "",
+        "note": "flashback",
         "full_text": "Peepley Lulu"
       },
       {
         "name": "Tilestone",
         "url": "/wiki/Tilestone",
-        "note": "",
+        "note": "flashback",
         "full_text": "Tilestone"
+      },
+      {
+        "name": "Tom's Workers",
+        "url": "/wiki/Tom's_Workers",
+        "note": "flashback",
+        "full_text": "Tom's Workers"
+      },
+      {
+        "name": "Tom",
+        "url": "/wiki/Tom",
+        "note": "flashback",
+        "full_text": "Tom"
       },
       {
         "name": "Shift Station",
@@ -64671,8 +64701,14 @@
       {
         "name": "Gonbe",
         "url": "/wiki/Gonbe",
-        "note": "cover",
+        "note": "",
         "full_text": "Gonbe"
+      },
+      {
+        "name": "Water 7",
+        "url": "/wiki/Water_7",
+        "note": "cover",
+        "full_text": "Water 7"
       },
       {
         "name": "Yokozuna",
@@ -65556,61 +65592,61 @@
       {
         "name": "Pirate",
         "url": "/wiki/Pirate",
-        "note": "flashback",
+        "note": "",
         "full_text": "Pirate"
       },
       {
         "name": "Whitebeard Pirates",
         "url": "/wiki/Whitebeard_Pirates",
-        "note": "flashback",
+        "note": "",
         "full_text": "Whitebeard Pirates"
       },
       {
         "name": "Portgas D. Ace",
         "url": "/wiki/Portgas_D._Ace",
-        "note": "flashback",
+        "note": "",
         "full_text": "Portgas D. Ace"
       },
       {
         "name": "Blackbeard Pirates",
         "url": "/wiki/Blackbeard_Pirates",
-        "note": "flashback",
+        "note": "",
         "full_text": "Blackbeard Pirates"
       },
       {
         "name": "Marshall D. Teach",
         "url": "/wiki/Marshall_D._Teach",
-        "note": "flashback",
+        "note": "",
         "full_text": "Marshall D. Teach"
       },
       {
         "name": "Van Augur",
         "url": "/wiki/Van_Augur",
-        "note": "flashback",
+        "note": "cover",
         "full_text": "Van Augur"
       },
       {
         "name": "Jesus Burgess",
         "url": "/wiki/Jesus_Burgess",
-        "note": "flashback",
+        "note": "cover",
         "full_text": "Jesus Burgess"
       },
       {
         "name": "Doc Q",
         "url": "/wiki/Doc_Q",
-        "note": "flashback",
+        "note": "cover",
         "full_text": "Doc Q"
       },
       {
         "name": "Stronger",
         "url": "/wiki/Stronger",
-        "note": "flashback",
+        "note": "cover",
         "full_text": "Stronger"
       },
       {
         "name": "Laffitte",
         "url": "/wiki/Laffitte",
-        "note": "flashback",
+        "note": "cover",
         "full_text": "Laffitte"
       },
       {
@@ -233134,7 +233170,8 @@
   {
     "chapter_number": 1174,
     "title": "The Strongest Thing in the World",
-    "japanese_title": "せかいで1ばんつよいもの{{Web ref|name=title|url=https://x.com/Eiichiro_Staff/status/2023049675188957330|title=【訂正】|last=ONE PIECE スタッフ【公式】/ Official|user=Eiichiro_Staff|lang=ja|trans-title=Correction|site:x.com|date=2026-02-15|access-date=2026-02-15",
+    "english_name": "The Strongest Thing in the World",
+    "japanese_title": "せかいで1ばんつよいもの",
     "characters": [
       {
         "name": "Pirate",
@@ -236266,5 +236303,210 @@
     "pages": "17",
     "release_date": "July 13, 2026",
     "jump_info": "2026 Issue 33"
+  },
+  {
+    "chapter_number": 1189,
+    "title": "King of the World",
+    "english_name": "King of the World",
+    "japanese_title": "世界の王",
+    "characters": [
+      {
+        "name": "Pirate",
+        "url": "/wiki/Pirate",
+        "note": "",
+        "full_text": "Pirate"
+      },
+      {
+        "name": "World Government",
+        "url": "/wiki/World_Government",
+        "note": "",
+        "full_text": "World Government"
+      },
+      {
+        "name": "Straw Hat Pirates",
+        "url": "/wiki/Straw_Hat_Pirates",
+        "note": "",
+        "full_text": "Straw Hat Pirates"
+      },
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Usopp",
+        "url": "/wiki/Usopp",
+        "note": "",
+        "full_text": "Usopp"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "New Giant Warrior Pirates",
+        "url": "/wiki/New_Giant_Warrior_Pirates",
+        "note": "flashback",
+        "full_text": "New Giant Warrior Pirates"
+      },
+      {
+        "name": "Hajrudin",
+        "url": "/wiki/Hajrudin",
+        "note": "flashback",
+        "full_text": "Hajrudin"
+      },
+      {
+        "name": "Gerd",
+        "url": "/wiki/Gerd",
+        "note": "flashback",
+        "full_text": "Gerd"
+      },
+      {
+        "name": "Red Hair Pirates",
+        "url": "/wiki/Red_Hair_Pirates",
+        "note": "flashback",
+        "full_text": "Red Hair Pirates"
+      },
+      {
+        "name": "Shanks",
+        "url": "/wiki/Shanks",
+        "note": "flashback",
+        "full_text": "Shanks"
+      },
+      {
+        "name": "Rocks Pirates",
+        "url": "/wiki/Rocks_Pirates",
+        "note": "flashback; fantasy",
+        "full_text": "Rocks Pirates"
+      },
+      {
+        "name": "Rocks D. Xebec",
+        "url": "/wiki/Rocks_D._Xebec",
+        "note": "flashback; fantasy",
+        "full_text": "Rocks D. Xebec"
+      },
+      {
+        "name": "Elbaph",
+        "url": "/wiki/Elbaph",
+        "note": "flashback",
+        "full_text": "Elbaph"
+      },
+      {
+        "name": "Loki",
+        "url": "/wiki/Loki",
+        "note": "flashback",
+        "full_text": "Loki"
+      },
+      {
+        "name": "Ragnir",
+        "url": "/wiki/Ragnir",
+        "note": "flashback",
+        "full_text": "Ragnir"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "flashback",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "flashback",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "flashback",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "First Twenty",
+        "url": "/wiki/First_Twenty",
+        "note": "",
+        "full_text": "First Twenty"
+      },
+      {
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
+        "note": "",
+        "full_text": "Nerona Imu"
+      },
+      {
+        "name": "Knights of God",
+        "url": "/wiki/Knights_of_God",
+        "note": "",
+        "full_text": "Knights of God"
+      },
+      {
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
+        "note": "",
+        "full_text": "Manmayer Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "",
+        "full_text": "Rimoshifu Killingham"
+      }
+    ],
+    "volume": "TBA",
+    "chapter_display": "1189",
+    "pages": "17",
+    "release_date": "July 27, 2026",
+    "jump_info": "2026 Issue 35"
   }
 ]
