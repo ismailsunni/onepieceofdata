@@ -11,8 +11,8 @@ CREATE TABLE IF NOT EXISTS character_poll (
     character_id TEXT,               -- our character.id, NULL when unmatched
     is_variant   BOOLEAN,            -- alternate form of an already-ranked character
     site_face_id TEXT,               -- face asset id on the poll site
-    image_url    TEXT,
-    image_file   TEXT,
+    image_url    TEXT,               -- source image on the poll site
+    image_path   TEXT,               -- object path inside the character-images Storage bucket
     PRIMARY KEY (poll_id, rank, name)
 );
 

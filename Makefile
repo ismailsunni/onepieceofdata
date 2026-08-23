@@ -14,7 +14,7 @@ UV := uv
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
-	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase scrape-poll load-poll-2021 \
+	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase scrape-poll load-poll-2021 upload-poll-images upload-poll-images-dry-run \
 	parse-affiliations parse-affiliations-dry-run \
 	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails \
 	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run \
@@ -181,6 +181,7 @@ help:
 	@echo "  compare-supabase         - Compare local DuckDB vs Supabase (row counts + PK diffs)"
 	@echo "  scrape-poll              - Scrape WT100 2026 rankings → DuckDB character_poll + images"
 	@echo "  load-poll-2021           - Load WT100 2021 rankings (Fandom wiki) → character_poll"
+	@echo "  upload-poll-images       - Upload poll face images → Supabase Storage (polls/<poll_id>/)"
 	@echo "  chat                     - Start interactive One Piece chatbot"
 	@echo ""
 	@echo "📅 WEEKLY: NEW CHAPTER RELEASED"
@@ -664,6 +665,14 @@ restore-db:
 scrape-poll:
 	@echo "🗳️  Scraping WT100 2026 final rankings..."
 	$(UV) run python scripts/scrape_wt100_2026.py
+
+# Upload the 2026 poll face images to Supabase Storage under polls/<poll_id>/.
+upload-poll-images:
+	@echo "🖼️  Uploading poll images to Supabase Storage..."
+	$(UV) run python scripts/upload_poll_images.py --poll wt100_2026
+
+upload-poll-images-dry-run:
+	$(UV) run python scripts/upload_poll_images.py --poll wt100_2026 --dry-run
 
 # WT100 2021 (1st global poll) - official site is dead, source is the Fandom wiki.
 load-poll-2021:

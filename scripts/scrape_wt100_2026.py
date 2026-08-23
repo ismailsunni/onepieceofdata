@@ -2,7 +2,7 @@
 
 Writes the global ranking to data/wt100_2026.csv, loads it into the DuckDB
 `character_poll` table (poll_id = 'wt100_2026'), and downloads the character face
-images into data/wt100_2026_images/.
+images into data/wt100_2026_images/ (upload them with scripts/upload_poll_images.py).
 
 Points are only published for the global top 10; they are null for lower ranks.
 """
@@ -25,6 +25,9 @@ DB = ROOT / "data" / "onepiece.duckdb"
 ALIASES = ROOT / "data" / "character_aliases.json"
 OUT_DIR = ROOT / "data"
 IMG_DIR = OUT_DIR / "wt100_2026_images"
+# directory prefix inside the Supabase Storage bucket, kept apart from the
+# character thumbnails that live at the bucket root
+STORAGE_PREFIX = f"polls/{POLL_ID}"
 
 
 TITLES = ("SAINT", "MR", "MISS", "GOD")
@@ -117,7 +120,7 @@ def download_images(rows: list[dict], session: requests.Session) -> None:
         if row["site_face_id"]:
             urls.insert(0, f"{BASE}/assets/faces/{row['site_face_id']}.png")
         dest = IMG_DIR / f"{row['rank']:04d}_{re.sub(r'[^A-Za-z0-9]+', '_', row['name']).strip('_')}.png"
-        row["image_file"] = dest.name
+        row["image_path"] = f"{STORAGE_PREFIX}/{dest.name}"
         if dest.exists():
             continue
         for url in urls:
@@ -126,7 +129,7 @@ def download_images(rows: list[dict], session: requests.Session) -> None:
                 dest.write_bytes(resp.content)
                 break
         else:
-            row["image_file"] = None
+            row["image_path"] = None
 
 
 SCHEMA = """
@@ -139,7 +142,7 @@ CREATE TABLE IF NOT EXISTS character_poll (
     is_variant   BOOLEAN,
     site_face_id TEXT,
     image_url    TEXT,
-    image_file   TEXT,
+    image_path   TEXT,
     PRIMARY KEY (poll_id, rank, name)
 )
 """
@@ -160,7 +163,7 @@ def load_duckdb(con: duckdb.DuckDBPyConnection, rows: list[dict]) -> None:
                 r["is_variant"],
                 r["site_face_id"],
                 r["image_url"],
-                r.get("image_file"),
+                r.get("image_path"),
             )
             for r in rows
         ],
@@ -200,7 +203,7 @@ def main() -> None:
         "is_variant",
         "site_face_id",
         "image_url",
-        "image_file",
+        "image_path",
     ]
     with (OUT_DIR / "wt100_2026.csv").open("w", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fields)
