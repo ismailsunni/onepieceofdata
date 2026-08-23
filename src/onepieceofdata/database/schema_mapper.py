@@ -34,6 +34,7 @@ class SchemaMapper:
         'character_affiliation',  # Depends on: character (by character_id)
         'character_devil_fruit',  # Depends on: character (by character_id)
         'character_occupation',   # Depends on: character (by character_id)
+        'character_poll',         # Depends on: character (popularity poll rankings)
         'graph_nodes',   # No dependencies (story graph entities)
         'graph_edges',   # Depends on: graph_nodes (subject_id, object_id)
     ]
@@ -132,6 +133,9 @@ class SchemaMapper:
             List of ALTER TABLE statements to add foreign keys
         """
         fk_definitions = {
+            'character_poll': [
+                "ALTER TABLE character_poll ADD CONSTRAINT fk_character_poll_character FOREIGN KEY (character_id) REFERENCES character(id) ON DELETE SET NULL;"
+            ],
             'arc': [
                 "ALTER TABLE arc ADD CONSTRAINT fk_arc_saga FOREIGN KEY (saga_id) REFERENCES saga(saga_id) ON DELETE SET NULL;"
             ],

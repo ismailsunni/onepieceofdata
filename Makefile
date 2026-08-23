@@ -9,12 +9,12 @@ UV := uv
 	run-full-pipeline run-full-pipeline-parallel run-full-pipeline-workers \
 	run-all-scrapers run-all-parsers run-all-postprocessors run-all-exports run-data-pipeline \
 	status db-status migrate-birth-dates migrate-birth-dates-full load-cov config export \
-	postgres-start postgres-stop postgres-logs postgres-init export-postgres export-postgres-full export-postgres-chapter export-postgres-graph postgres-status \
+	postgres-start postgres-stop postgres-logs postgres-init export-postgres export-postgres-full export-postgres-chapter export-postgres-graph export-postgres-poll postgres-status \
 	test-scrape test-scrape-parallel test-scrape-workers test-scrape-volumes test-scrape-characters test-scrape-characters-parallel test-scrape-story-structure \
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
-	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase \
+	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase scrape-poll load-poll-2021 \
 	parse-affiliations parse-affiliations-dry-run \
 	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails \
 	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run \
@@ -154,6 +154,7 @@ help:
 	@echo "  export-postgres-full    - Export ALL tables → PostgreSQL (full sync, slow ~13min)"
 	@echo "  export-postgres-chapter - Export chapter/character tables only (full sync, fast)"
 	@echo "  export-postgres-graph   - Export graph_nodes + graph_edges only (full sync, ~10min)"
+	@echo "  export-postgres-poll    - Export character_poll (popularity poll rankings) only"
 	@echo "  export-postgres         - Export DuckDB → PostgreSQL (incremental sync)"
 	@echo "  postgres-status      - Check PostgreSQL sync status and row counts"
 	@echo ""
@@ -178,6 +179,8 @@ help:
 	@echo "  search Q=\"...\"           - Test semantic search (e.g. make search Q=\"gear 5\")"
 	@echo "  export-supabase-fts      - Export wiki text + chunks to Supabase (with FTS indexes)"
 	@echo "  compare-supabase         - Compare local DuckDB vs Supabase (row counts + PK diffs)"
+	@echo "  scrape-poll              - Scrape WT100 2026 rankings → DuckDB character_poll + images"
+	@echo "  load-poll-2021           - Load WT100 2021 rankings (Fandom wiki) → character_poll"
 	@echo "  chat                     - Start interactive One Piece chatbot"
 	@echo ""
 	@echo "📅 WEEKLY: NEW CHAPTER RELEASED"
@@ -658,6 +661,15 @@ restore-db:
 	@echo "⬇️  Restoring DuckDB snapshot from GitHub Releases..."
 	./scripts/restore_db.sh
 
+scrape-poll:
+	@echo "🗳️  Scraping WT100 2026 final rankings..."
+	$(UV) run python scripts/scrape_wt100_2026.py
+
+# WT100 2021 (1st global poll) - official site is dead, source is the Fandom wiki.
+load-poll-2021:
+	@echo "🗳️  Loading WT100 2021 rankings from the Fandom wiki..."
+	$(UV) run python scripts/load_poll_wt100_2021.py
+
 # Compare row counts between local DuckDB and Supabase
 compare-supabase:
 	@echo "🔍 Comparing local DuckDB with Supabase..."
@@ -732,6 +744,7 @@ postgres-logs:
 # Graph data only changes when graph extraction is rerun (rare, expensive).
 POSTGRES_CHAPTER_TABLES := saga,arc,volume,chapter,character,character_affiliation,character_devil_fruit,character_occupation
 POSTGRES_GRAPH_TABLES := graph_nodes,graph_edges
+POSTGRES_POLL_TABLES := character_poll
 
 export-postgres-full:
 	@echo "🚀 Exporting to PostgreSQL (full sync, all tables)..."
@@ -747,6 +760,11 @@ export-postgres-chapter:
 export-postgres-graph:
 	@echo "🚀 Exporting graph data to PostgreSQL (full sync)..."
 	$(UV) run onepieceofdata export-postgres --mode full --tables $(POSTGRES_GRAPH_TABLES)
+
+# Full sync of the popularity poll table only (rarely changes - new poll only).
+export-postgres-poll:
+	@echo "🚀 Exporting poll rankings to PostgreSQL (full sync)..."
+	$(UV) run onepieceofdata export-postgres --mode full --tables $(POSTGRES_POLL_TABLES)
 
 export-postgres:
 	@echo "🚀 Exporting to PostgreSQL (incremental sync)..."

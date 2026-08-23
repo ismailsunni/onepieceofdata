@@ -1,0 +1,1179 @@
+rank,name,points,our_character_id,is_variant,wiki_title
+1,Monkey D. Luffy,1637921,Monkey_D._Luffy,False,Monkey D. Luffy
+2,Roronoa Zoro,1445034,Roronoa_Zoro,False,Roronoa Zoro
+3,Nami,1085141,Nami,False,Nami
+4,Sanji,970286,Sanji,False,Sanji
+5,Trafalgar Law,646686,Trafalgar_D._Water_Law,False,Trafalgar D. Water Law
+6,Nico Robin,599835,Nico_Robin,False,Nico Robin
+7,Boa Hancock,392951,Boa_Hancock,False,Boa Hancock
+8,Carrot,388565,Carrot,False,Carrot
+9,Portgas D. Ace,355503,Portgas_D._Ace,False,Portgas D. Ace
+10,Sabo,318869,Sabo,False,Sabo
+11,Yamato,259738,Yamato,False,Yamato
+12,Shanks,171610,Shanks,False,Shanks
+13,Donquixote Rosinante,157167,Donquixote_Rosinante,False,Donquixote Rosinante
+14,Charlotte Katakuri,152070,Charlotte_Katakuri,False,Charlotte Katakuri
+15,Usopp,131090,Usopp,False,Usopp
+16,Tony Tony Chopper,116364,Tony_Tony_Chopper,False,Tony Tony Chopper
+17,Crocodile,109837,Crocodile,False,Crocodile
+18,Jinbe,102354,Jinbe,False,Jinbe
+19,Marco,98431,Marco,False,Polo Marco
+20,Donquixote Doflamingo,96402,Donquixote_Doflamingo,False,Donquixote Doflamingo
+21,Nefertari Vivi,90645,Nefertari_Vivi,False,Nefertari Vivi
+22,Bentham (Mr. 2 Bon Kurei),88082,Bentham,False,Bentham (Mr. 2 Bon Kurei)
+23,Eustass Kid,86454,Eustass_Kid,False,Eustass Kid
+24,Kouzuki Oden,82773,Kouzuki_Oden,False,Kouzuki Oden
+25,Perona,80255,Perona,False,Perona
+26,Brook,75741,Brook,False,Brook
+27,Smoker,66962,Smoker,False,Smoker
+28,Franky,66398,Franky,False,Franky
+29,Gol D. Roger,66270,Gol_D._Roger,False,Gol D. Roger
+30,Dracule Mihawk,65869,Dracule_Mihawk,False,Dracule Mihawk
+31,Edward Newgate,59957,Edward_Newgate,False,Edward Newgate
+32,Going Merry,49992,Merry,False,Going Merry
+33,Silvers Rayleigh,44852,Silvers_Rayleigh,False,Silvers Rayleigh
+34,Buggy,43559,Buggy,False,Buggy
+35,Enel,39144,Enel,False,Enel
+36,Kuzan (Aokiji),38127,Kuzan,False,Kuzan (Aokiji)
+37,Woop Slap,37528,Woop_Slap,False,Woop Slap
+38,Tashigi,34582,Tashigi,False,Tashigi
+39,Vinsmoke Reiju,33481,Vinsmoke_Reiju,False,Vinsmoke Reiju
+40,Bartolomeo,31694,Bartolomeo,False,Bartolomeo
+41,X Drake,28744,X_Drake,False,X Drake
+42,Koby,24841,Koby,False,Koby
+43,Rob Lucci,24726,Rob_Lucci,False,Rob Lucci
+44,Monkey D. Garp,23693,Monkey_D._Garp,False,Monkey D. Garp
+45,Charlotte Pudding,23334,Charlotte_Pudding,False,Charlotte Pudding
+46,Marshall D. Teach,22474,Marshall_D._Teach,False,Marshall D. Teach
+47,Kikunojo,21040,Kikunojo,False,Kikunojo
+48,Izou,20940,Izou,False,Izou
+49,Kouzuki Hiyori,20427,Kouzuki_Hiyori,False,Kouzuki Hiyori
+50,Shirahoshi,19690,Shirahoshi,False,Shirahoshi
+51,Pell,19467,Pell,False,Pell
+52,Issho (Fujitora),18570,Issho,False,Issho (Fujitora)
+53,Sakazuki (Akainu),18362,Sakazuki,False,Sakazuki (Akainu)
+54,Kurozumi Tama,18159,Tama,False,Kurozumi Tama
+55,Killer,17924,Killer,False,Killer
+56,Ulti,17707,Ulti,False,Ulti
+57,Benn Beckman,17576,Benn_Beckman,False,Benn Beckman
+58,Koala,17512,Koala,False,Koala
+59,Borsalino (Kizaru),15559,Borsalino,False,Borsalino (Kizaru)
+60,Gaimon,15041,Gaimon,False,Gaimon
+61,Pedro,14983,Pedro,False,Pedro
+62,Monkey D. Dragon,14410,Monkey_D._Dragon,False,Monkey D. Dragon
+63,Thousand Sunny,14179,,False,Thousand Sunny
+64,Bepo,13938,Bepo,False,Bepo
+65,Kaidou,13847,Kaidou,False,Kaidou
+66,Rockstar,13572,Rockstar,False,Rockstar
+67,Hiriluk,13500,Hiriluk,False,Hiriluk
+68,Rebecca,13357,Rebecca,False,Rebecca
+69,Paulie,13344,Paulie,False,Paulie
+70,Urouge,13086,Urouge,False,Urouge
+71,Namur,13034,Namur,False,Namur
+72,Senor Pink,12750,Senor_Pink,False,Senor Pink
+73,Cavendish,12424,Cavendish,False,Cavendish
+74,Gecko Moria,12276,Gecko_Moria,False,Gecko Moria
+75,Karoo,12127,Karoo,False,Karoo
+76,Monet,12115,Monet,False,Monet
+77,Kaku (Cipher Pol),11909,Kaku,False,Kaku (Cipher Pol)
+78,Orlumbus,11425,Orlumbus,False,Orlumbus
+79,Emporio Ivankov,11043,Emporio_Ivankov,False,Emporio Ivankov
+80,Morgans,10812,Morgans,False,Morgans
+81,Bell-mère,10704,Bell-mère,False,Bell-mère
+82,Basil Hawkins,10590,Basil_Hawkins,False,Basil Hawkins
+83,Denjiro (Kyoshiro),10488,Denjiro,False,Denjiro (Kyoshiro)
+84,Gin,9944,Gin,False,Gin
+85,Jewelry Bonney,9929,Jewelry_Bonney,False,Jewelry Bonney
+86,Charlotte Linlin (Big Mom),9864,Charlotte_Linlin,False,Charlotte Linlin (Big Mom)
+87,Marguerite,9723,Marguerite,False,Marguerite
+88,Wyper,9674,Wyper,False,Wyper
+89,Kung-Fu Dugongs,9655,,False,Kung-Fu Dugongs
+90,Charlotte Mont-d'Or,9470,Charlotte_Mont-d'Or,False,Charlotte Mont-d'Or
+91,Caesar Clown,8888,Caesar_Clown,False,Caesar Clown
+92,Kin'emon,8757,Kin'emon,False,Kin'emon
+93,Zeff,8750,Zeff,False,Zeff
+94,Vista,8577,Vista,False,Vista
+95,Charlotte Perospero,8380,Charlotte_Perospero,False,Charlotte Perospero
+96,Kawamatsu,8208,Kawamatsu,False,Kawamatsu
+97,Pandaman,8017,Pandaman,False,Pandaman
+98,Bartholomew Kuma,7940,Bartholomew_Kuma,False,Bartholomew Kuma
+99,Charlotte Cracker,7910,Charlotte_Cracker,False,Charlotte Cracker
+100,Chouchou,7776,Chouchou,False,Chouchou
+101,Nekomamushi,,Nekomamushi,False,Nekomamushi
+102,Baby 5,,Baby_5,False,Baby 5
+103,Penguin,,Penguin,False,Penguin
+104,Kuro,,Kuro,False,Kuro
+105,Mont Blanc Noland,,Mont_Blanc_Noland,False,Mont Blanc Noland
+106,Farafra,,Farafra,False,Farafra
+107,Iceburg,,Iceburg,False,Iceburg
+108,Mikita (Miss Valentine),,Mikita,False,Mikita (Miss Valentine)
+109,Laboon,,Laboon,False,Laboon
+110,Kyros,,Kyros,False,Kyros
+111,Vinsmoke Niji,,Vinsmoke_Niji,False,Vinsmoke Niji
+112,Batchee,,Batchee,False,Batchee
+113,Curly Dadan,,Curly_Dadan,False,Curly Dadan
+114,Makino,,Makino,False,Makino
+115,Vinsmoke Ichiji,,Vinsmoke_Ichiji,False,Vinsmoke Ichiji
+116,King,,King,False,King
+117,Gedatsu,,Gedatsu,False,Gedatsu
+118,Kalifa,,Kalifa,False,Kalifa
+119,Hannyabal,,Hannyabal,False,Hannyabal
+120,Diesel,,Diesel,False,Diesel
+121,Daz Bonez (Mr. 1),,Daz_Bonez,False,Daz Bonez (Mr. 1)
+122,Bellamy,,Bellamy,False,Bellamy
+123,Magellan,,Magellan,False,Magellan
+124,Higuma,,Higuma,False,Higuma
+125,Kureha,,Kureha,False,Kureha
+126,Page One,,Page_One,False,Page One
+127,Belo Betty,,Belo_Betty,False,Belo Betty
+128,Viola,,Viola,False,Viola
+129,Kalgara,,Kalgara,False,Kalgara
+130,Sugar,,Sugar,False,Sugar
+131,Raki,,Raki,False,Raki
+132,Foxy,,Foxy,False,Foxy
+133,Alvida,,Alvida,False,Alvida
+134,Shimotsuki Ryuma,,Shimotsuki_Ryuma,False,Ryuma (Disambiguation)
+135,Jabra,,Jabra,False,Jabra
+136,Leo,,Leo,False,Leo
+137,Nami Fish-Woman,,,False,Nami Fish-Woman
+138,Conis,,Conis,False,Conis
+139,Arlong,,Arlong,False,Arlong
+140,Kumashi,,Kumashi,False,Kumashi
+141,Sasaki,,Sasaki,False,Sasaki
+142,Vinsmoke Yonji,,Vinsmoke_Yonji,False,Vinsmoke Yonji
+143,Galdino (Mr. 3),,Galdino,False,Galdino (Mr. 3)
+144,Queen (Scien),,Queen,False,Queen (Scien)
+145,Ryunosuke,,Ryunosuke,False,Ryunosuke
+146,Rocks D. Xebec,,Rocks_D._Xebec,False,Rocks D. Xebec
+147,Nezumi,,Nezumi,False,Nezumi
+148,Nojiko,,Nojiko,False,Nojiko
+149,Hina,,Hina,False,Hina
+150,Tyrannosaurus,,Tyrannosaurus,False,Tyrannosaurus
+151,Shimotsuki Yasuie (Tonoyasu),,Shimotsuki_Yasuie,False,Shimotsuki Yasuie (Tonoyasu)
+152,Tom,,Tom,False,Tom
+153,Kuina,,Kuina,False,Kuina
+154,Lord of the Coast,,Lord_of_the_Coast,False,Lord of the Coast
+155,Thatch,,Thatch,False,Thatch
+156,Jaguar D. Saul,,Jaguar_D._Saul,False,Jaguar D. Saul
+157,Fisher Tiger,,Fisher_Tiger,False,Fisher Tiger
+158,Capone Bege,,Capone_Bege,False,Capone Bege
+159,Hiking Bear,,,False,Hiking Bear
+160,Nico Olvia,,Nico_Olvia,False,Nico Olvia
+161,Krieg,,Krieg,False,Krieg
+162,Marianne (Miss Goldenweek),,Marianne,False,Marianne (Miss Goldenweek)
+163,Spandam,,Spandam,False,Spandam
+164,Gyro,,Gyro,False,Gyro
+165,Shachi,,Shachi,False,Shachi
+166,Boa Sandersonia,,Boa_Sandersonia,False,Boa Sandersonia
+167,Sengoku,,Sengoku,False,Sengoku
+168,Black Maria,,Black_Maria,False,Black Maria
+169,Scratchmen Apoo,,Scratchmen_Apoo,False,Scratchmen Apoo
+170,Stussy,,Stussy,False,Stussy
+171,Kouzuki Toki,,Kouzuki_Toki,False,Kouzuki Toki
+172,Lucky Roux,,Lucky_Roux,False,Lucky Roux
+173,T Bone,,T_Bone,False,T Bone
+174,Maynard,,Maynard,False,Maynard
+174,Straw Hat (Humanized),,,False,Straw Hat#Trivia
+176,Charlotte Smoothie,,Charlotte_Smoothie,False,Charlotte Smoothie
+177,Spencer,,Spencer,False,Spencer
+178,Otohime,,Otohime,False,Otohime
+179,Mansherry,,Mansherry,False,Mansherry
+180,Kouzuki Momonosuke,,Kouzuki_Momonosuke,False,Kouzuki Momonosuke
+181,Babanuki,,Babanuki,False,Babanuki
+182,Koza,,Koza,False,Koza
+183,Kaya,,Kaya,False,Kaya
+184,Jack,,Jack,False,Jack
+185,Rosward Charlos,,Rosward_Charlos,False,Rosward Charlos
+186,Shakuyaku,,Shakuyaku,False,Shakuyaku
+187,Speed,,Speed,False,Speed
+188,Mont Blanc Cricket,,Mont_Blanc_Cricket,False,Mont Blanc Cricket
+189,Toko,,Toko,False,Toko
+190,Momonga,,Momonga,False,Momonga
+191,Victoria Cindry,,Victoria_Cindry,False,Victoria Cindry
+192,Kurozumi Kanjuro,,Kanjuro,False,Kurozumi Kanjuro
+192,Pearl,,Pearl,False,Pearl
+194,Vinsmoke Sora,,Vinsmoke_Sora,False,Vinsmoke Sora
+195,Shyarly,,Shyarly,False,Shyarly
+196,Hattori,,Hattori,False,Hattori
+197,Vergo,,Vergo,False,Vergo
+198,Chimney,,Chimney,False,Chimney
+199,Gama Pyonnosuke,,Gama_Pyonnosuke,False,Gama Pyonnosuke
+200,Portgas D. Rouge,,Portgas_D._Rouge,False,Portgas D. Rouge
+201,Yasopp,,Yasopp,False,Yasopp
+202,Helmeppo,,Helmeppo,False,Helmeppo
+203,Tonjit,,Tonjit,False,Tonjit
+204,Inazuma,,Inazuma,False,Inazuma
+205,Zeus,,Zeus,False,Zeus
+206,Jango,,Jango,False,Jango
+207,Karasu,,Karasu,False,Karasu
+208,Klabautermann,,,False,Klabautermann
+209,Who's-Who,,Who's-Who,False,Who's-Who
+210,Dellinger,,Dellinger,False,Dellinger
+211,Camie,,Camie,False,Camie
+212,Wanda,,Wanda,False,Wanda
+213,Dalton,,Dalton,False,Dalton
+214,Duval,,Duval,False,Duval
+215,Anjo,,Anjo,False,Anjo
+216,Hyougoro,,Hyougoro,False,Hyougoro
+217,Inuarashi,,Inuarashi,False,Inuarashi
+218,Hajrudin,,Hajrudin,False,Hajrudin
+219,Pappag,,Pappag,False,Pappag
+220,Rindo,,Rindo,False,Rindo
+221,Heracles,,Heracles,False,Heracles
+222,Scopper Gaban,,Scopper_Gaban,False,Scopper Gaban
+223,Sadi,,Sadi,False,Sadi
+224,Bao Huang,,Bao_Huang,False,Bao Huang
+225,Daaachshund,,,False,Daaachshund
+226,Charlotte Amande,,Charlotte_Amande,False,Charlotte Amande
+227,Monster,,Monster,False,Monster
+228,Lindbergh,,Lindbergh,False,Lindbergh
+229,Laffitte,,Laffitte,False,Laffitte
+230,Gonbe,,Gonbe,False,Gonbe
+231,Charlotte Brûlée,,Charlotte_Brûlée,False,Charlotte Brûlée
+232,Kurozumi Orochi,,Kurozumi_Orochi,False,Kurozumi Orochi
+233,Toto,,Toto,False,Toto
+234,Zala (Miss Doublefinger),,Zala,False,Zala (Miss Doublefinger)
+235,Den Den Mushi,,,False,Den Den Mushi
+235,Gladius,,Gladius,False,Gladius
+235,Hatchan,,Hatchan,False,Hatchan
+235,Ucy,,Ucy,False,Ucy
+239,Bunbuku,,Bunbuku,False,Bunbuku
+239,Onimaru (Gyukimaru),,Onimaru,False,Onimaru (Gyukimaru)
+241,Matsuge,,Matsuge,False,Matsuge
+241,Snowman-san,,,False,Snowman-san
+241,Su,,Su,False,Su
+244,Sai,,Sai,False,Sai
+245,Johnny,,Johnny,False,Johnny
+246,Nefertari Cobra,,Nefertari_Cobra,False,Nefertari Cobra
+247,Crocus,,Crocus,False,Crocus
+248,Chaka,,Chaka,False,Chaka
+248,Lapahn,,,False,Lapahn
+248,Shiryu,,Shiryu,False,Shiryu
+251,Linear Fox,,,False,Animal Species/Dressrosa Saga#Linear Fox
+251,Wanze,,Wanze,False,Wanze
+253,Camel,,Camel,False,Camel
+253,Nyasha,,Nyasha,False,Nyasha
+255,Gan Fall,,Gan_Fall,False,Gan Fall
+256,Genzo,,Genzo,False,Genzo
+257,Momoo,,Momoo,False,Momoo
+258,Nola,,Nola,False,Nola
+259,Yorki,,Yorki,False,Yorki
+260,Zunesha,,Zunesha,False,Zunesha
+261,Jozu,,Jozu,False,Jozu
+262,Kokoro,,Kokoro,False,Kokoro
+263,Rika,,Rika,False,Rika
+264,Ishilly,,Ishilly,False,Ishilly
+264,Porche,,Porche,False,Porche
+266,Charlotte Praline,,Charlotte_Praline,False,Charlotte Praline
+267,South Bird,,,False,South Bird
+268,Tsuru,,Tsuru,False,Tsuru
+269,Charlotte Oven,,Charlotte_Oven,False,Charlotte Oven
+269,Gerd,,Gerd,False,Gerd
+271,Blueno,,Blueno,False,Blueno
+272,Wicca,,Wicca,False,Wicca
+273,Kamakiri,,Kamakiri,False,Kamakiri
+274,Pekoms,,Pekoms,False,Pekoms
+275,Little Oars Jr.,,Oars_Jr.,False,Little Oars Jr.
+275,Trafalgar Lami,,Lami,False,Trafalgar Lami
+277,Domino,,Domino,False,Domino
+278,Ideo,,Ideo,False,Ideo
+278,Yu,,Yu,False,Yu
+280,Surume,,Surume,False,Surume
+281,Ipponmatsu,,Ipponmatsu,False,Ipponmatsu
+282,Haruta,,Haruta,False,Haruta
+283,Charlotte Flampe,,Charlotte_Flampe,False,Charlotte Flampe
+283,Tsunagoro,,Tsunagoro,False,Tsunagoro
+285,Charlotte Galette,,Charlotte_Galette,False,Charlotte Galette
+286,Nora Gitsune,,,False,Nora Gitsune
+287,Van Augur,,Van_Augur,False,Van Augur
+288,Domo-kun,,Domo-kun,False,Domo-kun
+288,Pandawomanmi,,,False,Pandawomanmi
+290,Richie,,Richie,False,Richie
+291,Funkfreed,,Funkfreed,False,Funkfreed
+292,Shinobu,,Shinobu,False,Shinobu
+293,McGuy,,McGuy,False,McGuy
+294,Caribou,,Caribou,False,Caribou
+295,Boodle,,Boodle,False,Boodle
+296,Mocha,,Mocha,False,Mocha
+297,Marumieta,,Marumieta,False,Marumieta
+298,Wado Ichimonji (Humanized),,,False,Wado Ichimonji#Trivia
+299,Trebol,,Trebol,False,Trebol
+300,Koushirou,,Koushirou,False,Koushirou
+301,Milky,,Milky,False,Milky
+302,Gatz,,Gatz,False,Gatz
+303,Charlotte Lola,,Lola,False,Charlotte Lola
+303,Demalo Black,,Demalo_Black,False,Demalo Black
+305,Negikuma Maria,,Negikuma_Maria,False,Negikuma Maria
+306,Chicken,,Chicken,False,Chicken
+307,Robson,,Robson,False,Robson
+308,Mikio Itoo,,Mikio_Itoo,False,Mikio Itoo
+309,Aisa,,Aisa,False,Aisa
+310,Mero,,Mero,False,Mero
+311,Pagaya,,Pagaya,False,Pagaya
+311,Whitey Bay,,Whitey_Bay,False,Whitey Bay
+313,Pinky,,Pinky,False,Pinky
+314,Doma,,Doma,False,Doma
+315,Kumadori,,Kumadori,False,Kumadori
+315,Wire,,Wire,False,Wire
+317,Aphelandra,,Aphelandra,False,Aphelandra
+317,Tristan,,Tristan,False,Tristan
+317,Wapol,,Wapol,False,Wapol
+320,Yosaku,,Yosaku,False,Yosaku
+321,Salome,,Salome,False,Salome
+322,Heat,,Heat,False,Heat
+323,Tokikake,,Tokikake,False,Tokikake
+324,Donquixote Mjosgard,,Donquixote_Mjosgard,False,Donquixote Mjosgard
+324,Suleiman,,Suleiman,False,Suleiman
+326,Megalo,,Megalo,False,Megalo
+327,Aremo Ganmi,,Aremo_Ganmi,False,Aremo Ganmi
+328,Hoe,,Hoe,False,Hoe
+329,Bobbin,,Bobbin,False,Bobbin
+330,Sentomaru,,Sentomaru,False,Sentomaru
+331,Cosette,,Cosette,False,Cosette
+331,Fukaboshi,,Fukaboshi,False,Fukaboshi
+333,Absalom,,Absalom,False,Absalom
+333,Sea Cat (Juvenile),,,False,Sea Cat (Juvenile)
+335,Granny (Barto Club),,,False,Granny (Barto Club)
+335,Lao G,,Lao_G,False,Lao G
+337,Hody Jones,,Hody_Jones,False,Hody Jones
+338,Ashura Doji (Shutenmaru),,Ashura_Doji,False,Ashura Doji (Shutenmaru)
+338,Tacos,,Tacos,False,Tacos
+340,Kibagaeru,,Kibagaeru,False,Kibagaeru
+340,Lassoo,,Lassoo,False,Lassoo
+340,Zeo,,Zeo,False,Zeo
+343,Fukurou,,Fukurou,False,Fukurou
+343,Yokozuna,,Yokozuna,False,Yokozuna
+345,Chadros Higelyges,,,False,Chadros Higelyges
+346,Ninjin,,Ninjin,False,Ninjin
+347,Koyama,,Koyama,False,Koyama
+347,Vasco Shot,,Vasco_Shot,False,Vasco Shot
+349,Igaram (Mr. 8),,Igaram,False,Igaram (Mr. 8)
+350,Bellett,,Bellett,False,Bellett
+351,Sarahebi,,Sarahebi,False,Sarahebi
+351,Shishilian,,Shishilian,False,Shishilian
+353,Wadatsumi,,Wadatsumi,False,Wadatsumi
+354,Shusui (Humanized),,,False,Shusui#Trivia
+355,Doc Q,,Doc_Q,False,Doc Q
+355,Moda,,Moda,False,Moda
+355,Turco,,Turco,False,Turco
+358,Henohenounchi,,,False,Henohenounchi
+358,Hoichael,,,False,Hoichael
+360,Attach,,Attach,False,Attach
+360,Ethanbaron V. Nusjuro,,Ethanbaron_V._Nusjuro,False,Ethanbaron V. Nusjuro
+362,Jesus Burgess,,Jesus_Burgess,False,Jesus Burgess
+363,Brogy,,Brogy,False,Brogy
+364,Morgan,,Morgan,False,Morgan
+365,Plaaatypus,,,False,Plaaatypus
+365,Suzume,,Suzume,False,Suzume
+367,Brahm,,Barrel,False,Brahm
+368,Vito,,Vito,False,Vito
+369,Tsurujo,,Tsurujo,False,Tsurujo
+370,Pacifista,,,False,Pacifista
+371,Charlotte Daifuku,,Charlotte_Daifuku,False,Charlotte Daifuku
+372,Clou D. Clover,,Clover,False,Clou D. Clover
+373,Morley,,Morley,False,Morley
+374,Raizo,,Raizo,False,Raizo
+374,Scarlett,,Scarlett,False,Scarlett
+376,Komachiyo,,Komachiyo,False,Komachiyo
+376,Nero,,Nero,False,Nero
+378,Drip,,Drip,False,Drip
+378,Faust,,Faust,False,Faust
+378,Yonka Two,,,False,Yonka Two
+381,Haredas,,Haredas,False,Haredas
+381,Pound,,Pound,False,Pound
+383,Cabaji,,Cabaji,False,Cabaji
+384,Oars,,Oars,False,Oars
+384,Pankuta Dakeyan,,Pankuta_Dakeyan,False,Pankuta Dakeyan
+386,Happa Yamao,,Happa_Yamao,False,Happa Yamao
+386,Nekozaemon,,Nekozaemon,False,Nekozaemon
+388,Sea Monkey,,,False,Sea Monkey
+389,Mr. 9,,Mr._9,False,Mr. 9
+390,Hyper Snowman-san,,,False,Hyper Snowman-san
+391,Pierre,,Pierre,False,Pierre
+391,Tamago,,Tamago,False,Tamago
+393,Smiley,,Slime,False,Smiley
+393,Vander Decken IX,,Vander_Decken_IX,False,Vander Decken IX
+395,Hotori,,,False,Hotori
+396,Vinsmoke Judge,,Vinsmoke_Judge,False,Vinsmoke Judge
+397,Ripper,,Ripper,False,Ripper
+398,Sanjuan Wolf,,Sanjuan_Wolf,False,Sanjuan Wolf
+399,Hikoichi,,Kentauros,False,Hikoichi
+400,Blamenco,,Blamenco,False,Blamenco
+400,Edward Weevil,,Edward_Weevil,False,Edward Weevil
+402,Mohji,,Mohji,False,Mohji
+402,Tamanegi,,Tamanegi,False,Tamanegi
+404,Capone Pez,,Capone_Pez,False,Capone Pez
+404,Ukkari,,Ukkari,False,Ukkari
+406,Mario,,Mario,False,Mario
+407,Soro,,Soro,False,Soro
+408,Charlotte Brownie,,Charlotte_Brownie,False,Charlotte Brownie
+408,Elizabello II,,Elizabello_II,False,Elizabello II
+408,Tanishi,,,False,Tanishi
+411,Chinjao,,Chinjao,False,Chinjao
+412,Aladine,,Aladine,False,Aladine
+412,Bourbon Jr.,,Kentauros,True,Bourbon Jr.
+412,Ivan X,,Kentauros,True,Ivan X
+415,Dorry,,Dorry,False,Dorry
+415,Itomimizu,,Itomimizu,False,Itomimizu
+417,Fullbody,,Fullbody,False,Fullbody
+418,Braham,,Braham,False,Braham
+419,Ohm,,Ohm,False,Ohm
+420,Eggplant Soldier,,Eggplant_Soldier,False,Eggplant Soldier
+420,Shu,,Shu,False,Shu
+422,Makino's Child,,Makino's_Child,False,Makino's Child
+422,Randolph,,Randolph,False,Randolph
+424,Fossa,,Fossa,False,Fossa
+424,John,,John,False,John
+426,Gem (Mr. 5),,Gem,False,Gem (Mr. 5)
+426,Holy,,Holy,False,Holy
+426,Shimotsuki Ushimaru,,Shimotsuki_Ushimaru,False,Shimotsuki Ushimaru
+429,Bananawani,,,False,Bananawani
+429,MocDonald,,MocDonald,False,MocDonald
+429,Sandai Kitetsu (Humanized),,,False,Sandai Kitetsu#Trivia
+432,Chome,,Chome,False,Chome
+433,Cotton,,Cotton,False,Cotton
+434,Miss Monday,,Miss_Monday,False,Miss Monday
+434,Sea Dog Sheriff,,,False,Sea Dog Sheriff
+436,Kingbaum,,Kingbaum,False,Kingbaum
+436,Nuke Suzume,,Suzume,True,Fude Fude no Mi#Techniques
+438,Neptune,,Neptune,False,Neptune
+438,Seira,,Seira,False,Seira
+440,Margarita,,Margarita,False,Margarita
+440,Masira,,Masira,False,Masira
+440,Sarfunkel,,Sarfunkel,False,Sarfunkel
+443,Sea Cat (Adult),,,False,Sea Cat (Adult)
+444,Spoil,,Spoil,False,Spoil
+445,Pica,,Pica,False,Pica
+446,Octopus Balloon,,,False,Octopus Balloon
+446,Snow Leooopard,,,False,Snow Leooopard
+448,Blue Gilly,,Blue_Gilly,False,Blue Gilly
+448,Cocoa,,,False,Cocoa
+448,Manjaro,,Manjaro,False,Manjaro
+448,Strawberry,,Strawberry,False,Strawberry
+452,Charlotte Chiffon,,Charlotte_Chiffon,False,Charlotte Chiffon
+452,News Coo,,,False,News Coo
+452,Ran,,Ran,False,Ran
+455,Sodom,,Sodom,False,Sodom
+456,Ikkaku,,Ikkaku,False,Ikkaku
+456,Kong,,Kong,False,Kong
+458,Catarina Devon,,Catarina_Devon,False,Catarina Devon
+458,Charlotte Poire,,Charlotte_Poire,False,Charlotte Poire
+460,Shelly,,Shelly,False,Shelly
+461,Satori,,Satori,False,Satori
+462,Brannew,,Brannew,False,Brannew
+462,Mr. 7,,Mr._7,False,Mr. 7
+464,Kiwi,,Mozu_and_Kiwi,False,Kiwi
+464,Muret,,Muret,False,Muret
+464,Rock,,,False,Rock
+467,Gloriosa,,Gloriosa,False,Gloriosa
+468,Isshi-100,,,False,Isshi-100
+468,Merry,,Merry,True,Merry
+470,Chew,,Chew,False,Chew
+471,Bull,,,False,Animal Species/Water 7 Saga#Bull
+471,Gatherine,,Gatherine,False,Gatherine
+471,Laskey,,Laskey,False,Laskey
+474,Eddy,,Eddy,False,Eddy
+475,Buhichuck,,Buhichuck,False,Buhichuck
+476,Gion (Momousagi),,Gion,False,Gion (Momousagi)
+477,Michael,,,False,Michael
+477,Minatomo (Wano),,Minatomo,False,Minatomo (Wano)
+479,Gomorrah,,Gomorrah,False,Gomorrah
+479,Stainless,,Stainless,False,Stainless
+481,Mr. Beans,,Mr._Beans,False,Mr. Beans
+481,Patty,,Patty,False,Patty
+481,Shoujou,,Shoujou,False,Shoujou
+484,Doskoi Panda,,,False,Animal Species/Whole Cake Island Saga#Doskoi Panda
+485,Zambai,,Zambai,False,Zambai
+486,Daidalos,,Daidalos,False,Daidalos
+486,Rakuyo,,Rakuyo,False,Rakuyo
+488,Pascia,,Pascia,False,Pascia
+489,Bariete,,Bariete,False,Bariete
+489,Rainbow Moray Eel Brothers,,,False,Rainbow Moray Eel Brothers
+491,Gorilla,,Gorilla,False,Gorilla
+491,Spector,,Spector,False,Spector
+493,Bastille,,Bastille,False,Bastille
+494,Cerberus (Zombie),,Cerberus,False,Cerberus (Zombie)
+494,Minochihuahua,,Minochihuahua,False,Minochihuahua
+494,Sterry,,Sterry,False,Sterry
+497,Charlotte Myukuru,,Charlotte_Myukuru,False,Charlotte Myukuru
+497,Hack (Fish-man),,Hack,False,Hack (Fish-man)
+497,Inuppe,,Inuppe,False,Inuppe
+500,Onigumo,,Onigumo,False,Onigumo
+500,Peepley Lulu,,Peepley_Lulu,False,Peepley Lulu
+500,Spacey,,Spacey,False,Spacey
+503,Alice (Candidate 153),,Alice,False,Alice (Candidate 153)
+503,Shin Detamaruka,,Shin_Detamaruka,False,Shin Detamaruka
+503,Sky Fish,,,False,Sky Fish
+506,Doha Ittanka II,,,False,Doha Ittanka II
+506,Jobo,,Jobo,False,Jobo
+508,Avalo Pizarro,,Avalo_Pizarro,False,Avalo Pizarro
+508,Diamante,,Diamante,False,Diamante
+508,Heppoko,,Heppoko,False,Heppoko
+508,Peppoko,,Peppoko,False,Peppoko
+508,Poppoko,,Poppoko,False,Poppoko
+511,Mozu,,Mozu_and_Kiwi,True,Mozu
+511,Sukoshiba Kanishitoru,,Sukoshiba_Kanishitoru,False,Sukoshiba Kanishitoru
+513,Batman,,Batman,False,Batman
+514,Bacura,,Bacura,False,Bacura
+514,Hakowan,,Hakowan,False,Hakowan
+514,Miss Father's Day,,Miss_Father's_Day,False,Miss Father's Day
+514,Pudding Pudding,,Pudding_Pudding,False,Pudding Pudding
+518,Sarquiss,,Sarquiss,False,Sarquiss
+519,Charlotte Custard,,Charlotte_Custard,False,Charlotte Custard
+519,Seto,,Seto,False,Seto
+521,Scotch (Giant),,Yeti_Cool_Brothers,False,Yeti Cool Brothers
+522,Boa Marigold,,Boa_Marigold,False,Boa Marigold
+522,Kabu,,Kabu,False,Kabu
+524,Concelot,,Concelot,False,Concelot
+524,Shepherd Ju Peter,,Shepherd_Ju_Peter,False,Shepherd Ju Peter
+526,Piiman,,Piiman,False,Piiman
+527,Saldeath,,Saldeath,False,Saldeath
+527,Streusen,,Streusen,False,Streusen
+529,Nika (Mermaid),,Medaka_Mermaid_Quintuplets,False,Medaka Mermaid Quintuplets
+529,Rosward Shalria,,Rosward_Shalria,False,Rosward Shalria
+531,Prometheus,,Prometheus,False,Prometheus
+532,Kanezenny,,Kanezenny,False,Kanezenny
+533,Gimlet,,Gimlet,False,Gimlet
+533,Shura,,Shura,False,Shura
+533,Territorial Sea Slug,,,False,Animal Species/Whole Cake Island Saga#Territorial Sea Slug
+536,Kouzuki Sukiyaki,,Tenguyama_Hitetsu,False,Kouzuki Sukiyaki
+537,Uhho,,,False,Uhho
+537,Yuki,,Yuki,False,Yuki
+539,Columbus,,Columbus,False,Columbus
+539,Dogra,,Dogra,False,Dogra
+539,Hogback,,Hogback,False,Hogback
+539,Marcus Mars,,Marcus_Mars,False,Marcus Mars
+543,Ahho Zurako,,Ahho_Zurako,False,Ahho Zurako
+543,Mounblutain,,,False,Mounblutain
+543,Squard,,Squard,False,Squard
+543,Tightrope Walking Funan Bros,,,False,Tightrope Walking Funan Bros
+547,Erimaki Runners,,,False,Erimaki Runners
+547,Riku Doldo III,,Riku_Doldo_III,False,Riku Doldo III
+549,Baskerville,,Baskerville,False,Baskerville
+549,Ham Burger,,Ham_Burger,False,Ham Burger
+549,Kairo Kureyo,,Kairo_Kureyo,False,Kairo Kureyo
+549,Russian,,Russian,False,Russian
+553,Dragon Number Thirteen,,Dragon_Number_Thirteen,False,Dragon Number Thirteen
+554,Minokoala,,Minokoala,False,Minokoala
+555,Lulis,,Lulis,False,Lulis
+556,Carrier Bat,,,False,Carrier Bat
+556,Tibany,,Tibany,False,Tibany
+558,Cowboy,,Kentauros,True,Cowboy
+558,Kasa,,Kasa,False,Kasa
+558,Minotaurus,,Minotaurus,False,Minotaurus
+558,Taroimo,,Taroimo,False,Taroimo
+562,Albion,,Albion,False,Albion
+562,Amazon,,Amazon,False,Amazon
+564,Charlotte Opera,,Charlotte_Opera,False,Charlotte Opera
+565,Aggie 68,,Aggie_68,False,Aggie 68
+565,Blue Gorilla,,Gorilla,True,Blue Gorilla
+565,Komatori,,,False,Komatori
+565,Mr. 13,,Mr._13,False,Mr. 13
+565,Rosward Rosward,,Rosward_Rosward,False,Rosward Rosward
+570,Drophy (Miss Merry Christmas),,Drophy,False,Drophy (Miss Merry Christmas)
+571,Charlotte Nusstorte,,Charlotte_Nusstorte,False,Charlotte Nusstorte
+571,Chuchun,,Chuchun,False,Chuchun
+571,Jigoro,,Jigoro,False,Jigoro
+571,Unigaro,,Unigaro,False,Unigaro
+575,Jean Bart,,Jean_Bart,False,Jean Bart
+575,Minister of the Left,,Minister_of_the_Left,False,Minister of the Left
+575,Sham,,Sham,False,Sham
+578,Chocolat,,,False,Chocolat
+578,Nazu Ketagari,,,False,Nazu Ketagari
+578,Risky Brothers,,Risky_Brothers,False,Risky Brothers
+581,Gotti,,Gotti,False,Gotti
+581,Ryuboshi,,Ryuboshi,False,Ryuboshi
+583,Abdullah,,Abdullah,False,Abdullah
+583,Saru,,Saru,False,Saru
+585,Hasami,,Hasami,False,Hasami
+585,Sam,,Sam,False,Sam
+585,Stronger,,Stronger,False,Stronger
+588,Cancer,,Cancer,False,Cancer
+588,Ginrummy,,Ginrummy,False,Ginrummy
+588,Mornin,,Mornin,False,Mornin
+588,Sansuke Octopus,,,False,Sansuke Octopus
+588,Stalker,,Stalker,False,Stalker
+593,Busha,,,False,Busha
+593,Dagama,,Dagama,False,Dagama
+593,Jerry,,Jerry,False,Jerry
+593,Moon Isaac Jr.,,Moon_Isaac_Jr.,False,Moon Isaac Jr.
+597,Banchina,,Banchina,False,Banchina
+597,Charlotte Cinnamon,,Charlotte_Cinnamon,False,Charlotte Cinnamon
+599,Giovanni,,Giovanni,False,Giovanni
+599,Omakeko (Humanized Kogatana),,,False,Omakeko (Humanized Kogatana)
+601,Charlotte Nutmeg,,,False,Charlotte Nutmeg
+601,Kotori,,,False,Kotori
+601,Manticore,,,False,Manticore
+601,Motobaro,,Motobaro,False,Motobaro
+601,Yoshimoto,,Yoshimoto,False,Yoshimoto
+606,Bunny Joe,,Bunny_Joe,False,Bunny Joe
+606,Marie,,Marie,False,Marie
+606,Rokkaku,,Rokkaku,False,Rokkaku
+609,Brontosaurus,,Brontosaurus,False,Brontosaurus
+609,Kakukaku,,Kakukaku,False,Kakukaku
+609,Mousse,,Mousse,False,Mousse
+612,Amadob,,Amadob,False,Amadob
+612,Baburu,,Baburu,False,Baburu
+612,Roshio,,Roshio,False,Roshio
+615,Clione,,Clione,False,Clione
+615,Donquixote Homing,,Donquixote_Homing,False,Donquixote Homing
+615,Gina,,Gina,False,Gina
+615,Napoleon,,Napoleon,False,Napoleon
+615,Sweet Pea,,Sweet_Pea,False,Sweet Pea
+620,Ikaros Much,,Ikaros_Much,False,Ikaros Much
+620,Minister of the Right,,Minister_of_the_Right,False,Minister of the Right
+622,Dalmatian,,Dalmatian,False,Dalmatian
+622,Hammond,,Hammond,False,Hammond
+624,Charlotte Yuen,,Charlotte_Yuen,False,Charlotte Yuen
+624,Uni,,Uni,False,Uni
+626,Snow Queen,,Queen,True,Snow Queen
+627,Alpacaman,,Alpacaman,False,Alpacaman
+627,Chess,,Chess,False,Chess
+627,Nanday,,Nanday,False,Nanday
+627,Speed Jiru,,Speed_Jiru,False,Speed Jiru
+627,Splash,,Splatter,False,Splash
+632,Carmel,,Carmel,False,Carmel
+632,Gyoru,,Gyoru,False,Gyoru
+632,Kuroobi,,Kuroobi,False,Kuroobi
+632,Kyuin,,Kyuin,False,Kyuin
+632,Motzel,,Motzel,False,Motzel
+637,Buchi,,Buchi,False,Buchi
+637,Capote,,Capote,False,Capote
+637,Snow Birds,,,False,Snow Birds
+640,Fighting Fish,,,False,Fighting Fish
+640,Kentauros,,Kentauros,True,Kentauros
+640,Terracotta,,Terracotta,False,Terracotta
+640,Yamenahare,,Yamenahare,False,Yamenahare
+644,Bluejam,,Bluejam,False,Bluejam
+644,Buffalo,,Buffalo,False,Buffalo
+644,Dobby Ibadonbo,,Dobby_Ibadonbo,False,Dobby Ibadonbo
+644,Sheepshead,,Sheepshead,False,Sheepshead
+648,Carne,,Carne,False,Carne
+648,Hustle,,Hustle,False,Hustle
+648,Jeet,,Jeet,False,Jeet
+648,Milo,,Milo,False,Milo
+648,Zepo,,Zepo,False,Zepo
+653,Babe (Mr. 4),,Babe,False,Babe (Mr. 4)
+653,Doberman,,Doberman,False,Doberman
+653,Slave no. 3,,Galdino,True,Chapter 908
+653,Yama,,Yama,False,Yama
+653,Yoruko (Humanized Yoru),,,False,Yoruko (Humanized Yoru)
+658,Kaneshiro,,Kaneshiro,False,Kaneshiro
+658,Kingdew,,Kingdew,False,Kingdew
+658,Lip Doughty,,Lip_Doughty,False,Lip Doughty
+658,Roxanne,,Roxanne,False,Roxanne
+658,Terry,,Terry,False,Terry
+658,Topman Warcury,,Topman_Warcury,False,Topman Warcury
+658,Warusagi Birds,,,False,Warusagi Birds
+665,Hihimaru,,Hihimaru,False,Hihimaru
+665,McKinley,,McKinley,False,McKinley
+665,Third-Rate Underling,,,False,SMILE Factory#Workers
+668,Charlotte Raisin,,Charlotte_Raisin,False,Charlotte Raisin
+668,Curiel,,Curiel,False,Curiel
+668,Holed'em,,Holed'em,False,Holed'em
+668,Kamijiro,,Kamijiro,False,Kamijiro
+668,Splatter,,Splatter,True,Splatter
+668,Tilestone,,Tilestone,False,Tilestone
+668,Yamakaji,,Yamakaji,False,Yamakaji
+675,Charlotte Anana,,Charlotte_Anana,False,Charlotte Anana
+675,Diez Barrels,,Diez_Barrels,False,Diez Barrels
+675,Ichika,,,False,Ichika
+675,Kisegawa,,Kisegawa,False,Kisegawa
+675,Manboshi,,Manboshi,False,Manboshi
+675,Nerine,,Nerine,False,Nerine
+675,Tamagon,,Tamagon,False,Tamagon
+682,Blackback,,Blackback,False,Blackback
+682,Daruma,,Daruma,False,Daruma
+682,Hatcha,,Hatcha,False,Hatcha
+682,Lacroix,,Lacroix,False,Lacroix
+682,Marin,,Marin,False,Marin
+682,Porchemy,,Porchemy,False,Porchemy
+688,Mukkashimi Tower,,Mukkashimi_Tower,False,Mukkashimi Tower
+689,Charlotte Snack,,Charlotte_Snack,False,Charlotte Snack
+689,Fishbonen,,Fishbonen,False,Fishbonen
+689,Gambia,,Gambia,False,Gambia
+689,Humphrey,,Humphrey,False,Humphrey
+689,Jorge,,Jorge,False,Jorge
+689,Kinderella (Miss Universe),,Kinderella,False,Kinderella (Miss Universe)
+689,Kuromarimo,,Kuromarimo,False,Kuromarimo
+689,Minorhinoceros,,Minorhinoceros,False,Minorhinoceros
+689,Miss Friday,,Miss_Friday,False,Miss Friday
+689,Sea Boar,,Sea_Boar,False,Sea Boar
+689,Torasaburo,,Torasaburo,False,Torasaburo
+700,Asahija,,Asahija,False,Asahija
+700,Buckingham Stussy,,Buckingham_Stussy,False,Buckingham Stussy
+700,Gazelleman,,Gazelleman,False,Gazelleman
+700,Hamburg,,Hamburg,False,Hamburg
+700,Kashigami,,Kashigami,False,Kashigami
+700,Peterman,,Peterman,False,Peterman
+706,Antonio,,Antonio,False,Antonio
+706,Atmos,,Atmos,False,Atmos
+706,Charlotte Compote,,Charlotte_Compote,False,Charlotte Compote
+706,Den,,Den,False,Den
+706,Genbo,,Genbo,False,Genbo
+706,Hiramera,,Hiramera,False,Hiramera
+706,Jean Ango,,Jean_Ango,False,Jean Ango
+713,Daifugo,,Daifugo,False,Daifugo
+713,Flapper,,Flapper,False,Flapper
+713,Mihar,,Mihar,False,Mihar
+713,Shanba,,Shanba,False,Shanba
+713,Speedy Shrimp,,,False,Speedy Shrimp
+713,Stomp,,Kentauros,True,Stomp
+713,Wanizame,,,False,Wanizame
+720,Ishigo Shitemanna,,Ishigo_Shitemanna,False,Ishigo Shitemanna
+720,Nefertari Titi,,Nefertari_Titi,False,Nefertari Titi
+720,Rug Bear,,,False,Rug Bear
+723,Acilia,,Acilia,False,Acilia
+723,Bomba (Dwarf),,Bomba,False,Bomba
+723,Farul,,Farul,False,Farul
+723,Gyaro,,Gyaro,False,Gyaro
+723,Nugire Yainu,,Nugire_Yainu,False,Nugire Yainu
+723,Sandora Catfish,,,False,Sandora Catfish
+723,Shin Jaiya,,Shin_Jaiya,False,Shin Jaiya
+730,Daisy,,Daisy,False,Daisy
+730,Kelly Funk,,Kelly_Funk,False,Kelly Funk
+730,Machvise,,Machvise,False,Machvise
+730,Scotch (Beasts Pirates),,Scotch,False,Scotch (Beasts Pirates)
+730,Sea Ants,,,False,Animal Species/Whole Cake Island Saga#Ants
+730,Tsukimi,,Tsukimi,False,Tsukimi
+736,Decalvan Brothers,,Decalvan_Brothers,False,Decalvan Brothers
+736,Devil Dias,,Devil_Dias,False,Devil Dias
+736,Giberson,,Giberson,False,Giberson
+736,Gode,,Gode,False,Gode
+736,Humandrill,,,False,Humandrill
+736,Masukeredomo Goayu Birds,,,False,Masukeredomo Goayu Birds
+736,Miyagi,,Miyagi,False,Miyagi
+736,Panda Shark,,Megalo,True,Panda Shark
+736,Yarisugi,,Yarisugi,False,Yarisugi
+745,Armored Stonefish,,,False,Armored Stonefish
+745,Hocker,,Hocker,False,Hocker
+745,Kikyo,,Kikyo,False,Kikyo
+745,Kinga,,Kinga,False,Kinga
+745,Miss Catherina,,Miss_Catherina,False,Miss Catherina
+745,Mountain God,,Mountain_God,False,Mountain God
+745,Samurai Batts,,Samurai_Batts,False,Samurai Batts
+745,Stansen,,Stansen,False,Stansen
+745,Urashima,,Urashima,False,Urashima
+745,Wany,,Wany,False,Wany
+745,Yui,,Yui,False,Yui
+756,Belladonna,,Belladonna,False,Belladonna
+756,Bian,,Bian,False,Bian
+756,Coribou,,Coribou,False,Coribou
+756,Dobon,,Dobon,False,Dobon
+756,Hyouzou,,Hyouzou,False,Hyouzou
+756,Ipponume,,Ipponume,False,Ipponume
+756,Kumate Tribe,,,False,Kumate Tribe
+756,Moodie,,Moodie,False,Moodie
+756,North Bird,,,False,North Bird
+756,Okome,,Okome,False,Okome
+756,Poppy,,Poppy,False,Poppy
+756,Ririka,,Ririka,False,Ririka
+756,Sea Hippo,,,False,Sea Hippo
+756,Very Good,,Very_Good,False,Very Good
+756,Yomo,,Yomo,False,Yomo
+771,Hildon,,Hildon,False,Hildon
+771,Jacksonbanner,,Jacksonbanner,False,Jacksonbanner
+771,Mizuta Mawaritosuki,,Mizuta_Mawaritosuki,False,Mizuta Mawaritosuki
+771,Octopako,,Octopako,False,Octopako
+771,Seamars,,Seamars,False,Seamars
+771,Solitaire,,Solitaire,False,Solitaire
+779,A O,,A_O,False,A O
+779,Ahho Desunen IX,,Ahho_Desunen_IX,False,Ahho Desunen IX
+779,Charlotte Cornstarch,,Charlotte_Cornstarch,False,Charlotte Cornstarch
+779,Lily,,Lily,False,Lily
+779,Tamachibi,,Tamachibi,False,Tamachibi
+784,Akehende,,Akehende,False,Akehende
+784,Blenheim,,Blenheim,False,Blenheim
+784,Charlotte Moscato,,Charlotte_Moscato,False,Charlotte Moscato
+784,Cho,,Cho,False,Cho
+784,Gancho,,Gancho,False,Gancho
+784,Ideaman,,Ideaman,False,Ideaman
+784,Komashika,,,False,Komashika
+784,Oimo,,Oimo,False,Oimo
+792,An Zengaiina,,An_Zengaiina,False,An Zengaiina
+792,Banchi,,Banchi,False,Banchi
+792,Bao,,,False,Bao
+792,Comil,,Comil,False,Comil
+792,Island Eater,,Island_Eater,False,Island Eater
+792,Jaygarcia Saturn,,Jaygarcia_Saturn,False,Jaygarcia Saturn
+792,Karma,,Karma,False,Karma
+792,Koda,,Koda,False,Koda
+792,Matryosaka,,Matryo_Princesses,False,Matryosaka
+792,Matryoseka,,Matryo_Princesses,True,Matryoseka
+792,Matryosoka,,Matryo_Princesses,True,Matryosoka
+792,Matryosuka,,Matryo_Princesses,True,Matryosuka
+792,Spandine,,Spandine,False,Spandine
+792,Take,,Take,False,Take
+792,Tegata Ringana,,Tegata_Ringana,False,Tegata Ringana
+804,Azuki,,Azuki,False,Azuki
+804,Bobomba,,Bobomba,False,Bobomba
+804,Chabo,,Chabo,False,Chabo
+804,Charlotte Akimeg,,,False,Charlotte Akimeg
+804,Charlotte Anglais,,Charlotte_Anglais,False,Charlotte Anglais
+804,Dirt Boss,,Dirt_Boss,False,Dirt Boss
+804,Drug Peclo,,Drug_Peclo,False,Drug Peclo
+804,Hitsugisukan,,Hitsugisukan,False,Hitsugisukan
+804,Hyota,,Barrel,True,Hyota
+804,Kurotsuru,,Kurotsuru,False,Kurotsuru
+804,Magra,,Magra,False,Magra
+804,Nako,,Nako,False,Nako
+804,Noble Croc,,Noble_Croc,False,Noble Croc
+804,Pansy,,Pansy,False,Pansy
+804,Peachbeard,,Peachbeard,False,Peachbeard
+804,Yellow Great Rhinoceros Beetle,,,False,Yellow Great Rhinoceros Beetle
+820,Ahiru,,Ahiru,False,Ahiru
+820,Galaxy,,Galaxy,False,Galaxy
+820,Hotei,,Hotei,False,Hotei
+820,Inhel,,Inhel,False,Inhel
+820,John Giant,,John_Giant,False,John Giant
+820,Kashii,,Kashii,False,Kashii
+820,Kurozumi Higurashi,,Kurozumi_Higurashi,False,Kurozumi Higurashi
+820,Ninth,,Ninth,False,Ninth
+820,Rivers,,Rivers,False,Rivers
+820,Sandora Lizard,,,False,Sandora Lizard
+820,Sanka,,,False,Sanka
+820,Sapi,,Sapi,False,Sapi
+820,Yuda,,,False,Yuda
+833,Ankoro,,Ankoro,False,Ankoro
+833,Arrow,,Barrel,True,Arrow
+833,Basilisk,,Basilisk,False,Basilisk
+833,Boo,,Boo,False,Boo
+833,Charlotte Kato,,Charlotte_Kato,False,Charlotte Kato
+833,Eastern Bird,,,False,Eastern Bird
+833,Gaburu,,Gaburu,False,Gaburu
+833,Haritsu Kendiyo,,Haritsu_Kendiyo,False,Haritsu Kendiyo
+833,Macro (Automaton),,Macro,False,Macro (Automaton)
+833,Muchana,,Muchana,False,Muchana
+833,Pandora,,Pandora,False,Pandora
+833,Sphinx (Impel Down),,Sphinx,False,Sphinx (Impel Down)
+833,Tararan,,Tararan,False,Tararan
+846,Cocox,,Cocox,False,Cocox
+846,Coffee Monkeys,,,False,Coffee Monkeys
+846,Egana,,Egana,False,Egana
+846,Enishida,,Enishida,False,Enishida
+846,Gorobe,,Gorobe,False,Gorobe
+846,Hanger,,Hanger,False,Hanger
+846,Mororon,,Mororon,False,Mororon
+846,Pickles,,Pickles,False,Pickles
+846,Spartan,,Spartan,False,Spartan
+846,Ultraking,,Ultraking,False,Ultraking
+857,Aswa,,Aswa,False,Aswa
+857,Francois,,Francois,False,Francois
+857,Goldfish Princess,,Goldfish_Princess,False,Goldfish Princess
+857,Jigoku Benten,,Jigoku_Benten,False,Jigoku Benten
+857,Mani,,Mani,False,Mani
+857,Meadows,,Meadows,False,Meadows
+857,Mizuta Madaisuki,,Mizuta_Madaisuki,False,Mizuta Madaisuki
+857,Mummy Mee,,Mummy_Mee,False,Mummy Mee
+857,Nin,,,False,Nin
+857,Papaneel,,Papaneel,False,Papaneel
+857,Rolling Logan,,Rolling_Logan,False,Rolling Logan
+857,Run,,Run,False,Run
+857,Tama (Sphinx),,Tama,True,Tama (Sphinx)
+857,Taro,,Taro,False,Taro
+857,Terry Gilteo,,Terry_Gilteo,False,Terry Gilteo
+857,Western Bird,,,False,Western Bird
+873,Adele,,Adele,False,Adele
+873,Choi,,Choi,False,Choi
+873,Esta,,Esta,False,Esta
+873,Fukurokuju,,Fukurokuju,False,Fukurokuju
+873,Goo,,Goo,False,Goo
+873,Hewitt,,Hewitt,False,Hewitt
+873,Judy,,Judy,False,Judy
+873,Kagikko,,Kagikko,False,Kagikko
+873,Konbu,,Konbu,False,Konbu
+873,Lonz,,Lonz,False,Lonz
+873,Mr. Shimizu,,Mr._Shimizu,False,Mr. Shimizu
+873,Shirora,,,False,Shirora
+873,Époni,,Époni,False,Époni
+886,Blue Fan,,Blue_Fan,False,Blue Fan
+886,Bobby Funk,,Bobby_Funk,False,Bobby Funk
+886,Busshiri,,Busshiri,False,Busshiri
+886,Catacombo,,Catacombo,False,Catacombo
+886,Charlotte Melise,,Charlotte_Melise,False,Charlotte Melise
+886,Giolla,,Giolla,False,Giolla
+886,Kinoko,,Kinoko,False,Kinoko
+886,Lacuba,,Lacuba,False,Lacuba
+886,Maujii,,Maujii,False,Maujii
+886,Seagull Guns Nozdon,,Seagull_Guns_Nozdon,False,Seagull Guns Nozdon
+896,Acrobatic Fuwas,,,False,Acrobatic Fuwas
+896,Elmy,,Elmy,False,Elmy
+896,Hippo Gentleman,,Gallant_Hippo,False,Hippo Gentleman
+896,Kiev,,Kiev,False,Kiev
+896,Palms,,Palms,False,Palms
+896,Pisaro,,Pisaro,False,Pisaro
+896,Ross,,Ross,False,Ross
+896,Sarie Nantokanette,,Sarie_Nantokanette,False,Sarie Nantokanette
+896,Sea Bear,,,False,Sea Bear
+896,Sunbell,,Sunbell,False,Sunbell
+896,Unicorn,,,False,Unicorn
+896,Usakkov,,Usakkov,False,Usakkov
+896,Wolf Unit,,,False,Wolf Unit
+909,Agyo,,Agyo,False,Agyo
+909,Charlotte Tablet,,Charlotte_Tablet,False,Charlotte Tablet
+909,Forest Boss,,Forest_Boss,False,Forest Boss
+909,Grabar,,Grabar,False,Grabar
+909,Gram,,Gram,False,Gram
+909,Kadar,,Kadar,False,Kadar
+909,Koze,,Packy,False,Koze
+909,Mashikaku,,Mashikaku,False,Mashikaku
+909,Nitro,,Nitro,False,Nitro
+909,Puzzle Scorpions,,,False,Puzzle Scorpions
+909,Shandia Chief,,Shandia_Chief,False,Shandia Chief
+909,Tokijiro,,Tokijiro,False,Tokijiro
+909,Uholisia,,Uholisia,False,Uholisia
+909,Utan Divers,,Utan_Divers,False,Utan Divers
+909,Yonka,,,False,Yonka
+924,Bankuro,,Bankuro,False,Bankuro
+924,Bushon,,Bushon,False,Bushon
+924,Charlotte Panna,,Charlotte_Panna,False,Charlotte Panna
+924,Cosmo,,Cosmo,False,Cosmo
+924,Donovan,,Donovan,False,Donovan
+924,Fillonce,,Fillonce,False,Fillonce
+924,Goldberg,,Goldberg,False,Goldberg
+924,MAX Marx,,MAX_Marx,False,MAX Marx
+924,Mikazuki,,Mikazuki,False,Mikazuki
+924,Mr. Love,,Mr._Love,False,Mr. Love
+924,Omasa,,Omasa,False,Omasa
+924,Pellini,,Pellini,False,Pellini
+924,Poro,,Poro,False,Poro
+937,Beer VI,,Beer_VI,False,Beer VI
+937,Bizarre,,Bizarre,False,Bizarre
+937,Charlotte Hachée,,Charlotte_Hachée,False,Charlotte Hachée
+937,Charlotte Harumeg,,,False,Charlotte Harumeg
+937,Charlotte Newshi,,Charlotte_Decuplets,False,Charlotte Newshi
+937,Chesskippa,,Chesskippa,False,Chesskippa
+937,Dago,,Dago,False,Dago
+937,Ducky Bree,,Ducky_Bree,False,Ducky Bree
+937,Footbianco,,Footbianco,False,Footbianco
+937,Jibuemon,,Jibuemon,False,Jibuemon
+937,Kairen,,Kairen,False,Kairen
+937,Kurozumi Semimaru,,Kurozumi_Semimaru,False,Kurozumi Semimaru
+937,Kyuji,,Kyuji,False,Kyuji
+937,Kyukyu,,Kyukyu,False,Kyukyu
+937,Lu Feld,,Lu_Feld,False,Lu Feld
+937,Maria Napole,,Maria_Napole,False,Maria Napole
+937,Mash,,Octopus_Mash,False,Mash
+937,Mochi,,Mochi,False,Mochi
+937,Monjii,,Monjii,False,Monjii
+937,Mozambia,,Mozambia,False,Mozambia
+937,Mr. Mellow,,Mr._Mellow,False,Mr. Mellow
+937,Mr. Momora,,Mr._Momora,False,Mr. Momora
+937,Ottoland,,Ottoland,False,Ottoland
+937,Outlook III,,Outlook_III,False,Outlook III
+937,Pink Hornet,,,False,Pink Hornet
+937,Roddy,,Roddy,False,Roddy
+937,Rowing,,Rowing,False,Rowing
+937,Stevie,,Stevie,False,Stevie
+937,Superhuman Domingos,,,False,Superhuman Domingos
+937,Thalassa Lucas,,Thalassa_Lucas,False,Thalassa Lucas
+965,Ally,,Ally,False,Ally
+965,Chappe,,Chappe,False,Chappe
+965,Charlotte Allmeg,,,False,Charlotte Allmeg
+965,Charlotte Joscarpone,,Charlotte_Joscarpone,False,Charlotte Joscarpone
+965,Chess Soldiers,,,False,Homies
+965,Chiya,,Chiya,False,Chiya
+965,Delacuaji,,Delacuaji,False,Delacuaji
+965,Doringo,,Doringo,False,Doringo
+965,Goro,,Goro,False,Goro
+965,Ho,,Ho,False,Ho
+965,Jalmack,,Jalmack,False,Jalmack
+965,Kaku (Wano),,Kaku,True,Kaku (Wano)
+965,Kappa,,Kappa,False,Kappa
+965,Marilyn,,Marilyn,False,Marilyn
+965,Minozebra,,Minozebra,False,Minozebra
+965,Mountain Ricky,,Mountain_Ricky,False,Mountain Ricky
+965,Mouseman,,Mouseman,False,Mouseman
+965,Potsun,,Potsun,False,Potsun
+965,Raijin,,Raijin,False,Raijin
+965,Schollzo,,Schollzo,False,Schollzo
+965,Sind,,Sind,False,Sind
+965,Spider Mice,,,False,Spider Mice
+965,Suke,,Suke,False,Suke
+965,Zotto,,Zotto,False,Zotto
+989,Arthur,,Arthur,False,Arthur
+989,Big Pan,,Big_Pan,False,Big Pan
+989,Bingo,,Bingo,False,Bingo
+989,Biyo,,Biyo,False,Biyo
+989,CB Gallant,,CB_Gallant,False,CB Gallant
+989,Candre,,Candre,False,Candre
+989,Charlotte Marble,,Charlotte_Marble,False,Charlotte Marble
+989,Charlotte Mascarpone,,Charlotte_Mascarpone,False,Charlotte Mascarpone
+989,Charlotte Newgo,,,False,Charlotte Newgo
+989,Charlotte Newichi,,Charlotte_Decuplets,True,Charlotte Newichi
+989,Charlotte Saint-Marc,,Charlotte_Saint-Marc,False,Charlotte Saint-Marc
+989,Disco,,Disco,False,Disco
+989,Donquino,,Donquino,False,Donquino
+989,Eleven Righteous Jurors,,,False,Guilty Jury
+989,Epoida,,Epoida,False,Epoida
+989,Herb,,Herb,False,Herb
+989,Koala Mercenaries,,Koala_Mercenaries,False,Koala Mercenaries
+989,Kop,,Kop,False,Kop
+989,Kumagoro,,Kumagoro,False,Kumagoro
+989,Lady Tree,,Lady_Tree,False,Lady Tree
+989,Lines,,Lines,False,Lines
+989,Maidy,,Maidy,False,Maidy
+989,Okame,,Okame,False,Okame
+989,Petermoo,,Petermoo,False,Petermoo
+989,Puppu,,Puppu,False,Puppu
+989,Ramba,,Ramba,False,Ramba
+989,Road,,Road,False,Road
+989,Roche,,Roche,False,Roche
+989,Rush,,Rush,False,Rush
+989,Tank Lepanto,,Tank_Lepanto,False,Tank Lepanto
+989,Vitan,,Vitan,False,Vitan
+1020,Andre,,Andre,False,Andre
+1020,Barrel,,Barrel,True,Barrel
+1020,Bimine,,Bimine,False,Bimine
+1020,Charlotte Cabaletta,,Charlotte_Cabaletta,False,Charlotte Cabaletta
+1020,Charlotte Effilée,,Charlotte_Effilée,False,Charlotte Effilée
+1020,Charlotte Fuyumeg,,,False,Charlotte Fuyumeg
+1020,Charlotte Gala,,,False,Charlotte Gala
+1020,Daikon,,Daikon,False,Daikon
+1020,F-Wani,,,False,F-Wani
+1020,Fuza,,Fuza,False,Fuza
+1020,Gyoro,,,False,Gyoro
+1020,Hack (Archaeologist),,Hack,True,Hack (Archaeologist)
+1020,Islewan,,Islewan,False,Islewan
+1020,Jean Goen,,Jean_Goen,False,Jean Goen
+1020,Jean Noueilles,,Jean_Noueilles,False,Jean Noueilles
+1020,Julius,,Julius,False,Julius
+1020,Kazekage,,Kazekage,False,Kazekage
+1020,Kebi,,Kebi,False,Kebi
+1020,Komadane,,,False,Komadane
+1020,Madilloman,,Madilloman,False,Madilloman
+1020,Mr. 11,,Mr._11,False,Mr. 11
+1020,Nubon,,Nubon,False,Nubon
+1020,Packy,,Packy,True,Packy
+1020,Pavlik,,Pavlik,False,Pavlik
+1020,Sarutobi,,Sarutobi,False,Sarutobi
+1020,Sea Rabbit,,,False,Sea Rabbit
+1020,Shioyaki,,Shioyaki,False,Shioyaki
+1020,Smooge,,Smooge,False,Smooge
+1020,Tsunokkov,,Tsunokkov,False,Tsunokkov
+1020,Uzu,,Uzu,False,Uzu
+1020,Yatappe,,Yatappe,False,Yatappe
+1020,Yazaemon,,Yazaemon,False,Yazaemon
+1052,Akumai,,Akumai,False,Akumai
+1052,Baggaley,,Baggaley,False,Baggaley
+1052,Baxcon,,Baxcon,False,Baxcon
+1052,Bishamon,,Bishamon,False,Bishamon
+1052,Brew,,Brew,False,Brew
+1052,Charlotte Bavarois,,Charlotte_Bavarois,False,Charlotte Bavarois
+1052,Charlotte Dolce,,Charlotte_Dragée,False,Charlotte Dolce
+1052,Charlotte Joconde,,Charlotte_Joconde,False,Charlotte Joconde
+1052,Charlotte Mondée,,Charlotte_Mondée,False,Charlotte Mondée
+1052,Charlotte Newji,,,False,Charlotte Newji
+1052,Charlotte Noisette,,Charlotte_Noisette,False,Charlotte Noisette
+1052,Fen Bock,,Fen_Bock,False,Fen Bock
+1052,Fujin,,Fujin,False,Fujin
+1052,Great Michael,,Great_Michael,False,Great Michael
+1052,Hangan,,Hangan,False,Hangan
+1052,Hanji,,Hanji,False,Hanji
+1052,Isa,,Isa,False,Isa
+1052,Kuni,,Kuni,False,Kuni
+1052,Macro (Fish-man),,Macro,True,Macro (Fish-man)
+1052,Millet Pine,,Millet_Pine,False,Millet Pine
+1052,Monda,,Monda,False,Monda
+1052,Moyle,,Moyle,False,Moyle
+1052,Nigeratta,,Nigeratta,False,Nigeratta
+1052,Rampo,,Rampo,False,Rampo
+1052,Reforte,,Reforte,False,Reforte
+1052,Roji,,Roji,False,Roji
+1052,Sancrin,,Sancrin,False,Sancrin
+1052,Sharinguru,,Sharinguru,False,Sharinguru
+1052,Tansui,,Tansui,False,Tansui
+1052,Zucca,,Zucca,False,Zucca
+1082,Agotogi,,Agotogi,False,Agotogi
+1082,Ammo Knights,,,False,Ammo Knights
+1082,Brocca,,Brocca,False,Brocca
+1082,Bungo,,Bungo,False,Bungo
+1082,Byron,,Byron,False,Byron
+1082,Cands,,Cands,False,Cands
+1082,Charlotte Angel,,Charlotte_Angel,False,Charlotte Angel
+1082,Charlotte Dacquoise,,Charlotte_Dacquoise,False,Charlotte Dacquoise
+1082,Charlotte Newsan,,Charlotte_Decuplets,True,Charlotte Newsan
+1082,Charlotte Normande,,Charlotte_Normande,False,Charlotte Normande
+1082,Charlotte Wafers,,Charlotte_Wafers,False,Charlotte Wafers
+1082,Colscon,,Colscon,False,Colscon
+1082,Corgi,,Corgi,False,Corgi
+1082,Damask,,Damask,False,Damask
+1082,Doran,,Doran,False,Doran
+1082,Dosun,,Dosun,False,Dosun
+1082,Ganryu (Roger Pirates),,Ganryu,False,Ganryu (Roger Pirates)
+1082,Hanzo,,Hanzo,False,Hanzo
+1082,Hocha,,Hocha,False,Hocha
+1082,Ibusu,,Ibusu,False,Ibusu
+1082,Jigra,,Jigra,False,Jigra
+1082,Kinokobito,,,False,Kinokobito
+1082,Rint,,Rint,False,Rint
+1082,Royder,,Royder,False,Royder
+1082,Sea Lion,,,False,Sea Lion
+1082,WCI 31,,,False,WCI 31
+1082,Yurikah,,Yurikah,False,Yurikah
+1082,Zadie,,Zadie,False,Zadie
+1110,Blondie,,Blondie,False,Blondie
+1110,Bongo,,Bongo,False,Bongo
+1110,Charlotte Cadenza,,Charlotte_Cadenza,False,Charlotte Cadenza
+1110,Charlotte Chiboust,,Charlotte_Chiboust,False,Charlotte Chiboust
+1110,Charlotte Citron,,Charlotte_Citron,False,Charlotte Citron
+1110,Charlotte Compo,,Charlotte_Compo,False,Charlotte Compo
+1110,Charlotte Dosmarche,,Charlotte_Dosmarche,False,Charlotte Dosmarche
+1110,Charlotte Maple,,Charlotte_Maple,False,Charlotte Maple
+1110,Charlotte Mobile,,Charlotte_Mobile,False,Charlotte Mobile
+1110,Charlotte Mozart,,Charlotte_Mozart,False,Charlotte Mozart
+1110,Charlotte Prim,,Charlotte_Prim,False,Charlotte Prim
+1110,Charlotte Zuccotto,,Charlotte_Zuccotto,False,Charlotte Zuccotto
+1110,Cosmos,,Cosmos,False,Cosmos
+1110,Didit,,Didit,False,Didit
+1110,Erik,,Erik,False,Erik
+1110,Erio,,Erio,False,Erio
+1110,George Mach,,George_Mach,False,George Mach
+1110,Jorul,,Jorul,False,Jorul
+1110,Kasagoba,,Kasagoba,False,Kasagoba
+1110,Komane,,Komane,False,Komane
+1110,Mayushika,,Mayushika,False,Mayushika
+1110,Minoruba,,Minoruba,False,Minoruba
+1110,Raideen,,Raideen,False,Raideen
+1110,Seki,,Seki,False,Seki
+1110,Sicily,,Sicily,False,Sicily
+1110,Sonieh,,Sonieh,False,Sonieh
+1110,Tarte Tanks,,,False,Big Mom Pirates#Homies and Soldiers
+1110,Wallem,,Wallem,False,Wallem
+1110,Watchdog Unit of the Law,,,False,Watchdog Unit of the Law
+1110,Zodia,,Zodia,False,Zodia
+1140,Agsilly,,Agsilly,False,Agsilly
+1140,Buche,,Buche,False,Buche
+1140,Charlotte Basskarte,,Charlotte_Basskarte,False,Charlotte Basskarte
+1140,Charlotte Counter,,Charlotte_Counter,False,Charlotte Counter
+1140,Charlotte High-Fat,,Charlotte_High-Fat,False,Charlotte High-Fat
+1140,Charlotte Kanten,,Charlotte_Kanten,False,Charlotte Kanten
+1140,Charlotte Laurin,,Charlotte_Laurin,False,Charlotte Laurin
+1140,Charlotte Marnier,,Charlotte_Marnier,False,Charlotte Marnier
+1140,Charlotte Nougat,,Charlotte_Nougat,False,Charlotte Nougat
+1140,Charlotte Wiro,,Charlotte_Wiro,False,Charlotte Wiro
+1140,Jarul,,Jarul,False,Jarul
+1140,Kechatch,,Kechatch,False,Kechatch
+1140,Kobe,,Kobe,False,Kobe
+1140,Makko,,Makko,False,Makko
+1140,Mizuira,,Mizuira,False,Mizuira
+1140,Natto,,Natto,False,Natto
+1140,Oran,,Oran,False,Oran
+1140,Rabiyan,,Rabiyan,False,Rabiyan
+1140,Rakuda,,Rakuda,False,Rakuda
+1140,Shine,,Shine,False,Shine
+1140,Umit,,Umit,False,Umit
+1140,Warashi,,Warashi,False,Warashi
+1140,Wellington,,Wellington,False,Wellington
+1140,Yotsubane,,Yotsubane,False,Yotsubane
+1164,Charlotte Broyé,,Charlotte_Broyé,False,Charlotte Broyé
+1164,Charlotte De-Chat,,Charlotte_De-Chat,False,Charlotte De-Chat
+1164,Charlotte Dragée,,Charlotte_Dragée,True,Charlotte Dragée
+1164,Charlotte Mash,,Charlotte_Mash,False,Charlotte Mash
+1164,Chichilisia,,Chichilisia,False,Chichilisia
+1164,Daikoku,,Daikoku,False,Daikoku
+1164,Junan,,Junan,False,Junan
+1164,Kairiken,,Kairiken,False,Kairiken
+1172,Charlotte Basans,0,Charlotte_Basans,False,Charlotte Basans
+1172,Charlotte Montb,0,Charlotte_Montb,False,Charlotte Montb
+1172,Daigin,0,Daigin,False,Daigin

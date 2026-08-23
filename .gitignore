@@ -135,3 +135,6 @@ logs/
 # not in git/LFS. See scripts/release_db.sh and scripts/restore_db.sh.
 *.duckdb
 *.duckdb.bak
+
+# Poll character images (regenerable via `make scrape-poll`, ~118MB)
+data/wt100_2026_images/

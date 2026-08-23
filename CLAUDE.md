@@ -46,6 +46,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `character`: Character details with appearance analytics
 - `coc`: Character-of-chapter (many-to-many relationship)
 - `cov`: Character-on-volume (cover characters)
+- `character_poll`: Global popularity poll rankings (`poll_id`, `rank`, `points`, `character_id`), one row per poll entry:
+  - `wt100_2026` (2nd global poll) — `make scrape-poll`, scraped from the official site
+  - `wt100_2021` (1st global poll) — `make load-poll-2021`, from the Fandom wiki (the official site is dead)
 
 ### Critical Schema Details
 - Arc-to-saga linking is **automatic** based on chapter range containment (not scraped)
@@ -114,7 +117,7 @@ This is NOT scraped - it's computed from chapter ranges.
 Full export mode (`--mode full`) **always** drops and recreates tables to ensure schema stays in sync with DuckDB. This is critical when new columns are added. Incremental mode only exports changed data without schema updates.
 
 **Exported tables** (in dependency order):
-- `saga`, `arc`, `volume`, `chapter`, `character`
+- `saga`, `arc`, `volume`, `chapter`, `character`, `character_poll`
 - **Excluded**: `coc` and `cov` (denormalized into character table)
 
 The `SchemaMapper` handles type conversions:
