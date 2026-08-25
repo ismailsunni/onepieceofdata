@@ -8,7 +8,10 @@ CREATE TABLE IF NOT EXISTS character_poll (
     rank         INTEGER NOT NULL,   -- ties share a rank
     name         TEXT    NOT NULL,   -- name as published by the poll site
     points       BIGINT,             -- only published for the global top 10
-    character_id TEXT,               -- our character.id, NULL when unmatched
+    character_id TEXT,               -- our character.id, NULL when unmatched; deliberately
+                                     -- no FK: the weekly full export drops and recreates
+                                     -- character, which would cascade the constraint away.
+                                     -- scripts/check_poll_links.py guards the link instead.
     is_variant   BOOLEAN,            -- alternate form of an already-ranked character
     site_face_id TEXT,               -- face asset id on the poll site
     image_url    TEXT,               -- source image on the poll site

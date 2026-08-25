@@ -133,9 +133,6 @@ class SchemaMapper:
             List of ALTER TABLE statements to add foreign keys
         """
         fk_definitions = {
-            'character_poll': [
-                "ALTER TABLE character_poll ADD CONSTRAINT fk_character_poll_character FOREIGN KEY (character_id) REFERENCES character(id) ON DELETE SET NULL;"
-            ],
             'arc': [
                 "ALTER TABLE arc ADD CONSTRAINT fk_arc_saga FOREIGN KEY (saga_id) REFERENCES saga(saga_id) ON DELETE SET NULL;"
             ],

@@ -49,6 +49,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `character_poll`: Global popularity poll rankings (`poll_id`, `rank`, `points`, `character_id`), one row per poll entry:
   - `wt100_2026` (2nd global poll) — `make scrape-poll`, scraped from the official site
   - `wt100_2021` (1st global poll) — `make load-poll-2021`, from the Fandom wiki (the official site is dead)
+  - `character_id` has **no foreign key** (the weekly full export drops `character` with CASCADE, which
+    would take the constraint with it). `make check-poll-links` compares unmatched/orphaned counts against
+    `data/poll_link_baseline.json` instead, and runs as part of `make update-new-chapter`.
 
 ### Critical Schema Details
 - Arc-to-saga linking is **automatic** based on chapter range containment (not scraped)
