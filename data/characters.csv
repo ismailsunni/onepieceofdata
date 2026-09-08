@@ -9,6 +9,7 @@ A_O_Pirates,A O Pirates,/wiki/A_O_Pirates
 Abdullah,Abdullah,/wiki/Abdullah
 Absalom,Absalom,/wiki/Absalom
 Ace,Ace,/wiki/Portgas_D._Ace
+Achao,Achao,/wiki/Achao
 Acilia,Acilia,/wiki/Acilia
 Acrobatic_Fuwas,Acrobatic Fuwas,/wiki/Buggy_Pirates#Acrobatic_Fuwas
 Adele,Adele,/wiki/Adele
@@ -74,7 +75,6 @@ Atagoyama,Atagoyama,/wiki/Atagoyama
 Atlas,Atlas,/wiki/Vegapunk/Atlas
 Atmos,Atmos,/wiki/Atmos
 Attach,Attach,/wiki/Attach
-Automata,Automata,/wiki/Automata
 Avalo_Pizarro,Avalo Pizarro,/wiki/Avalo_Pizarro
 Axel,Axel,/wiki/Axel
 Azuki,Azuki,/wiki/Azuki
@@ -604,7 +604,6 @@ Gaburu,Gaburu,/wiki/Gaburu
 Gaimon,Gaimon,/wiki/Gaimon
 Galaxy,Galaxy,/wiki/Galaxy
 Galdino,Galdino,/wiki/Galdino
-Gallant_Hippo,Gallant Hippo,/wiki/Gallant_Hippo
 Galley-La_Company,Galley-La Company,/wiki/Galley-La_Company
 Gally,Gally,/wiki/Gally
 Gally_Pirates,Gally Pirates,/wiki/Gally_Pirates
@@ -820,7 +819,6 @@ Instructor,Instructor,/wiki/Marine_Ranks
 Inuarashi,Inuarashi,/wiki/Inuarashi
 Inukai,Inukai,/wiki/Inukai
 Inuppe,Inuppe,/wiki/Inuppe
-Invisible_Man,Invisible Man,/wiki/Absalom
 Ipponmatsu,Ipponmatsu,/wiki/Ipponmatsu
 Ipponume,Ipponume,/wiki/Ipponume
 Iron_Giant,Iron Giant,/wiki/Emet
@@ -845,6 +843,7 @@ Izou,Izou,/wiki/Izou
 Jabari,Jabari,/wiki/Jabari
 Jabra,Jabra,/wiki/Jabra
 Jack,Jack,/wiki/Jack
+Jack-in-the-Box,Jack-in-the-Box,/wiki/Zombies#Jack-in-the-Box
 Jacksonbanner,Jacksonbanner,/wiki/Jacksonbanner
 Jaguar,Jaguar,/wiki/Jaguar
 Jaguar_D._Saul,Jaguar D. Saul,/wiki/Jaguar_D._Saul
@@ -949,6 +948,7 @@ Kiku,Kiku,/wiki/Kikunojo
 Kikunojo,Kikunojo,/wiki/Kikunojo
 Kikyo,Kikyo,/wiki/Kikyo
 Killer,Killer,/wiki/Killer
+Killkhan,Killkhan,/wiki/Killkhan
 Kimel,Kimel,/wiki/Kimel
 Kin'emon,Kin'emon,/wiki/Kin'emon
 Kinbo,Kinbo,/wiki/Kinbo
@@ -1271,7 +1271,6 @@ Mummy_Mee,Mummy Mee,/wiki/Mummy_Mee
 Muret,Muret,/wiki/Muret
 Musketeer_Masked_Woman,Musketeer Masked Woman,/wiki/Kalifa
 Muti,Muti,/wiki/Muti
-Mysterious_Four,Mysterious Four,/wiki/Mysterious_Four
 Mysterious_Masked_Man,Mysterious Masked Man,/wiki/Blueno
 Nakaiwa,Nakaiwa,/wiki/Nakaiwa
 Nako,Nako,/wiki/Nako
@@ -1403,6 +1402,7 @@ Pekoms,Pekoms,/wiki/Pekoms
 Pell,Pell,/wiki/Pell
 Pellini,Pellini,/wiki/Pellini
 Penguin,Penguin,/wiki/Penguin
+Penguin_Zombie_Duo,Penguin Zombie Duo,/wiki/Zombies#Penguin_Zombie_Duo
 Peppoko,Peppoko,/wiki/Peppoko
 Perona,Perona,/wiki/Perona
 Peterman,Peterman,/wiki/Peterman
@@ -1526,6 +1526,7 @@ Rowing,Rowing,/wiki/Rowing
 Roxanne,Roxanne,/wiki/Roxanne
 Royal,Royal,/wiki/Royal
 Royder,Royder,/wiki/Royder
+Rug_Bear,Rug Bear,/wiki/Zombies#Rug_Bear
 Rumbar_Pirates,Rumbar Pirates,/wiki/Rumbar_Pirates
 Run,Run,/wiki/Run
 Rush,Rush,/wiki/Rush
@@ -1558,7 +1559,6 @@ Sam,Sam,/wiki/Sam
 Samosa,Samosa,/wiki/Samosa
 Samurai,Samurai,/wiki/Kin'emon
 Samurai_Batts,Samurai Batts,/wiki/Samurai_Batts
-Samurai_Zombie,Samurai Zombie,/wiki/Ryuma_(Zombie)
 Sancrin,Sancrin,/wiki/Sancrin
 Sandayu,Sandayu,/wiki/Sandayu
 Sandora_Catfish,Sandora Catfish,/wiki/Animal_Species/Arabasta_Saga#Sandora_Catfish
@@ -1581,6 +1581,7 @@ Sauce,Sauce,/wiki/Sauce
 Scales,Scales,/wiki/Scales
 Scarlett,Scarlett,/wiki/Scarlett
 Schollzo,Schollzo,/wiki/Schollzo
+Science_Unit,Science Unit,/wiki/Marines#Science_Unit_Division
 Scientist,Scientist,/wiki/Scientist
 Scimitarta,Scimitarta,/wiki/Scimitarta
 Scopper_Gaban,Scopper Gaban,/wiki/Scopper_Gaban
@@ -1679,7 +1680,7 @@ Snakeman,Snakeman,/wiki/Snakeman_(Gifter)
 Social_Club,Social Club,/wiki/Social_Club
 Sodom,Sodom,/wiki/Sodom
 Sogeking,Sogeking,/wiki/Usopp
-Soldier_Zombie,Soldier Zombie,/wiki/Soldier_Zombie
+Soldier_Zombies,Soldier Zombies,/wiki/Zombies#Soldier_Zombies
 Solitaire,Solitaire,/wiki/Solitaire
 Some,Some,/wiki/Some
 Sonieh,Sonieh,/wiki/Sonieh
@@ -1733,7 +1734,7 @@ Sunbell,Sunbell,/wiki/Sunbell
 Super_Rookie,Super Rookie,/wiki/Super_Rookie
 Super-Express_Speedy_Shrimp,Super-Express Speedy Shrimp,/wiki/Animal_Species/Sky_Island_Saga#Super-Express_Speedy_Shrimp
 Superhuman_Domingos,Superhuman Domingos,/wiki/Buggy_Pirates#Superhuman_Domingos
-Surprise_Zombies,Surprise Zombies,/wiki/Surprise_Zombies
+Surprise_Zombies,Surprise Zombies,/wiki/Zombies#Surprise_Zombies
 Surume,Surume,/wiki/Surume
 Suzume,Suzume,/wiki/Suzume
 Sweet_Pea,Sweet Pea,/wiki/Sweet_Pea
@@ -1780,7 +1781,6 @@ Third_Sasori,Third Sasori,/wiki/Animal_Species/Strong_World#Black_Brothers
 Thormann,Thormann,/wiki/Thormann
 Thriller_Bark,Thriller Bark,/wiki/Thriller_Bark
 Thriller_Bark_Pirates,Thriller Bark Pirates,/wiki/Thriller_Bark_Pirates
-Thriller_Bark_Victim's_Association,Thriller Bark Victim's Association,/wiki/Thriller_Bark_Victim's_Association
 Thunder_Soldier,Thunder Soldier,/wiki/Kyros
 Tibany,Tibany,/wiki/Tibany
 Tightrope_Walking_Funan_Bros,Tightrope Walking Funan Bros,/wiki/Buggy_Pirates#Tightrope_Walking_Funan_Bros
@@ -1828,7 +1828,6 @@ Tsurujo,Tsurujo,/wiki/Tsurujo
 Tulip_Pirates,Tulip Pirates,/wiki/Tulip_Pirates
 Turco,Turco,/wiki/Turco
 Twin_Cape,Twin Cape,/wiki/Twin_Cape
-Twin_Cape's_Lighthouse,Twin Cape's Lighthouse,/wiki/Twin_Cape#Lighthouse
 Twin_Capes_Lighthouse,Twin Capes Lighthouse,/wiki/Twin_Capes_Lighthouse
 Tyrannosaurus,Tyrannosaurus,/wiki/Tyrannosaurus
 UK,UK,/wiki/UK
@@ -1900,6 +1899,7 @@ WENP,WENP,/wiki/World_Economy_News_Paper
 Wadatsumi,Wadatsumi,/wiki/Wadatsumi
 Waford,Waford,/wiki/Waford
 Wakasa,Wakasa,/wiki/Wakasa
+Wall_Zombie,Wall Zombie,/wiki/Zombies#Wall_Zombie
 Wallace,Wallace,/wiki/Wallace
 Wallem,Wallem,/wiki/Wallem
 Wanda,Wanda,/wiki/Wanda
