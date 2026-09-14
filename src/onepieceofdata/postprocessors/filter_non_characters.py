@@ -19,7 +19,7 @@ from loguru import logger
 CHARACTER_WHITELIST = {
     "Brownbeard",       # Chadros Higelyges - real character
     "Charlos",          # Saint Charlos - World Noble
-    "Gallant_Hippo",    # Hippo Gentleman - character from Thriller Bark
+    "Hippo_Gentleman",  # character from Thriller Bark
     "Goa_King",         # King of Goa Kingdom
     "Lami",             # Trafalgar Lami - Law's sister
     "Octopus_Mash",     # Mash - character
