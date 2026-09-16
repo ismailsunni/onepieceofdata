@@ -30,7 +30,7 @@ rank,name,points,our_character_id,is_variant,wiki_title
 29,Gol D. Roger,66270,Gol_D._Roger,False,Gol D. Roger
 30,Dracule Mihawk,65869,Dracule_Mihawk,False,Dracule Mihawk
 31,Edward Newgate,59957,Edward_Newgate,False,Edward Newgate
-32,Going Merry,49992,Merry,False,Going Merry
+32,Going Merry,49992,,False,Going Merry
 33,Silvers Rayleigh,44852,Silvers_Rayleigh,False,Silvers Rayleigh
 34,Buggy,43559,Buggy,False,Buggy
 35,Enel,39144,Enel,False,Enel
@@ -467,7 +467,7 @@ rank,name,points,our_character_id,is_variant,wiki_title
 464,Rock,,,False,Rock
 467,Gloriosa,,Gloriosa,False,Gloriosa
 468,Isshi-100,,,False,Isshi-100
-468,Merry,,Merry,True,Merry
+468,Merry,,Merry,False,Merry
 470,Chew,,Chew,False,Chew
 471,Bull,,,False,Animal Species/Water 7 Saga#Bull
 471,Gatherine,,Gatherine,False,Gatherine
@@ -626,7 +626,7 @@ rank,name,points,our_character_id,is_variant,wiki_title
 622,Hammond,,Hammond,False,Hammond
 624,Charlotte Yuen,,Charlotte_Yuen,False,Charlotte Yuen
 624,Uni,,Uni,False,Uni
-626,Snow Queen,,Queen,True,Snow Queen
+626,Snow Queen,,,False,Snow Queen
 627,Alpacaman,,Alpacaman,False,Alpacaman
 627,Chess,,Chess,False,Chess
 627,Nanday,,Nanday,False,Nanday

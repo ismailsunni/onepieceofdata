@@ -23,6 +23,7 @@ BASE = "https://onepiecewt100-2026.com"
 ROOT = Path(__file__).resolve().parent.parent
 DB = ROOT / "data" / "onepiece.duckdb"
 ALIASES = ROOT / "data" / "character_aliases.json"
+BLOCKLIST = ROOT / "data" / "poll_name_blocklist.json"
 OUT_DIR = ROOT / "data"
 IMG_DIR = OUT_DIR / "wt100_2026_images"
 # directory prefix inside the Supabase Storage bucket, kept apart from the
@@ -48,6 +49,11 @@ def loose(name: str) -> str:
     for long_vowel, short in (("OU", "O"), ("OO", "O"), ("UU", "U"), ("AA", "A"), ("EE", "E")):
         key = key.replace(long_vowel, short)
     return key
+
+
+# Poll entries that are ships, objects or groups, not characters: without this
+# the surname fallback links e.g. "GOING MERRY" (the ship) to Merry (Kaya's butler).
+BLOCKED = {normalize(n) for n in json.loads(BLOCKLIST.read_text())} if BLOCKLIST.exists() else set()
 
 
 def parse_rankings(html: str) -> list[dict]:
@@ -95,6 +101,8 @@ def build_lookup(con: duckdb.DuckDBPyConnection) -> tuple[dict[str, str], dict[s
 
 def match(row: dict, exact: dict[str, str], loose_map: dict[str, str]) -> str | None:
     """Try the full name, then the parenthetical alias, then the surname alone."""
+    if normalize(row["name"]) in BLOCKED:
+        return None
     candidates = [row["name"], *re.findall(r"\(([^)]*)\)", row["name"])]
     parts = normalize(row["name"]).split()
     if len(parts) > 1:

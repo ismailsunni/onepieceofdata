@@ -43,7 +43,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 42,IZO,,Izou,False,0614,https://onepiecewt100-2026.com/assets/faces-106x106/0614.png,polls/wt100_2026/0042_IZO.png
 43,BENN.BECKMAN,,Benn_Beckman,False,0020,https://onepiecewt100-2026.com/assets/faces-106x106/0020.png,polls/wt100_2026/0043_BENN_BECKMAN.png
 44,SILVERS.RAYLEIGH,,Silvers_Rayleigh,False,0525,https://onepiecewt100-2026.com/assets/faces-106x106/0525.png,polls/wt100_2026/0044_SILVERS_RAYLEIGH.png
-45,GOING MERRY,,Merry,False,0011,https://onepiecewt100-2026.com/assets/faces-106x106/0011.png,polls/wt100_2026/0045_GOING_MERRY.png
+45,GOING MERRY,,,False,0011,https://onepiecewt100-2026.com/assets/faces-106x106/0011.png,polls/wt100_2026/0045_GOING_MERRY.png
 46,JEWELRY.BONNEY,,Jewelry_Bonney,False,0505,https://onepiecewt100-2026.com/assets/faces-106x106/0505.png,polls/wt100_2026/0046_JEWELRY_BONNEY.png
 47,ALBER (KING),,King,False,1171,https://onepiecewt100-2026.com/assets/faces-106x106/1171.png,polls/wt100_2026/0047_ALBER_KING.png
 48,BORSALINO (KIZARU),,Borsalino,False,0532,https://onepiecewt100-2026.com/assets/faces-106x106/0532.png,polls/wt100_2026/0048_BORSALINO_KIZARU.png
@@ -90,7 +90,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 89,ICEBURG,,Iceburg,False,0368,https://onepiecewt100-2026.com/assets/faces-106x106/0368.png,polls/wt100_2026/0089_ICEBURG.png
 90,THOUSAND SUNNY,,,False,0012,https://onepiecewt100-2026.com/assets/faces-106x106/0012.png,polls/wt100_2026/0090_THOUSAND_SUNNY.png
 91,KAROO,,Karoo,False,0137,https://onepiecewt100-2026.com/assets/faces-106x106/0137.png,polls/wt100_2026/0091_KAROO.png
-92,SHUSHU,,,False,0051,https://onepiecewt100-2026.com/assets/faces-106x106/0051.png,polls/wt100_2026/0092_SHUSHU.png
+92,SHUSHU,,Chouchou,False,0051,https://onepiecewt100-2026.com/assets/faces-106x106/0051.png,polls/wt100_2026/0092_SHUSHU.png
 93,HONGO,,Hongo,False,1419,https://onepiecewt100-2026.com/assets/faces-106x106/1419.png,polls/wt100_2026/0093_HONGO.png
 94,REBECCA,,Rebecca,False,0824,https://onepiecewt100-2026.com/assets/faces-106x106/0824.png,polls/wt100_2026/0094_REBECCA.png
 95,ISSHO (FUJITORA),,Issho,False,0806,https://onepiecewt100-2026.com/assets/faces-106x106/0806.png,polls/wt100_2026/0095_ISSHO_FUJITORA.png
@@ -115,7 +115,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 114,S-SNAKE,,S-Snake,False,1423,https://onepiecewt100-2026.com/assets/faces-84x84/1423.png,polls/wt100_2026/0114_S_SNAKE.png
 115,VINSMOKE NIJI,,Vinsmoke_Niji,False,0961,https://onepiecewt100-2026.com/assets/faces-84x84/0961.png,polls/wt100_2026/0115_VINSMOKE_NIJI.png
 116,VEGAPUNK PUNK-05 ATLAS,,Atlas,False,1432,https://onepiecewt100-2026.com/assets/faces-84x84/1432.png,polls/wt100_2026/0116_VEGAPUNK_PUNK_05_ATLAS.png
-117,BABY FIVE,,,False,0802,https://onepiecewt100-2026.com/assets/faces-84x84/0802.png,polls/wt100_2026/0117_BABY_FIVE.png
+117,BABY FIVE,,Baby_5,False,0802,https://onepiecewt100-2026.com/assets/faces-84x84/0802.png,polls/wt100_2026/0117_BABY_FIVE.png
 118,BLACK MARIA,,Black_Maria,False,1332,https://onepiecewt100-2026.com/assets/faces-84x84/1332.png,polls/wt100_2026/0118_BLACK_MARIA.png
 119,KALIFA,,Kalifa,False,0370,https://onepiecewt100-2026.com/assets/faces-84x84/0370.png,polls/wt100_2026/0119_KALIFA.png
 120,UROUGE,,Urouge,False,0510,https://onepiecewt100-2026.com/assets/faces-84x84/0510.png,polls/wt100_2026/0120_UROUGE.png
@@ -127,7 +127,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 126,GERD,,Gerd,False,1027,https://onepiecewt100-2026.com/assets/faces-84x84/1027.png,polls/wt100_2026/0126_GERD.png
 127,PAGE ONE,,Page_One,False,1208,https://onepiecewt100-2026.com/assets/faces-84x84/1208.png,polls/wt100_2026/0127_PAGE_ONE.png
 128,FISH-WOMAN NAMI,,Nami,True,0091,https://onepiecewt100-2026.com/assets/faces-84x84/0091.png,polls/wt100_2026/0128_FISH_WOMAN_NAMI.png
-129,BELLEMERE,,,False,0106,https://onepiecewt100-2026.com/assets/faces-84x84/0106.png,polls/wt100_2026/0129_BELLEMERE.png
+129,BELLEMERE,,Bell-mère,False,0106,https://onepiecewt100-2026.com/assets/faces-84x84/0106.png,polls/wt100_2026/0129_BELLEMERE.png
 130,SHIKI (GOLDEN LION),,Shiki,False,1483,https://onepiecewt100-2026.com/assets/faces-84x84/1483.png,polls/wt100_2026/0130_SHIKI_GOLDEN_LION.png
 131,MORGANS,,Morgans,False,1006,https://onepiecewt100-2026.com/assets/faces-84x84/1006.png,polls/wt100_2026/0131_MORGANS.png
 132,KOUZUKI MOMONOSUKE,,Kouzuki_Momonosuke,False,0800,https://onepiecewt100-2026.com/assets/faces-84x84/0800.png,polls/wt100_2026/0132_KOUZUKI_MOMONOSUKE.png
@@ -180,7 +180,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 179,SENGOKU,,Sengoku,False,0261,https://onepiecewt100-2026.com/assets/faces-84x84/0261.png,polls/wt100_2026/0179_SENGOKU.png
 180,ZEUS,,Zeus,False,0997,https://onepiecewt100-2026.com/assets/faces-84x84/0997.png,polls/wt100_2026/0180_ZEUS.png
 181,RYUNOSUKE,,Ryunosuke,False,0909,https://onepiecewt100-2026.com/assets/faces-84x84/0909.png,polls/wt100_2026/0181_RYUNOSUKE.png
-182,GUERNICA,,,False,0829,https://onepiecewt100-2026.com/assets/faces-84x84/0829.png,polls/wt100_2026/0182_GUERNICA.png
+182,GUERNICA,,Guernika,False,0829,https://onepiecewt100-2026.com/assets/faces-84x84/0829.png,polls/wt100_2026/0182_GUERNICA.png
 183,SCRATCHMEN.APOO,,Scratchmen_Apoo,False,0508,https://onepiecewt100-2026.com/assets/faces-84x84/0508.png,polls/wt100_2026/0183_SCRATCHMEN_APOO.png
 184,SERAPHIM (CROCODILE),,Crocodile,True,1471,https://onepiecewt100-2026.com/assets/faces-84x84/1471.png,polls/wt100_2026/0184_SERAPHIM_CROCODILE.png
 185,KUROZUMI KANJURO,,Kanjuro,False,0887,https://onepiecewt100-2026.com/assets/faces-84x84/0887.png,polls/wt100_2026/0185_KUROZUMI_KANJURO.png
@@ -203,7 +203,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 202,CHARLOTTE SMOOTHIE,,Charlotte_Smoothie,False,0987,https://onepiecewt100-2026.com/assets/faces-84x84/0987.png,polls/wt100_2026/0202_CHARLOTTE_SMOOTHIE.png
 203,HANNYABAL,,Hannyabal,False,0565,https://onepiecewt100-2026.com/assets/faces-84x84/0565.png,polls/wt100_2026/0203_HANNYABAL.png
 204,FISHER TIGER,,Fisher_Tiger,False,0737,https://onepiecewt100-2026.com/assets/faces-84x84/0737.png,polls/wt100_2026/0204_FISHER_TIGER.png
-205,SHILIEW,,,False,0585,https://onepiecewt100-2026.com/assets/faces-84x84/0585.png,polls/wt100_2026/0205_SHILIEW.png
+205,SHILIEW,,Shiryu,False,0585,https://onepiecewt100-2026.com/assets/faces-84x84/0585.png,polls/wt100_2026/0205_SHILIEW.png
 206,T BONE,,T_Bone,False,0393,https://onepiecewt100-2026.com/assets/faces-84x84/0393.png,polls/wt100_2026/0206_T_BONE.png
 207,KARASU,,Karasu,False,1082,https://onepiecewt100-2026.com/assets/faces-84x84/1082.png,polls/wt100_2026/0207_KARASU.png
 208,KUJAKU,,Kujaku,False,1462,https://onepiecewt100-2026.com/assets/faces-84x84/1462.png,polls/wt100_2026/0208_KUJAKU.png
@@ -211,7 +211,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 210,CHARLOTTE COMPOTE,,Charlotte_Compote,False,1012,https://onepiecewt100-2026.com/assets/faces-84x84/1012.png,polls/wt100_2026/0210_CHARLOTTE_COMPOTE.png
 211,CAPTAIN JOHN,,John,False,0470,https://onepiecewt100-2026.com/assets/faces-84x84/0470.png,polls/wt100_2026/0211_CAPTAIN_JOHN.png
 212,HIGUMA,,Higuma,False,0023,https://onepiecewt100-2026.com/assets/faces-84x84/0023.png,polls/wt100_2026/0212_HIGUMA.png
-213,KUMACY,,,False,0462,https://onepiecewt100-2026.com/assets/faces-84x84/0462.png,polls/wt100_2026/0213_KUMACY.png
+213,KUMACY,,Kumashi,False,0462,https://onepiecewt100-2026.com/assets/faces-84x84/0462.png,polls/wt100_2026/0213_KUMACY.png
 214,ROCKSTAR,,Rockstar,False,0265,https://onepiecewt100-2026.com/assets/faces-84x84/0265.png,polls/wt100_2026/0214_ROCKSTAR.png
 215,MOMOO,,Momoo,False,0100,https://onepiecewt100-2026.com/assets/faces-84x84/0100.png,polls/wt100_2026/0215_MOMOO.png
 216,CONIS,,Conis,False,0278,https://onepiecewt100-2026.com/assets/faces-84x84/0278.png,polls/wt100_2026/0216_CONIS.png
@@ -225,13 +225,13 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 224,SAINT JAYGARCIA SATURN,,Jaygarcia_Saturn,False,0252,https://onepiecewt100-2026.com/assets/faces-84x84/0252.png,polls/wt100_2026/0224_SAINT_JAYGARCIA_SATURN.png
 225,WOOP SLAP,,Woop_Slap,False,0026,https://onepiecewt100-2026.com/assets/faces-84x84/0026.png,polls/wt100_2026/0225_WOOP_SLAP.png
 226,TOM,,Tom,False,0384,https://onepiecewt100-2026.com/assets/faces-84x84/0384.png,polls/wt100_2026/0226_TOM.png
-227,VAN.AUGER,,,False,0269,https://onepiecewt100-2026.com/assets/faces-84x84/0269.png,polls/wt100_2026/0227_VAN_AUGER.png
+227,VAN.AUGER,,Van_Augur,False,0269,https://onepiecewt100-2026.com/assets/faces-84x84/0269.png,polls/wt100_2026/0227_VAN_AUGER.png
 228,SAINT SHEPHERD JU PETER,,Shepherd_Ju_Peter,False,0256,https://onepiecewt100-2026.com/assets/faces-84x84/0256.png,polls/wt100_2026/0228_SAINT_SHEPHERD_JU_PETER.png
 229,LITTLE SADI,,Sadi,False,0576,https://onepiecewt100-2026.com/assets/faces-84x84/0576.png,polls/wt100_2026/0229_LITTLE_SADI.png
 230,INUARASHI,,Inuarashi,False,0924,https://onepiecewt100-2026.com/assets/faces-84x84/0924.png,polls/wt100_2026/0230_INUARASHI.png
 231,RAKI,,Raki,False,0292,https://onepiecewt100-2026.com/assets/faces-84x84/0292.png,polls/wt100_2026/0231_RAKI.png
 232,TRANSPONDER SNAIL,,,False,0110,https://onepiecewt100-2026.com/assets/faces-84x84/0110.png,polls/wt100_2026/0232_TRANSPONDER_SNAIL.png
-233,SHARLEY,,,False,0718,https://onepiecewt100-2026.com/assets/faces-84x84/0718.png,polls/wt100_2026/0233_SHARLEY.png
+233,SHARLEY,,Shyarly,False,0718,https://onepiecewt100-2026.com/assets/faces-84x84/0718.png,polls/wt100_2026/0233_SHARLEY.png
 234,RIPLEY,,Ripley,False,1512,https://onepiecewt100-2026.com/assets/faces-84x84/1512.png,polls/wt100_2026/0234_RIPLEY.png
 235,BANZABURO,,Banzaburo,False,1288,https://onepiecewt100-2026.com/assets/faces-84x84/1288.png,polls/wt100_2026/0235_BANZABURO.png
 236,ZALA (Miss.DOUBLEFINGER),,Zala,False,0179,https://onepiecewt100-2026.com/assets/faces-84x84/0179.png,polls/wt100_2026/0236_ZALA_Miss_DOUBLEFINGER.png
@@ -241,7 +241,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 240,SAINT CHARLOS,,Charlos,False,0517,https://onepiecewt100-2026.com/assets/faces-84x84/0517.png,polls/wt100_2026/0240_SAINT_CHARLOS.png
 241,MONT BLANC CRICKET,,Mont_Blanc_Cricket,False,0248,https://onepiecewt100-2026.com/assets/faces-84x84/0248.png,polls/wt100_2026/0241_MONT_BLANC_CRICKET.png
 242,LUCKY ROUX,,Lucky_Roux,False,0018,https://onepiecewt100-2026.com/assets/faces-84x84/0018.png,polls/wt100_2026/0242_LUCKY_ROUX.png
-243,MANSHELLY,,,False,0898,https://onepiecewt100-2026.com/assets/faces-84x84/0898.png,polls/wt100_2026/0243_MANSHELLY.png
+243,MANSHELLY,,Mansherry,False,0898,https://onepiecewt100-2026.com/assets/faces-84x84/0898.png,polls/wt100_2026/0243_MANSHELLY.png
 244,YU,,Yu,False,0122,https://onepiecewt100-2026.com/assets/faces-84x84/0122.png,polls/wt100_2026/0244_YU.png
 245,PAPPAG,,Pappag,False,0489,https://onepiecewt100-2026.com/assets/faces-84x84/0489.png,polls/wt100_2026/0245_PAPPAG.png
 246,GONBE,,Gonbe,False,0355,https://onepiecewt100-2026.com/assets/faces-84x84/0355.png,polls/wt100_2026/0246_GONBE.png
@@ -285,7 +285,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 284,SEIRA,,Seira,False,0740,https://onepiecewt100-2026.com/assets/faces-84x84/0740.png,polls/wt100_2026/0284_SEIRA.png
 285,SPEED,,Speed,False,1150,https://onepiecewt100-2026.com/assets/faces-84x84/1150.png,polls/wt100_2026/0285_SPEED.png
 286,SAINT MARCUS MARS,,Marcus_Mars,False,0253,https://onepiecewt100-2026.com/assets/faces-84x84/0253.png,polls/wt100_2026/0286_SAINT_MARCUS_MARS.png
-287,RORONOA ARASHI,,Warashi,False,1436,https://onepiecewt100-2026.com/assets/faces-84x84/1436.png,polls/wt100_2026/0287_RORONOA_ARASHI.png
+287,RORONOA ARASHI,,,False,1436,https://onepiecewt100-2026.com/assets/faces-84x84/1436.png,polls/wt100_2026/0287_RORONOA_ARASHI.png
 288,AHIRU,,Ahiru,False,1091,https://onepiecewt100-2026.com/assets/faces-84x84/1091.png,polls/wt100_2026/0288_AHIRU.png
 289,SHIMOTSUKI USHIMARU,,Shimotsuki_Ushimaru,False,1264,https://onepiecewt100-2026.com/assets/faces-84x84/1264.png,polls/wt100_2026/0289_SHIMOTSUKI_USHIMARU.png
 290,GAN.FALL,,Gan_Fall,False,0274,https://onepiecewt100-2026.com/assets/faces-84x84/0274.png,polls/wt100_2026/0290_GAN_FALL.png
@@ -298,7 +298,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 297,CABAJI,,Cabaji,False,0055,https://onepiecewt100-2026.com/assets/faces-84x84/0055.png,polls/wt100_2026/0297_CABAJI.png
 298,VEGAPUNK PUNK-04 PYTHAGORAS,,Pythagoras,False,1442,https://onepiecewt100-2026.com/assets/faces-84x84/1442.png,polls/wt100_2026/0298_VEGAPUNK_PUNK_04_PYTHAGORAS.png
 299,VICTORIA CINDRY,,Victoria_Cindry,False,0456,https://onepiecewt100-2026.com/assets/faces-84x84/0456.png,polls/wt100_2026/0299_VICTORIA_CINDRY.png
-300,IDEAO,,,False,0832,https://onepiecewt100-2026.com/assets/faces-84x84/0832.png,polls/wt100_2026/0300_IDEAO.png
+300,IDEAO,,Ideo,False,0832,https://onepiecewt100-2026.com/assets/faces-84x84/0832.png,polls/wt100_2026/0300_IDEAO.png
 301,ERIS,,Eris,False,1551,https://onepiecewt100-2026.com/assets/faces-84x84/1551.png,polls/wt100_2026/0301_ERIS.png
 302,CHARLOTTE MONT-D'OR,,Charlotte_Mont-d'Or,False,0970,https://onepiecewt100-2026.com/assets/faces-84x84/0970.png,polls/wt100_2026/0302_CHARLOTTE_MONT_D_OR.png
 303,PIERRE,,Pierre,False,0275,https://onepiecewt100-2026.com/assets/faces-84x84/0275.png,polls/wt100_2026/0303_PIERRE.png
@@ -340,7 +340,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 339,APHELANDRA,,Aphelandra,False,0538,https://onepiecewt100-2026.com/assets/faces-84x84/0538.png,polls/wt100_2026/0339_APHELANDRA.png
 340,SAINT SATCHELS MAFFEY,,Satchels_Maffey,False,1552,https://onepiecewt100-2026.com/assets/faces-84x84/1552.png,polls/wt100_2026/0340_SAINT_SATCHELS_MAFFEY.png
 341,LINDBERGH,,Lindbergh,False,1081,https://onepiecewt100-2026.com/assets/faces-84x84/1081.png,polls/wt100_2026/0341_LINDBERGH.png
-342,GYATS,,,False,0808,https://onepiecewt100-2026.com/assets/faces-84x84/0808.png,polls/wt100_2026/0342_GYATS.png
+342,GYATS,,Gatz,False,0808,https://onepiecewt100-2026.com/assets/faces-84x84/0808.png,polls/wt100_2026/0342_GYATS.png
 343,SHURA,,Shura,False,0285,https://onepiecewt100-2026.com/assets/faces-84x84/0285.png,polls/wt100_2026/0343_SHURA.png
 343,JOZU,,Jozu,False,0441,https://onepiecewt100-2026.com/assets/faces-84x84/0441.png,polls/wt100_2026/0343_JOZU.png
 345,FUNKFREED,,Funkfreed,False,0429,https://onepiecewt100-2026.com/assets/faces-84x84/0429.png,polls/wt100_2026/0345_FUNKFREED.png
@@ -357,12 +357,12 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 356,DONQUIXOTE MJOSGARD,,Donquixote_Mjosgard,False,0762,https://onepiecewt100-2026.com/assets/faces-84x84/0762.png,polls/wt100_2026/0356_DONQUIXOTE_MJOSGARD.png
 357,SAINT ROSWARD SHALRIA,,Rosward_Shalria,False,0498,https://onepiecewt100-2026.com/assets/faces-84x84/0498.png,polls/wt100_2026/0357_SAINT_ROSWARD_SHALRIA.png
 358,SHINOBU,,Shinobu,False,1162,https://onepiecewt100-2026.com/assets/faces-84x84/1162.png,polls/wt100_2026/0358_SHINOBU.png
-359,MOOCY,,,False,0833,https://onepiecewt100-2026.com/assets/faces-84x84/0833.png,polls/wt100_2026/0359_MOOCY.png
+359,MOOCY,,Ucy,False,0833,https://onepiecewt100-2026.com/assets/faces-84x84/0833.png,polls/wt100_2026/0359_MOOCY.png
 360,SURUME (KRAKEN),,Surume,False,0689,https://onepiecewt100-2026.com/assets/faces-84x84/0689.png,polls/wt100_2026/0360_SURUME_KRAKEN.png
-361,COLLUN,,,False,1452,https://onepiecewt100-2026.com/assets/faces-84x84/1452.png,polls/wt100_2026/0361_COLLUN.png
+361,COLLUN,,Colon,False,1452,https://onepiecewt100-2026.com/assets/faces-84x84/1452.png,polls/wt100_2026/0361_COLLUN.png
 361,CHARLOTTE OVEN,,Charlotte_Oven,False,1017,https://onepiecewt100-2026.com/assets/faces-84x84/1017.png,polls/wt100_2026/0361_CHARLOTTE_OVEN.png
 361,SERAPHIM (DONQUIXOTE DOFLAMINGO),,Donquixote_Doflamingo,True,1469,https://onepiecewt100-2026.com/assets/faces-84x84/1469.png,polls/wt100_2026/0361_SERAPHIM_DONQUIXOTE_DOFLAMINGO.png
-361,MAMBOSHI,,,False,0712,https://onepiecewt100-2026.com/assets/faces-84x84/0712.png,polls/wt100_2026/0361_MAMBOSHI.png
+361,MAMBOSHI,,Manboshi,False,0712,https://onepiecewt100-2026.com/assets/faces-84x84/0712.png,polls/wt100_2026/0361_MAMBOSHI.png
 361,MOON ISAAC Jr.,,Moon_Isaac_Jr.,False,1318,https://onepiecewt100-2026.com/assets/faces-84x84/1318.png,polls/wt100_2026/0361_MOON_ISAAC_Jr.png
 366,MANJARO (FAKE ZORO),,Manjaro,False,0679,https://onepiecewt100-2026.com/assets/faces-84x84/0679.png,polls/wt100_2026/0366_MANJARO_FAKE_ZORO.png
 366,WANZE,,Wanze,False,0394,https://onepiecewt100-2026.com/assets/faces-84x84/0394.png,polls/wt100_2026/0366_WANZE.png
@@ -375,7 +375,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 374,TOAD BOINGNOSUKE,,,False,1114,https://onepiecewt100-2026.com/assets/faces-84x84/1114.png,polls/wt100_2026/0374_TOAD_BOINGNOSUKE.png
 374,HAKUGAN,,Hakugan,False,1349,https://onepiecewt100-2026.com/assets/faces-84x84/1349.png,polls/wt100_2026/0374_HAKUGAN.png
 376,CHARLOTTE GALETTE,,Charlotte_Galette,False,0972,https://onepiecewt100-2026.com/assets/faces-84x84/0972.png,polls/wt100_2026/0376_CHARLOTTE_GALETTE.png
-377,KYO (SILVER AXE）,,,False,1548,https://onepiecewt100-2026.com/assets/faces-84x84/1548.png,polls/wt100_2026/0377_KYO_SILVER_AXE.png
+377,KYO (SILVER AXE）,,Kyo,False,1548,https://onepiecewt100-2026.com/assets/faces-84x84/1548.png,polls/wt100_2026/0377_KYO_SILVER_AXE.png
 378,PAGAYA,,Pagaya,False,0280,https://onepiecewt100-2026.com/assets/faces-84x84/0280.png,polls/wt100_2026/0378_PAGAYA.png
 379,TENSEI (KUROUMA),,Tensei,False,1422,https://onepiecewt100-2026.com/assets/faces-84x84/1422.png,polls/wt100_2026/0379_TENSEI_KUROUMA.png
 380,SUZUME,,Suzume,False,0430,https://onepiecewt100-2026.com/assets/faces-84x84/0430.png,polls/wt100_2026/0380_SUZUME.png
@@ -385,7 +385,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 384,McTREENALD,,,False,0454,https://onepiecewt100-2026.com/assets/faces-84x84/0454.png,polls/wt100_2026/0384_McTREENALD.png
 385,TREBOL,,Trebol,False,0879,https://onepiecewt100-2026.com/assets/faces-84x84/0879.png,polls/wt100_2026/0385_TREBOL.png
 385,BONK PUNCH,,Bonk_Punch,False,1417,https://onepiecewt100-2026.com/assets/faces-84x84/1417.png,polls/wt100_2026/0385_BONK_PUNCH.png
-387,WANG ZHI,,,False,1545,https://onepiecewt100-2026.com/assets/faces-84x84/1545.png,polls/wt100_2026/0387_WANG_ZHI.png
+387,WANG ZHI,,Ochoku,False,1545,https://onepiecewt100-2026.com/assets/faces-84x84/1545.png,polls/wt100_2026/0387_WANG_ZHI.png
 388,OCTOBALLOON,,,False,0328,https://onepiecewt100-2026.com/assets/faces-84x84/0328.png,polls/wt100_2026/0388_OCTOBALLOON.png
 389,PEEKATHA KROTCH,,,False,0846,https://onepiecewt100-2026.com/assets/faces-84x84/0846.png,polls/wt100_2026/0389_PEEKATHA_KROTCH.png
 390,KATSUZO,,Katsuzo,False,1292,https://onepiecewt100-2026.com/assets/faces-84x84/1292.png,polls/wt100_2026/0390_KATSUZO.png
@@ -412,18 +412,18 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 411,JEAN BART,,Jean_Bart,False,0500,https://onepiecewt100-2026.com/assets/faces-84x84/0500.png,polls/wt100_2026/0411_JEAN_BART.png
 412,FUKABOSHI,,Fukaboshi,False,0710,https://onepiecewt100-2026.com/assets/faces-84x84/0710.png,polls/wt100_2026/0412_FUKABOSHI.png
 413,KUROZUMI OROCHI,,Kurozumi_Orochi,False,1207,https://onepiecewt100-2026.com/assets/faces-84x84/1207.png,polls/wt100_2026/0413_KUROZUMI_OROCHI.png
-413,NEFELTARI LILY,,Lily,False,1467,https://onepiecewt100-2026.com/assets/faces-84x84/1467.png,polls/wt100_2026/0413_NEFELTARI_LILY.png
+413,NEFELTARI LILY,,Nefertari_D._Lili,False,1467,https://onepiecewt100-2026.com/assets/faces-84x84/1467.png,polls/wt100_2026/0413_NEFELTARI_LILY.png
 415,TRANSPONDER SNAIL,,,False,1533,https://onepiecewt100-2026.com/assets/faces-84x84/1533.png,polls/wt100_2026/0415_TRANSPONDER_SNAIL.png
 416,GINRUMMY,,Ginrummy,False,0922,https://onepiecewt100-2026.com/assets/faces-84x84/0922.png,polls/wt100_2026/0416_GINRUMMY.png
 417,ONIGUMO,,Onigumo,False,0432,https://onepiecewt100-2026.com/assets/faces-84x84/0432.png,polls/wt100_2026/0417_ONIGUMO.png
 418,RAIZO,,Raizo,False,0936,https://onepiecewt100-2026.com/assets/faces-84x84/0936.png,polls/wt100_2026/0418_RAIZO.png
 419,SHU,,Shu,False,0437,https://onepiecewt100-2026.com/assets/faces-84x84/0437.png,polls/wt100_2026/0419_SHU.png
-419,RODO,,,False,1071,https://onepiecewt100-2026.com/assets/faces-84x84/1071.png,polls/wt100_2026/0419_RODO.png
+419,RODO,,Road,False,1071,https://onepiecewt100-2026.com/assets/faces-84x84/1071.png,polls/wt100_2026/0419_RODO.png
 421,VITO,,Vito,False,0931,https://onepiecewt100-2026.com/assets/faces-84x84/0931.png,polls/wt100_2026/0421_VITO.png
 422,DIAMANTE,,Diamante,False,0878,https://onepiecewt100-2026.com/assets/faces-84x84/0878.png,polls/wt100_2026/0422_DIAMANTE.png
 422,PACIFISTA,,,False,0531,https://onepiecewt100-2026.com/assets/faces-84x84/0531.png,polls/wt100_2026/0422_PACIFISTA.png
 424,AISA,,Aisa,False,0287,https://onepiecewt100-2026.com/assets/faces-84x84/0287.png,polls/wt100_2026/0424_AISA.png
-425,DALMATION,,,False,0630,https://onepiecewt100-2026.com/assets/faces-84x84/0630.png,polls/wt100_2026/0425_DALMATION.png
+425,DALMATION,,Dalmatian,False,0630,https://onepiecewt100-2026.com/assets/faces-84x84/0630.png,polls/wt100_2026/0425_DALMATION.png
 425,BANANA GATOR,,,False,0147,https://onepiecewt100-2026.com/assets/faces-84x84/0147.png,polls/wt100_2026/0425_BANANA_GATOR.png
 427,CUB,,,False,0864,https://onepiecewt100-2026.com/assets/faces-84x84/0864.png,polls/wt100_2026/0427_CUB.png
 428,PANDAWOMANMI,,,False,0556,https://onepiecewt100-2026.com/assets/faces-84x84/0556.png,polls/wt100_2026/0428_PANDAWOMANMI.png
@@ -440,7 +440,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 438,BIBLO,,Biblo,False,1514,https://onepiecewt100-2026.com/assets/faces-84x84/1514.png,polls/wt100_2026/0438_BIBLO.png
 440,STAINLESS,,Stainless,False,0257,https://onepiecewt100-2026.com/assets/faces-84x84/0257.png,polls/wt100_2026/0440_STAINLESS.png
 441,BAO HUANG,,Bao_Huang,False,1335,https://onepiecewt100-2026.com/assets/faces-84x84/1335.png,polls/wt100_2026/0441_BAO_HUANG.png
-442,TACO,,,False,1090,https://onepiecewt100-2026.com/assets/faces-84x84/1090.png,polls/wt100_2026/0442_TACO.png
+442,TACO,,Tacos,False,1090,https://onepiecewt100-2026.com/assets/faces-84x84/1090.png,polls/wt100_2026/0442_TACO.png
 443,GANZUI,,Ganzui,False,1481,https://onepiecewt100-2026.com/assets/faces-84x84/1481.png,polls/wt100_2026/0443_GANZUI.png
 443,YOSAKU,,Yosaku,False,0071,https://onepiecewt100-2026.com/assets/faces-84x84/0071.png,polls/wt100_2026/0443_YOSAKU.png
 445,Miss FATHER'S DAY,,Miss_Father's_Day,False,0219,https://onepiecewt100-2026.com/assets/faces-84x84/0219.png,polls/wt100_2026/0445_Miss_FATHER_S_DAY.png
@@ -476,7 +476,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 474,ORLUMBUS,,Orlumbus,False,0822,https://onepiecewt100-2026.com/assets/faces-84x84/0822.png,polls/wt100_2026/0474_ORLUMBUS.png
 476,ONION,,,False,0061,https://onepiecewt100-2026.com/assets/faces-84x84/0061.png,polls/wt100_2026/0476_ONION.png
 477,BARON TAMAGO,,Tamago,False,0760,https://onepiecewt100-2026.com/assets/faces-84x84/0760.png,polls/wt100_2026/0477_BARON_TAMAGO.png
-477,MELLO,,Mr._Mellow,False,0738,https://onepiecewt100-2026.com/assets/faces-84x84/0738.png,polls/wt100_2026/0477_MELLO.png
+477,MELLO,,,False,0738,https://onepiecewt100-2026.com/assets/faces-84x84/0738.png,polls/wt100_2026/0477_MELLO.png
 479,CHARLOTTE CINNAMON,,Charlotte_Cinnamon,False,1050,https://onepiecewt100-2026.com/assets/faces-84x84/1050.png,polls/wt100_2026/0479_CHARLOTTE_CINNAMON.png
 479,MAKINO'S BABY,,,False,0754,https://onepiecewt100-2026.com/assets/faces-84x84/0754.png,polls/wt100_2026/0479_MAKINO_S_BABY.png
 481,JOSH,,,False,1444,https://onepiecewt100-2026.com/assets/faces-84x84/1444.png,polls/wt100_2026/0481_JOSH.png
@@ -491,7 +491,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 489,HAM BURGER,,Ham_Burger,False,1088,https://onepiecewt100-2026.com/assets/faces-84x84/1088.png,polls/wt100_2026/0489_HAM_BURGER.png
 491,GENBO,,Genbo,False,0290,https://onepiecewt100-2026.com/assets/faces-84x84/0290.png,polls/wt100_2026/0491_GENBO.png
 491,SANJUAN.WOLF,,Sanjuan_Wolf,False,0643,https://onepiecewt100-2026.com/assets/faces-84x84/0643.png,polls/wt100_2026/0491_SANJUAN_WOLF.png
-493,MERRY,,Merry,True,0065,https://onepiecewt100-2026.com/assets/faces-84x84/0065.png,polls/wt100_2026/0493_MERRY.png
+493,MERRY,,Merry,False,0065,https://onepiecewt100-2026.com/assets/faces-84x84/0065.png,polls/wt100_2026/0493_MERRY.png
 494,"""HOWLING"" GAB",,Gab,False,1420,https://onepiecewt100-2026.com/assets/faces-84x84/1420.png,polls/wt100_2026/0494_HOWLING_GAB.png
 494,PRINCE BERET,,,False,0597,https://onepiecewt100-2026.com/assets/faces-84x84/0597.png,polls/wt100_2026/0494_PRINCE_BERET.png
 496,KIKOKU (Anthropomorphized form),,,False,1447,https://onepiecewt100-2026.com/assets/faces-84x84/1447.png,polls/wt100_2026/0496_KIKOKU_Anthropomorphized_form.png
@@ -749,7 +749,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 745,NAY MINGHEIM,,,False,1242,https://onepiecewt100-2026.com/assets/faces-84x84/1242.png,polls/wt100_2026/0745_NAY_MINGHEIM.png
 745,HILDON,,Hildon,False,0453,https://onepiecewt100-2026.com/assets/faces-84x84/0453.png,polls/wt100_2026/0745_HILDON.png
 750,SHIMOTSUKI KOZABURO,,Shimotsuki_Kouzaburou,False,1269,https://onepiecewt100-2026.com/assets/faces-84x84/1269.png,polls/wt100_2026/0750_SHIMOTSUKI_KOZABURO.png
-750,SNOW QUEEN,,Queen,True,0131,https://onepiecewt100-2026.com/assets/faces-84x84/0131.png,polls/wt100_2026/0750_SNOW_QUEEN.png
+750,SNOW QUEEN,,,False,0131,https://onepiecewt100-2026.com/assets/faces-84x84/0131.png,polls/wt100_2026/0750_SNOW_QUEEN.png
 750,BABURU,,Baburu,False,0801,https://onepiecewt100-2026.com/assets/faces-84x84/0801.png,polls/wt100_2026/0750_BABURU.png
 750,MJURE,,,False,0243,https://onepiecewt100-2026.com/assets/faces-84x84/0243.png,polls/wt100_2026/0750_MJURE.png
 754,CAPTAIN SEAMARS,,Seamars,False,0449,https://onepiecewt100-2026.com/assets/faces-84x84/0449.png,polls/wt100_2026/0754_CAPTAIN_SEAMARS.png
@@ -812,7 +812,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 806,CHARLOTTE JOCONDE,,Charlotte_Joconde,False,1066,https://onepiecewt100-2026.com/assets/faces-84x84/1066.png,polls/wt100_2026/0806_CHARLOTTE_JOCONDE.png
 806,TILESTONE,,Tilestone,False,0381,https://onepiecewt100-2026.com/assets/faces-84x84/0381.png,polls/wt100_2026/0806_TILESTONE.png
 806,BLUEMARINE,,Blumarine,False,1553,https://onepiecewt100-2026.com/assets/faces-84x84/1553.png,polls/wt100_2026/0806_BLUEMARINE.png
-806,LILY,,Lily,True,0237,https://onepiecewt100-2026.com/assets/faces-84x84/0237.png,polls/wt100_2026/0806_LILY.png
+806,LILY,,Lily,False,0237,https://onepiecewt100-2026.com/assets/faces-84x84/0237.png,polls/wt100_2026/0806_LILY.png
 815,KASHIGAMI'S OFFSPRING,,,False,0322,https://onepiecewt100-2026.com/assets/faces-84x84/0322.png,polls/wt100_2026/0815_KASHIGAMI_S_OFFSPRING.png
 815,FEN BOCK THE GOURD,,,False,0792,https://onepiecewt100-2026.com/assets/faces-84x84/0792.png,polls/wt100_2026/0815_FEN_BOCK_THE_GOURD.png
 815,McKINLEY,,McKinley,False,0282,https://onepiecewt100-2026.com/assets/faces-84x84/0282.png,polls/wt100_2026/0815_McKINLEY.png
@@ -846,7 +846,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 843,Dr. TSUKIMI,,Tsukimi,False,0460,https://onepiecewt100-2026.com/assets/faces-84x84/0460.png,polls/wt100_2026/0843_Dr_TSUKIMI.png
 843,SPRING OCTOPUS,,,False,1118,https://onepiecewt100-2026.com/assets/faces-84x84/1118.png,polls/wt100_2026/0843_SPRING_OCTOPUS.png
 843,POMP,,Pomp,False,1387,https://onepiecewt100-2026.com/assets/faces-84x84/1387.png,polls/wt100_2026/0843_POMP.png
-848,INO ICHIBAN-NO-SUKE,,Suke,False,1151,https://onepiecewt100-2026.com/assets/faces-84x84/1151.png,polls/wt100_2026/0848_INO_ICHIBAN_NO_SUKE.png
+848,INO ICHIBAN-NO-SUKE,,Inoichibannosuke,False,1151,https://onepiecewt100-2026.com/assets/faces-84x84/1151.png,polls/wt100_2026/0848_INO_ICHIBAN_NO_SUKE.png
 848,BLOCKHEAD,,,False,0377,https://onepiecewt100-2026.com/assets/faces-84x84/0377.png,polls/wt100_2026/0848_BLOCKHEAD.png
 848,CARNE,,Carne,False,0082,https://onepiecewt100-2026.com/assets/faces-84x84/0082.png,polls/wt100_2026/0848_CARNE.png
 848,COMPO,,Compo,False,1407,https://onepiecewt100-2026.com/assets/faces-84x84/1407.png,polls/wt100_2026/0848_COMPO.png
@@ -981,7 +981,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 980,ANDRE,,Andre,False,0694,https://onepiecewt100-2026.com/assets/faces-84x84/0694.png,polls/wt100_2026/0980_ANDRE.png
 980,BUNKOV,,,False,0596,https://onepiecewt100-2026.com/assets/faces-84x84/0596.png,polls/wt100_2026/0980_BUNKOV.png
 980,KEYGAN,,,False,0089,https://onepiecewt100-2026.com/assets/faces-84x84/0089.png,polls/wt100_2026/0980_KEYGAN.png
-980,KANDRE,,Andre,True,0649,https://onepiecewt100-2026.com/assets/faces-84x84/0649.png,polls/wt100_2026/0980_KANDRE.png
+980,KANDRE,,Candre,False,0649,https://onepiecewt100-2026.com/assets/faces-84x84/0649.png,polls/wt100_2026/0980_KANDRE.png
 980,GIRO CHINTARO,,Giro_Chintaro,False,1116,https://onepiecewt100-2026.com/assets/faces-84x84/1116.png,polls/wt100_2026/0980_GIRO_CHINTARO.png
 980,CHARLOTTE BASANS,,Charlotte_Basans,False,1562,https://onepiecewt100-2026.com/assets/faces-84x84/1562.png,polls/wt100_2026/0980_CHARLOTTE_BASANS.png
 980,SPHYNX,,,False,0577,https://onepiecewt100-2026.com/assets/faces-84x84/0577.png,polls/wt100_2026/0980_SPHYNX.png
@@ -1289,7 +1289,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 1270,BUSSHIRI,,Busshiri,False,0413,https://onepiecewt100-2026.com/assets/faces-84x84/0413.png,polls/wt100_2026/1270_BUSSHIRI.png
 1270,BLAKEY,,Blakey,False,0772,https://onepiecewt100-2026.com/assets/faces-84x84/0772.png,polls/wt100_2026/1270_BLAKEY.png
 1270,MARILYN,,Marilyn,False,0325,https://onepiecewt100-2026.com/assets/faces-84x84/0325.png,polls/wt100_2026/1270_MARILYN.png
-1270,Mr. MELOW,,Mr._Mellow,True,0176,https://onepiecewt100-2026.com/assets/faces-84x84/0176.png,polls/wt100_2026/1270_Mr_MELOW.png
+1270,Mr. MELOW,,Mr._Mellow,False,0176,https://onepiecewt100-2026.com/assets/faces-84x84/0176.png,polls/wt100_2026/1270_Mr_MELOW.png
 1270,YOTSUBANE,,Yotsubane,False,0304,https://onepiecewt100-2026.com/assets/faces-84x84/0304.png,polls/wt100_2026/1270_YOTSUBANE.png
 1293,OUTLOOK III,,Outlook_III,False,0657,https://onepiecewt100-2026.com/assets/faces-84x84/0657.png,polls/wt100_2026/1293_OUTLOOK_III.png
 1293,AGGIE 68,,Aggie_68,False,1129,https://onepiecewt100-2026.com/assets/faces-84x84/1129.png,polls/wt100_2026/1293_AGGIE_68.png
@@ -1368,9 +1368,9 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 1353,SCIMITARTA,,Scimitarta,False,1495,https://onepiecewt100-2026.com/assets/faces-84x84/1495.png,polls/wt100_2026/1353_SCIMITARTA.png
 1353,CHARLOTTE UIRO,,Charlotte_Wiro,False,0984,https://onepiecewt100-2026.com/assets/faces-84x84/0984.png,polls/wt100_2026/1353_CHARLOTTE_UIRO.png
 1353,CHARLOTTE MASH,,Charlotte_Mash,False,1037,https://onepiecewt100-2026.com/assets/faces-84x84/1037.png,polls/wt100_2026/1353_CHARLOTTE_MASH.png
-1353,SUKE,,Suke,True,1189,https://onepiecewt100-2026.com/assets/faces-84x84/1189.png,polls/wt100_2026/1353_SUKE.png
+1353,SUKE,,Suke,False,1189,https://onepiecewt100-2026.com/assets/faces-84x84/1189.png,polls/wt100_2026/1353_SUKE.png
 1353,STROGANOFF,,Stroganoff,False,1107,https://onepiecewt100-2026.com/assets/faces-84x84/1107.png,polls/wt100_2026/1353_STROGANOFF.png
-1353,TSURUE MON-NO-SUKE,,Suke,True,1225,https://onepiecewt100-2026.com/assets/faces-84x84/1225.png,polls/wt100_2026/1353_TSURUE_MON_NO_SUKE.png
+1353,TSURUE MON-NO-SUKE,,Tsurue_Monnosuke,False,1225,https://onepiecewt100-2026.com/assets/faces-84x84/1225.png,polls/wt100_2026/1353_TSURUE_MON_NO_SUKE.png
 1353,DEIGORO,,Deigoro,False,1278,https://onepiecewt100-2026.com/assets/faces-84x84/1278.png,polls/wt100_2026/1353_DEIGORO.png
 1353,DEMONI AIYO,,Demoni_Aiyo,False,1308,https://onepiecewt100-2026.com/assets/faces-84x84/1308.png,polls/wt100_2026/1353_DEMONI_AIYO.png
 1353,TENJO-SAGARI,,Tenjo-Sagari,False,1367,https://onepiecewt100-2026.com/assets/faces-84x84/1367.png,polls/wt100_2026/1353_TENJO_SAGARI.png
@@ -1446,7 +1446,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 1415,RAKUDA,,Rakuda,False,1205,https://onepiecewt100-2026.com/assets/faces-84x84/1205.png,polls/wt100_2026/1415_RAKUDA.png
 1415,REDWOLF,,Redwolf,False,1343,https://onepiecewt100-2026.com/assets/faces-84x84/1343.png,polls/wt100_2026/1415_REDWOLF.png
 1415,ROLLING LOGAN,,Rolling_Logan,False,0839,https://onepiecewt100-2026.com/assets/faces-84x84/0839.png,polls/wt100_2026/1415_ROLLING_LOGAN.png
-1415,WARASHI,,Warashi,True,0306,https://onepiecewt100-2026.com/assets/faces-84x84/0306.png,polls/wt100_2026/1415_WARASHI.png
+1415,WARASHI,,Warashi,False,0306,https://onepiecewt100-2026.com/assets/faces-84x84/0306.png,polls/wt100_2026/1415_WARASHI.png
 1415,WARUNO FURISHIRO,,Waruno_Furishiro,False,1184,https://onepiecewt100-2026.com/assets/faces-84x84/1184.png,polls/wt100_2026/1415_WARUNO_FURISHIRO.png
 1450,AGOTOGI,,Agotogi,False,0193,https://onepiecewt100-2026.com/assets/faces-84x84/0193.png,polls/wt100_2026/1450_AGOTOGI.png
 1450,IWATOBI,,Iwatobi,False,0967,https://onepiecewt100-2026.com/assets/faces-84x84/0967.png,polls/wt100_2026/1450_IWATOBI.png
@@ -1497,7 +1497,7 @@ rank,name,points,our_character_id,is_variant,site_face_id,image_url,image_path
 1484,SKALDI,,Skaldi,False,1515,https://onepiecewt100-2026.com/assets/faces-84x84/1515.png,polls/wt100_2026/1484_SKALDI.png
 1484,DAGO,,Dago,False,0401,https://onepiecewt100-2026.com/assets/faces-84x84/0401.png,polls/wt100_2026/1484_DAGO.png
 1484,NOKOKUWA POLICE,,Nokokuwa_Police,False,1345,https://onepiecewt100-2026.com/assets/faces-84x84/1345.png,polls/wt100_2026/1484_NOKOKUWA_POLICE.png
-1484,NORI-NO SUKE,,Suke,True,1295,https://onepiecewt100-2026.com/assets/faces-84x84/1295.png,polls/wt100_2026/1484_NORI_NO_SUKE.png
+1484,NORI-NO SUKE,,Norinosuke,False,1295,https://onepiecewt100-2026.com/assets/faces-84x84/1295.png,polls/wt100_2026/1484_NORI_NO_SUKE.png
 1484,HACCHA,,,False,1344,https://onepiecewt100-2026.com/assets/faces-84x84/1344.png,polls/wt100_2026/1484_HACCHA.png
 1484,PAPANEEL,,Papaneel,False,0756,https://onepiecewt100-2026.com/assets/faces-84x84/0756.png,polls/wt100_2026/1484_PAPANEEL.png
 1484,BISLEY,,Bisley,False,1357,https://onepiecewt100-2026.com/assets/faces-84x84/1357.png,polls/wt100_2026/1484_BISLEY.png

@@ -14,7 +14,7 @@ UV := uv
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
-	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase scrape-poll load-poll-2021 load-polls-csv upload-poll-images upload-poll-images-dry-run check-poll-links \
+	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase scrape-poll load-poll-2021 load-polls-csv rematch-poll-links upload-poll-images upload-poll-images-dry-run check-poll-links \
 	parse-affiliations parse-affiliations-dry-run \
 	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails \
 	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run \
@@ -182,6 +182,7 @@ help:
 	@echo "  scrape-poll              - Scrape WT100 2026 rankings → DuckDB character_poll + images"
 	@echo "  load-poll-2021           - Load WT100 2021 rankings (Fandom wiki) → character_poll"
 	@echo "  upload-poll-images       - Upload poll face images → Supabase Storage (polls/<poll_id>/)"
+	@echo "  rematch-poll-links       - Re-resolve poll names to characters after alias edits"
 	@echo "  check-poll-links         - Check poll entries still resolve to characters"
 	@echo "  chat                     - Start interactive One Piece chatbot"
 	@echo ""
@@ -672,6 +673,12 @@ scrape-poll:
 load-polls-csv:
 	@echo "🗳️  Loading poll CSVs into DuckDB..."
 	$(UV) run python scripts/load_polls_csv.py
+
+# Re-resolve poll names to character ids after editing data/character_aliases.json.
+rematch-poll-links:
+	@echo "🔁 Re-matching poll entries to characters..."
+	$(UV) run python scripts/rematch_poll_links.py
+	$(MAKE) load-polls-csv
 
 # Verify poll entries still resolve to characters (replaces the dropped FK).
 check-poll-links:
