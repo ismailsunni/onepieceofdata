@@ -53,6 +53,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
     would take the constraint with it). `make check-poll-links` compares unmatched/orphaned counts against
     `data/poll_link_baseline.json` instead, and runs as part of `make update-new-chapter`.
 
+### Fixing poll → character links
+The official 2026 site romanizes names differently from the Fandom wiki (OCHO/Cho, CUB/Kabu,
+GOMORA/Gomorrah, ...), which the name matcher cannot bridge. To link them:
+1. Add to `data/poll_overrides.json`: `"<POLL NAME>": "<character id>"` (or `"<rank>:<NAME>"`
+   when the name alone is ambiguous; `null` blocks a non-character entry like a ship).
+2. `uv run python scripts/rematch_poll_links.py --dry-run` to preview, then without the flag.
+3. `make load-polls-csv`, then `uv run python scripts/check_poll_links.py --update` to lower
+   the baseline (the `make check-poll-links` target takes no args), then
+   `make export-postgres-poll` to sync Supabase.
+
+`rematch_poll_links.py` re-resolves from the committed CSVs — no re-scrape needed.
+
 ### Critical Schema Details
 - Arc-to-saga linking is **automatic** based on chapter range containment (not scraped)
 - Character table includes chapter appearance analytics: `chapter_list`, `volume_list`, `appearance_count`, `first_appearance`, `last_appearance`, `arc_list`, `saga_list` (from CoC table)
@@ -118,6 +130,12 @@ This is NOT scraped - it's computed from chapter ranges.
 
 ### PostgreSQL Export Schema Sync
 Full export mode (`--mode full`) **always** drops and recreates tables to ensure schema stays in sync with DuckDB. This is critical when new columns are added. Incremental mode only exports changed data without schema updates.
+
+**Incremental mode detects change by row count only** (`_get_tables_to_update` compares
+`COUNT(*)` in DuckDB vs PostgreSQL). An edit that rewrites values without changing the row
+count — e.g. re-linking `character_poll.character_id` — is silently skipped by
+`make export-postgres`. Use a targeted full export for those: `make export-postgres-poll`,
+`make export-postgres-chapter`, or `--tables <names> --mode full`.
 
 **Exported tables** (in dependency order):
 - `saga`, `arc`, `volume`, `chapter`, `character`, `character_poll`
