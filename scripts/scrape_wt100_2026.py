@@ -23,7 +23,7 @@ BASE = "https://onepiecewt100-2026.com"
 ROOT = Path(__file__).resolve().parent.parent
 DB = ROOT / "data" / "onepiece.duckdb"
 ALIASES = ROOT / "data" / "character_aliases.json"
-BLOCKLIST = ROOT / "data" / "poll_name_blocklist.json"
+OVERRIDES_FILE = ROOT / "data" / "poll_overrides.json"
 OUT_DIR = ROOT / "data"
 IMG_DIR = OUT_DIR / "wt100_2026_images"
 # directory prefix inside the Supabase Storage bucket, kept apart from the
@@ -34,9 +34,10 @@ STORAGE_PREFIX = f"polls/{POLL_ID}"
 TITLES = ("SAINT", "MR", "MISS", "GOD")
 
 
-def normalize(name: str) -> str:
-    """Uppercase, strip accents/punctuation/parentheticals for fuzzy name matching."""
-    name = re.sub(r"\([^)]*\)", " ", name)
+def normalize(name: str, *, parens: bool = False) -> str:
+    """Uppercase, strip accents/punctuation for fuzzy name matching; drops parentheticals unless parens."""
+    if not parens:
+        name = re.sub(r"\([^)]*\)", " ", name)
     name = unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode()
     name = re.sub(r"[^A-Za-z0-9]+", " ", name)
     return " ".join(name.split()).upper()
@@ -51,9 +52,20 @@ def loose(name: str) -> str:
     return key
 
 
-# Poll entries that are ships, objects or groups, not characters: without this
-# the surname fallback links e.g. "GOING MERRY" (the ship) to Merry (Kaya's butler).
-BLOCKED = {normalize(n) for n in json.loads(BLOCKLIST.read_text())} if BLOCKLIST.exists() else set()
+def override_key(name: str) -> str:
+    """Override lookup key - keeps parentheticals, which is what tells variants apart."""
+    return normalize(name, parens=True)
+
+
+# Hand-curated decisions the name matcher cannot reach: null for entries that are
+# ships, objects or the wrong namesake ("GOING MERRY" is the ship, not Kaya's
+# butler), a character id where only the rank disambiguates two identical names.
+# Keys are the poll name, optionally prefixed with "<rank>:".
+OVERRIDES = (
+    {override_key(k): v for k, v in json.loads(OVERRIDES_FILE.read_text()).items()}
+    if OVERRIDES_FILE.exists()
+    else {}
+)
 
 
 def parse_rankings(html: str) -> list[dict]:
@@ -101,8 +113,9 @@ def build_lookup(con: duckdb.DuckDBPyConnection) -> tuple[dict[str, str], dict[s
 
 def match(row: dict, exact: dict[str, str], loose_map: dict[str, str]) -> str | None:
     """Try the full name, then the parenthetical alias, then the surname alone."""
-    if normalize(row["name"]) in BLOCKED:
-        return None
+    for key in (override_key(f"{row['rank']}:{row['name']}"), override_key(row["name"])):
+        if key in OVERRIDES:
+            return OVERRIDES[key]
     candidates = [row["name"], *re.findall(r"\(([^)]*)\)", row["name"])]
     parts = normalize(row["name"]).split()
     if len(parts) > 1:
