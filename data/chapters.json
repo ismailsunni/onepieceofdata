@@ -68424,7 +68424,7 @@
       {
         "name": "Victoria Cindry",
         "url": "/wiki/Victoria_Cindry",
-        "note": "cover",
+        "note": "",
         "full_text": "Victoria Cindry"
       },
       {
@@ -68444,6 +68444,18 @@
         "url": "/wiki/Inuppe",
         "note": "cover",
         "full_text": "Inuppe"
+      },
+      {
+        "name": "John",
+        "url": "/wiki/John",
+        "note": "cover",
+        "full_text": "John"
+      },
+      {
+        "name": "Ganzui",
+        "url": "/wiki/Ganzui",
+        "note": "cover",
+        "full_text": "Ganzui"
       },
       {
         "name": "Hippo Gentleman",
@@ -206626,6 +206638,12 @@
         "full_text": "Atlas"
       },
       {
+        "name": "Pacifista Mark III",
+        "url": "/wiki/Pacifista#Mark_III",
+        "note": "",
+        "full_text": "Pacifista Mark III"
+      },
+      {
         "name": "Bartholomew Kuma",
         "url": "/wiki/Bartholomew_Kuma",
         "note": "",
@@ -237520,5 +237538,108 @@
     "pages": "17",
     "release_date": "September 14, 2026",
     "jump_info": "2026 Issue 42-43"
+  },
+  {
+    "chapter_number": 1194,
+    "title": "All Things Are In Flux",
+    "english_name": "All Things Are In Flux",
+    "japanese_title": "万物は変わりゆく",
+    "characters": [
+      {
+        "name": "Pirate",
+        "url": "/wiki/Pirate",
+        "note": "flashback",
+        "full_text": "Pirate"
+      },
+      {
+        "name": "World Government",
+        "url": "/wiki/World_Government",
+        "note": "flashback",
+        "full_text": "World Government"
+      },
+      {
+        "name": "Straw Hat Pirates",
+        "url": "/wiki/Straw_Hat_Pirates",
+        "note": "flashback",
+        "full_text": "Straw Hat Pirates"
+      },
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "flashback",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "flashback",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Cross Guild",
+        "url": "/wiki/Cross_Guild",
+        "note": "flashback",
+        "full_text": "Cross Guild"
+      },
+      {
+        "name": "Dracule Mihawk",
+        "url": "/wiki/Dracule_Mihawk",
+        "note": "flashback",
+        "full_text": "Dracule Mihawk"
+      },
+      {
+        "name": "Thriller Bark Pirates",
+        "url": "/wiki/Thriller_Bark_Pirates",
+        "note": "flashback",
+        "full_text": "Thriller Bark Pirates"
+      },
+      {
+        "name": "Perona",
+        "url": "/wiki/Perona",
+        "note": "flashback",
+        "full_text": "Perona"
+      },
+      {
+        "name": "Blackbeard Pirates",
+        "url": "/wiki/Blackbeard_Pirates",
+        "note": "cover",
+        "full_text": "Blackbeard Pirates"
+      },
+      {
+        "name": "Marshall D. Teach",
+        "url": "/wiki/Marshall_D._Teach",
+        "note": "cover",
+        "full_text": "Marshall D. Teach"
+      },
+      {
+        "name": "Elbaph",
+        "url": "/wiki/Elbaph",
+        "note": "flashback",
+        "full_text": "Elbaph"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "flashback",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Knights of God",
+        "url": "/wiki/Knights_of_God",
+        "note": "",
+        "full_text": "Knights of God"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "",
+        "full_text": "Shepherd Sommers"
+      }
+    ],
+    "volume": "TBA",
+    "chapter_display": "1194",
+    "pages": "13",
+    "release_date": "September 28, 2026",
+    "jump_info": "2026 Issue 44"
   }
 ]
