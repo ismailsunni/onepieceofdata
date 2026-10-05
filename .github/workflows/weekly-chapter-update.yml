@@ -1,0 +1,66 @@
+name: Weekly chapter update
+
+on:
+  schedule:
+    - cron: "0 15 * * 1" # Monday 22:00 WIB (UTC+7)
+    - cron: "0 15 * * 2" # Tuesday retry; no-op if Monday already updated
+  workflow_dispatch:
+
+concurrency:
+  group: weekly-chapter-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write # push data commit + create/prune DB releases
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - run: uv sync
+
+      - name: Check for a new released chapter on the wiki
+        id: check
+        run: uv run python scripts/check_new_chapter.py
+
+      - name: Write .env
+        if: steps.check.outputs.ready == 'true'
+        run: |
+          cat > .env <<EOF
+          OP_LAST_CHAPTER=${{ steps.check.outputs.chapter }}
+          OP_LAST_VOLUME=${{ steps.check.outputs.volume }}
+          OP_DATABASE_PATH=./data/onepiece.duckdb
+          OP_SCRAPING_DELAY=0.1
+          OP_MAX_WORKERS=4
+          POSTGRES_HOST=${{ secrets.POSTGRES_HOST }}
+          POSTGRES_PORT=${{ secrets.POSTGRES_PORT }}
+          POSTGRES_DB=${{ secrets.POSTGRES_DB }}
+          POSTGRES_USER=${{ secrets.POSTGRES_USER }}
+          POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+          POSTGRES_SSL_MODE=require
+          EOF
+          mkdir -p logs exports
+
+      - name: Restore previous DuckDB snapshot
+        if: steps.check.outputs.ready == 'true'
+        run: make restore-db
+
+      - name: Run weekly update
+        if: steps.check.outputs.ready == 'true'
+        run: make update-new-chapter
+
+      - name: Commit updated data
+        if: steps.check.outputs.ready == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data exports
+          git diff --cached --quiet || git commit -m "Update to chapter ${{ steps.check.outputs.chapter }}"
+          git push
