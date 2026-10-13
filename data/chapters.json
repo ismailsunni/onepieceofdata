@@ -237467,12 +237467,6 @@
         "full_text": "Ripley"
       },
       {
-        "name": "Bjorn",
-        "url": "/wiki/Bjorn",
-        "note": "",
-        "full_text": "Bjorn"
-      },
-      {
         "name": "Olav",
         "url": "/wiki/Olav",
         "note": "",
@@ -237489,6 +237483,30 @@
         "url": "/wiki/Bent",
         "note": "",
         "full_text": "Bent"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Johanna",
+        "url": "/wiki/Johanna",
+        "note": "",
+        "full_text": "Johanna"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn",
+        "note": "",
+        "full_text": "Bjorn"
       },
       {
         "name": "Biblo",
@@ -237641,5 +237659,228 @@
     "pages": "13",
     "release_date": "September 28, 2026",
     "jump_info": "2026 Issue 44"
+  },
+  {
+    "chapter_number": 1195,
+    "title": "Weakness",
+    "english_name": "Weakness",
+    "japanese_title": "弱点",
+    "characters": [
+      {
+        "name": "Pirate",
+        "url": "/wiki/Pirate",
+        "note": "",
+        "full_text": "Pirate"
+      },
+      {
+        "name": "World Government",
+        "url": "/wiki/World_Government",
+        "note": "flashback",
+        "full_text": "World Government"
+      },
+      {
+        "name": "Revolutionary Army",
+        "url": "/wiki/Revolutionary_Army",
+        "note": "flashback",
+        "full_text": "Revolutionary Army"
+      },
+      {
+        "name": "Straw Hat Pirates",
+        "url": "/wiki/Straw_Hat_Pirates",
+        "note": "flashback",
+        "full_text": "Straw Hat Pirates"
+      },
+      {
+        "name": "Monkey D. Luffy",
+        "url": "/wiki/Monkey_D._Luffy",
+        "note": "flashback",
+        "full_text": "Monkey D. Luffy"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "url": "/wiki/Roronoa_Zoro",
+        "note": "",
+        "full_text": "Roronoa Zoro"
+      },
+      {
+        "name": "Nami",
+        "url": "/wiki/Nami",
+        "note": "",
+        "full_text": "Nami"
+      },
+      {
+        "name": "Sanji",
+        "url": "/wiki/Sanji",
+        "note": "",
+        "full_text": "Sanji"
+      },
+      {
+        "name": "Tony Tony Chopper",
+        "url": "/wiki/Tony_Tony_Chopper",
+        "note": "",
+        "full_text": "Tony Tony Chopper"
+      },
+      {
+        "name": "Nico Robin",
+        "url": "/wiki/Nico_Robin",
+        "note": "",
+        "full_text": "Nico Robin"
+      },
+      {
+        "name": "Franky",
+        "url": "/wiki/Franky",
+        "note": "",
+        "full_text": "Franky"
+      },
+      {
+        "name": "Brook",
+        "url": "/wiki/Brook",
+        "note": "",
+        "full_text": "Brook"
+      },
+      {
+        "name": "Jinbe",
+        "url": "/wiki/Jinbe",
+        "note": "",
+        "full_text": "Jinbe"
+      },
+      {
+        "name": "New Giant Warrior Pirates",
+        "url": "/wiki/New_Giant_Warrior_Pirates",
+        "note": "flashback",
+        "full_text": "New Giant Warrior Pirates"
+      },
+      {
+        "name": "Road",
+        "url": "/wiki/Road",
+        "note": "flashback",
+        "full_text": "Road"
+      },
+      {
+        "name": "Elbaph",
+        "url": "/wiki/Elbaph",
+        "note": "flashback",
+        "full_text": "Elbaph"
+      },
+      {
+        "name": "Jarul",
+        "url": "/wiki/Jarul",
+        "note": "flashback",
+        "full_text": "Jarul"
+      },
+      {
+        "name": "Scopper Gaban",
+        "url": "/wiki/Scopper_Gaban",
+        "note": "flashback",
+        "full_text": "Scopper Gaban"
+      },
+      {
+        "name": "Ripley",
+        "url": "/wiki/Ripley",
+        "note": "",
+        "full_text": "Ripley"
+      },
+      {
+        "name": "Ange",
+        "url": "/wiki/Ange",
+        "note": "",
+        "full_text": "Ange"
+      },
+      {
+        "name": "Jaguar D. Saul",
+        "url": "/wiki/Jaguar_D._Saul",
+        "note": "",
+        "full_text": "Jaguar D. Saul"
+      },
+      {
+        "name": "Biblo",
+        "url": "/wiki/Biblo",
+        "note": "flashback",
+        "full_text": "Biblo"
+      },
+      {
+        "name": "Colon",
+        "url": "/wiki/Colon",
+        "note": "flashback",
+        "full_text": "Colon"
+      },
+      {
+        "name": "Ylva",
+        "url": "/wiki/Ylva",
+        "note": "flashback",
+        "full_text": "Ylva"
+      },
+      {
+        "name": "Bjorn",
+        "url": "/wiki/Bjorn",
+        "note": "flashback",
+        "full_text": "Bjorn"
+      },
+      {
+        "name": "Johanna",
+        "url": "/wiki/Johanna",
+        "note": "flashback",
+        "full_text": "Johanna"
+      },
+      {
+        "name": "Esperia Kingdom",
+        "url": "/wiki/Esperia_Kingdom",
+        "note": "flashback",
+        "full_text": "Esperia Kingdom"
+      },
+      {
+        "name": "Reuven",
+        "url": "/wiki/Reuven",
+        "note": "flashback",
+        "full_text": "Reuven"
+      },
+      {
+        "name": "Nerona Imu",
+        "url": "/wiki/Nerona_Imu",
+        "note": "flashback",
+        "full_text": "Nerona Imu"
+      },
+      {
+        "name": "Knights of God",
+        "url": "/wiki/Knights_of_God",
+        "note": "flashback",
+        "full_text": "Knights of God"
+      },
+      {
+        "name": "Figarland Shamrock",
+        "url": "/wiki/Figarland_Shamrock",
+        "note": "flashback",
+        "full_text": "Figarland Shamrock"
+      },
+      {
+        "name": "Manmayer Gunko",
+        "url": "/wiki/Manmayer_Gunko",
+        "note": "flashback",
+        "full_text": "Manmayer Gunko"
+      },
+      {
+        "name": "Shepherd Sommers",
+        "url": "/wiki/Shepherd_Sommers",
+        "note": "flashback",
+        "full_text": "Shepherd Sommers"
+      },
+      {
+        "name": "Rimoshifu Killingham",
+        "url": "/wiki/Rimoshifu_Killingham",
+        "note": "flashback",
+        "full_text": "Rimoshifu Killingham"
+      },
+      {
+        "name": "Emporio Ivankov",
+        "url": "/wiki/Emporio_Ivankov",
+        "note": "flashback",
+        "full_text": "Emporio Ivankov"
+      }
+    ],
+    "volume": "TBA",
+    "chapter_display": "1195",
+    "pages": "17",
+    "release_date": "October 12, 2026",
+    "jump_info": "2026 Issue 46"
   }
 ]
