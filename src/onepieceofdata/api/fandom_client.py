@@ -63,18 +63,25 @@ class FandomAPIClient:
 
         logger.debug(f"API request: {params.get('action', 'unknown')}")
 
-        self._rate_limit()
-
         try:
-            response = self.http_pool.request(
-                'GET',
-                url,
-                headers={
-                    'User-Agent': 'OnePieceOfData/2.0 (https://github.com/ismailsunni/onepieceofdata; bot)',
-                    'Accept': 'application/json',
-                },
-                timeout=self.settings.request_timeout
-            )
+            # Rate-limited (429): back off per Retry-After, or 15s doubling up to ~4 min
+            for attempt in range(6):
+                self._rate_limit()
+                response = self.http_pool.request(
+                    'GET',
+                    url,
+                    headers={
+                        'User-Agent': 'OnePieceOfData/2.0 (https://github.com/ismailsunni/onepieceofdata; bot)',
+                        'Accept': 'application/json',
+                    },
+                    timeout=self.settings.request_timeout
+                )
+                if response.status != 429:
+                    break
+                retry_after = response.headers.get('Retry-After', '')
+                wait = int(retry_after) if retry_after.isdigit() else 15 * 2 ** attempt
+                logger.warning(f"HTTP 429 rate limited, sleeping {wait}s (attempt {attempt + 1})")
+                time.sleep(min(wait, 240))
 
             if response.status != 200:
                 raise Exception(f"HTTP {response.status} error for API request")

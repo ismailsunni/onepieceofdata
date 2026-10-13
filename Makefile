@@ -14,7 +14,7 @@ UV := uv
 	run-network-explorer \
 	wiki-scrape wiki-scrape-characters wiki-scrape-arcs wiki-status \
 	embed-wiki embed-status search \
-	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase scrape-poll load-poll-2021 load-polls-csv rematch-poll-links upload-poll-images upload-poll-images-dry-run check-poll-links \
+	export-supabase-fts update-new-chapter update-wiki-rag compare-supabase scrape-poll load-poll-2021 load-polls-csv rematch-poll-links upload-poll-images upload-poll-images-dry-run check-poll-links validate-scrape \
 	parse-affiliations parse-affiliations-dry-run \
 	upload-thumbnails upload-thumbnails-dry-run test-upload-thumbnails \
 	parse-devil-fruits parse-devil-fruits-dry-run sync-haki sync-haki-dry-run \
@@ -184,6 +184,7 @@ help:
 	@echo "  upload-poll-images       - Upload poll face images → Supabase Storage (polls/<poll_id>/)"
 	@echo "  rematch-poll-links       - Re-resolve poll names to characters after alias edits"
 	@echo "  check-poll-links         - Check poll entries still resolve to characters"
+	@echo "  validate-scrape          - Fail if scraped data is incomplete (missing chapters, shrunk files)"
 	@echo "  chat                     - Start interactive One Piece chatbot"
 	@echo ""
 	@echo "📅 WEEKLY: NEW CHAPTER RELEASED"
@@ -685,6 +686,10 @@ check-poll-links:
 	@echo "🔗 Checking character_poll → character links..."
 	$(UV) run python scripts/check_poll_links.py
 
+validate-scrape:
+	@echo "🔎 Validating scraped data is complete..."
+	$(UV) run python scripts/validate_scrape.py
+
 # Upload the 2026 poll face images to Supabase Storage under polls/<poll_id>/.
 upload-poll-images:
 	@echo "🖼️  Uploading poll images to Supabase Storage..."
@@ -729,6 +734,7 @@ run-data-pipeline:
 	@echo "║  STAGE 1/3: SCRAPING                                          ║"
 	@echo "╚═══════════════════════════════════════════════════════════════╝"
 	$(MAKE) run-all-scrapers
+	$(MAKE) validate-scrape
 	@echo ""
 	@echo "╔═══════════════════════════════════════════════════════════════╗"
 	@echo "║  STAGE 2/3: PARSING                                           ║"

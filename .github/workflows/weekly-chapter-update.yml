@@ -16,7 +16,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 240
+    timeout-minutes: 360
     env:
       GH_TOKEN: ${{ github.token }}
     steps:
@@ -37,8 +37,8 @@ jobs:
           OP_LAST_CHAPTER=${{ steps.check.outputs.chapter }}
           OP_LAST_VOLUME=${{ steps.check.outputs.volume }}
           OP_DATABASE_PATH=./data/onepiece.duckdb
-          OP_SCRAPING_DELAY=0.1
-          OP_MAX_WORKERS=4
+          OP_SCRAPING_DELAY=1.0
+          OP_MAX_WORKERS=2
           POSTGRES_HOST=${{ secrets.POSTGRES_HOST }}
           POSTGRES_PORT=${{ secrets.POSTGRES_PORT }}
           POSTGRES_DB=${{ secrets.POSTGRES_DB }}
