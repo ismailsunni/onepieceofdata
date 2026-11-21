@@ -64,3 +64,9 @@ jobs:
           git add data exports
           git diff --cached --quiet || git commit -m "Update to chapter ${{ steps.check.outputs.chapter }}"
           git push
+
+      - name: Trigger website rebuild
+        if: steps.check.outputs.ready == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
+        run: gh api repos/ismailsunni/onepieceofdata-react/dispatches -f event_type=data-updated
